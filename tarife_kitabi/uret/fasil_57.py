@@ -1,0 +1,278 @@
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from yardim_53_58 import S, SX, yaz  # noqa: E402
+
+E4 = "Eşya → 4’lü pozisyon"
+OT = "Olumsuz teşhis"
+FA = "Farklı/aynı pozisyon veya fasıl"
+FN = "Fasıl notu · Tanım/Eşik"
+GY = "Genel Yorum Kuralı"
+ES = "Eşleştirme / Boşluk doldurma"
+CC = "Çoktan-çoğa (I–IV)"
+SN = "Senaryo"
+
+d = {
+ "tur": "fasil",
+ "fasil": 57,
+ "baslik": "Halılar ve diğer dokumaya elverişli maddelerden yer kaplamaları",
+ "bolum": "XI",
+ "oz": {
+  "vurgu": "Fasıl 57’nin testi, eşyanın dokumaya elverişli maddeden bir yer kaplaması olup olmadığıdır: kullanımda dışa bakan yüz tekstil ise ve eşya yer kaplaması özelliği (kalınlık, sağlamlık, dayanıklılık) taşıyorsa, duvara asılsa veya masa örtüsü olarak kullanılsa da Fasıl 57’dedir. Pozisyonu yapım tekniği belirler: düğümlü-sarmalı 57.01, dokunmuş 57.02, tufte 57.03, keçe 57.04, diğerleri 57.05.",
+  "maddeler": [
+   "Bütün pozisyonlar “hazır eşya halinde olsun olmasın” ifadesini taşır: kenarı yapılmış, saçaklı halı da top halindeki halı da Fasıl 57’dedir.",
+   "Halı altına konan bağımsız taban örtüleri (kaba mensucat, keçe dolgu) Fasıl 57’ye girmez; maddesine göre sınıflandırılır (Not 2).",
+   "Linoleum ve tekstil mesnet üzerine sıvama-kaplama ile elde edilen yer kaplamaları 59.04’te; örülmeye elverişli maddelerden hasır ve paspaslar Fasıl 46’da; plastikten eşya Fasıl 39’dadır.",
+   "Benzer görünen ama yere serilmeye elverişsiz ürünler: kadife-tırtıl mensucat 58.01, tufte mensucat 58.02, el dokuması ve iğne işi duvar halıları 58.05."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+  "satirlar": [
+   ["1", "Kullanımda dışa bakan yüz tekstil değil mi? (linoleum; tekstil mesnet üzerine sıvanmış-kaplanmış yer kaplaması)", "<b>59.04</b>"],
+   ["2", "Örülmeye elverişli maddelerden hasır veya paspas mı? Plastikten eşya mı?", "<b>Fasıl 46</b> · <b>Fasıl 39</b>"],
+   ["3", "Halı altına konan bağımsız taban örtüsü mü?", "Maddesine göre (Fasıl 57 Not 2)"],
+   ["4", "Yer kaplaması özelliği (kalınlık, sağlamlık, dayanıklılık) yok mu?", "Kadife-tırtıl <b>58.01</b> · tufte kumaş <b>58.02</b> · duvar halısı <b>58.05</b>"],
+   ["5", "Hav iplikleri çözgüye düğümlenmiş veya en az bir çözgüye tam dolanmış mı?", "<b>57.01</b>"],
+   ["6", "Dokunmuş mu? (Wilton, Axminster, tırtıl halı, düz dokuma, kilim, sumak, karaman, koko-sisal paspas)", "<b>57.02</b>"],
+   ["7", "Tufte mi? (makine, tufte tabancası veya el ile; tufte çim dahil)", "<b>57.03</b>"],
+   ["8", "Keçeden mi? (tufte veya floke değil)", "<b>57.04</b>"],
+   ["9", "Diğer mi? (yapıştırılmış havlı, dokunmamış, floke, örme halı)", "<b>57.05</b>"]
+  ],
+  "dipnot": "* Basınç veya hareket sensörü gibi elektronik bileşen içeren halı, esas karakterini koruyorsa Bölüm XI’de kendi pozisyonunda kalır (Bölüm XI Not 15)."
+ },
+ "pozisyon_haritasi": [
+  ["57.01", "Düğümlü veya sarmalı halılar", "Hav ipliği çözgüye düğüm veya tam dolama", "Gördes düğümlü el dokuması yün halı"],
+  ["57.02", "Dokunmuş halılar (tufte/floke değil)", "Kilim, sumak, karaman dahil", "Wilton, Axminster, kilim, koko paspas"],
+  ["57.03", "Tufte halılar (çim dahil)", "İplik mevcut zemine iğne-kancayla ilave", "Tufte moket, sentetik spor sahası çimi"],
+  ["57.04", "Keçeden halılar (tufte/floke değil)", "Keçe yapısı; karolar dahil", "İğne keçe yer karosu"],
+  ["57.05", "Diğer halılar ve yer kaplamaları", "Yapıştırma, dokunmamış, floke, örme", "Floke halı, örme yol halısı"]
+ ],
+ "notlar": [
+  ["Fasıl 57 Not 1", "“Halılar ve dokumaya elverişli maddelerden diğer yer kaplamaları”: kullanımında dışa bakan yüzü dokumaya elverişli maddelerden olan yer kaplamaları; yer kaplaması özelliğini gösterip başka amaçlar için kullanılan eşya da dahildir."],
+  ["Fasıl 57 Not 2", "Döşeme halılarının altında kullanılan bağımsız taban örtüleri bu fasla dahil değildir."],
+  ["Genel Açıklamalar", "Kare halı, oda ortası, yatak önü, şömine önü halıları ya da oda-koridor-merdiven için kesilmeye uygun top halinde halılar bu fasıldadır. Kauçukla emdirilmiş veya tabanı dokunmuş, dokunmamış mensucat, gözenekli kauçuk ya da plastiklerle desteklenmiş olabilir. Hariç: halı ile zemin arasına konan kaba mensucat veya keçe dolgular (maddesine göre); linoleum ve tekstil mesnet üzerine sıvama-kaplama ile elde edilen yer kaplamaları (59.04)."],
+  ["Bölüm XI Not 8", "56–59. fasıllar, metinde aksi belirtilmedikçe hazır eşyaya uygulanmaz; Fasıl 57 pozisyon metinleri “hazır eşya halinde olsun olmasın” dediğinden hazır halılar da Fasıl 57’de kalır."],
+  ["Bölüm XI Not 15", "İlave işlev için kimyasal, mekanik veya elektronik bileşen içeren tekstil eşyası, esas karakterini korudukça Bölüm XI’deki pozisyonunda kalır; Genel Açıklamalar örneklerinden biri basınç veya hareket algılamalı (düşme algılayan) halıdır."],
+  ["57.01 Açıklama Notu", "Hav ipliklerinin gergin çözgüye düğümlenmesi veya en az bir çözgüye tam dolama yapacak şekilde sarılması bu pozisyonu karakterize eder. Gördes (Türk, İzmir) düğümü: komşu iki çözgünün üzerinden geçip tam dolama, iki uç aralarından çıkar. Senna (Acem) düğümü: bir çözgüye tam dolama, yandakinin altından geçer. Tek çözgü düğümü: tek çözgüye bir buçuk dolama. Mevcut gevşek bir taban üzerine düğümlenenler ve makinede yapılanlar dahildir."],
+  ["57.01 Açıklama Notu (hariç)", "Hav iplikleri çözgü etrafında dolama yapmadan yalnızca altından geçirilerek ilmeklenmiş halılar 57.02’dedir."],
+  ["57.02 Açıklama Notu", "Wilton (kesilmiş bukle) ve Brüksel (kesilmemiş bukle), Axminster, tırtıl halılar, düz dokuma (Kidderminster) ve paçavra halıları, koko-sisal kapı paspasları, havlu mensucattan banyo paspasları, kilim, sumak, karaman ve sileh. Kilim 58.05’teki el dokuması duvar halılarıyla aynı yöntemle dokunur, düz çizgili desenlidir ve iki yüzü de kullanılabilir. Örülmeye elverişli maddelerden hasır ve paspaslar Fasıl 46."],
+  ["57.03 Açıklama Notu", "İğne ve kancayla ipliğin mevcut bir zemine (dokunmuş veya dokunmamış) ilave edildiği tufte halılar; tufte tabancası veya el ile yapılanlar ve rengi ne olursa olsun otu taklit eden tufte çim dahildir. 58.02’deki tufte mensucattan yer kaplamasına elverişli sertlik, kalınlık ve dayanıklılıkla ayrılır. Fasıl 39’daki plastikten eşya hariçtir."],
+  ["57.04 – 57.05 Açıklama Notu", "57.04: keçeden halılar ve yer kaplamaları (keçe karolar, tabanı kauçuk veya plastikle desteklenmiş iğne işi keçe). 57.05: yapıştırılmış havlı halılar, dokunmamış halılar, flokaj usulüyle yapılan halılar, örülmüş (örme) halılar."],
+  ["58.01 / 58.05 Açıklama Notu", "58.01’deki kadife ve tırtıl mensucat halılara benzer şekilde dokunsa da yere serilmeye mahsus değildir, daha ince malzemeden ve yumuşak zeminlidir. Kilim, sumak, karaman 58.05’e değil 57.02’ye girer."]
+ ],
+ "sinir_komsulari": [
+  ["Linoleum; tekstil mesnet üzerine sıvanmış-kaplanmış yer kaplaması", "59.04", "Fasıl 57 Genel Açıklamalar (b)"],
+  ["Halı ile zemin arasına konan keçe veya kaba mensucat dolgu", "Maddesine göre (ör. 56.02)", "Fasıl 57 Not 2"],
+  ["Örülmeye elverişli maddelerden hasır ve paspas", "46.01", "57.02 hariç tutması"],
+  ["Plastikten çim veya paspas", "Fasıl 39", "57.03 hariç tutması"],
+  ["Mefruşatlık kadife, peluş, tırtıl mensucat", "58.01", "Yere serilmeye mahsus değil"],
+  ["Yere serilmeye elverişsiz tufte mensucat", "58.02", "57.03 ile sertlik-kalınlık ayrımı"],
+  ["Havlu cinsi bukleli mensucat (parça)", "58.02", "Banyo paspası ise 57.02"],
+  ["El ile dokunmuş duvar halısı (Goblen, Aubusson); iğne işi duvar halısı", "58.05", "Pano niteliği; kilim hariç"],
+  ["Duvar halısı yapımı için iplik ve mensucat takımı", "63.08", "58.05 hariç tutması"],
+  ["Yaşı 100 yılı geçen duvar halısı", "Fasıl 97", "58.05 hariç tutması; Bölüm XI Not 1(v)"],
+  ["Halı yapımında kullanılan tırtıl (şenil) iplik", "56.06", "İplik, halı değil"],
+  ["Tufte halılara taban olarak kullanılan dokunmamış mensucat", "56.03", "Birincil-ikincil destek tabakası"],
+  ["Keçe (yer kaplaması niteliğinde olmayan)", "56.02", "Keçeden halı ise 57.04"]
+ ],
+ "tuzaklar": [
+  "<b>Kullanım yeri değil özellik belirler.</b> Yer kaplaması özelliği taşıyan eşya duvar halısı veya masa örtüsü olarak kullanılsa da Fasıl 57’dedir (Not 1).",
+  "<b>Halı altı Fasıl 57 değildir.</b> Halı ile zemin arasına konan bağımsız taban örtüleri maddesine göre sınıflandırılır (Not 2).",
+  "<b>Dışa bakan yüz tekstil değilse 59.04.</b> Linoleum ve tekstil mesnet üzerine sıvama-kaplama ile elde edilen yer kaplamalarında görünen yüz kaplama maddesidir.",
+  "<b>Düğüm mü, sadece geçme mi?</b> Hav ipliği çözgüye düğümlenmiş veya tam dolanmışsa 57.01; yalnız çözgünün altından geçirilerek ilmeklenmişse (Wilton tipi) 57.02.",
+  "<b>Kilim duvar halısı değildir.</b> Kilim, sumak, karaman 58.05’teki el dokuması duvar halılarıyla aynı yöntemle dokunsa da 57.02’dedir.",
+  "<b>Tufte halı ile tufte kumaşı sertlik ayırır.</b> Yer kaplamasına elverişli sertlik, kalınlık ve dayanıklılık varsa 57.03, yoksa 58.02.",
+  "<b>Kadife değil halı.</b> 58.01’deki kadife ve tırtıl mensucat halıya benzer dokunsa da ince malzemeli ve yumuşak zeminlidir; kaba ve dayanıklı olanlar 57.02’dedir.",
+  "<b>Hazır olması faslı değiştirmez.</b> Pozisyonlar “hazır eşya halinde olsun olmasın” dediğinden kenarı bastırılmış veya saçaklı halı Fasıl 63’e gitmez.",
+  "<b>Hasır paspas Fasıl 46’dır.</b> Koko veya sisal hav malzemesinin taban dokumasına tutturulduğu kapı paspası 57.02’de, örülmeye elverişli maddelerden hasır ve paspaslar 46.01’dedir."
+ ],
+ "hafiza": {
+  "kanca": "DÜ – DO – TU – KE – Dİ",
+  "aciklama": "Halı atölyesini sırayla gezin: önce <b>dü</b>ğüm atılır (57.01), sonra <b>do</b>kunur (57.02), makine iğneyle <b>tu</b>fte eder (57.03), <b>ke</b>çe serilir (57.04), kalan her şey <b>di</b>ğer (57.05: yapıştırma, dokunmamış, floke, örme). Kilim düğümsüz bir dokumadır; bu yüzden 57.02’dedir."
+ },
+ "sinav_odagi": [
+  "Bu fasıla ilişkin doğrudan çıkmış soru yoktur; halılar yalnızca dokumaya elverişli eşyanın bölüm ve fasıl aralığını (Bölüm XI, 50–63. fasıllar) soran genel sorularda dolaylı olarak yer almıştır.",
+  "Bölüm sorularında çeldirici olarak plastikler (Bölüm VII, Fasıl 39–40) ve örülmeye elverişli maddeler (Bölüm IX, Fasıl 44–46) kullanılmıştır; bu nedenle hasır paspas–halı ve plastik çim–tufte çim ayrımı önemlidir.",
+  "Komşu Bölüm XI fasıllarına ilişkin sorularda eşyanın malzemeye değil türüne göre sınıflandırıldığı ilkesi sorulmuştur; keçeden veya dokunmamış mensucattan yapılan halının Fasıl 56’da değil Fasıl 57’de olması bu ilkenin uygulamasıdır.",
+  "Bölüm XI’in eşya fasıllarında “bu pozisyonda hangisi sınıflandırılamaz” kalıbı kullanılmıştır (ör. 63.07 sorusu); Fasıl 57’de bu kalıbın karşılığı taban örtüsü, linoleum ve duvar halısı çeldiricileridir."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Dokumaya elverişli maddeler ve bunlardan mamul eşya Türk Gümrük Tarife Cetvelinin hangi bölüm ve hangi fasıllarında yer almaktadır?",
+   "secenekler": ["Dördüncü bölüm, 16-24 fasıl", "Yedinci bölüm, 39-40 fasıl", "Dokuzuncu bölüm, 44-46 fasıl", "On birinci bölüm, 50-63 fasıl"],
+   "cevap": "D",
+   "aciklama": "Halılar dahil dokumaya elverişli maddelerden eşya Bölüm XI’de (50–63. fasıllar) yer alır; halılar ve diğer yer kaplamaları bu bölümün 57. faslıdır. Örülmeye elverişli maddelerden hasır ve paspaslar ise Bölüm IX’daki Fasıl 46’dadır."
+  }
+ ],
+ "ozet": [
+  "Fasıl 57 = kullanımda dışa bakan yüzü tekstil olan yer kaplamaları; başka amaçla kullanılsa da yer kaplaması özelliği yeter.",
+  "Teknik sırası: düğümlü-sarmalı 57.01, dokunmuş (kilim, sumak dahil) 57.02, tufte (çim dahil) 57.03, keçe 57.04, diğerleri 57.05.",
+  "Hazır olsun olmasın Fasıl 57; halı altı taban örtüleri maddesine göre sınıflandırılır.",
+  "Linoleum ve sıvanmış-kaplanmış tekstil mesnetli yer kaplaması 59.04; hasır paspas Fasıl 46; plastik çim Fasıl 39.",
+  "Yere serilmeye elverişsiz benzerleri: kadife 58.01, tufte kumaş 58.02, el dokuması duvar halısı 58.05."
+ ],
+ "sorular": [
+  # --- Eşya → 4'lü (5)
+  S("Tarife Cetveline göre, el tezgâhında hav iplikleri komşu iki çözgü ipliğinin üzerinden geçirilip tam dolandıktan sonra iki ucu aralarından yukarı çıkarılarak (Gördes düğümü) yapılmış, kenarları saçaklı yün halı hangi pozisyonda sınıflandırılır?",
+    "57.01", ["57.02", "57.03", "58.05", "57.05"], "A", E4,
+    "Hav ipliklerinin çözgüye düğümlenmesi 57.01’i karakterize eder; Gördes (Türk) düğümü bu pozisyonda tarif edilen düğümlerden biridir ve saçaklı kenarlar sınıflandırmayı değiştirmez. Hav iplikleri yalnız çözgünün altından geçirilseydi 57.02 olurdu; 57.03 tufte halılar, 58.05 duvar halıları içindir.",
+    "57.01 Açıklama Notu."),
+  S("Tarife Cetveline göre, el tezgâhında dokunmuş, düz çizgili desenli, havsız ve iki yüzü de kullanılabilen yün kilim hangi pozisyondadır?",
+    "57.02", ["57.01", "58.05", "57.05", "57.04"], "C", E4,
+    "Kilim, sumak, karaman ve elde dokunmuş benzeri yer döşemeleri 57.02 pozisyon metninde açıkça sayılmıştır. Kilim, 58.05’teki el ile dokunmuş duvar halılarıyla aynı yöntemle dokunsa da 57.02’dedir; düğümsüz olduğu için 57.01 söz konusu değildir.",
+    "57.02 pozisyon metni ve Açıklama Notu (7); 58.05 Açıklama Notu (hariç tutmalar)."),
+  S("Tarife Cetveline göre, spor sahalarında kullanılmak üzere tufte makinesinde polipropilen ipliklerin dokunmuş bir zemine ilave edilmesiyle üretilmiş, otu taklit eden yeşil zemin kaplaması (çim) hangi pozisyondadır?",
+    "57.03", ["57.02", "58.02", "57.05", "56.03"], "E", E4,
+    "57.03, rengi ne olursa olsun otu taklit eden tufte edilmiş dokumaya elverişli zemin kaplamasını (çim) açıkça kapsar; spor sahaları bu kullanımın örneğidir. 58.02 yere serilmeye elverişsiz tufte mensucat içindir; dokuma veya dokunmamış zemin ürünü 57.03’ten çıkarmaz. Plastikten eşya olsaydı Fasıl 39’a giderdi.",
+    "57.03 pozisyon metni ve Açıklama Notu."),
+  S("Tarife Cetveline göre, iğne işi keçeden yapılmış, kaymayı önlemek için tabanı kauçukla desteklenmiş, tufte veya floke edilmemiş kare yer karosu hangi pozisyondadır?",
+    "57.04", ["56.02", "57.05", "59.04", "57.03"], "B", E4,
+    "Keçeden halılar ve yer kaplamaları 57.04’tedir; Açıklama Notu tabanı kauçuk veya plastikle desteklenmiş iğne işi keçe yer kaplamalarını ve karoları sayar. Keçe yer kaplaması olduğu için 56.02’de kalmaz; dışa bakan yüz tekstil olduğundan 59.04 söz konusu değildir.",
+    "57.04 Açıklama Notu; 56.02 Açıklama Notu (hariç tutmalar)."),
+  S("Tarife Cetveline göre, örme (trikotaj) usulüyle üretilmiş, top halindeki yol halısı (moket) hangi pozisyondadır?",
+    "57.05", ["57.02", "57.03", "60.01", "57.04"], "D", E4,
+    "57.05 Açıklama Notu örülmüş halıları ve döşemelik halıları (genellikle yol halısı veya kürk görünümlü) bu pozisyonda sayar. Dokunmuş olmadığından 57.02, tufte olmadığından 57.03, keçe olmadığından 57.04 uygulanmaz; yer kaplaması olduğu için havlı örme mensucat pozisyonuna (60.01) da girmez.",
+    "57.05 Açıklama Notu (4); Fasıl 57 Not 1."),
+  # --- Olumsuz teşhis (4)
+  S("Aşağıdakilerden hangisi 57.02 pozisyonunda <b>sınıflandırılmaz</b>?",
+    "Tufte makinesinde üretilmiş, ilmekleri kauçuk sıvamayla sabitlenmiş halı",
+    ["Axminster halı", "Hindistan cevizi liflerinden dokunmuş kapı paspası",
+     "Havlu mensucattan banyo paspası",
+     "Çözgüsü jüt, atkısı uç uca bağlanmış mensucat döküntüsü şeritlerinden paçavra halısı"], "E", OT,
+    "57.02 yalnız tufte veya floke edilmemiş dokunmuş halıları kapsar; tufte halılar 57.03’tedir. Axminster halı, koko kapı paspası, havlu mensucattan banyo paspası ve paçavra halıları 57.02 Açıklama Notunda sayılmıştır.",
+    "57.02 ve 57.03 pozisyon metinleri ve Açıklama Notları."),
+  S("Aşağıdakilerden hangisi Tarife Cetvelinin 57. faslında <b>yer almaz</b>?",
+    "Halı ile zemin arasına konulan bağımsız keçe taban örtüsü",
+    ["Duvara asılarak kullanılan, yer kaplaması özelliğindeki düğümlü ipek halı",
+     "Kenarları bastırılmış, kullanıma hazır tufte halı",
+     "Kesilmeye uygun uzunlukta top halinde merdiven halısı",
+     "Tabanı köpük kauçukla desteklenmiş dokunmuş halı"], "B", OT,
+    "Fasıl 57 Not 2 döşeme halılarının altında kullanılan bağımsız taban örtülerini hariç tutar; bunlar maddesine göre sınıflandırılır. Not 1 gereği duvara asılan ama yer kaplaması özelliği taşıyan halı, “hazır eşya halinde olsun olmasın” ifadesi gereği hazır halı, top halinde halı ve tabanı kauçukla desteklenmiş halı Fasıl 57’dedir.",
+    "Fasıl 57 Not 1 ve Not 2; Fasıl 57 Genel Açıklamalar."),
+  S("Aşağıdaki yer kaplamalarından hangisi 57. fasıl <b>dışında</b> kalır?",
+    "Tekstil mesnet üzerine sıvama maddesi tatbik edilmiş yer kaplaması",
+    ["Havları yapıştırıcıyla zemine tutturulmuş, yapıştırılmış havlı halı", "Karde edilmiş lif tabakasından yapılmış dokunmamış halı",
+     "Kilime benzer şekilde dokunmuş, tersi tüylü görünümlü sumak", "Tabanı kauçukla desteklenmiş, iğne işi keçeden yer kaplaması"], "D", OT,
+    "Linoleum ve bir sıvama veya kaplama maddesinin dokumaya elverişli mesnet üzerine tatbiki suretiyle elde edilen yer kaplamaları 59.04’tedir; kullanımda dışa bakan yüz tekstil değildir. Yapıştırılmış havlı ve dokunmamış halılar 57.05’te, sumak 57.02’de, keçe yer kaplaması 57.04’tedir.",
+    "Fasıl 57 Not 1; Fasıl 57 Genel Açıklamalar (b)."),
+  S("Aşağıdakilerden hangisi 57.01 pozisyonunda <b>yer almaz</b>?",
+    "Hav iplikleri çözgüye dolanmadan yalnız altından geçirilerek ilmeklenmiş halı",
+    ["Hav ipliğinin bir çözgüye tam dolanıp yandakinin altından geçtiği Senna (Acem) düğümlü halı", "Hav ipliğinin tek çözgüye bir buçuk dolandığı tek çözgü düğümlü halı",
+     "Mevcut gevşek dokunmuş bir taban üzerine ipliklerin düğümlenmesiyle elde edilmiş halı",
+     "Mekanik tezgâhta yapılmış düğümlü halı"], "A", OT,
+    "57.01 Açıklama Notu, hav ipliklerinin çözgü etrafında dolama yapmadan yalnız altından geçirilerek ilmeklendiği halıları açıkça hariç tutar ve 57.02’ye gönderir. Senna ve tek çözgü düğümlü halılar, gevşek bir taban üzerine düğümlenenler ve makinede düğümlenenler 57.01’dedir.",
+    "57.01 Açıklama Notu."),
+  # --- Farklı/aynı (4)
+  S("Aşağıdaki halılardan hangisi diğerlerinden <b>farklı</b> bir pozisyonda sınıflandırılır?",
+    "Tufte tabancasıyla yapılmış halı",
+    ["Bukleleri kesilerek havlı yüz elde edilmiş Wilton halısı", "Bukleleri kesilmemiş Brüksel halısı", "Kidderminster tipi düz dokuma halı", "Tırtıl ipliklerle dokunmuş tırtıl halı"], "C", FA,
+    "Tufte tabancasıyla veya elle yapılmış tufte halılar 57.03’tedir. Wilton ve Brüksel halıları, Kidderminster tipi düz dokuma halılar ve tırtıl ipliklerle dokunan tırtıl halılar dokunmuş halılar olarak 57.02’dedir.",
+    "57.02 ve 57.03 Açıklama Notları."),
+  S("Aşağıdaki eşya çiftlerinden hangisinin her ikisi de <b>aynı</b> pozisyonda yer alır?",
+    "Kilim – Sumak",
+    ["Kilim – El ile dokunmuş Aubusson duvar halısı",
+     "Tufte halı – Yere serilmeye elverişsiz ince tufte mensucat",
+     "Düğümlü yün halı – Wilton halısı",
+     "Keçeden halı – Halı altına konan keçe taban örtüsü"], "A", FA,
+    "Kilim ve sumak elde dokunmuş yer döşemeleri olarak 57.02’de birlikte yer alır. Aubusson duvar halısı 58.05, ince tufte mensucat 58.02, düğümlü halı 57.01 (Wilton 57.02), halı altı taban örtüsü ise Not 2 gereği maddesine göre sınıflandırılır (keçeden halı 57.04).",
+    "57.02 Açıklama Notu (7); 58.05 Açıklama Notu; Fasıl 57 Not 2."),
+  S("Aşağıdakilerden hangisi diğerlerinden <b>farklı</b> bir fasılda sınıflandırılır?",
+    "Örülmeye elverişli maddelerden hasır paspas",
+    ["Liflerin yapıştırıcılı zemine dikey tutturulduğu floke halı", "Örme usulüyle üretilmiş, top halinde yol halısı (moket)",
+     "Karde lif tabakasından yapılmış dokunmamış halı", "Tabanı kauçukla desteklenmiş keçe halı"], "D", FA,
+    "Örülmeye elverişli maddelerden hasır ve paspaslar 57.02 Açıklama Notu gereği Fasıl 46’dadır (46.01). Floke, örme ve dokunmamış halılar 57.05’te, keçeden halı 57.04’te olup Fasıl 57’dedir.",
+    "57.02 Açıklama Notu (hariç tutma); 57.04 ve 57.05 Açıklama Notları."),
+  S("Aşağıdakilerden hangisi, diğer dördünden <b>farklı</b> olarak 57. fasılda sınıflandırılır?",
+    "Masa örtüsü olarak kullanılan kalın, dayanıklı düğümlü halı",
+    ["Mefruşatta kullanılan, yumuşak ve ince zeminli yün kadife",
+     "Ressam tablosunu andıran, el ile dokunmuş Goblen duvar halısı",
+     "Yere serilmeye elverişli sertliği olmayan tufte mensucat",
+     "Kanaviçe zemini tamamen iğneyle işlenmiş duvar halısı"], "B", FA,
+    "Fasıl 57 Not 1, yer kaplaması özelliği taşıyıp başka amaçla (masa örtüsü gibi) kullanılan eşyayı da kapsar; bu halı 57.01’dedir. Yün kadife 58.01’de, Goblen ve iğne işi duvar halıları 58.05’te, yere serilmeye elverişsiz tufte mensucat 58.02’dedir.",
+    "Fasıl 57 Not 1; 58.01, 58.02, 58.05 Açıklama Notları."),
+  # --- Fasıl notu · Tanım/Eşik (4)
+  S("Fasıl 57 Not 1’e göre “halılar ve dokumaya elverişli maddelerden diğer yer kaplamaları” tabiri için aşağıdakilerden hangisi <b>doğrudur</b>?",
+    "Dışa bakan yüzü tekstil olan yer kaplamalarını ve bu özellikte olup başka amaçla kullanılan eşyayı kapsar.",
+    ["Yalnızca yere serilerek kullanılan ve dışa bakan yüzü tekstil olan yer kaplamalarını kapsar.",
+     "Dışa bakan yüzü ne olursa olsun, tabanı dokumaya elverişli maddeden olan bütün yer kaplamalarını ve döşemelik eşyayı kapsar.",
+     "Halıların yanı sıra bunların altında kullanılan bağımsız taban örtülerini de kapsar.",
+     "Yalnızca kenarları yapılmış, hazır eşya halindeki yer kaplamalarını kapsar."], "E", FN,
+    "Not 1 ölçütü dışa bakan yüzün tekstil olmasıdır ve yer kaplaması özelliği gösteren ama başka amaçla kullanılan eşyayı da tanıma katar. Taban tekstil olsa da yüz kaplama maddesiyse eşya 59.04’tedir; taban örtüleri Not 2 ile hariçtir; pozisyonlar hazır olsun olmasın tüm halıları kapsar.",
+    "Fasıl 57 Not 1 ve Not 2; 57.01–57.05 pozisyon metinleri."),
+  S("Fasıl 57 Genel Açıklamalarına göre aşağıdakilerden hangisi <b>doğrudur</b>?",
+    "Halılar kauçukla emdirilmiş ya da tabanları gözenekli kauçuk veya plastikle desteklenmiş olabilir.",
+    ["Oda, koridor veya merdiven için kesilmeye uygun uzunlukta top halinde sunulan halılar Fasıl 57 dışında kalır.",
+     "Linoleum, dokumaya elverişli bir mesnet üzerine yapıldığı için yer kaplaması olarak 57.05’te yer alır.",
+     "Halı ile zemin arasına yerleştirilen kaba mensucat veya keçe dolgular halı aksesuarı olarak 57.05’te sınıflandırılır.",
+     "Tabanı plastikle desteklenmiş halılar, plastik kısım nedeniyle Fasıl 39’da sınıflandırılır."], "C", FN,
+    "Genel Açıklamalar, emdirilmiş veya tabanı çeşitli maddelerle desteklenmiş halıların Fasıl 57’de kaldığını belirtir. Top halindeki halılar da fasıldadır; linoleum 59.04’te, taban örtüsü dolgular maddesine göre sınıflandırılır; plastik taban halıyı Fasıl 39’a götürmez.",
+    "Fasıl 57 Genel Açıklamalar; Fasıl 57 Not 2."),
+  S("57.01 Açıklama Notuna göre Senna (Acem) düğümü için aşağıdakilerden hangisi <b>doğrudur</b>?",
+    "Hav ipliği bir çözgüye tam dolanır, yandaki çözgünün altından geçer, iki ucu yukarı çıkar.",
+    ["Hav ipliği komşu iki çözgünün üzerinden geçip tam dolama yapar ve iki ucu bu iki çözgü arasından çıkar.",
+     "Hav ipliği yalnız bir çözgüye bir buçuk dolama yaparak düğümlenir.",
+     "Hav ipliği çözgüye dolanmaz, yalnızca altından geçirilerek ilmeklenir.",
+     "Hav ipliği hazır bir zemine iğne ve kancayla ilave edilir."], "D", FN,
+    "Senna (Acem) düğümünde hav ipliği bir çözgüye tam dolama yapıp yanındaki çözgünün altından geçer. Komşu iki çözgünün üzerinden geçen Gördes (Türk) düğümü, bir buçuk dolamalı olan tek çözgü düğümüdür; çözgünün altından geçirme 57.02’deki dokunmuş halıları, iğne-kanca ile ilave tufteyi (57.03) tanımlar.",
+    "57.01 Açıklama Notu."),
+  S("57.03 ile 58.02 pozisyonlarındaki tufte edilmiş ürünleri birbirinden ayıran ölçüt hangisidir?",
+    "Yer kaplamasına elverişli sertlik, kalınlık ve dayanıklılık",
+    ["Tufte işleminin elle veya tufte makinesiyle yapılmış olması",
+     "Zemin mensucatın dokunmuş, örülmüş veya dokunmamış olması",
+     "Havların kesilmiş veya bukle halinde bırakılmış olması",
+     "Kullanılan ipliğin sentetik, suni veya tabii lif olması"], "A", FN,
+    "Açıklama Notları, 57.03’teki tufte halıları 58.02’deki tufte mensucattan yer kaplaması olarak kullanılmaya elverişli kılan sertlik, kalınlık ve dayanıklılıkla ayırır. Tufte tabancasıyla veya elle yapılanlar da 57.03’tedir; zeminin türü, havın kesilip kesilmemesi ve lif cinsi pozisyonu değiştirmez.",
+    "57.03 ve 58.02 Açıklama Notları."),
+  # --- GYK (2)
+  S("Yere düşen kişiyi algılamak için basınç ve hareket sensörleri entegre edilmiş, esas karakterini halının verdiği tufte halı için aşağıdakilerden hangisi <b>doğrudur</b>?",
+    "Bölüm XI Not 15 uyarınca esas karakterini koruduğundan 57.03’te, GYK 1’e göre sınıflandırılır.",
+    ["Elektronik bileşen içerdiği için GYK 3(b) uyarınca esas niteliği veren sensörün faslında sınıflandırılır.",
+     "GYK 3(c) uyarınca numara sırasına göre sonuncu pozisyonda sınıflandırılır.",
+     "Sensörler ve halı ayrı ayrı sınıflandırılır; halı 57.03’te, sensörler kendi pozisyonlarında GYK 1’e göre yer alır.",
+     "GYK 2(a) uyarınca eksik bir alarm cihazı olarak sınıflandırılır."], "B", GY,
+    "Bölüm XI Not 15, ilave işlev için elektronik bileşen içeren tekstil eşyasının esas karakterini korudukça Bölüm XI’deki uygun pozisyonda kalacağını hükme bağlar; Genel Açıklamalar basınç veya hareket algılamalı halıyı örnek verir. Sonuç bir bölüm notundan çıktığı için GYK 1 uygulanır; GYK 3(b) veya 3(c)’ye gerek yoktur.",
+    "Bölüm XI Not 15; Bölüm XI Genel Açıklamalar (IV); 57.03 pozisyon metni; GYK 1."),
+  S("Kenarları bastırılmış, saçakları düğümlenmiş, kullanıma hazır makine dokuması Axminster halısının sınıflandırılmasıyla ilgili aşağıdakilerden hangisi <b>doğrudur</b>?",
+    "Pozisyon metni “hazır eşya halinde olsun olmasın” dediği için 57.02’de, GYK 1’e göre sınıflandırılır.",
+    ["Kenarları bastırılıp saçakları düğümlendiği için Bölüm XI Not 7 anlamında hazır eşya sayılır ve Fasıl 63’e gider.",
+     "GYK 2(a) uyarınca bitirilmiş eşya sayılarak 57.05’te sınıflandırılır.",
+     "GYK 3(a) uyarınca en özel tanımı içeren 58.01’de sınıflandırılır.",
+     "GYK 3(b) uyarınca esas niteliği veren lif cinsine göre 50–55. fasıllarda sınıflandırılır."], "E", GY,
+    "Bölüm XI Not 8(a), 56–59. fasılların metinde aksi belirtilmedikçe hazır eşyaya uygulanmayacağını söyler; Fasıl 57 pozisyonları ise hazır eşyayı açıkça kapsadığından halı Fasıl 63’e gitmez. Axminster halısı dokunmuş halı olarak 57.02’de, pozisyon metnine göre (GYK 1) sınıflandırılır.",
+    "Bölüm XI Not 8; 57.02 pozisyon metni ve Açıklama Notu (2); GYK 1."),
+  # --- Eşleştirme / Boşluk (2)
+  S("Aşağıdaki halı türü – pozisyon eşleştirmelerinden hangisi <b>yanlıştır</b>?",
+    "Sileh – 57.01",
+    ["Gördes düğümlü halı – 57.01", "Tufte çim – 57.03", "Keçe karo – 57.04", "Yapıştırılmış havlı halı – 57.05"], "C", ES,
+    "Sileh, sumak tekniğine benzer şekilde dokunan bir yer döşemesi olarak 57.02’dedir; düğümlü değildir. Gördes düğümlü halı 57.01, tufte çim 57.03, keçe karolar 57.04, yapıştırılmış havlı halılar 57.05 ile doğru eşleşmiştir.",
+    "57.01–57.05 Açıklama Notları."),
+  S("“Hav iplikleri çözgüye düğümlenmiş halılar ..... ; kilim, sumak ve karaman ..... ; tufte tabancasıyla yapılmış halılar ise ..... pozisyonunda sınıflandırılır.” Boşluklara sırasıyla gelmesi gerekenler hangisidir?",
+    "57.01 – 57.02 – 57.03",
+    ["57.01 – 58.05 – 57.03", "57.02 – 57.01 – 58.02", "57.01 – 57.02 – 58.02", "57.01 – 57.05 – 57.03"], "E", ES,
+    "Düğümlü halılar 57.01’de, kilim, sumak ve karaman 57.02’de, tufte tabancasıyla veya elle yapılmış tufte halılar 57.03’tedir. Kilimin 58.05’e, tufte halının 58.02’ye gönderilmesi en sık yapılan iki hatadır.",
+    "57.01, 57.02, 57.03 pozisyon metinleri ve Açıklama Notları."),
+  # --- Çoktan-çoğa (2)
+  SX("Aşağıdakilerden hangileri 57. fasılda sınıflandırılır? I. Masa örtüsü olarak kullanılmak üzere satılan, yer kaplaması özelliğindeki dokunmuş halı II. Halı ile zemin arasına konan bağımsız kaba mensucat taban örtüsü III. Örme usulüyle üretilmiş, kürk görünümlü döşemelik halı IV. Dokumaya elverişli mesnet üzerine kaplama maddesi tatbik edilerek elde edilen yer kaplaması",
+     ["I ve II", "I ve III", "II ve IV", "I, III ve IV", "II, III ve IV"], "B", CC,
+     "Yer kaplaması özelliği taşıyıp başka amaçla kullanılan halı (I) Not 1 gereği, örme ve kürk görünümlü döşemelik halı (III) 57.05 olarak Fasıl 57’dedir. Taban örtüsü (II) Not 2 ile hariçtir; tekstil mesnet üzerine kaplanan yer kaplaması (IV) 59.04’tedir.",
+     "Fasıl 57 Not 1 ve Not 2; Fasıl 57 Genel Açıklamalar; 57.05 Açıklama Notu."),
+  SX("57.02 Açıklama Notuna göre kilim ile ilgili aşağıdaki ifadelerden hangileri <b>doğrudur</b>? I. 58.05’teki el ile dokunmuş duvar halılarıyla aynı yöntemle elde edilir. II. Genellikle çiçek ve yaprak desenli olup düz çizgili desen taşımaz. III. Yüzü tersinden ayırt edilebilse de fark belirsiz olduğundan iki yüzü de kullanılabilir. IV. Bazen iki uzun şeridin birbirine dikilmesiyle elde edilir.",
+     ["I ve II", "I ve III", "II ve IV", "I, III ve IV", "II, III ve IV"], "D", CC,
+     "I, III ve IV Açıklama Notunda yer alır. II yanlıştır: kilimin çiçek veya yaprak deseni yoktur, daha çok düz çizgili deseni vardır. Kilim 58.05 tekniğiyle dokunsa da 57.02’dedir.",
+     "57.02 Açıklama Notu (7)."),
+  # --- Senaryo (2)
+  S("Bir firma; jüt ipliklerinden dokunmuş bir zemine tufte makinesinde naylon ipliklerin ilave edilmesiyle üretilmiş, ilmekleri lateks sıvamasıyla sabitlenmiş, ikinci bir jüt tabanla kaplanmış, top halinde ve yere serilmeye elverişli sertlikte yol halısı ithal etmektedir. Halı hangi pozisyondadır?",
+    "57.03", ["58.02", "57.02", "57.05", "53.10"], "A", SN,
+    "İğne ve kancayla ipliğin mevcut bir zemine ilave edilmesi tufte işlemidir; ilmeklerin kauçuk veya plastik sıvamayla sabitlenip ikinci bir tabanla kaplanması 57.03 Açıklama Notunda tarif edilen üretimdir. Yer kaplamasına elverişli olduğu için 58.02’ye gitmez; jüt zemin onu jüt mensucatı (53.10) yapmaz.",
+    "57.03 Açıklama Notu; 58.02 Açıklama Notu (B)."),
+  S("Bir dekorasyon firması; kanaviçe bezi üzerine yün ipliklerle küçük nokta tekniğinde iğneyle işlenmiş, zemini tamamen kaplanmış, tablo görünümlü bir pano ile aynı sevkiyatta Hindistan cevizi lifleri taban dokumasına tutturulmuş bir kapı paspası ithal etmektedir. Bu iki eşyanın pozisyonları sırasıyla hangisidir?",
+    "58.05 – 57.02",
+    ["57.01 – 57.02", "58.10 – 57.02", "58.05 – 53.11", "58.10 – 46.01"], "C", SN,
+    "Kanaviçe zeminin tamamen iğneyle doldurulduğu pano iğne işlemesi duvar halısıdır ve 58.05’tedir; 58.10’daki işlemelerden farklı olarak zeminin tamamı iğneyle işlenir. Koko liflerinden sert hav malzemesinin taban dokumasına tutturulduğu kapı paspası 57.02 Açıklama Notunda sayılmıştır; koko mensucat (53.11) veya hasır paspas (46.01) değildir.",
+    "58.05 Açıklama Notu (B); Fasıl 58 Not 6; 57.02 Açıklama Notu (5).")
+ ]
+}
+
+yaz(d, 57)

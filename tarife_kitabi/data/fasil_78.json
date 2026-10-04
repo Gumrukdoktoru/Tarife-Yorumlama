@@ -1,0 +1,610 @@
+{
+ "tur": "fasil",
+ "fasil": 78,
+ "baslik": "Kurşun ve kurşundan eşya",
+ "bolum": "XV",
+ "oz": {
+  "vurgu": "Fasıl 78’de kurşunun yeri işlenme derecesine göre belirlenir: işlenmemiş kurşun 78.01, döküntü ve hurda 78.02, yassı ürünler ile toz ve pullar 78.04, geri kalan her şey 78.06. Önce eşyanın kurşun sayılıp sayılmadığı (Bölüm XV Not 5 ve 7), sonra Bölüm XV Not 1 veya 82–83. Fasıllar tarafından dışarı alınıp alınmadığı kontrol edilir.",
+  "maddeler": [
+   "Kurşun alaşımı: kurşun ağırlıkça diğer metallerin her birinden fazla olmalıdır; kalay üstünse eşya Fasıl 80’e gider (Bölüm XV Not 5).",
+   "Çubuk, profil, tel, ince ve kalın boru ile boru bağlantı parçaları için ayrı pozisyon yoktur (78.03 ve 78.05 boş); hepsi 78.06’dadır.",
+   "Kurşun tozu ve ince pullar 78.01’de değil, yassı ürünlerle birlikte 78.04’tedir; boya olarak hazırlanmışsa Fasıl 32.",
+   "Cüruf, kül ve kurşun matı 26.20’de; kullanılmış akümülatörler ve akümülatör hurdaları 85.48’de; hurdadan yeniden eritilmiş külçe 78.01’dedir.",
+   "Mühimmat olarak hazırlanmış saçma (93.06), kurşun mühür ve kapsül (83.09), eritici kaplı lehim çubuğu (83.11) Fasıl 78 dışındadır."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+  "satirlar": [
+   [
+    "1",
+    "Kurşun cevheri veya zenginleştirilmiş cevher mi (galena gibi)?",
+    "<b>26.07</b>"
+   ],
+   [
+    "2",
+    "Kurşun imalinden kalan cüruf, kül veya kurşun matı mı?",
+    "<b>26.20</b>"
+   ],
+   [
+    "3",
+    "Kullanılmış akümülatör veya akümülatör döküntü-hurdası mı?",
+    "<b>85.48</b>"
+   ],
+   [
+    "4",
+    "Bölüm XV Not 1 veya Fasıl 82–83 tarafından ismen alınmış mı?",
+    "Mühimmat saçması <b>93.06</b> · mühür, kapsül <b>83.09</b> · eritici kaplı lehim çubuğu <b>83.11</b> · izoleli kablo <b>85.44</b>"
+   ],
+   [
+    "5",
+    "Ağırlıkça üstün metal kurşun mu?*",
+    "Hayır ise ilgili metalin faslı (ör. kalay üstünse Fasıl 80)"
+   ],
+   [
+    "6",
+    "Kesinlikle kullanılmaz halde kurşun döküntü veya hurda mı?",
+    "<b>78.02</b>"
+   ],
+   [
+    "7",
+    "Blok, külçe, pik, kek, döküm çubuğu veya arıtma için döküm anot mu (hurdadan eritilmiş külçe dahil)?",
+    "<b>78.01</b>"
+   ],
+   [
+    "8",
+    "Sac, levha, şerit, yaprak; ya da toz veya ince pul mu?",
+    "<b>78.04</b> (boya olarak hazırlanmışsa Fasıl 32)"
+   ],
+   [
+    "9",
+    "Hiçbiri değilse (çubuk, profil, tel, boru, bağlantı parçası, kap, ağırlık…)",
+    "<b>78.06</b>"
+   ]
+  ],
+  "dipnot": "* Alaşımda kurşun ağırlıkça diğer metallerin her birinden fazla olmalıdır (Bölüm XV Not 5); birden fazla adi metalden eşyada da ağırlıkça üstün metal esas alınır (Bölüm XV Not 7)."
+ },
+ "pozisyon_haritasi": [
+  [
+   "78.01",
+   "İşlenmemiş kurşun",
+   "Blok, külçe, pik, kek, döküm çubuğu; hurdadan eritilmiş külçe dahil; toz hariç",
+   "Rafine kurşun külçesi, elektrolitik arıtma için döküm anot"
+  ],
+  [
+   "78.02",
+   "Kurşun döküntü ve hurdaları",
+   "Tamamen metal döküntü veya kullanılmaz eşya; cüruf ve kül hariç",
+   "Kurşun kırpıntısı, kullanılmaz kurşun boru parçası"
+  ],
+  [
+   "78.04",
+   "Sac, levha, yaprak, şerit; toz ve ince pul",
+   "Bölüm XV Not 9(d) yassı ürün; Not 8(b) toz",
+   "Çatı kurşun levhası, X-ışını levhası, çay kutusu yaprağı, kurşun tozu"
+  ],
+  [
+   "78.06",
+   "Kurşundan diğer eşya",
+   "Artık pozisyon; çubuk, profil, tel, boru ve bağlantı parçaları dahil",
+   "Ağ ve perde ağırlığı, asit kabı, yat safrası, kurşun boru"
+  ]
+ ],
+ "notlar": [
+  [
+   "Bölüm XV Not 1",
+   "Bölüm dışı: metalik toz veya pul esaslı müstahzar boyalar ve mürekkepler (32.07–32.10, 32.12, 32.13, 32.15); ferro-seryum (36.06); 65.06/65.07 başlıkları; 66.03 şemsiye iskeletleri; Fasıl 71 eşyası; Bölüm XVI (makine, elektrikli cihaz); 86.08 demiryolu hatları ve Bölüm XVII; Bölüm XVIII (saat zemberekleri dahil); mühimmat olarak hazırlanmış kurşun saçma (93.06) ve Bölüm XIX; Fasıl 94, 95, 96 ve 97 eşyası."
+  ],
+  [
+   "Bölüm XV Not 2",
+   "Genel kullanıma mahsus aksam: 73.07, 73.12, 73.15, 73.17, 73.18 eşyası ve diğer adi metallerden benzerleri; yaylar (saat zemberekleri hariç); 83.01, 83.02, 83.08, 83.10 eşyası ile 83.06’daki çerçeve ve aynalar. 82 veya 83. Fasıl eşyası 72–76 ve 78–81. Fasıllara verilmez."
+  ],
+  [
+   "Bölüm XV Not 3",
+   "“Adi metaller”: demir ve çelik, bakır, nikel, alüminyum, <b>kurşun</b>, çinko, kalay ve Fasıl 81’deki metaller (tungsten, molibden, tantal, magnezyum, kobalt, bizmut, kadmiyum, titan, zirkonyum, antimon, manganez, berilyum, krom, germanyum, vanadyum, galyum, hafniyum, indiyum, niyobyum, renyum, talyum)."
+  ],
+  [
+   "Bölüm XV Not 5",
+   "Adi metal alaşımı, ağırlıkça diğer metallerin her birinden üstün olan metalin alaşımıdır. Bölüm XV metalleri ile Bölüm dışı elemanlardan oluşan alaşım, adi metallerin toplam ağırlığı diğer elemanların toplamına eşit veya fazlaysa Bölüm XV alaşımıdır. Sinterlenmiş karışımlar, eritmeyle elde edilen heterojen karışımlar (sermetler hariç) ve metallerarası bileşimler de alaşımdır."
+  ],
+  [
+   "Bölüm XV Not 7",
+   "İki veya daha fazla adi metal içeren eşya (pozisyon metninde aksine hüküm yoksa), ağırlıkça diğer metallerin her birinden üstün olan metalden mamul sayılır. Demir ve çelik tek metal sayılır; alaşımlar, Not 5’e göre alaşımı sayıldıkları metalden ibaret kabul edilir."
+  ],
+  [
+   "Bölüm XV Not 8",
+   "Döküntü ve hurda: tamamen metal döküntü ve hurdalar ile kırılma, kesilme, eskime vb. nedenlerle kesinlikle kullanılmaz haldeki metal eşya. Toz: göz açıklığı <b>1 mm</b> olan elekten ağırlıkça <b>%90 veya daha fazlası</b> geçen ürün."
+  ],
+  [
+   "Bölüm XV Not 9",
+   "74–76 ve 78–81. Fasıllarda: çubuk, enine kesiti her yerde aynı, <b>rulo halinde olmayan</b> içi dolu üründür; tel aynı özellikte fakat <b>rulo halindedir</b>; dikdörtgen kesitli çubuk ve tellerde kalınlık genişliğin onda birini geçer. Levha, sac, şerit ve yapraklarda kalınlık genişliğin onda birini <b>geçmez</b>. Boru: tek kapalı boşluklu, kesiti ve et kalınlığı her yerde aynı içi boş ürün."
+  ],
+  [
+   "Bölüm XV Genel Açıklamalar",
+   "Ayrıca Bölüm dışı: amalgamlar (28.53), dişçi dolguları (30.06), metalize iplikler (56.05), metal paralar (71.18), kullanılmış primer piller, bataryalar ve elektrik akümülatörleri ile bunların döküntü ve hurdaları (85.48), metal telden fırçalar (96.03)."
+  ],
+  [
+   "Genel Açıklamalar",
+   "Fasıl 78 kurşun ve alaşımlarını kapsar: kurşun-kalay (kurşun esaslı yumuşak lehimler), kurşun-antimon-kalay (matbaa harfi, yatak alaşımları), kurşun-arsenik (av saçması imali), kurşun-antimon (sert kurşun) alaşımları. Fasıl 72 Genel Açıklamalarında sayılan yüzey işlemleri sınıflandırmayı etkilemez."
+  ],
+  [
+   "78.01 Açıklama Notu",
+   "Her saflık derecesindeki işlenmemiş kurşun: blok, külçe, pik, kalın dilim, kek, dökme çubuk; elektrolitik arıtma için döküm anotlar ve haddeleme, çekme veya tekrar döküme mahsus döküm çubukları dahil. Toz ve ince pullar hariç (78.04)."
+  ],
+  [
+   "78.02 Açıklama Notu",
+   "72.04’ün hurda koşulları uygulanır. Kurşun imalinden kalan artıklar (kurşun matı gibi), cüruf ve küller 26.20’de; hurdanın yeniden eritilmesiyle elde edilen külçeler 78.01’dedir."
+  ],
+  [
+   "78.04 Açıklama Notu",
+   "Levha, sac ve şeritler çatı kaplamasında, kimya sanayii teknelerinde, X-ışını ekranlarında; yapraklar ambalajda (çay kutusu astarı) kullanılır. Boya olarak hazırlanmış toz ve pullar (bağlayıcı veya çözücü içinde süspansiyon, dispersiyon, pat) Fasıl 32’dedir."
+  ],
+  [
+   "78.06 Açıklama Notu",
+   "Örnekler: yumuşak tüpler; asit ve radyoaktif ürün kapları (mekanik veya termik tertibatsız); ağ, perde ve saat ağırlıkları, kontrpualar; kurşun lif çileleri; inşaat aksamı; yat safraları; dalgıç göğüslükleri; elektro kaplama anotları; çubuk, profil, tel; ince ve kalın borular ile bağlantı parçaları. Döküm çubukları 78.01’de, kaplanmış çubuklar 83.11’dedir."
+  ]
+ ],
+ "sinir_komsulari": [
+  [
+   "Kurşun cevheri (galena), zenginleştirilmiş kurşun cevheri",
+   "26.07",
+   "Cevherler Bölüm XV dışında"
+  ],
+  [
+   "Kurşun matı, kurşun cürufu ve külü",
+   "26.20",
+   "78.02 hariç tutması"
+  ],
+  [
+   "Kullanılmış kurşunlu akümülatör, akümülatör hurdası",
+   "85.48",
+   "Bölüm XV Genel Açıklamaları"
+  ],
+  [
+   "Kurşun tozu içeren hazır boya veya pat",
+   "Fasıl 32",
+   "Bölüm XV Not 1; 78.04 hariç tutması"
+  ],
+  [
+   "Mühimmat olarak hazırlanmış kurşun saçma",
+   "93.06",
+   "Bölüm XV Not 1"
+  ],
+  [
+   "Kurşun veya kalay sactan mühür, şarap şişesi kapsülü",
+   "83.09",
+   "Fasıl 83 eşyası Fasıl 78’e verilmez (Bölüm XV Not 2)"
+  ],
+  [
+   "Eritici madde ile kaplanmış kurşun esaslı lehim çubuğu",
+   "83.11",
+   "78.06 hariç tutması"
+  ],
+  [
+   "Kurşun kılıflı izoleli elektrik kablosu",
+   "85.44",
+   "Bölüm XVI eşyası (Bölüm XV Not 1)"
+  ],
+  [
+   "Kurşundan vana ve musluk",
+   "84.81",
+   "Bölüm XVI eşyası (Bölüm XV Not 1)"
+  ],
+  [
+   "Matbaa harfleri ve rakamları",
+   "84.42",
+   "83.10 Açıklama Notu hariç tutması"
+  ],
+  [
+   "Kalayın ağırlıkça üstün olduğu kalay-kurşun lehim veya sofra eşyası",
+   "Fasıl 80",
+   "Bölüm XV Not 5 ve 7"
+  ],
+  [
+   "Kurşunla kaplanmış çelik sac (genişliği 600 mm veya fazla)",
+   "72.10",
+   "Esas metal çeliktir; kaplama sınıflandırmayı değiştirmez"
+  ],
+  [
+   "Kurşundan oyuncak figür",
+   "Fasıl 95",
+   "Bölüm XV Not 1"
+  ]
+ ],
+ "tuzaklar": [
+  "<b>Kurşun boru için ayrı pozisyon yoktur.</b> 78.05 boştur; kurşundan ince ve kalın borular ile rakor, dirsek, manşon gibi bağlantı parçaları 78.06’dadır. Vana ve musluklar ise Bölüm XVI’ya (84.81) gider.",
+  "<b>Çubuk ve tel de 78.06’dadır.</b> 78.03 boştur. Ancak haddeleme veya yeniden döküm için döküm çubuğu 78.01’de, eritici madde ile kaplanmış çubuk 83.11’dedir.",
+  "<b>Toz 78.01’de değil, 78.04’tedir.</b> 1 mm elekten ağırlıkça %90 veya daha fazlası geçen kurşun tozu ve ince pullar yassı ürünlerle aynı pozisyondadır; bağlayıcı içinde boya haline getirilmişse Fasıl 32.",
+  "<b>Hurdadan eritilmiş külçe hurda değildir.</b> Döküntü ve hurdaların yeniden eritilmesiyle elde edilen külçe işlenmemiş kurşundur (78.01).",
+  "<b>Metal içeren her artık hurda sayılmaz.</b> Kurşun matı, cüruf ve kül 26.20’de; kullanılmış akümülatör ve akümülatör hurdası 85.48’dedir.",
+  "<b>İki anot, iki pozisyon.</b> Elektrolitik arıtma için dökülmüş anot işlenmemiş kurşundur (78.01); elektro kaplama anodu ise kurşundan eşyadır (78.06).",
+  "<b>Kurşundan olmak Fasıl 78 için yetmez.</b> Mühimmat saçması 93.06, mühür ve kapsül 83.09, izoleli kablo 85.44, oyuncak Fasıl 95’tedir.",
+  "<b>Alaşımda ağırlıkça üstün metal belirleyicidir.</b> Kurşun-kalay lehimde kalay ağırlıkça fazlaysa eşya Fasıl 80’e gider; antimon içermesi Fasıl 81’i getirmez.",
+  "<b>Levhadan yapılmış eşya levha değildir.</b> Kurşun levhalardan imal edilmiş asit tankı 78.04’te değil, 78.06’da sınıflandırılır."
+ ],
+ "hafiza": {
+  "kanca": "İŞ – HU – YA – Dİ (01 – 02 – 04 – 06)",
+  "aciklama": "<b>İŞ</b>lenmemiş 78.01 · <b>HU</b>rda 78.02 · <b>YA</b>ssı ürün ve toz 78.04 · <b>Dİ</b>ğer her şey 78.06. Tek sayılar boştur: 78.03 (çubuk-tel) ve 78.05 (boru) kaldırıldığı için bu ürünler “diğer eşya” sepetine, 78.06’ya düşer."
+ },
+ "sinav_odagi": [
+  "Fasıl 78 çıkmış sorularda doğrudan çok az sorulmuştur; daha çok Bölüm XV notlarının uygulandığı fasıllardan biri olarak ve seçeneklerde yer almıştır.",
+  "Bölüm XV Not 9 tanımları: “çubuk” ile “tel” arasındaki farkın rulo halinde olup olmama olduğu (tanım sorusu kalıbı).",
+  "Hangi adi metallerin kendine ait bir faslı olduğu: kurşun, çinko ve kalayın ayrı fasılları varken magnezyum, titanyum, krom gibi metallerin Fasıl 81’de toplanması.",
+  "“Aynı bölümde yer alan eşya” kalıbı: adi metalden eşyanın Bölüm XV’te, makine ve elektrikli cihazların Bölüm XVI’da olması.",
+  "Adi metal tanımı (Bölüm XV Not 3) ile kıymetli metal tanımının karıştırılması üzerine kurulan seçenekler."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Türk Gümrük Tarife Cetveli’nin XV. Bölüm Notlarına göre “çubuk” ve “tel” arasındaki farklılık nedir?",
+   "secenekler": [
+    "Enine kesitleri",
+    "Üretim yöntemleri",
+    "İçlerinin dolu-boş olması",
+    "Rulo halde olup olmaması",
+    "Mamul oldukları madde"
+   ],
+   "cevap": "D",
+   "aciklama": "Bölüm XV Not 9(a) ve (c)’ye göre her ikisi de enine kesiti tüm uzunluğu boyunca aynı olan içi dolu ürünlerdir; çubuk rulo halinde değildir, tel ise rulo halindedir. Kurşunda her ikisi de 78.06’da sınıflandırılır."
+  }
+ ],
+ "ozet": [
+  "Sıra: cevher 26.07 → işlenmemiş 78.01 → hurda 78.02 → yassı ürün ve toz 78.04 → geri kalan her şey 78.06.",
+  "78.03 ve 78.05 boştur: çubuk, profil, tel, boru ve bağlantı parçaları 78.06’dadır.",
+  "Toz: 1 mm elekten ağırlıkça %90 veya fazlası geçen ürün; kurşun tozu ve pulu 78.04, boya halinde Fasıl 32.",
+  "Kurşun alaşımı: kurşun ağırlıkça diğer her metalden fazla (Not 5); karma eşyada da üstün metal (Not 7).",
+  "Cüruf, kül, mat 26.20; akümülatör hurdası 85.48; hurdadan eritilmiş külçe 78.01.",
+  "Fasıl dışı: mühimmat saçması 93.06, mühür ve kapsül 83.09, kaplı lehim çubuğu 83.11, izoleli kablo 85.44."
+ ],
+ "sorular": [
+  {
+   "soru": "Tarife Cetveline göre, kurşun döküntü ve hurdalarının yeniden eritilmesiyle elde edilen ve haddelemede kullanılacak kurşun külçe hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "78.02",
+    "78.01",
+    "78.04",
+    "78.06",
+    "26.20"
+   ],
+   "cevap": "B",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "78.02 Açıklama Notu, kurşun döküntü ve hurdalarının yeniden eritilmesiyle elde edilen külçe ve benzeri işlenmemiş döküm biçimlerini hurda pozisyonundan açıkça çıkarır; bunlar işlenmemiş kurşun olarak 78.01’dedir. 78.02 yalnız döküntüleri ve kullanılmaz haldeki eşyayı, 26.20 ise cüruf ve külleri kapsar. Tuzak, “hurdadan elde edildi” bilgisini hurda pozisyonu sanmaktır.",
+   "dayanak": "78.02 Açıklama Notu; 78.01 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 78.06 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Balık ağlarına mahsus kurşun ağırlık",
+    "Yatlara mahsus kurşun safra",
+    "Boyaların ambalajında kullanılan kurşundan yumuşak tüp",
+    "Haddeleme veya yeniden döküm için kurşun döküm çubuğu",
+    "Dalgıçlara mahsus kurşun göğüslük"
+   ],
+   "cevap": "D",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Haddeleme, çekme veya tekrar döküm yoluyla eşya haline getirilmeye mahsus döküm çubukları işlenmemiş kurşun sayılır ve 78.01’dedir; 78.06 Açıklama Notu bunları açıkça hariç tutar. Ağ ağırlıkları, yat safraları, dalgıç göğüslükleri ve yumuşak tüpler 78.06’da sayılan örneklerdir.",
+   "dayanak": "78.06 Açıklama Notu; 78.01 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetvelinin XV. Bölüm notlarına göre “toz” tabiri aşağıdakilerden hangisini ifade eder?",
+   "secenekler": [
+    "Göz açıklığı 1 mm olan elekten ağırlıkça %90 veya daha fazlası geçen ürünler",
+    "Göz açıklığı 1 mm olan elekten ağırlıkça %90’dan azı, 5 mm olan elekten %90 veya daha fazlası geçen ürünler",
+    "Göz açıklığı 63 mikrometre olan elekten ağırlıkça en az %80’i geçen ürünler",
+    "Göz açıklığı 5 mm olan elekten ağırlıkça %90 veya daha fazlası geçen ürünler",
+    "Göz açıklığı 1 mm olan elekten ağırlıkça %50 veya daha fazlası geçen ürünler"
+   ],
+   "cevap": "A",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Bölüm XV Not 8(b)’ye göre toz, göz açıklığı 1 mm olan elekten ağırlıkça %90 veya daha fazlası geçen üründür. İkinci seçenek Fasıl 72’deki granül tanımı, üçüncüsü Fasıl 79 alt pozisyon notundaki çinkodan ince toz ölçütüdür. Bu tanım kurşun tozunun 78.04’teki yerini belirler.",
+   "dayanak": "Bölüm XV Not 8(b); Fasıl 72 Not 1(h)."
+  },
+  {
+   "soru": "Aşağıdaki kurşun eşyadan hangisi diğerlerinden <b>farklı</b> bir pozisyonda yer alır?",
+   "secenekler": [
+    "Kurşun tel",
+    "Kurşundan ince boru",
+    "Kurşun profil",
+    "Kurşun şerit",
+    "Kurşundan boru bağlantı rakoru"
+   ],
+   "cevap": "D",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Kurşun şerit Bölüm XV Not 9(d) anlamında yassı üründür ve 78.04’te yer alır. Tel, profil, boru ve boru bağlantı parçaları için ayrı pozisyon bulunmadığından (78.03 ve 78.05 boş) hepsi 78.06’dadır. Tuzak, tel ve şeridi aynı “yarı mamul” grubunda düşünmektir.",
+   "dayanak": "Bölüm XV Not 9; 78.04 ve 78.06 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetveline göre, Bölüm XV Not 9(e) tanımına uyan, kurşundan dikişsiz ince boru hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "78.04",
+    "73.04",
+    "84.81",
+    "78.06",
+    "78.01"
+   ],
+   "cevap": "D",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Kurşunda boru için ayrı pozisyon yoktur; Bölüm XV Not 9(e) tanımına uyan ince ve kalın kurşun borular ile bağlantı parçaları 78.06’da yer alır. 73.04 demir-çelik borulara, 84.81 musluk ve vanalara aittir; 78.04 yassı ürünleri, 78.01 işlenmemiş kurşunu kapsar.",
+   "dayanak": "Fasıl 78 Genel Açıklamalar; 78.06 Açıklama Notu; Bölüm XV Not 9(e)."
+  },
+  {
+   "soru": "Mühimmat olarak hazırlanmış kurşun saçmanın, kurşundan eşya olmasına rağmen Fasıl 78’de değil 93.06 pozisyonunda sınıflandırılması hangi Genel Yorum Kuralına dayanır?",
+   "secenekler": [
+    "GYK 2(a)",
+    "GYK 1 (Bölüm XV Not 1 ile birlikte)",
+    "GYK 2(b)",
+    "GYK 3(a)",
+    "GYK 3(c)"
+   ],
+   "cevap": "B",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 1’e göre sınıflandırma pozisyon metinlerine ve Bölüm veya Fasıl notlarına göre yapılır. Bölüm XV Not 1 mühimmat olarak hazırlanmış kurşun saçmayı açıkça Bölüm dışına çıkarıp 93.06’ya gönderdiğinden GYK 2 veya 3’e başvurmaya gerek kalmaz. 3(a) ve 3(c), eşya ilk bakışta iki pozisyona girebildiğinde ve notlar sorunu çözmediğinde kullanılır.",
+   "dayanak": "GYK 1; Bölüm XV Not 1."
+  },
+  {
+   "soru": "Fasıl 78 ile ilgili aşağıdaki ifadelerden hangileri <b>doğrudur</b>? I. Kurşun tozu 78.01 pozisyonunda yer alır. II. Kurşundan ince ve kalın borular 78.06 pozisyonunda yer alır. III. Kurşun döküntü ve hurdalarının yeniden eritilmesiyle elde edilen külçeler 78.02 pozisyonunda yer alır. IV. Elektrolitik arıtma için dökülmüş kurşun anotlar 78.01 pozisyonunda yer alır.",
+   "secenekler": [
+    "I ve II",
+    "II ve IV",
+    "I ve III",
+    "II, III ve IV",
+    "III ve IV"
+   ],
+   "cevap": "B",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "Kurşun tozu 78.01’den hariç tutulmuş olup 78.04’tedir (I yanlış). Borular 78.06’dadır (II doğru). Hurdanın yeniden eritilmesiyle elde edilen külçeler 78.02’den hariç tutulmuş, 78.01’e gönderilmiştir (III yanlış). Elektrolitik arıtma için döküm anotlar 78.01 kapsamındadır (IV doğru).",
+   "dayanak": "78.01, 78.02 ve 78.06 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 78. faslında <b>yer almaz</b>?",
+   "secenekler": [
+    "Kurşundan boru dirseği ve manşon",
+    "X-ışını ekranı yapımında kullanılan kurşun levha",
+    "Mühimmat olarak hazırlanmış kurşun saçma",
+    "Elektrolitik arıtma için dökülmüş kurşun anot",
+    "Kırılarak kesinlikle kullanılmaz hale gelmiş kurşun boru parçaları"
+   ],
+   "cevap": "C",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Bölüm XV Not 1, mühimmat olarak hazırlanmış kurşun saçmayı Bölüm dışına çıkarır (93.06). Boru dirsek ve manşonları 78.06’da, X-ışını levhası 78.04’te, döküm anot 78.01’de, kullanılmaz kurşun boru parçaları 78.02’dedir. Tuzak, eşyanın tamamen kurşundan olmasını yeterli saymaktır.",
+   "dayanak": "Bölüm XV Not 1; 78.01, 78.02, 78.04 ve 78.06 Açıklama Notları."
+  },
+  {
+   "soru": "Ağırlıkça %55 kurşun, %40 kalay ve %5 antimon içeren, külçe halindeki yumuşak lehim alaşımı Tarife Cetvelinde hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "80.01",
+    "78.01",
+    "81.10",
+    "78.06",
+    "83.11"
+   ],
+   "cevap": "B",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Bölüm XV Not 5’e göre adi metal alaşımı, ağırlıkça diğer metallerin her birinden üstün olan metalin alaşımıdır; burada kurşun (%55) kalaydan ve antimondan fazladır. Külçe halindeki işlenmemiş kurşun alaşımı 78.01’dedir. Kalay üstün olsaydı 80.01; eritici madde ile kaplanmış çubuk olsaydı 83.11 söz konusu olurdu.",
+   "dayanak": "Bölüm XV Not 5 ve Not 6; 78.01 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre kurşundan çubuk, profil ve teller …… pozisyonunda; kurşun sac ve yapraklar …… pozisyonunda; kurşun imalinden kalan cüruf ve küller ise …… pozisyonunda sınıflandırılır. Boşluklara sırasıyla hangisi gelmelidir?",
+   "secenekler": [
+    "78.03 – 78.04 – 78.02",
+    "78.06 – 78.05 – 26.20",
+    "78.01 – 78.04 – 78.02",
+    "78.06 – 78.04 – 26.20",
+    "78.04 – 78.06 – 26.07"
+   ],
+   "cevap": "D",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Çubuk, profil ve teller için eski 78.03 pozisyonu boştur; bunlar 78.06’dadır. Sac, levha, şerit ve yapraklar 78.04’te; kurşun imalinden kalan cüruf ve küller 78.02 hariç tutması uyarınca 26.20’dedir. 78.05 de boş bir pozisyondur; 26.07 cevherleri kapsar.",
+   "dayanak": "78.02, 78.04 ve 78.06 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetveline göre, göz açıklığı 1 mm olan elekten ağırlıkça %95’i geçen, herhangi bir bağlayıcı veya çözücü içermeyen kurşun tozu hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "78.01",
+    "32.12",
+    "78.04",
+    "78.06",
+    "26.20"
+   ],
+   "cevap": "C",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Göz açıklığı 1 mm olan elekten ağırlıkça %90 veya daha fazlası geçen ürün Bölüm XV Not 8(b) anlamında tozdur; kurşun tozu ve ince pullar 78.04’te yer alır. 78.01 Açıklama Notu tozu işlenmemiş kurşundan açıkça hariç tutar. Bağlayıcı veya çözücü içinde hazırlanmış olsaydı boya olarak Fasıl 32’ye giderdi.",
+   "dayanak": "Bölüm XV Not 8(b); 78.01 ve 78.04 Açıklama Notları."
+  },
+  {
+   "soru": "Bir firma ağırlıkça %97 kurşun ve %3 antimon içeren bir ürün ithal etmektedir. Ürün haddeleme ile elde edilmiş, rulo halinde sarılmış, enine kesiti tüm uzunluğu boyunca aynı ve daire şeklinde, içi dolu bir üründür; üzeri herhangi bir eritici madde ile kaplanmamıştır. Ürün hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "78.01",
+    "78.04",
+    "81.10",
+    "83.11",
+    "78.06"
+   ],
+   "cevap": "E",
+   "tip": "Senaryo",
+   "gerekce": "Kurşun ağırlıkça üstün olduğundan ürün kurşun alaşımıdır (Bölüm XV Not 5); antimon 81.10’u getirmez. Rulo halinde, kesiti sabit ve içi dolu haddelenmiş ürün Bölüm XV Not 9(c) anlamında teldir; kurşun teller için ayrı pozisyon olmadığından 78.06’dadır. Eritici kaplama olmadığı için 83.11 söz konusu değildir; 78.01 işlenmemiş kurşun, 78.04 yassı ürünler içindir.",
+   "dayanak": "Bölüm XV Not 5 ve Not 9(c); 78.06 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden <b>farklı</b> bir fasılda yer alır?",
+   "secenekler": [
+    "Kurşundan perde ağırlığı",
+    "Kurşun yaprak",
+    "Ambalaj sandıklarını mühürlemeye mahsus kurşun mühür",
+    "Kurşun tozu",
+    "Kurşundan saat ağırlığı"
+   ],
+   "cevap": "C",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Ambalaj sandıkları, paketler ve vagonlar için genellikle kurşun veya kalay sactan yapılan mühürler 83.09’da sayılmıştır; Bölüm XV Not 2 son paragrafı uyarınca 83. Fasıl eşyası 78. Fasla verilmez. Perde ve saat ağırlıkları 78.06’da, yaprak ve toz 78.04’te, yani Fasıl 78’dedir.",
+   "dayanak": "83.09 Açıklama Notu; Bölüm XV Not 2; 78.04 ve 78.06 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 78.02 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Kurşun levhaların kesilmesi sırasında ortaya çıkan kurşun kırpıntıları",
+    "Kullanılmış elektrik akümülatörleri ve bunların döküntü ve hurdaları",
+    "Eskime nedeniyle kesinlikle kullanılmaz hale gelmiş kurşun çatı levhaları",
+    "Kurşun eşyanın tornalanmasından kalan kurşun talaşı",
+    "Kırılarak kullanılmaz hale gelmiş kurşun ağırlıklar"
+   ],
+   "cevap": "B",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Bölüm XV Genel Açıklamalarına göre primer pil, batarya ve elektrik akümülatörlerinin döküntü ve hurdaları ile kullanılmış akümülatörler Bölüm XV dışında, 85.48’dedir. Diğer seçenekler Bölüm XV Not 8(a) anlamında tamamen metal döküntü veya kesinlikle kullanılmaz haldeki kurşun eşyadır ve 78.02’de yer alır.",
+   "dayanak": "Bölüm XV Not 8(a); Bölüm XV Genel Açıklamalar (hariç tutmalar)."
+  },
+  {
+   "soru": "Bölüm XV Not 9’a göre, dikdörtgen biçimindeki yassı bir kurşun ürünün “levha, sac, şerit veya yaprak” sayılabilmesi için kalınlık ile genişlik arasında hangi ilişki aranır?",
+   "secenekler": [
+    "Kalınlık genişliğin onda birini geçmelidir",
+    "Genişlik kalınlığın en az iki katı olmalıdır",
+    "Kalınlık genişliğin onda birini geçmemelidir",
+    "Kalınlık 0,2 mm’yi geçmemelidir",
+    "Genişlik 600 mm veya daha fazla olmalıdır"
+   ],
+   "cevap": "C",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Bölüm XV Not 9(d)’ye göre dikdörtgen (kare dahil) şeklindeki yassı ürünlerde kalınlık genişliğin onda birini geçmez. Kalınlığın genişliğin onda birini geçmesi, dikdörtgen kesitli çubuk ve tellerin ölçütüdür. “Genişlik kalınlığın iki katı” ve “600 mm” Fasıl 72’nin demir-çelik yassı ürün ölçütleridir; 0,2 mm ise yalnız alt ayrımda kullanılan bir eşiktir.",
+   "dayanak": "Bölüm XV Not 9(a), (c) ve (d); Fasıl 72 Not 1(k)."
+  },
+  {
+   "soru": "Tarife Cetveline göre, çay kutularının astarlanmasında kullanılan mesnetsiz kurşun yaprak hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "78.04",
+    "78.06",
+    "48.11",
+    "76.07",
+    "83.09"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Kurşun yapraklar Bölüm XV Not 9(d) tanımındaki yassı ürünlerdir ve 78.04’te yer alır; Açıklama Notu bunların özellikle çay kutularının astarlanmasında kullanıldığını belirtir. 76.07 alüminyum yaprak, 48.11 kağıt pozisyonudur. 83.09’daki kurşun veya kalay yapraktan kapsüller ise şişe ağzı için şekillendirilmiş eşyadır.",
+   "dayanak": "78.04 Açıklama Notu; Bölüm XV Not 9(d); 83.09 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi GYK 2(a) uyarınca “son şeklini almamış eşya” olarak, bitmiş eşya gibi 78.06 pozisyonunda sınıflandırılır?",
+   "secenekler": [
+    "Herhangi bir eşyaya şekil verilmemiş kurşun külçe",
+    "Kesinlikle kullanılmaz halde kurşun hurdası",
+    "Göz açıklığı 1 mm elekten tamamı geçen kurşun tozu",
+    "Rulo halinde kurşun tel",
+    "Yaklaşık şekli verilmiş, yalnızca çapak alma ve delik açma ile balık ağı ağırlığına tamamlanacak kurşun döküm taslağı"
+   ],
+   "cevap": "E",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 2(a) Açıklama Notuna göre son şeklini almamış eşya, bitmiş eşyanın yaklaşık şekline sahip olan ve yalnız onun tamamlanmasında kullanılabilen eşyadır; ağ ağırlığı taslağı bu tanıma uyar ve 78.06’da bitmiş ağırlık gibi sınıflandırılır. Esas şeklini almamış yarı mamuller (tel, çubuk) bu kapsamda sayılmaz; tel zaten kendi tanımıyla 78.06’dadır. Külçe 78.01, hurda 78.02, toz 78.04’tedir.",
+   "dayanak": "GYK 2(a) ve Açıklama Notu (II); 78.06 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdaki eşya çiftlerinden hangisinde her iki eşya da Tarife Cetvelinde <b>aynı</b> pozisyonda yer alır?",
+   "secenekler": [
+    "Kurşun tozu – kurşundan ince pullar",
+    "Kurşun döküm çubuğu – haddelenmiş kurşun çubuk",
+    "Kurşun hurdası – hurdadan eritilmiş kurşun külçe",
+    "Kurşun levha – kurşundan ince boru",
+    "Kurşun cürufu – kurşun hurdası"
+   ],
+   "cevap": "A",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Kurşun tozu ve ince pullar birlikte 78.04’tedir. Döküm çubuğu 78.01, haddelenmiş çubuk 78.06; hurda 78.02, hurdadan eritilmiş külçe 78.01; levha 78.04, boru 78.06; cüruf 26.20, hurda 78.02’dedir.",
+   "dayanak": "78.01, 78.02, 78.04 ve 78.06 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdaki eşya ile pozisyonları eşleştirildiğinde hangisi <b>doğru</b> olur? I. Kurşun matı II. Kurşun hurdalarının yeniden eritilmesiyle elde edilen külçe III. Kurşundan ince pullar IV. Kurşundan boru dirseği a) 78.01 b) 78.04 c) 78.06 d) 26.20",
+   "secenekler": [
+    "I-d, II-a, III-b, IV-c",
+    "I-a, II-d, III-b, IV-c",
+    "I-d, II-a, III-c, IV-b",
+    "I-b, II-a, III-d, IV-c",
+    "I-d, II-b, III-a, IV-c"
+   ],
+   "cevap": "A",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Kurşun matı ve benzeri artıklar 78.02 hariç tutması uyarınca 26.20’de; hurdadan eritilmiş külçe işlenmemiş kurşun olarak 78.01’de; ince pullar tozlarla birlikte 78.04’te; boru bağlantı parçaları 78.06’dadır.",
+   "dayanak": "78.01, 78.02, 78.04 ve 78.06 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetveline göre, kurşun imalinden meydana gelen kurşun matı ve cüruf hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "78.01",
+    "78.02",
+    "26.07",
+    "78.04",
+    "26.20"
+   ],
+   "cevap": "E",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "78.02 Açıklama Notu, kurşun imalinden meydana gelen artıkları (kurşun matı gibi), cüruf ve külleri hurda pozisyonundan çıkararak 26.20’ye gönderir. 26.07 kurşun cevherlerini, 78.02 metal döküntü ve hurdalarını kapsar. Tuzak, metal içeren her artığı hurda saymaktır.",
+   "dayanak": "78.02 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdaki kurşun ürünlerinden hangisi 78.04 pozisyonunda <b>yer almaz</b>?",
+   "secenekler": [
+    "Çatı kaplamasında kullanılan kurşun sac",
+    "Çay kutularının astarlanmasında kullanılan kurşun yaprak",
+    "Kurşundan ince pullar",
+    "Kimya sanayii teknelerinin yapımında kullanılan kurşun levha",
+    "Bağlayıcı bir madde içinde pat haline getirilmiş kurşun tozu"
+   ],
+   "cevap": "E",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "78.04 kurşun tozu ve ince pulları kapsar; ancak boya olarak hazırlanmış, yani bağlayıcı veya çözücü içinde süspansiyon, dispersiyon ya da pat haline getirilmiş olanlar Fasıl 32’dedir (Bölüm XV Not 1). Sac, yaprak, levha ve ince pullar 78.04’te kalır.",
+   "dayanak": "78.04 Açıklama Notu; Bölüm XV Not 1."
+  },
+  {
+   "soru": "Ağırlıkça %70 kurşun ve %30 demirden oluşan, genel kullanıma mahsus bir denge ağırlığı (kontrpua), Bölüm XV Not 7 dikkate alındığında hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "73.26",
+    "78.01",
+    "83.06",
+    "78.06",
+    "73.25"
+   ],
+   "cevap": "D",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Bölüm XV Not 7’ye göre iki veya daha fazla adi metal içeren eşya, ağırlıkça diğerlerinin her birinden üstün olan metalden mamul sayılır; burada kurşun üstündür. 78.06 Açıklama Notu genel kullanıma mahsus ağırlıkları (kontrpualar) açıkça sayar. 73.25 ve 73.26 demir-çelik eşya, 83.06 süs eşyası, 78.01 işlenmemiş kurşun pozisyonudur.",
+   "dayanak": "Bölüm XV Not 7; 78.06 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden <b>farklı</b> bir bölümde yer alır?",
+   "secenekler": [
+    "Kurşun levha",
+    "Kurşundan radyoaktif madde kabı",
+    "Eritici madde ile kaplanmış kurşun esaslı lehim çubuğu",
+    "Kurşun döküntü ve hurdası",
+    "Kurşun kılıflı izoleli elektrik kablosu"
+   ],
+   "cevap": "E",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Kurşun kılıflı izoleli elektrik kabloları 85.44’te, yani Bölüm XVI’dadır; Bölüm XV Not 1 Bölüm XVI eşyasını hariç tutar. Eritici kaplı lehim çubuğu Fasıl 78 dışına (83.11) çıksa da Bölüm XV içinde kalır; tuzak budur. Levha, kap ve hurda Fasıl 78’dedir.",
+   "dayanak": "Bölüm XV Not 1; 78.06 Açıklama Notu; 83.11 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdaki eşyadan hangileri Fasıl 78 <b>dışında</b> sınıflandırılır? I. Kurşun kılıflı izoleli elektrik kablosu II. Kurşundan perde ağırlığı III. Eritici madde ile kaplanmış kurşun esaslı lehim çubuğu IV. Mesnetsiz kurşun yaprak",
+   "secenekler": [
+    "I ve III",
+    "II ve IV",
+    "I, II ve III",
+    "Yalnız I",
+    "I, III ve IV"
+   ],
+   "cevap": "A",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "Kurşun kılıflı izoleli kablo 85.44’te (Bölüm XV Not 1), eritici madde ile kaplanmış lehim çubuğu 83.11’dedir; Bölüm XV Not 2 son paragrafı Fasıl 83 eşyasının Fasıl 78’e verilmesini engeller. Perde ağırlığı 78.06’da, yaprak 78.04’te kalır.",
+   "dayanak": "Bölüm XV Not 1 ve Not 2; 78.06 ve 83.11 Açıklama Notları."
+  },
+  {
+   "soru": "Kimya tesisinde sülfürik asit depolamak için kullanılacak, kurşun levhalardan imal edilmiş bir tank gümrüğe sunulmuştur. Tankın ağırlıkça %80’i kurşun, %20’si çelik destek çemberlerinden oluşmaktadır; tankta mekanik veya termik tertibat bulunmamaktadır. Tank hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "73.09",
+    "78.04",
+    "78.06",
+    "73.26",
+    "83.03"
+   ],
+   "cevap": "C",
+   "tip": "Senaryo",
+   "gerekce": "Bölüm XV Not 7 uyarınca eşya ağırlıkça üstün metal olan kurşundan mamul sayılır. 78.06 Açıklama Notu asit ve diğer kimyasal maddeler için mekanik veya termik tertibatı olmayan kurşun depoları açıkça sayar. Kurşun levhalardan yapılmış olması onu 78.04’e götürmez; levha artık eşyaya dönüşmüştür. 73.09 ve 73.26 demir-çelik eşya, 83.03 kasalar içindir.",
+   "dayanak": "Bölüm XV Not 7; 78.06 Açıklama Notu."
+  }
+ ]
+}

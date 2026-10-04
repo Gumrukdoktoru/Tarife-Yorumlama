@@ -1,0 +1,653 @@
+{
+ "tur": "fasil",
+ "fasil": 94,
+ "baslik": "Mobilyalar, tıpta ve cerrahide kullanılan mobilyalar, yatak takımları ve benzeri doldurulmuş eşya; tarifenin başka yerinde belirtilmeyen veya yer almayan aydınlatma cihazları; reklam lambaları, ışıklı tabelalar, ışıklı isim plakaları ve benzerleri; prefabrik yapılar",
+ "bolum": "XX",
+ "oz": {
+  "vurgu": "Fasıl 94 dört aileden oluşur: mobilya (94.01 oturma, 94.02 tıbbi ve berber, 94.03 diğer), doldurulmuş yatak takımı (94.04), başka yerde yer almayan aydınlatma cihazları ve sabit ışık kaynaklı ışıklı tabelalar (94.05), prefabrik yapılar (94.06). Mobilyada ilk test Not 2’dir: eşya zemine konularak kullanılmak üzere mi yapılmış? Değilse yalnızca dolap, raf ve ünite mobilyalar ile yataklar ve oturma mobilyaları asılarak veya duvara tutturularak da mobilya sayılır. Bölüm XX’nin bölüm notu yoktur.",
+  "maddeler": [
+   "Mobilya her maddeden olabilir (ahşap, metal, plastik, cam, taş, hasır); ancak küçük süslerden fazla kıymetli metal içeren mobilya Fasıl 71’e gider. Demonte mobilya, bütün parçaları birlikte gelirse monte edilmiş gibi sınıflandırılır.",
+   "Aksam ve parçalar yalnızca 94.01–94.03 ve 94.05 eşyası için bu fasıldadır. Diğer parçalarla birleşmemiş cam, ayna, mermer ve taş levhalar (Not 3(A)) ile ayrı gelen yastık ve şilteler (Not 3(B) → 94.04) mobilya parçası sayılmaz.",
+   "94.04 yaylı, içi doldurulmuş veya gözenekli kauçuk-plastikten yatak takımını kapsar; hava veya su ile şişirilen şilte ve yastıklar (Fasıl 39, 40, 63), battaniyeler (63.01) ve yastık kılıfları (63.02) dışarıdadır.",
+   "94.05 her maddeden ve her ışık kaynağıyla (mum, gaz, petrol, elektrik) çalışan lambaları kapsar; ampul ve LED ışık kaynakları 85.39’da, taşıt ve bisiklet lambaları 85.12’de, kendi enerjisiyle çalışan portatif lambalar 85.13’te, mumlar 34.06’dadır.",
+   "94.06 fabrikada imal edilip tamamlanmış veya mahallinde monte edilmek üzere parçalar halinde getirilen yapılar ile çelikten modüler yapı birimlerini kapsar; kalıcı şasili mobil evler Fasıl 87’dedir."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+  "satirlar": [
+   [
+    "1",
+    "Not 1’de hariç tutulan eşya mı? (şişme şilte, yere konan ayna, kasa, buzdolabı veya dikiş makinesi mobilyası, dişçi cihazlı koltuk, oyuncak, bilardo masası, tripod, saat)",
+    "Fasıl 39 / 40 / 63 · <b>70.09</b> · <b>83.03</b> · <b>84.18</b> · <b>84.52</b> · <b>90.18</b> · Fasıl 95 · <b>96.20</b> · Fasıl 91"
+   ],
+   [
+    "2",
+    "Prefabrik yapı veya çelik modüler yapı birimi mi?",
+    "<b>94.06</b> (kalıcı şasili mobil ev Fasıl 87)"
+   ],
+   [
+    "3",
+    "Lamba, aydınlatma cihazı, projektör ya da sabit ışık kaynaklı ışıklı tabela mı?",
+    "<b>94.05</b> (ampul, LED kaynağı <b>85.39</b> · taşıt lambası <b>85.12</b> · pilli el lambası <b>85.13</b>)"
+   ],
+   [
+    "4",
+    "Şilte mesnedi ya da yaylı, doldurulmuş veya gözenekli kauçuk-plastik yatak takımı mı?",
+    "<b>94.04</b> (şişme olanlar Fasıl 39, 40, 63)"
+   ],
+   [
+    "5",
+    "Zemine konularak kullanılan eşya mı? Değilse dolap, raf, ünite mobilya, yatak veya oturma mobilyası mı?",
+    "Evet → mobilya, 6. satıra geçin · Hayır → maddesine göre"
+   ],
+   [
+    "6",
+    "Tıp, cerrahi, dişçilik, veterinerlik için özel düzenlenmiş mobilya ya da döner, yükselir, yatar berber koltuğu mu?",
+    "<b>94.02</b> (radyoloji masası <b>90.22</b>)"
+   ],
+   [
+    "7",
+    "Oturmaya mahsus mobilya mı? (yatağa dönüşen dahil)",
+    "<b>94.01</b>"
+   ],
+   [
+    "8",
+    "Diğer mobilya mı? (masa, dolap, karyola, büro, okul, laboratuvar, mağaza mobilyası)",
+    "<b>94.03</b>*"
+   ]
+  ],
+  "dipnot": "* Aksam ve parçalar ait oldukları eşyanın pozisyonunda kalır (94.01, 94.02, 94.03, 94.05). Prefabrik yapıların ayrı gelen parçaları ise her durumda kendi pozisyonlarına gider."
+ },
+ "pozisyon_haritasi": [
+  [
+   "94.01",
+   "Oturmaya mahsus mobilyalar ve parçaları",
+   "Oturma işlevi; yatağa dönüşen dahil; 94.02 hariç",
+   "Koltuk, çekyat, döner sandalye, taşıt koltuğu, piyano taburesi"
+  ],
+  [
+   "94.02",
+   "Tıbbi, cerrahi, dişçi, veteriner mobilyası; berber koltuğu",
+   "Bu amaçla özel düzenlenmiş olmak",
+   "Ameliyat masası, mekanik hasta karyolası, dişçi koltuğu, berber koltuğu"
+  ],
+  [
+   "94.03",
+   "Diğer mobilyalar ve parçaları",
+   "94.01 ve 94.02 dışındaki her mobilya",
+   "Masa, dolap, kitaplık, karyola, beşik, okul sırası, çeker ocak"
+  ],
+  [
+   "94.04",
+   "Şilte mesnetleri, yatak takımı ve benzeri",
+   "Yaylı, doldurulmuş veya gözenekli kauçuk-plastik",
+   "Somya, yaylı yatak, yorgan, yastık, puf, uyku tulumu"
+  ],
+  [
+   "94.05",
+   "Aydınlatma cihazları; ışıklı tabelalar",
+   "Başka yerde yer almayan; her madde, her ışık kaynağı; tabelada sabit ışık kaynağı",
+   "Avize, sokak lambası, gaz lambası, şamdan, projektör, elektrikli çelenk"
+  ],
+  [
+   "94.06",
+   "Prefabrik yapılar",
+   "Fabrikada imal; tamamlanmış veya parça halinde",
+   "Prefabrik ev, şantiye barakası, sera, çelik modüler yapı birimi"
+  ]
+ ],
+ "notlar": [
+  [
+   "Fasıl 94 Not 1",
+   "Fasıl dışı: hava veya su ile şişirilen şilte, yastık ve minderler (Fasıl 39, 40, 63); zemine yerleştirilmek üzere tasarlanmış aynalar, boy aynası gibi (70.09); Fasıl 71 eşyası; Bölüm XV Not 2’deki genel kullanıma mahsus adi metal parçalar, plastikten benzerleri (Fasıl 39) ve 83.03’teki kasalar; 84.18’deki soğutucu-dondurucu teçhizatın aksamı olarak özel tasarlanmış mobilyalar; dikiş makineleri için özel tasarlanmış mobilyalar (84.52)."
+  ],
+  [
+   "Fasıl 94 Not 1 (devam)",
+   "Fasıl 85’teki ampul veya ışık kaynakları ve parçaları; 85.18, 85.19–85.21 ve 85.25–85.28 cihazlarının parçası olarak özel imal edilmiş mobilyalar (85.18, 85.22, 85.29); 87.14 eşyası; 90.18 dişçilik cihazlarıyla birleştirilmiş dişçi koltukları ve dişçi tükürük hokkaları (90.18); Fasıl 91 eşyası (saatler ve saat mahfazaları); oyuncak mobilya ve lambalar (95.03), bilardo ve oyun mobilyası (95.04), sihirbazlık ve dekorasyon eşyası, elektrikli çelenkler hariç (95.05); monopod, bipod, tripod (96.20)."
+  ],
+  [
+   "Fasıl 94 Not 2",
+   "94.01–94.03’teki eşya (aksam ve parçalar hariç) yalnızca <b>zemin veya döşeme üzerinde</b> kullanılmak üzere üretilmişse bu pozisyonlara girer. Asılarak, duvara tutturularak veya üst üste konularak kullanılsa dahi şunlar mobilyadır: dolaplar, kitap dolapları, diğer raflı mobilyalar (duvara sabitlenmek için destekleriyle tek kat raflar dahil) ve ünite mobilyalar; yataklar ve oturmaya mahsus mobilyalar."
+  ],
+  [
+   "Fasıl 94 Not 3",
+   "(A) 94.01–94.03’teki aksam ve parça atıfları; camdan (aynalar dahil), mermerden, diğer taşlardan veya Fasıl 68–69 maddelerinden levha ve plakaları (şekil verilerek kesilmiş olsun olmasın, fakat diğer parçalarla birleşik olmayan) kapsamaz. (B) 94.04’teki eşya ayrı getirildiğinde 94.01, 94.02 veya 94.03’te aksam ve parça olarak sınıflandırılmaz."
+  ],
+  [
+   "Fasıl 94 Not 4",
+   "“Prefabrik yapılar”: fabrikada imalatı tamamlanmış veya mahallinde monte edilmek üzere parçalar halinde bir araya getirilmiş ev, şantiye, büro, okul, dükkan, hangar, garaj vb. yapılar. Normalde standart nakliye konteyneri boyutunda ve şeklinde sunulan, büyük ölçüde veya tamamen içten donatılmış çelik “modüler yapı birimleri” de dahildir; bunlar kalıcı binalar oluşturmak üzere birleştirilmek için tasarlanır."
+  ],
+  [
+   "Genel Açıklamalar (mobilya tanımı)",
+   "Mobilya: esas karakteri itibariyle zemine konularak kullanılan ve evler, oteller, bürolar, okullar, ibadethaneler, hastaneler, laboratuvarlar ile gemi, uçak, vagon, otomobil, karavan gibi taşıtların donatılmasında kullanılan taşınabilir eşya. Yere tespit edilecek şekilde tasarlananlar (gemi koltukları gibi) da taşınabilir sayılır; bahçe ve park koltukları da dahildir."
+  ],
+  [
+   "Genel Açıklamalar (mobilya değil)",
+   "Diğer mobilya veya raflar üzerine konulan ya da duvara, tavana asılan eşya (Not 2 istisnaları dışında) mobilya değildir: palto ve şapka askılıkları, anahtar askılıkları, elbise fırçası askılıkları, gazete ve dergi rafları, radyatör kafesleri; camlı küçük dolapçıklar, küçük ahşap eşya (44.20), tasnif kutuları ve kağıt tablaları (39.26, 83.04). Prefabrik yapıyla birlikte gelen ve onun parçası olan gömme dolap, radyatör kafesi gibi eşya ise yapıyla 94.06’dadır."
+  ],
+  [
+   "Genel Açıklamalar (madde, demonte)",
+   "94.01–94.03 her maddeden mobilyayı kapsar; doldurulmuş, kaplanmış, oyulmuş, kakmalı, aynalı veya tekerlekli olabilir. Monogram, şerit gibi küçük parçalardan fazla kıymetli metal içeren mobilya Fasıl 71’dedir. Monte edilmemiş mobilya, bütün aksamı birlikte gelirse monte edilmiş gibi sınıflandırılır (üzeri camlı masa, aynalı gardırop, mermer tablalı büfe dahil)."
+  ],
+  [
+   "Genel Açıklamalar (aksam)",
+   "Fasıl yalnızca 94.01–94.03 ve 94.05 eşyasına ait olduğu şekli veya özellikleriyle anlaşılan aksam ve parçaları (taslak dahil) kapsar. 94.06 yapılarının ayrı gelen parçaları kendi pozisyonlarına gider. Hariç: kornişli ağaç (44.09); mobilya parçası için U şeklinde katlanmış kaplı yonga levha şeritleri (44.10); birleşik olmayan cam, ayna, mermer levhalar; yaylar, kilitler ve genel kullanıma mahsus diğer parçalar (Bölüm XV, Fasıl 39)."
+  ],
+  [
+   "94.01 Açıklama Notu",
+   "Koltuk, sandalye, şezlong, bank, divan, kanepe, tabure (piyano, ressam taburesi dahil), diğer koltukların arkasına asılan çocuk oturakları (taşıt koltuğuna asılanlar dahil); ses sistemli oyun koltukları; çekyatlar. Oyuncak bileşeni, titreşim, müzik çalar, aydınlatma gibi tamamlayıcı unsurlar içerebilir. Hariç: basamaklar (44.21, 73.26), iskemle bastonlar (66.02), 87.14 eşyası (seleler), refleks testi koltukları (90.19), 94.02 koltukları, ayak dinlendirme tabureleri, bebek yürüteçleri ve oturak işlevli sandıklar (94.03)."
+  ],
+  [
+   "94.01 Açıklama Notu (parçalar)",
+   "Arkalık, kaide, kol dayama yeri, döşeme için birleştirilmiş spiral yaylar ve kalıcı olarak birleştirilmiş kılıflar 94.01’dedir. Döşenmiş koltukların parçası olduğu anlaşılsa bile ayrı gelen yaylı, doldurulmuş veya gözenekli kauçuk-plastik minder ve şilteler 94.04’tedir; diğer koltuk parçalarıyla birleşik veya ait oldukları koltukla birlikte gelirlerse 94.01’de kalır."
+  ],
+  [
+   "94.02 Açıklama Notu",
+   "Ameliyat ve muayene masaları, hayvan teşrih masaları, doğum karyolaları, mekanik tertibatlı veya mafsallı hasta karyolaları, hastane içi sedyeler, tıbbi malzeme masaları, 90.18 cihazlarını içermeyen dişçi koltukları (aydınlatma bağlantılı olsa da) ve döndürme, yükseltme, yatırma tertibatlı berber koltukları. Hariç: radyoloji masaları (90.22); dişçi cihazlı koltuklar ve tükürük hokkaları (90.18); sokakta kullanılan hasta sedyeleri (Fasıl 87); takılıp çıkarılan kırık-çıkık teçhizatı (90.21) — bu teçhizatı olmayan karyolalar 94.03; piyano taburesi, mekanik sallanan sandalye, vidalı döner tabure (94.01); tıbbi amaçla özel düzenlenmemiş genel mobilya."
+  ],
+  [
+   "94.03 Açıklama Notu",
+   "Ev, otel, büro, okul, ibadethane, mağaza, atölye, laboratuvar mobilyaları: dolap, gardırop, karyola (kamp, katlanır karyola, beşik), ayak taburesi, portmanto, şemsiyelik, nota sehpası, oyun kafesi, öğrenci sırası, mihrap, minber, tezgah, çeker ocak, teçhizatsız çizim masası. Hariç: mobilya özelliği olmayan bavul (42.02), marangoz tezgahı ve merdiven (44.21, 73.26), gömme dolap doğraması (44.18), çöp sepetleri, hamaklar (56.08, 63.06), yere konan aynalar (70.09), zırhlı kasalar (83.03), buzdolapları (84.18), dikiş makinesi mobilyası (84.52), pantograflı çizim masası (90.17), şilte mesnetleri (94.04), lambalar (94.05), oyun masaları (95.04)."
+  ],
+  [
+   "94.03 Açıklama Notu (sınırlar)",
+   "Delinme ve kesilmeye karşı ciddi direnç göstermeyen, yangına ve darbeye karşı düzenlenmiş muhafazalar 94.03’te kalır (zırhlı kasa 83.03). İçine buz konularak soğutulan veya yalnızca cam lifi, mantar, yün ile yalıtılmış, aktif soğutucu elemanı olmayan dolaplar da 94.03’tedir (buzdolabı 84.18)."
+  ],
+  [
+   "94.04 Açıklama Notu",
+   "Şilte mesnetleri (somya); yaylı veya pamuk, yün, kıl, kuş tüyü, sentetik lif gibi bir maddeyle doldurulmuş ya da gözenekli kauçuk-plastikten şilteler, yorganlar, duvetler, şilte koruyucular, yastıklar, minderler, puflar ve uyku tulumları — elektrikli ısıtmalı olsun olmasın. Hariç: su yatakları (39.26, 40.16), havalı yatak, yastık ve minderler (39.26, 40.14, 40.16, 63.06, 63.07), deri puf kılıfları (42.05), battaniyeler (63.01), yastık kılıfı ve yorgan kılıfları (63.02), minder kılıfları (63.04). Koltuk için birleştirilmiş helezonik yaylar 94.01’de, çelik tel örgüler 73.14’tedir."
+  ],
+  [
+   "94.05 Açıklama Notu (I)",
+   "Lambalar her maddeden (Fasıl 71 Not 1 maddeleri hariç) ve her ışık kaynağıyla (mum, yağ, petrol, gaz, asetilen, elektrik) olabilir; duy, kablo, fiş, transformatör, starter veya balastla donatılmış olabilir. Oda lambaları, avizeler, abajurlar, sokak ve park lambaları, karanlık oda ve muayene lambaları, flaşsız işaret farları, elektrikli çelenkler (Noel ağacı süsü dahil), Fasıl 86 taşıtları, uçak ve gemi lambaları (kapalı far üniteleri 85.39), portatif lambalar (85.13 hariç), şamdanlar ile projektörler ve sahne projektörleri buradadır."
+  ],
+  [
+   "94.05 Açıklama Notu (II)",
+   "Işıklı panolar, ışıklı isim tabelaları (yol tabelaları dahil), reklam lambaları ve benzerleri her maddeden olabilir; şart, <b>sabit (devamlı) bir ışık kaynağına sahip olmalarıdır</b>. Sabit ışık kaynağı olmayan tabelalar Fasıl 70, 39.26, 83.10 gibi pozisyonlardadır."
+  ],
+  [
+   "94.05 Açıklama Notu (parçalar, hariç)",
+   "Avize askıları, abajur ayağı, kaideler, reflektörler, lamba camları, difüzörler, gölgelikler ve tel iskeletleri, avize süsleri aksamdır; elektrikli parçalarla birleşik elektriksiz parçalar da buradadır. Ayrı gelen şalter, duy, kablo, fiş, transformatör, balast, starter Fasıl 85’tedir. Hariç: mumlar (34.06), reçineli meşaleler (36.06), içten aydınlatmalı baskılı küreler (49.05), dokuma fitiller (59.08), cam boncuklar (70.18), bisiklet ve motorlu taşıt lambaları (85.12), ampuller, deşarj lambaları ve LED ışık kaynakları (85.39), fotoğraf flaşları (90.06), optik sinyal cihazları (90.13), tıbbi teşhis lambaları (90.18), Çin feneri (95.05)."
+  ],
+  [
+   "94.06 Açıklama Notu",
+   "Tamamen bitmiş ve monte edilmiş, tamamlanmış ama monte edilmemiş veya esas karakterine sahip tamamlanmamış yapılar buradadır. Normalde birlikte tedarik edilen gömme tesisat ve malzemeler (elektrik, ısıtma, klima, sıhhi tesisat, mutfak, gömme dolaplar) ile uygun miktardaki montaj malzemeleri (çivi, tutkal, sıva, harç, kablo, boru, boya, duvar kağıdı, halı) yapıyla sınıflandırılır. Ayrı gelen yapı parçaları her durumda kendi pozisyonlarına gider. Modüler birimler kendi kendini taşır ve diğer modüllerle birleşerek kalıcı bina oluşturur; kalıcı şasili mobil evler Fasıl 87’dedir."
+  ]
+ ],
+ "sinir_komsulari": [
+  [
+   "Hava veya su ile şişirilen şilte, yastık, minder",
+   "39.26 / 40.16 / 63.06",
+   "Fasıl 94 Not 1; 94.04 hariç tutmaları"
+  ],
+  [
+   "Battaniye; yastık ve yorgan kılıfı",
+   "63.01 / 63.02",
+   "94.04 hariç tutmaları; dolgu yok"
+  ],
+  [
+   "Hamak",
+   "56.08 / 63.06",
+   "94.03 hariç tutması"
+  ],
+  [
+   "Yere konan boy aynası, terzi ve ayakkabıcı aynası",
+   "70.09",
+   "Fasıl 94 Not 1"
+  ],
+  [
+   "Zırhlı ve takviyeli kasa",
+   "83.03",
+   "Fasıl 94 Not 1; yangına dayanıklı ama delinmeye dirençsiz muhafaza 94.03"
+  ],
+  [
+   "Buzdolabı, dondurucu (mobilya görünümlü olsa da)",
+   "84.18",
+   "Fasıl 94 Not 1; yalnızca yalıtımlı dolap 94.03"
+  ],
+  [
+   "Dikiş makinesi için özel tasarlanmış masa-dolap",
+   "84.52",
+   "Fasıl 94 Not 1"
+  ],
+  [
+   "Dişçilik cihazlarıyla birleşik dişçi koltuğu; tükürük hokkası",
+   "90.18",
+   "Fasıl 94 Not 1; cihazsız dişçi koltuğu 94.02"
+  ],
+  [
+   "Radyolojik muayene masası",
+   "90.22",
+   "94.02 hariç tutması"
+  ],
+  [
+   "Duvara asılan palto askılığı, anahtar askılığı, radyatör kafesi",
+   "Maddesine göre",
+   "Not 2: zemine konmayan ve istisnalara girmeyen eşya"
+  ],
+  [
+   "Bilardo masası, oyun masası",
+   "95.04",
+   "Fasıl 94 Not 1"
+  ],
+  [
+   "Ampul, deşarj lambası, LED ışık kaynağı",
+   "85.39",
+   "Fasıl 94 Not 1; 94.05 hariç tutması"
+  ],
+  [
+   "Bisiklet ve motorlu taşıt lambası; pilli portatif el feneri",
+   "85.12 / 85.13",
+   "94.05 hariç tutmaları"
+  ],
+  [
+   "Mum; kağıttan Çin feneri",
+   "34.06 / 95.05",
+   "94.05 hariç tutmaları"
+  ],
+  [
+   "Kalıcı şasili mobil ev; eşya taşımaya mahsus konteyner",
+   "Fasıl 87 / 86.09",
+   "94.06 Açıklama Notu; çelik modüler yapı birimi ise 94.06"
+  ]
+ ],
+ "tuzaklar": [
+  "<b>Zemine konmayan eşya mobilya değildir — üç istisna dışında.</b> Not 2’ye göre dolap ve raflı-ünite mobilya, yatak ve oturma mobilyası asılarak veya duvara tutturularak kullanılsa da mobilyadır. Duvara asılan palto askılığı, anahtar askılığı, gazete rafı ve radyatör kafesi ise mobilya değildir.",
+  "<b>Ayrı gelen minder 94.04’e gider.</b> Kanepeye ait olduğu anlaşılan yaylı veya doldurulmuş minder ayrı gelirse 94.04’tedir (Not 3(B)); kanepeyle birlikte gelirse veya diğer koltuk parçalarıyla birleşikse 94.01’de kalır.",
+  "<b>Çıplak cam ve mermer mobilya parçası değildir.</b> Diğer parçalarla birleşmemiş cam, ayna, mermer levha Not 3(A) gereği kendi faslına gider; aynalı gardırop kapısı gibi birleşik parça ise mobilya parçasıdır. Bütün parçalarıyla gelen camlı masa da masa olarak sınıflandırılır.",
+  "<b>Şişme yatak 94.04 değildir.</b> Hava veya su ile şişirilen şilte ve yastıklar Fasıl 39, 40, 63’tedir; yaylı yatak, gözenekli plastik şilte, uyku tulumu 94.04’tedir.",
+  "<b>94.02 özel düzenleme ister.</b> Hastanede kullanılan genel mobilya 94.03’tür; dişçi koltuğu 90.18 cihazlarıyla birleşikse 90.18, değilse 94.02; radyoloji masası 90.22.",
+  "<b>Her döner koltuk berber koltuğu değildir.</b> 94.02 için döndürme, yükseltme ve yatırma tertibatı aranır; piyano taburesi, vidalı döner tabure ve mekanik sallanan sandalye 94.01’dir.",
+  "<b>Armatür 94.05, ampul 85.39.</b> LED ışık kaynağı, ampul ve deşarj lambası 85.39’dadır; bunları taşıyan lamba 94.05’tir; ayrı gelen duy, şalter, kablo ve transformatör Fasıl 85’tir.",
+  "<b>Işıklı tabelada ışık kaynağı sabit olmalı.</b> Sabit ışık kaynağı olmayan tabela 94.05’e girmez; Fasıl 70, 39.26 veya 83.10 gibi pozisyonlara gider.",
+  "<b>Elektrikli çelenk 94.05’tir.</b> Noel ağacı süsü olsa da Fasıl 95’e girmez (Not 1 bunu açıkça istisna tutar); kağıt fener ise 95.05’tir.",
+  "<b>Prefabrik yapının ayrı gelen parçası prefabrik değildir.</b> Kendi pozisyonuna gider; yapıyla birlikte gelen gömme dolap, mutfak, tesisat ve uygun miktardaki montaj malzemesi ise 94.06’da kalır."
+ ],
+ "hafiza": {
+  "kanca": "OTUR (01) · TEDAVİ (02) · DİĞER (03) · UYU (04) · AYDINLAT (05) · KUR (06)",
+  "aciklama": "Bir evi kapıdan girerek gezin: önce koltuğa oturursunuz (01), doktor ve berber koltuğu ayrı odadadır (02), sonra masa, dolap ve karyolaya bakarsınız (03), yatağa yatar yorganı çekersiniz (04), lambayı yakarsınız (05); evin kendisi fabrikadan geldiyse 06. Mobilya testi “Yerde mi duruyor?” sorusudur; duvarda asılıysa yalnızca dolap-raf, yatak ve koltuk mobilya sayılır."
+ },
+ "sinav_odagi": [
+  "Fasıl 94 çıkmış sorularda sık görülür; ağırlık “hangisi 94. fasılda sınıflandırılmaz” ve “hangisi 94.04’te sınıflandırılır” kalıbındadır: hava ile şişirilen yatağın fasıl dışı, yaylı yatağın ve uyku tulumunun 94.04’te olduğu.",
+  "94.05 aksamı ve kapsamı: abajur ayağı, reflektör ve lamba camının aksam sayıldığı, mumun ise 34.06’ya gittiği; elektrikli çelenklerin 94.05’te sınıflandırıldığı.",
+  "GYK 2(a): demonte ahşap masa ve dolabın, bütün parçaları birlikte geldiğinde Fasıl 94’te monte edilmiş gibi sınıflandırılması.",
+  "GYK 3 soruları: üst yüzü bambu, ayakları metal sehpa ile masa ve sandalyelerden oluşan perakende takımlarda hangi yorum kurallarının kullanıldığının sorulması.",
+  "Farklı fasıl ve bölüm soruları: tripodun (96.20) koltuk, avize ve ameliyat masasından farklı fasılda yer alması; dişçi koltuklarının Bölüm XX’de bulunması; plastik sandalyenin Fasıl 39’da değil Fasıl 94’te olması."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Aşağıdaki eşyalardan hangisi 94.04 tarife pozisyonunda sınıflandırılır?",
+   "secenekler": [
+    "Çekyat kanepe",
+    "Hava ile şişirilmiş koltuk",
+    "Hava ile şişirilmiş yatak",
+    "Su ile şişirilmiş yatak",
+    "Yaylı yatak"
+   ],
+   "cevap": "E",
+   "aciklama": "94.04 yaylı veya içi doldurulmuş şilteleri kapsar. Çekyat, yatağa dönüşebilen oturma mobilyası olarak 94.01’dedir; hava veya su ile şişirilen eşya ise Not 1 ve 94.04 hariç tutmaları gereği 94.04’e girmez."
+  }
+ ],
+ "ozet": [
+  "Not 2 testi: mobilya zemine konur; duvara asılsa da mobilya sayılanlar yalnızca dolap-raf-ünite mobilya, yatak ve oturma mobilyasıdır.",
+  "Oturma 94.01 (çekyat dahil), tıbbi ve berber 94.02 (özel düzenleme şart), diğer mobilya 94.03.",
+  "Yaylı, doldurulmuş veya gözenekli kauçuk-plastik yatak takımı 94.04; şişme olanlar Fasıl 39, 40, 63; ayrı gelen koltuk minderi de 94.04.",
+  "Lamba ve armatür her ışık kaynağıyla 94.05; ampul ve LED kaynağı 85.39, taşıt lambası 85.12, pilli el lambası 85.13, mum 34.06.",
+  "Işıklı tabela için sabit ışık kaynağı şart; elektrikli çelenk 94.05.",
+  "Prefabrik yapı ve çelik modüler yapı birimi 94.06; ayrı gelen parçaları kendi pozisyonunda; kalıcı şasili mobil ev Fasıl 87.",
+  "Fasıl dışı klasikler: boy aynası 70.09, kasa 83.03, buzdolabı 84.18, dişçi cihazlı koltuk 90.18, bilardo masası 95.04, tripod 96.20."
+ ],
+ "sorular": [
+  {
+   "soru": "Tarife Cetveline göre, duvara vidalanarak sabitlenmek üzere tasarlanmış, zemine temas etmeyen, kapaklı ve raflı ahşap mutfak üst dolabı hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "44.21",
+    "94.03",
+    "44.18",
+    "94.06",
+    "73.26"
+   ],
+   "cevap": "B",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Not 2’ye göre mobilya kural olarak zemine konulan eşyadır; ancak dolaplar ve raflı mobilyalar asılarak veya duvara tutturularak kullanılsa dahi 94.01–94.03’te sınıflandırılır. Fasıl 44 açıklama notu da duvara veya tavana tutturulacak dolapları 94.03’e gönderir. 44.18 yalnızca gömme dolapların çerçeve, kapak gibi doğrama işlerini kapsar; 94.06 prefabrik yapılar içindir.",
+   "dayanak": "Fasıl 94 Not 2; Fasıl 94 Genel Açıklamalar; 94.03 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, otomobil koltuğunun arkasına asılarak kullanılmak üzere tasarlanmış, çocuklara mahsus oturak hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "87.08",
+    "94.03",
+    "63.07",
+    "95.03",
+    "94.01"
+   ],
+   "cevap": "E",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "94.01 açıklama notu diğer oturma yerlerinin arkasına asılmak üzere düzenlenmiş çocuk oturaklarını, taşıt koltuklarına asılanlar dahil, açıkça sayar. Not 2’ye göre oturma mobilyası asılarak kullanılsa da mobilya sayılır. Taşıta ait olması 87.08’i düşündürür; tuzak budur. Dokumaya elverişli maddeden olsa da 63.07’ye gitmez.",
+   "dayanak": "Fasıl 94 Not 2; 94.01 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, gözenekli poliüretan köpükten yapılmış ve dış yüzü pamuklu dokuma kumaşla kaplanmış yatak şiltesi hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "39.21",
+    "63.04",
+    "94.04",
+    "94.01",
+    "40.16"
+   ],
+   "cevap": "C",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "94.04 pozisyon metni gözenekli kauçuk veya plastikten şilteleri, kaplanmış olsun olmasın, açıkça kapsar. Gözenekli plastik levha (39.21) veya dokuma mefruşat (63.04) çeldiricidir; 63.04 pozisyon metni 94.04 eşyasını hariç tutar. 94.01 oturma mobilyası içindir.",
+   "dayanak": "94.04 pozisyon metni ve Açıklama Notu (B); 63.04 pozisyon metni."
+  },
+  {
+   "soru": "Tarife Cetveline göre, bir alışveriş merkezinin cephesine asılmak üzere üretilmiş, içine sabit olarak monte edilmiş LED modülleriyle aydınlatılan, plastik harflerden oluşan ışıklı reklam tabelası hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "94.05",
+    "85.31",
+    "39.26",
+    "85.39",
+    "83.10"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "94.05, sabit (devamlı) bir ışık kaynağına sahip olmak şartıyla her maddeden ışıklı panoları, reklam ve isim tabelalarını kapsar. Fasıl 85 açıklama notu da elektrikle aydınlatılmış statik tabelaları sinyal cihazı (85.31) saymaz. Sabit ışık kaynağı olmasaydı 39.26 veya 83.10 gibi pozisyonlara giderdi; LED ışık kaynağı ayrı gelseydi 85.39’da olurdu.",
+   "dayanak": "94.05 Açıklama Notu (II); 85.31 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, fabrikada üretilmiş; iç duvarları, döşemesi, kapı ve pencereleri ile elektrik ve sıhhi tesisatı önceden monte edilmiş; standart nakliye konteyneri boyutunda, kendi kendini taşıyan ve diğer modüllerle birleştirilerek kalıcı bir otel binası oluşturmak üzere tasarlanmış çelik yapı modülü hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "86.09",
+    "73.08",
+    "87.16",
+    "94.06",
+    "73.09"
+   ],
+   "cevap": "D",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Not 4 ve 94.06 açıklama notu, standart nakliye konteyneri boyutunda sunulan, içten donatılmış, kendi kendini taşıyan ve kalıcı bina oluşturmak üzere birleştirilen çelik modüler yapı birimlerini prefabrik yapı sayar. Konteyner görünümü 86.09’u düşündürür; ancak 86.09 eşya taşımaya mahsus konteynerler içindir. 73.08 de prefabrik yapıları açıkça hariç tutar; kalıcı şasili mobil evler Fasıl 87’dedir.",
+   "dayanak": "Fasıl 94 Not 4; 94.06 Açıklama Notu; 73.08 pozisyon metni."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 94. faslında <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Elektrikli çelenk",
+    "Kuş tüyü doldurulmuş yorgan",
+    "Laboratuvar çeker ocağı",
+    "Ayakkabıcılarda kullanılan, yere konulan ayna",
+    "Uyku tulumu"
+   ],
+   "cevap": "D",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Fasıl 94 Not 1, zemine yerleştirilmek üzere tasarlanmış aynaları 70.09’a gönderir; 70.09 açıklama notu ayakkabıcı ve terzi aynalarını açıkça sayar. Elektrikli çelenk 94.05’te, yorgan ve uyku tulumu 94.04’te, çeker ocak laboratuvar mobilyası olarak 94.03’tedir.",
+   "dayanak": "Fasıl 94 Not 1; 70.09 Açıklama Notu; 94.03, 94.04, 94.05 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 94.03 pozisyonunda <b>yer almaz</b>?",
+   "secenekler": [
+    "Okul sırası",
+    "Mihrap ve minber",
+    "Dikiş makinesini içine alacak şekilde özel tasarlanmış dolap",
+    "Teçhizatsız çizim masası",
+    "Bebek yürüteci"
+   ],
+   "cevap": "C",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Not 1 ve 94.03 açıklama notu, dikiş makinelerine mesnet olacak veya onları içine alacak şekilde özel tasarlanmış mobilyaları 84.52’ye gönderir; makine kullanılmadığında mobilya gibi kullanılabilmesi sonucu değiştirmez. Okul sırası, ibadethane mobilyası, teçhizatsız çizim masası ve bebek yürüteci 94.03’tedir.",
+   "dayanak": "Fasıl 94 Not 1; 94.03 Açıklama Notu; 94.01 hariç tutmaları."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 94.04 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Somya (karyolanın yaylı kısmı)",
+    "Pamuklu dokumadan yastık kılıfı",
+    "Puf",
+    "Elektrikli ısıtma sistemiyle donatılmış, içi doldurulmuş yorgan",
+    "Uyku tulumu"
+   ],
+   "cevap": "B",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "94.04 açıklama notu yastık kılıflarını hariç tutar ve 63.02’ye gönderir; kılıfın içi doldurulmamıştır. Somya, puf, uyku tulumu ve elektrikli ısıtmalı doldurulmuş yorgan 94.04’te açıkça sayılmıştır. Elektrikli ısıtma tertibatı yorganı Fasıl 85’e götürmez.",
+   "dayanak": "94.04 Açıklama Notu ve hariç tutmalar."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 94.05 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Gaz lambası",
+    "Piyano için şamdan",
+    "Sokak lambası",
+    "Lokomotif ön ışığı",
+    "Bisiklet farı"
+   ],
+   "cevap": "E",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "94.05 açıklama notu bisikletler ve motorlu taşıtlar için elektrikli aydınlatma ve işaret cihazlarını hariç tutar (85.12). Fasıl 86 taşıtlarına mahsus lambalar (lokomotif ön ışığı) ise 94.05’te kalır; gaz lambası, şamdan ve sokak lambası da 94.05’tedir. Taşıt lambasının taşıt türüne göre ayrıldığını gözden kaçırmak tuzaktır.",
+   "dayanak": "94.05 Açıklama Notu (I) ve hariç tutmalar."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Divan",
+    "Kamp karyolası",
+    "Beşik",
+    "Tekerlekli servis masası",
+    "Ayaklı portmanto"
+   ],
+   "cevap": "A",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Divan oturmaya mahsus mobilya olarak 94.01’de sayılmıştır. Kamp karyolası, beşik, tekerlekli servis masası ve portmanto 94.03 açıklama notunda ev mobilyaları arasında yer alır. Yatma ile oturma işlevinin karıştırılması tuzaktır: karyola 94.03, divan ve çekyat 94.01.",
+   "dayanak": "94.01 ve 94.03 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdaki koltuk ve mobilyalardan hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Ameliyat masası",
+    "Döndürme, yükseltme ve yatırma tertibatlı berber koltuğu",
+    "90.18 cihazlarını içermeyen dişçi koltuğu",
+    "Hastane içinde hasta naklinde kullanılan tekerlekli sedye",
+    "Piyano taburesi"
+   ],
+   "cevap": "E",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "94.02 açıklama notu piyano taburelerini, mekanik sallanan sandalyeleri ve vidalı döner tabureleri hariç tutar ve 94.01’e gönderir. Ameliyat masası, berber koltuğu, cihazsız dişçi koltuğu ve hastane içi sedye 94.02’dedir. Piyano taburesinin dönebilmesi onu berber koltuğu yapmaz.",
+   "dayanak": "94.02 Açıklama Notu (A), (B)."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden farklı bir fasılda sınıflandırılır?",
+   "secenekler": [
+    "Laboratuvar masası",
+    "Bilardo masası",
+    "Mikroskop masası",
+    "Öğretmen kürsüsü",
+    "Mağaza tezgâhı"
+   ],
+   "cevap": "B",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Fasıl 94 Not 1, bilardo masalarını ve oyun için özel imal edilmiş diğer mobilyaları 95.04’e (Fasıl 95) gönderir. Laboratuvar ve mikroskop masaları, öğretmen kürsüsü ve mağaza tezgâhı 94.03 açıklama notunda sayılan mobilyalardır.",
+   "dayanak": "Fasıl 94 Not 1; 94.03 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdaki gruplardan hangisinde yer alan eşyanın <b>tamamı</b> aynı pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Yorgan – battaniye – uyku tulumu",
+    "Avize – LED ampul – abajur",
+    "Gardırop – yere konan boy aynası – komodin",
+    "Çekyat – sallanan koltuk – piyano taburesi",
+    "Karyola – somya – şilte"
+   ],
+   "cevap": "D",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Çekyat, sallanan koltuk ve piyano taburesi 94.01’dedir. Battaniye 63.01’e, LED ampul 85.39’a, yere konan boy aynası 70.09’a gider; karyola 94.03’te iken somya ve şilte 94.04’tedir. Bu nedenle diğer grupların her birinde farklı pozisyona giren bir eşya vardır.",
+   "dayanak": "94.01, 94.03, 94.04, 94.05 Açıklama Notları; Fasıl 94 Not 1."
+  },
+  {
+   "soru": "Fasıl 94 Not 2’ye göre, asılarak veya duvara tutturularak kullanılmak amacıyla imal edilmiş olsa dahi 94.01–94.03 pozisyonlarında sınıflandırılan eşya aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Duvara asılan palto ve şapka askılığı",
+    "Duvara tutturulan anahtar askılığı",
+    "Duvara sabitlenmek için destekleri bulunan tek katlı raf",
+    "Radyatörü gizlemeye mahsus kafes",
+    "Duvara asılan gazete ve dergi rafı"
+   ],
+   "cevap": "C",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Not 2, dolapları, kitap dolaplarını, duvara sabitlenmek için destekleri bulunan tek kat raflar dahil diğer raflı mobilyaları ve ünite mobilyaları, yatakları ve oturma mobilyalarını asılsa da mobilya sayar. Genel açıklamalar palto ve anahtar askılıklarını, gazete ve dergi raflarını ve radyatör kafeslerini mobilya kapsamı dışında bırakır.",
+   "dayanak": "Fasıl 94 Not 2; Fasıl 94 Genel Açıklamalar."
+  },
+  {
+   "soru": "Fasıl 94 Not 3’e göre aşağıdakilerden hangisi <b>doğrudur</b>?",
+   "secenekler": [
+    "Ayrı gelen çerçevesiz cam levhalar, şekil verilerek kesilmiş olsa da 94.01–94.03’teki mobilya aksam ve parçası sayılmaz.",
+    "Şekil verilerek kesilmiş, diğer parçalarla birleşik olmayan mermer masa tablası 94.03’te mobilya parçası olarak sınıflandırılır.",
+    "Kanepeye ait olduğu açıkça anlaşılan, ayrı gelen yaylı minder 94.01’de sınıflandırılır.",
+    "94.04’teki şilteler ayrı gelse de karyolanın parçası olarak 94.03’te sınıflandırılır.",
+    "Mobilyaya ait aynalar, diğer parçalarla birleşik olmasalar da mobilya parçası sayılır."
+   ],
+   "cevap": "A",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Not 3(A), camdan (aynalar dahil), mermerden ve diğer taşlardan levhaları, şekil verilerek kesilmiş olsalar da diğer parçalarla birleşik değillerse mobilya parçası saymaz. Not 3(B) ise 94.04 eşyasının ayrı geldiğinde 94.01–94.03’te parça olarak sınıflandırılmayacağını hükme bağlar; bu nedenle ayrı gelen minder ve şilteler 94.04’tedir.",
+   "dayanak": "Fasıl 94 Not 3(A), (B); 94.01 Açıklama Notu (parçalar)."
+  },
+  {
+   "soru": "Fasıl 94 Not 4 ve 94.06 açıklama notuna göre aşağıdakilerden hangisi <b>yanlıştır</b>?",
+   "secenekler": [
+    "Prefabrik yapılar, fabrikada imalatı tamamlanmış veya mahallinde monte edilmek üzere parçalar halinde getirilen yapılardır.",
+    "Çelikten modüler yapı birimleri normalde standart bir nakliye konteynerinin boyutunda ve şeklinde sunulur.",
+    "Yapıyla birlikte gelen, normalde tedarik edilen gömme mutfak dolapları ve sıhhi tesisat yapıyla birlikte sınıflandırılır.",
+    "Kalıcı bir şasiye sahip mobil evler 94.06’da modüler yapı birimi olarak sınıflandırılır.",
+    "Montaj için uygun miktarda gelen çivi, tutkal, sıva ve boya yapıyla birlikte sınıflandırılır."
+   ],
+   "cevap": "D",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "94.06 açıklama notuna göre modüler yapı birimleri kalıcı şasisi olan birimleri (mobil evler) içermez; bunlar Fasıl 87’dedir. Prefabrik yapı tanımı, konteyner boyutundaki çelik modüller, gömme tesisat ve uygun miktardaki montaj malzemelerinin yapıyla sınıflandırılması notlarda açıkça yer alır.",
+   "dayanak": "Fasıl 94 Not 4; 94.06 Açıklama Notu."
+  },
+  {
+   "soru": "94.05 pozisyonu açıklama notuna göre, ışıklı panoların, ışıklı isim tabelalarının ve benzeri eşyanın bu pozisyonda sınıflandırılabilmesi için aranan şart aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Elektrikle çalışmaları",
+    "Sabit (devamlı) bir ışık kaynağına sahip olmaları",
+    "Plastikten veya camdan yapılmış olmaları",
+    "LED ışık kaynağı ile kullanılmaya mahsus olmaları",
+    "Bina dışında kullanılmak üzere tasarlanmış olmaları"
+   ],
+   "cevap": "B",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "94.05 açıklama notu ışıklı panoları ve tabelaları herhangi bir maddeden olmak üzere, devamlı sabit bir ışık kaynağına sahip olmaları şartıyla kapsar. Sabit ışık kaynağı olmayan tabelalar Fasıl 70, 39.26 veya 83.10 gibi pozisyonlara gider. Madde, ışık kaynağının türü veya kullanım yeri ölçüt değildir.",
+   "dayanak": "94.05 pozisyon metni ve Açıklama Notu (II)."
+  },
+  {
+   "soru": "Gövde panelleri, kapakları, rafları, aynalı kapısı ve bağlantı vidaları aynı kutuda birlikte sunulan, yalnızca vidalarla birleştirilerek kullanılacak demonte ahşap gardırobun sınıflandırılmasında hangi Genel Yorum Kuralları kullanılır?",
+   "secenekler": [
+    "GYK 1 ve 6",
+    "GYK 1, 2(b) ve 6",
+    "GYK 1, 3(b) ve 6",
+    "GYK 1, 3(c) ve 6",
+    "GYK 1, 2(a) ve 6"
+   ],
+   "cevap": "E",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 2(a)’nın ikinci kısmına göre demonte halde sunulan tamamlanmış eşya monte edilmiş eşya gibi sınıflandırılır; Fasıl 94 genel açıklamaları da bütün aksamı birlikte gelen demonte mobilyanın (aynalı gardırop dahil) monte edilmiş gibi tarifeleneceğini belirtir. Aynalı kapı diğer parçalarla birlikte geldiği için ayrıca 70.09’a gitmez. Eşya bir set (3(b)) değil, tek bir mobilyadır.",
+   "dayanak": "GYK 2(a) Açıklama Notu (V)–(VII); Fasıl 94 Genel Açıklamalar; 94.03 Açıklama Notu."
+  },
+  {
+   "soru": "Ahşap iskeletli, oturağı ve sırtı döşenmiş; içine titreşimli masaj işlevi, müzik çalar ve dekoratif aydınlatma eklenmiş tekli koltuğun Tarife Cetvelinde sınıflandırılmasında hangi Genel Yorum Kuralları kullanılır?",
+   "secenekler": [
+    "GYK 1 ve 6",
+    "GYK 1, 3(b) ve 6",
+    "GYK 1, 3(c) ve 6",
+    "GYK 1, 2(b) ve 6",
+    "GYK 1, 5(a) ve 6"
+   ],
+   "cevap": "A",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "94.01 açıklama notu bu pozisyondaki koltukların oyuncak bileşeni, titreşim işlevi, müzik veya ses çalar ve aydınlatma gibi tamamlayıcı koltuk dışı bileşenler içerebileceğini açıkça belirtir. Bu nedenle koltuk, pozisyon metni ve açıklama notuyla (GYK 1) doğrudan 94.01’de; alt pozisyonu GYK 6 ile bulunur. Bileşik eşya sanıp 3(b) veya 3(c)’ye başvurmak tuzaktır.",
+   "dayanak": "GYK 1 ve 6; 94.01 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdaki eşyayı sınıflandırıldıkları pozisyonlarla eşleştiriniz.<br/>I. Somya<br/>II. Çekyat<br/>III. Abajur<br/>IV. Prefabrik sera<br/>a) 94.01 · b) 94.04 · c) 94.05 · d) 94.06",
+   "secenekler": [
+    "I-a, II-b, III-c, IV-d",
+    "I-b, II-a, III-d, IV-c",
+    "I-b, II-a, III-c, IV-d",
+    "I-c, II-a, III-b, IV-d",
+    "I-b, II-c, III-a, IV-d"
+   ],
+   "cevap": "C",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Somya şilte mesnedi olarak 94.04’te; çekyat yatağa dönüşebilen oturma mobilyası olarak 94.01’de; abajur aydınlatma cihazı olarak 94.05’te; prefabrik sera 94.06’dadır. Somyayı karyola ile birlikte 94.03’te sanmak tipik hatadır.",
+   "dayanak": "94.01, 94.04, 94.05 ve 94.06 Açıklama Notları."
+  },
+  {
+   "soru": "Fasıl 94 Not 2’ye göre, 94.01 ila 94.03 pozisyonlarında belirtilen eşya (aksam ve parçalar hariç) sadece ……… kullanılmak üzere üretilmiş iseler bu pozisyonlarda sınıflandırılır. Boşluğa aşağıdakilerden hangisi gelmelidir?",
+   "secenekler": [
+    "evlerde ve bürolarda",
+    "duvara tutturularak",
+    "kapalı mekânlarda",
+    "ahşap veya metal iskeletli olarak",
+    "zemin veya döşeme üzerinde"
+   ],
+   "cevap": "E",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Not 2’nin ilk cümlesi mobilyanın temel ölçütünü koyar: zemin veya döşeme üzerinde kullanılmak üzere üretilmiş olmak. Duvara tutturma yalnızca notta sayılan istisnalar için kabul edilir. Mobilya bahçede veya taşıtlarda da kullanılabilir ve her maddeden yapılabilir.",
+   "dayanak": "Fasıl 94 Not 2; Fasıl 94 Genel Açıklamalar."
+  },
+  {
+   "soru": "Fasıl 94 ile ilgili aşağıdaki ifadelerden hangileri <b>doğrudur</b>?<br/>I. Yatağa dönüşebilen kanepeler (çekyatlar) 94.01’de kalır.<br/>II. Hastanelerde kullanılan, tıbbi amaçla özel olarak düzenlenmemiş genel kullanıma mahsus mobilyalar 94.02’de sınıflandırılır.<br/>III. Monogram, şerit gibi küçük parçalardan fazla kıymetli metal içeren mobilyalar Fasıl 71’de sınıflandırılır.<br/>IV. Yalnızca cam lifi veya mantarla yalıtılmış, aktif soğutucu elemanı olmayan dolaplar 94.03’te kalır.",
+   "secenekler": [
+    "I ve II",
+    "I, III ve IV",
+    "II ve III",
+    "II, III ve IV",
+    "I ve IV"
+   ],
+   "cevap": "B",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "I, 94.01 açıklama notunda; III, fasıl genel açıklamalarında; IV, 94.03 açıklama notunda açıkça yer alır. II yanlıştır: 94.02 açıklama notu, tıbbi amaçla özel düzenlenmemiş genel kullanıma mahsus mobilyaları hariç tutar; bunlar 94.03’e gider.",
+   "dayanak": "Fasıl 94 Genel Açıklamalar; 94.01, 94.02 ve 94.03 Açıklama Notları."
+  },
+  {
+   "soru": "94.05 pozisyonu ile ilgili aşağıdaki ifadelerden hangileri <b>doğrudur</b>?<br/>I. Lambalar mum, petrol, gaz veya elektrik gibi hangi ışık kaynağıyla çalışırsa çalışsın bu pozisyonda sınıflandırılabilir.<br/>II. Ayrı olarak gelen lamba duyları, şalterler ve transformatörler bu pozisyonda aksam olarak sınıflandırılır.<br/>III. Fotoğrafçılıkta flaş ışığı üreten cihazlar bu pozisyondadır.<br/>IV. Lamba gölgelikleri için kullanılan tel iskeletler bu pozisyonda aksam olarak sınıflandırılır.",
+   "secenekler": [
+    "I ve II",
+    "II ve III",
+    "I, II ve IV",
+    "I ve IV",
+    "III ve IV"
+   ],
+   "cevap": "D",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "I ve IV 94.05 açıklama notunda açıkça yer alır. II yanlıştır: ayrı gelen şalter, duy, kablo, fiş, transformatör, balast ve starterler Fasıl 85’tedir. III yanlıştır: fotoğraf flaşları 90.06’dadır.",
+   "dayanak": "94.05 Açıklama Notu (I), aksam ve parçalar, hariç tutmalar."
+  },
+  {
+   "soru": "Metal iskeletli; oturma yeri ve sırtı gözenekli plastikle doldurulup kumaşla kaplanmış; gaz silindiriyle yüksekliği ayarlanabilen, tekerlekli ve döner bir büro koltuğu gümrüğe sunulmaktadır. Koltukta yatırma tertibatı yoktur ve herhangi bir tıbbi amaçla özel olarak düzenlenmemiştir. Bu eşya Tarife Cetvelinde hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "94.01",
+    "94.02",
+    "94.03",
+    "90.19",
+    "94.04"
+   ],
+   "cevap": "A",
+   "tip": "Senaryo",
+   "gerekce": "Eşya oturmaya mahsus mobilyadır ve 94.01’dedir. 94.02 yalnızca tıbbi amaçla özel düzenlenmiş mobilyaları ve döndürme, yükseltme ve yatırma tertibatlı berber koltuklarını kapsar; yatırma tertibatı olmayan büro koltuğu buna girmez. Refleks testi için dönen koltuklar 90.19’dadır; dolgu ve kaplama koltuğu 94.04’e götürmez.",
+   "dayanak": "94.01 Açıklama Notu ve hariç tutmalar; 94.02 Açıklama Notu (B)."
+  },
+  {
+   "soru": "Bir müzenin sergi salonu için üretilmiş; alüminyum gövdeli, reflektörü ve Fresnel merceği bulunan, ışık demetini belirli bir mesafedeki nesne üzerine yoğunlaştıran, tavandaki raya takılan ve içine LED ışık kaynağı monte edilmiş spot projektör hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "85.39",
+    "90.13",
+    "94.05",
+    "85.13",
+    "90.02"
+   ],
+   "cevap": "C",
+   "tip": "Senaryo",
+   "gerekce": "94.05 projektörleri ve sahne projektörlerini, yani reflektör ve mercek (genellikle Fresnel) yardımıyla ışık demetini bir noktaya veya yüzeye yoğunlaştıran cihazları açıkça kapsar; Fasıl 90 notu da 94.05’teki projektör ve spot lambalarını hariç tutar. İçindeki LED ışık kaynağı ayrı gelseydi 85.39’a girerdi; lamba ise 94.05’tedir. 85.13 kendi enerji kaynağıyla çalışan portatif lambalar içindir.",
+   "dayanak": "94.05 Açıklama Notu (I); Fasıl 90 Not 1; Fasıl 94 Not 1."
+  }
+ ]
+}

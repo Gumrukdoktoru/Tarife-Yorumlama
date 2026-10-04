@@ -1,0 +1,353 @@
+"""Fasıl 70 – Cam ve cam eşya modülü."""
+import sys
+import os
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from yardim_70_72 import (ESYA, OLUMSUZ, FARKLI, TANIM, GYK, ESLES, COKLU, SENARYO,  # noqa: E402
+                          soru, kaydet)
+
+obj = {
+    "tur": "fasil",
+    "fasil": 70,
+    "baslik": "Cam ve cam eşya",
+    "bolum": "XIII",
+    "oz": {
+        "vurgu": "Fasıl 70 her şekildeki camı ve cam eşyayı kapsar; eritilmiş kuvars ve eritilmiş silis de tarifenin her yerinde “cam” sayılır. Önce Not 1’deki dışlamalar elenir (cam tozu 32.07, taklit mücevher Fasıl 71, taşıt camları, optik eşya Fasıl 90, lambalar 94.05, oyuncak, düğme ve termos gibi Fasıl 95–96 eşyası). Sonra düz camda üretim yöntemi ve işleme derecesi, cam eşyada ise kullanım amacı pozisyonu belirler.",
+        "maddeler": [
+            "Düz cam merdiveni: dökme veya haddelenmiş 70.03, çekme veya üfleme 70.04, float ya da yüzeyi taşlanmış veya parlatılmış 70.05; bombeli, kenarı işlenmiş, delinmiş, buzlu veya emayeli 70.06; emniyet camı 70.07, çok katlı yalıtım camı 70.08, ayna 70.09.",
+            "Kaplarda amaç belirleyicidir: ticari taşıma ve ambalaj kabı 70.10; sofra, mutfak, tuvalet, büro ve süs eşyası 70.13; laboratuvar, eczane ve hijyen eşyası 70.17; mağaza teşhir kavanozu ve vakumlu kap iç gövdesi 70.20.",
+            "Optik etki: optik tarzda işlenmemiş sinyal camı ve optik eleman 70.14; saat camı ve bombeli gözlük camı 70.15; optik tarzda işlenmiş olanlar Fasıl 90.",
+            "Küçük ve süs eşyası: boncuk, taklit inci, taklit taş, şalümo işi süs, camdan göz ve çapı 1 mm’den az kürecik 70.18; bina camları, mozaik, vitray ve köpük cam 70.16.",
+            "Cam lifi ve cam yünü 70.19’dadır; Not 4’teki silis, alkali oksit ve borik oksit eşiklerini karşılamayan mineral yünler 68.06’ya gider.",
+        ],
+    },
+    "karar_tablosu": {
+        "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+        "satirlar": [
+            ["1", "Toz, granül veya pul halinde cam, cam firit, cam haline gelebilen emaye veya sır mı?", "<b>32.07</b>"],
+            ["2", "Taklit mücevherci eşyası mı ya da kıymetli metal veya kıymetli taş içeren eşya mı?", "<b>Fasıl 71</b> (taklit mücevher <b>71.17</b>)"],
+            ["3", "86–88. fasıl taşıtının çerçeveli camı ya da ısıtıcı veya başka elektrikli/elektronik tertibat içeren camı mı?", "Fasıl 70 dışı – taşıt faslı (<b>86–88</b>)*"],
+            ["4", "Optik tarzda işlenmiş eleman, optik lif, termometre, şırınga veya protez göz mü?", "<b>Fasıl 90</b>"],
+            ["5", "Lamba, aydınlatma cihazı, ışıklı tabela veya bunların parçası mı?", "<b>94.05</b>"],
+            ["6", "Oyuncak, Noel ağacı süsü, düğme, tamamlanmış termos veya parfüm spreyi mi?", "<b>Fasıl 95</b> · <b>96.06</b> · <b>96.17</b> · <b>96.16</b>"],
+            ["7", "Levha (düz) cam mı?", "Yönteme göre <b>70.03</b>–<b>70.05</b>; işlenmişse <b>70.06</b>; emniyet <b>70.07</b>, yalıtım <b>70.08</b>, ayna <b>70.09</b>"],
+            ["8", "Kap mı?", "Ambalaj <b>70.10</b> · sofra/süs <b>70.13</b> · laboratuvar/hijyen <b>70.17</b>"],
+            ["9", "Lamba zarfı, sinyal camı, saat/gözlük camı, inşaat camı veya boncuk türü mü?", "<b>70.11</b> / <b>70.14</b> / <b>70.15</b> / <b>70.16</b> / <b>70.18</b>"],
+            ["10", "Cam lifi veya Not 4’e uyan cam yünü mü?", "<b>70.19</b> (uymayan mineral yün <b>68.06</b>)"],
+            ["11", "Hiçbiri değilse", "<b>70.20</b> (camdan diğer eşya)"],
+        ],
+        "dipnot": "* Not 1(e): ısıtma tertibatı veya başka elektrikli/elektronik cihaz içeren taşıt camları çerçevesiz olsalar bile Fasıl 70 dışındadır. Çerçevesiz ve tertibatsız emniyet camı ise 70.07’de kalır.",
+    },
+    "pozisyon_haritasi": [
+        ["70.01", "Cam kırıkları ve döküntüleri; külçe cam", "Külçe veya blok; toz-granül hariç (32.07)", "Cam kırığı, emaye cam külçesi, vitrit külçesi"],
+        ["70.02", "İşlenmemiş cam bilye, çubuk, boru", "İşlenmemiş; belirli amaca yönelmemiş", "Cam lifi hammaddesi bilye, kütlesi floresanlı boru"],
+        ["70.03", "Dökme ve haddelenmiş levha veya profil", "Dökme/haddeleme yöntemi; başka işlem yok", "Katedral cam, telli cam, U profil cam"],
+        ["70.04", "Çekme ve üfleme levha cam", "Çekme/üfleme yöntemi; başka işlem yok", "Pencere camı, sera camı"],
+        ["70.05", "Float; yüzeyi taşlanmış veya parlatılmış levha", "Float yöntemi ya da yüzey taşlama-parlatma", "Float cam, emici tabakalı float cam"],
+        ["70.06", "70.03–70.05 camlarının işlenmişleri", "Bombeli, kenar işlemeli, delik, buzlu, emayeli; çerçevesiz", "Şevli masa camı, kumlanmış cam"],
+        ["70.07", "Emniyet camları", "Yalnız temperli veya lamine", "Kurşun geçirmez cam, çerçevesiz ön cam"],
+        ["70.08", "Çok katlı yalıtım camları", "Arası kuru hava, gaz veya cam lifi", "Yalıtım camı paneli"],
+        ["70.09", "Cam aynalar (dikiz aynası dahil)", "Bir yüzü metal kaplı; çerçeveli olsun olmasın", "Dikiz aynası, cep aynası, ayaklı boy aynası"],
+        ["70.10", "Taşıma-ambalaj kapları; tıpa ve kapak", "Ticari taşıma ve ambalaj amacı", "Şişe, kavanoz, serum ampulü, konserve kavanozu"],
+        ["70.11", "Açık cam zarflar ve cam parçaları", "Lamba ve tüp için; donanımsız", "Ampul balonu, katod ışın tüpü konisi"],
+        ["70.12", "(Boş pozisyon)", "Kullanılmıyor", "—"],
+        ["70.13", "Sofra, mutfak, tuvalet, büro, süs eşyası", "Ev ve benzeri kullanım; 70.10 ve 70.18 hariç", "Bardak, sürahi, biberon, vazo, akvaryum"],
+        ["70.14", "Sinyalizasyon camı, optik eleman", "Optik tarzda işlenmemiş", "Far merceği, stop lambası camı"],
+        ["70.15", "Saat camı, gözlük camı; içi boş küre", "Bombeli veya kavisli; optik işlenmemiş", "Güneş gözlüğü camı, gözlük camı taslağı"],
+        ["70.16", "Bina blokları; mozaik; vitray; köpük cam", "İnşaat ve dekorasyon kalıp camı", "Cam tuğla, mozaik küp, kurşunlu vitray"],
+        ["70.17", "Laboratuvar, eczane, hijyen eşyası", "Taksimatlı olsun olmasın", "Pipet, büret, damıtma balonu, lazımlık"],
+        ["70.18", "Boncuk, taklit inci ve taş, cam göz, kürecik", "Taklit mücevher hariç; kürecik 1 mm’den küçük", "Cam boncuk, strass taş, oyuncak bebek gözü"],
+        ["70.19", "Cam lifleri, cam yünü ve eşyası", "Not 4 eşikleri; sertleşmiş kompozit hariç", "Cam tülü, fitil, cam elyaf perde"],
+        ["70.20", "Camdan diğer eşya", "Artık pozisyon; cam karakteri", "Termos iç gövdesi, teşhir kavanozu, ağ yüzdürücüsü"],
+    ],
+    "notlar": [
+        ["Fasıl 70 Not 1", "Fasıl dışı: (a) 32.07 eşyası (cam haline gelebilen emaye ve sırlar, cam firit, toz, granül veya pul halinde cam); (b) Fasıl 71 eşyası (ör. taklit mücevher); (c) 85.44 optik lif kabloları, 85.46 elektrik izolatörleri, 85.47 izole edici bağlantı parçaları; (d) 86–88. fasıl taşıtlarının çerçeveli ön, arka ve diğer camları; (e) bu taşıtların ısıtma tertibatı veya diğer elektrikli/elektronik cihaz içeren camları (çerçeveli olsun olmasın); (f) optik lifler, optik tarzda işlenmiş elemanlar, deri altı şırıngaları, suni gözler, termometre, barometre, hidrometre ve diğer Fasıl 90 eşyası; (g) 94.05 lambalar, aydınlatma cihazları, ışıklı tabelalar ve parçaları; (h) oyuncaklar, oyun ve spor levazımı, Noel ağacı süsleri ve Fasıl 95 eşyası (mekanik tertibatı olmayan oyuncak bebek camdan gözleri hariç – bunlar Fasıl 70’te kalır); (ij) düğmeler, termoslar, parfüm spreyleri ve Fasıl 96 eşyası."],
+        ["Fasıl 70 Not 2", "70.03, 70.04 ve 70.05 anlamında: (a) cam, tavlanmadan önce gördüğü işlem nedeniyle “işlenmiş” sayılmaz; (b) kesilerek şekil verilmesi levha camın sınıflandırılmasını etkilemez; (c) “emici, yansıtıcı veya yansıtıcı olmayan tabaka”: şeffaflığı koruyan, kızılötesi ışınları emen, yansıtmayı artıran veya yüzeyin ışığı yansıtmasını engelleyen, mikroskopla görülebilecek incelikte metal veya kimyasal bileşik (metal oksit gibi) tabakadır."],
+        ["Fasıl 70 Not 3", "70.06’daki ürünler eşya vasfı kazanmış olsalar bile bu pozisyonda kalır."],
+        ["Fasıl 70 Not 4", "70.19 anlamında “cam yünü”: (a) ağırlıkça <b>%60 veya daha fazla</b> silis (SiO2) içeren mineral yünler; (b) <b>%60’tan az</b> silis içeren fakat <b>%5’ten fazla</b> alkali oksit (K2O veya Na2O) ya da <b>%2’den fazla</b> borik oksit (B2O3) içeren mineral yünler. Bu özelliklere uymayan mineral yünler <b>68.06</b>’dadır."],
+        ["Fasıl 70 Not 5", "Eritilmiş kuvars ve diğer eritilmiş silis, tarifenin neresinde geçerse geçsin “cam” sayılır."],
+        ["Genel Açıklamalar", "Fasıl, cam çeşidine bakılmaksızın (adi cam, kurşun kristal, borosilikat vb.) camı kapsar. Buzlu veya opal camlar (külçeye yaklaşık %5 florspat veya kemik külü katılarak), cam seramiği (kontrollü kristalleştirme) ve genleşme katsayısı düşük camlar (borosilikat) da dahildir. Üretim yöntemi bazı pozisyonları belirler: 70.03 yalnız dökme veya haddeleme, 70.04 yalnız çekme veya üfleme camını alır."],
+        ["70.01 – 70.02 Açıklama Notları", "Külçe halindeki emaye cam ve vitrit 70.01’de; toz, granül veya pul halindekiler 32.07’de. Oyuncak niteliğindeki cam bilyalar 95.03’te, şişe kapama bilyaları 70.10’da, çapı 1 mm’yi geçmeyen mikrokürecikler 70.18’de. Kütlesine floresan madde katılmış boru 70.02’de; iç yüzeyi floresanla sıvanmış boru 70.11’de. Mamul eşya veya aksam olduğu anlaşılan bilye, çubuk ve borular 70.02 dışındadır."],
+        ["70.03 – 70.05 Açıklama Notları", "70.03 yalnız dökme veya haddeleme camıdır; telle takviyeli veya kabartma desenli olabilir. Yüzeyi taşlanmış veya parlatılmış dökme, haddelenmiş, çekme camlar 70.05’e geçer. Bombelendirilmiş veya kavislendirilmiş levhalar ile Not 2(b) ve pozisyon metni dışındaki işlemleri görmüş levhalar 70.05 dışındadır (70.06, 70.07, 70.09)."],
+        ["70.06 Açıklama Notu", "Cam dışındaki maddelerle çerçevelenmemiş ve donatılmamış işlenmiş levhalar burada (masa camı, terazi camı, işaret levhası, kapı aynalığı). Ahşap çerçeveli resim camı 44.14, adi metal çerçeveli 83.06; kulplu veya çerçeveli cam tepsi 70.13; astarlı veya çerçeveli cam reklam panosu, harf ve rakam 70.20 (ışıklıysa 94.05). Mobilya camı mobilyadan ayrı gelirse 70.06’da, mobilyayla birlikte gelirse mobilyayla sınıflandırılır. Isıtıcı rezistans şeritli camlar Fasıl 85, fotoğrafik cam levhalar Fasıl 37."],
+        ["70.07 Açıklama Notu", "Emniyet camı yalnız <b>sertleştirilmiş (temperli)</b> ve <b>lamine</b> camdır; telle takviyeli alelade cam ve seçici emme özellikli koruyucu camlar (göz kamaşmasını önleyici, X ışınından koruyucu) emniyet camı değildir. Temperli cam sonradan işlenemez; şekil ve boyutu önceden verilir. Kurşun geçirmez cam lamine camın özel tipidir. Şekil verilmiş (kavisli) emniyet camı da buradadır; ancak saat camı karakterli veya güneş gözlüğüne mahsus bombeli emniyet camları 70.15’te, emniyet camlı gözlükler 90.04’te. Temperli camdan su bardağı 70.13; emniyet camı yerine kullanılan plastik Fasıl 39."],
+        ["70.09 Açıklama Notu", "Ayna: net yansıma için bir yüzü metalle (genellikle gümüş, bazen platin veya alüminyum) kaplanmış cam. Yere konulan ayaklı boy aynaları 94. Fasıl Not 1(b) gereği 70.09’dadır. Basılı resim ayna kullanımını engelliyorsa süs eşyası olarak 70.13. Mobilya aksamı olmuş ayna (gardırop kapısı) mobilyayla; kulp ve çerçeveli ayna tepsi 70.13; çerçevesi kıymetli metalden ayna 71.14; optik tarzda işlenmiş ayna Fasıl 90; 100 yaşı aşan antika 97.06."],
+        ["70.10 Açıklama Notu", "Ticari taşıma veya ambalaj kapları burada; süslenmiş, damlalıklı veya ölçü taksimatlı olabilirler; kapla birlikte sunulan her maddeden kapak da buradadır. Hariç: sürahi ve bardak gibi evsel kaplar ile biberon 70.13; parfüm spreyi şişeleri 70.13; laboratuvar, hijyen ve eczane eşyası 70.17; mağaza teşhir kavanozu ve vakumlu kap iç gövdesi 70.20; deri kaplı şişe ve matara 42.05; parfüm spreyi 96.16; vakumlu kaplar 96.17."],
+        ["70.14 – 70.15 Açıklama Notları", "70.14: optik tarzda işlenmemiş sinyal camı ve optik elemanlar (far merceği, stop lambası ve yön ışığı camı, bisiklet reflektörü). Bir veya daha çok yüzü optik özellik için cilalanmış eşya 90.01 veya 90.02’dedir; kenarların basitçe perdahlanması optik işlem sayılmaz. Hazır eşya olmuşsa 83.10 veya 85.12. 70.15: koruma amaçlı saat camları ile numaralı veya numarasız gözlük camları (bombeli, optik işlenmemiş); aynı amaçlı düz camlar 70.05–70.07, laboratuvar için özel hazırlanmış saat camı 70.17, optik işlenmiş gözlük camı ve kontakt lens Fasıl 90."],
+        ["70.16 Açıklama Notu", "Bina camları, mozaik küpler (mesnetli olsun olmasın), kurşunla tutturulmuş vitray ve çok hücreli (köpük) cam. Köpük cam: özgül ağırlığı <b>0,5</b>’i aşmayan, ısı ve ses yalıtıcı blok, pano ve levha; köpük camdan can simidi ve süs eşyası 70.16 dışındadır (70.13, 70.17 veya 70.20). Mozaik küplerden yapılmış panolar 70.20’de; 100 yaşı aşan vitray 97.06’da."],
+        ["70.17 Açıklama Notu", "Laboratuvarlarda genel kullanıma mahsus cam eşya ile pratisyen yardımı gerektirmeyen eczane ve hijyen eşyası (enjektör, lazımlık, göz banyoluğu, göğüs pompası) burada. Hariç: ambalaj kapları 70.10, adi saat camı 70.15, teşhir kavanozu 70.20; hipodermik şırınga ve tıbbi aletler 90.18, termometre ve hidrometreler 90.25, analiz cihazları 90.27."],
+        ["70.18 Açıklama Notu", "Kürecik çapı <b>1 mm’den az</b>. Camdan gözler: insan protezi 90.21; oyuncak bebek, robot ve doldurulmuş hayvan gözleri 70.18; mekanik tertibatlı (açılır kapanır) bebek gözleri 95.03. Boncuk veya taş taklidinden tesbihler 70.18’de. Kalıp veya dökme camdan süs çiçek ve meyveler 70.13. Kıymetli metale monte taklit inci ve taşlar 71.13 veya 71.14; taklit mücevher 71.17; kol düğmeleri 71.13 veya 71.17; düğmeler 96.06; cam tozu 32.07."],
+        ["70.19 Açıklama Notu", "Cam lifleri ve cam yünü ile bunlardan şerit, fitil, iplik, mensucat, perde ve döşemelik burada. Hariç: plastik emdirilmiş, sert ve katı hale gelerek cam lifi eşyası karakterini kaybetmiş ürünler (Fasıl 39); 68.06 mineral yünleri; iki yüzü asfaltla kaplı cam lifi altlıklı çatı levhaları 68.07; araları cam lifiyle dolu çok katlı yalıtım camı 70.08; optik lif kabloları 85.44; optik lifler ve demetleri 90.01; oyuncak peruk 95.03 ve cam lifinden olta kamışı 95.07; cam lifi fırçalar 96.03."],
+        ["70.20 Açıklama Notu", "Fasılda ve tarifede başka yerde belirtilmeyen cam eşya: sanayi cam eşyası, seviye göstergesi tüpü, vakumlu kap iç gövdeleri (koruyucu zarfla tamamlanmışsa 96.17), mağaza teşhir şişeleri, ağ yüzdürücüleri, mozaik küplerden panolar, can simidi ve can yeleği. Hariç: şemsiye ve baston sapları 66.03, izolatörler 85.46–85.47, Fasıl 90–92 eşyası, cam mobilya (Fasıl 94), oyuncaklar (Fasıl 95), Fasıl 96 eşyası, 100 yılı aşan antikalar 97.06."],
+    ],
+    "sinir_komsulari": [
+        ["Cam tozu, cam firit, toz-granül emaye ve sır", "32.07", "Fasıl 70 Not 1(a)"],
+        ["Cam boncuklu kolye veya bilezik (taklit mücevher)", "71.17", "Not 1(b); 70.18 taklit mücevheri kapsamaz"],
+        ["Kübik zirkonya, sentetik yakut", "71.04", "Sentetik taştır; camdan taklit taş (70.18) ile karıştırılmamalı"],
+        ["Optik lif kablosu; cam izolatör", "85.44 / 85.46", "Not 1(c)"],
+        ["Taşıtın ısıtıcı tertibatlı camı veya çerçeveli ön camı", "Fasıl 86–88", "Not 1(d) ve 1(e)"],
+        ["Optik tarzda işlenmiş mercek, kontakt lens", "Fasıl 90", "Not 1(f)"],
+        ["Camdan termometre, hidrometre", "90.25", "Not 1(f); 70.17 hariç tutması"],
+        ["İnsan için protez cam göz", "90.21", "70.18 hariç tutması"],
+        ["Abajur camı, avize camı ve diğer lamba parçaları", "94.05", "Not 1(g)"],
+        ["Oyuncak cam bilye; Noel ağacı cam süsü", "95.03 / Fasıl 95", "Not 1(h)"],
+        ["Tamamlanmış termos, parfüm spreyi, cam düğme", "96.17 / 96.16 / 96.06", "Not 1(ij)"],
+        ["Silisi %60’tan az, alkali ve borik oksidi düşük mineral yün", "68.06", "Not 4"],
+        ["Ahşap çerçeveli resim camı; adi metal çerçeveli", "44.14 / 83.06", "70.06 Açıklama Notu"],
+        ["Plastik emdirilmiş sert cam elyaf levha", "Fasıl 39", "Cam lifi karakterini kaybetmiştir (70.19 hariç tutması)"],
+        ["Camdan mobilya (sehpa, vitrin dolabı)", "Fasıl 94", "70.20 hariç tutması"],
+    ],
+    "tuzaklar": [
+        "<b>Telli cam emniyet camı değildir.</b> 70.07 yalnız temperli ve lamine camı kapsar; tel takviyeli alelade cam yöntemine göre 70.03 veya 70.05’te kalır, X ışınından koruyucu cam da emniyet camı sayılmaz.",
+        "<b>Taşıt camında çerçeve ve tertibat belirleyicidir.</b> Çerçevesiz ve tertibatsız lokomotif ön camı 70.07’de kalır; ısıtma tertibatlı olan çerçevesiz olsa bile (Not 1(e)), çerçeveli olan ise (Not 1(d)) Fasıl 70 dışındadır.",
+        "<b>Kesmek işlemek değildir.</b> Levha camın kesilerek şekillendirilmesi ve tavlamadan önceki işlemler 70.03–70.05’i bozmaz; kenar taşlama, bombeleme, delme, kumlama veya emaye camı 70.06’ya taşır.",
+        "<b>Her şişe 70.10 değildir.</b> Ticari ambalaj şişesi 70.10; sürahi, biberon ve parfüm spreyi şişesi 70.13; laboratuvar şişesi 70.17; mağaza teşhir şişesi 70.20; tamamlanmış termos 96.17.",
+        "<b>Eritilmiş kuvars camdır.</b> Not 5 tarifenin her yerinde geçerlidir; eritilmiş silisten boru, pota ve oluklar taş eşya veya kıymetli taş olarak değil cam olarak sınıflandırılır.",
+        "<b>Cam yünü eşiği iki basamaklıdır.</b> Silis %60 veya fazlaysa doğrudan cam yünü; %60’ın altındaysa alkali oksit %5’ten veya borik oksit %2’den fazla olmalı. Aksi halde mineral yün 68.06.",
+        "<b>Tesbih taklit mücevher değildir.</b> Kıymetli metal içermeyen cam boncuklu tesbih 70.18’dedir; taklit mücevher (71.17) yalnız Fasıl 71 Not 9(a)’daki kişisel küçük süs eşyasını kapsar.",
+        "<b>Ayna mı süs mü?</b> Basılı resim ayna kullanımını engelliyorsa 70.13, engellemiyorsa 70.09. Yere konulan ayaklı boy aynası mobilya değil 70.09’dur; gardırobun aynalı kapısı ise mobilyayla sınıflandırılır.",
+        "<b>1 mm sınırı.</b> Çapı 1 mm’den az cam kürecikler (yol işaret levhası, sinema perdesi) 70.18; işlenmemiş cam bilyalar 70.02; oyuncak bilye 95.03.",
+        "<b>Camdan göz üç yola ayrılır.</b> Oyuncak bebek ve doldurulmuş hayvan gözü 70.18; mekanik (açılır kapanır) bebek gözü 95.03; insan protez gözü 90.21.",
+    ],
+    "hafiza": {
+        "kanca": "DÖ – ÇE – FLO  →  İŞ – EM – YA – AY",
+        "aciklama": "<b>DÖ</b>kme 70.03 · <b>ÇE</b>kme 70.04 · <b>FLO</b>at 70.05 → <b>İŞ</b>lenmiş 70.06 · <b>EM</b>niyet 70.07 · <b>YA</b>lıtım 70.08 · <b>AY</b>na 70.09. Düz cam bir fabrikada soldan sağa yürür: önce üretilir (03–05), sonra işlenir (06), katmanlanır (07–08) ve en sonda gümüşlenip ayna olur (09). Ardından kaplar (10), lamba zarfları (11), sofra (13), optik (14–15), inşaat (16), laboratuvar (17), boncuk (18), lif (19) ve diğerleri (20) gelir.",
+    },
+    "sinav_odagi": [
+        "“Hangisi 70. fasılda sınıflandırılmaz?” kalıbında Not 1(e): ısıtma tertibatlı taşıt camının çerçevesiz olsa bile fasıl dışı kalması; çeldiriciler tertibatsız çerçevesiz ön cam, ayna, far camı ve cam tülü.",
+        "Taşıtla ilgili cam eşyanın 87. fasılda değil Fasıl 70’te kalması: far ve stop camları (70.14), dikiz aynası (70.09); dikiz aynası örneğinde uygulanan GYK’nın sorgulanması.",
+        "Oyuncak bebeklere mahsus camdan gözlerin sınıflandırılmasında kullanılan genel yorum kuralları (pozisyon için GYK 1, alt pozisyon için GYK 6).",
+        "Fasıl–konu eşleştirmesi: “cam 70. fasılda yer alır” gibi ifadelerin doğruluk sorularında ve aynı bölümde yer alan eşya sorularında cam bardağın kullanılması.",
+        "Lamba camının 94.05 aksamı olarak sınıflandırılması; set (GYK 3(b)) sorularında cam bardak ve cam kavanoz gibi Fasıl 70 eşyasının çeldirici olarak kullanılması.",
+    ],
+    "cikmis_ornekler": [
+        {
+            "soru": "Aşağıdaki cam eşyalardan hangisi Türk Gümrük Tarife Cetveli 70. Fasılda <b>sınıflandırılmaz</b>?",
+            "secenekler": [
+                "Lokomotife ait ısıtma tertibatlı çerçevesiz ön cam",
+                "Lokomotife ait çerçevesiz ön cam",
+                "Cam ayna",
+                "Far camı",
+                "Cam tülü",
+            ],
+            "cevap": "A",
+            "aciklama": "Not 1(e) gereği 86–88. fasıl taşıtlarının ısıtma tertibatı veya elektrikli cihaz içeren camları çerçevesiz olsalar bile Fasıl 70 dışındadır. Tertibatsız çerçevesiz ön cam emniyet camı olarak 70.07’de, ayna 70.09’da, far camı 70.14’te, cam tülü 70.19’dadır.",
+        },
+        {
+            "soru": "Aşağıda belirtilen ürünlerden hangisi kara nakil vasıtaları ve bunların aksam, parça ve aksesuarlarının yer aldığı 87. fasılda <b>sınıflandırılmaz</b>?",
+            "secenekler": [
+                "Traktör",
+                "Bebek arabaları",
+                "Tank",
+                "Motorlu kara nakil vasıtaları için far ve stop camları",
+            ],
+            "cevap": "D",
+            "aciklama": "Optik tarzda işlenmemiş far ve stop lambası camları, 70.14 açıklama notunda sayılan camdan optik elemanlardır ve 87. fasılda değil 70.14’te yer alır; traktör, bebek arabası ve tank 87. fasıldadır.",
+        },
+    ],
+    "ozet": [
+        "Önce Not 1 dışlamaları: 32.07, Fasıl 71, taşıt camları (86–88), Fasıl 90, 94.05, Fasıl 95–96.",
+        "Düz cam: yöntem (03 dökme-haddeleme, 04 çekme-üfleme, 05 float-parlatma) → işlenmiş 06 → emniyet 07 → yalıtım 08 → ayna 09.",
+        "Kesme ve tavlama öncesi işlemler işleme sayılmaz; kenar işleme, bombeleme, kumlama 70.06’ya götürür.",
+        "Kaplarda amaç: ambalaj 70.10, ev-sofra-süs 70.13, laboratuvar-hijyen 70.17, teşhir ve termos iç gövdesi 70.20.",
+        "Optik tarzda işlenmemişse 70.14 veya 70.15; optik tarzda işlenmişse Fasıl 90.",
+        "Eritilmiş kuvars her yerde camdır; cam yünü için Not 4 eşikleri (%60 silis; %5 alkali oksit; %2 borik oksit).",
+        "Çapı 1 mm’den küçük kürecik, boncuk, taklit inci ve taş, camdan göz 70.18; taklit mücevher 71.17.",
+    ],
+}
+
+S = []
+
+# ---------- Eşya → 4’lü pozisyon (5) ----------
+S.append(soru(ESYA,
+    "Tarife Cetveline göre, mobilyadan ayrı olarak sunulan, float camdan kesilmiş, kenarları taşlanarak şevlendirilmiş ve yüzeyine kum püskürtülerek desen verilmiş, çerçevesiz masa üstü camı hangi pozisyonda sınıflandırılır?",
+    "70.06", ["70.05", "70.07", "70.13", "94.03"], "C",
+    "70.03–70.05 camlarının kenar işlemesi, kumlama gibi yüzey işlemi görmüş ve cam dışındaki maddelerle çerçevelenmemiş olanları 70.06’dadır; Not 3 gereği eşya vasfı kazanmaları da bu pozisyonu değiştirmez. 70.05 yalnız başka şekilde işlenmemiş float camı alır. Mobilya camı mobilyadan ayrı sunulduğu için mobilya aksamı olarak sınıflandırılmaz; temperli veya lamine olmadığından emniyet camı da değildir.",
+    "Fasıl 70 Not 2 ve Not 3; 70.05 ve 70.06 Açıklama Notları."))
+
+S.append(soru(ESYA,
+    "Tarife Cetveline göre, iki cam yaprak arasına plastik ara tabakalar yerleştirilip ısı ve basınç altında yapıştırılarak elde edilen, binalarda kullanılacak çerçevesiz kurşun geçirmez cam hangi pozisyonda yer alır?",
+    "70.07", ["70.08", "70.06", "70.05", "70.16"], "A",
+    "Cam yaprakların plastik tabakalarla ısı ve basınç altında birleştirilmesiyle lamine emniyet camı elde edilir; kurşun geçirmez cam, açıklama notuna göre lamine camın özel bir tipidir ve 70.07’dedir. 70.08 arası kuru hava, gaz veya cam lifiyle ayrılmış yalıtım camlarını kapsar; birden fazla cam katmanı bulunması tek başına yalıtım camı anlamına gelmez.",
+    "70.07 Açıklama Notu (B)."))
+
+S.append(soru(ESYA,
+    "Tarife Cetveline göre, bir yüzü gümüşle kaplanmış, ahşap çerçeveli, terzilerin kullandığı türden yere konulan ayaklı boy aynası hangi pozisyonda sınıflandırılır?",
+    "70.09", ["94.03", "44.14", "70.13", "70.06"], "E",
+    "Cam ayna, net yansıma için bir yüzü metalle kaplanmış camdır ve çerçeveli olsun olmasın 70.09’dadır. Terzilerin ayaklı boy aynaları gibi yere konulan aynalar, 94. Fasıl Not 1(b) gereği mobilya sayılmaz ve 70.09’da kalır. 44.14 ahşap çerçeveleri, 70.13 süs amaçlı cam eşyayı, 70.06 işlenmiş levha camı kapsar.",
+    "70.09 Açıklama Notu; 94. Fasıl Not 1(b)."))
+
+S.append(soru(ESYA,
+    "Tarife Cetveline göre, borosilikat camdan, laboratuvarlarda kullanılan türden taksimatlı damıtma balonu hangi pozisyonda yer alır?",
+    "70.17", ["70.10", "70.13", "90.27", "70.20"], "B",
+    "70.17 laboratuvarlarda genel kullanıma mahsus cam eşyayı (damıtma balonu, büret, pipet, kültür kabı vb.) taksimatlı olsun olmasın kapsar. 70.10 ticari taşıma ve ambalaj kaplarını, 70.13 ev ve sofra eşyasını alır. Fiziksel ve kimyasal analiz alet ve cihazları 90.27’ye girer; damıtma balonu ise açıklama notunda laboratuvar cam eşyası olarak sayılmıştır.",
+    "70.17 Açıklama Notu."))
+
+S.append(soru(ESYA,
+    "Tarife Cetveline göre, yol işaret levhalarının ve sinema perdelerinin imalinde kullanılan, çapı 1 mm’den az yekpare cam kürecikler hangi pozisyonda sınıflandırılır?",
+    "70.18", ["70.02", "70.14", "32.07", "70.19"], "D",
+    "Çapı 1 mm’den az cam kürecikler pozisyon metninde açıkça sayılmıştır ve 70.18’dedir. İşlenmemiş cam bilyalar 70.02’de olmakla birlikte bu mikrokürecikler 70.02 açıklama notunda açıkça hariç tutulmuştur. 70.14 de mikroküreleri kapsamaz (yalnız bunlarla kaplanmış işaret plakalarını alır); toz halindeki cam 32.07’dedir.",
+    "70.18 pozisyon metni ve Açıklama Notu (H); 70.02 ve 70.14 Açıklama Notları."))
+
+# ---------- Olumsuz teşhis (4) ----------
+S.append(soru(OLUMSUZ,
+    "Aşağıdakilerden hangisi Tarife Cetvelinin 70. faslında <b>sınıflandırılmaz</b>?",
+    "Granül halindeki cam firit",
+    ["Külçe halindeki emaye cam", "Optik tarzda işlenmemiş camdan otomobil far merceği",
+     "Eritilmiş kuvarstan laboratuvar potası", "Cam tülü"], "A",
+    "Cam firit ile toz, granül veya pul halindeki camlar Fasıl 70 Not 1(a) gereği 32.07’dedir. Emaye cam külçe halindeyse 70.01’de, optik işlenmemiş far merceği 70.14’te, eritilmiş kuvars Not 5 gereği cam sayıldığından laboratuvar potası 70.17’de, cam tülü 70.19’dadır.",
+    "Fasıl 70 Not 1(a) ve Not 5; 70.01 ve 70.14 Açıklama Notları."))
+
+S.append(soru(OLUMSUZ,
+    "Aşağıdakilerden hangisi 70.10 pozisyonunda <b>yer almaz</b>?",
+    "Camdan bebek biberonu",
+    ["Serum ampulü", "Camdan konserve kavanozu", "Camdan şişe tıpası", "Bira şişesi"], "C",
+    "Bebek biberonları 70.10 açıklama notunda açıkça hariç tutulmuş ve 70.13’e verilmiştir. Serum ampulleri, konserve kavanozları, camdan tıpa ve kapaklar ile ticari ambalajda kullanılan bira şişeleri 70.10 pozisyon metni kapsamındadır.",
+    "70.10 pozisyon metni ve Açıklama Notu, hariç tutma (d)."))
+
+S.append(soru(OLUMSUZ,
+    "Aşağıdakilerden hangisi 70.13 pozisyonunda <b>sınıflandırılmaz</b>?",
+    "Tamamlanmış halde camdan termos (vakumlu şişe)",
+    ["Camdan vazo", "Temperlenmiş camdan su bardağı", "Cam seramiğinden tabak", "Camdan akvaryum"], "E",
+    "Tamamlanmış vakumlu şişeler ve diğer vakumlu kaplar Not 1(ij) ve 70.13 hariç tutmaları gereği 96.17’dedir; yalnız camdan iç gövdeleri 70.20’ye girer. Vazo ve akvaryum ev tezyinatı, temperli camdan su bardağı ve cam seramiğinden tabak sofra-mutfak eşyası olarak 70.13’tedir; temperli olması bardağı 70.07’ye götürmez.",
+    "Fasıl 70 Not 1(ij); 70.13 ve 70.07 Açıklama Notları."))
+
+S.append(soru(OLUMSUZ,
+    "Aşağıdakilerden hangisi 70.09 pozisyonunda <b>sınıflandırılmaz</b>?",
+    "Kulpları ve kenar çerçevesi takılmış aynadan servis tepsisi",
+    ["Taşıtlar için dikiz aynası", "Muhafaza içinde cep aynası", "Plastik çerçeveli el aynası",
+     "Masa ortasına konulan, başka maddelerle birleşmemiş ayna"], "D",
+    "Kulp, çerçeve gibi ilave parçalarla başka bir eşya haline gelmiş aynalar (aynadan tepsiler) 70.09 açıklama notunda hariç tutulmuş ve 70.13’e verilmiştir. Dikiz aynası pozisyon metninde sayılmıştır; cep ve el aynaları ile başka maddelerle birleşmemiş masa ortası aynaları 70.09’da kalır.",
+    "70.09 Açıklama Notu, hariç tutma (a)."))
+
+# ---------- Farklı/aynı pozisyon veya fasıl (4) ----------
+S.append(soru(FARKLI,
+    "Aşağıdakilerden hangisi diğerlerinden <b>farklı</b> bir pozisyonda yer alır?",
+    "Kalıba dökülerek elde edilmiş, ev süslemesine mahsus camdan meyve",
+    ["Cam boncuklardan ipe dizilerek yapılmış pencere storu", "Strass camdan, monte edilmemiş elmas taklidi",
+     "Şalümo ile işlenmiş camdan hayvan biblosu", "Camdan taklit inci"], "B",
+    "Dökme veya kalıp işi camdan çiçek, yaprak ve meyveler ev tezyinatı eşyası olarak 70.13’tedir. Boncuktan storlar, kıymetli taş taklitleri, şalümo ile işlenmiş heykelcik ve süsler ile taklit inciler (taklit mücevher olmadıkça) 70.18’de toplanır. Tuzak, her cam “süs” eşyasının 70.18’e gittiğini sanmaktır.",
+    "70.18 Açıklama Notu; 70.13 Açıklama Notu (4)."))
+
+S.append(soru(FARKLI,
+    "Aşağıdakilerden hangisi diğerlerinden <b>farklı</b> bir fasılda yer alır?",
+    "İnsanlar için camdan protez göz",
+    ["Oyuncak bebekler için mekanik tertibatı olmayan camdan göz", "İçi doldurulmuş hayvanlar için camdan göz",
+     "Vakumlu kaplar için kaplanmamış camdan iç gövde", "Camdan mozaik küpler"], "D",
+    "İnsanlara mahsus protez camdan gözler 90.21’dedir (Fasıl 90). Oyuncak bebek ve doldurulmuş hayvan gözleri mekanik tertibatları yoksa Not 1(h) gereği Fasıl 70’te (70.18) kalır; vakumlu kap iç gövdesi 70.20’de, mozaik küpler 70.16’dadır.",
+    "Fasıl 70 Not 1(f) ve 1(h); 70.16, 70.18 ve 70.20 Açıklama Notları."))
+
+S.append(soru(FARKLI,
+    "Aşağıdaki levha camlardan hangisi diğerlerinden <b>farklı</b> bir pozisyonda yer alır?",
+    "Isıyla kavislendirilmiş (bombelendirilmiş) float cam levha",
+    ["Yalnızca kesilerek dikdörtgen şekle getirilmiş float cam", "Yüzeyi taşlanmış ve parlatılmış dökme cam levha",
+     "Tel ile takviye edilmiş, yüzeyleri parlatılmış cam levha", "Kızılötesi ışınları emen metal oksit tabakalı float cam"], "A",
+    "Bombelendirilmiş veya kavislendirilmiş levhalar 70.06’dadır; 70.05 açıklama notu bunları açıkça dışarıda bırakır. Not 2(b) gereği kesmek sınıflandırmayı etkilemez; yüzeyi taşlanıp parlatılmış dökme cam, telli parlatılmış cam ve emici tabakalı float cam 70.05’te kalır.",
+    "Fasıl 70 Not 2(b) ve 2(c); 70.05 ve 70.06 Açıklama Notları."))
+
+S.append(soru(FARKLI,
+    "Aşağıdaki eşya çiftlerinden hangisinde her iki eşya da <b>aynı</b> pozisyonda yer alır?",
+    "Elektrik ampulü için donanımsız açık cam zarf – iç yüzeyi floresan maddeyle kaplanmış cam tüp",
+    ["Kütlesine floresan madde katılmış cam boru – iç yüzeyi floresan maddeyle kaplanmış cam tüp",
+     "Optik işlenmemiş sinyalizasyon camı – numarasız güneş gözlüğü camı",
+     "Oyuncak niteliğinde damarlı cam bilye – işlenmemiş içi dolu cam bilye",
+     "Çok katlı yalıtım camı – lamine emniyet camı"], "E",
+    "Lambalar için donanımsız açık cam zarflar ile iç yüzeyi floresan maddelerle kaplanmış tüpler 70.11’dedir. Kütlesine floresan katılmış boru 70.02’de kalır; sinyal camı 70.14, güneş gözlüğü camı 70.15; oyuncak bilye 95.03, işlenmemiş bilye 70.02; yalıtım camı 70.08, emniyet camı 70.07’dedir.",
+    "70.11 Açıklama Notu (A) ve (C); 70.02, 70.14 ve 70.15 Açıklama Notları."))
+
+# ---------- Fasıl notu · Tanım/Eşik (4) ----------
+S.append(soru(TANIM,
+    "Fasıl 70 Not 4’e göre aşağıdaki mineral yünlerden hangisi “cam yünü” <b>sayılmaz</b> ve 68.06 pozisyonunda sınıflandırılır?",
+    "Ağırlıkça %58 silis, %4 alkali oksit ve %1 borik oksit içeren",
+    ["Ağırlıkça %62 silis içeren", "Ağırlıkça %60 silis içeren",
+     "Ağırlıkça %55 silis ve %6 alkali oksit içeren", "Ağırlıkça %50 silis ve %3 borik oksit içeren"], "C",
+    "Silis %60 veya fazlaysa ürün doğrudan cam yünüdür. Silis %60’ın altındaysa alkali oksidin %5’ten veya borik oksidin %2’den fazla olması gerekir; %4 alkali oksit ve %1 borik oksit bu eşikleri aşmadığından ürün 68.06’ya gider. %60 sınırı “veya daha fazla” olarak tanımlandığından %60 silisli yün de cam yünüdür.",
+    "Fasıl 70 Not 4."))
+
+S.append(soru(TANIM,
+    "Tarife Cetvelinin 70. Fasıl Not 2 hükmüne göre 70.03, 70.04 ve 70.05 pozisyonları anlamında aşağıdakilerden hangisi <b>yanlıştır</b>?",
+    "Kenarları taşlanıp yuvarlatılmış levha camlar da bu pozisyonlarda kalır.",
+    ["Cam, tavlanmadan önce gördüğü bir işlem nedeniyle “işlenmiş” sayılmaz.",
+     "Cama kesilerek şekil verilmesi levha halindeki camın sınıflandırılmasını etkilemez.",
+     "Şeffaflığı koruyan, mikroskopla görülebilecek incelikteki metal oksit tabakası “emici veya yansıtıcı tabaka” sayılır.",
+     "Camın yüzeyinin ışığı yansıtmasını engelleyen ince tabaka da Not 2 kapsamındaki tabakalardandır."], "B",
+    "Not 2 tavlama öncesi işlemlerin ve kesmenin sınıflandırmayı etkilemediğini, emici, yansıtıcı veya yansıtmayı engelleyen ince tabakaların da bu pozisyonlarda serbest olduğunu söyler. Kenar taşlama ve yuvarlatma ise “başka şekilde işleme”dir ve camı 70.06’ya götürür.",
+    "Fasıl 70 Not 2; 70.06 Açıklama Notu (B)."))
+
+S.append(soru(TANIM,
+    "Tarife Cetveline göre eritilmiş kuvars ve diğer eritilmiş silis ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "Tarifenin neresinde geçerse geçsin “cam” sayılır.",
+    ["Yalnız 70. fasıl uygulamasında cam sayılır, diğer fasıllarda mineral madde kabul edilir.",
+     "Kuvars bir yarı kıymetli taş olduğundan 71.03’te yer alır.",
+     "Eritilmiş silisten eşya taş eşya olarak 68. fasılda sınıflandırılır.",
+     "Yalnızca boru ve çubuk halinde olanları cam sayılır."], "A",
+    "Fasıl 70 Not 5, eritilmiş kuvars ve diğer eritilmiş silisin tarifenin her yerinde cam sayılacağını hükme bağlar. Bu nedenle eritilmiş silisten borular 70.02’de, laboratuvar eşyası 70.17’de, sanayide kullanılan oluk ve kanallar 70.20’de yer alır; şekle göre bir sınırlama yoktur.",
+    "Fasıl 70 Not 5; 70.02, 70.17 ve 70.20 Açıklama Notları."))
+
+S.append(soru(TANIM,
+    "Tarife Cetvelinin 70.07 pozisyonu anlamında “emniyet camı” ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "Temperlenmiş emniyet camı iç gerilimler nedeniyle sonradan işlenemediğinden temperlemeden önce son şekil ve boyutuna getirilir.",
+    ["Tel ile takviye edilmiş alelade camlar emniyet camı sayılır.",
+     "X ışınından koruyan seçici emme özellikli camlar emniyet camıdır.",
+     "Kavislendirilmiş emniyet camları 70.06 pozisyonunda yer alır.",
+     "Emniyet camı yerine kullanılan plastik levhalar 70.07’de sınıflandırılır."], "E",
+    "Açıklama notuna göre temperli cam, işlem sırasında oluşan iç mukavemetler nedeniyle sonradan işlenemez ve önceden belirlenen şekil ve boyutta üretilir. Telli alelade cam ve seçici emme özellikli koruyucu camlar emniyet camı değildir; şekil verilmiş emniyet camı da 70.07’de kalır; emniyet camı yerine kullanılan plastikler Fasıl 39’dadır.",
+    "70.07 Açıklama Notu."))
+
+# ---------- Genel Yorum Kuralı (2) ----------
+S.append(soru(GYK,
+    "Hava taşıtlarında kullanılmak üzere şekillendirmenin ötesinde bir işlem görmemiş, çerçevesiz lamine emniyet camları hava taşıtı aksamı olarak değil 70.07 pozisyonunda sınıflandırılır. Bu sonuç hangi genel yorum kuralının uygulamasıdır?",
+    "GYK 3(a)", ["GYK 2(a)", "GYK 2(b)", "GYK 3(b)", "GYK 4"], "C",
+    "Eşya ilk bakışta hem hava taşıtı aksamı hem de emniyet camı olarak iki pozisyona girebilir. GYK 3(a)’ya göre eşyayı daha açık tanımlayan pozisyon öncelik alır; GYK açıklama notu tam olarak bu örneği vererek çerçevesiz emniyet camını 70.07’ye yerleştirir. Fasıl 70 Not 1(d) yalnız çerçeveli taşıt camlarını dışarıda bırakır.",
+    "GYK 3(a) Açıklama Notu (IV)(b)(2); Fasıl 70 Not 1(d)."))
+
+S.append(soru(GYK,
+    "Dekoratif ahşap kaide üzerine sabitlenmiş, eşyaya asıl niteliğini cam kısmının verdiği kurşun kristalden vazonun 70.13 pozisyonunda sınıflandırılmasında hangi kurallar uygulanır?",
+    "GYK 1, 2(b) ve 3(b)", ["GYK 1 ve 2(a)", "GYK 1 ve 3(c)", "GYK 1 ve 4", "GYK 1 ve 5(b)"], "B",
+    "Vazo cam ve ahşaptan oluşan bileşik eşyadır; GYK 2(b) birden fazla maddeden oluşan eşyanın 3 numaralı kurala göre sınıflandırılacağını söyler. Cam kısım eşyaya asıl niteliğini verdiği için GYK 3(b) ile 70.13 seçilir; 70.13 açıklama notu da cam kısmı karakter veriyorsa başka maddelerle birleşik cam eşyanın bu pozisyonda kalacağını belirtir. 2(a) eksik veya demonte eşyaya, 5(b) ambalaj malzemesine ilişkindir.",
+    "GYK 2(b) ve 3(b); 70.13 Açıklama Notu."))
+
+# ---------- Eşleştirme / Boşluk doldurma (2) ----------
+S.append(soru(ESLES,
+    "Tarife Cetveline göre aşağıdaki cümlede boş bırakılan yerlere sırasıyla hangisi gelmelidir? “Çok hücreli (köpük) cam; erimiş cam hamuruna hava veya gaz haline gelen maddeler katılarak elde edilen, özgül ağırlığı ..... aşmayan, ısı ve ses yalıtıcı bir camdır; blok, pano ve levha halinde olanları ..... pozisyonunda yer alır.”",
+    "0,5 – 70.16", ["0,5 – 70.19", "1 – 70.16", "1,5 – 70.08", "0,5 – 68.06"], "D",
+    "70.16 açıklama notuna göre köpük cam, sünger taşına benzeyen bünyede, özgül ağırlığı 0,5’i aşmayan, ısı ve ses yalıtıcı bir camdır ve blok, pano, levha halinde 70.16’dadır. Cam yünü 70.19’da, çok katlı yalıtım camı 70.08’de, Not 4’e uymayan mineral yünler 68.06’dadır. Köpük camdan can simidi gibi mamuller ise 70.16 dışındadır.",
+    "70.16 pozisyon metni ve Açıklama Notu (3)."))
+
+S.append(soru(ESLES,
+    "Aşağıdaki eşya ile tarife yerleri hangi seçenekte doğru eşleştirilmiştir? I. Optik tarzda işlenmemiş otomobil far merceği · II. Optik tarzda işlenmemiş, bombeli, numarasız güneş gözlüğü camı · III. Kontakt lens · IV. Kurşunla tutturulmuş vitray pano — a) 70.14 · b) 70.15 · c) Fasıl 90 · d) 70.16",
+    "I-a, II-b, III-c, IV-d",
+    ["I-b, II-a, III-c, IV-d", "I-a, II-b, III-d, IV-c", "I-c, II-b, III-a, IV-d", "I-a, II-c, III-b, IV-d"], "A",
+    "Optik işlenmemiş far merceği camdan optik eleman olarak 70.14’te, bombeli numarasız gözlük camı 70.15’te, kontakt lens optik eşya olarak Fasıl 90’da, kurşunla tutturulmuş camlar (vitray) 70.16’dadır. Far merceği ile gözlük camının yer değiştirilmesi en sık yapılan hatadır.",
+    "70.14, 70.15 ve 70.16 Açıklama Notları; Fasıl 70 Not 1(f)."))
+
+# ---------- Çoktan-çoğa (I–IV) (2) ----------
+S.append(soru(COKLU,
+    "Aşağıdakilerden hangileri Tarife Cetvelinin 70. faslının kapsamı <b>dışındadır</b>? I. 86–88. fasıllardaki taşıtlar için çerçeveli ön camlar · II. Optik lif kabloları · III. Binalar için kurşun geçirmez lamine cam · IV. Noel ağacına takılan camdan süsler",
+    "I, II ve IV", ["I ve II", "II ve III", "I, III ve IV", "II ve IV"], "B",
+    "Çerçeveli taşıt camları Not 1(d), optik lif kabloları Not 1(c) (85.44), Noel ağacı süsleri Not 1(h) gereği Fasıl 70 dışındadır. Kurşun geçirmez cam ise lamine emniyet camının özel bir tipi olarak 70.07’dedir.",
+    "Fasıl 70 Not 1(c), (d) ve (h); 70.07 Açıklama Notu."))
+
+S.append(soru(COKLU,
+    "70.19 pozisyonu ile ilgili aşağıdaki ifadelerden hangileri doğrudur? I. Yığın halinde cam yünü ile cam yününden levha ve şilteler bu pozisyondadır. · II. Plastik emdirilerek sert ve katı hale gelmiş, cam lifi eşyası karakterini kaybetmiş levhalar bu pozisyondadır. · III. Araları cam lifleriyle doldurulmuş çok katlı yalıtım camları bu pozisyondadır. · IV. Dokunmuş cam liflerinden perdeler bu pozisyondadır.",
+    "I ve IV", ["I ve II", "II ve III", "I, III ve IV", "Yalnız II"], "E",
+    "Cam yünü ve ondan levha-şilteler ile dokunmuş cam lifinden perdeler 70.19’dadır. Sert ve katı hale gelerek cam lifi karakterini kaybetmiş plastik emdirilmiş ürünler Fasıl 39’a, araları cam lifiyle doldurulmuş yalıtım camları 70.08’e gider.",
+    "70.19 Açıklama Notu ve hariç tutmalar (a), (d)."))
+
+# ---------- Senaryo (2) ----------
+S.append(soru(SENARYO,
+    "Bir firma; iki float cam levhanın kenarlarından metal ara parçalarla birbirine tutturulduğu, aradaki boşluğun kuru hava ile doldurulup hava geçirmez hale getirildiği, kenarları ayrıca taşlanmış, pencere üretiminde kullanılacak çerçevesiz paneller ithal etmektedir. Tarife Cetveline göre bu paneller hangi pozisyonda sınıflandırılır?",
+    "70.08", ["70.05", "70.06", "70.07", "70.16"], "D",
+    "Araları kuru hava veya inert gazla ayrılmış, metal, plastik vb. birleştiricilerle hava geçirmez bölmeler oluşturacak şekilde tutturulmuş cam levhalar çok katlı yalıtım camıdır ve 70.08’dedir. Kenar taşlaması ürünü 70.06’ya götürmez; 70.06 açıklama notu yalıtım camlarını açıkça dışarıda bırakır. Emniyet camı (70.07) için temper veya laminasyon gerekir.",
+    "70.08 Açıklama Notu; 70.06 Açıklama Notu."))
+
+S.append(soru(SENARYO,
+    "Bir ithalatçı; ince cam borulardan kesilip döner silindirde ısıtılarak yuvarlatılmış, ortası delik renkli cam boncukların ipe dizilmesiyle yapılmış, hiçbir kıymetli metal veya kıymetli taş içermeyen tesbihler ithal etmektedir. Tarife Cetveline göre bu tesbihler hangi pozisyonda sınıflandırılır?",
+    "70.18", ["71.17", "71.13", "70.13", "96.02"], "C",
+    "70.18 açıklama notu, boncuklardan veya taş taklitlerinden yapılan tesbihleri açıkça bu pozisyonda sayar. Taklit mücevher (71.17) Fasıl 71 Not 11 gereği yalnız Not 9(a)’daki kişisel küçük süs eşyasını kapsar; tesbih ise Not 9(b)’deki üstte taşınan kişisel eşyadır ve 71.17 açıklama notuna göre taklit mücevher sayılmaz. 71.13 kıymetli metal veya kıymetli taş gerektirir.",
+    "70.18 Açıklama Notu; Fasıl 71 Not 9 ve Not 11; 71.17 Açıklama Notu."))
+
+obj["sorular"] = S
+
+if __name__ == "__main__":
+    kaydet(obj, 70)

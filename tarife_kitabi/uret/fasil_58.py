@@ -1,0 +1,288 @@
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from yardim_53_58 import S, SX, yaz  # noqa: E402
+
+E4 = "Eşya → 4’lü pozisyon"
+OT = "Olumsuz teşhis"
+FA = "Farklı/aynı pozisyon veya fasıl"
+FN = "Fasıl notu · Tanım/Eşik"
+GY = "Genel Yorum Kuralı"
+ES = "Eşleştirme / Boşluk doldurma"
+CC = "Çoktan-çoğa (I–IV)"
+SN = "Senaryo"
+
+d = {
+ "tur": "fasil",
+ "fasil": 58,
+ "baslik": "Özel dokunmuş mensucat; tufte edilmiş dokumaya elverişli mensucat; dantela, duvar halıları; şeritçi ve kaytancı eşyası; işlemeler",
+ "bolum": "XI",
+ "oz": {
+  "vurgu": "Fasıl 58, lifin cinsine bakılmadan (58.09 hariç) yapısına göre sınıflandırılan özel tekstil ürünlerini toplar: havlı dokumalar (58.01–58.02), açık yapılı dokumalar (gaz 58.03, tül-dantel 58.04), duvar halıları (58.05), dar ürünler (kordela 58.06, etiket 58.07, kordon-süs 58.08), metal iplikli mensucat (58.09), işlemeler (58.10) ve kapitoneli mensucat (58.11). Asıl soru, eşyanın bu yapılardan hangisini taşıdığı ve hazır eşya, Fasıl 57, 59 veya 60 sınırını aşıp aşmadığıdır.",
+  "maddeler": [
+   "Ürünler çoğunlukla parça, şerit veya motif halinde buradadır; Bölüm XI Not 7 anlamında hazır eşya haline gelince genellikle Fasıl 61–63’e geçer (58.05 duvar halıları hazır olsun olmasın buradadır).",
+   "Fasıl 59 Not 1’deki emdirilmiş, sıvanmış, kaplanmış veya lamine edilmiş mensucat ve Fasıl 59 eşyası (fitil, hortum, kayış, teknik ürünler) bu fasılda değildir (Not 1).",
+   "Temel tanımlar: kordela eni 30 cm’yi geçmez ve iki kenarı kendinden kenarlıdır (Not 5); gaz mensucat dolama (leno) dokumadır (Not 3); işleme önceden var olan bir zemin üzerine yapılır, dantelde desen zeminsiz oluşur.",
+   "Sınır komşuları: halılar Fasıl 57, örme ve tığ işi mensucat Fasıl 60, ipten düğümlü ağlar 56.08, sıkı örülmüş ipler 56.07."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+  "satirlar": [
+   ["1", "Fasıl 59 Not 1 anlamında emdirilmiş, kaplanmış, lamine mensucat ya da fitil, hortum, kayış, teknik eşya mı?", "<b>Fasıl 59</b> (59.08 fitil · 59.09 hortum · 59.10 kayış · 59.11 teknik)"],
+   ["2", "Yer kaplaması özelliği taşıyor mu? Örme veya tığ işi mi?", "<b>Fasıl 57</b> · <b>Fasıl 60</b>"],
+   ["3", "El ile dokunmuş veya iğne işlemesi duvar halısı mı? (hazır olsun olmasın)", "<b>58.05</b> (kilim <b>57.02</b>)"],
+   ["4", "Hazır eşya mı? (motif halindeki işlemeler hariç)", "<b>Fasıl 61–63</b>"],
+   ["5", "Eni 30 cm’yi geçmeyen, iki kenarı kendinden kenarlı dokuma, boru dokuma veya biye mi? Atkısız boldük mü?", "<b>58.06</b> (saçaklı kordela <b>58.08</b>)"],
+   ["6", "Önceden var olan zemin üzerine işleme veya aplike mi?", "<b>58.10</b>"],
+   ["7", "İşlemesiz etiket, arma ve benzeri mi?", "<b>58.07</b>"],
+   ["8", "Kadife, peluş, tırtıl mensucat mı? Havlu cinsi bukleli veya tufte mensucat mı?", "<b>58.01</b> · <b>58.02</b>"],
+   ["9", "Gaz (leno) mensucat mı? Tül, ağ mensucat veya dantel mi?", "<b>58.03</b> · <b>58.04</b>"],
+   ["10", "Parça halinde kordon, şeritçi eşyası, saçak, ponpon mu?", "<b>58.08</b>"],
+   ["11", "Metal veya metalize iplik ağırlıkça üstün, giyim-döşemede kullanılan dokunmuş mensucat mı?", "<b>58.09</b>"],
+   ["12", "Katlar arasına dolgu konularak dikilmiş kapitoneli parça mensucat mı?", "<b>58.11</b>"]
+  ],
+  "dipnot": "* Fasıl 58 Genel Açıklamalar: gaz mensucat, kordela ve parça halindeki şeritçi eşyası emdirilmiş, sıvanmış, kaplanmış veya lamine edilmişse fasıl dışına (genellikle 39, 40 veya 59) çıkar; diğer pozisyonlardaki eşya aynı işlemlerle 39 veya 40 karakteri kazanmadıkça burada kalır."
+ },
+ "pozisyon_haritasi": [
+  ["58.01", "Dokunmuş kadife, peluş, tırtıl mensucat", "En az üç seri iplik; kesilmemiş atkı kadifesi dahil", "Fitilli kadife, kürk taklidi peluş"],
+  ["58.02", "Havlu cinsi bukleli mensucat; tufte mensucat", "İki seri çözgü; tufte yere serilmez", "Top halinde havlu kumaşı, tufte mensucat"],
+  ["58.03", "Gaz mensucat (leno)", "Hareketli iplik sabit ipliğe dolanır", "Perdelik gaz dokuma"],
+  ["58.04", "Tül, ağ mensucat; dantel (parça, şerit, motif)", "Dantel zeminsiz oluşur", "Gelinlik tülü, makine danteli, makrame"],
+  ["58.05", "El dokuması ve iğne işi duvar halıları", "Hazır olsun olmasın; pano niteliği", "Goblen, Aubusson, kanaviçe duvar halısı"],
+  ["58.06", "Kordelalar; boldükler", "Eni ≤ 30 cm, iki kenar kendinden", "Saten kurdele, emniyet kemeri şeridi"],
+  ["58.07", "İşlemesiz etiket, arma ve benzerleri", "Parça, şerit veya kesilmiş; örme dahil", "Dokuma marka etiketi (şerit halinde)"],
+  ["58.08", "Kordon, şeritçi eşyası (parça); saçak, ponpon", "Gevşek örgü; örme ve işlemeli hariç", "Sutaşı, milanez, perde ponponu"],
+  ["58.09", "Metal/metalize iplikten dokunmuş mensucat", "Giyim-döşeme amaçlı; metal ağırlıkça üstün", "Simli elbiselik dokuma"],
+  ["58.10", "İşlemeler (parça, şerit, motif)", "Mevcut zemin üzerine; aplike dahil", "İşlemeli arma motifi, İngiliz işlemesi şerit"],
+  ["58.11", "Kapitoneli parça mensucat", "Katlar + dolgu; dikiş işleme vasfı vermez", "Top halinde yorganlık kapitone kumaş"]
+ ],
+ "notlar": [
+  ["Fasıl 58 Not 1", "Fasıl 59 Not 1’de belirtilen emdirilmiş, sıvanmış, kaplanmış veya lamine edilmiş mensucat ve Fasıl 59’daki diğer eşya bu fasla dahil değildir."],
+  ["Fasıl 58 Not 2", "Atkı iplik atlamaları kesilip uçları kaldırılmamış (henüz havsız) atkı iplikli kadife ve peluşler de 58.01’dedir."],
+  ["Fasıl 58 Not 3", "“Gaz mensucat”: yüzeyinin tamamı veya bir kısmı sabit ve hareketli çözgü ipliklerinden oluşan, hareketli ipliğin sabit iplikler etrafında yarım, tam veya daha fazla dolama yaparak atkı ipliğinin geçeceği bukleler oluşturduğu mensucat."],
+  ["Fasıl 58 Not 4", "58.04, 56.08’deki ipten, sicimden veya halattan düğümlü ağ mensucata uygulanmaz."],
+  ["Fasıl 58 Not 5", "“Dokunmuş kordela”: (a) her iki tarafı kendinden kenarlı (dokunmuş, yapıştırılmış vb.), eni 30 cm’yi geçmeyen dokuma (bu şekilde dokunmuş veya geniş parçadan kesilmiş); (b) yassılaştırılmış genişliği 30 cm’yi geçmeyen boru dokuma; (c) katları açıldığında eni 30 cm’yi geçmeyen, kenarları katlanmış biyeler. Dokunarak elde edilen saçaklı kordelalar 58.08’dedir."],
+  ["Fasıl 58 Not 6", "58.10’daki “işlemeler”: pul, payet, boncuk, mensucat veya diğer maddelerden süs motiflerinin dikilmesiyle yapılan aplikeler ile metal veya cam ipliklerle, zemini görünür kalan mensucat üzerine yapılan işlemeleri de kapsar. İğne işi duvar halıları 58.05’tedir."],
+  ["Fasıl 58 Not 7", "58.09’daki eşyaya ilaveten, metal ipliklerden yapılmış ve giyim eşyasında, döşemecilikte veya benzeri işlerde kullanılan eşya da bu fasla dahildir."],
+  ["Genel Açıklamalar", "58.09 hariç ürünler lif cinsine bakılmadan sınıflandırılır. Gaz mensucat, kordela ve parça halindeki şeritçi eşyası emdirilmiş, sıvanmış, kaplanmış veya lamine edilmişse fasıl dışına (39, 40 veya 59) çıkar."],
+  ["58.01 – 58.02 Açıklama Notu", "Kadife-peluş en az üç seri iplikten oluşur; kürk taklidi dokunmuş havlı kumaşlar 58.01’de, dikme veya yapıştırmayla yapılan taklit kürk 43.04’te. Bukleli iplikle veya havlandırmayla elde edilen ratine kumaşlar 50–55; örme havlı mensucat 60.01. Havlu kumaşı iki seri çözgüyle bukle oluşturur; tek yüzü havlı ve tüm bukleleri kesik olan 58.01’e, ayırıcı ipliklerle saçaklı havlulara ayrılabilen mensucat 63.02’ye gider."],
+  ["58.03 – 58.04 Açıklama Notu", "Bez ayağı gevşek “gaz bezi” 58.03’te değildir (tıbbi perakende 30.05, diğerleri 50–55); eleklik mensucat 59.11. Dantelin mümeyyiz vasfı desenlerin mevcut bir zemin üzerinde yapılmamasıdır; tül veya ağın gözleri doldurularak (file dantel) ya da zemin üzerine aplike ile yapılan eşya 58.10’dadır. Dantelden eşya 62 veya 63. fasıllarda (dantel şal 62.14, dantel masa örtüsü 63.04)."],
+  ["58.05 Açıklama Notu", "El ile dokunmuş (Goblen, Flandr, Aubusson, Beauvais) ve iğne işlemesi (küçük nokta, kanaviçe) duvar halıları; kıvrılmış veya kenarı bastırılmış olsa da buradadır. Makinede dokunmuş taklitler, kilim-sumak-karaman (57.02), yapım takımları (63.08), yaşı 100 yılı geçenler (Fasıl 97) ve duvar halısından yapılmış çanta, yastık gibi eşya hariçtir."],
+  ["58.06 – 58.08 Açıklama Notu", "Kordelaya jaluzi kolonları, emniyet kemeri ve koşum şeritleri dahildir; kenarsız kesilmiş şeritler sıradan mensucattır. Hariç: etiketler 58.07/58.10, fitiller 59.08, hortumlar 59.09, kayışlar 59.10, fermuarlar 96.07. Etiket ve armalar işlemesiz ve kesimden başka işçilik görmemiş olmalıdır (işlemeli 58.10; hazır eşya 61.17, 62.17, 63.07). 58.08 kordonları 56.07’deki örülmüş iplerden daha gevşek örgüsüyle ayrılır."],
+  ["58.09 – 58.11 Açıklama Notu", "58.09: metal veya metalize iplik ağırlığı diğer ipliklerden fazla olan giyim-döşeme mensucatı; giyim dışı metal tel mensucatı 71.15, 73.14, 74.19, 76.16. 58.10: zemini görünmeyen, zemini kalan işlemeler ve aplikeler; deri, plastik gibi tekstil dışı zemin üzerine işlemeler hariç. 58.11: mensucat katı ile dolgu katının dikiş, iğneleme vb. ile birleştirildiği kapitoneli parça mensucat; işleme vasfı veren dikişliler 58.10, plastikten olanlar Fasıl 39, doldurulmuş yatak eşyası Fasıl 94."]
+ ],
+ "sinir_komsulari": [
+  ["Dikme veya yapıştırmayla yapılan taklit kürk", "43.04", "58.01 Açıklama Notu"],
+  ["Bukleli iplikle dokunmuş veya havlandırılmış (ratine) kumaş", "Fasıl 50–55", "58.01 hariç tutması"],
+  ["Örme havlı mensucat, örme havlu kumaşı", "60.01", "58.01 ve 58.02 hariç tutmaları"],
+  ["Ayırıcı ipliklerin kesilmesiyle saçaklı havlulara ayrılan mensucat", "63.02", "58.02 hariç tutması"],
+  ["Bez ayağı gevşek gaz bezi (sargı)", "30.05 / Fasıl 50–55", "58.03 Açıklama Notu"],
+  ["Eleklik mensucat", "59.11", "58.03 ve 58.04 hariç tutmaları"],
+  ["Sicim veya halattan düğümlü ağ", "56.08", "Fasıl 58 Not 4"],
+  ["Dantel şal; dantel masa örtüsü", "62.14 / 63.04", "Dantelden eşya"],
+  ["Kilim, sumak, karaman; yere serilen tufte halı", "57.02 / 57.03", "Yer kaplaması"],
+  ["Duvar halısı yapım takımı (iplik + mensucat)", "63.08", "58.05 hariç tutması"],
+  ["Lamba, mum fitili; tulumba hortumu; transmisyon kayışı", "59.08 / 59.09 / 59.10", "58.06 ve 58.08 hariç tutmaları"],
+  ["Kayarak işleyen fermuar", "96.07", "58.06 ve 58.08 hariç tutmaları"],
+  ["Sıkıca örülmüş sicim, kordon, ip", "56.07", "58.08 Açıklama Notu"],
+  ["Giyimde kullanılmayan metal tel dokuması", "73.14 / 76.16", "58.09 hariç tutması"],
+  ["Zemini görünmeyen cam ipliği işlemesi", "70.19", "58.10 hariç tutması; Bölüm XI Not 1(r)"]
+ ],
+ "tuzaklar": [
+  "<b>Kesilmemiş kadife de kadifedir.</b> Atkı iplik atlamaları henüz kesilmemiş, yüzünde hav bulunmayan atkı kadifeleri 58.01’dedir (Not 2).",
+  "<b>Havlandırılmış kumaş kadife değildir.</b> Bukleli iplikle dokunmuş veya şardonla havlandırılmış (ratine) kumaşlar 50–55. fasıllarda; dokuma sırasında ek iplik serisiyle hav oluşanlar 58.01’dedir.",
+  "<b>Havlu kumaşı 58.02, havlu 63.02.</b> Ayırıcı ipliklerin kesilmesiyle saçaklı havlulara ayrılabilen mensucat 63.02’ye; tek yüzü havlı ve tüm bukleleri kesik olan 58.01’e gider.",
+  "<b>Gaz mensucat ≠ gaz bezi.</b> 58.03 dolama (leno) dokumadır; bez ayağı gevşek gaz bezi tıbbi perakende ise 30.05, değilse 50–55. fasıllardadır.",
+  "<b>Dantel zeminsiz, işleme zeminlidir.</b> Desen mevcut bir zemin üzerine yapılmışsa (file dantel, aplike) ürün 58.10’dadır; zemini sonradan çıkarılmış olsa bile işlemedir.",
+  "<b>Kordelada 30 cm ve iki kenar.</b> Eni 30 cm’yi geçmeyen ama kenarsız kesilmiş şerit sıradan mensucattır; saçaklı dokunmuş kordela 58.08’e, pikolu veya dantel kenarlı bant 58.06’ya gider.",
+  "<b>Etiket işlemeliyse 58.10.</b> 58.07 yalnız işlemesiz ve kesimden başka işçilik görmemiş etiket ve armalar içindir; hazır hale getirilenler 61.17, 62.17 veya 63.07’dedir.",
+  "<b>Kilim duvar halısı değildir.</b> El dokuması duvar halısı tekniğiyle dokunsa da kilim 57.02’dedir; 58.05 pano niteliğindeki duvar halıları içindir.",
+  "<b>Hortum, fitil, kayış Fasıl 59’dadır.</b> Kordela veya örgü görünümlü olsalar da tulumba hortumu 59.09, fitil 59.08, transmisyon kayışı 59.10’dadır.",
+  "<b>Metal iplikli kumaşta ağırlık bakılır.</b> Metal veya metalize iplik diğer ipliklerden ağır basarsa giyim-döşeme mensucatı 58.09’dadır; metalize iplik tek madde sayılır (Bölüm XI Not 2(B)(a))."
+ ],
+ "hafiza": {
+  "kanca": "KA–HA–GA–TÜL–DU–KOR–ET–SÜS–MET–İŞ–KAP",
+  "aciklama": "Bir gelinlik atölyesini sırayla gezin: <b>ka</b>dife 01, <b>ha</b>vlu-tufte 02, <b>ga</b>z 03, <b>tül</b>-dantel 04, <b>du</b>var halısı 05, <b>kor</b>dela 06, <b>et</b>iket 07, <b>süs</b> kordonu-ponpon 08, <b>met</b>al iplikli kumaş 09, <b>iş</b>leme 10, <b>kap</b>itone 11. Kumaşlardan (01–04) duvara (05), dar ürünlere (06–08), simli kumaşa (09) ve süslemeye (10–11) ilerlenir."
+ },
+ "sinav_odagi": [
+  "Bu fasıl çıkmış sorularda daha çok seçeneklerde ve çeldirici olarak yer almıştır.",
+  "Sentetik liflerden yangın hortumu gibi dokumaya elverişli maddeden özel eşyada 58.11 (kapitoneli mensucat), 39.17 (plastik hortum), 63.06 ve 59.09 arasında seçim yapılması.",
+  "Bölüm XI’in ikinci kısmında (56–63) eşyanın lif cinsine değil türüne ve işlevine göre sınıflandırıldığı; “dokumaya elverişli maddelerden” ifadesinin eşyayı plastik veya deri pozisyonlarından ayırdığı.",
+  "Fasıl 58 Açıklama Notlarının hariç tuttuğu eşyanın (hortum, fitil, kayış) Fasıl 59’a yönlendirilmesi; benzer görünüşlü dar dokumaların bu nedenle 58.06’da kalmaması."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Dokumaya elverişli maddelerden; sentetik liflerden yangın hortumları, Tarife Cetvelinde hangi tarife pozisyonunda sınıflandırılır?",
+   "secenekler": ["58.11", "39.17", "63.06", "59.09"],
+   "cevap": "D",
+   "aciklama": "58.06 ve 58.08 Açıklama Notları, dokumaya elverişli maddelerden tulumba hortumlarını ve benzeri hortumları 59.09’a gönderir. 58.11 aralarına dolgu konulan kapitoneli parça mensucat içindir; hortum dokumaya elverişli maddeden olduğu için plastik hortum pozisyonu da uygulanmaz."
+  }
+ ],
+ "ozet": [
+  "Fasıl 58 = lif cinsine bakılmayan özel tekstiller (58.09 hariç).",
+  "Havlı: kadife-peluş-tırtıl 58.01, havlu-tufte 58.02; açık yapılı: gaz 58.03, tül-ağ-dantel 58.04.",
+  "Duvar halısı 58.05 (kilim değil); dar ürünler: kordela ≤ 30 cm 58.06, etiket 58.07, kordon-saçak-ponpon 58.08.",
+  "Metal iplikli giyim-döşeme kumaşı 58.09; işlemeler 58.10; kapitoneli parça mensucat 58.11.",
+  "Emdirilmiş-kaplanmış ürünler ile hortum, fitil, kayış Fasıl 59; örme Fasıl 60; hazır eşya Fasıl 61–63.",
+  "Dantel zeminsiz, işleme zeminli; kordelada iki kenar ve 30 cm."
+ ],
+ "sorular": [
+  # --- Eşya → 4'lü (5)
+  S("Tarife Cetveline göre, pamuk ipliklerinden; gergin atkı ve zemin çözgüsünün yanında gevşek bir çözgü serisinin her iki yüzde bukleler oluşturduğu, eni 150 cm, top halindeki havlu kumaşı hangi pozisyonda sınıflandırılır?",
+    "58.02", ["58.01", "63.02", "60.01", "58.06"], "D", E4,
+    "Gergin atkı ve biri gergin, diğeri gevşek iki seri çözgüden oluşan, gevşek çözgünün bukle yaptığı havlu cinsi bukleli mensucat 58.02’dedir. Top halinde olduğundan havlu (63.02) değildir; tek yüzü havlı ve tüm bukleleri kesik olsaydı 58.01’e, örme olsaydı 60.01’e giderdi. Eni 30 cm’yi aştığından kordela (58.06) da değildir.",
+    "58.02 Açıklama Notu (A)."),
+  S("Tarife Cetveline göre, kesilmiş atkı iplikli (fitilli) pamuklu kadife; eni 140 cm, parça halinde ve hazır eşya niteliğinde olmayan mensucat hangi pozisyondadır?",
+    "58.01", ["58.02", "58.06", "60.01", "58.04"], "A", E4,
+    "Atkı iplik atlamalarının kesilerek uçlarının kaldırılmasıyla kadife yüzü oluşturulan dokunmuş mensucat 58.01’dedir; pamuk olması pozisyonu değiştirmez. Eni 30 cm’yi geçtiğinden kordela (58.06) değildir; havlu-tufte 58.02, örme havlı mensucat 60.01, tül-dantel 58.04 içindir.",
+    "58.01 Açıklama Notu (A); Fasıl 58 Not 5."),
+  S("Tarife Cetveline göre, eni 2,5 cm olan, iki kenarı da dokuma kenarlı, makaraya sarılı polyester saten kurdele hangi pozisyondadır?",
+    "58.06", ["58.08", "54.07", "58.07", "58.04"], "C", E4,
+    "Her iki tarafı kendinden kenarlı ve eni 30 cm’yi geçmeyen dokunmuş mensucat Fasıl 58 Not 5 uyarınca kordeladır ve 58.06’dadır; lif cinsi (polyester) dikkate alınmaz. Saçaklı olsaydı 58.08’e giderdi; geniş polyester filament kumaşı 54.07’dedir.",
+    "Fasıl 58 Not 5; 58.06 Açıklama Notu."),
+  S("Tarife Cetveline göre, giysilerin dış yüzüne dikilmek üzere üretilmiş, mevcut bir mensucat zemin üzerine makineyle işlenmiş ve tek tek kesilmiş askeri birlik arması (motif) hangi pozisyonda sınıflandırılır?",
+    "58.10", ["58.07", "62.17", "58.08", "58.04"], "E", E4,
+    "Mevcut bir zemin üzerine işleme iplikleriyle desen yapılan ürün işlemedir; motif halindeki armalar, amblemler ve işaretler 58.10’da sayılmıştır. 58.07 yalnız işlemesiz etiket ve armalar içindir; motifler hazır eşya hariç tutmasının dışında bırakıldığından giyim aksesuarı pozisyonuna (62.17) gitmez.",
+    "58.10 Açıklama Notu; 58.07 Açıklama Notu."),
+  S("Tarife Cetveline göre, bir mensucat katı ile bir kat köpüklü plastik dolgunun yalnızca kapitone amacıyla, işleme vasfı vermeyen dikişlerle birleştirilmesinden oluşan, top halindeki yorganlık mensucat hangi pozisyondadır?",
+    "58.11", ["58.10", "56.01", "56.03", "58.02"], "B", E4,
+    "Mensucat katı ile dolgu katının dikiş, iğneleme vb. ile birleştirildiği parça halindeki kapitoneli ürünler 58.11’dedir; dolgu köpüklü plastik olabilir. Dikişler işleme vasfı verseydi 58.10 olurdu; vatka 56.01, dokunmamış mensucat 56.03 tek başına tabakalardır.",
+    "58.11 pozisyon metni ve Açıklama Notu."),
+  # --- Olumsuz teşhis (4)
+  S("Aşağıdakilerden hangisi 58.01 pozisyonunda <b>sınıflandırılmaz</b>?",
+    "Tüylerin dikilerek veya yapıştırılarak tutturulduğu taklit kürk",
+    ["Atkı iplik atlamaları henüz kesilmemiş, yüzünde hav bulunmayan atkı kadifesi",
+     "Astragan görünümlü dokunmuş havlı kumaş",
+     "Tırtıl ipliklerin ilave atkı olarak kullanıldığı tırtıl mensucat",
+     "Yüz yüze dokunup ortadan kesilerek elde edilen çözgü kadifesi"], "C", OT,
+    "Tüylerin dikme veya yapıştırma gibi yöntemlerle tutturulduğu taklit kürkler 58.01’in dışında olup 43.04’tedir. Kesilmemiş atkı kadifesi (Not 2), dokunmuş kürk taklidi havlı kumaşlar, tırtıl mensucat ve yüz yüze dokunmuş çözgü kadifesi 58.01’dedir.",
+    "Fasıl 58 Not 2; 58.01 Açıklama Notu."),
+  S("Aşağıdakilerden hangisi 58.04 pozisyonunda <b>sınıflandırılmaz</b>?",
+    "56.07’deki sicimden düğümlenerek yapılmış, top halindeki ağ mensucat",
+    ["Bobino tül", "Parça halinde makine danteli",
+     "Elbiseye aplike edilmek üzere ayrı parçalar halindeki el işi dantel motifleri", "Makrame"], "E", OT,
+    "Fasıl 58 Not 4 uyarınca 58.04, 56.08’deki ipten, sicimden veya halattan düğümlü ağ mensucata uygulanmaz. Bobino tül, parça halinde makine danteli, motif halindeki dantel ve dizi halindeki ipliklerin düğümlenmesiyle elde edilen makrame 58.04’tedir.",
+    "Fasıl 58 Not 4; 58.04 Açıklama Notu."),
+  S("Aşağıdakilerden hangisi Tarife Cetvelinin 58. faslında <b>yer almaz</b>?",
+    "Dantelden yapılmış şal",
+    ["Yere serilmeye elverişsiz tufte mensucat",
+     "Dokuma sırasında nakış ipliği ilavesiyle desen verilmiş nakışlı gaz mensucat",
+     "Düzgün aralıklarla dar bantlarla tutturulmuş iki şeritten oluşan jaluzi kolonu",
+     "Perde bağı olarak kullanılan, parça halinde süs kordonu"], "A", OT,
+    "58.04 dantelden yapılmış eşyayı kapsamaz; dantel şallar 62.14’tedir. Tufte mensucat 58.02, nakışlı gaz mensucat 58.03, jaluzi kolonları 58.06, parça halindeki süs kordonları 58.08’dedir.",
+    "58.04 Açıklama Notu; 58.02, 58.03, 58.06, 58.08 Açıklama Notları."),
+  S("Aşağıdakilerden hangisi 58.06 pozisyonunda <b>sınıflandırılmaz</b>?",
+    "Lamba ve mumlar için dokunmuş fitil",
+    ["Yassılaştırılmış genişliği 20 cm olan dikişsiz boru dokuma",
+     "Katları açıldığında eni 4 cm olan, kenarları katlanmış çapraz biye",
+     "Paralel ipliklerin atkısız yapıştırılmasıyla elde edilen paket bağlama boldüğü",
+     "Emniyet kemeri imalinde kullanılan kalın dokuma şerit"], "D", OT,
+    "Lamba, ocak, çakmak, mum ve benzeri eşya için fitiller 58.06’dan hariç tutulmuş olup 59.08’dedir. Yassı genişliği 30 cm’yi geçmeyen boru dokuma ve kenarları katlı biyeler Not 5 uyarınca kordeladır; boldükler ve emniyet kemeri şeritleri de 58.06 Açıklama Notunda sayılmıştır.",
+    "Fasıl 58 Not 5; 58.06 Açıklama Notu."),
+  # --- Farklı/aynı (4)
+  S("Aşağıdakilerden hangisi diğerlerinden <b>farklı</b> bir pozisyonda sınıflandırılır?",
+    "Kenarı pikolu veya dantel kenarlı dar dokuma bant",
+    ["Parça halinde sutaşı (soutache)", "Ropdöşambr kuşağı yapımında kullanılan parça halinde milanez",
+     "Kenarına dokuma sırasında saçak yapılmış kordela", "Mobilyacılıkta kullanılan ponpon"], "B", FA,
+    "58.08 Açıklama Notu, pikolu veya dantel kenarlı bantları ve sıçandişi kenarlı kordelaları açıkça hariç tutar; bunlar kordela olarak 58.06’dadır. Sutaşı, milanez, saçaklı dokunmuş kordela (Not 5 son cümle) ve ponpon 58.08’dedir.",
+    "Fasıl 58 Not 5; 58.08 Açıklama Notu."),
+  S("Aşağıdaki eşya çiftlerinden hangisinin her ikisi de <b>aynı</b> pozisyonda yer alır?",
+    "El ile dokunmuş Aubusson duvar halısı – Kanaviçe üzerine iğne işlemesi duvar halısı",
+    ["Kilim – Goblen duvar halısı",
+     "Tufte halı – Yere serilmeye elverişsiz tufte mensucat",
+     "Gaz mensucat – Bez ayağı gevşek dokunmuş gaz bezi",
+     "Dantel – Zemini çıkarılmış makine işlemesi"], "E", FA,
+    "58.05 hem el ile dokunmuş hem de iğne işlemesi duvar halılarını kapsar. Kilim 57.02, Goblen 58.05; tufte halı 57.03, tufte mensucat 58.02; gaz mensucat 58.03, gaz bezi 50–55 (veya 30.05); dantel 58.04, zemini çıkarılmış işleme 58.10’dadır.",
+    "58.05 pozisyon metni ve Açıklama Notu; 58.03, 58.04, 58.10 Açıklama Notları."),
+  S("Aşağıdakilerden hangisi diğerlerinden <b>farklı</b> bir fasılda yer alır?",
+    "Dokumaya elverişli maddeden tulumba hortumu",
+    ["Parça halinde işlemeli dokunmamış mensucat", "Metalize iplikten dokunmuş elbiselik mensucat",
+     "Şerit halinde dokunmuş marka etiketi", "Eni 5 cm olan, iki kenarı dokuma kenarlı kordela"], "C", FA,
+    "Dokumaya elverişli maddelerden tulumba hortumları ve benzeri hortumlar 58.06 Açıklama Notu gereği 59.09’dadır. İşlemeli dokunmamış mensucat 58.10, metalize iplikli elbiselik 58.09, dokunmuş etiket 58.07, kordela 58.06 ile Fasıl 58’dedir.",
+    "58.06 Açıklama Notu (c)(3); 56.03 Açıklama Notu; 58.07, 58.09, 58.10 pozisyon metinleri."),
+  S("Aşağıdakilerden hangisi, diğer dördünden <b>farklı</b> olarak 58. fasıl dışında sınıflandırılır?",
+    "Örme (trikotaj) havlu cinsi bukleli mensucat",
+    ["Parça halinde dokunmuş kadife", "Tül", "Top halinde kapitoneli mensucat",
+     "Top halinde dokunmuş havlu cinsi bukleli mensucat"], "A", FA,
+    "Örme veya tığ işi havlu mensucat 58.02’nin hariç tuttuğu eşyadır ve 60.01’dedir. Dokunmuş kadife 58.01, tül 58.04, kapitoneli mensucat 58.11, dokunmuş havlu kumaşı 58.02 ile Fasıl 58’dedir.",
+    "58.02 Açıklama Notu (hariç tutmalar); 58.01, 58.04, 58.11 pozisyon metinleri."),
+  # --- Fasıl notu · Tanım/Eşik (4)
+  S("Fasıl 58 Not 5’e göre, iki kenarı da kendinden kenarlı bir dokumanın 58.06 anlamında “dokunmuş kordela” sayılabilmesi için eni en fazla ne kadar olabilir?",
+    "30 cm",
+    ["50 cm", "20 cm", "5 cm", "45 cm"], "B", FN,
+    "Not 5(a), her iki tarafı kendinden kenarlı ve eni 30 cm’yi geçmeyen dokunmuş mensucatı kordela sayar; aynı 30 cm sınırı yassılaştırılmış boru dokumalar ve katları açılmış biyeler için de geçerlidir. Daha geniş olanlar dokunmuş mensucat pozisyonlarına girer.",
+    "Fasıl 58 Not 5."),
+  S("Fasıl 58 Not 6’ya göre 58.10 anlamında “işlemeler” için aşağıdakilerden hangisi <b>doğrudur</b>?",
+    "Pul, payet, boncuk veya süs motiflerinin dikilmesiyle yapılan aplikeleri de kapsar.",
+    ["İğne işi duvar halılarını da kapsar.",
+     "Metal veya cam ipliklerle yapılan işlemeleri kapsamaz.",
+     "Yalnızca zemini tamamen kaplayan işlemeleri kapsar.",
+     "Dokuma sırasında nakış iplikleriyle desen verilmiş (plumetis) kumaşları da kapsar."], "D", FN,
+    "Not 6, pul, payet, boncuk ve süs motiflerinin dikilmesiyle yapılan aplikeleri ve zemini görünür kalan mensucat üzerine metal veya cam iplikle yapılan işlemeleri işleme sayar. İğne işi duvar halıları 58.05’tedir; dokuma sırasında nakış ipliğiyle desen verilen kumaşlar işleme değildir (50–55. fasıllar).",
+    "Fasıl 58 Not 6; 58.10 Açıklama Notu."),
+  S("Fasıl 58 Not 3’e göre “gaz mensucat” için aşağıdakilerden hangisi <b>doğrudur</b>?",
+    "Sabit ve hareketli çözgü ipliklerinden oluşur; hareketli iplik sabit ipliklerin etrafında yarım, tam veya daha fazla dolama yaparak atkı ipliğinin geçeceği bukleler oluşturur.",
+    ["Bez ayağı örgülü, gevşek dokunmuş düz mensucattır.",
+     "Atkı iplikleri çözgülerin etrafında diyagonal dolanarak altıgen gözler oluşturur.",
+     "Paralel çözgü ipliklerinin atkısız yapıştırılmasıyla elde edilir.",
+     "Tek bir iplikle, zeminsiz olarak oluşturulan süsleyici örgü mensucattır."], "A", FN,
+    "Not 3 gaz mensucatı sabit ve hareketli çözgü ipliklerinin dolama yaptığı mensucat olarak tanımlar. Bez ayağı gevşek dokuma “gaz bezi”dir ve 58.03’e girmez; diyagonal dolanan atkılı altıgen gözlü yapı tüldür (58.04); atkısız yapıştırılmış paralel iplikler boldüktür (58.06); zeminsiz süsleyici örgü danteldir (58.04).",
+    "Fasıl 58 Not 3; 58.03, 58.04, 58.06 Açıklama Notları."),
+  S("Fasıl 58 notlarına göre aşağıdaki ifadelerden hangisi <b>yanlıştır</b>?",
+    "58.04 pozisyonu, 56.08’deki sicim veya halattan düğümlü ağ mensucatı da kapsar.",
+    ["Atkı iplik atlamaları kesilmemiş atkı kadifeleri 58.01’de yer alır.",
+     "Dokunarak elde edilen saçaklı kordelalar 58.08’dedir.",
+     "Metal ipliklerden yapılmış, giyim veya döşemecilikte kullanılan eşya da bu fasla dahildir.",
+     "Fasıl 59 Not 1’de belirtilen emdirilmiş, sıvanmış, kaplanmış mensucat bu fasla dahil değildir."], "E", FN,
+    "Not 4, 58.04’ün 56.08’deki ipten, sicimden veya halattan düğümlü ağ mensucata uygulanmayacağını açıkça belirtir. Kesilmemiş atkı kadifesi (Not 2), saçaklı kordela (Not 5), metal iplikten giyim-döşeme eşyası (Not 7) ve Fasıl 59 eşyasının hariç tutulması (Not 1) doğru ifadelerdir.",
+    "Fasıl 58 Not 1, 2, 4, 5 ve 7."),
+  # --- GYK (2)
+  S("Perakende satış için tek ambalajda sunulan; deseni basılmış kanaviçe bezi ile bu deseni işlemeye yetecek renkli yün ipliklerden oluşan duvar halısı yapım takımı için aşağıdakilerden hangisi <b>doğrudur</b>?",
+    "Açıklama Notunun gösterdiği gibi 63.08’de, takım adıyla yer aldığından GYK 1’e göre sınıflandırılır.",
+    ["Esas niteliğini kanaviçe verdiğinden GYK 3(b) uyarınca 58.05’te sınıflandırılır.",
+     "Bitirilmemiş duvar halısı sayılarak GYK 2(a) uyarınca 58.05’te sınıflandırılır.",
+     "Unsurları GYK 1’e göre ayrı ayrı kendi pozisyonlarında sınıflandırılır.",
+     "GYK 3(b) uyarınca yün ipliğinin pozisyonunda sınıflandırılır."], "B", GY,
+    "58.05 ve 58.10 Açıklama Notları, duvar halısı veya benzeri eşyanın yapımında kullanılan iplik ve dokunmuş mensucattan oluşan takımları 63.08’e gönderir; takım bu pozisyonda adıyla belirtildiği için GYK 1 yeterlidir. Henüz işlenmemiş kanaviçe duvar halısının esas niteliğini taşımadığından GYK 2(a) de uygulanmaz.",
+    "58.05 Açıklama Notu (hariç tutmalar); 58.10 Açıklama Notu (c); GYK 1."),
+  S("Ağırlık itibariyle %55 metalize iplik (56.05) ve %45 ipek ipliğinden dokunmuş, gece elbisesi imalinde kullanılacak parça halindeki mensucatın pozisyonu ve dayandığı kural hangi seçenekte doğru verilmiştir?",
+    "58.09 – GYK 1 (Bölüm XI Not 2 ve 58.09 pozisyon metni)",
+    ["50.07 – GYK 1 (Bölüm XI Not 2)", "58.09 – GYK 3(b)", "50.07 – GYK 3(c)", "56.05 – GYK 1"], "C", GY,
+    "Bölüm XI Not 2(B)(a) metalize ipliği tek bir dokumaya elverişli madde sayar ve Not 2 58.09’a da uygulanır; metalize iplik ağırlıkça üstün olduğundan giyimde kullanılan bu mensucat 58.09’dadır. Sonuç not ve pozisyon metninden çıktığı için GYK 1 uygulanır. İpek ağır basmadığından 50.07, mensucat olduğundan iplik pozisyonu 56.05 söz konusu değildir.",
+    "Bölüm XI Not 2(A) ve 2(B)(a); 58.09 Açıklama Notu; GYK 1."),
+  # --- Eşleştirme / Boşluk (2)
+  S("Aşağıdaki eşya – pozisyon eşleştirmelerinden hangisi <b>yanlıştır</b>?",
+    "Kenarlarına saçak dokunmuş kordela – 58.06",
+    ["Bobino tül – 58.04", "Gaz mensucat – 58.03", "Kapitoneli parça mensucat – 58.11",
+     "İşlemesiz, şerit halinde dokunmuş marka etiketi – 58.07"], "B", ES,
+    "Fasıl 58 Not 5’in son cümlesi uyarınca dokunarak elde edilen saçaklı kordelalar 58.08’dedir. Bobino tül 58.04, gaz mensucat 58.03, kapitoneli parça mensucat 58.11 ve işlemesiz dokunmuş etiket 58.07 ile doğru eşleşmiştir.",
+    "Fasıl 58 Not 5; 58.03, 58.04, 58.07, 58.11 pozisyon metinleri."),
+  S("“Desenleri önceden var olan bir zemin üzerinde yapılmamış süsleyici örgü mensucat ..... ; mevcut bir zemin üzerine işleme iplikleriyle süs desenleri yapılmış ürünler (zemini sonradan çıkarılmış olsa bile) ..... ; zemini kanaviçe olup tamamı iğneyle doldurulmuş pano ise ..... pozisyonunda sınıflandırılır.” Boşluklara sırasıyla gelmesi gerekenler hangisidir?",
+    "58.04 – 58.10 – 58.05",
+    ["58.10 – 58.04 – 58.05", "58.04 – 58.10 – 57.02", "58.03 – 58.10 – 58.05", "58.04 – 58.05 – 58.10"], "D", ES,
+    "Dantelin mümeyyiz vasfı desenlerin mevcut bir zemin üzerinde yapılmamasıdır (58.04). Mevcut zemin üzerine yapılan işlemeler, zemin sonradan çıkarılsa da 58.10’dadır. Zemini tamamen iğneyle doldurulan kanaviçe pano iğne işlemesi duvar halısıdır (58.05); kilim 57.02, gaz mensucat 58.03 içindir.",
+    "58.04, 58.05, 58.10 Açıklama Notları; Fasıl 58 Not 6."),
+  # --- Çoktan-çoğa (2)
+  SX("58.07 pozisyonu ile ilgili aşağıdaki ifadelerden hangileri <b>doğrudur</b>? I. İşleme ile elde edilmiş etiket ve armalar 58.10’da yer alır. II. Örme etiketler de bu pozisyona dahildir. III. Kesmeden başka işçilikle hazır eşya haline getirilmiş etiketler de bu pozisyonda kalır. IV. Spor kulüplerine ait, giyim eşyasının dış yüzüne dikilen işlemesiz armalar bu pozisyondadır.",
+     ["I ve II", "I ve III", "II ve IV", "I, II ve IV", "II, III ve IV"], "D", CC,
+     "58.07 Açıklama Notu örme olanlar dahil işlemesiz etiket ve armaları (II, IV) kapsar; işleme ile elde edilenler 58.10’dadır (I). Kesmeden başka işçilikle hazır eşya haline getirilenler ise 61.17, 62.17 veya 63.07’ye gider; III yanlıştır.",
+     "58.07 Açıklama Notu."),
+  SX("Aşağıdakilerden hangileri 58. fasıl <b>dışında</b> sınıflandırılır? I. Kauçukla emdirilmiş gaz mensucat II. Eleklik mensucat III. Yaşı 100 yılı geçen el ile dokunmuş duvar halısı IV. Eni 3 cm olan, iki kenarı dokuma kenarlı kadife kordela",
+     ["I ve II", "II ve III", "I, II ve III", "I, III ve IV", "II, III ve IV"], "C", CC,
+     "Genel Açıklamalara göre emdirilmiş gaz mensucat fasıl dışına çıkar (I); eleklik mensucat 59.11’de (II), yaşı 100 yılı geçen duvar halıları Fasıl 97’dedir (III). Kadife kordela ise 58.01’den hariç tutulup 58.06’da kordela olarak sınıflandırılır (IV).",
+     "Fasıl 58 Not 1 ve Genel Açıklamalar; 58.03, 58.05, 58.06 Açıklama Notları."),
+  # --- Senaryo (2)
+  S("Bir tekstil firması; pamuk mensucat zemin üzerinde bazı çözgü ve atkı iplikleri çekilip delikler açıldıktan sonra kenarları ilik dikişiyle işlenmiş (İngiliz işlemesi), zemini görünür kalan, uzun şerit halinde ürün ithal etmektedir. Ürün hangi pozisyonda sınıflandırılır?",
+    "58.10", ["58.04", "58.06", "58.03", "58.08"], "E", SN,
+    "Mevcut bir zemin dokuması üzerine işleme iplikleriyle yapılan ve zemini görünür kalan İngiliz işlemesi 58.10 Açıklama Notunda örnek olarak verilmiştir; işlemeler şerit halinde de bu pozisyondadır. Desen zemin üzerinde yapıldığından dantel (58.04) değildir; kordela, gaz mensucat veya süs kordonu da değildir.",
+    "58.10 Açıklama Notu (II)."),
+  S("Bir firma; dokunmuş bir zemine iğneli makinede viskoz ipliklerin ilave edilmesiyle elde edilen, yumuşak ve ince olup yer kaplaması olarak kullanılmaya elverişli sertlik ve kalınlığı bulunmayan, döşemelik olarak kullanılacak top halinde mensucat ithal etmektedir. Mensucat hangi pozisyondadır?",
+    "58.02", ["57.03", "58.01", "60.01", "56.02"], "A", SN,
+    "İğne ve kancayla ipliğin mevcut bir mensucat zemine ilave edilmesiyle elde edilen ürün tufte mensucattır; yer kaplamasına elverişli sertlik, kalınlık ve dayanıklılığı olmadığından 57.03’e değil 58.02’ye girer. Dokuma sırasında ek iplik serisiyle oluşturulan kadife (58.01) değildir; örme havlı mensucat (60.01) arkasındaki zincir dikiş sıralarıyla ayrılır.",
+    "58.02 Açıklama Notu (B); 57.03 Açıklama Notu.")
+ ]
+}
+
+yaz(d, 58)

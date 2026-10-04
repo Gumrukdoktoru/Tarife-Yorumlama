@@ -1,0 +1,291 @@
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from yardim_53_58 import S, SX, yaz  # noqa: E402
+
+E4 = "Eşya → 4’lü pozisyon"
+OT = "Olumsuz teşhis"
+FA = "Farklı/aynı pozisyon veya fasıl"
+FN = "Fasıl notu · Tanım/Eşik"
+GY = "Genel Yorum Kuralı"
+ES = "Eşleştirme / Boşluk doldurma"
+CC = "Çoktan-çoğa (I–IV)"
+SN = "Senaryo"
+
+d = {
+ "tur": "fasil",
+ "fasil": 56,
+ "baslik": "Vatka, keçe ve dokunmamış mensucat; özel iplikler; sicim, kordon, ip, halat ve bunlardan mamul eşya",
+ "bolum": "XI",
+ "oz": {
+  "vurgu": "Fasıl 56, Bölüm XI’in eşya esasına göre düzenlenen ikinci kısmının ilk faslıdır: lifin cinsi değil ürünün yapısı belirleyicidir. Üç aile vardır: yassı lif ürünleri (vatka 56.01, keçe 56.02, dokunmamış mensucat 56.03), özel iplikler (56.04–56.06) ve sicim-ip-halat ile bunlardan ağ ve eşya (56.07–56.09).",
+  "maddeler": [
+   "Ayrım liflerin tutunmasındadır: lifler kolayca ayrılıyorsa vatka; tavlama, ovalama, dövme veya iğneyle sıkı kenetlenmişse keçe; bağlayıcı, ısıl işlem veya su-hava jeti gibi yollarla tutturulmuşsa dokunmamış mensucat.",
+   "Plastik veya kauçukla işlem görmüş keçe ve dokunmamış mensucat kural olarak Fasıl 56’da kalır; Not 3 istisnalarında (keçede dokuma maddesi ≤ %50, tamamen gömülme, dokunmamışta iki yüzün gözle görülür kaplanması) Fasıl 39 veya 40’a gider.",
+   "Sicim-ip-halat (56.07) iplik kalınlığına göre Bölüm XI Not 3 ile belirlenir; örülmüş olanlar ve metal iplikle takviye edilmiş olanlar her durumda 56.07’dir.",
+   "Hijyenik havlu, tampon ve bebek bezleri 96.19’da; dokuma maddesinin yalnız taşıyıcı olduğu parfüm, sabun, cila, yumuşatıcı emdirilmiş ürünler Fasıl 33, 34 veya 38’dedir (Fasıl 56 Not 1)."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+  "satirlar": [
+   ["1", "Hijyenik havlu, tampon, bebek bezi veya benzeri hijyenik eşya mı?", "<b>96.19</b>"],
+   ["2", "Dokuma maddesi yalnız taşıyıcı olup parfüm-kozmetik, sabun-deterjan, cila, kumaş yumuşatıcısı emdirilmiş mi?", "<b>Fasıl 33</b> · <b>34.01</b> · <b>34.05</b> · <b>38.09</b>"],
+   ["3", "Kapitoneli parça mensucat mı? Mesnedi keçe veya dokunmamış olan aşındırıcı, mika veya metal yaprak mı?", "<b>58.11</b> · <b>68.05</b> / <b>68.14</b> · Bölüm XIV-XV"],
+   ["4", "Vatka mı, ya da uzunluğu 5 mm’yi geçmeyen lif (kırpıntı), toz, taraz mı?", "<b>56.01</b> (tıbbi perakende vatka <b>30.05</b>)"],
+   ["5", "Keçe mi? (iğne işi keçe ve dikiş-trikotaj lif mensucatı dahil)", "<b>56.02</b> · dokuma maddesi ≤ %50 plastik/kauçuklu ise <b>Fasıl 39/40</b>"],
+   ["6", "Dokunmamış mensucat mı?", "<b>56.03</b> · tamamen gömülü veya iki yüzü görünür kaplı ise <b>Fasıl 39/40</b>"],
+   ["7", "Tekstille kaplı kauçuk ip ya da kauçuk/plastik kaplaması gözle görülen iplik mi?", "<b>56.04</b>"],
+   ["8", "Metal tel, şerit veya tozla birleştirilmiş ya da metalle kaplanmış iplik mi?", "<b>56.05</b>"],
+   ["9", "Gipe, tırtıl (şenil) veya şenet iplik mi?", "<b>56.06</b> (at kılı gipe <b>51.10</b>)"],
+   ["10", "Sicim, kordon, ip, halat mı? (Bölüm XI Not 3; örülmüş veya metal takviyeli olanlar her zaman)", "<b>56.07</b>"],
+   ["11", "Sicim-ipten düğümlü ağ ya da hazır balık ağı, hazır ağ veya file mi?", "<b>56.08</b>"],
+   ["12", "İplik, şerit, sicim, ip veya halattan başka yerde yer almayan eşya mı?", "<b>56.09</b>"]
+  ],
+  "dipnot": "* Keçe veya dokunmamış mensucattan halılar Fasıl 57, tufte edilmiş olanlar 58.02, işlemeli olanlar 58.10, teknik amaçlı olanlar 59.11’dedir."
+ },
+ "pozisyon_haritasi": [
+  ["56.01", "Vatka ve vatkadan eşya; ≤ 5 mm lif, toz, taraz", "Lifler kolayca ayrılır", "Pamuk vatka rulosu, kadife tıraş kırpıntısı"],
+  ["56.02", "Keçeler", "Tavlama-dövme; iğne işi; dikiş-trikotaj", "Yün keçe, iğnelenmiş jüt keçe, çatı keçesi"],
+  ["56.03", "Dokunmamış mensucat", "Kimyasal, termal, mekanik tutturma", "Jeotekstil tabaka, dokunmamış yapışkan bant"],
+  ["56.04", "Tekstil kaplı kauçuk ip; kauçuk/plastik kaplı iplik", "Kaplama gözle görülmeli", "Tekstil kaplı lastik ip, taklit katgüt"],
+  ["56.05", "Metalize iplikler", "Metal oranı önemsiz", "Yaldızlı iplik, şekerci fantezi ipi"],
+  ["56.06", "Gipe, tırtıl (şenil), şenet iplikler", "Gipede iç kısım sarmayla bükülmez", "Şenil iplik, gipe süs ipliği"],
+  ["56.07", "Sicim, kordon, ip, halat", "Not 3 eşikleri; örülmüşler her zaman", "Sisal biçer-bağlar ipi, polipropilen halat"],
+  ["56.08", "Düğümlü ağlar; hazır balık ağı ve fileler", "Sicim-ipten düğümlü veya hazır ağ", "Balık ağı, kamuflaj ağı, alışveriş filesi"],
+  ["56.09", "İplik, şerit, sicim, halattan d.y.b. eşya", "Uçları işlenmiş, başka yerde yok", "Uçlu çekme halatı, ip merdiven"]
+ ],
+ "notlar": [
+  ["Fasıl 56 Not 1", "Fasıl dışı: (a) dokuma maddesinin yalnız mesnet olduğu, parfüm-kozmetik (Fasıl 33), sabun-deterjan (34.01), cila-krem (34.05), kumaş yumuşatıcısı (38.09) gibi müstahzarlar emdirilmiş vatka, keçe, dokunmamış mensucat; (b) 58.11 ürünleri; (c) mesnedi keçe veya dokunmamış olan aşındırıcı toz/tane (68.05); (d) aglomere mika (68.14); (e) metal yaprak (Bölüm XIV veya XV); (f) 96.19’daki hijyenik havlular, tamponlar, bebek bezleri ve benzeri hijyenik eşya."],
+  ["Fasıl 56 Not 2", "“Keçe” tabiri, iğne işi keçeyi ve liflerin bizzat o kumaştan çekilen liflerle dikiş-trikotaj usulüyle tutturulduğu mensucatı kapsar."],
+  ["Fasıl 56 Not 3", "Plastik veya kauçuk emdirilmiş, sıvanmış, kaplanmış veya lamine edilmiş keçe 56.02’de, dokunmamış mensucat 56.03’te yer alır (yapısı kompakt veya hücreli olsun); 56.03 plastik veya kauçuğun bağlayıcı olduğu dokunmamışları da kapsar. Hariç (Fasıl 39/40): (a) tamamen gömülü veya dokuma maddesi ağırlıkça %50 veya daha az olan keçe; (b) tamamen gömülü veya iki yüzü çıplak gözle görülür şekilde tamamen kaplanmış dokunmamış mensucat; (c) dokuma maddesinin yalnız takviye olduğu, keçe veya dokunmamışla birleştirilmiş hücreli plastik/kauçuk levhalar."],
+  ["Fasıl 56 Not 4", "56.04, emdirme, sıvama veya kaplaması çıplak gözle görülemeyen iplikleri ve 54.04/54.05 şeritlerini kapsamaz (genellikle 50–55. fasıllar); renk değişikliği dikkate alınmaz."],
+  ["Bölüm XI Not 3", "Sicim, ip ve halat sayılan iplikler: ipekten 20.000 desiteksten fazla; suni-sentetikten 10.000 desiteksten fazla; keten-kendirden cilalı 1.429 desiteks ve üzeri, cilasız 20.000 desiteksten fazla; üç veya daha fazla katlı koko; diğer bitkisel liflerden 20.000 desiteksten fazla; metal iplikle takviyeli. Tabi olmayanlar: yün-hayvan kılı ve kağıt iplikleri (metal takviyeliler hariç), Fasıl 55 demetleri, bükülmemiş çok filamentli iplik, monofil, 56.05 ve 56.06 iplikleri."],
+  ["Bölüm XI Not 8", "50–55. fasıllar 56–59. fasıllardaki eşyaya uygulanmaz; 56–59. fasıllar, metinde aksi belirtilmedikçe Not 7 anlamındaki hazır eşyaya uygulanmaz."],
+  ["56.01 Açıklama Notu", "Vatka: karde edilmiş veya üflenmiş lif tabakalarının sıkıştırılmasıyla elde edilen, liflerin kolayca ayrılabildiği esnek tabaka. İç tabakalara nüfuz eden yapıştırıcıyla işlem görmüş vatka 56.03’tedir. Hariç: tıbbi vatka 30.05; selüloz vatka Fasıl 48; berber vatkası 52.03; elbise vatkaları 61.17 / 62.17; parfümlü kırpıntı ve tozlar 33.07; 96.19 eşyası."],
+  ["56.02 Açıklama Notu", "Keçe, lif tabakalarının buhar veya sabunlu sıcak suyla tavlanıp ağır basınç altında ovalanması veya dövülmesiyle elde edilir; iğne tekniği keçeleşmeyen jüt veya suni liflerden de keçe yapılmasını sağlar. İğnelemenin başka tutturmaya tamamlayıcı olduğu devamsız lif tabakaları ve filament esaslı iğnelenmiş tabakalar dokunmamıştır (56.03). Dikdörtgen kesilmiş keçe parçaları burada kalır; keçeden halılar Fasıl 57, tufte keçe 58.02."],
+  ["56.03 Açıklama Notu", "Dokunmamış mensucat, liflerin yönlendirilip kimyasal (bağlayıcı), termal veya mekanik (iğneleme, hava-su jeti; dikiş-trikotaj değil) yolla tutturulmasıyla oluşur. Liflerin bozulmadan kalması onu kağıt ve selüloz vatkadan ayırır. Dokunmamış yapışkan bantlar ve çatı keçeleri dahildir; tufte edilmiş olanlar 58.02, boldükler 58.06, teknik olanlar 59.11."],
+  ["56.05 – 56.06 Açıklama Notu", "Metalize iplik: metal oranı ne olursa olsun metal tel/şeritle bükülen, kablolanan veya gipe edilen ya da galvanoplasti veya metal tozuyla kaplanan iplik. Antistatik metal lifli karışık iplikler 50–55; metal takviyeli iplik 56.07. Gipe iplikte sarma iplikleri iç kısımla birlikte bükülmez; at kılı gipe 51.10, tekstille gipe edilmiş kauçuk ip 56.04, milanezler 58.08."],
+  ["56.07 – 56.09 Açıklama Notu", "Örme suretiyle elde edilen sicim, ip ve halatlar ağırlığına bakılmaksızın 56.07’dir; daha gevşek örülmüş kordonlar 58.08. Kağıt ipliğinden ip ancak örülmüş veya metal takviyeli ise 56.07. Hazır ağlarda tutamaç, ağırlık, mantar gibi teferruat sınıflandırmayı değiştirmez; örme file 60.02–60.06, saç filesi 65.05, spor fileleri Fasıl 95. Uçlarına ilmek, halka, kanca takılmış ip ve halatlar 56.09’dur."]
+ ],
+ "sinir_komsulari": [
+  ["Hijyenik havlu, tampon, bebek bezi", "96.19", "Fasıl 56 Not 1(f)"],
+  ["Parfüm veya deterjan emdirilmiş taşıyıcı dokunmamış mendil", "Fasıl 33 / 34.01", "Fasıl 56 Not 1(a)"],
+  ["İlaç emdirilmiş veya tıbbi perakende vatka", "30.05", "56.01 hariç tutması"],
+  ["Selüloz vatka ve ondan eşya", "Fasıl 48", "Bölüm XI Not 1(m)"],
+  ["Kuaförlerin karde edilmiş şerit pamuğu (berber vatkası)", "52.03", "56.01 hariç tutması"],
+  ["Elbise (omuz) vatkaları", "61.17 / 62.17", "56.01 hariç tutması"],
+  ["Kapitoneli parça mensucat", "58.11", "Fasıl 56 Not 1(b)"],
+  ["Keçe veya dokunmamıştan halı", "Fasıl 57", "56.02 ve 56.03 hariç tutmaları"],
+  ["Tufte edilmiş keçe veya dokunmamış mensucat", "58.02", "56.02 ve 56.03 hariç tutmaları"],
+  ["Mesnedi keçe olan aşındırıcı; mika kaplı keçe", "68.05 / 68.14", "Fasıl 56 Not 1(c)–(d)"],
+  ["Dokuma maddesi ≤ %50 plastik emdirilmiş keçe", "Fasıl 39", "Fasıl 56 Not 3(a)"],
+  ["Antistatik metal lifli karışık iplik", "Fasıl 50–55", "56.05 hariç tutması"],
+  ["Gipe edilmiş at kılı ipliği", "51.10", "56.06 hariç tutması"],
+  ["Örme file (parça); saç filesi; tenis ve gol filesi", "60.02–60.06 / 65.05 / Fasıl 95", "56.08 hariç tutmaları"],
+  ["Sicim, ip ve halat döküntüleri", "63.10", "56.07 hariç tutması"]
+ ],
+ "tuzaklar": [
+  "<b>Vatka, keçe, dokunmamış: liflerin tutunması belirler.</b> Lifler kolayca ayrılıyorsa 56.01; iç tabakalara nüfuz eden yapıştırıcıyla işlenmişse lifler ayrılabilse bile 56.03; tavlama-dövme ile sıkı kenetlenmişse 56.02.",
+  "<b>İğneleme hem keçe hem dokunmamış yapar.</b> Yalnız iğneyle tutturulan devamsız lif tabakası keçedir (56.02); iğnelemenin başka tutturmaya tamamlayıcı olduğu devamsız lif tabakaları ve filament esaslı iğnelenmiş tabakalar dokunmamıştır (56.03).",
+  "<b>Plastikli keçede %50 eşiği, plastikli dokunmamışta görünürlük.</b> Dokuma maddesi ağırlıkça %50 veya daha az olan plastik/kauçuklu keçe Fasıl 39/40’a gider; dokunmamışta ölçüt tamamen gömülme veya iki yüzün gözle görülür kaplanmasıdır.",
+  "<b>Bebek bezi pamuk vatkası içerse de 96.19’dur.</b> Hijyenik havlular, tamponlar ve bebek bezleri Not 1(f) ile Fasıl 56 dışındadır.",
+  "<b>Taşıyıcı tekstil faslı belirlemez.</b> Dokuma maddesi yalnız mesnet ise parfümlü, sabunlu, cilalı veya yumuşatıcılı vatka-keçe-dokunmamış Fasıl 33, 34.01, 34.05 veya 38.09’dadır.",
+  "<b>Gözle görülmeyen kaplama 56.04 yapmaz.</b> Kauçuk veya plastik emdirmesi çıplak gözle görülmeyen iplik 50–55. fasıllarda kalır; yalnız renk değişikliği yeterli değildir (Not 4).",
+  "<b>Metalize ≠ metal takviyeli.</b> Metalle süs amaçlı birleştirilen veya kaplanan iplik 56.05; metal iplikle yalnız takviye edilen iplik her durumda 56.07; antistatik metal lifli karışık iplik 50–55.",
+  "<b>Örülmüş ip her zaman 56.07’dir.</b> Sıkıca örülmüş sicim, kordon ve halatlar ağırlığına bakılmaksızın 56.07; daha gevşek örülmüş süs kordonları 58.08.",
+  "<b>Ağ üç yere dağılır.</b> Sicim-ipten düğümlü ağ ve hazır balık ağı 56.08; örme file 60.02–60.06; tenis ve gol fileleri Fasıl 95, saç fileleri 65.05."
+ ],
+ "hafiza": {
+  "kanca": "VA–KE–DO / KA–ME–Gİ / Sİ–AĞ–EŞ",
+  "aciklama": "Fasıl 56 üç katlı bir binadır. Zemin kat yassı ürünler: <b>va</b>tka 01, <b>ke</b>çe 02, <b>do</b>kunmamış 03. Orta kat özel iplikler: <b>ka</b>uçuk-plastik 04, <b>me</b>talize 05, <b>gi</b>pe-tırtıl-şenet 06. Çatı katı ip ailesi: <b>si</b>cim-halat 07, <b>ağ</b> 08, ipten <b>eş</b>ya 09."
+ },
+ "sinav_odagi": [
+  "Bu fasıl çıkmış sorularda daha çok seçeneklerde ve çeldirici olarak yer almıştır.",
+  "Hijyenik eşya: bebek bezinin emici kısmı pamuktan olsa da 56.01’de değil, malzemesine bakılmaksızın 96.19’da sınıflandırıldığı (Fasıl 56 Not 1(f)).",
+  "Dokunmamış mensucatın (56.03) deri, plastik levha ve kaplanmış mensucat pozisyonlarıyla birlikte çeldirici olarak kullanılması; “terkip yoluyla elde edilen deri” gibi adıyla belirtilmiş eşyanın kendi pozisyonuna gitmesi.",
+  "Bölüm XI’in ikinci kısmında (56–63) eşyanın lif cinsine değil ürün türüne göre sınıflandırıldığı.",
+  "“Mamul olduğu maddeye bakılmaksızın” kalıbıyla, fasıl ve bölüm notlarının malzeme kuralının önüne geçtiği sorular."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Hazır çocuk bezleri hangi pozisyonda sınıflandırılır?",
+   "secenekler": ["Dış yüzeyi plastikten olduğunda 39.26", "Emici dokusu kağıttan olduğunda 48.18", "Emici dokusu pamuktan olduğunda 56.01", "Mamul olduğu maddeye bakılmaksızın 96.19"],
+   "cevap": "D",
+   "aciklama": "Fasıl 56 Not 1(f) ve 56.01 Açıklama Notu, bebek bezleri ve benzeri hijyenik eşyayı 96.19’a gönderir; emici kısmın pamuk vatkası olması eşyayı 56.01’e getirmez."
+  },
+  {
+   "soru": "Tarife cetvelindeki “terkip yoluyla elde edilen deri” tabirine uyan levha ve yapraklar hangi tarife pozisyonunda sınıflandırılır?",
+   "secenekler": ["39.21", "41.15", "56.03", "59.03"],
+   "cevap": "B",
+   "aciklama": "Eşya Fasıl 41’de “terkip yoluyla elde edilen deri” olarak adıyla yer alır (41.15). 56.03, dokumaya elverişli liflerden tülbent oluşturulup tutturulmasıyla elde edilen dokunmamış mensucatı kapsar; görünüş benzerliği bu pozisyonu gerektirmez."
+  }
+ ],
+ "ozet": [
+  "Fasıl 56’da lif cinsi değil ürün yapısı belirleyicidir.",
+  "Vatka 56.01 (5 mm’yi geçmeyen lif, toz, taraz dahil); keçe 56.02; dokunmamış mensucat 56.03.",
+  "Plastik/kauçuk işlemli keçe ve dokunmamış kural olarak Fasıl 56’dadır; Not 3 istisnalarında Fasıl 39/40.",
+  "Özel iplikler: kauçuk-plastik kaplı 56.04 (gözle görülür), metalize 56.05, gipe-tırtıl-şenet 56.06.",
+  "Sicim-ip-halat 56.07 (Bölüm XI Not 3; örülmüş ve metal takviyeli olanlar her zaman), ağlar 56.08, ipten d.y.b. eşya 56.09.",
+  "Hijyenik eşya 96.19; taşıyıcı tekstilli kozmetik-deterjan Fasıl 33–34; kapitoneli parça 58.11."
+ ],
+ "sorular": [
+  # --- Eşya → 4'lü (5)
+  S("Tarife Cetveline göre, pamuk liflerinden birkaç tabakanın üst üste konulup sıkıştırılmasıyla elde edilen, liflerin kolayca ayrılabildiği, ağartılmış, rulo halinde; ilaç emdirilmemiş ve tıbbi amaçla perakende ambalajlanmamış ürün hangi pozisyonda sınıflandırılır?",
+    "56.01", ["30.05", "56.03", "52.03", "56.02"], "E", E4,
+    "Liflerin kolayca ayrılabildiği, sıkıştırılmış lif tabakalarından oluşan ürün vatkadır ve 56.01’dedir. İlaç emdirilmiş veya tıbbi perakende ambalajlı olsaydı 30.05’e giderdi. Lifler bağlayıcı veya ısıl işlemle tutturulmuş olsaydı 56.03, tavlama-dövme ile kenetlenmiş olsaydı 56.02 olurdu; 52.03 kuaförlerin karde edilmiş şerit pamuğu içindir.",
+    "56.01 Açıklama Notu (A)."),
+  S("Tarife Cetveline göre, pamuk ipliğinin altın kaplı ince bir metal şeritle birlikte bükülmesiyle elde edilen, metal oranı düşük süs ipliği hangi pozisyondadır?",
+    "56.05", ["56.06", "56.04", "56.07", "58.09"], "C", E4,
+    "Dokumaya elverişli maddenin metal tel veya şeritle bükme, kablolama veya gipe yoluyla birleştirilmesinden oluşan iplikler, metal oranı ne olursa olsun metalize iplik olarak 56.05’tedir. 56.06 metal içermeyen gipe ve tırtıl iplikler, 56.04 kauçuk-plastik kaplı iplikler, 56.07 metal takviyeli sicimler, 58.09 metalize iplikten dokunmuş mensucat içindir.",
+    "56.05 Açıklama Notu (1)."),
+  S("Tarife Cetveline göre, polipropilen liflerden oluşturulan tülbentin ısıtılmış kabartma silindirleri arasından geçirilerek noktasal olarak tutturulmasıyla elde edilen, m² ağırlığı 40 g olan rulo halindeki mensucat hangi pozisyondadır?",
+    "56.03", ["56.02", "54.07", "56.01", "39.21"], "A", E4,
+    "Liflerden tülbent oluşturulup termal fiksajla (ısıtılmış kabartma silindirleriyle noktasal bağlama) tutturulan tabaka dokunmamış mensucattır ve 56.03’tedir. Keçe tavlama-dövme veya iğneyle, vatka sıkıştırmayla elde edilir; dokuma işlemi olmadığından 54.07 söz konusu değildir; ürün lifli tekstil yapısını koruduğu için plastik levha da değildir.",
+    "56.03 Açıklama Notu (I) ve (II)(b)."),
+  S("Tarife Cetveline göre, sentetik ipliklerden sıkıca örülerek elde edilmiş, makaraya sarılı, uçları işlenmemiş paket bağlama kordonu hangi pozisyonda sınıflandırılır?",
+    "56.07", ["58.08", "56.09", "54.04", "56.06"], "D", E4,
+    "Örme suretiyle elde edilen sicim, kordon, ip ve halatlar metre ağırlığına bakılmaksızın daima 56.07’dedir. 58.08’deki süs kordonları daha gevşek örülmüş ve daha az sıkı yapıdadır; 56.09 uçları ilmekli veya madeni uçlu kesilmiş eşya içindir. 54.04 monofil, 56.06 gipe ve tırtıl iplikler içindir.",
+    "56.07 Açıklama Notu (2); 58.08 Açıklama Notu (A)(1)."),
+  S("Tarife Cetveline göre, sentetik sicimden düğümlenerek yapılmış, üzerinde yüzdürücü mantarları, ağırlıkları ve büzme ipleri bulunan hazır balık ağı hangi pozisyondadır?",
+    "56.08", ["95.07", "58.04", "56.09", "56.07"], "B", E4,
+    "Dokumaya elverişli maddelerden hazır balık ağları 56.08’dedir; tutamaç, ağırlık, yüzdürücü mantar veya büzme ipi bulunması yerini değiştirmez. 58.04 düğümlü ağ mensucatı (sicimden düğümlü ağlar hariç), 56.07 ağın yapıldığı sicim, 56.09 ipten başka yerde yer almayan eşya içindir; Fasıl 95 balıkçılıkta kullanılan ağ kepçeleri gibi eşyayı kapsar.",
+    "56.08 Açıklama Notu (2); Fasıl 58 Not 4."),
+  # --- Olumsuz teşhis (4)
+  S("Aşağıdakilerden hangisi 56.01 pozisyonunda <b>sınıflandırılmaz</b>?",
+    "Emici kısmı pamuk vatkasından olan bebek bezi",
+    ["Kapı ve pencere kenarlarına konulan, üzeri iplikle helezoni sarılmış rulo vatka",
+     "Fasıl 95 niteliğinde olmayan, dekorasyon amaçlı vatkadan eşya",
+     "Bir yüzü kağıtla kaplanmış, esas niteliği vatka olan ürün",
+     "Parfümsüz, boyanmış dokumaya elverişli madde tozu"], "D", OT,
+    "Bebek bezleri ve benzeri hijyenik eşya Fasıl 56 Not 1(f) ve 56.01 Açıklama Notu uyarınca 96.19’dadır. Hava akımını önleyen sarılı vatka, dekoratif vatka eşyası, bir yüzü kağıtla kaplanmış vatka ve parfümsüz lif tozu 56.01’de yer alır; parfümlü olsaydı toz 33.07’ye giderdi.",
+    "Fasıl 56 Not 1(f); 56.01 Açıklama Notu."),
+  S("Aşağıdakilerden hangisi 56.02 pozisyonunda <b>sınıflandırılmaz</b>?",
+    "Keçeden yer kaplaması (halı)",
+    ["Zift emdirilmiş çatı keçesi",
+     "Jüt liflerinden iğne tezgâhında elde edilen iğne işi keçe",
+     "Liflerin kumaştan çekilen kendi lifleriyle dikiş-trikotaj usulüyle tutturulduğu lif mensucatı",
+     "Büyük parçadan dikdörtgen olarak kesilmiş, başka işlem görmemiş keçe toz bezi"], "A", OT,
+    "Keçeden halılar ve diğer yer kaplamaları 56.02’nin hariç tuttuğu eşya olup Fasıl 57’dedir. Zift emdirilmiş çatı keçesi, iğne işi keçe, dikiş-trikotaj lif mensucatı (Not 2) ve ileri işlem görmeden dikdörtgen kesilmiş keçe toz bezi 56.02’de kalır.",
+    "Fasıl 56 Not 2; 56.02 Açıklama Notu."),
+  S("Aşağıdakilerden hangisi Tarife Cetvelinin 56. faslında <b>yer almaz</b>?",
+    "Antistatik etki için metal lifleriyle karıştırılmış poliester devamsız lif ipliği",
+    ["Alüminyum tozu püskürtülerek metalle kaplanmış poliester iplik",
+     "Plastikle sıvanmış tekstil ipliğinden taklit katgüt (olta takılmamış)",
+     "Dokumaya elverişli maddelerle kaplanmış kauçuk ip",
+     "Metal iplikle takviye edilmiş jüt ipliği"], "E", OT,
+    "Antistatik etki veren metal lifleri ile dokumaya elverişli maddelerin karışımından oluşan iplikler 56.05’ten açıkça hariç tutulmuş olup duruma göre 50–55. fasıllardadır. Metal tozuyla kaplanmış iplik 56.05, plastikle sıvanmış taklit katgüt ve tekstille kaplı kauçuk ip 56.04, metal takviyeli iplik 56.07’dedir.",
+    "56.05 Açıklama Notu (hariç tutmalar); 56.04 ve 56.07 Açıklama Notları."),
+  S("Aşağıdakilerden hangisi 56.08 pozisyonunda <b>sınıflandırılmaz</b>?",
+    "Tenis kortunda kullanılan file",
+    ["Kamuflaj (gizleme) ağı", "Alışveriş filesi", "Böceklerden korunmaya mahsus hazır ağ",
+     "Hava tesirlerine karşı emdirilmiş, sicimden düğümlü top halinde ağ"], "C", OT,
+    "Spor faaliyetlerinde kullanılan fileler (tenis filesi, gol filesi) 56.08’in hariç tuttuğu eşya olup Fasıl 95’tedir. Kamuflaj ağları, alışveriş fileleri, böceklerden korunma ağları ve emdirilmiş olsa da sicimden düğümlü ağlar 56.08’de sayılmıştır.",
+    "56.08 Açıklama Notu."),
+  # --- Farklı/aynı (4)
+  S("Aşağıdaki eşya çiftlerinden hangisinin her ikisi de <b>aynı</b> pozisyonda yer alır?",
+    "Tekstil kaplı kauçuk ip – Kauçuk kaplaması gözle görülen poliester iplik",
+    ["Gipe edilmiş at kılı ipliği – Pamuk ipliğiyle gipe edilmiş poliester iplik",
+     "Metal şeritle bükülmüş metalize iplik – Metal iplikle takviye edilmiş jüt ipliği",
+     "Sicimden düğümlenmiş ağ mensucat – Parça halinde örme file mensucat",
+     "İğne işi keçe – Tufte edilmiş, yere serilmeye elverişsiz keçe"], "B", FA,
+    "56.04 hem dokumaya elverişli maddelerle kaplanmış kauçuk ip ve halatları hem de kauçuk veya plastik kaplaması gözle görülen tekstil ipliklerini kapsar. At kılı gipe 51.10, diğer gipe 56.06; metalize 56.05, metal takviyeli 56.07; düğümlü ağ 56.08, örme file 60.02–60.06; keçe 56.02, tufte keçe 58.02’dedir.",
+    "56.04 pozisyon metni ve Açıklama Notu; 56.06, 56.05, 56.08, 56.02 Açıklama Notları."),
+  S("Aşağıdakilerden hangisi diğerlerinden <b>farklı</b> bir fasılda yer alır?",
+    "Selüloz vatkadan mamul mendil",
+    ["Pamuk vatka", "İğne işi keçe", "Dokunmamış mensucattan yapışkan bant", "Şenil (tırtıl) iplik"], "E", FA,
+    "Selüloz vatka ve bundan eşya Bölüm XI Not 1(m) ve 56.01 hariç tutmaları uyarınca Fasıl 48’dedir. Pamuk vatka 56.01, iğne işi keçe 56.02, yapıştırıcıyla sıvanmış dokunmamış mensucattan bant 56.03, tırtıl iplik 56.06 ile Fasıl 56’dadır.",
+    "Bölüm XI Not 1(m); 56.01 ve 56.03 Açıklama Notları."),
+  S("Aşağıdaki eşyadan hangisi diğerlerinden <b>farklı</b> bir pozisyonda sınıflandırılır?",
+    "Belirli uzunlukta kesilmiş, uçları işlenmemiş polipropilen halat",
+    ["Uçlarına metal halka takılmış, belli uzunlukta kesilmiş çekme halatı", "İp merdiven",
+     "Gemilerin rıhtıma çarpmasını önlemeye mahsus ipten tampon",
+     "İkiye katlanıp katlama yerinden bağlanmış iplik demetlerinden bulaşık bezi"], "A", FA,
+    "Sicim, ip ve halatlar belli uzunlukta kesilmiş olsalar da başka işlem görmedikçe 56.07’de kalır. Uçlarına halka takılmış halatlar, ip merdivenler, gemi tamponları ve iplik demetlerinden bulaşık bezleri 56.09’da ipten mamul eşya olarak sayılmıştır.",
+    "56.07 ve 56.09 Açıklama Notları."),
+  S("Aşağıdakilerden hangisi diğer dördünden <b>farklı</b> olarak 56. fasıl dışında sınıflandırılır?",
+    "Mesnedi keçe olan, tabii aşındırıcı tozlarla kaplanmış ürün",
+    ["Tamamen gömülü olmayan, kauçuk emdirilmiş ve dokuma maddesi ağırlıkça %70 olan keçe",
+     "Plastiğin bağlayıcı madde olarak kullanıldığı dokunmamış mensucat",
+     "Yalnız bir yüzü plastikle gözle görülür şekilde kaplanmış dokunmamış mensucat",
+     "Bir yüzü dokunmuş mensucatla kaplanmış, esas niteliğini dokunmamış mensucatın verdiği ürün"], "D", FA,
+    "Mesnedi keçe veya dokunmamış mensucat olan aşındırıcı toz veya taneler Fasıl 56 Not 1(c) uyarınca 68.05’tedir. Dokuma maddesi %50’den fazla olan kauçuklu keçe 56.02’de; plastik bağlayıcılı, tek yüzü kaplı veya bir yüzü dokunmuşla kaplanmış dokunmamış mensucat 56.03’te kalır (Not 3).",
+    "Fasıl 56 Not 1(c) ve Not 3; 56.03 Açıklama Notu (III)."),
+  # --- Fasıl notu · Tanım/Eşik (4)
+  S("Fasıl 56 Not 3’e göre plastik emdirilmiş, sıvanmış, kaplanmış veya lamine edilmiş keçenin 56.02 dışında kalarak Fasıl 39’a gitmesi için (tamamen gömülü değilse) keçenin ağırlık oranı ne olmalıdır?",
+    "%50 veya daha az",
+    ["%50’den fazla", "%85 veya daha az", "%30’dan az", "%15 veya daha az"], "C", FN,
+    "Not 3(a), keçenin ağırlık itibariyle %50 veya daha azını oluşturduğu plastik veya kauçuk işlemli keçeyi Fasıl 39 veya 40’a gönderir; keçe %50’den fazla ise ürün 56.02’de kalır. %85 eşiği lif karışımlarında, diğer oranlar ise bu notta yer almaz.",
+    "Fasıl 56 Not 3(a)."),
+  S("Fasıl 56 Not 3’e göre plastik veya kauçukla işlem görmüş dokunmamış mensucat hangi durumda 56.03 dışında kalır?",
+    "Tamamen gömülmüşse veya iki yüzü gözle görülür şekilde tamamen kaplanmışsa",
+    ["Plastik veya kauçuk, liflerin birbirine tutturulmasında bağlayıcı madde olarak kullanılmışsa",
+     "Yalnızca bir yüzü plastik veya kauçukla çıplak gözle görülür şekilde kaplanmışsa",
+     "İşlem sonucunda yalnızca renginde değişiklik olmuşsa",
+     "Dokuma maddesi ağırlıkça %50’den fazlaysa"], "B", FN,
+    "Not 3(b), tamamen gömülü veya her iki yüzü renk değişikliği dışında çıplak gözle görülür şekilde kaplanmış dokunmamış mensucatı Fasıl 39 veya 40’a gönderir. Plastik veya kauçuğun bağlayıcı olarak kullanılması ürünü 56.03’te tutar; tek yüzü kaplı olan da 56.03’tedir; %50 ölçütü keçeye aittir.",
+    "Fasıl 56 Not 3."),
+  S("Fasıl 56 Not 4’e göre, kauçuk veya plastik emdirilmiş bir tekstil ipliğinin 56.04’te sınıflandırılabilmesi için aşağıdakilerden hangisi gereklidir?",
+    "Kaplamanın, renk değişikliği dışında çıplak gözle görülebilmesi",
+    ["İpliğin ağırlık itibariyle en az %50 oranında kauçuk veya plastik içermesi",
+     "İpliğin 10.000 desiteksten fazla olması",
+     "Emdirmenin renk değişikliğinden anlaşılabilmesi",
+     "İpliğin metal iplikle takviye edilmiş olması"], "E", FN,
+    "Not 4 uyarınca 56.04, emdirme, sıvama veya kaplaması çıplak gözle görülemeyen iplikleri kapsamaz ve bu değerlendirmede renk değişikliği dikkate alınmaz; böyle iplikler genellikle 50–55. fasıllarda kalır. Ağırlık oranı veya desiteks şartı yoktur; metal takviye ipliği 56.07’ye götürür.",
+    "Fasıl 56 Not 4; 56.04 Açıklama Notu (B)."),
+  S("Fasıl 56 Not 2’ye göre “keçe” tabiri aşağıdakilerden hangisini kapsar?",
+    "İğne işi keçeyi ve dikiş-trikotaj usulüyle kendi lifleriyle tutturulmuş mensucatı",
+    ["Keçeleştirme (dövme) işlemine tabi tutulmuş ve genellikle 50–55. fasıllara giren dokunmuş mensucatı",
+     "Tufte edilmiş keçeyi ve tufte edilmiş dokunmamış mensucatı",
+     "Filament esaslı iğnelenmiş tülbentleri",
+     "Kağıt imalinde kullanılan selüloz vatkayı ve bundan eşyayı"], "A", FN,
+    "Not 2, iğne işi keçeyi ve dikiş-trikotaj usulüyle kendi lifleriyle tutturulmuş lif mensucatını keçe sayar. Keçeleştirilmiş dokunmuş mensucat genellikle 50–55. fasıllarda, tufte keçe 58.02’de, filament esaslı iğnelenmiş tülbentler dokunmamış olarak 56.03’te, selüloz vatka Fasıl 48’dedir.",
+    "Fasıl 56 Not 2; 56.02 Açıklama Notu."),
+  # --- GYK (2)
+  S("Emici kısmı pamuk vatkasından, dış yüzü dokunmamış mensucattan oluşan hijyenik havlunun (kadın bağı) pozisyonu ve sınıflandırmanın dayandığı kural hangi seçenekte doğru verilmiştir?",
+    "96.19 – GYK 1",
+    ["56.01 – GYK 3(b)", "56.03 – GYK 3(b)", "56.01 – GYK 2(b)", "96.19 – GYK 3(c)"], "C", GY,
+    "Fasıl 56 Not 1(f), 96.19’daki hijyenik havluları, tamponları ve bebek bezlerini fasıl dışında bırakır; eşya malzemesine bakılmaksızın adıyla belirtildiği pozisyonda sınıflandırılır. Sonuç not ve pozisyon metninden çıktığı için GYK 1 yeterlidir; vatka veya dokunmamış kısmın esas nitelik verdiğini düşünüp GYK 3(b) uygulamak tuzaktır.",
+    "Fasıl 56 Not 1(f); 56.01 Açıklama Notu hariç tutması (k); GYK 1."),
+  S("Belirli uzunlukta kesilmiş, bir ucuna ilmek yapılmış ve diğer ucuna metal kanca takılmış polipropilen çekme halatının pozisyonu ve sınıflandırmanın dayandığı kural hangi seçenekte doğru verilmiştir?",
+    "56.09 – GYK 1",
+    ["56.07 – GYK 1", "56.07 – GYK 2(a)", "56.09 – GYK 3(b)", "56.07 – GYK 3(c)"], "D", GY,
+    "56.09 Açıklama Notu, uzunlamasına kesilip bir veya iki ucuna ilmek yapılmış ya da madeni uç, halka, kanca takılmış sicim, ip ve halatları (çekme halatları gibi) açıkça sayar; bu nedenle eşya pozisyon metni ve açıklama notuyla, yani GYK 1 ile 56.09’dadır. Uçları işlenmemiş halat 56.07’de kalırdı; metal kanca eşyayı bileşik eşya kuralına (GYK 3(b)) götürmez.",
+    "56.09 pozisyon metni ve Açıklama Notu; GYK 1."),
+  # --- Eşleştirme / Boşluk (2)
+  S("Aşağıdaki iplik – pozisyon eşleştirmelerinden hangisi <b>doğrudur</b>?",
+    "Şenet (chainette) iplik – 56.06",
+    ["Gipe edilmiş at kılı ipliği – 56.06",
+     "Metal iplikle takviye edilmiş sentetik iplik – 56.05",
+     "Kauçuk emdirmesi gözle görülmeyen naylon iplik – 56.04",
+     "Gipe edilmiş metalize iplik – 56.06"], "B", ES,
+    "Dairesel örgü makinelerinde üretilen şenet iplikler 56.06 pozisyon metninde sayılmıştır. At kılı gipe 51.10’da, metal takviyeli iplik 56.07’de, kaplaması gözle görülmeyen iplik 50–55. fasıllarda (Not 4), gipe edilmiş metalize iplik 56.05’tedir.",
+    "56.06 pozisyon metni ve Açıklama Notu; Fasıl 56 Not 4; 56.05 ve 56.07 Açıklama Notları."),
+  S("“Lifler kolayca ayrılabiliyorsa ürün ..... ; lifler tavlanıp ağır basınç altında ovalanarak sıkıca kenetlenmişse ..... ; lifler bir bağlayıcı madde veya ısıl işlemle birbirine tutturulmuşsa ..... pozisyonunda sınıflandırılır.” Boşluklara sırasıyla gelmesi gerekenler hangisidir?",
+    "56.01 – 56.02 – 56.03",
+    ["56.03 – 56.02 – 56.01", "56.01 – 56.03 – 56.02", "56.02 – 56.01 – 56.03", "56.01 – 56.02 – 58.11"], "E", ES,
+    "Liflerin kolayca ayrılabildiği tabaka vatkadır (56.01); tavlama, ovalama veya dövmeyle liflerin sıkı bağlandığı yoğun tabaka keçedir (56.02); kimyasal veya termal fiksajla tutturulan lif tabakası dokunmamış mensucattır (56.03). 58.11 dolgu maddeli kapitoneli parça mensucat içindir.",
+    "56.01, 56.02, 56.03 Açıklama Notları."),
+  # --- Çoktan-çoğa (2)
+  SX("Fasıl 56 Not 1’e göre aşağıdakilerden hangileri 56. fasla <b>dahil değildir</b>? I. Dokuma maddesinin yalnız taşıyıcı olduğu, kumaş yumuşatıcısı emdirilmiş dokunmamış mensucat II. 58.11 pozisyonundaki kapitoneli dokumaya elverişli ürünler III. Plastiğin bağlayıcı olarak kullanıldığı dokunmamış mensucat IV. Mesnedi keçe olan aglomere mika",
+     ["I ve II", "I ve III", "II ve IV", "I, II ve IV", "II, III ve IV"], "D", CC,
+     "Not 1(a) taşıyıcı tekstilli yumuşatıcı emdirilmiş ürünü (38.09), Not 1(b) 58.11 ürünlerini, Not 1(d) mesnedi keçe olan aglomere mikayı (68.14) fasıl dışında bırakır. Plastiğin bağlayıcı olarak kullanıldığı dokunmamış mensucat ise Not 3 uyarınca 56.03’tedir.",
+     "Fasıl 56 Not 1 ve Not 3."),
+  SX("Aşağıdakilerden hangileri 56.07 pozisyonunda sınıflandırılır? I. Örme suretiyle elde edilmiş kağıt ipliğinden ip II. Örülmemiş, metal takviyesiz, sicim görünümünde kağıt ipliği III. Metal iplikle takviye edilmiş pamuk ipliği IV. Üç katlı Hindistan cevizi (koko) ipliği",
+     ["I ve III", "II ve IV", "I, III ve IV", "I, II ve III", "II, III ve IV"], "C", CC,
+     "Kağıt ipliğinden ip yalnız örme suretiyle elde edilmişse veya metal takviyeliyse 56.07’dedir (I); örülmemiş ve takviyesiz kağıt ipliği 53.08’de kalır (II). Metal iplikle takviye edilmiş iplikler her durumda (III), üç veya daha fazla katlı koko iplikleri Bölüm XI Not 3(A)(d) uyarınca (IV) 56.07’dedir.",
+     "56.07 Açıklama Notu; Bölüm XI Not 3; 53.08 Açıklama Notu."),
+  # --- Senaryo (2)
+  S("Bir firma; polyester devamsız liflerden üretilmiş, iki yüzü de plastikle tamamen kaplanmış ve kaplaması renk değişikliği dışında çıplak gözle açıkça görülen, rulo halinde dokunmamış mensucat ithal etmektedir. Eşya nerede sınıflandırılır?",
+    "Fasıl 39", ["56.03", "59.03", "58.11", "56.02"], "A", SN,
+    "Fasıl 56 Not 3(b), her iki yüzü çıplak gözle görülür şekilde tamamen sıvanmış veya kaplanmış dokunmamış mensucatı 56.02 ve 56.03 dışında bırakır; plastikle kaplandığı için Fasıl 39’a gider. Tek yüzü kaplı olsaydı veya plastik yalnız bağlayıcı olsaydı 56.03’te kalırdı; ürün keçe veya kapitoneli mensucat değildir.",
+    "Fasıl 56 Not 3(b); 56.03 Açıklama Notu."),
+  S("Bir firma; pamuk ipliğinden bir iç kısmın üzerine, iç kısımla birlikte bükülmeyen ince ve parlak viskoz ipliğin helezoni şekilde sarılmasıyla elde edilmiş, metal içermeyen ve süsleme eşyası yapımında kullanılacak iplik ithal etmektedir. İplik hangi pozisyondadır?",
+    "56.06", ["56.05", "56.07", "58.08", "52.04"], "B", SN,
+    "İç kısım üzerine bir veya daha fazla ipliğin helezoni sarılmasıyla elde edilen ve sarma iplikleri iç kısımla birlikte bükülmeyen iplikler gipe iplik olarak 56.06’dadır. Metal bulunsaydı 56.05 olurdu; 58.08’deki milanezlerin gövdesi daha kalın iplik demetlerinden oluşur; ürün sicim veya pamuk dikiş ipliği değildir.",
+    "56.06 Açıklama Notu (A); 58.08 Açıklama Notu (A)(2).")
+ ]
+}
+
+yaz(d, 56)

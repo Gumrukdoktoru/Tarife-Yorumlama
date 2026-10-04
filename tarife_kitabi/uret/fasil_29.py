@@ -1,0 +1,446 @@
+#!/usr/bin/env python3
+"""Fasıl 29 (Organik kimyasallar) modülünü üretir."""
+import json
+import os
+
+KITAP = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUT = os.path.join(KITAP, "data", "fasil_29.json")
+
+oz = {
+    "vurgu": "Fasıl 29’un ana testi: Eşya kimyaca belirli bir yapıda, izole edilmiş tek bir organik bileşik mi? Evetse ve Not 2 ile saflık eşikleri onu dışarı atmıyorsa, fonksiyonel grubuna göre tali fasıl seçilir; birden fazla pozisyona uyuyorsa Not 3 gereği numara sırasına göre <b>en son</b> pozisyon uygulanır.",
+    "maddeler": [
+        "Kimyaca belirli olma şartının istisnaları: 29.36–29.41 (vitamin, hormon, glikozit, alkaloid, şeker eter/esterleri, antibiyotik) ile keton peroksit, paraformaldehit, laktofosfat, lesitin ve nükleik asitler.",
+        "Not 1 genişletmesi: izomer karışımları, sulu çözeltiler, emniyet veya nakliye için yapılmış diğer çözeltiler, stabilizör, tozlanma önleyici, renklendirici veya koku verici katılmış ürünler Fasıl 29’da kalır.",
+        "Saf olsa da dışarıda: etanol, metan ve propan, üre, sakkaroz ve diğer adi şekerler, enzimler, boyayıcı maddeler, bağışıklık ürünleri, ham gliserol.",
+        "Saflık eşiğinin altındaki benzen, toluen, fenol, piridin, etilen, gliserol, yağ alkolü ve yağ asidi 27.07, 27.11, 15.20 veya 38.23’e gider.",
+        "Radyoaktif hal (Bölüm VI Not 1) ile dozlandırılmış veya perakende hazırlanmış hal (Bölüm VI Not 2) Fasıl 29’dan önce gelir.",
+    ],
+}
+
+karar_tablosu = {
+    "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir. 5–12. satırlar Not 3 gereği sondan başa dizilmiştir.",
+    "satirlar": [
+        ["1", "Radyoaktif ya da izotop mu?", "<b>28.44</b> / <b>28.45</b> (Bölüm VI Not 1)"],
+        ["2", "Dozlandırılmış veya perakende satış için hazırlanmış mı? (ilaç, kozmetik, haşere ilacı, perakende yapıştırıcı, fotoğraf ürünü)",
+         "<b>30.04</b> · <b>33.03–33.07</b> · <b>35.06</b> · <b>37.07</b> · <b>38.08</b>"],
+        ["3", "Saf olsa bile Fasıl 29 dışında tutulan bir ürün mü?",
+         "Etanol <b>22.07</b> / <b>22.08</b> · metan, propan <b>27.11</b> · üre <b>31.02</b> / <b>31.05</b> · sakkaroz <b>17.01</b> · glikoz, fruktoz, laktoz, maltoz <b>17.02</b> · enzim <b>35.07</b>"],
+        ["4", "Kimyaca belirli değil, kasıtlı karışım ya da saflık eşiğinin altında mı?*",
+         "<b>27.07</b> / <b>27.11</b> · ham gliserol <b>15.20</b> · yağ alkolü, yağ asidi <b>38.23</b> · çözücü karışımı <b>38.14</b>"],
+        ["5", "Antibiyotik mi? Kimyaca saf şeker ya da şeker eteri, asetali, esteri mi?", "<b>29.41</b> · <b>29.40</b>"],
+        ["6", "Alkaloid mi? Glikozit mi?", "<b>29.39</b> · <b>29.38</b>"],
+        ["7", "Hormon mu? Vitamin veya provitamin mi?", "<b>29.37</b> · <b>29.36</b>"],
+        ["8", "Sülfonamid mi? Halkasında hetero atom var mı?",
+         "<b>29.35</b> · diğer hetero atom, nükleik asit <b>29.34</b> · yalnız azot <b>29.33</b> · yalnız oksijen <b>29.32</b>"],
+        ["9", "Karbona doğrudan bağlı kükürt, metal veya başka ametal var mı?", "Kükürt <b>29.30</b> · diğerleri <b>29.31</b>"],
+        ["10", "Azot fonksiyonu var mı? (amin, amid, imid, nitril, azo, hidrazin, izosiyanat)",
+         "<b>29.21–29.29</b> (amin + oksijen fonksiyonu <b>29.22</b>)"],
+        ["11", "Yalnız oksijen fonksiyonu mu?",
+         "Alkol <b>29.05</b> / <b>29.06</b> · fenol <b>29.07</b> / <b>29.08</b> · eter, epoksit, asetal <b>29.09–29.11</b> · aldehit <b>29.12</b> / <b>29.13</b> · keton <b>29.14</b> · asit <b>29.15–29.18</b> · inorganik asit esteri <b>29.19</b> / <b>29.20</b>"],
+        ["12", "Yalnız karbon ve hidrojen mi? (halojenli, sülfolu, nitrolu türevleri dahil)",
+         "<b>29.01–29.04</b>; hiçbiri değilse <b>29.42</b>"],
+    ],
+    "dipnot": "* İstisna: keton peroksit, paraformaldehit, laktofosfat, lesitin, nükleik asit ile 29.36–29.41 ürünleri kimyaca belirli olmasalar da Fasıl 29’dadır. 5–12. satırların sondan başa dizilmesi, Not 3’ün “numara sırasına göre son pozisyon” kuralını uygulamak içindir.",
+}
+
+pozisyon_haritasi = [
+    ["29.01", "Asiklik hidrokarbonlar", "Halkasız; metan, propan hariç", "Etan, etilen, propilen, bütan, asetilen"],
+    ["29.02", "Siklik hidrokarbonlar", "En az bir halka; saflık eşiği", "Benzen, toluen, ksilen, stiren, naftalin"],
+    ["29.03", "Hidrokarbonların halojenli türevleri", "H yerine F, Cl, Br, I", "Kloroform, karbon tetraklorür, vinil klorür, DDT"],
+    ["29.04", "Sülfolu, nitrolu, nitrozolu hidrokarbonlar", "–SO3H, –NO2, –NO grupları", "Benzensülfonik asit, nitrobenzen, TNT, kloropikrin"],
+    ["29.05", "Asiklik alkoller ve türevleri", "Etanol hariç; metal alkolatlar dahil", "Metanol, etilen glikol, gliserol, mannitol"],
+    ["29.06", "Siklik alkoller ve türevleri", "Siklanik veya aromatik alkol", "Mentol, kolesterol, inositol, borneol, benzil alkol"],
+    ["29.07", "Fenoller; fenol-alkoller", "OH doğrudan benzen halkasında", "Fenol, krezol, hidrokinon, bisfenol A, timol"],
+    ["29.08", "Fenollerin halojenli vb. türevleri", "Fenol + halojen, sülfo, nitro", "Pikrik asit, pentaklorofenol, nitrofenoller"],
+    ["29.09", "Eterler, eter-alkoller, peroksitler", "R–O–R; keton peroksit belirli olmasa da", "Dietil eter, anizol, dietilen glikol, öjenol"],
+    ["29.10", "Üç halkalı epoksitler", "Yalnız üç üyeli epoksi halkası", "Etilen oksit, propilen oksit, epiklorohidrin"],
+    ["29.11", "Asetaller ve yarı asetaller", "Polivinil asetaller hariç (39.05)", "Metilal, dimetilasetal, dietilasetal"],
+    ["29.12", "Aldehitler; siklik polimerleri; paraformaldehit", "–CHO grubu", "Formaldehit, benzaldehit, vanilin, metaldehit"],
+    ["29.13", "29.12 ürünlerinin halojenli vb. türevleri", "Kloral hidrat hariç (29.05)", "Kloral (trikloroasetaldehit)"],
+    ["29.14", "Ketonlar ve kinonlar", "Karbonil grubu; kâfuru dahil", "Aseton, butanon, kâfuru, antrakinon"],
+    ["29.15", "Doymuş asiklik monokarboksilik asitler", "Tek –COOH; tuz, ester, anhidrit dahil", "Formik, asetik asit, etil asetat, stearatlar"],
+    ["29.16", "Doymamış asiklik ve siklik monokarboksilik asitler", "Çift bağ veya halka; tek –COOH", "Akrilik, oleik, benzoik asit, benzoil peroksit"],
+    ["29.17", "Polikarboksilik asitler", "İki veya daha fazla –COOH", "Okzalik, adipik asit, ftalik anhidrit"],
+    ["29.18", "Ek oksijen fonksiyonlu karboksilik asitler", "Asit + alkol, fenol, aldehit, keton", "Laktik, tartarik, sitrik, salisilik asit"],
+    ["29.19", "Fosforik esterler ve tuzları", "Laktofosfatlar dahil", "Gliserofosfatlar, tributil fosfat"],
+    ["29.20", "Diğer ametal inorganik asit esterleri", "Hidrojen halojenür esterleri hariç", "Nitrogliserin, dimetil sülfat, dietil karbonat"],
+    ["29.21", "Amin gruplu bileşikler", "Oksijen fonksiyonu taşımayan aminler", "Anilin, metilamin, hekzametilendiamin, amfetamin"],
+    ["29.22", "Oksijen gruplu amino bileşikleri", "Amin + oksijen fonksiyonu", "Etanolaminler, lizin, glutamik asit, glisin"],
+    ["29.23", "Kuaterner amonyum tuzları; lesitinler", "Dört bağlı azot katyonu", "Kolin, betain, soya lesitini"],
+    ["29.24", "Karboksiamid gruplu bileşikler", "–CO.NH2; üre hariç (Fasıl 31)", "Asetamid, asetanilid, p-asetamidofenol"],
+    ["29.25", "Karboksiimid ve imin gruplu bileşikler", "İmid veya =NH grubu", "Sakkarin, ftalimid, guanidin"],
+    ["29.26", "Nitril gruplu bileşikler", "–CN grubu", "Akrilonitril, disiyandiamid, asetonitril"],
+    ["29.27", "Diazo, azo, azoksi bileşikleri", "–N=N–; organik boyalar hariç", "Diazonyum tuzları, azobenzen"],
+    ["29.28", "Hidrazin, hidroksilamin organik türevleri", "Anorganik hali 28.25", "Fenilhidrazin, dimetilglioksim"],
+    ["29.29", "Diğer azot gruplu bileşikler", "Nitro ve nitrozo azot fonksiyonu sayılmaz", "İzosiyanatlar, kalsiyum siklamat"],
+    ["29.30", "Kükürtlü organik bileşikler", "Kükürt doğrudan karbona bağlı", "Tiyoüre, metiyonin, ksantatlar, merkaptanlar"],
+    ["29.31", "Diğer organo-inorganik bileşikler", "Metal veya ametal doğrudan karbona bağlı", "Kurşun tetraetil, organofosfor, organosilisyum"],
+    ["29.32", "Sadece oksijenli heterosiklikler", "Halkada yalnız oksijen", "Tetrahidrofuran, furfural, kumarin, safrol"],
+    ["29.33", "Sadece azotlu heterosiklikler", "Halkada yalnız azot", "Piridin, melamin, kaprolaktam, barbitürik asit"],
+    ["29.34", "Nükleik asitler; diğer heterosiklikler", "Kükürtlü veya farklı hetero atomlu halka", "Tiyofen, fenotiazin, nükleik asitler"],
+    ["29.35", "Sülfonamidler", "R–SO2–N; halkalı S–N hariç", "Sülfanilamid, sülfadiazin, sildenafil sitrat"],
+    ["29.36", "Provitaminler ve vitaminler", "Konsantre ve karışımları dahil", "A, B12, C, D, E vitaminleri"],
+    ["29.37", "Hormonlar, prostaglandinler", "Analog ve anti-hormonlar dahil", "İnsülin, kortizon, östrojenler, adrenalin"],
+    ["29.38", "Glikozitler ve türevleri", "Şeker + aglikon; doğal", "Rutin, dijitoksin, saponinler, amigdalin"],
+    ["29.39", "Alkaloidler ve türevleri", "Bitkisel veya bitkisel olmayan", "Kafein, nikotin, morfin, kinin, efedrin"],
+    ["29.40", "Kimyaca saf şekerler; şeker eter ve esterleri", "Sakkaroz, glikoz, fruktoz, laktoz, maltoz hariç", "Galaktoz, ksiloz, sorboz"],
+    ["29.41", "Antibiyotikler", "Kimyaca belirli olmasa da", "Penisilin, streptomisin, tetrasiklin, eritromisin"],
+    ["29.42", "Diğer organik bileşikler", "Başka yerde yer almayanlar", "Ketenler, bor triflorür bileşikleri"],
+]
+
+notlar = [
+    ["Bölüm VI Not 1",
+     "28.44 (radyoaktif) veya 28.45 (izotop) tanımına uyan ürünler Tarifenin başka pozisyonuna girmez: radyoaktif gliserol 29.05’te değil 28.44’te yer alır. 28.43, 28.46 ve 28.52 tanımına uyanlar da Bölüm VI’nın diğer pozisyonlarına göre önceliklidir (organo-civa bileşikleri 28.52)."],
+    ["Bölüm VI Not 2",
+     "Dozlandırılmış veya perakende satış için hazırlanmış olmaları nedeniyle 30.04, 30.05, 30.06, 32.12, 33.03–33.07, 35.06, 37.07 veya 38.08’e giren ürünler, Fasıl 29’a girebilecek olsalar bile bu pozisyonlarda kalır."],
+    ["Fasıl 29 Not 1 (a)–(c)",
+     "Metinde aksi belirtilmedikçe fasıl yalnız: (a) kimyaca belirli yapıda, izole edilmiş organik bileşikleri (safsızlık içersin içermesin); (b) aynı organik bileşiğin iki veya daha fazla izomerinin karışımlarını (stereoizomerler dışındaki asiklik hidrokarbon izomer karışımları hariç → Fasıl 27); (c) kimyaca belirli olsun olmasın 29.36–29.39 ürünlerini, 29.40’taki şeker eter, asetal ve esterleri ile tuzlarını ve 29.41 ürünlerini kapsar."],
+    ["Fasıl 29 Not 1 (d)–(h)",
+     "Ayrıca: (d) bu ürünlerin sulu çözeltileri; (e) diğer çözücülerdeki çözeltileri (yalnız emniyet veya nakliye gereği mutat ve kaçınılmaz ise ve çözücü ürünü özel kullanıma elverişli kılmıyorsa); (f) koruma veya nakliye için stabilizör (topaklanmayı önleyici dahil) katılmışları; (g) tanıma veya emniyet amacıyla tozlanmayı önleyici, renklendirici, koku verici veya kusturucu madde katılmışları (özel kullanıma elverişli kılmamak şartıyla); (h) azo boya imalinde standart dayanıklılığa seyreltilmiş diazonyum tuzları, bunların bağlayıcıları ve diazolanabilen aminler ile tuzları."],
+    ["Fasıl 29 Not 2",
+     "Fasıl dışı: 15.04 ürünleri ve ham gliserol (15.20); etil alkol (22.07, 22.08); metan ve propan (27.11); Fasıl 28 Not 2’deki karbon bileşikleri; bağışıklık ürünleri (30.02); üre (31.02, 31.05); bitkisel veya hayvansal boyayıcılar (32.03), sentetik organik boyayıcılar, flüoresan parlatıcı ve luminoforlar (32.04), perakende boyalar (32.12); enzimler (35.07); yakıt olarak tablet, çubuk vb. şekle sokulmuş metaldehit ve hekzametilentetramin ile çakmak için 300 cm³ veya daha az kaplardaki sıvı yakıtlar (36.06); yangın söndürücü dolgular (38.13), perakende mürekkep çıkarıcılar (38.24); optik elementler (90.01)."],
+    ["Fasıl 29 Not 3",
+     "Fasılın iki veya daha fazla pozisyonuna girebilen ürün, bu pozisyonlardan numara sırasına göre <b>sonuncusunda</b> yer alır: lakton (29.32) ve vitamin (29.36) olan askorbik asit 29.36’da. 29.40 metni ise 29.37, 29.38 ve 29.39 ürünlerini kendisi hariç tutar."],
+    ["Fasıl 29 Not 4",
+     "Halojenlenmiş, sülfolanmış, nitrolanmış, nitrozolanmış türevlere yapılan atıflar bileşik türevleri de (sülfohalojenli, nitrohalojenli, nitrosülfonlu, nitrosülfohalojenli) kapsar. Nitro ve nitrozo grupları 29.29 bakımından “azot fonksiyonlu” sayılmaz. 29.11, 29.12, 29.14, 29.18 ve 29.22’deki “oksijen fonksiyonlu grup”, 29.05–29.20’de belirtilen oksijen fonksiyonlularla sınırlıdır."],
+    ["Fasıl 29 Not 5 (A)–(B)",
+     "(A) I–VII. tali fasıllardaki asit fonksiyonlu bileşiklerin aynı tali fasıllardaki bileşiklerle esterleri, bileşenlerden numara sırasına göre son pozisyondakiyle birlikte sınıflandırılır (dietilen glikol asetat → 29.15). (B) Etil alkolün bu asitlerle esterleri asidin pozisyonundadır (etil asetat → 29.15)."],
+    ["Fasıl 29 Not 5 (C)–(E)",
+     "(C) Bölüm VI Not 1 ve Fasıl 28 Not 2 saklı kalmak üzere: (1) I–X. tali fasıllar ile 29.42’deki organik bileşiklerin inorganik tuzları organik bileşiğin pozisyonunda (dietilamin hidroklorür → 29.21); (2) bu bileşiklerin birbirleriyle oluşturduğu tuzlar, asit veya bazdan numara sırasına göre son pozisyonda (anilin asetat → 29.21); (3) XI. tali fasıl ve 29.41 dışındaki koordinasyon bileşikleri, metal-karbon bağları dışındaki metal bağları “parçalanarak” elde edilen fragmanlardan numara sırasına göre son pozisyonda. (D) Metal alkolatlar alkollerinin pozisyonunda; etanolünkiler 29.05’te. (E) Karboksilik asit halojenürleri asidin pozisyonunda (izobutiril klorür → 29.15)."],
+    ["Fasıl 29 Not 6",
+     "29.30 ve 29.31’deki organo-inorganik bileşikler, hidrojen, oksijen ve azottan başka karbona <b>doğrudan bağlı</b> metal veya ametal (kükürt, arsenik, kurşun gibi) atomu içerir. Kükürdü veya halojeni karbona doğrudan bağlı olduğu için yalnızca sülfolanmış veya halojenlenmiş türev niteliğinde olanlar bu pozisyonlara girmez."],
+    ["Fasıl 29 Not 7",
+     "29.32–29.34’e; üçlü halkalı epoksitler, keton peroksitler, aldehit veya tiyoaldehitlerin siklik polimerleri, polibazik karboksilik asit anhidritleri, polihidrik alkol veya fenollerin polibazik asitlerle siklik esterleri ve polibazik asit imidleri girmez (halkadaki hetero atom yalnız bu siklizasyondan kaynaklanıyorsa)."],
+    ["Fasıl 29 Not 8",
+     "29.37’de “hormonlar”; hormon salgılayıcı veya uyarıcı faktörleri, hormon durdurucuları ve hormon antagonistlerini (anti-hormonlar) içerir. “Esasen hormon olarak kullanılan” deyimi, hormonal etkileri için kullanılan türev ve yapısal analoglar ile bu pozisyon ürünlerinin sentezinde esasen ara ürün olarak kullanılan türev ve analogları da kapsar."],
+    ["Genel Açıklamalar",
+     "Kimyaca belirli yapıdaki izole bileşik: belirli bir yapısal diyagramla gösterilebilen, elementleri arasındaki sabit oranla tanımlanan moleküler cins. “Safsızlık”: yalnız ve doğrudan imalattan (saflaştırma dahil) gelen dönüşmemiş başlangıç maddeleri, başlangıç maddesi safsızlıkları, reaktifler ve yan ürünler. Ürünü özel kullanıma elverişli kılmak için kasten bırakılan madde safsızlık sayılmaz (metanollü metil asetat çözücü → 38.14; laktozla karışık sakkarin fasıl dışı)."],
+    ["Genel Açıklamalar",
+     "Kimyaca belirli olmasa da Fasıl 29’da kalanlar: keton peroksitler (29.09), aldehitlerin siklik polimerleri ve paraformaldehit (29.12), laktofosfatlar (29.19), lesitinler ve fosfoaminolipidler (29.23), nükleik asitler ve tuzları (29.34), vitaminler (29.36), hormonlar (29.37), glikozitler (29.38), alkaloidler (29.39), şeker eter, asetal ve esterleri (29.40), antibiyotikler (29.41). 29.36–29.39 ve 29.41 ürünlerinin pegile türevleri aynı pozisyonda; diğer pegile türevler genellikle 39.07."],
+    ["29.01 / 29.02 Açıklama Notları",
+     "Saflık eşikleri: etan ve etilen hacimce %95, propilen hacimce %90 (altı 27.11); benzen, toluen ve ksilen ağırlıkça %95, antrasen ağırlıkça %90, naftalin kristalleşme noktası 79,4 °C veya üstü (altı 27.07). Ham p-simen ve katı dipenten 38.05; alkilarenlerle karışık dodesilbenzen ve nonilnaftalinler 38.17."],
+    ["29.05 / 29.07 / 29.33 Açıklama Notları",
+     "Gliserol kuru ürün üzerinden ağırlıkça en az %95 (altı ham gliserol 15.20); kuru üründe %90’dan az saflıktaki yağ alkolleri 38.23; odun naftası (ham metil alkol) 38.07. Fenol ağırlıkça %90, krezoller ve ksilenoller %95; piridin ağırlıkça %95, metilpiridin gibi türevleri susuz üründe %90 (altı 27.07)."],
+    ["29.15 / 29.16 Açıklama Notları",
+     "Kuru üründe ağırlıkça %90’dan az saflıktaki yağ asitleri ve %85’ten az saflıktaki oleik asit 38.23. Ağırlıkça %10 veya daha az asetik asit içeren yenilebilir sulu çözeltiler 22.09. Suda çözünen sodyum, potasyum, amonyum stearat, palmitat ve oleatlar sabun olsalar da 29.15 / 29.16’da kalır."],
+    ["29.25 Açıklama Notu",
+     "Yalnız sakkarin veya tuzlarından birini içeren tabletler 29.25’te; sakkarinin laktoz gibi bir gıda maddesiyle karışımı 21.06’da; gıda dışı maddelerle (sodyum bikarbonat, tartarik asit) müstahzarları 38.24’te."],
+    ["29.36 – 29.41 Açıklama Notları",
+     "Vitaminler antioksidan, topaklanma önleyici, kaplama (jelatin, mum, yağ) veya adsorpsiyonla stabilize edilebilir; katkı koruma veya taşıma için gerekeni aşmamalı ve ürünü özel kullanıma yöneltmemelidir. Haşhaş samanı konsantresi ağırlıkça en az %50 alkaloid içerir (29.39); bitkisel hülasalar (afyon hülasası) 13.02. Antibiyotik içeriği genellikle %70’i geçmeyen ara ürünler 38.24; yem için antibiyotik müstahzarları 23.09; antibiyotik karışımı ilaçlar 30.03 / 30.04."],
+    ["29.40 Açıklama Notu",
+     "Yalnız kimyaca saf şekerler: her sakkarit biriminde 4–8 karbon atomu, potansiyel indirgen bir karbonil grubu ve hidroksil ile hidrojen taşıyan en az bir asimetrik karbon. Sakkaroz (17.01) ile glikoz, laktoz, maltoz, fruktoz (17.02) saf olsalar bile hariç; galaktoz, sorboz, ksiloz, trehaloz, raffinoz burada."],
+]
+
+sinir_komsulari = [
+    ["Etil alkol (saf olsa bile)", "22.07 / 22.08", "Fasıl 29 Not 2(b); etil esterleri ise asidin pozisyonunda"],
+    ["Metan, propan; ham bütan; hacimce %95’ten az etan veya etilen, %90’dan az propilen", "27.11", "Not 2(c); 29.01 saflık eşikleri"],
+    ["Eşik altı benzen, toluen, ksilen, fenol, krezol, piridin, naftalin", "27.07", "Açıklama Notu saflık kriterleri"],
+    ["Ham gliserol (%95’ten az saflıkta)", "15.20", "Not 2(a); 29.05 Açıklama Notu"],
+    ["Sınai yağ alkolleri ve yağ asitleri (%90’dan az), oleik asit (%85’ten az)", "38.23", "29.05, 29.15, 29.16 hariç tutmaları"],
+    ["Sakkaroz; kimyaca saf glikoz, fruktoz, laktoz, maltoz", "17.01 / 17.02", "29.40 metni; Genel Açıklamalar (D)"],
+    ["Üre (saf olsa bile)", "31.02 / 31.05", "Not 2(f)"],
+    ["Klorofil; sentetik organik boyalar, flüoresan parlatıcılar", "32.03 / 32.04", "Not 2(g)"],
+    ["Enzimler", "35.07", "Not 2(h)"],
+    ["Tablet halinde yakıt metaldehit veya hekzametilentetramin; 300 cm³ veya daha az kapta çakmak gazı", "36.06", "Not 2(ij)"],
+    ["Dozlandırılmış vitamin veya antibiyotik; antibiyotik karışımı ilaç", "30.03 / 30.04", "Bölüm VI Not 2; 29.41 hariç tutması"],
+    ["Aşı ve serumlar (bağışıklık ürünleri); heparin", "30.02 / 30.01", "Not 2(e); 29.37 hariç tutması"],
+    ["Organo-civa bileşikleri", "28.52", "Bölüm VI Not 1; 29.31 hariç tutması"],
+    ["Kimyaca belirli olmayan silikonlar; polimerik MDI", "39.10 / 39.09", "29.31 ve 29.29 hariç tutmaları"],
+    ["Suda çözünen sodyum stearat (sabun niteliğinde)", "29.15", "Sabun olsa da Fasıl 34’e gitmez (tersi yönde tuzak)"],
+]
+
+tuzaklar = [
+    "<b>“Kimyaca saf” her zaman Fasıl 29 demek değildir.</b> Sakkaroz 17.01’de; glikoz, fruktoz, laktoz ve maltoz 17.02’de; etil alkol 22.07 / 22.08’de; metan ve propan 27.11’de; üre 31.02 / 31.05’te kalır.",
+    "<b>Safsızlık serbest, kasıtlı katkı değil.</b> İmalattan gelen yan ürün veya reaktif kalıntısı faslı değiştirmez; ürünü özel kullanıma uygun kılmak için bilerek bırakılan madde değiştirir (çözücü olarak hazırlanmış metanollü metil asetat 38.14).",
+    "<b>Saflık eşiği faslı değiştirir.</b> Benzen, toluen, ksilen ağırlıkça %95, fenol %90, piridin %95; altı 27.07. Etan ve etilen hacimce %95, propilen hacimce %90; altı 27.11. Gliserol %95; altı 15.20.",
+    "<b>Hacim mi, ağırlık mı?</b> Etan, etilen ve propilen eşikleri hacimce; benzen, toluen, ksilen, fenol, krezol ve piridin eşikleri ağırlıkça verilir; naftalinde ölçüt 79,4 °C kristalleşme noktasıdır.",
+    "<b>Not 3, GYK 3(c) değildir.</b> İki pozisyona giren bileşik fasıl notu gereği (GYK 1) son pozisyona gider: lakton olan askorbik asit 29.36, amin ve asit fonksiyonlu lizin 29.22. Buna karşılık 29.40 metni 29.37–29.39 ürünlerini açıkça dışlar.",
+    "<b>Benzer isim, farklı pozisyon.</b> Kâfuru (keton) 29.14 – borneol (alkol) 29.06; kloral 29.13 – kloral hidrat 29.05; askorbik asit 29.36 – izoaskorbik asit 29.32; nikotinik asit 29.36 – izonikotinik asit 29.33.",
+    "<b>Her “vitamin” 29.36’da değildir.</b> İnositol 29.06, p-aminobenzoik asit 29.22, kolin 29.23, adenin 29.33, rutin ve hesperidin 29.38, “vitamin F” (linoleik asit) 38.23, provitamin A karotenler 32.03 / 32.04.",
+    "<b>Hormon etkisi tek başına 29.37 getirmez.</b> Dietilstilbestrol 29.07, tamoksifen ve klomifen 29.22, flutamid 29.24; metiyonin ve sistein 29.30; heparin 30.01; bitki büyüme düzenleyicileri kimyasal yapısına göre (müstahzar ise 38.08).",
+    "<b>Sabun olsa da 29.15.</b> Suda çözünen sodyum, potasyum, amonyum stearat ve palmitatlar 29.15’te, oleatlar 29.16’da kalır; ham stearik asidin tuzları ise genellikle 34.01, 34.04 veya 38.24’tedir.",
+    "<b>Üç üyeli epoksi 29.10, dört üyeli 29.32.</b> Keton peroksit (29.09), aldehit siklik polimeri (29.12) ve polibazik asit anhidridi (ftalik anhidrit 29.17) halkalı olsa da heterosiklik sayılmaz (Not 7).",
+]
+
+hafiza = {
+    "kanca": "HİDRO → ALKOL → FENOL → ETER → ALDEHİT → KETON → ASİT → ESTER → AZOT → HALKA → VİTAMİN → ALKALOİT → ANTİBİYOTİK; şüphede SONA git",
+    "aciklama": "Tali fasıllar bu sırayı izler: <b>I</b> hidrokarbonlar 29.01–29.04 · <b>II</b> alkoller 29.05–29.06 · <b>III</b> fenoller 29.07–29.08 · <b>IV</b> eter, peroksit, epoksit, asetal 29.09–29.11 · <b>V</b> aldehitler 29.12–29.13 · <b>VI</b> ketonlar 29.14 · <b>VII</b> karboksilik asitler 29.15–29.18 · <b>VIII</b> inorganik asit esterleri 29.19–29.20 · <b>IX</b> azotlular 29.21–29.29 · <b>X</b> organo-inorganik, heterosiklik, sülfonamid 29.30–29.35 · <b>XI</b> vitamin, hormon 29.36–29.37 · <b>XII</b> glikozit, alkaloid 29.38–29.39 · <b>XIII</b> şeker, antibiyotik, diğer 29.40–29.42. Görsel benzetme: bir merdiven düşünün; bileşik hangi basamakların tanımına uyuyorsa (ör. hem eter hem aldehit olan vanilin) Not 3 gereği en üst basamakta, yani 29.12’de durur.",
+}
+
+sinav_odagi = [
+    "Bu fasıl çıkmış sorularda daha çok seçeneklerde/çeldirici olarak yer almıştır; bir Fasıl 29 pozisyonunu doğrudan soran soru yok denecek kadar azdır.",
+    "Sınai yağ alkollerinin yeri sorulmuş; doğru cevap 38.23 iken bir Fasıl 29 pozisyonu ve Fasıl 15 pozisyonları çeldirici olarak verilmiştir. Arka plandaki kural: %90’dan az saflıktaki yağ alkolleri Fasıl 29 dışındadır.",
+    "Ham gliserinin yeri sorulmuş; Fasıl 29 Not 2(a) gereği ham gliserol 15.20’dedir, saf gliserol (%95 ve üstü) ise 29.05’tedir.",
+    "“Hangisi 30. fasılda sınıflandırılır?” kalıbında B12 vitamini çeldirici olarak kullanılmış; dozlandırılmamış vitamin 29.36’da kalır, ilaç sayılmaz.",
+    "Fasıl 29 eşyası; ilaç (Fasıl 30), kozmetik (Fasıl 33), sabun (Fasıl 34), yağ ve gliserin (Fasıl 15) ile kimyasal müstahzarlar (Fasıl 38) arasındaki sınırı ölçen seçenek setlerinde karşımıza çıkmaktadır.",
+]
+
+cikmis_ornekler = [
+    {
+        "soru": "Tarife Cetveline göre sınai yağ alkolleri aşağıdaki tarife pozisyonlarından hangisinde yer alır?",
+        "secenekler": ["15.18", "15.20", "29.34", "38.23", "38.24"],
+        "cevap": "D",
+        "aciklama": "29.05 Açıklama Notu’na göre kuru ürün üzerinden %90’dan az saflıktaki yağ alkolleri Fasıl 29 dışındadır; 38.23 metni “sınai yağ alkolleri”ni ismen sayar. 15.20 ham gliserin, 29.34 diğer heterosiklik bileşikler pozisyonudur.",
+    },
+    {
+        "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 30. Faslında sınıflandırılır?",
+        "secenekler": [
+            "İlk yardım kutusu",
+            "Tıbbi madde içeren el sabunu",
+            "Vitamin B12",
+            "Akne azaltan yüz bakım müstahzarı",
+            "Sigarayı bırakmaya yardımcı müstahzar emdirilmiş bant",
+        ],
+        "cevap": "A",
+        "aciklama": "İlk yardım kutuları Fasıl 30 Not 4 gereği 30.06’dadır. Dozlandırılmamış B12 vitamini 29.36’da, ilaçlı sabun 34.01’de, sivilceye karşı cilt bakım müstahzarı 33.04’te, nikotinli sigara bırakma bandı 24.04’te yer alır.",
+    },
+]
+
+ozet = [
+    "Fasıl 29 = kimyaca belirli, izole tek organik bileşik (+ izomer karışımı, çözelti, stabilizör katkısı); kasıtlı karışımlar fasıl dışına çıkar.",
+    "Kimyaca belirli olmasa da burada: 29.36–29.41 (vitamin, hormon, glikozit, alkaloid, şeker eter/esterleri, antibiyotik) ile keton peroksit, paraformaldehit, laktofosfat, lesitin, nükleik asit.",
+    "Saf olsa da dışarıda: etanol (22.07 / 22.08), metan-propan (27.11), üre (31.02 / 31.05), sakkaroz ve adi şekerler (17.01 / 17.02), enzim (35.07), boyayıcılar (32.03 / 32.04).",
+    "Saflık eşiğinin altı 27.07, 27.11, 15.20 veya 38.23’e gider; hacimce ve ağırlıkça eşikleri karıştırmayın.",
+    "Not 3: iki pozisyona uyan bileşik numara sırasına göre son pozisyona gider; tali fasıl sırası hidrokarbon → alkol → fenol → eter → aldehit → keton → asit → ester → azot → halka → vitamin/hormon → glikozit/alkaloid → şeker/antibiyotik.",
+    "Radyoaktif hal (28.44) ile dozlandırılmış veya perakende hal (30.04, 33.03–33.07, 38.08 vb.) her zaman Fasıl 29’dan önce gelir.",
+]
+
+E4 = "Eşya → 4’lü pozisyon"
+OT = "Olumsuz teşhis"
+FA = "Farklı/aynı pozisyon veya fasıl"
+FN = "Fasıl notu · Tanım/Eşik"
+GY = "Genel Yorum Kuralı"
+ES = "Eşleştirme / Boşluk doldurma"
+CC = "Çoktan-çoğa (I–IV)"
+SE = "Senaryo"
+
+sorular = [
+    {  # 1 C
+        "soru": "Tarife Cetveline göre, terebentin esansından elde edilen pinenden üretilmiş sentetik kâfuru (kamfor) hangi tarife pozisyonunda sınıflandırılır?",
+        "secenekler": ["29.06", "29.02", "29.14", "33.01", "38.05"],
+        "cevap": "C", "tip": E4,
+        "gerekce": "Kâfuru bir ketondur; 29.14 Açıklama Notu tabii ve sentetik kâfurunun her ikisini de bu pozisyonda sayar. “Borneo kâfuru” denen borneol ise alkol olduğundan 29.06’dadır (A tuzağı). 29.02 sikloterpen hidrokarbonları (pinen gibi), 33.01 uçucu yağları, 38.05 terebentin ve terpenik yağları kapsar; kâfuru kimyaca belirli tek bileşik olarak Fasıl 29’da kalır.",
+        "dayanak": "29.14 Açıklama Notu (A)(II)(1); 29.06 Açıklama Notu.",
+    },
+    {  # 2 A
+        "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 29. faslında <b>sınıflandırılmaz</b>?",
+        "secenekler": ["Kimyaca saf fruktoz", "Kimyaca saf galaktoz", "Metanol", "Kimyaca saf ksiloz", "Sakkaroz okta-asetat"],
+        "cevap": "A", "tip": OT,
+        "gerekce": "29.40 yalnız kimyaca saf şekerleri kapsar ve sakkaroz, laktoz, maltoz, glikoz ile fruktozu açıkça hariç tutar; kimyaca saf fruktoz 17.02’dedir. Galaktoz ve ksiloz kimyaca saf şeker olarak, sakkaroz okta-asetat şeker esteri olarak 29.40’ta; metanol asiklik alkol olarak 29.05’tedir. Tuzak, “kimyaca saf” ifadesini Fasıl 29 için yeterli sanmaktır.",
+        "dayanak": "29.40 pozisyon metni ve Açıklama Notu; Fasıl 29 Genel Açıklamalar (D)(1)(a).",
+    },
+    {  # 3 E
+        "soru": "Tarife Cetvelinin 29. Fasıl Açıklama Notlarına göre benzenin 29.02 pozisyonunda sınıflandırılabilmesi için sahip olması gereken asgari saflık derecesi aşağıdakilerden hangisidir?",
+        "secenekler": ["Hacimce %90", "Ağırlıkça %90", "Hacimce %95", "Ağırlıkça %85", "Ağırlıkça %95"],
+        "cevap": "E", "tip": FN,
+        "gerekce": "29.02 Açıklama Notu’na göre benzen ağırlıkça %95 veya daha saf olmalıdır; daha düşük saflıktaki benzen 27.07’de sınıflandırılır. Hacimce %95 etan ve etilen, hacimce %90 propilen, ağırlıkça %90 fenol ve antrasen, %85 ise oleik asit için öngörülen eşiklerdir; seçenekler bu eşiklerin karıştırılmasını hedefler.",
+        "dayanak": "29.02 Açıklama Notu (C)(I)(a); 29.01, 29.07 ve 29.16 Açıklama Notları.",
+    },
+    {  # 4 B
+        "soru": "Tarife Cetveline göre, kimyaca belirli bir yapıda ve izole halde bulunan vanilin (4-hidroksi-3-metoksibenzaldehit) hangi tarife pozisyonunda sınıflandırılır?",
+        "secenekler": ["29.09", "29.12", "29.14", "29.18", "33.02"],
+        "cevap": "B", "tip": E4,
+        "gerekce": "Vanilin, aldehit grubunun yanında fenol ve eter fonksiyonu da taşıyan bir aldehittir ve 29.12 Açıklama Notu’nda aldehit-fenoller arasında ismen sayılır. Eter-fenol olarak 29.09’a da uyar görünse de Not 3 gereği numara sırasına göre sonraki 29.12 uygulanır. 29.14 ketonları, 29.18 ek oksijen fonksiyonlu karboksilik asitleri kapsar; 33.02 koku veren maddelerin karışımları içindir, tek bileşik olan vanilin Fasıl 29’dadır.",
+        "dayanak": "29.12 Açıklama Notu (B)(4); Fasıl 29 Not 3.",
+    },
+    {  # 5 D
+        "soru": "Aşağıdakilerden hangisi Tarife Cetvelinde diğerlerinden farklı bir fasılda sınıflandırılır?",
+        "secenekler": ["Metanol", "Ağırlıkça %98 saflıkta gliserol", "Etilen glikol", "Hacimce %96’lık etil alkol", "Mannitol"],
+        "cevap": "D", "tip": FA,
+        "gerekce": "Etil alkol saf olsa bile Fasıl 29 Not 2 gereği bu fasıl dışındadır ve 22.07 / 22.08’de yer alır. Metanol, etilen glikol ve mannitol asiklik alkol olarak 29.05’tedir; gliserol de kuru ürün üzerinden %95 veya daha saf olduğundan 29.05’te kalır (altında 15.20). Tuzak, “alkol” başlığı altında etanolü de Fasıl 29’a koymaktır.",
+        "dayanak": "Fasıl 29 Not 2(b); 29.05 Açıklama Notu.",
+    },
+    {  # 6 A
+        "soru": "Bir firma, imalat sürecinden kalan çok küçük miktardaki yan ürün dışında başka madde içermeyen sakkarin sodyum tuzunu, yalnızca bu maddeden oluşan ve içine laktoz veya başka bir dolgu maddesi katılmamış tabletler halinde ithal etmektedir. Ürün tatlandırıcı olarak kullanılacaktır. Tarife Cetveline göre bu ürün hangi pozisyonda sınıflandırılır?",
+        "secenekler": ["29.25", "21.06", "38.24", "29.24", "17.04"],
+        "cevap": "A", "tip": SE,
+        "gerekce": "29.25 Açıklama Notu’na göre sakkarin ve tuzları bu pozisyondadır ve yalnız bu ürünlerden birini içeren tabletler de burada kalır; imalattan gelen yan ürün izin verilen bir safsızlıktır. Sakkarinin laktoz gibi bir gıda maddesiyle karışımı 21.06’ya, sodyum bikarbonat ve tartarik asit gibi gıda dışı maddelerle müstahzarı 38.24’e gider. 29.24 amidleri kapsar; sakkarin imid olarak 29.25 metninde ismen yer alır.",
+        "dayanak": "29.25 Açıklama Notu; Fasıl 29 Not 1(a); Genel Açıklamalar (A).",
+    },
+    {  # 7 C
+        "soru": "Tarife Cetveline göre, kimyaca belirli yapıdaki lizin (diamino-n-hekzanoik asit) hangi tarife pozisyonunda sınıflandırılır?",
+        "secenekler": ["29.21", "29.15", "29.22", "29.24", "29.33"],
+        "cevap": "C", "tip": E4,
+        "gerekce": "Lizin hem amin hem karboksilik asit fonksiyonu taşıyan bir amino asittir ve 29.22 “oksijen gruplu amino bileşikleri” pozisyonunda ismen yer alır. Oksijen fonksiyonlu aminler 29.21’den açıkça hariç tutulur; yalnız asit olsaydı 29.15 söz konusu olurdu. Lizinde amid (29.24) veya azotlu heterosiklik halka (29.33) yapısı yoktur.",
+        "dayanak": "29.22 Açıklama Notu; 29.21 Açıklama Notu; Fasıl 29 Not 3 ve Not 4.",
+    },
+    {  # 8 E
+        "soru": "Aşağıdakilerden hangisi 29.36 pozisyonunda <b>sınıflandırılmaz</b>?",
+        "secenekler": ["Kalsiyum D-pantotenat", "Askorbil palmitat", "Siyanokobalamin", "Işınlanmamış ergosterol", "Kolin klorür"],
+        "cevap": "E", "tip": OT,
+        "gerekce": "Kolin ve tuzları, bazen vitamin olarak anılsa da 29.23’te (kuaterner amonyum tuzları) sınıflandırılır; 29.36 Açıklama Notu kolini açıkça hariç tutar. Kalsiyum D-pantotenat B5, siyanokobalamin B12, askorbil palmitat C vitamininin türevi, ışınlanmamış ergosterol ise D2 provitamini olarak 29.36’dadır.",
+        "dayanak": "29.36 Açıklama Notu, hariç tutulanlar; 29.23 Açıklama Notu.",
+    },
+    {  # 9 B
+        "soru": "Tarife Cetvelinin 29. Fasıl 1 numaralı notu ile ilgili aşağıdaki ifadelerden hangisi <b>doğrudur</b>?",
+        "secenekler": [
+            "Stereoizomerleri dahil, asiklik hidrokarbon izomerlerinin karışımları bu fasılda yer almaz.",
+            "Fasılın kapsadığı ürünlerin sudaki çözeltileri de bu fasılda yer alır.",
+            "Diğer çözücülerdeki çözeltiler, çözücü ürünü özel kullanıma elverişli kılsa da bu fasılda kalır.",
+            "Koruma amacıyla stabilizör katılması ürünü bu fasıl dışına çıkarır.",
+            "Azo boya imali için standart dayanıklılığa seyreltilmiş diazonyum tuzları Fasıl 32’de yer alır.",
+        ],
+        "cevap": "B", "tip": FN,
+        "gerekce": "Not 1(d) gereği (a)–(c) bentlerindeki ürünlerin sudaki çözeltileri Fasıl 29’dadır. Asiklik hidrokarbon izomer karışımlarının hariç tutulmasında stereoizomerler istisnadır (A). Diğer çözücülerdeki çözeltiler ancak emniyet veya nakliye için yapılmış ve ürünü özel kullanıma elverişli kılmıyorsa kalır (C); stabilizör katkısı Not 1(f) ile serbesttir (D); diazonyum tuzları Not 1(h) gereği bu fasıldadır (E).",
+        "dayanak": "Fasıl 29 Not 1(b), (d), (e), (f), (h).",
+    },
+    {  # 10 D
+        "soru": "Aşağıdaki ürün çiftlerinden hangisinde iki ürün de Tarife Cetvelinin <b>aynı</b> pozisyonunda sınıflandırılır?",
+        "secenekler": ["Kâfuru – borneol", "Kloral – kloral hidrat", "Askorbik asit – izoaskorbik asit", "Etil asetat – asetik asit", "Benzen – fenol"],
+        "cevap": "D", "tip": FA,
+        "gerekce": "Fasıl 29 Not 5(B) gereği etil alkolün asit fonksiyonlu bileşiklerle esterleri, asitle aynı pozisyonda sınıflandırılır; etil asetat da asetik asit gibi 29.15’tedir. Kâfuru 29.14 – borneol 29.06, kloral 29.13 – kloral hidrat 29.05, askorbik asit 29.36 – izoaskorbik asit 29.32, benzen 29.02 – fenol 29.07’dedir.",
+        "dayanak": "Fasıl 29 Not 5(B); 29.13, 29.14, 29.15 ve 29.32 Açıklama Notları.",
+    },
+    {  # 11 E
+        "soru": "Lakton yapısı nedeniyle 29.32, C vitamini olması nedeniyle 29.36 pozisyonunun tanımına uyan askorbik asidin 29.36 pozisyonunda sınıflandırılması aşağıdakilerden hangisine dayanır?",
+        "secenekler": [
+            "GYK 3(a) – en özel tanımı veren pozisyon",
+            "GYK 3(b) – esas niteliği veren madde",
+            "GYK 3(c) – numara sırasına göre son pozisyon",
+            "GYK 2(b) – karışım ve bileşik eşya",
+            "GYK 1 – Fasıl 29 Not 3 hükmü",
+        ],
+        "cevap": "E", "tip": GY,
+        "gerekce": "GYK 1, sınıflandırmanın pozisyon metinleri ile bölüm ve fasıl notlarına göre yapılacağını söyler; Fasıl 29 Not 3 iki veya daha fazla pozisyona girebilen ürünü numara sırasına göre son pozisyona gönderir. Sonuç GYK 3(c) ile aynı görünse de GYK 3, notlarda aksine hüküm bulunmadığında uygulanır; burada sonucu fasıl notu verir. Genel Açıklamalar askorbik asidi bu kurala örnek gösterir.",
+        "dayanak": "GYK 1; Fasıl 29 Not 3; Fasıl 29 Genel Açıklamalar (E).",
+    },
+    {  # 12 A
+        "soru": "Tarife Cetveline göre, kuru ürün üzerinden ağırlık itibarıyla %90’dan az saflıktaki yağ alkolleri ...... pozisyonunda; kuru ürün üzerinden ağırlık itibarıyla %95’ten az saflıktaki gliserol ise ...... pozisyonunda sınıflandırılır. Boşluklara sırasıyla gelmesi gereken pozisyonlar aşağıdakilerden hangisidir?",
+        "secenekler": ["38.23 – 15.20", "29.05 – 15.20", "38.23 – 29.05", "34.04 – 15.20", "38.24 – 38.23"],
+        "cevap": "A", "tip": ES,
+        "gerekce": "29.05 Açıklama Notu’na göre %90’dan az saflıktaki yağ alkolleri 38.23’e, %95’ten az saflıktaki (ham) gliserol 15.20’ye gider; Fasıl 29 Not 2(a) da ham gliserolü bu fasıldan çıkarır. Eşiği aşan yağ alkolleri ve gliserol 29.05’te kalır (B ve C tuzakları). 34.04 suni mumlar, 38.24 başka yerde yer almayan kimyasal ürünler içindir.",
+        "dayanak": "29.05 Açıklama Notu (A)(7) ve (C)(II)(1); Fasıl 29 Not 2(a).",
+    },
+    {  # 13 B
+        "soru": "Tarife Cetveline göre, çay veya kahveden ekstrakte edilmiş ya da sentez yoluyla elde edilmiş, kimyaca belirli yapıdaki kafein hangi tarife pozisyonunda sınıflandırılır?",
+        "secenekler": ["29.33", "29.39", "29.38", "21.01", "09.01"],
+        "cevap": "B", "tip": E4,
+        "gerekce": "Kafein bir alkaloiddir ve 29.39 Açıklama Notu’nda ismen sayılır; tabii veya sentez yoluyla elde edilmesi fark etmez. Bir alkaloid yapısı itibarıyla daha önceki bir pozisyona (ör. azotlu heterosiklikler 29.33) uyabilse de Not 3 gereği numara sırasına göre son pozisyon olan 29.39 uygulanır. 29.38 glikozitleri, 21.01 kahve ve çay hülasalarını, 09.01 kahveyi kapsar.",
+        "dayanak": "29.39 Açıklama Notu; Fasıl 29 Not 1(c) ve Not 3.",
+    },
+    {  # 14 C
+        "soru": "Tarife Cetveline göre aşağıdakilerden hangileri kimyaca belirli bir yapıda olmasalar dahi 29. fasılda sınıflandırılır? I. Keton peroksitler II. Lesitinler III. Sınai yağ alkolleri IV. Nükleik asitler ve tuzları",
+        "secenekler": ["I ve II", "II ve III", "I, II ve IV", "I, III ve IV", "II, III ve IV"],
+        "cevap": "C", "tip": CC,
+        "gerekce": "Genel Açıklamalar (C) kısmı, kimyaca belirli olma kuralının istisnalarını sayar: keton peroksitler (29.09), lesitinler ve diğer fosfoaminolipidler (29.23), nükleik asitler ve tuzları (29.34) bunlar arasındadır. Sınai yağ alkolleri ise asiklik alkollerin karışımıdır; istisna listesinde yer almaz ve 38.23’tedir.",
+        "dayanak": "Fasıl 29 Genel Açıklamalar (C); 29.09, 29.23, 29.34 pozisyon metinleri; 29.05 Açıklama Notu.",
+    },
+    {  # 15 D
+        "soru": "Aşağıdakilerden hangisi 29.37 pozisyonunda <b>yer almaz</b>?",
+        "secenekler": ["İnsülin", "Hidrokortizon", "Epinefrin (adrenalin)", "Dietilstilbestrol", "Levotiroksin"],
+        "cevap": "D", "tip": OT,
+        "gerekce": "29.37 Açıklama Notu, hormonal etkisi olduğu halde hormon benzeri yapıya sahip olmayan dietilstilbestrolü hariç tutar ve 29.07’ye (fenoller) gönderir. İnsülin polipeptid hormon, hidrokortizon kortikosteroid, epinefrin katekolamin hormonu, levotiroksin amino asit türevi hormon olarak 29.37’dedir. Tuzak, hormonal etkiyi tek başına yeterli saymaktır.",
+        "dayanak": "29.37 Açıklama Notu ve hariç tutulanlar; Fasıl 29 Not 8.",
+    },
+    {  # 16 B
+        "soru": "Aşağıdakilerden hangisi diğerlerinden farklı bir tarife pozisyonunda sınıflandırılır?",
+        "secenekler": ["Anilin", "Monoetanolamin", "Metilamin", "Hekzametilendiamin", "Difenilamin"],
+        "cevap": "B", "tip": FA,
+        "gerekce": "Monoetanolamin, amin grubunun yanında alkol fonksiyonu da taşıyan bir amino-alkoldür ve 29.22’de ismen sayılır; 29.21 Açıklama Notu 29.05–29.20’deki oksijen fonksiyonlu ikame türevleri bu pozisyondan hariç tutar. Anilin, metilamin, hekzametilendiamin ve difenilamin oksijen fonksiyonu taşımayan aminler olarak 29.21’dedir.",
+        "dayanak": "29.21 ve 29.22 Açıklama Notları; Fasıl 29 Not 4.",
+    },
+    {  # 17 E
+        "soru": "Tarife Cetvelinin 29. Fasıl 5 numaralı notu ile ilgili aşağıdaki ifadelerden hangisi <b>yanlıştır</b>?",
+        "secenekler": [
+            "Etanolün metal alkolatları 29.05 pozisyonunda sınıflandırılır.",
+            "Karboksilik asit halojenürleri, tekabül ettikleri asitlerin pozisyonunda yer alır.",
+            "Etil alkolün asit fonksiyonlu bileşiklerle oluşturduğu esterler, ilgili asitle aynı pozisyondadır.",
+            "Organik bazların inorganik asitlerle oluşturduğu tuzlar organik bazın pozisyonundadır.",
+            "Aynı tali fasıldaki asit-alkol esteri, numara sırasına göre ilk bileşenle sınıflandırılır.",
+        ],
+        "cevap": "E", "tip": FN,
+        "gerekce": "Not 5(A)’ya göre I–VII. tali fasıllardaki asit fonksiyonlu bileşiklerin bu tali fasıllardaki bileşiklerle esterleri, bileşenlerden numara sırasına göre <b>son</b> pozisyondakiyle birlikte sınıflandırılır (dietilen glikol asetat 29.15). Etanolün metal alkolatları Not 5(D), asit halojenürleri Not 5(E), etil esterleri Not 5(B), inorganik tuzlar Not 5(C)(1) ile doğru verilmiştir.",
+        "dayanak": "Fasıl 29 Not 5(A)–(E); Genel Açıklamalar (G).",
+    },
+    {  # 18 A
+        "soru": "Tarife Cetveline göre, plastik imalatında kullanılan, parlak beyaz kristaller halindeki melamin (triaminotriazin) hangi tarife pozisyonunda sınıflandırılır?",
+        "secenekler": ["29.33", "29.21", "29.26", "39.09", "31.02"],
+        "cevap": "A", "tip": E4,
+        "gerekce": "Melamin, başka halkaya yapışmamış triazin halkası bulunan, yalnız azot hetero atomlu bir heterosiklik bileşiktir ve 29.33 Açıklama Notu’nda ismen sayılır. Amino grupları taşısa da Not 3 gereği sonraki 29.33 uygulanır (29.21 tuzağı). Disiyandiamid gibi nitriller 29.26’da, amino reçineler 39.09’da, üre 31.02’dedir; kimyaca belirli bileşik olarak melamin Fasıl 29’da kalır.",
+        "dayanak": "29.33 Açıklama Notu; Fasıl 29 Not 3.",
+    },
+    {  # 19 C
+        "soru": "Tarife Cetveline göre, bir kısmı 29. fasılda yer alan kimyasallardan oluşan, önceden karıştırılmaksızın birbiri ardına kullanılmak üzere tasarlanmış ve perakende satışa hazırlanmış takım halindeki eşya genel olarak hangi kurala göre sınıflandırılır?",
+        "secenekler": ["Bölüm VI Not 3", "GYK 2(a)", "GYK 3(b)", "GYK 3(c)", "GYK 5(b)"],
+        "cevap": "C", "tip": GY,
+        "gerekce": "Bölüm VI Not 3 yalnız birbirleriyle karıştırılarak VI. veya VII. Bölümde yer alan bir ürünü elde etmeye mahsus takımlara uygulanır. Önceden karıştırılmadan birbiri ardına kullanılan takımlara bu not uygulanmaz; perakende satışa sunulanlar genellikle GYK 3(b) ile, perakende olmayanlar ise ayrı ayrı sınıflandırılır. GYK 2(a) eksik veya tamamlanmamış eşya, GYK 5(b) ambalaj malzemesi içindir.",
+        "dayanak": "Bölüm VI Not 3 ve Bölüm VI Genel Açıklamalar; GYK 3(b).",
+    },
+    {  # 20 D
+        "soru": "Aşağıdaki eşya – pozisyon eşleştirmelerinden hangisi <b>yanlıştır</b>?",
+        "secenekler": ["Kurşun tetraetil – 29.31", "Tiyoüre – 29.30", "Akrilonitril – 29.26", "Sakkarin – 29.24", "Fenilhidrazin – 29.28"],
+        "cevap": "D", "tip": ES,
+        "gerekce": "Sakkarin bir imiddir ve 29.25 metninde (“sakkarin ve tuzları dahil”) ismen yer alır; 29.24 karboksiamid gruplu bileşikleri kapsar. Kurşun tetraetil karbona doğrudan bağlı kurşun içerdiğinden 29.31’de, tiyoüre kükürtlü organik bileşik olarak 29.30’da, akrilonitril nitril olarak 29.26’da, fenilhidrazin hidrazinin organik türevi olarak 29.28’dedir.",
+        "dayanak": "29.25, 29.26, 29.28, 29.30, 29.31 pozisyon metinleri ve Açıklama Notları; Fasıl 29 Not 6.",
+    },
+    {  # 21 A
+        "soru": "Aşağıdakilerden hangisi Tarife Cetvelinde diğerlerinden farklı bir fasılda yer alır?",
+        "secenekler": ["Klorofil", "Kafein", "Nikotin", "Sakkarin", "Kumarin"],
+        "cevap": "A", "tip": FA,
+        "gerekce": "Bitkisel veya hayvansal menşeli boyayıcı maddeler kimyaca belirli olsalar bile Fasıl 29 Not 2(g) gereği bu fasıl dışındadır; Genel Açıklamalar klorofili 32.03 örneği olarak verir. Kafein ve nikotin alkaloid olarak 29.39’da, sakkarin 29.25’te, kumarin lakton olarak 29.32’dedir.",
+        "dayanak": "Fasıl 29 Not 2(g); Genel Açıklamalar (D)(1)(f); 29.25, 29.32, 29.39 Açıklama Notları.",
+    },
+    {  # 22 E
+        "soru": "Aşağıdakilerden hangisi 29.15 pozisyonunda <b>sınıflandırılmaz</b>?",
+        "secenekler": [
+            "Etil asetat",
+            "Suda çözünen ve sabun niteliği taşıyan sodyum stearat",
+            "Asetik anhidrit",
+            "Asetil klorür",
+            "Ağırlıkça %6 asetik asitli yenilebilir sulu çözelti",
+        ],
+        "cevap": "E", "tip": OT,
+        "gerekce": "29.15 Açıklama Notu, ağırlık itibarıyla %10 veya daha az asetik asit içeren yenilmeye elverişli sulu çözeltileri hariç tutar; bunlar 22.09’dadır. Etil asetat (Not 5(B)), asetik anhidrit ve asetil klorür (Not 5(E)) 29.15’te; suda çözünen sodyum stearat da sabun olmasına rağmen 29.15’tedir.",
+        "dayanak": "29.15 Açıklama Notu ve hariç tutulanlar (a); Fasıl 29 Not 5(B) ve 5(E).",
+    },
+    {  # 23 C
+        "soru": "Tarife Cetvelinin 29. Fasıl 6 numaralı notuna göre, 29.30 ve 29.31 pozisyonlarındaki organo-inorganik bileşikleri diğer organik bileşiklerden ayıran özellik aşağıdakilerden hangisidir?",
+        "secenekler": [
+            "Molekülde, bağ şekli ne olursa olsun, en az bir metal iyonu bulunması",
+            "Bir metalin organik bir asitle tuz oluşturmuş olması",
+            "H, O ve N dışında karbona doğrudan bağlı metal veya ametal içermesi",
+            "Halka yapısında karbondan başka bir hetero atom bulunması",
+            "Karbona doğrudan bağlı halojen veya sülfo grubu taşıması",
+        ],
+        "cevap": "C", "tip": FN,
+        "gerekce": "Not 6’ya göre 29.30 ve 29.31’deki bileşikler, hidrojen, oksijen veya azottan başka karbona doğrudan bağlı kükürt, arsenik, kurşun gibi metal veya ametal atomları içerir. Kükürdü veya halojeni karbona doğrudan bağlı olduğu için yalnız sülfolanmış veya halojenlenmiş türev niteliğindekiler bu pozisyonlara girmez (E tuzağı). Organik bileşiklerin inorganik tuzları organik bileşiğin pozisyonundadır (B); halkada hetero atom 29.32–29.34’ün ölçütüdür (D).",
+        "dayanak": "Fasıl 29 Not 6; Not 5(C)(1); Tali Fasıl X Genel Açıklamalar.",
+    },
+    {  # 24 B
+        "soru": "Tarife Cetveline göre aşağıdaki ifadelerden hangileri doğrudur? I. Ağırlıkça %95’ten az saflıktaki toluen 27.07 pozisyonunda yer alır. II. Hacimce %90 saflıktaki etilen 29.01 pozisyonunda yer alır. III. Ham p-simen 38.05 pozisyonunda yer alır. IV. Kristalleşme noktası 79,4 °C’nin altında olan naftalin 27.07 pozisyonunda yer alır.",
+        "secenekler": ["I ve II", "I, III ve IV", "II ve IV", "I, II ve III", "II, III ve IV"],
+        "cevap": "B", "tip": CC,
+        "gerekce": "Toluen için ağırlıkça %95 eşiği vardır, altı 27.07’dedir (I doğru). Etilenin 29.01’e girmesi için hacimce en az %95 saflık gerekir; %90’lık etilen 27.11’e gider (II yanlış; %90 propilenin eşiğidir). Ham p-simen 38.05’te (III doğru), 79,4 °C’nin altında kristalleşen naftalin 27.07’dedir (IV doğru).",
+        "dayanak": "29.01 Açıklama Notu (B)(1)(a); 29.02 Açıklama Notu (C).",
+    },
+    {  # 25 D
+        "soru": "Bir ilaç hammaddesi üreticisi, küf kültürünün fermantasyon sıvısını süzüp ilk basamak ekstraksiyonundan geçirerek elde ettiği, antibiyotik içeriği yaklaşık %60 olan, saflaştırılmamış bir ara ürünü dökme halde ithal etmektedir. Ürün dozlandırılmamış, perakende ambalajlanmamış ve hayvan yemine katılmak üzere hazırlanmamıştır. Tarife Cetveline göre bu ürün hangi pozisyonda sınıflandırılır?",
+        "secenekler": ["29.41", "30.03", "23.09", "38.24", "30.04"],
+        "cevap": "D", "tip": SE,
+        "gerekce": "29.41 Açıklama Notu, antibiyotik imalatında süzme veya ilk basamak ekstraksiyonu ile elde edilen ve antibiyotik içeriği genellikle %70’i geçmeyen ara ürünleri hariç tutar ve 38.24’e gönderir. Antibiyotikler kimyaca belirli olmasalar da 29.41’dedir; ancak bu ara ürün o pozisyona girmez. Yem için antibiyotik müstahzarları 23.09’a, tedavi amaçlı karışımlar veya dozlandırılmış ilaçlar 30.03 / 30.04’e gider.",
+        "dayanak": "29.41 Açıklama Notu, hariç tutulanlar; Fasıl 29 Not 1(c).",
+    },
+]
+
+obj = {
+    "tur": "fasil",
+    "fasil": 29,
+    "baslik": "Organik kimyasallar",
+    "bolum": "VI",
+    "oz": oz,
+    "karar_tablosu": karar_tablosu,
+    "pozisyon_haritasi": pozisyon_haritasi,
+    "notlar": notlar,
+    "sinir_komsulari": sinir_komsulari,
+    "tuzaklar": tuzaklar,
+    "hafiza": hafiza,
+    "sinav_odagi": sinav_odagi,
+    "cikmis_ornekler": cikmis_ornekler,
+    "ozet": ozet,
+    "sorular": sorular,
+}
+
+if __name__ == "__main__":
+    with open(OUT, "w", encoding="utf-8") as f:
+        json.dump(obj, f, ensure_ascii=False, indent=1)
+    print("yazıldı:", OUT)

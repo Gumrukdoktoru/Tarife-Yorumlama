@@ -1,0 +1,786 @@
+{
+ "tur": "fasil",
+ "fasil": 25,
+ "baslik": "Tuz; kükürt, topraklar ve taşlar; alçılar, kireçler ve çimento",
+ "bolum": "V",
+ "oz": {
+  "vurgu": "Fasıl 25 iki soru sorar: Eşya tabii bir mineral madde mi, ve yalnızca Not 1’de sayılan basit işlemleri (yıkama, ezme, öğütme, eleme, flotasyon, manyetik ayırma vb.) mi görmüş? Kavurma, kalsinasyon, karıştırma, kristalizasyon veya şekil verme kural olarak eşyayı Fasıl 28, 31 veya 68’e taşır; ancak pozisyon metni bir işleme açıkça izin veriyorsa (kalsine kaolin, sinterlenmiş manyezi, alçı, kireç, çimento) eşya burada kalır.",
+  "maddeler": [
+   "Taşlarda sınır: ham, kabaca yontulmuş veya testereyle dikdörtgen blok ya da kalın dilim halinde kesilmiş taş Fasıl 25’te; cilalanmış, şevlenmiş, oyulmuş taş ve kaldırım, döşeme, mozaik, çatı taşları Fasıl 68’de.",
+   "Çakıl, kırma taş, makadam ile 25.15 ve 25.16 taşlarının granül, kırıntı ve tozları 25.17’dedir; 25.17’ye ve başka bir pozisyona girebilen ürün 25.17’de sınıflandırılır (Not 3).",
+   "Saflaştırılmış veya kimyasal olarak üretilmiş muadiller Fasıl 28’e gider (süblime kükürt 28.02, saf kalsiyum oksit 28.25, rafine boraks 28.40); saf sodyum klorür ise istisna olarak 25.01’de kalır.",
+   "25.30 artık pozisyondur: genleştirilmemiş vermikülit ve perlit, toprak boyaları, lüle taşı, kehribar, bahçe toprağı, çömlek, tuğla ve beton kırıkları."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+  "satirlar": [
+   [
+    "1",
+    "Kıymetli veya yarı kıymetli taş kalitesinde mi? (ametist, kaya kristali, akik vb.)",
+    "Fasıl <b>71</b>"
+   ],
+   [
+    "2",
+    "Saflaştırılmış veya sentetik muadil mi? (süblime kükürt, saf CaO, rafine boraks, suni korindon, suni grafit)",
+    "Fasıl <b>28</b> · suni grafit <b>38.01</b>"
+   ],
+   [
+    "3",
+    "Not 1 dışı bir işlem (kavurma, kalsinasyon, karıştırma, kristalizasyon) görmüş ve pozisyon metni buna izin vermiyor mu?*",
+    "Fasıl 25 dışı (genellikle <b>28</b>, <b>31</b>, <b>68</b>)"
+   ],
+   [
+    "4",
+    "Taş daha ileri işlenmiş mi? (cila, şev, oyma; kaldırım, döşeme, mozaik, çatı kaplaması)",
+    "<b>68.01</b> / <b>68.02</b> / <b>68.03</b>"
+   ],
+   [
+    "5",
+    "Çakıl, kırma taş, makadam ya da 25.15–25.16 taşlarının granül, kırıntı veya tozu mu?",
+    "<b>25.17</b> (Not 3: öncelikli)"
+   ],
+   [
+    "6",
+    "Ham, kabaca yontulmuş veya testereyle dikdörtgen kesilmiş taş mı?",
+    "Kayagan <b>25.14</b> · mermer ve yoğunluğu ≥2,5 kireçli taş <b>25.15</b> · granit, bazalt, gre <b>25.16</b> · dolomit <b>25.18</b>"
+   ],
+   [
+    "7",
+    "Bağlayıcı mı?",
+    "Alçı <b>25.20</b> · kireç <b>25.22</b> · çimento ve klinker <b>25.23</b>"
+   ],
+   [
+    "8",
+    "Adıyla sayılmış bir mineral mi? (tuz, kükürt, kum, kil, tebeşir, amyant, mika, talk, borat vb.)",
+    "İlgili pozisyon (<b>25.01</b>–<b>25.29</b>)"
+   ],
+   [
+    "9",
+    "Hiçbiri değilse",
+    "<b>25.30</b> (Not 4 listesi)"
+   ]
+  ],
+  "dipnot": "* Pozisyon metninin izin verdiği ısıl işlemler: kaolin ve diğer killer (kalsine), witherit (kalsine), silisli fosil unları (kalsine), tabii aşındırıcılar ve 25.17 ürünleri (termik işlem), dolomit (kalsine, sinterlenmiş), manyezi (eritilmiş, sinterlenmiş), boratlar (kalsine), alçı, kireç, çimento."
+ },
+ "pozisyon_haritasi": [
+  [
+   "25.01",
+   "Tuz, saf sodyum klorür; deniz suyu",
+   "Sofra ve denatüre tuz; saf NaCl istisna olarak burada",
+   "Kaya tuzu, deniz tuzu, deniz suyu, iyotlu tuz"
+  ],
+  [
+   "25.02",
+   "Kavrulmamış demir piritleri",
+   "Kavrulmuş olan 26.01",
+   "Bakırlı demir piriti"
+  ],
+  [
+   "25.03",
+   "Her nevi kükürt",
+   "Süblime, çökeltilmiş, kolloidal hariç (28.02)",
+   "Ham kükürt, Frasch kükürdü, rafine kükürt"
+  ],
+  [
+   "25.04",
+   "Tabii grafit",
+   "Suni ve kolloidal grafit 38.01",
+   "Toz veya flokon tabii grafit"
+  ],
+  [
+   "25.05",
+   "Tabii kumlar",
+   "Metal içeren kumlar Fasıl 26; suni kum 25.17",
+   "Silisli kum, kuvarslı kum, feldispatlı kum"
+  ],
+  [
+   "25.06",
+   "Kuvars; kuvarsit",
+   "Kıymetli taş kalitesi olmayan; kum hariç",
+   "Ham kuvars, kuvarsit blok"
+  ],
+  [
+   "25.07",
+   "Kaolin ve kaolinli killer",
+   "Kalsine edilmiş olabilir",
+   "Çin kili, kalsine kaolin"
+  ],
+  [
+   "25.08",
+   "Diğer killer; andaluzit, siyanit, silimanit; mülit; şamot, dinas",
+   "Genleştirilmiş kil 68.06; aktif kil 38.02",
+   "Bentonit, ateş kili, şamot toprağı"
+  ],
+  [
+   "25.09",
+   "Tebeşir",
+   "Tabii kalsiyum karbonat; yazı tebeşiri 96.09",
+   "Ham tebeşir"
+  ],
+  [
+   "25.10",
+   "Tabii kalsiyum fosfatlar; fosfatlı tebeşir",
+   "Öğütülmüş olabilir; kalsine olan 31.03 / 31.05",
+   "Apatit, fosfat kayası"
+  ],
+  [
+   "25.11",
+   "Tabii baryum sülfat ve karbonat",
+   "Witherit kalsine olabilir; rafine olanlar 28.33 / 28.36",
+   "Barit, witherit"
+  ],
+  [
+   "25.12",
+   "Silisli fosil unları ve topraklar",
+   "Belirgin yoğunluk ≤1; kalsine olabilir; aktif olan 38.02",
+   "Kiselgur, diatomit, tripolit"
+  ],
+  [
+   "25.13",
+   "Sünger taşı, zımpara taşı, tabii aşındırıcılar",
+   "Termik işlem görmüş olabilir; suni olanlar Fasıl 28",
+   "Sünger taşı, tabii korindon, Süleyman taşı"
+  ],
+  [
+   "25.14",
+   "Kayagan taşı (arduvaz)",
+   "Ham, yontulmuş, dikdörtgen kesilmiş; çatı kaplaması 68.03",
+   "Arduvaz blok, arduvaz tozu"
+  ],
+  [
+   "25.15",
+   "Mermer, traverten, ekosin, kireçli taşlar",
+   "Kireçli taşta belirgin yoğunluk ≥2,5; ileri işçilik 68.02",
+   "Mermer blok, traverten, su mermeri"
+  ],
+  [
+   "25.16",
+   "Granit, porfir, bazalt, gre ve diğer inşaat taşları",
+   "Yoğunluğu 2,5’ten az kireçli taşlar ve serpantin dahil",
+   "Granit blok, bazalt, kum taşı (gre)"
+  ],
+  [
+   "25.17",
+   "Çakıl, kırma taş, makadam; taş granül ve tozları",
+   "Isıl işlem görmüş olabilir; Not 3 önceliği",
+   "Balast, mıcır, katranlı makadam, mermer tozu"
+  ],
+  [
+   "25.18",
+   "Dolomit",
+   "Kalsine veya sinterlenmiş olabilir; agrega 25.17",
+   "Ham dolomit, sinter dolomit"
+  ],
+  [
+   "25.19",
+   "Magnezit; manyezi; diğer magnezyum oksit",
+   "Eritilmiş, sinterlenmiş, kostik yanmış olabilir",
+   "Magnezit, sinter manyezi"
+  ],
+  [
+   "25.20",
+   "Alçı taşı, anhidrit, alçılar",
+   "Boyalı veya az miktarda hızlandırıcı-yavaşlatıcı katkılı olabilir",
+   "İnşaat alçısı, dişçilik alçısı, Keene çimentosu"
+  ],
+  [
+   "25.21",
+   "Kastin; kireç ve çimento imaline mahsus kireç taşı",
+   "Yontulmaya elverişli olanlar 25.15 / 25.16",
+   "Kastin (flux), kireç taşı"
+  ],
+  [
+   "25.22",
+   "Sönmemiş, sönmüş ve hidrolik kireç",
+   "Saflaştırılmış CaO ve Ca(OH)2 28.25",
+   "Söndürülmemiş kireç, kireç hamuru"
+  ],
+  [
+   "25.23",
+   "Su altında sertleşen çimentolar ve klinker",
+   "Boyalı olabilir; ateşe dayanıklı çimento 38.16",
+   "Portland çimentosu, klinker, cüruf çimentosu"
+  ],
+  [
+   "25.24",
+   "Amyant (asbest)",
+   "Ham, dövülmüş, temizlenmiş lif; işlenmiş lif ve eşya 68.12",
+   "Ham amyant, krosidolit"
+  ],
+  [
+   "25.25",
+   "Mika; mika döküntüleri",
+   "Yarılmış tabaka dahil; mikanit 68.14",
+   "Mika tabakası, mika tozu"
+  ],
+  [
+   "25.26",
+   "Tabii steatit (sabun taşı); talk",
+   "Ezilmiş veya toz halinde olabilir; terzi tebeşiri 96.09",
+   "Talk tozu, Fransız tebeşiri"
+  ],
+  [
+   "25.27",
+   "Kullanılmayan (boş) pozisyon",
+   "Metinde yalnızca [25.27] olarak yer alır",
+   "—"
+  ],
+  [
+   "25.28",
+   "Tabii boratlar; tabii borik asit",
+   "H3BO3 ≤ %85 (kuru ağırlık); rafine boraks 28.40",
+   "Tinkal, kernit, pandermit, borasit"
+  ],
+  [
+   "25.29",
+   "Feldispat; lösit; nefelin; florspat",
+   "Feldispatlı kum 25.05; kıymetli taş formu Fasıl 71",
+   "Feldispat, florspat"
+  ],
+  [
+   "25.30",
+   "Başka yerde belirtilmeyen mineral maddeler",
+   "Artık pozisyon; Not 4 listesi",
+   "Vermikülit, perlit, toprak boyası, lüle taşı, kehribar, bahçe toprağı"
+  ]
+ ],
+ "notlar": [
+  [
+   "Bölüm V",
+   "Bölüm V (Mineral maddeler: Fasıl 25–27) için bölüm notu yoktur; sınıflandırma doğrudan fasıl notları ve pozisyon metinleriyle yapılır."
+  ],
+  [
+   "Fasıl 25 Not 1",
+   "Pozisyon metni veya Not 4 aksini öngörmedikçe fasıl yalnızca şu halleri kapsar: ham; yıkanmış (yapıyı değiştirmeden safsızlık gidermek için kimyasal maddelerle yıkama dahil); ezilmiş, öğütülmüş, toz haline getirilmiş, nemliyken ezilerek toz haline getirilmiş; kalburdan geçirilmiş, elenmiş; flotasyon, manyetik ayırma veya diğer mekanik ya da fiziksel işlemlerle (<b>kristalizasyon hariç</b>) zenginleştirilmiş. <b>Kavrulmuş, kalsine edilmiş, karıştırılarak elde edilmiş</b> veya pozisyonda belirtilenden ileri işlem görmüş ürünler hariçtir. Tozlanmayı önleyici unsur katılabilir; ancak ürünü genel kullanımdan ziyade özel kullanıma uygun hale getirmemelidir."
+  ],
+  [
+   "Fasıl 25 Not 2",
+   "Fasıl dışı: süblime, çökeltilmiş ve kolloidal kükürt (28.02); Fe2O3 olarak kombine demiri ağırlıkça <b>%70 veya daha fazla</b> olan toprak boyalar (28.21); Fasıl 30 ilaçları; Fasıl 33 ürünleri; dolomit ateş tuğlası harcı (38.16); kaldırım ve döşeme taşları (68.01), mozaik küpler (68.02), çatı kaplaması kayagan taşı (68.03); kıymetli taşlar (71.02, 71.03); her biri <b>2,5 g veya daha ağır</b> sodyum klorür veya magnezyum oksit kültür kristalleri (38.24) ve bunların optik elemanları (90.01); bilardo tebeşirleri (95.04); yazı, resim ve terzi tebeşirleri (96.09)."
+  ],
+  [
+   "Fasıl 25 Not 3",
+   "25.17’de ve bu faslın başka bir pozisyonunda sınıflandırılabilen ürün <b>25.17</b>’de sınıflandırılır."
+  ],
+  [
+   "Fasıl 25 Not 4",
+   "25.30 diğerleri yanında şunları kapsar: genleştirilmemiş vermikülit, perlit ve kloritler; toprak boyaları (kalsine edilmiş veya birbirleriyle karıştırılmış olsun olmasın); mikalı tabii demir oksitleri; tabii lüle taşı (cilalı parçalar dahil); tabii kehribar; aglomere lüle taşı ve kehribar (kalıptan sonra işlenmemiş levha, çubuk vb.); siyah kehribar; stronsiyanit (stronsiyum oksit hariç); kiremit, beton ve çanak çömlek kırıkları."
+  ],
+  [
+   "Genel Açıklamalar",
+   "Ürünler nem veya safsızlık gidermek için ısıtılabilir, yeter ki ısıl işlem kimyasal veya kristal yapıyı değiştirmesin; kavurma, eritme, kalsinasyon pozisyon metni izin vermedikçe yasaktır (25.13 ve 25.17 yapıyı değiştiren ısıl işleme izin verir). Niteliği gereği Not 1 dışı işlem görenler yine buradadır: saf sodyum klorür, rafine kükürt, şamot, alçılar, sönmemiş kireç, çimento. Kabaca yontma veya testereyle dikdörtgen kesme 25.06, 25.14, 25.15, 25.16, 25.18 ve 25.26’da serbesttir. Mükerrer kristalizasyonla saflaştırılmış, karıştırılmış veya şekil verilmiş mineraller genellikle Fasıl 28 veya 68’dedir."
+  ],
+  [
+   "25.01 Açıklama Notu",
+   "Kaya tuzu, çözelti madenciliği tuzu, deniz tuzu, rafine tuz, deniz suyu ve tuzlu çözeltiler; iyot veya fosfatla hafifçe muamele görmüş, kalıplaşmayı önleyici madde katılmış veya denatüre edilmiş tuz; elektroliz vb. işlemlerden kalan sodyum klorür artıkları dahildir. Hariç: kerevizli tuz gibi çeşniler (21.03), ampul veya ilaç şeklindeki NaCl (Fasıl 30), hijyenik kullanım için paketlenmiş NaCl çözeltileri (33.07)."
+  ],
+  [
+   "25.12 / 25.15 Açıklama Notları",
+   "Belirgin yoğunluk = sıkıştırılmamış halde 1000 cm³’e isabet eden kg cinsinden ağırlık. Silisli fosil unlarında <b>1 veya daha az</b> (25.12); yontulmaya veya inşaata elverişli kireçli taşlarda <b>2,5 veya daha fazla</b> ise 25.15, 2,5’ten az ise 25.16."
+  ],
+  [
+   "25.17 Açıklama Notu",
+   "Yol, demiryolu, balast ve betonajda kullanılan kırılmış taş, çakıl, çakıllı kum; inşaat ve yıkım artıklarından ayrılan kırma taş; makadam ve katranlı makadam; 25.15 ve 25.16 taşlarının tane, kırıntı ve tozları (ısıl işlem görmüş olsa bile). Hariç: blok halinde yontulmuş çakmak taşı, bilyalı değirmen için suni yuvarlatılmış çakıl ve vitrin süsü için boyanmış taş granülleri (68.02)."
+  ],
+  [
+   "25.20 Açıklama Notu",
+   "Dişçilikte kullanılmak üzere özel kalsine edilmiş veya ince öğütülmüş alçılar ve şap katılmış Keene (İngiliz) çimentosu <b>25.20</b>’dedir; dişçilikte kullanılan alçı esaslı müstahzarlar 34.07’ye gider."
+  ],
+  [
+   "25.23 Açıklama Notu",
+   "Klinker, portland, şaplı, cüruf, süper sülfat, puzolan ve Roma çimentoları ile karışımları. Hariç: hızlandırıcı katılmamış öğütülmüş yüksek fırın cürufu (26.19), dişçi ve kemik çimentoları (30.06), ateşe dayanıklı çimento ve harçlar (38.16), Keene çimentosu (25.20), puzolan toprağı (25.30)."
+  ],
+  [
+   "25.28 Açıklama Notu",
+   "Topraktan çıkarılmış tabii ham boratlar ve konsantreleri (kalsine olsa bile) ile kuru üründe H3BO3 oranı <b>%85’i geçmeyen</b> tabii borik asit. %85’i aşan borik asit 28.10’a, rafine boraks ve tuzlu sulardan elde edilen boratlar 28.40’a gider."
+  ],
+  [
+   "25.30 Açıklama Notu",
+   "Toprak boyaları birbirleriyle karıştırılmış veya kalsine edilmiş olsa da 25.30’da kalır; başka maddelerle karıştırılır ya da sıvıda dağıtılırsa Fasıl 32. Mikalı demir oksitleri %70’ten fazla demir bileşiği içerse de 25.30’dadır. Bahçe, funda, bataklık ve bitkisel topraklar tabii halde az miktarda azot, fosfor veya potasyum içerse de Fasıl 31’e girmez; kazılmış kum 25.05’tir. Genleştirilmiş vermikülit, perlit ve klorit 68.06’dadır."
+  ]
+ ],
+ "sinir_komsulari": [
+  [
+   "Kerevizli tuz gibi tuzlu çeşniler",
+   "21.03",
+   "25.01 hariç tutması"
+  ],
+  [
+   "Hijyenik kullanım için paketlenmiş tuzlu su çözeltisi",
+   "33.07",
+   "25.01 hariç tutması (tıbbi olanlar Fasıl 30)"
+  ],
+  [
+   "Süblime, çökeltilmiş, kolloidal kükürt",
+   "28.02",
+   "Fasıl 25 Not 2"
+  ],
+  [
+   "Kavrulmuş demir piritleri",
+   "26.01",
+   "25.02 hariç tutması"
+  ],
+  [
+   "Altın, zirkon, rutil, ilmenit, monazit içeren kumlar",
+   "Fasıl 26",
+   "25.05 hariç tutması"
+  ],
+  [
+   "Katran kumları, asfaltlı kumlar",
+   "27.14",
+   "25.05 hariç tutması"
+  ],
+  [
+   "Suni ve kolloidal grafit",
+   "38.01",
+   "25.04 hariç tutması"
+  ],
+  [
+   "Suni korindon; silisyum karbür",
+   "28.18 / 28.49",
+   "Suni aşındırıcı; 25.13 hariç tutması"
+  ],
+  [
+   "Ametist, kaya kristali (teknik amaçlı olsa bile)",
+   "71.03",
+   "25.06 hariç tutması"
+  ],
+  [
+   "Fe2O3 olarak ≥%70 demir içeren toprak boyalar",
+   "28.21",
+   "Fasıl 25 Not 2 (mikalı demir oksitleri hariç)"
+  ],
+  [
+   "Kalsine edilmiş tabii kalsiyum fosfat",
+   "31.03 / 31.05",
+   "25.10 hariç tutması"
+  ],
+  [
+   "Genleştirilmiş kil, vermikülit, perlit",
+   "68.06",
+   "25.08 ve 25.30 hariç tutması"
+  ],
+  [
+   "Kaldırım ve döşeme taşı; cilalı veya şevli mermer levha",
+   "68.01 / 68.02",
+   "Fasıl 25 Not 2; 25.15 Açıklama Notu"
+  ],
+  [
+   "Yazı, resim ve terzi tebeşiri; bilardo tebeşiri",
+   "96.09 / 95.04",
+   "Fasıl 25 Not 2"
+  ],
+  [
+   "Ateşe dayanıklı çimento, dolomit ateş tuğlası harcı",
+   "38.16",
+   "25.23 hariç tutması; Fasıl 25 Not 2"
+  ]
+ ],
+ "tuzaklar": [
+  "<b>Kalsinasyon kural olarak fasıl dışıdır, ama pozisyon izin veriyorsa değil.</b> Kalsine kaolin 25.07, kalsine dolomit 25.18, kalsine witherit 25.11’de kalır; kalsine tabii fosfat ise 31.03 veya 31.05’e, genleştirilmiş kil 68.06’ya gider.",
+  "<b>Rafine kükürt ≠ süblime kükürt.</b> Damıtılarak rafine edilmiş kükürt 25.03’te; süblime, çökeltilmiş ve kolloidal kükürt 28.02’de; perakende mantar öldürücü olarak hazırlanmış kükürt 38.08’de.",
+  "<b>Saflaştırılmış muadiller Fasıl 28’e gider; tuz istisnadır.</b> Saf sodyum klorür 25.01’de kalır; saf kalsiyum oksit ve hidroksit 28.25, rafine baryum sülfat 28.33, rafine boraks 28.40.",
+  "<b>Taşın kırıntısı, tozu ve granülü 25.17’dir.</b> Mermer tozu 25.15 değil 25.17; beton agregası olarak ezilmiş dolomit 25.18 değil 25.17 (Not 3).",
+  "<b>Testereyle dikdörtgen kesim fasılda kalır; cila, şev, oyma Fasıl 68’e götürür.</b> Kaldırım, döşeme veya mozaik şekli verilmiş taş kabaca yontulmuş olsa bile 68.01 / 68.02.",
+  "<b>2,5 eşiği.</b> Yontulmaya elverişli kireçli taş belirgin yoğunluğu 2,5 veya daha fazla ise 25.15, altındaysa 25.16; silisli fosil unlarında eşik 1 veya daha azdır (25.12).",
+  "<b>Tebeşir ailesi dağılır.</b> Tabii tebeşir 25.09, fosfatlı tebeşir 25.10, Fransız tebeşiri (talk) 25.26, yazı ve terzi tebeşiri 96.09, bilardo tebeşiri 95.04, diş tozu 33.06.",
+  "<b>Dişçilik alçısı 25.20’dedir.</b> Alçı esaslı dişçilik müstahzarları 34.07’de, dişçi çimentoları 30.06’da.",
+  "<b>Bahçe toprağı gübre değildir.</b> Tabii halde az miktarda azot, fosfor veya potasyum içerse de 25.30’dadır.",
+  "<b>Kehribar ≠ akamber; kuvars kıymetli taş kalitesindeyse 71.03.</b> Kehribar ve siyah kehribar 25.30’da, amber balığı salgısı akamber 05.10’da; ametist ve kaya kristali teknik amaçlı olsa da 71.03’te."
+ ],
+ "hafiza": {
+  "kanca": "MUTFAK – KİMYA – KUM-KİL – TAŞ OCAĞI – ŞANTİYE – LİF-PUL – BOR – ÇUVAL",
+  "aciklama": "<b>MUTFAK</b> 25.01 tuz · <b>KİMYA</b> 25.02–25.04 pirit, kükürt, grafit · <b>KUM-KİL</b> 25.05–25.13 kum, kuvars, kaolin, kil, tebeşir, fosfat, barit, diatomit, aşındırıcı · <b>TAŞ OCAĞI</b> 25.14–25.19 arduvaz, mermer, granit, çakıl, dolomit, magnezit · <b>ŞANTİYE</b> 25.20–25.23 alçı, kireç taşı, kireç, çimento · <b>LİF-PUL</b> 25.24–25.26 amyant, mika, talk · <b>BOR</b> 25.28–25.29 borat, feldispat-florspat · <b>ÇUVAL</b> 25.30 geri kalan her şey."
+ },
+ "sinav_odagi": [
+  "Deniz suyunun yeri birden fazla kez sorulmuştur: Fasıl 22 (sular) veya Fasıl 33 değil, 25.01 (Fasıl 25).",
+  "Dişçilikte kullanılan alçıların pozisyonu: 30.06, 68.09 veya 90.21 değil, 25.20.",
+  "Bölüm yapısı: Bölüm V’in başlığının “Mineral maddeler” olduğu ve Fasıl 25–27’yi kapsadığı.",
+  "“Hangisi farklı fasılda yer alır?” kalıbında tuz, zımpara taşı ve amyantın (Fasıl 25) cüruftan (Fasıl 26) ayrılması.",
+  "Kıymetli taş ayrımı: akik (Fasıl 71) ile kehribar ve lüle taşı (25.30), arduvaz (25.14) arasındaki fark; tabii karın 22.01’de, deniz suyunun 25.01’de olması."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Deniz suyu hangi fasıldadır?",
+   "secenekler": [
+    "22",
+    "25",
+    "30",
+    "33"
+   ],
+   "cevap": "B",
+   "aciklama": "25.01 pozisyon metni deniz suyunu açıkça sayar; Açıklama Notu deniz suyu, tuzlu su ve diğer tuzlu çözeltileri bu pozisyona dahil eder. Fasıl 22’deki sular ile karıştırılmamalıdır."
+  },
+  {
+   "soru": "Dişçilikte kullanılan alçılar, Tarife Cetvelinde hangi tarife pozisyonunda sınıflandırılır?",
+   "secenekler": [
+    "25.20",
+    "68.09",
+    "90.21",
+    "30.06"
+   ],
+   "cevap": "A",
+   "aciklama": "25.20 Açıklama Notu, dişçilikte kullanılmak üzere özel bir şekilde kalsine edilmiş veya ince öğütülmüş alçıları bu pozisyona dahil eder; Fasıl 30 Notu da bunları Fasıl 30 dışında bırakır. Yalnızca alçı esaslı dişçilik müstahzarları 34.07’ye gider."
+  }
+ ],
+ "ozet": [
+  "Fasıl 25 = ham veya Not 1’deki basit işlemleri görmüş mineraller; kavurma, kalsinasyon, karıştırma ve kristalizasyon kural olarak fasıl dışıdır.",
+  "Pozisyon metni izin veriyorsa ısıl işlem görmüş ürün de buradadır: kaolin, killer, witherit, diatomit, dolomit, manyezi, boratlar, alçı, kireç, çimento.",
+  "Taş: ham, kabaca yontulmuş veya testereyle dikdörtgen kesilmiş → 25.14 / 25.15 / 25.16; kırıntı, toz, çakıl, makadam → 25.17 (Not 3); ileri işçilik → Fasıl 68.",
+  "Eşikler: belirgin yoğunluk ≤1 (25.12), ≥2,5 (25.15); Fe2O3 ≥%70 → 28.21; H3BO3 %85’i aşarsa → 28.10; kültür kristali ≥2,5 g → 38.24.",
+  "Saflaştırılmış muadiller Fasıl 28; suni grafit 38.01; kıymetli taşlar Fasıl 71; deniz suyu ve saf NaCl ise 25.01.",
+  "25.30 artık pozisyondur: vermikülit ve perlit (genleştirilmemiş), toprak boyası, lüle taşı, kehribar, bahçe toprağı, kırıklar."
+ ],
+ "sorular": [
+  {
+   "soru": "Tarife Cetveline göre, başka madde katılmamış, büyük torbalar içinde dökme halde sunulan, ezilerek toz haline getirilmiş talk hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "25.09",
+    "25.26",
+    "33.04",
+    "25.30",
+    "38.24"
+   ],
+   "cevap": "B",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "25.26 pozisyonu tabii steatit ile talkı kapsar ve talk Not 1’de sayılan ezme ve toz haline getirme işlemlerini görmüş olabilir. “Fransız tebeşiri” adı yanıltıcıdır; tabii tebeşir (25.09) kalsiyum karbonattır. Dökme halde ve katkısız sunulduğu için kozmetik müstahzar (33.04) sayılmaz; 25.30 ise yalnızca başka yerde yer almayan mineraller içindir.",
+   "dayanak": "25.26 pozisyon metni ve Açıklama Notu; 25.09 Açıklama Notu, hariç tutmalar; Fasıl 25 Not 1."
+  },
+  {
+   "soru": "Tarife Cetveline göre, ısıl işleme tabi tutulmuş, az çok ufak taneler halinde torbalarda sunulan tabii korindon hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "28.18",
+    "71.03",
+    "68.05",
+    "28.49",
+    "25.13"
+   ],
+   "cevap": "E",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "25.13 pozisyonu tabii korindon ve diğer tabii aşındırıcıları termik işlem görmüş olsun olmasın kapsar; Genel Açıklamalar da bu pozisyonda yapıyı değiştiren ısıl işleme izin verir. Suni korindon 28.18’de, silisyum karbür 28.49’da, yakut ve safir gibi kıymetli taşlar 71.03’tedir. 68.05 bir mesnede tutturulmuş aşındırıcılar içindir.",
+   "dayanak": "25.13 pozisyon metni ve Açıklama Notu; Fasıl 25 Genel Açıklamalar."
+  },
+  {
+   "soru": "Tarife Cetveline göre, kullanılmış ateş tuğlalarının ufalanmasıyla elde edilen şamot toprağı hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "25.08",
+    "69.02",
+    "38.16",
+    "25.30",
+    "68.06"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "25.08 pozisyonu şamot ve dinas topraklarını adıyla sayar; Açıklama Notu şamotun kullanılmış ateş tuğlalarının ufalanmasıyla elde edildiğini belirtir. Genel Açıklamalar şamotu, niteliği gereği Not 1 dışı işlem görmüş olsa da bu fasılda kalan ürünler arasında sayar. Esası şamot olan ateşe dayanıklı çimento ve harçlar ise 38.16’dadır.",
+   "dayanak": "25.08 pozisyon metni ve Açıklama Notu; Fasıl 25 Genel Açıklamalar; 25.23 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, kireç taşı ve kil karışımının pişirilmesiyle elde edilen, henüz öğütülmemiş portland çimentosu klinkeri hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "26.19",
+    "25.22",
+    "38.24",
+    "25.23",
+    "68.10"
+   ],
+   "cevap": "D",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "25.23 pozisyon metni çimentoları “klinker şeklinde olsun olmasın” kapsar; Açıklama Notu klinkeri portland çimentosu imalinin yarı mamulü olarak tanımlar. 26.19 öğütülmüş yüksek fırın cürufu, 25.22 kireç, 38.24 ateşe dayanıklı olmayan harçlar içindir; 68.10 çimento veya betondan eşyadır.",
+   "dayanak": "25.23 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, topraktan çıkarılmış tabii kalsiyum boratın (pandermit) kalsine edilmiş konsantresi hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "28.40",
+    "28.10",
+    "25.28",
+    "25.30",
+    "31.05"
+   ],
+   "cevap": "C",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "25.28 pozisyonu tabii boratları ve bunların konsantrelerini kalsine edilmiş olsun olmasın kapsar; Açıklama Notu pandermiti kalsiyum boratlar arasında sayar. Kimyasal işlemle rafine edilmiş boraks ve tuzlu sulardan elde edilen boratlar 28.40’ta; H3BO3 oranı %85’i aşan borik asit 28.10’dadır. Adıyla sayıldığı için 25.30’a gitmez.",
+   "dayanak": "25.28 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 25. Faslında <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Süblime kükürt",
+    "Frasch yöntemiyle elde edilen rafine edilmemiş kükürt",
+    "Geleneksel madencilikle çıkarılan kaya tuzu",
+    "Herhangi bir yöntemle denatüre edilmiş tuz",
+    "Dövülmüş ve temizlenmiş ham amyant lifi"
+   ],
+   "cevap": "A",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Fasıl 25 Not 2 ve 25.03 pozisyon metni süblime, çökeltilmiş ve kolloidal kükürdü 28.02’ye gönderir. Frasch kükürdü 25.03’te, kaya tuzu ve denatüre tuz 25.01’de, dövülmüş ve temizlenmiş amyant lifi 25.24’tedir. Tuzak, her iki kükürdün de saf görünmesidir: belirleyici olan elde ediliş biçimidir.",
+   "dayanak": "Fasıl 25 Not 2; 25.01, 25.03 ve 25.24 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 25.01 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Elektroliz işleminden sonra arta kalan sodyum klorür artıkları",
+    "Serbestçe akmayı sağlayan madde katılmış sofra tuzu",
+    "Deniz suyu",
+    "Kerevizli tuz",
+    "İyotla hafifçe muamele görmüş tuz"
+   ],
+   "cevap": "D",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "25.01 Açıklama Notu kerevizli tuz gibi tuzlanmış çeşni vericileri hariç tutar ve 21.03’e gönderir. Elektroliz artığı sodyum klorür, akışkanlık maddesi katılmış sofra tuzu, iyotlu tuz ve deniz suyu pozisyon metni ile Açıklama Notunda açıkça 25.01’e dahil edilmiştir.",
+   "dayanak": "25.01 pozisyon metni ve Açıklama Notu, hariç tutmalar."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 25.15 pozisyonunda <b>yer almaz</b>?",
+   "secenekler": [
+    "Testere ile dikdörtgen bloklar halinde kesilmiş traverten",
+    "Ham ekosin",
+    "Kabaca yontulmuş mermer",
+    "Alçılı su mermeri",
+    "Mermerin granül ve tozları"
+   ],
+   "cevap": "E",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "25.15 Açıklama Notu, mermer vb. taşların küçük parça, kırıntı ve toz halinde olanlarını 25.17’ye gönderir; 25.17 pozisyon metni de 25.15 ve 25.16 taşlarının granül, parçacık ve tozlarını sayar. Testereyle kesilmiş traverten, ham ekosin, kabaca yontulmuş mermer ve alçılı su mermeri 25.15’tedir.",
+   "dayanak": "25.15 ve 25.17 pozisyon metinleri ve Açıklama Notları; Fasıl 25 Not 3."
+  },
+  {
+   "soru": "Aşağıdaki ürünlerden hangisi Tarife Cetvelinin 25. Faslı kapsamında <b>yer almaz</b>?",
+   "secenekler": [
+    "Kalsine edilmiş kaolin",
+    "Genleştirilmiş perlit",
+    "Bentonit",
+    "Kalsine edilmiş dolomit",
+    "Mikalı tabii demir oksitleri"
+   ],
+   "cevap": "B",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Fasıl 25 Not 4 ve 25.30 Açıklama Notu yalnızca genleştirilmemiş perliti kapsar; ısı etkisiyle genleştirilmiş perlit, vermikülit ve klorit 68.06’dadır. Kaolin (25.07) ve dolomit (25.18) pozisyon metinleri gereği kalsine edilmiş olsa da fasılda kalır; bentonit 25.08’de, mikalı demir oksitleri 25.30’dadır.",
+   "dayanak": "Fasıl 25 Not 4; 25.30 Açıklama Notu; 25.07 ve 25.18 pozisyon metinleri."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden farklı bir fasılda yer alır?",
+   "secenekler": [
+    "Kalsine edilmiş witherit",
+    "Sinterlenmiş manyezi",
+    "Silisyum karbür",
+    "Sönmüş kireç",
+    "Anhidrit"
+   ],
+   "cevap": "C",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Silisyum karbür suni bir aşındırıcıdır ve 25.13 Açıklama Notu onu 28.49’a gönderir (Fasıl 28). Kalsine witherit 25.11, sinterlenmiş manyezi 25.19, sönmüş kireç 25.22, anhidrit 25.20 ile Fasıl 25’tedir. Tuzak, ısıl işlem görmüş ürünlerin otomatik olarak fasıl dışı sanılmasıdır; bu pozisyonlar ısıl işleme izin verir.",
+   "dayanak": "25.13 Açıklama Notu; 25.11, 25.19, 25.20, 25.22 pozisyon metinleri."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Genleştirilmemiş vermikülit",
+    "Tabii lüle taşı",
+    "Tabii kehribar",
+    "Puzolan toprağı",
+    "“Fransız tebeşiri” olarak bilinen toz halindeki talk"
+   ],
+   "cevap": "E",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "“Fransız tebeşiri” tabiri steatitin bazı çeşitlerini ve toz talkı ifade eder ve 25.26’dadır. Genleştirilmemiş vermikülit, tabii lüle taşı ve kehribar Fasıl 25 Not 4 uyarınca, puzolan toprağı ise 25.30 Açıklama Notu uyarınca 25.30’dadır.",
+   "dayanak": "Fasıl 25 Not 4; 25.26 ve 25.30 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdaki eşya çiftlerinden hangisinde her iki eşya da <b>aynı</b> pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Keene çimentosu – kalsine edilmiş alçı",
+    "Puzolan toprağı – portland çimentosu",
+    "Su altında sertleşen kireç – şaplı çimento",
+    "Kireç imalinde kullanılan kireç taşı – sönmemiş kireç",
+    "Dolomit – dolomit ateş tuğlası harcı"
+   ],
+   "cevap": "A",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Keene (İngiliz) çimentosu şap katılmış alçıdır ve 25.20 Açıklama Notu ile 25.23 Açıklama Notu gereği kalsine alçı ile birlikte 25.20’dedir. Puzolan toprağı 25.30, portland çimentosu 25.23; hidrolik kireç 25.22, şaplı çimento 25.23; kireç taşı 25.21, sönmemiş kireç 25.22; dolomit 25.18, dolomit ateş tuğlası harcı 38.16’dır.",
+   "dayanak": "25.20, 25.21, 25.22, 25.23 Açıklama Notları; Fasıl 25 Not 2."
+  },
+  {
+   "soru": "Aşağıdaki taş ürünlerinden hangisi diğerlerinden farklı bir pozisyonda yer alır?",
+   "secenekler": [
+    "Katranlı makadam",
+    "Beton agregası olarak kullanılmak üzere ezilmiş dolomit",
+    "Testere ile dikdörtgen bloklar halinde kesilmiş granit",
+    "Mermer tozu",
+    "Yüksek fırın cürufundan makadam"
+   ],
+   "cevap": "C",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Testere ile dikdörtgen bloklar halinde kesilmiş granit 25.16’dadır. Katranlı makadam, cüruf makadamı ve mermer tozu 25.17 pozisyon metninde sayılmıştır; beton agregası olarak ezilmiş dolomit 25.18 Açıklama Notu ve Not 3 gereği 25.17’dedir.",
+   "dayanak": "25.16 ve 25.17 pozisyon metinleri; 25.18 Açıklama Notu; Fasıl 25 Not 3."
+  },
+  {
+   "soru": "Tarife Cetvelinin 25. Fasıl notlarına göre, pozisyon metninde aksi belirtilmedikçe aşağıdaki işlemlerden hangisi bir mineral maddeyi bu faslın kapsamı <b>dışına çıkarır</b>?",
+   "secenekler": [
+    "Flotasyon yoluyla zenginleştirme",
+    "Kalsine etme",
+    "Manyetik ayırma",
+    "Yapısını değiştirmeden kimyasal maddelerle yıkama",
+    "Nemli haldeyken ezilerek toz haline getirme"
+   ],
+   "cevap": "B",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 25 Not 1’e göre kavrulmuş, kalsine edilmiş, karıştırılarak elde edilmiş veya pozisyonda belirtilenden ileri işlem görmüş maddeler bu fasla dahil değildir. Flotasyon, manyetik ayırma, yapıyı değiştirmeyen kimyasal yıkama ve nemliyken ezerek toz haline getirme Not 1’de izin verilen işlemler arasında açıkça sayılmıştır.",
+   "dayanak": "Fasıl 25 Not 1; Fasıl 25 Genel Açıklamalar."
+  },
+  {
+   "soru": "Tarife Cetveline göre, yontulmaya veya inşaata elverişli kireçli taşların 25.16 yerine 25.15 pozisyonunda sınıflandırılabilmesi için belirgin yoğunluklarının ne olması gerekir?",
+   "secenekler": [
+    "1 veya daha az",
+    "2’den fazla",
+    "2,5’ten az",
+    "2,5 veya daha fazla",
+    "2,26 veya daha fazla"
+   ],
+   "cevap": "D",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "25.15 pozisyon metni ve Açıklama Notu, yontulmaya veya inşaata elverişli kireçli taşların belirgin yoğunluğunun (bir desimetre küpün kg cinsinden ağırlığı) 2,5 veya daha fazla olmasını şart koşar; 2,5’ten az olanlar 25.16’dadır. “1 veya daha az” silisli fosil unlarının (25.12) ölçütüdür; 2,26 tabii grafitin üst yoğunluk değeridir.",
+   "dayanak": "25.15 pozisyon metni ve Açıklama Notu; 25.16 ve 25.12 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetvelinin 25. Fasıl notlarına göre, toprak boyalarının 25.30 yerine 28.21 pozisyonunda sınıflandırılmasına yol açan, Fe2O3 olarak ifade edilen kombine demir miktarı ağırlıkça hangisidir?",
+   "secenekler": [
+    "%50’den fazla",
+    "%60 veya daha fazla",
+    "%79’dan az olmayan",
+    "%70 veya daha fazla",
+    "%85’ten fazla"
+   ],
+   "cevap": "D",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 25 Not 2, Fe2O3 olarak ifade edilen kombine demir miktarı ağırlıkça %70 veya daha fazla olan toprak boyalarını 28.21’e gönderir. Bununla birlikte, paslanmayı önleyici pigment olarak kullanılan mikalı tabii demir oksitleri %70’ten fazla demir içerse de 25.30’da kalır. %79 oranı 25.30’da sayılan nsutit (manganez cevheri) ile ilgilidir.",
+   "dayanak": "Fasıl 25 Not 2; Fasıl 25 Not 4; 25.30 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, tabii borik asidin 25.28 pozisyonunda kalabilmesi için kuru ağırlık üzerinden hesaplanan H3BO3 oranı için aşağıdakilerden hangisi <b>doğrudur</b>?",
+   "secenekler": [
+    "%70’i geçmemelidir.",
+    "%85’i geçmemelidir.",
+    "%85’ten fazla olmalıdır.",
+    "%97’yi geçmemelidir.",
+    "%90’dan az olmamalıdır."
+   ],
+   "cevap": "B",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "25.28 pozisyon metni, kuru ağırlık üzerinden H3BO3 oranı %85’ten fazla olmayan tabii borik asidi kapsar; Açıklama Notu bu oranı aşan borik asitleri 28.10’a gönderir. %97 florspat için alt pozisyon düzeyinde kullanılan bir eşiktir; %70 toprak boyalarındaki demir eşiğidir.",
+   "dayanak": "25.28 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "Beton agregası ve demiryolu balastı olarak kullanılmak üzere ezilmiş kireç taşı, ilk bakışta hem 25.21 hem de 25.17 kapsamına girebilecek niteliktedir. Bu ürünün 25.17’de sınıflandırılmasının dayanağı aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "GYK 1 – pozisyon metinleri ve Fasıl 25 Not 3",
+    "GYK 3(a) – eşyayı en özel şekilde niteleyen pozisyon",
+    "GYK 3(c) – numara sırasına göre sonuncu pozisyon",
+    "GYK 2(b) – maddenin karışım halleri",
+    "GYK 3(b) – esas niteliği veren madde"
+   ],
+   "cevap": "A",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 1’e göre sınıflandırma pozisyon metinlerine ve fasıl notlarına göre yapılır. Fasıl 25 Not 3, 25.17’ye ve bu faslın başka bir pozisyonuna girebilen ürünü 25.17’ye verir; 25.21 Açıklama Notu da beton agregası ve balast olarak ezilmiş taşları 25.17’ye gönderir. Bu nedenle GYK 3’e başvurmaya gerek yoktur; GYK 3(c) aynı sonucu verse de dayanak fasıl notudur.",
+   "dayanak": "GYK 1; Fasıl 25 Not 3; 25.21 Açıklama Notu."
+  },
+  {
+   "soru": "Genel Yorum Kurallarının Açıklama Notlarına göre, GYK 2(a)’nın imali bitirilmemiş veya aksamı tamamlanmamış eşyaya ilişkin kısmının Fasıl 25 eşyasına uygulanması konusunda aşağıdakilerden hangisi <b>doğrudur</b>?",
+   "secenekler": [
+    "Fasıl 25’te yalnızca taşlar için öncelikle uygulanır.",
+    "Fasıl 25 eşyası için GYK 1’den önce uygulanır.",
+    "Yalnızca demonte halde sunulan mineral maddelere uygulanır.",
+    "Fasıl 25’te GYK 2(a) yerine her durumda GYK 3(b) uygulanır.",
+    "I ila VI. Bölümlere giren eşyaya normal olarak uygulanmaz."
+   ],
+   "cevap": "E",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 2(a) Açıklama Notu (III), kuralın bu kısmının I ila VI. Bölümlere ait pozisyonların kapsamı açısından normal olarak bu bölümlere giren eşyaya uygulanmadığını belirtir; Fasıl 25 Bölüm V’tedir. Hiçbir GYK, GYK 1’den önce gelmez; GYK 3(b) ise ancak GYK 3(a) ile sonuç alınamazsa devreye girer.",
+   "dayanak": "GYK 2(a) Açıklama Notu (III); GYK 1."
+  },
+  {
+   "soru": "Süblime kükürt ……… pozisyonunda, kavrulmuş demir piritleri ……… pozisyonunda, suni grafit ……… pozisyonunda, saflaştırılmış kalsiyum oksit ise ……… pozisyonunda sınıflandırılır. Boşlukları sırasıyla doğru tamamlayan seçenek hangisidir?",
+   "secenekler": [
+    "25.03 / 25.02 / 25.04 / 25.22",
+    "28.02 / 25.02 / 38.01 / 25.22",
+    "28.02 / 26.01 / 38.01 / 28.25",
+    "38.08 / 26.01 / 25.04 / 28.25",
+    "28.02 / 26.03 / 68.15 / 28.25"
+   ],
+   "cevap": "C",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Süblime kükürt Not 2 ile 28.02’ye, kavrulmuş piritler 25.02 Açıklama Notu ile 26.01’e, suni grafit 25.04 Açıklama Notu ile 38.01’e, saflaştırılmış kalsiyum oksit 25.22 pozisyon metni ile 28.25’e gider. 26.03 kalkopiritler, 68.15 tabii grafitten eşya içindir; 38.08 yalnızca perakende mantar öldürücü olarak hazırlanmış kükürdü kapsar.",
+   "dayanak": "Fasıl 25 Not 2; 25.02, 25.04, 25.22 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdaki eşya ile pozisyonlar eşleştirildiğinde hangi seçenek doğrudur? I. Kaolin · II. Bentonit · III. Witherit · IV. Kieserit (tabii magnezyum sülfat) — a) 25.07 · b) 25.08 · c) 25.11 · d) 25.30",
+   "secenekler": [
+    "I-a, II-b, III-c, IV-d",
+    "I-b, II-a, III-c, IV-d",
+    "I-a, II-b, III-d, IV-c",
+    "I-a, II-d, III-c, IV-b",
+    "I-b, II-a, III-d, IV-c"
+   ],
+   "cevap": "A",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Kaolin 25.07’de, bentonit “diğer killer” olarak 25.08’de, tabii baryum karbonat olan witherit 25.11’de, tabii magnezyum sülfat olan kieserit 25.30’dadır. Tuzak, kaolin ile diğer killerin yer değiştirmesi ve witherit ile kieseritin benzer sesli adlarıdır.",
+   "dayanak": "25.07, 25.08, 25.11 ve 25.30 pozisyon metinleri ve Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetvelinin 25. Fasıl notlarına göre aşağıdaki ifadelerden hangileri <b>doğrudur</b>? I. Kıymetli ve yarı kıymetli taşlar bu fasla dahil değildir. II. Bilardo tebeşirleri bu fasılda değil, 95.04’te sınıflandırılır. III. Her birinin ağırlığı 2,5 g veya daha fazla olan sodyum klorür kültür kristalleri 25.01’de kalır. IV. Çatı ve bina yüzeylerini kaplamada kullanılan kayagan taşı 68.03’te sınıflandırılır.",
+   "secenekler": [
+    "I ve II",
+    "II ve III",
+    "I, II ve III",
+    "II, III ve IV",
+    "I, II ve IV"
+   ],
+   "cevap": "E",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "Fasıl 25 Not 2; kıymetli taşları (71.02, 71.03), bilardo tebeşirlerini (95.04) ve çatı kaplaması kayagan taşını (68.03) fasıl dışında bırakır; I, II ve IV doğrudur. III yanlıştır: her biri 2,5 g veya daha ağır sodyum klorür kültür kristalleri (optik elemanlar hariç) 38.24’e gider.",
+   "dayanak": "Fasıl 25 Not 2; 25.01 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdaki ifadelerden hangileri <b>doğrudur</b>? I. Kalsine edilmiş kaolin 25.07’de kalır. II. Kalsine edilmiş tabii kalsiyum fosfat 25.10’da kalır. III. Kalsine edilmiş dolomit 25.18’de kalır. IV. Kalsine edilerek genleştirilmiş kil 25.08’de kalır.",
+   "secenekler": [
+    "I ve II",
+    "II ve IV",
+    "I ve III",
+    "I, III ve IV",
+    "II, III ve IV"
+   ],
+   "cevap": "C",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "I ve III doğrudur: 25.07 ve 25.18 pozisyon metinleri kalsinasyona açıkça izin verir. II yanlıştır: 25.10 Açıklama Notu kalsine edilmiş tabii fosfatları 31.03 veya 31.05’e gönderir. IV yanlıştır: genleştirilmiş killer, yalnızca kalsine edilerek elde edilmiş olsalar bile 68.06’dadır.",
+   "dayanak": "25.07, 25.08, 25.10 ve 25.18 pozisyon metinleri ve Açıklama Notları; Fasıl 25 Not 1."
+  },
+  {
+   "soru": "Bahçe ve peyzaj işlerinde kullanılmak üzere çuvallar içinde sunulan, başka hiçbir madde katılmamış, kazılarak elde edilmiş bitkisel toprak tabii halinde az miktarda azot, fosfor ve potasyum içermektedir. Bu ürün Tarife Cetvelinde hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "31.01",
+    "25.30",
+    "31.05",
+    "25.05",
+    "38.24"
+   ],
+   "cevap": "B",
+   "tip": "Senaryo",
+   "gerekce": "25.30 Açıklama Notu; bahçe toprağı, funda toprağı ve bitkisel toprakların tarım veya peyzaj amaçlı kullanılsa ve tabii halde az miktarda azot, fosfor veya potasyum içerse bile Fasıl 31’e (gübreler) dahil olmadığını, bu pozisyonda kaldığını belirtir. 25.05 yalnızca kazılmış tabii kum içindir. Tuzak, besin elementi içeriğini gübre sanmaktır.",
+   "dayanak": "25.30 Açıklama Notu."
+  },
+  {
+   "soru": "Bir taş ocağından çıkarılan beyaz mermer testere ile kesilerek dikdörtgen levhalar haline getirilmiş; ayrıca levhaların yüzeyleri cilalanmış ve kenarları şevlendirilmiştir. Bu levhalar Tarife Cetvelinde hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "25.15",
+    "25.17",
+    "68.01",
+    "68.02",
+    "25.16"
+   ],
+   "cevap": "D",
+   "tip": "Senaryo",
+   "gerekce": "25.15, mermerin yalnızca ham, kabaca yontulmuş veya testereyle dikdörtgen blok ya da levha halinde kesilmiş olanlarını kapsar. Açıklama Notu cilalanmış, kenarları şevlenmiş veya başka şekilde işlenmiş blok ve levhaları 68.02’ye gönderir. 68.01 kaldırım ve döşeme taşları, 25.17 kırıntı ve tozlar içindir.",
+   "dayanak": "25.15 pozisyon metni ve Açıklama Notu; Fasıl 25 Not 1."
+  }
+ ]
+}

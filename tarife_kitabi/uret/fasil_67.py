@@ -1,0 +1,322 @@
+#!/usr/bin/env python3
+"""Fasıl 67 modülü üreteci."""
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from yardim_64_69 import soru, yaz  # noqa: E402
+
+EP = "Eşya → 4’lü pozisyon"
+OT = "Olumsuz teşhis"
+FA = "Farklı/aynı pozisyon veya fasıl"
+TN = "Fasıl notu · Tanım/Eşik"
+GY = "Genel Yorum Kuralı"
+ES = "Eşleştirme / Boşluk doldurma"
+CC = "Çoktan-çoğa (I–IV)"
+SN = "Senaryo"
+
+obj = {
+    "tur": "fasil",
+    "fasil": 67,
+    "baslik": "Hazırlanmış ince ve kalın kuş tüyleri ve bunlardan eşya; yapma çiçekler, insan saçından eşya",
+    "bolum": "XII",
+    "oz": {
+        "vurgu": "Fasıl 67 üç aileyi toplar: işlenmiş kuş tüyü ve tüyden eşya (67.01), parçaları birleştirilerek yapılmış yapma çiçek, yaprak ve meyveler (67.02), hazırlanmış insan saçı ile peruk ve benzerleri (67.03–67.04). Her ailede sınır aynıdır: <b>ham veya yalnız temizlenmiş</b> tüy ve saç Fasıl 5’te, <b>işlenmiş</b> hali ve eşyası Fasıl 67’de; ayakkabı, başlık, oyuncak ve Fasıl 96 eşyası ise fasıl dışıdır.",
+        "maddeler": [
+            "Tüy: yalnızca temizlenmiş, dezenfekte edilmiş veya korunmuş tüy 05.05; ağartılmış, boyanmış, kıvrılmış tüy ve tüyden eşya (süs, demet, yelpaze) 67.01.",
+            "Yapma çiçek: parçaları bağlama, yapıştırma, birbirine geçirme gibi yollarla birleştirilmişse 67.02; camdan olanlar ile tek parça dökülmüş, dövülmüş, yontulmuş olanlar maddesine göre.",
+            "Saç: yalnız yıkanmış, boyuna ayrılmış saç 05.01; kök ve uçları bir araya getirilerek dizilmiş, inceltilmiş, ağartılmış, boyanmış saç 67.03; peruk, takma sakal, kaş, kirpik 67.04.",
+            "Fasıl dışı: insan saçından tasir torbası (59.11), tekstil çiçek motifleri (Bölüm XI), ayakkabı (Fasıl 64), başlık ve saç filesi (Fasıl 65), oyuncak ve karnaval eşyası (Fasıl 95), tüy süpürge, pudra ponponu, saç eleği (Fasıl 96).",
+        ],
+    },
+    "karar_tablosu": {
+        "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı yeri verir.",
+        "satirlar": [
+            ["1", "Ayakkabı, başlık veya saç filesi mi?", "Fasıl 64 · Fasıl 65 (saç filesi <b>65.05</b>)"],
+            ["2", "Oyuncak, spor levazımatı veya karnaval eşyası mı (badminton topu, oyuncak bebek peruğu, karnaval takma sakalı)?", "Fasıl 95"],
+            ["3", "Tüyden toz süpürgesi, pudra ponponu, insan saçından el eleği veya tasir torbası mı?", "<b>96.03</b> · <b>96.16</b> · <b>96.04</b> · <b>59.11</b>"],
+            ["4", "Tüy ham veya yalnız temizlenmiş/korunmuş mu; insan saçı yalnız yıkanmış, boyuna ayrılmış mı?", "<b>05.05</b> · <b>05.01</b>"],
+            ["5", "Tüylü kuş derisi, işlenmiş tüy veya tüyden eşya mı (tüy yalnız dolgu değil)?*", "<b>67.01</b>"],
+            ["6", "Parçaları bağlama, yapıştırma vb. ile birleştirilmiş yapma çiçek, yaprak, meyve veya bunlardan eşya mı?", "<b>67.02</b> (cam Fasıl 70; tek parça döküm, dövme, oyma maddesine göre)"],
+            ["7", "Kök ve uçları dizilmiş veya işlenmiş insan saçı; peruk için hazırlanmış yün, kıl, lif mi?", "<b>67.03</b>"],
+            ["8", "Peruk, takma sakal, kaş, kirpik, perçem veya başka yerde yer almayan insan saçı eşyası mı?", "<b>67.04</b>"],
+        ],
+        "dipnot": "* Tüylerin yalnızca dolgu maddesi olduğu yatak ve yastıklar 94.04’tedir; tüylerin basit süs veya dolgudan öteye geçmediği giyim eşyası kendi pozisyonunda kalır.",
+    },
+    "pozisyon_haritasi": [
+        ["67.01", "Tüylü kuş derileri, tüyler, ince tüyler ve bunlardan eşya",
+         "Temizlemeden ileri işlem (ağartma, boyama, kıvırma) veya eşya haline getirme",
+         "Boyanmış tüy, tüy süs, tüylü süs yelpazesi"],
+        ["67.02", "Yapma çiçekler, yapraklı dallar, meyveler; aksamı ve eşyası",
+         "Parçaların bağlama, yapıştırma, geçirme ile birleştirilmesi",
+         "Kumaş veya plastik yapma çiçek, çelenk, yapma fidan"],
+        ["67.03", "Hazırlanmış insan saçı; peruk için hazırlanmış yün, kıl, lif",
+         "Kök ve uçlar bir araya dizilmiş, inceltilmiş, ağartılmış, boyanmış",
+         "Takma saç için hazırlanmış saç, peruk lifi örgüsü"],
+        ["67.04", "Peruk, sakal, kaş, kirpik, perçem; insan saçından diğer eşya",
+         "Takma saç eşyası; başka yerde yer almayan saç eşyası",
+         "Sentetik peruk, takma kirpik, tiyatro sakalı"],
+    ],
+    "notlar": [
+        ["Fasıl 67 Not 1",
+         "Fasıl dışı: (a) insan saçından filtre veya tasir torbaları (59.11); (b) dantel, işleme veya diğer dokumaya elverişli mensucattan çiçek motifleri (Bölüm XI); (c) ayakkabılar (Fasıl 64); (d) başlıklar veya saç fileleri (Fasıl 65); (e) oyuncaklar, spor levazımatı veya karnaval eşyası (Fasıl 95); (f) kuş tüyünden toz süpürgeleri, pudra ponponları veya insan saçından elekler (Fasıl 96)."],
+        ["Fasıl 67 Not 2",
+         "67.01’e dahil değildir: (a) tüylerin yalnızca dolgu maddesi olarak kullanıldığı eşya (94.04’teki yatak, yastık gibi); (b) tüy içeren giyim eşyası ve teferruatı (Açıklama Notuna göre tüyler basit süs veya dolgu maddesi olmaktan öteye geçmiyorsa); (c) 67.02’deki yapma çiçekler, yapraklı dallar, bunların aksamı ve bunlardan eşya."],
+        ["Fasıl 67 Not 3",
+         "67.02’ye dahil değildir: (a) cam eşya (Fasıl 70); (b) seramik, taş, metal, ağaç veya diğer maddelerden kalıba dökülerek, dövülerek, yontularak, estampajla vb. tek parça elde edilen veya parçaları bağlama, yapıştırma ve benzeri usuller dışında birleştirilen yapma çiçek, yapraklı dal ve meyveler."],
+        ["Fasıl 5 Not 2",
+         "05.01 anlamında boylarına göre tasnif edilmiş insan saçı, kök ve uç kısımları sırasıyla bir araya gelecek şekilde düzenlenmemişse “işlenmemiş” sayılır."],
+        ["05.05 Açıklama Notu",
+         "İşlenmemiş ya da yalnızca temizlenmiş, dezenfekte edilmiş veya koruma amacıyla işlenmiş tüyler (kenarları kırpılmış olsun olmasın, dolgu veya süs amaçlı olsun, bez torbada perakende sunulsun) 05.05’tedir; ağartılmış, boyanmış, kıvrılmış, dalgalandırılmış veya birleştirilmiş tüyler ve tüyden eşya 67.01’e geçer."],
+        ["67.01 Açıklama Notu",
+         "(A) Temizleme, dezenfeksiyon veya korumadan ileri işlem görmüş tüylü kuş derileri, tüyler ve ince tüyler; (B) bunlardan eşya (ham tüyden yapılanlar dahil): tel takılmış veya birleştirilmiş fantezi tüyler, salkım ve demetler, mensucata yapıştırılmış tüyler, şapka ve giyim süsleri, çerçevesi herhangi bir maddeden süs yelpazeleri. Çerçevesi kıymetli metalden yelpazeler 71.13’tedir."],
+        ["67.01 Açıklama Notu (hariç)",
+         "Tüyden ayakkabı (Fasıl 64) ve başlık (Fasıl 65); 67.02 eşyası; tüy dolgulu yatak takımı (94.04); badminton topu, tüylü dart, olta şamandırası (Fasıl 95); işlenmiş tüy kalem ve uçları (ör. 96.01’deki kürdan), tüy süpürge (96.03), pudra ponponu (96.16); koleksiyon parçaları (97.05)."],
+        ["67.02 Açıklama Notu",
+         "Parçaların bağlama, zamklama, birbirine geçirme vb. ile birleştirilmesiyle tabii ürüne benzetilen yapma çiçek, yaprak ve meyveler; aksamı (taç yaprak, çanak, sap vb.); buket, çelenk, yapma fidan gibi eşya; iğne veya basit tespit tertibatı takılmış olanlar. Mensucat, keçe, kâğıt, plastik, deri, ince metal yaprak, tüy, kabuk vb. olabilir; son şeklini alma derecesi önemsizdir."],
+        ["67.02 Açıklama Notu (hariç)",
+         "Boyanmış, gümüşlenmiş veya yaldızlanmış tabii çiçek ve dallar (06.03 / 06.04); tekstil çiçek motifleri (Bölüm XI); yapma çiçekten başlıklar (Fasıl 65); cam (Fasıl 70); yalnızca boyunda kesilmiş kaplı sap telleri (Bölüm XV); oyuncak ve karnaval eşyası (Fasıl 95)."],
+        ["67.03 Açıklama Notu",
+         "Kök uçları bir tarafa getirilerek paralel dizilmiş veya inceltilmiş, beyazlatılmış, boyanmış, dalgalandırılmış insan saçı; peruk veya oyuncak bebek saçı için hazırlanmış yün, kıl (yak, Tibet keçisi, tiftik) ve suni lifler: “krep” (yaklaşık <b>1 kg</b>), kıvrılmış lif paketleri (<b>14–15 m</b>, yaklaşık <b>500 g</b>), yaklaşık <b>2 mm</b> genişlikte örgülerden “atkılar”. Eğirme için hazırlanmış lifler Bölüm XI’dedir."],
+        ["67.04 Açıklama Notu",
+         "İnsan saçı, hayvan kılı veya dokumaya elverişli maddeden peruklar, lüleler, perçemler, topuzlar, takma kaş ve kirpikler, sakallar, favoriler, bıyıklar (tiyatro perukları dahil); başka yerde yer almayan insan saçı eşyası (tül tarzı ince mensucat). Hariç: oyuncak bebek perukları (95.03), kaba işçilikli karnaval eşyası (95.05), tasir torbaları (59.11), saç fileleri (65.05), el elekleri (96.04)."],
+    ],
+    "sinir_komsulari": [
+        ["Yalnızca temizlenmiş, dezenfekte edilmiş kaz tüyü", "05.05", "İşlem derecesi Fasıl 67’ye yetmez"],
+        ["Kaz tüyü dolgulu yastık, yorgan", "94.04", "Not 2(a): tüy yalnız dolgu"],
+        ["Badminton topu, tüylü dart", "Fasıl 95", "Not 1(e)"],
+        ["Tüyden toz süpürgesi; pudra ponponu", "96.03 / 96.16", "Not 1(f)"],
+        ["Çerçevesi kıymetli metalden tüylü yelpaze", "71.13", "67.01 Açıklama Notu"],
+        ["Kuş tüyünden veya yapma çiçekten şapka", "65.06", "Not 1(d)"],
+        ["Boyanmış veya yaldızlanmış tabii çiçek", "06.03 / 06.04", "Tabii ürün; yapma çiçek değil"],
+        ["Dantel veya işlemeden çiçek motifi", "Bölüm XI", "Not 1(b)"],
+        ["Camdan yapma çiçek", "Fasıl 70", "Not 3(a)"],
+        ["Tek parça dökülmüş seramik süs çiçeği", "69.13", "Not 3(b); seramik süs eşyası"],
+        ["Kalıba dökülmüş mumdan çiçek", "96.02", "96.02 Açıklama Notu"],
+        ["Suni Noel ağacı", "95.05", "Bayram eşyası; yapma fidan değil"],
+        ["Yalnızca yıkanmış, boyuna ayrılmış insan saçı", "05.01", "Fasıl 5 Not 2"],
+        ["İnsan saçından saç filesi; tasir torbası; el eleği", "65.05 / 59.11 / 96.04", "Not 1(a), (d), (f)"],
+        ["Oyuncak bebek peruğu; karnaval takma sakalı", "95.03 / 95.05", "67.04 hariç tutmaları"],
+    ],
+    "tuzaklar": [
+        "<b>Temizlenmiş tüy Fasıl 5, boyanmış tüy Fasıl 67.</b> Yalnız temizleme, dezenfeksiyon veya koruma işlemi gören tüy 05.05’te kalır; ağartma, boyama, kıvırma onu 67.01’e taşır.",
+        "<b>Kullanım amacı tüyün yerini değiştirmez.</b> Süs veya dolgu için kullanılacak olması, kenarlarının kırpılması ya da bez torbada perakende sunulması 05.05’teki tüyü 67.01’e geçirmez.",
+        "<b>Tüyden eşya ham tüyden de yapılabilir.</b> Ham veya yalnız temizlenmiş tüylerden yapılmış süs, demet ve yelpazeler yine 67.01’dedir.",
+        "<b>Tüy dolgu ise yatak takımıdır.</b> Kaz tüyü yastık ve yorganlar 94.04’tedir; tüyün yalnız süs olduğu giyim eşyası da kendi pozisyonunda kalır.",
+        "<b>Yapma çiçekte belirleyici olan birleştirme yöntemidir.</b> Bağlama, yapıştırma, geçirme ile birleştirilmiş çiçek (ince metal yapraktan bile olsa) 67.02; tek parça dökülmüş, dövülmüş, yontulmuş seramik, taş, metal, ağaç çiçek maddesine göre.",
+        "<b>Camdan yapma çiçek 67.02 değildir.</b> Not 3(a) gereği Fasıl 70’tedir; boyanmış, yaldızlanmış tabii çiçek de 06.03 / 06.04’te kalır.",
+        "<b>Saçta sınır kök–uç dizimidir.</b> Boyuna ayrılmış ama kök ve uçları bir araya getirilmemiş saç işlenmemiş sayılır (05.01); dizilmiş, ağartılmış veya boyanmış saç 67.03’tür.",
+        "<b>Her insan saçı eşyası 67.04 değildir.</b> Saç filesi 65.05, tasir torbası 59.11, el eleği 96.04’tedir; 67.04 yalnız başka yerde yer almayan saç eşyasını alır.",
+        "<b>Peruğun işçiliği önemlidir.</b> Özenle yapılmış tiyatro perukları 67.04’te; kaba işçilikli karnaval perukları 95.05’te, oyuncak bebek perukları 95.03’tedir.",
+        "<b>Yelpazede çerçeve belirleyicidir.</b> Tüylü süs yelpazesi çerçevesi herhangi bir maddeden olsa 67.01’dedir; çerçevesi kıymetli metalden ise 71.13’e gider.",
+    ],
+    "hafiza": {
+        "kanca": "TÜY – ÇİÇEK – SAÇ – PERUK (67.01 → 67.04)",
+        "aciklama": "Fasıl 67’yi bir kostüm atölyesinin vitrini gibi düşünün: önde boyalı tüy süsleri (67.01), yanında yapma çiçek buketleri (67.02), arkada hazırlanmış saç tutamları (67.03), en sonda hazır peruk ve takma kirpikler (67.04). Ham ve yalnız temizlenmiş tüy ve saç vitrine çıkamaz, depoda (Fasıl 5) bekler; şapka, ayakkabı, oyuncak ve fırça ise başka vitrinlerdedir.",
+    },
+    "sinav_odagi": [
+        "Bu fasıl çıkmış sorularda daha çok seçeneklerde/çeldirici olarak yer almıştır; doğrudan Fasıl 67’yi soran soru azdır.",
+        "Pozisyon sırası sorularında peruğun (67.04) miğfer (65.06), şemsiye (66.01) ve bastondan (66.02) sonra geldiğinin bilinmesi; doğru cevabın peruk olduğu.",
+        "Bölüm XII’nin kapsamı: insan saçından eşya, yapma çiçek ve hazırlanmış tüylerin ayakkabı, başlık ve şemsiye ile aynı bölümde yer alması.",
+        "Hayvansal ürün sorularında Fasıl 5’in “başka yerde yer almayan” ürünleri kapsadığının sorulması; tüy ve insan saçının ham hali Fasıl 5’te, işlenmiş hali Fasıl 67’de yer aldığından bu ayrım aynı mantıkla çözülür.",
+    ],
+    "cikmis_ornekler": [
+        {
+            "soru": "Aşağıdakilerden hangisi Türk Gümrük Tarife Cetveli’nde diğerlerinden daha sonraki bir pozisyonda sınıflandırılır?",
+            "secenekler": ["Şemsiye", "Baston", "Peruk", "Miğfer"],
+            "cevap": "C",
+            "aciklama": "Peruklar 67.04’tedir. Miğfer 65.06’da, şemsiye 66.01’de, baston 66.02’de yer aldığından en sonraki pozisyon peruktur.",
+        },
+    ],
+    "ozet": [
+        "Tüy: yalnız temizlenmiş 05.05; ağartılmış, boyanmış, kıvrılmış tüy ve tüyden her eşya 67.01 (dolgu yatak 94.04, şapka Fasıl 65, badminton Fasıl 95, süpürge ve ponpon Fasıl 96 hariç).",
+        "Yapma çiçek: bağlama, yapıştırma, geçirme ile birleştirilmiş her maddeden 67.02; cam Fasıl 70, tek parça döküm/dövme/oyma maddesine göre.",
+        "Boyanmış tabii çiçek 06.03 / 06.04; tekstil çiçek motifi Bölüm XI.",
+        "Saç: yalnız yıkanmış, boyuna ayrılmış 05.01; kök–uç dizilmiş veya işlenmiş 67.03; peruk ve takma saç 67.04.",
+        "Saç filesi 65.05, tasir torbası 59.11, el eleği 96.04; oyuncak bebek peruğu 95.03, karnaval peruğu 95.05.",
+    ],
+}
+
+S = []
+# 1 E
+S.append(soru(
+    "Tarife Cetveline göre, ağartılmış ve boyanmış, şapkacılıkta süs olarak kullanılmak üzere ucuna metal tel takılmış devekuşu tüyü hangi pozisyonda sınıflandırılır?",
+    "67.01", ["05.05", "67.02", "65.07", "96.03"], "E", EP,
+    "05.05 yalnızca temizlenmiş, dezenfekte edilmiş veya korunmuş tüyleri kapsar; ağartma ve boyama bunun ötesinde bir işlem olduğundan tüy 67.01’e geçer. 67.01 Açıklama Notu, şapkacılıkta kullanılmak üzere tel takılmış tüyleri de açıkça sayar. Şapka süsü olması onu 65.07’ye götürmez; 65.07 yalnız başlık bağlantı parçaları içindir.",
+    "67.01 Açıklama Notu (A) ve (B); 05.05 Açıklama Notu."))
+# 2 C
+S.append(soru(
+    "Aşağıdakilerden hangisi Tarife Cetvelinin 67. faslında <b>sınıflandırılmaz</b>?",
+    "Kaz tüyü ile doldurulmuş yastık",
+    ["Boyanmış tavus kuşu tüyü", "Tüylerin mensucata yapıştırılmasıyla yapılmış süs",
+     "Kâğıttan yapma çiçek çelengi", "İnsan saçından takma kirpik"], "C", OT,
+    "Fasıl 67 Not 2(a) gereği tüylerin yalnızca dolgu maddesi olarak kullanıldığı yatak, yastık gibi eşya 67.01’e girmez; 94.04’te sınıflandırılır. Boyanmış tüy ve mensucata yapıştırılmış tüy süsleri 67.01’de, kâğıt yapma çiçek çelengi 67.02’de, takma kirpik 67.04’tedir.",
+    "Fasıl 67 Not 2(a); 67.01, 67.02 ve 67.04 Açıklama Notları."))
+# 3 A
+S.append(soru(
+    "Tarife Cetveline göre kuş tüylerinin 05.05 yerine 67.01 pozisyonunda sınıflandırılmasında belirleyici ölçüt aşağıdakilerden hangisidir?",
+    "Temizleme, dezenfeksiyon veya korumadan ileri bir işlem (ağartma, boyama, kıvırma) görmüş olmaları",
+    ["Yastık ve yorgan doldurmada veya süs eşyası yapımında kullanılacak türden olmaları",
+     "Kanat veya kuyruk tüyü olmaları ve tüy sapından ayrılmamış bulunmaları",
+     "Perakende satış için bez torbalara konularak ambalajlanmış olmaları",
+     "Kenarlarının kırpılmış ve nakliyat için bir arada bağlanmış olmaları"], "A", TN,
+    "05.05 ve 67.01 Açıklama Notlarına göre sınır işlem derecesidir: yalnızca temizlenmiş, dezenfekte edilmiş veya korunmuş tüyler 05.05’te, ağartılmış, boyanmış, kıvrılmış veya dalgalandırılmış tüyler 67.01’dedir. 05.05 Açıklama Notu dolgu veya süs amaçlı kullanımın, kenarların kırpılmasının ve bez torbada perakende sunumun yeri değiştirmediğini açıkça belirtir.",
+    "05.05 Açıklama Notu; 67.01 Açıklama Notu (A)."))
+# 4 D
+S.append(soru(
+    "Kuş tüyü içeren aşağıdaki eşyadan hangisi Tarife Cetvelinde diğerlerinden farklı bir fasılda yer alır?",
+    "Badminton topu",
+    ["Tel takılmış fantezi tüy", "Mensucata yapıştırılmış tüy süs", "Çerçevesi kemikten tüylü süs yelpazesi", "Boyanmış tüylü kuş derisi"], "D", FA,
+    "Badminton topları 67.01 Açıklama Notunun hariç tutmalarında Fasıl 95 eşyası olarak sayılmıştır (Not 1(e)). Tel takılmış fantezi tüyler, mensucata yapıştırılmış tüy süsleri, çerçevesi kıymetli metal dışındaki bir maddeden süs yelpazeleri ve boyanmış tüylü kuş derileri 67.01’dedir.",
+    "Fasıl 67 Not 1(e); 67.01 Açıklama Notu."))
+# 5 B
+S.append(soru(
+    "Tarife Cetveline göre, plastikten kesilmiş taç yaprakları ve yaprakların tel ve yapıştırıcı ile birleştirilmesiyle yapılmış yapma gül buketi hangi pozisyonda sınıflandırılır?",
+    "67.02", ["39.26", "06.03", "67.01", "95.05"], "B", EP,
+    "67.02, parçaların bağlama, zamklama veya benzeri yöntemlerle birleştirilmesiyle yapılan yapma çiçekleri ve buket gibi bunlardan mamul eşyayı kapsar; plastik Açıklama Notunda sayılan maddelerdendir. Plastikten olması 39.26’ya, çiçek görünümü 06.03’e götürmez. Oyuncak veya karnaval eşyası olduğu açıkça belli değilse Fasıl 95’e girmez.",
+    "67.02 pozisyon metni ve Açıklama Notu."))
+# 6 B
+S.append(soru(
+    "Kâğıttan taç yapraklar, plastik sap ve kumaş yaprakların tel ile birbirine bağlanmasıyla yapılmış yapma çiçek 67.02 pozisyonunda sınıflandırılır. Bu sınıflandırmaya esas olan Genel Yorum Kuralı aşağıdakilerden hangisidir?",
+    "GYK 1", ["GYK 2(b)", "GYK 3(b)", "GYK 3(c)", "GYK 4"], "B", GY,
+    "67.02 pozisyon metni yapma çiçekleri maddesine bakmaksızın kapsar ve Açıklama Notu mensucat, kâğıt, plastik gibi maddeleri birlikte sayar; eşya doğrudan pozisyon metniyle sınıflandırılır, bu GYK 1’dir. Birden fazla maddeden yapılmış olması esas nitelik (3(b)) veya son sıradaki pozisyon (3(c)) araştırmayı gerektirmez, çünkü maddeye göre ayrım yapan bir pozisyon çatışması yoktur.",
+    "GYK 1; 67.02 pozisyon metni ve Açıklama Notu."))
+# 7 E
+S.append(soru(
+    "Aşağıdakilerden hangileri Fasıl 67 kapsamında sınıflandırılır? I. Çerçevesi kemikten tüylü süs yelpazesi II. Çerçevesi altından tüylü süs yelpazesi III. Kumaştan yapma çiçeklerden gelin buketi IV. Danteladan çiçek motifi",
+    "I ve III", ["I ve II", "II ve IV", "I, II ve III", "III ve IV"], "E", CC,
+    "Çerçevesi herhangi bir maddeden süs yelpazeleri 67.01’de, kumaş yapma çiçeklerden buketler 67.02’dedir (I ve III). Çerçevesi kıymetli metalden yelpazeler 67.01 Açıklama Notu gereği 71.13’e gider (II). Danteladan, işlemeden çiçek motifleri Not 1(b) gereği Bölüm XI’dedir (IV).",
+    "Fasıl 67 Not 1(b); 67.01 ve 67.02 Açıklama Notları."))
+# 8 A
+S.append(soru(
+    "Tarife Cetveline göre, takma saç yapımında kullanılmak üzere kök uçları bir tarafa getirilerek birbirine paralel şekilde dizilmiş ve ağartılmış insan saçı tutamları hangi pozisyonda sınıflandırılır?",
+    "67.03", ["05.01", "67.04", "65.05", "96.04"], "A", EP,
+    "67.03, kök uçları bir tarafa getirilerek paralel tertiplenmiş, inceltilmiş, beyazlatılmış veya başka şekilde hazırlanmış insan saçını kapsar. Yalnızca yıkanmış ve kök–uç dizimi yapılmadan boyuna ayrılmış saç 05.01’de kalırdı. Henüz peruk veya takma saç haline getirilmediği için 67.04’e girmez.",
+    "67.03 pozisyon metni ve Açıklama Notu; Fasıl 5 Not 2."))
+# 9 D
+S.append(soru(
+    "Aşağıdakilerden hangisi 67.02 pozisyonunda <b>sınıflandırılmaz</b>?",
+    "Camdan yapılmış yapma çiçek",
+    ["Kumaştan taç yapraklarının birleştirilmesiyle yapılmış yapma çiçek",
+     "Yapma çiçeklere ait taç yaprakları ve saplar",
+     "İğneye takılmış plastik yapma çiçek",
+     "Kuş tüylerinin birleştirilmesiyle yapılmış yapma çiçek"], "D", OT,
+    "Fasıl 67 Not 3(a) cam eşyayı 67.02’nin dışında bırakır; camdan yapma çiçekler Fasıl 70’tedir. Kumaştan birleştirilmiş çiçekler, yapma çiçek aksamı, iğneye takılmış olanlar ve tüyden birleştirilmiş yapma çiçekler 67.02 Açıklama Notunda açıkça sayılmıştır.",
+    "Fasıl 67 Not 3(a); 67.02 Açıklama Notu."))
+# 10 C
+S.append(soru(
+    "Bir firma şu ürünü ithal etmektedir: ince pirinç levhadan kesilmiş yaprak ve taç yapraklarının tel ile birbirine bağlanması suretiyle yapılmış, boyanmış yapma çiçek dalı; ev dekorasyonunda kullanılacaktır. Tarife Cetveline göre bu ürün hangi pozisyonda sınıflandırılır?",
+    "67.02", ["74.19", "83.06", "95.05", "67.01"], "C", SN,
+    "Fasıl 67 Not 3(b) metal çiçekleri ancak tek parça dövülmüş, dökülmüş, estampajla elde edilmiş veya parçaları bağlama, yapıştırma ve benzeri usuller dışında birleştirilmişse 67.02’nin dışında bırakır. Burada parçalar tel ile bağlanmıştır ve 67.02 Açıklama Notu ince metal yapraklardan yapılanları da sayar. Bu nedenle bakır eşya (74.19) veya süs eşyası (83.06) olarak değil 67.02’de sınıflandırılır.",
+    "Fasıl 67 Not 3(b); 67.02 Açıklama Notu."))
+# 11 A
+S.append(soru(
+    "Fasıl 67 Not 3’e göre seramik, taş, metal veya ağaçtan yapma çiçeklerin 67.02 dışında kalmasının ölçütü aşağıdakilerden hangisidir?",
+    "Tek parça döküm, dövme veya oyma ile yapılmaları ya da parçaların bağlama, yapıştırma dışında birleştirilmesi",
+    ["Ağırlıklarının 1 kg’ı geçmesi ve kalıcı bir zemine sabitlenmek üzere tasarlanmış olmaları",
+     "Tabii ürüne benzemeyecek şekilde stilize edilmiş olmaları ve sap veya yaprak içermemeleri",
+     "Süsleme amacı dışında, örneğin ambalaj malzemesi olarak kullanılmak üzere yapılmaları",
+     "Perakende satılacak şekilde paketlenmemiş ve iğne veya tespit tertibatı taşımamaları"], "A", TN,
+    "Not 3(b), bu maddelerden kalıba dökülerek, dövülerek, yontularak, estampajla veya diğer işlemlerle tek parça elde edilen ya da parçaları bağlama, yapıştırma ve benzeri usuller dışında birleştirilen yapma çiçekleri 67.02’nin dışında bırakır. Notta ağırlık, ambalaj veya kullanım yeri ölçütü yoktur; belirleyici olan üretim ve birleştirme yöntemidir.",
+    "Fasıl 67 Not 3(b); 67.02 Açıklama Notu, hariç tutmalar."))
+# 12 E
+S.append(soru(
+    "Aşağıdakilerden hangisi diğerlerinden farklı bir pozisyonda yer alır?",
+    "Gümüşlenmiş tabii gül",
+    ["Kâğıttan yapılmış yapma gül", "Kumaştan yapılmış yapma gül", "Plastikten yapma yapraklı dal", "Deriden yapılmış yapma çiçek"], "E", FA,
+    "67.02 Açıklama Notu, boyanmış, gümüşlenmiş veya yaldızlanmış tabii çiçekleri ve yapraklı dalları hariç tutar; bunlar 06.03 veya 06.04’tedir. Kâğıt, kumaş, plastik ve deriden yapma çiçek ve dallar 67.02’de sınıflandırılır. Süsleme işlemi tabii çiçeği yapma çiçek yapmaz.",
+    "67.02 Açıklama Notu, hariç tutmalar."))
+# 13 B
+S.append(soru(
+    "Aşağıdaki eşya – yer eşleştirmelerinden hangisi <b>yanlıştır</b>?",
+    "Oyuncak bebek peruğu – 67.04",
+    ["Pudra ponponu – 96.16", "İnsan saçından tasir torbası – 59.11", "Kuş tüyünden şapka – 65.06", "Tüylü dart oku – Fasıl 95"], "B", ES,
+    "Oyuncak bebeklerin perukları 67.04 Açıklama Notunun hariç tutmalarında sayılmış olup 95.03’tedir. Pudra ponponu 96.16, insan saçından tasir torbası 59.11, kuş tüyünden şapka 65.06 ve tüylü dart okları Fasıl 95 ile doğru eşleştirilmiştir.",
+    "Fasıl 67 Not 1; 67.01 ve 67.04 Açıklama Notları, hariç tutmalar."))
+# 14 C
+S.append(soru(
+    "Tarife Cetveline göre, sentetik liflerden özenli işçilikle yapılmış, tiyatro gösterilerinde kullanılan peruk hangi pozisyonda sınıflandırılır?",
+    "67.04", ["95.05", "67.03", "95.03", "65.06"], "C", EP,
+    "67.04, insan saçı, hayvan kılı veya dokumaya elverişli maddeden perukları kapsar; Açıklama Notu tiyatrolarda kullanılan perukları örnek olarak verir. Kaba işçilikli, düşük kaliteli karnaval perukları 95.05’te, oyuncak bebek perukları 95.03’te olurdu. 67.03 yalnız hazırlanmış saç ve lifleri, 65.06 başlıkları kapsar.",
+    "67.04 Açıklama Notu (1)."))
+# 15 D
+S.append(soru(
+    "Aşağıdakilerden hangisi 67.04 pozisyonunda <b>sınıflandırılmaz</b>?",
+    "İnsan saçından saç filesi",
+    ["İnsan saçından takma bıyık", "Hayvan kılından takma sakal", "Sentetik liften perçem", "İnsan saçından tül tarzı ince mensucat"], "D", OT,
+    "Saç fileleri, insan saçından yapılmış olsalar bile Fasıl 67 Not 1(d) ve 67.04 Açıklama Notu gereği 65.05’tedir. Takma bıyık, sakal ve perçemler ile başka yerde yer almayan insan saçı eşyası (tül tarzı ince mensucat) 67.04’te sınıflandırılır.",
+    "Fasıl 67 Not 1(d); 67.04 Açıklama Notu."))
+# 16 D
+S.append(soru(
+    "İnsan saçı veya kıldan yapılmış aşağıdaki eşyadan hangisi Tarife Cetvelinde diğerlerinden farklı bir fasılda yer alır?",
+    "İnsan saçından el eleği",
+    ["İnsan saçından peruk", "Ağartılmış insan saçı", "Peruk yapımı için hazırlanmış tiftik", "İnsan saçından takma kaş"], "D", FA,
+    "İnsan saçından elekler Fasıl 67 Not 1(f) gereği Fasıl 96’dadır (96.04). Peruklar ve takma kaşlar 67.04’te, ağartılmış insan saçı ve peruk yapımı için hazırlanmış tiftik 67.03’te yer alır.",
+    "Fasıl 67 Not 1(f); 67.03 ve 67.04 Açıklama Notları."))
+# 17 B
+S.append(soru(
+    "Tarife Cetveline göre, boylarına göre tasnif edilmiş insan saçının 05.01 anlamında “işlenmemiş” sayılması için hangi şart aranır?",
+    "Kök ve uçlarının sırasıyla bir araya getirilmemiş olması",
+    ["Saç tellerinin uzunluğunun 5 cm’yi geçmemesi",
+     "Yalnızca boyanmış, ancak ağartılmamış olması",
+     "Yaklaşık 1 kg’lık paketler halinde sunulması",
+     "Kök uçlarının bir tarafa getirilerek paralel dizilmiş olması"], "B", TN,
+    "Fasıl 5 Not 2’ye göre boylarına göre tasnif, kök ve uç kısımları sırasıyla bir araya getirilmedikçe işleme sayılmaz ve saç 05.01’de kalır. Kök uçlarının bir tarafa getirilerek paralel dizilmesi ise 67.03’ün tarifidir. Boyanmış saç 67.03’tedir; 1 kg ölçüsü 67.03’teki “krep” için verilmiştir.",
+    "Fasıl 5 Not 2; 67.03 Açıklama Notu."))
+# 18 A
+S.append(soru(
+    "Bir mezar çelenginin bütün parçaları (kumaş yapma çiçekler, plastik yapraklı dallar, bağlama teli ve çelenk çemberi) perakende kutusunda birlikte, ancak birbirine monte edilmemiş halde sunulmuştur. Bu eşyanın bitmiş çelenk gibi 67.02’de sınıflandırılmasını sağlayan Genel Yorum Kuralı hangisidir?",
+    "GYK 2(a)", ["GYK 2(b)", "GYK 3(b)", "GYK 4", "GYK 5(b)"], "A", GY,
+    "GYK 2(a), bir eşyaya yapılan atfın o eşyanın monte edilmeden veya sökülmüş olarak getirilen halini de kapsadığını belirtir; çelengin tüm parçaları birlikte sunulduğundan bitmiş çelenk gibi sınıflandırılır. Çelenkler 67.02 Açıklama Notunda yapma çiçeklerden mamul eşya olarak sayılmıştır. 3(b) farklı pozisyonlara giren eşyadan oluşan takımlar, 5(b) ambalaj içindir.",
+    "GYK 2(a); 67.02 Açıklama Notu."))
+# 19 E
+S.append(soru(
+    "Tarife Cetveline göre, yalnızca yıkanmış ve boylarına göre ayrılmış, kök ve uçları bir araya getirilmemiş insan saçı hangi pozisyonda sınıflandırılır?",
+    "05.01", ["67.03", "67.04", "05.11", "51.02"], "E", EP,
+    "Fasıl 5 Not 2 gereği boylarına göre tasnif, kök ve uçlar bir araya getirilmedikçe işleme sayılmaz; 67.03 Açıklama Notu da yalnızca yıkanmış, temizlenmiş, yağı alınmış ve kök uçları bir tarafa getirilmeden boy boy ayrılmış saçı 05.01’e bırakır. İnsan saçı dokumaya elverişli kıl (51.02) değildir; peruk haline getirilmediği için 67.04 de söz konusu olmaz.",
+    "Fasıl 5 Not 2; 67.03 Açıklama Notu; 05.01 pozisyon metni."))
+# 20 C
+S.append(soru(
+    "Aşağıdakilerden hangileri 67.03 pozisyonunda sınıflandırılır? I. Kök uçları paralel dizilmiş insan saçı II. Peruk imali için hazırlanmış Tibet keçisi kılı III. Bükülerek iplik haline getirilmek amacıyla hazırlanmış yün IV. Yalnızca yıkanmış insan saçı",
+    "I ve II", ["II ve III", "I, II ve III", "I ve IV", "III ve IV"], "C", CC,
+    "67.03 kök uçları paralel dizilmiş insan saçını ve peruk veya benzeri eşya için hazırlanmış yün ve hayvan kıllarını (yak, Tibet keçisi, tiftik) kapsar (I ve II). İplik veya halat yapmak üzere hazırlanmış yün Bölüm XI’dedir (III); yalnızca yıkanmış insan saçı 05.01’de kalır (IV).",
+    "67.03 Açıklama Notu; Fasıl 5 Not 2."))
+# 21 C
+S.append(soru(
+    "Aşağıdakilerden hangisi 67.01 pozisyonunda <b>yer almaz</b>?",
+    "Kuş tüyünden yapılmış toz süpürgesi",
+    ["Çerçevesi plastikten tüylü süs yelpazesi", "Dalgalandırılmış kuş tüyleri",
+     "Salkım şeklinde bir araya getirilmiş tüyler", "Boyanmış tüylü kuş derisi"], "C", OT,
+    "Kuş tüyünden toz süpürgeleri Fasıl 67 Not 1(f) ve 67.01 Açıklama Notu gereği Fasıl 96’dadır (96.03). Çerçevesi kıymetli metal dışındaki maddeden süs yelpazeleri, dalgalandırılmış tüyler, salkım halindeki tüyler ve boyanmış tüylü kuş derileri 67.01’de sınıflandırılır.",
+    "Fasıl 67 Not 1(f); 67.01 Açıklama Notu."))
+# 22 A
+S.append(soru(
+    "Aşağıdaki eşyadan hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+    "Takma kirpik",
+    ["Peruk imali için hazırlanmış yak kılı", "Oyuncak bebek saçı için hazırlanmış suni lif",
+     "Kök uçları paralel dizilmiş insan saçı", "İnceltilmiş ve boyanmış insan saçı"], "A", FA,
+    "Takma kirpikler bitmiş takma saç eşyası olarak 67.04’tedir. Peruk veya oyuncak bebek saçı için hazırlanmış yak kılı ve suni lifler ile kök uçları dizilmiş, inceltilmiş veya boyanmış insan saçı henüz hazırlanmış hammadde olup 67.03’te sınıflandırılır.",
+    "67.03 ve 67.04 Açıklama Notları."))
+# 23 E
+S.append(soru(
+    "Bir ithalatçı şu ürünü getirmiştir: kalıba dökülerek tek parça halinde üretilmiş, sırlanmış porselenden gül demeti; yalnızca masa süsü olarak kullanılmaktadır ve herhangi bir işlevi yoktur. Tarife Cetveline göre bu ürün hangi pozisyonda sınıflandırılır?",
+    "69.13", ["67.02", "69.11", "95.05", "97.03"], "E", SN,
+    "Fasıl 67 Not 3(b), seramikten kalıba dökülerek tek parça elde edilen yapma çiçekleri 67.02’nin dışında bırakır; bunlar maddesine göre sınıflandırılır. 69.13 Açıklama Notu, seramikten yapma çiçek, meyve ve yapraklı dalları süs eşyası olarak sayar. İşlevsiz süs eşyası olduğundan 69.11’deki sofra ve ev eşyası değildir.",
+    "Fasıl 67 Not 3(b); 69.13 Açıklama Notu."))
+# 24 B
+S.append(soru(
+    "Tarife Cetveline göre, yalnızca temizlenmiş, dezenfekte edilmiş veya koruma amacıyla işlem görmüş kuş tüyleri ..... pozisyonunda; ağartılmış veya boyanmış olanları ise ..... pozisyonunda sınıflandırılır. Boşluklara sırasıyla hangisi gelmelidir?",
+    "05.05 – 67.01", ["67.01 – 05.05", "05.05 – 67.02", "05.04 – 67.01", "05.11 – 67.01"], "B", ES,
+    "05.05 işlenmemiş veya yalnızca temizlenmiş, dezenfekte edilmiş, korunmuş tüyleri kapsar. Ağartılmış, boyanmış, kıvrılmış veya dalgalandırılmış tüyler 05.05’in dışında kalır ve 67.01 Açıklama Notunun (A) bendinde sayılır. 67.02 yapma çiçekler, 05.04 hayvan bağırsakları içindir.",
+    "05.05 Açıklama Notu; 67.01 Açıklama Notu (A)."))
+# 25 D
+S.append(soru(
+    "67.03 Açıklama Notuna göre peruk imali için hazırlanmış, dalgalandırılmış (kıvrılmış) dokumaya elverişli lif parçaları genellikle hangi ölçülerdeki paketlerde sunulur?",
+    "Her biri 14–15 m uzunlukta ve yaklaşık 500 g ağırlıkta",
+    ["Belirli boylarda ve yaklaşık 1 kg ağırlıkta", "Yaklaşık 2 mm genişlikte ve 1 kg ağırlıkta",
+     "Her biri 5 m uzunlukta ve yaklaşık 100 g ağırlıkta", "Her biri 60 cm uzunlukta ve yaklaşık 250 g ağırlıkta"], "D", TN,
+    "Açıklama Notu, dalgalandırılmış uzun ve ince lif parçalarının her biri 14–15 m ve 500 g civarında küçük paketlerde sunulduğunu belirtir. Yaklaşık 1 kg ağırlık, iki paralel şerit halinde bağlanan “krep” için; yaklaşık 2 mm genişlik ise makinede örülen ipliklerden yapılan “atkılar” için verilmiştir.",
+    "67.03 Açıklama Notu (1), (2), (3)."))
+
+obj["sorular"] = S
+yaz(obj)

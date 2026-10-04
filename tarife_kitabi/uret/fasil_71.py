@@ -1,0 +1,334 @@
+"""Fasıl 71 – İnciler, kıymetli taşlar, kıymetli metaller; taklit mücevher; metal paralar modülü."""
+import sys
+import os
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from yardim_70_72 import (ESYA, OLUMSUZ, FARKLI, TANIM, GYK, ESLES, COKLU, SENARYO,  # noqa: E402
+                          soru, kaydet)
+
+obj = {
+    "tur": "fasil",
+    "fasil": 71,
+    "baslik": "Tabii veya kültür incileri, kıymetli veya yarı kıymetli taşlar, kıymetli metaller, kıymetli metallerle kaplama metaller ve bunlardan mamul eşya; taklit mücevherci eşyası; metal paralar",
+    "bolum": "XIV",
+    "oz": {
+        "vurgu": "Fasıl 71 iki soruya dayanır: Eşyada inci, kıymetli veya yarı kıymetli taş (tabii, sentetik, terkip) ya da kıymetli metal veya kıymetli metal kaplama metal var mı (Not 1)? Varsa bu unsur yalnız basit ve önemsiz bir süs mü (Not 2)? Alaşımın kıymetli metal sayılması %2 kuralına (Not 5), kaplamanın Fasıl 71’e girmesi mekanik kaplama yöntemine (Not 7) bağlıdır.",
+        "maddeler": [
+            "Üç tali fasıl: I – monte edilmemiş inciler, taşlar ve tozları (71.01–71.05); II – işlenmemiş, yarı işlenmiş veya pudra halinde kıymetli metaller, kaplamalar ve döküntüler (71.06–71.12); III – eşya, taklit mücevher ve metal paralar (71.13–71.18).",
+            "“Kıymetli metal”: gümüş, altın, platin. “Platin”: platin, iridyum, osmiyum, paladyum, rodyum ve rutenyum.",
+            "Alaşım: %2 veya fazla platin → platin alaşımı; değilse %2 veya fazla altın → altın alaşımı; değilse %2 veya fazla gümüş → gümüş alaşımı; üçü de %2’nin altındaysa adi metal alaşımı (Bölüm XV).",
+            "Kaplama: lehim, sert lehim, kaynak, sıcak haddeleme gibi mekanik usulle yapılmışsa Fasıl 71; elektroliz, buhar, püskürtme veya daldırmayla yapılmışsa adi metal kendi faslında kalır.",
+            "Mücevherci eşyası (71.13) kişisel küçük süs ve üstte taşınan kişisel eşya; kuyumcu eşyası (71.14) sofra, tuvalet, büro, sigara, dekor ve dini eşya; taklit mücevher (71.17) inci, taş ve kıymetli metal içermeyen kişisel küçük süs eşyası.",
+        ],
+    },
+    "karar_tablosu": {
+        "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+        "satirlar": [
+            ["1", "Not 3’teki eşya mı? (amalgam, diş dolgusu, destekli katalizör, saat, müzik aleti, silah, XVI. Bölüm makinesi, 100 yaşı aşan antika vb.)", "İlgili fasıl (ör. <b>28.43</b>, <b>Fasıl 30</b>, <b>38.15</b>, <b>Fasıl 91</b>, <b>97.06</b>)*"],
+            ["2", "Tabii veya kültür incisi mi (monte edilmemiş; geçici olarak ipe dizilmiş olabilir)?", "<b>71.01</b>"],
+            ["3", "Elmas mı (mıhlanmamış, takılmamış)?", "<b>71.02</b>"],
+            ["4", "Diğer tabii kıymetli veya yarı kıymetli taş mı (fasıl sonundaki listede)?", "<b>71.03</b>"],
+            ["5", "Sentetik veya terkip yoluyla elde edilmiş taş mı? Bu taşların tozu mu?", "<b>71.04</b> / <b>71.05</b>"],
+            ["6", "İşlenmemiş, yarı işlenmiş veya pudra halinde kıymetli metal ya da kıymetli metal kaplama metal mi?", "Gümüş <b>71.06</b> · gümüş kaplama <b>71.07</b> · altın <b>71.08</b> · altın kaplama <b>71.09</b> · platin <b>71.10</b> · platin kaplama <b>71.11</b>"],
+            ["7", "Kıymetli metal döküntü, hurda veya geri kazanım artığı mı?", "<b>71.12</b> (elektronik kart artığı <b>85.49</b>)"],
+            ["8", "Kıymetli metal (önemsiz unsur değil) içeren kişisel süs veya üstte taşınan kişisel eşya mı?", "<b>71.13</b>"],
+            ["9", "Kıymetli metalden sofra, tuvalet, büro, sigara, dekor veya dini eşya mı?", "<b>71.14</b>"],
+            ["10", "Kıymetli metalden diğer eşya mı (pota, katalizör tülü, anot, el çantası vb.)?", "<b>71.15</b>"],
+            ["11", "İnci veya taştan eşya; kıymetli metal yok ya da önemsiz mi?", "<b>71.16</b>"],
+            ["12", "Bunların hiçbirini içermeyen kişisel küçük süs mü? Metal para mı?", "<b>71.17</b> / <b>71.18</b> (koleksiyon <b>97.05</b>)"],
+        ],
+        "dipnot": "* Not 3(p): 100 yaşı aşan antikalar 97.06’ya gider; ancak tabii veya kültür incileri ile kıymetli ve yarı kıymetli taşlar eskiliklerine bakılmaksızın Fasıl 71’de kalır.",
+    },
+    "pozisyon_haritasi": [
+        ["71.01", "Tabii ve kültür incileri", "Monte edilmemiş; geçici ipe dizili olabilir", "Kültür incisi, delinmiş inci"],
+        ["71.02", "Elmaslar", "İşlenmiş olsun olmasın; mıhlanmamış", "Ham elmas, takılmamış pırlanta"],
+        ["71.03", "Diğer kıymetli ve yarı kıymetli taşlar", "Fasıl sonundaki liste; monte edilmemiş", "Yakut, safir, zümrüt, akik, turkuaz"],
+        ["71.04", "Sentetik veya terkip taşlar", "Kimyasal üretim; piezo-elektrik kuvars dahil", "Kübik zirkonya, sentetik yakut"],
+        ["71.05", "Taş toz ve pudraları", "Tabii veya sentetik", "Elmas tozu, lal taşı pudrası"],
+        ["71.06", "Gümüş", "İşlenmemiş, yarı işlenmiş, pudra; yaldızlı gümüş dahil", "Gümüş külçe, tel, varak"],
+        ["71.07", "Gümüş kaplamalı adi metaller", "Mekanik kaplama; yarı işlenmiş", "Gümüş kaplama bakır levha"],
+        ["71.08", "Altın", "İşlenmemiş, yarı işlenmiş, pudra", "Altın külçe, paladyumsuz beyaz altın"],
+        ["71.09", "Altın kaplamalı gümüş veya adi metal", "Mekanik kaplama; yarı işlenmiş", "Altın kaplama pirinç şerit"],
+        ["71.10", "Platin (platin grubu)", "Platin, paladyum, rodyum, iridyum, osmiyum, rutenyum", "Paladyum levha, paladyumlu beyaz altın"],
+        ["71.11", "Platin kaplamalı metaller", "Mekanik kaplama; yarı işlenmiş", "Platin kaplama tungsten tel"],
+        ["71.12", "Kıymetli metal döküntü ve artıkları", "Geri kazanıma uygun; Not 8", "Kuyumcu talaşı, gümüşlü film külü"],
+        ["71.13", "Mücevherci eşyası", "Kişisel küçük süs ve üstte taşınan eşya", "Altın yüzük, gümüş sigara tabakası"],
+        ["71.14", "Kuyumcu eşyası", "Sofra, tuvalet, büro, sigara, dekor, dini", "Gümüş çatal-bıçak, gümüş şamdan"],
+        ["71.15", "Kıymetli metalden diğer eşya", "Teknik ve laboratuvar eşyası; katalizör; anot", "Platin pota, platin katalizör tülü"],
+        ["71.16", "İnci veya taştan eşya", "Kıymetli metal yok ya da önemsiz", "İnci kolye, akik havan, yeşim biblo"],
+        ["71.17", "Taklit mücevherci eşyası", "İnci, taş, kıymetli metal içermeyen kişisel süs", "Bijuteri kolye, adi metal kol düğmesi"],
+        ["71.18", "Metal paralar", "Resmi tedavül; koleksiyon hariç", "Tedavüldeki ve tedavülden kalkmış paralar"],
+    ],
+    "notlar": [
+        ["Bölüm XIV", "Bu bölümün ayrı bir bölüm notu yoktur; bölüm yalnız Fasıl 71’den oluşur ve kurallar Fasıl 71 notlarındadır."],
+        ["Fasıl 71 Not 1", "VI. Bölüm Not 1(a) hükmü saklı kalmak ve istisnalar hariç olmak üzere, kısmen veya tamamen (a) tabii veya kültür incisinden, kıymetli veya yarı kıymetli taşlardan (tabii, sentetik veya terkip yoluyla elde edilmiş) veya (b) kıymetli metallerden ya da kıymetli metallerle kaplanmış metallerden yapılmış eşya bu fasıldadır."],
+        ["Fasıl 71 Not 2", "(A) 71.13, 71.14 ve 71.15, kıymetli metalin veya kıymetli metal kaplamanın yalnız küçük süs ve teferruat (inisyal, marka, bilezik halkası, kenar zırhı gibi) basit ve önemsiz unsur olarak yer aldığı eşyayı kapsamaz; bunlara Not 1(b) uygulanmaz. (B) 71.16, kıymetli metal veya kıymetli metal kaplama metal içeren eşyayı kapsamaz (basit ve önemsiz unsur olanlar hariç)."],
+        ["Fasıl 71 Not 3", "Fasıl dışı: (a) kıymetli metal amalgamları ve kolloidal kıymetli metaller (28.43); (b) cerrahi dikiş için steril malzeme, diş dolguları ve Fasıl 30 eşyası; (c) Fasıl 32 eşyası (sıvı cilalar gibi); (d) destekli katalizörler (38.15); (e) 42. Fasıl Not 3(B)’deki 42.02 ve 42.03 eşyası; (f) 43.03 ve 43.04 eşyası; (g) XI. Bölüm eşyası; (h) Fasıl 64 ve 65 eşyası; (ij) Fasıl 66 eşyası; (k) taş tozu içeren aşındırıcılar (68.04, 68.05, Fasıl 82), iş gören kısmı taştan Fasıl 82 eşyası, XVI. Bölüm makine ve aksamı (tamamen taştan eşya ve parçaları bu fasılda kalır; pikap iğnesi için monte edilmemiş safir ve elmas 85.22); (l) Fasıl 90, 91 ve 92 eşyası; (m) silahlar (Fasıl 93); (n) 95. Fasıl Not 2 kapsamındaki eşya; (o) 96. Fasıl Not 4 gereği Fasıl 96’daki eşya; (p) orijinal heykeller (97.03), koleksiyon eşyası (97.05) ve 100 yaşı aşan antikalar (97.06) – ancak inciler ile kıymetli ve yarı kıymetli taşlar bu fasılda kalır."],
+        ["Fasıl 71 Not 4", "(A) “Kıymetli metal”: gümüş, altın ve platin. (B) “Platin”: platin, iridyum, osmiyum, paladyum, rodyum ve rutenyum. (C) “Kıymetli veya yarı kıymetli taşlar” tabiri 96. Fasıl Not 2(b)’deki maddeleri (kehribar, lületaşı, bunların aglomereleri, siyah kehribar ve siyah kehribar yerine kullanılan mineral maddeler) kapsamaz."],
+        ["Fasıl 71 Not 5", "İçindeki herhangi bir kıymetli metal ağırlıkça en az <b>%2</b> olan alaşımlar (fırınlanmış alaşımlar ve metallerin birbirleriyle bileşimleri dahil) kıymetli metal alaşımıdır: (a) %2 veya fazla platin → platin alaşımı; (b) %2 veya fazla altın içerip platin içermeyen veya %2’den az platin içeren → altın alaşımı; (c) %2 veya fazla gümüş içeren diğer alaşımlar → gümüş alaşımı."],
+        ["Fasıl 71 Not 6", "Aksine hüküm yoksa tarifede kıymetli metale yapılan atıf, Not 5’e uygun alaşımlarını da kapsar; ancak kıymetli metallerle kaplama metalleri ve kıymetli metalle yaldızlı adi metalleri veya metal olmayan maddeleri kapsamaz."],
+        ["Fasıl 71 Not 7", "“Kıymetli metallerle kaplama metal” (tarifenin her yerinde): esası metal olup bir veya daha fazla yüzüne lehim, sert lehim, kaynak, sıcak haddeleme veya benzeri mekanik usulle kıymetli metal kaplanmış eşya. Metinde aksi belirtilmedikçe kıymetli metal kakmalı adi metal eşyayı da kapsar."],
+        ["Fasıl 71 Not 8", "VI. Bölüm Not 1(a) saklı kalmak üzere, 71.12’deki tanıma uyan eşya yalnız bu pozisyonda sınıflandırılır, başka pozisyona giremez."],
+        ["Fasıl 71 Not 9", "71.13 “mücevherci eşyası”: (a) kişisel küçük süs eşyası (yüzük, bilezik, kolye, broş, küpe, saat zinciri, pandantif, kravat iğnesi, kol düğmesi, elbise düğmesi, dini veya diğer madalyon ve nişanlar); (b) cepte, el çantasında veya üstte taşınan kişisel eşya (sigara tabakası, enfiye kutusu, şeker veya hap kutusu, pudra kutusu, tesbih). Bunlar inci, taş, kaplumbağa kabuğu, sedef, fildişi, kehribar, oltu taşı veya mercanla donatılmış olabilir."],
+        ["Fasıl 71 Not 10", "71.14 “kuyumcu eşyası”: süs eşyası, sofra eşyası, tuvalet eşyası, sigara içenlere ait gereçler ve evlerde, bürolarda veya dini amaçlarla kullanılan diğer eşya."],
+        ["Fasıl 71 Not 11", "71.17 “taklit mücevher”: Not 9(a)’daki türden (96.06 düğmeleri ve 96.15 tarak, saç tokası vb. hariç), inci, kıymetli veya yarı kıymetli taş ya da (önemsiz teferruat dışında) kıymetli metal veya kıymetli metal kaplama metal içermeyen eşya. Not 9(b)’deki sigara tabakası, pudra kutusu gibi eşya taklit mücevher sayılmaz."],
+        ["Genel Açıklamalar", "Platin, altın ve gümüşün her biri %2’nin altındaysa alaşım adi metal alaşımıdır (Bölüm XV). Elektroliz (galvanoplasti), buharla tortullanma, püskürtme veya tuz çözeltisine daldırma ile kıymetli metal kaplanmış adi metaller, kaplama kalınlığına bakılmaksızın kendi adi metal fasıllarında kalır. Kıymetli metal kakmalı adi metal (Şam işi) kaplama metal eşya sayılır. Hariç: radyoaktif izotoplar (iridyum 192) 28.44; diş doldurma alaşımları 30.06. Kıymetli metali yalnız monogram gibi önemsiz süs olan bıçaklar Fasıl 82’de, porselen ve cam sofra eşyası Fasıl 69–70’te kalır."],
+        ["71.01 – 71.04 Açıklama Notları", "Taşıma kolaylığı için geçici olarak ipe dizilmiş, tasnif edilmemiş inci ve taşlar 71.01–71.04’te; mıhlanmış, takılmış veya kalıcı olarak dizilmiş olanlar 71.13, 71.14 veya 71.16’da. Taklit inciler: plastik 39.26, cam 70.18, mum 96.02. Sedef: ham 05.08, işlenmiş 96.01. Hazır eşya haline gelmiş taşlar (akik havan, yeşim biblo) 71.16. Steatit 25.26 veya 68.02; siyah kehribar 25.30 veya 96.02; cam taklit taşlar 70.18. Kübik zirkonya ve sentetik mozanit 71.04."],
+        ["71.05 – 71.12 Açıklama Notları", "Suni korindon pudrası 28.18’dedir. Altın-bakır-nikel “beyaz altın” 71.08’de; %2 veya fazla paladyum içeren beyaz altın 71.10’da. Altın veya platin yaldızlı gümüş 71.06’da kalır; kıymetli metalle kaplanmış gümüş 71.06 dışındadır. 71.12 yalnız geri kazanıma veya kimyasal üretime elverişli döküntü ve hurdalar ile kıymetli metal içeren küller, fotoğraf artıkları, elektrolitik balçık vb. içindir; tamirle kullanılabilecek eşya hurda değildir; değerli metal içeren elektronik devre kartı artıkları 85.49’dadır."],
+        ["71.13 – 71.18 Açıklama Notları", "71.13 dışı: gözlükler ve çerçeveleri (Fasıl 90), saatler ve kol saati bilezikleri (Fasıl 91), dolma kalem ve çakmak gibi Fasıl 96 eşyası, 100 yaşı aşan mücevher (97.06). Altın kopçalı inci kolye 71.16, altın klipsli inci küpe 71.13. 71.17 dışı: 83.08 tokalar, fermuarlar, kopçalar. 71.18: hükümet kontrolünde resmi tedavül için basılan paralar (kıymetli metalden olanlar ve tedavülden kalkmışlar dahil); koleksiyon niteliğindekiler 97.05; broş vb. haline getirilmiş paralar 71.13 veya 71.17; para tarzında basılmış madalyalar 71.13, 71.14, 71.17 veya 83.06."],
+    ],
+    "sinir_komsulari": [
+        ["Kıymetli metal amalgamı, kolloidal altın", "28.43", "Fasıl 71 Not 3(a)"],
+        ["Radyoaktif iridyum 192", "28.44", "Fasıl 71 Genel Açıklamalar"],
+        ["Diş dolgusu, diş doldurma alaşımı", "Fasıl 30 / 30.06", "Not 3(b)"],
+        ["Mesnetli (destekli) platin katalizör", "38.15", "Not 3(d); ızgara veya tül şeklindeki platin katalizör ise 71.15"],
+        ["Suni korindon pudrası", "28.18", "71.05 hariç tutması"],
+        ["Camdan taklit inci ve taklit taş", "70.18", "71.01 ve 71.03 hariç tutmaları"],
+        ["Plastikten taklit inci", "39.26", "71.01 Açıklama Notu"],
+        ["Ham sedef / işlenmiş sedef", "05.08 / 96.01", "71.01 Açıklama Notu"],
+        ["Kehribar, lületaşı, siyah kehribar", "96.02 / 25.30", "Not 4(C): kıymetli taş sayılmaz"],
+        ["Elektroliz yoluyla altın kaplanmış pirinç levha", "Fasıl 74", "Mekanik kaplama değildir; Genel Açıklamalar"],
+        ["Altın kasalı kol saati", "Fasıl 91", "Not 3(l)"],
+        ["Kıymetli metal içeren elektronik kart artığı", "85.49", "71.12 hariç tutması"],
+        ["Pikap iğnesi için monte edilmemiş safir", "85.22", "Not 3(k)"],
+        ["Koleksiyon parası; 100 yaşı aşan mücevher", "97.05 / 97.06", "Not 3(p); 71.13 ve 71.18 Açıklama Notları"],
+        ["Adi metalden fermuar, toka, kopça", "83.08", "71.17 hariç tutması"],
+    ],
+    "tuzaklar": [
+        "<b>Platin bir aile adıdır.</b> Fasıl 71’de “platin”: platin, paladyum, rodyum, iridyum, osmiyum ve rutenyum. Berilyum, kadmiyum, kobalt, tantal gibi metaller adi metaldir (Bölüm XV Not 3).",
+        "<b>%2 kuralında sıra P → A → G.</b> %2 platin içeren alaşım, %75 altın içerse bile platin alaşımıdır (71.10). Üç kıymetli metalin her biri %2’nin altındaysa toplamları yüksek olsa bile alaşım adi metal alaşımıdır.",
+        "<b>Kaplama yöntemi faslı belirler.</b> Lehim, kaynak, sıcak haddeleme gibi mekanik kaplama → 71.07, 71.09, 71.11; elektroliz, buhar, püskürtme veya daldırma ile kaplama → adi metalin faslı, kaplama kalınlığı önemsiz.",
+        "<b>Yaldızlı gümüş ile kaplamalı gümüş farklıdır.</b> Altın veya platin yaldızlı gümüş 71.06’da kalır; mekanik usulle altın kaplanmış gümüş 71.09’dadır.",
+        "<b>Basit ve önemsiz unsur sınıflandırmayı değiştirmez.</b> Altın monogramlı adi metal sigara tabakası adi metal eşyadır; altın kopçalı inci kolye 71.16’dadır; ama altın klipsli inci küpe 71.13’tür.",
+        "<b>Taklit mücevher dar tanımlıdır.</b> Yalnız Not 9(a)’daki kişisel küçük süs eşyası taklit mücevher olabilir; adi metal pudra kutusu veya sigara tabakası taklit mücevher değildir. Düğmeler 96.06’da, saç tokaları ve süs tarakları 96.15’tedir.",
+        "<b>Antika inci yine Fasıl 71’dedir.</b> 100 yaşı aşan eşya 97.06’ya gider; fakat inciler ve kıymetli taşlar Not 3(p) gereği bu fasılda kalır.",
+        "<b>Geçici dizme mi, kalıcı dizme mi?</b> Taşıma kolaylığı için geçici olarak ipe dizilmiş inci 71.01’de; tasnif edilip mücevher olarak kullanıma hazırlanmış dizi 71.16’dadır.",
+        "<b>Sentetik taş taklit değildir.</b> Kübik zirkonya ve sentetik yakut 71.04’te; camdan taklit taş (strass) 70.18’dedir.",
+        "<b>Tabaka mı kutu mu?</b> Cepte taşınan gümüş sigara tabakası 71.13 (mücevherci eşyası); masada duran gümüş sigara ve puro kutusu 71.14 (kuyumcu eşyası).",
+    ],
+    "hafiza": {
+        "kanca": "Çift saf, tek kaplı: 06-07 · 08-09 · 10-11 — ve PAG",
+        "aciklama": "Gümüş <b>06</b> / gümüş kaplama <b>07</b>, altın <b>08</b> / altın kaplama <b>09</b>, platin <b>10</b> / platin kaplama <b>11</b>: çift numara saf metal, ardından gelen tek numara onun kaplamalısıdır. Alaşımda %2 eşiği <b>P</b>latin → <b>A</b>ltın → <b>G</b>ümüş sırasıyla aranır (PAG). Fasıl üç katlı bir kuyumcu dükkânıdır: zemin kat taşlar (01–05), orta kat külçe ve levhalar (06–12), üst kat vitrin eşyası (13–18).",
+    },
+    "sinav_odagi": [
+        "“Platin tabirine hangisi girmez?” kalıbı birkaç kez sorulmuştur; doğru cevap berilyum veya kadmiyum gibi adi metallerdir (Not 4(B)).",
+        "Kıymetli ve yarı kıymetli taşların ayırt edilmesi: akik kıymetli taş sayılırken kehribar, lületaşı ve arduvazın sayılmaması; listede bulunmayan taş adlarının çeldirici yapılması.",
+        "“Mücevherci eşyası” tanımı (Not 9): çatal-bıçağın mücevherci değil kuyumcu eşyası olması; yüzük, kolye, kravat iğnesi ve tesbihin mücevherci eşyası sayılması.",
+        "Yüz yılı aşkın ve geçici olarak ipe dizilmiş tabii incilerin 97. fasıla değil 71. fasıla girmesi (Not 3(p)).",
+        "Bölüm yapısı ve bağlantılı kurallar: XIV. Bölümün kıymetli taşları kapsaması; kolye kutuları gibi mahfazaların GYK 5(a) ile eşyayla birlikte sınıflandırılması.",
+    ],
+    "cikmis_ornekler": [
+        {
+            "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 71. Faslı anlamında “platin” kapsamına <b>girmez</b>?",
+            "secenekler": ["Rodyum", "İridyum", "Osmiyum", "Paladyum", "Kadmiyum"],
+            "cevap": "E",
+            "aciklama": "Fasıl 71 Not 4(B)’ye göre “platin” tabiri platin, iridyum, osmiyum, paladyum, rodyum ve rutenyumu kapsar. Kadmiyum, Bölüm XV Not 3’te sayılan bir adi metaldir.",
+        },
+        {
+            "soru": "Taşınmasında kolaylık sağlamak için geçici bir ipe dizilmiş 150 yıllık tabii incilerin sınıflandırılması gereken fasıl aşağıdakilerden hangisidir?",
+            "secenekler": ["25", "26", "71", "97"],
+            "cevap": "C",
+            "aciklama": "Not 3(p) 100 yaşı aşan antikaları 97.06’ya gönderse de tabii veya kültür incilerinin bu fasılda kalacağını açıkça belirtir; geçici olarak ipe dizilmiş inciler 71.01’dedir.",
+        },
+    ],
+    "ozet": [
+        "Not 1: inci, kıymetli taş veya kıymetli metal (kaplama dahil) içeren eşya Fasıl 71’dedir; önce Not 3 istisnaları elenir.",
+        "Kıymetli metal: gümüş, altın, platin; “platin” altı metali kapsar.",
+        "%2 kuralı P → A → G; üçü de %2’nin altındaysa adi metal alaşımı.",
+        "Mekanik kaplama Fasıl 71; galvanik kaplama adi metalin faslı.",
+        "Kıymetli metal yalnız önemsiz süsse sınıflandırma değişmez (Not 2).",
+        "71.13 kişisel süs ve üstte taşınan eşya; 71.14 sofra-dekor; 71.16 inci ve taş eşya; 71.17 bunları içermeyen kişisel süs; 71.18 tedavül parası.",
+    ],
+}
+
+S = []
+
+# ---------- Eşya → 4’lü pozisyon (5) ----------
+S.append(soru(ESYA,
+    "Tarife Cetveline göre, ağırlıkça %3 platin, %75 altın ve kalanı bakırdan oluşan alaşımdan yarı işlenmiş tel hangi pozisyonda sınıflandırılır?",
+    "71.10", ["71.08", "71.11", "71.09", "74.08"], "B",
+    "Fasıl 71 Not 5(a)’ya göre ağırlıkça %2 veya daha fazla platin içeren alaşım, altın oranı ne kadar yüksek olursa olsun platin alaşımıdır ve yarı işlenmiş hali 71.10’dadır. Altın alaşımı (71.08) sayılması için platinin %2’den az olması gerekir. 71.09 ve 71.11 kaplamalı metalleri, 74.08 bakır teli kapsar.",
+    "Fasıl 71 Not 5(a) ve Not 6; 71.10 Açıklama Notu."))
+
+S.append(soru(ESYA,
+    "Tarife Cetveline göre, bakır levha üzerine sıcak haddeleme yoluyla gümüş tabakası kaplanarak elde edilmiş yarı işlenmiş şerit hangi pozisyonda yer alır?",
+    "71.07", ["71.06", "74.09", "71.11", "71.15"], "D",
+    "Sıcak haddeleme Not 7’de sayılan mekanik kaplama usullerindendir; bu yolla gümüş kaplanmış adi metal yarı işlenmiş halde 71.07’dedir. Not 6 gereği kaplamalı metal gümüş (71.06) sayılmaz. Gümüş elektrolizle kaplanmış olsaydı ürün bakır levha olarak Fasıl 74’te kalırdı.",
+    "Fasıl 71 Not 6 ve Not 7; 71.07 Açıklama Notu; Fasıl 71 Genel Açıklamalar."))
+
+S.append(soru(ESYA,
+    "Tarife Cetveline göre, akik taşından yapılmış havan ve havan tokmağı hangi pozisyonda sınıflandırılır?",
+    "71.16", ["71.03", "68.15", "71.14", "71.13"], "A",
+    "Hazır eşya haline getirilmiş kıymetli veya yarı kıymetli taşlar (akik havan ve tokmakları, yeşim biblolar vb.) 71.03 dışındadır ve kıymetli metal içermedikleri için 71.16’dadır. 71.03 yalnız monte edilmemiş, eşya haline gelmemiş taşları kapsar; 71.13 ve 71.14 kıymetli metal içeren eşya içindir.",
+    "71.03 Açıklama Notu; 71.16 Açıklama Notu (B)."))
+
+S.append(soru(ESYA,
+    "Tarife Cetveline göre, kıymetli metal bileşikleri içeren fotoğrafik filmlerin yakılarak yok edilmesinden elde edilen ve esas olarak kıymetli metallerin geri kazanılmasında kullanılan küller hangi pozisyonda yer alır?",
+    "71.12", ["26.20", "71.06", "85.49", "38.25"], "E",
+    "71.12, kıymetli metal veya bileşiklerini içeren ve esas olarak kıymetli metal geri kazanımında kullanılan döküntü ve artıkları kapsar; fotoğrafik film ve basılı devrelerin yakılmasından çıkan küller açıklama notunda açıkça sayılmıştır. Not 8 gereği bu tanıma uyan eşya başka pozisyonda sınıflandırılamaz. 85.49 ise kıymetli metal içeren elektronik devre kartı artıklarına mahsustur.",
+    "Fasıl 71 Not 8; 71.12 Açıklama Notu (A)."))
+
+S.append(soru(ESYA,
+    "Tarife Cetveline göre, gümüşten yapılmış, kıymetli taş içermeyen, cepte taşınan türden sigara tabakası hangi pozisyonda sınıflandırılır?",
+    "71.13", ["71.14", "71.15", "42.02", "96.14"], "C",
+    "Not 9(b)’ye göre cepte, el çantasında veya üstte taşınan kişisel eşya (sigara tabakası, pudra kutusu, enfiye kutusu) mücevherci eşyasıdır ve kıymetli metalden olduğunda 71.13’tedir. 71.14’teki sigara takımları masada kullanılan sigara ve puro kutuları ile kül tablalarıdır. 42.02 deri, plastik, mensucat gibi maddelerden mahfazaları; 96.14 pipo ve ağızlıkları kapsar.",
+    "Fasıl 71 Not 9(b) ve Not 10; 71.13 ve 71.14 Açıklama Notları."))
+
+# ---------- Olumsuz teşhis (4) ----------
+S.append(soru(OLUMSUZ,
+    "Aşağıdakilerden hangisi Tarife Cetvelinin 71. faslında <b>sınıflandırılmaz</b>?",
+    "Kıymetli metallerin amalgamları",
+    ["Tasnif edilmemiş ham elmas", "Mekanik usulle altın kaplanmış, yarı işlenmiş pirinç tel",
+     "Platinden ızgara şeklinde katalizör", "İşlenmiş, ipe dizilmemiş kültür incisi"], "D",
+    "Kıymetli metal amalgamları ve kolloidal kıymetli metaller Not 3(a) gereği 28.43’tedir. Ham elmas 71.02’de, mekanik altın kaplamalı pirinç tel 71.09’da, ızgara veya tül şeklindeki platin katalizör 71.15’te, kültür incisi 71.01’dedir. Tuzak: mesnet üzerine yerleştirilmiş (destekli) katalizörler 38.15’e giderken ızgara şeklindeki platin katalizör Fasıl 71’de kalır.",
+    "Fasıl 71 Not 3(a) ve 3(d); 71.15 Açıklama Notu."))
+
+S.append(soru(OLUMSUZ,
+    "Fasıl 71 Not 9’a göre aşağıdakilerden hangisi 71.13 pozisyonundaki “mücevherci eşyası” kapsamına <b>girmez</b>?",
+    "Gümüşten çatal-bıçak takımı",
+    ["Altından kol düğmesi", "Gümüşten pudra kutusu", "Altından tesbih", "Platinden kravat iğnesi"], "B",
+    "Çatal-bıçak gibi sofra eşyası Not 10 gereği kuyumcu eşyasıdır ve 71.14’tedir. Kol düğmesi ve kravat iğnesi Not 9(a)’daki kişisel küçük süs eşyası, pudra kutusu ve tesbih ise Not 9(b)’deki üstte taşınan kişisel eşyadır; kıymetli metalden olduklarında hepsi 71.13’tedir.",
+    "Fasıl 71 Not 9 ve Not 10."))
+
+S.append(soru(OLUMSUZ,
+    "Aşağıdakilerden hangisi 71.17 pozisyonunda taklit mücevherci eşyası olarak <b>sınıflandırılmaz</b>?",
+    "Adi metalden, taş içermeyen pudra kutusu",
+    ["Anodlanmış alüminyum telden yarı tamamlanmış küpe halkası", "Adi metalden, cam boncuklu kolye",
+     "Plastikten bilezik", "Adi metalden kol düğmesi"], "E",
+    "Not 11’e göre taklit mücevher yalnız Not 9(a)’daki kişisel küçük süs eşyası niteliğindeki ürünleri kapsar. Pudra kutusu, sigara tabakası gibi Not 9(b) eşyası taklit mücevher sayılmaz (71.17 açıklama notu). Yarı tamamlanmış küpe halkaları ile adi metal veya plastikten kolye, bilezik ve kol düğmeleri 71.17’dedir.",
+    "Fasıl 71 Not 9 ve Not 11; 71.17 Açıklama Notu."))
+
+S.append(soru(OLUMSUZ,
+    "Fasıl 71 Not 4(C) uyarınca aşağıdakilerden hangisi “kıymetli veya yarı kıymetli taş” <b>sayılmaz</b>?",
+    "Kehribar", ["Akik", "Turkuaz", "Zirkon", "Yeşim"], "A",
+    "Not 4(C), 96. Fasıl Not 2(b)’deki maddeleri (kehribar, lületaşı, bunların aglomereleri, siyah kehribar ve benzeri mineral maddeler) kıymetli veya yarı kıymetli taş tanımının dışında bırakır; bunlar yontulmaya elverişli maddeler olarak Fasıl 96’dadır. Akik, turkuaz, zirkon ve yeşim 71.03’e ekli taş listesinde yer alır.",
+    "Fasıl 71 Not 4(C); 96. Fasıl Not 2(b); 71.03 pozisyonu taş listesi."))
+
+# ---------- Farklı/aynı pozisyon veya fasıl (4) ----------
+S.append(soru(FARKLI,
+    "Aşağıdakilerden hangisi diğerlerinden <b>farklı</b> bir fasılda yer alır?",
+    "Altın kasalı kol saati",
+    ["Yakuttan kadeh", "Kıymetli metal içermeyen kültür incisi kolye", "Gümüşten şamdan", "Platinden laboratuvar potası"], "C",
+    "Not 3(l) gereği Fasıl 91 eşyası (saatler) kıymetli metal içerse de Fasıl 71 dışındadır. Yakuttan kadeh ve kıymetli metalsiz inci kolye 71.16’da, gümüş şamdan kuyumcu eşyası olarak 71.14’te, platin pota teknik ve laboratuvar eşyası olarak 71.15’tedir.",
+    "Fasıl 71 Not 3(l); 71.14, 71.15 ve 71.16 Açıklama Notları."))
+
+S.append(soru(FARKLI,
+    "Aşağıdaki taşlardan hangisi diğerlerinden <b>farklı</b> bir pozisyonda yer alır?",
+    "İşlenmiş, takılmamış kübik zirkonya",
+    ["İşlenmiş, mıhlanmamış yakut", "Ham zümrüt", "Kesilmiş, takılmamış ametist",
+     "Taşıma kolaylığı için geçici olarak ipe dizilmiş, tasnif edilmemiş turkuaz"], "E",
+    "Kübik zirkonya, açıklama notunda açıkça sayılan sentetik taşlardandır ve 71.04’tedir. Yakut, zümrüt, ametist ve turkuaz tabii kıymetli veya yarı kıymetli taş olarak, geçici olarak ipe dizilmiş olsalar bile 71.03’te kalır.",
+    "71.03 ve 71.04 Açıklama Notları."))
+
+S.append(soru(FARKLI,
+    "Aşağıdaki eşya çiftlerinden hangisinde her iki eşya da <b>aynı</b> pozisyonda yer alır?",
+    "Kopçası altından kültür incisi kolye – hiç kıymetli metal içermeyen kültür incisi kolye",
+    ["Altın klipsli inci küpe – kopçası altından inci kolye",
+     "Elektroliz yoluyla altın kaplanmış pirinç levha – sıcak haddelemeyle altın kaplanmış pirinç levha",
+     "Elmas tozu – işlenmemiş sentetik elmas",
+     "Tedavülden kalkmış metal para – koleksiyon niteliğindeki metal para"], "B",
+    "Altın kopça inci kolyede basit ve önemsiz unsurdur; Not 2(B) ve açıklama notu gereği her iki kolye de 71.16’dadır. Altın klipsli küpede kıymetli metal önemsiz değildir (71.13). Galvanik kaplamalı levha Fasıl 74’te, mekanik kaplamalı levha 71.09’da; elmas tozu 71.05’te, sentetik elmas 71.04’te; koleksiyon parası 97.05’te, tedavülden kalkmış para 71.18’dedir.",
+    "Fasıl 71 Not 2(B) ve Not 7; 71.16 ve 71.18 Açıklama Notları."))
+
+S.append(soru(FARKLI,
+    "Aşağıdaki metal paralardan ve paradan yapılmış eşyadan hangisi diğerlerinden <b>farklı</b> bir pozisyonda yer alır?",
+    "Broş haline getirilmiş altın para",
+    ["Tedavülde olan bakır-nikel madeni para",
+     "Tedavülden kaldırılmış fakat yasal amaçlarla kullanımda olan gümüş para",
+     "Başka bir ülkede tedavüle sokulmak üzere basılmış metal para",
+     "Genel satış için takım halinde paketlenmiş, ülke içinde tedavüldeki metal paralar"], "D",
+    "Broş, kravat iğnesi gibi kişisel ziynet eşyası haline sokulmuş metal paralar 71.18 dışındadır; altından olduğu için 71.13’tedir. Tedavüldeki, tedavülden kaldırılmış ama yasal kullanımı süren, başka ülke için basılmış ve takım halinde satışa sunulan paralar 71.18’dedir.",
+    "71.18 Açıklama Notu, hariç tutma (b); 71.13 Açıklama Notu."))
+
+# ---------- Fasıl notu · Tanım/Eşik (4) ----------
+S.append(soru(TANIM,
+    "Ağırlıkça %1,5 platin, %1,8 altın, %1,9 gümüş ve kalanı bakırdan oluşan bir alaşım Tarife Cetveline göre nasıl sınıflandırılır?",
+    "Adi metal (bakır) alaşımı olarak XV. Bölümde",
+    ["Platin alaşımı olarak 71.10’da", "Altın alaşımı olarak 71.08’de", "Gümüş alaşımı olarak 71.06’da",
+     "Kıymetli metallerin toplamı %2’yi aştığı için altın alaşımı olarak 71.08’de"], "A",
+    "Not 5 eşiği her kıymetli metal için ayrı ayrı uygulanır: platin, altın ve gümüşün hiçbiri ağırlıkça %2’ye ulaşmadığından alaşım kıymetli metal alaşımı değildir. Fasıl 71 Genel Açıklamalarına göre bu tür alaşımlar adi metal alaşımıdır; Bölüm XV Not 5 gereği ağırlıkça üstün metal bakır olduğundan bakır alaşımı sayılır. Toplamın %2’yi aşması önemsizdir.",
+    "Fasıl 71 Not 5; Fasıl 71 Genel Açıklamalar (D); Bölüm XV Not 5."))
+
+S.append(soru(TANIM,
+    "Fasıl 71 Not 4(B)’ye göre “platin” tabiri aşağıdaki metal gruplarından hangisini kapsar?",
+    "Platin, iridyum, osmiyum, paladyum, rodyum, rutenyum",
+    ["Platin, paladyum, rodyum, kobalt, nikel, rutenyum", "Platin, altın, gümüş",
+     "Platin, iridyum, osmiyum, berilyum, kadmiyum", "Platin, paladyum, titanyum, tantal, rodyum"], "C",
+    "Not 4(B) “platin” tabirini platin, iridyum, osmiyum, paladyum, rodyum ve rutenyum olarak tanımlar. Kobalt, nikel, berilyum, kadmiyum, titanyum ve tantal Bölüm XV Not 3’te sayılan adi metallerdir. Platin, altın ve gümüş ise Not 4(A)’daki “kıymetli metal” tanımıdır.",
+    "Fasıl 71 Not 4(A) ve 4(B); Bölüm XV Not 3."))
+
+S.append(soru(TANIM,
+    "Tarife Cetveline göre “kıymetli metallerle kaplama metal” tabiri ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "Esası metal olup bir veya daha fazla yüzüne lehim, sert lehim, kaynak, sıcak haddeleme veya benzeri mekanik usulle kıymetli metal kaplanmış eşyadır.",
+    ["Elektroliz yoluyla belirli bir kalınlığın üzerinde altın kaplanmış adi metallerdir.",
+     "Kıymetli metalle yaldızlanmış metal olmayan maddeleri de kapsar.",
+     "Kıymetli metal kakmalı adi metalden eşyayı hiçbir durumda kapsamaz.",
+     "Kaplamanın ağırlığı eşyanın ağırlığının en az %2’si olmalıdır."], "E",
+    "Not 7 kaplama metali mekanik usullere bağlar ve metinde aksi belirtilmedikçe kıymetli metal kakmalı adi metal eşyayı da kapsar. Elektroliz, buharla tortullanma veya püskürtme ile kaplananlar kalınlığa bakılmaksızın adi metal fasıllarında kalır; Not 6 da yaldızlı metal olmayan maddeleri dışarıda bırakır. %2 eşiği kaplamalar için değil alaşımlar için (Not 5) geçerlidir.",
+    "Fasıl 71 Not 5, Not 6 ve Not 7; Fasıl 71 Genel Açıklamalar."))
+
+S.append(soru(TANIM,
+    "Fasıl 71 Not 10’a göre aşağıdakilerden hangisi 71.14 pozisyonundaki “kuyumcu eşyası” tabirine <b>dahil değildir</b>?",
+    "Kol düğmesi ve kravat iğnesi gibi kişisel küçük süs eşyası",
+    ["Süs eşyası", "Sofra ve tuvalet eşyası", "Sigara içenlere ait gereçler", "Dini amaçlarla kullanılan eşya"], "B",
+    "Not 10 kuyumcu eşyasını süs, sofra ve tuvalet eşyası, sigara gereçleri ile evlerde, bürolarda veya dini amaçlarla kullanılan eşya olarak tanımlar. Kol düğmesi ve kravat iğnesi Not 9(a)’daki kişisel küçük süs eşyasıdır ve mücevherci eşyası olarak 71.13’e girer.",
+    "Fasıl 71 Not 9(a) ve Not 10."))
+
+# ---------- Genel Yorum Kuralı (2) ----------
+S.append(soru(GYK,
+    "Altından bir kolye, kendisine göre şekil verilmiş, uzun süre kullanıma uygun ve normal olarak kolyeyle birlikte satılan kutusu içinde sunulmuştur. Kutunun kolyeyle birlikte 71.13 pozisyonunda sınıflandırılmasını sağlayan kural hangisidir?",
+    "GYK 5(a)", ["GYK 2(a)", "GYK 3(b)", "GYK 3(c)", "GYK 5(b)"], "D",
+    "GYK 5(a), belli bir eşyaya göre şekil verilmiş, uzun süre kullanıma uygun ve eşyayla birlikte sunulan kolye kutusu gibi mahfazaların eşyayla birlikte sınıflandırılacağını hükme bağlar; açıklama notunda örnek olarak mücevherat kapları (71.13) verilmiştir. 5(b) basit ambalaj malzemelerine, 3(b) takımlara ve bileşik eşyaya ilişkindir.",
+    "GYK 5(a) ve Açıklama Notu (II)(1)."))
+
+S.append(soru(GYK,
+    "Taşları henüz yuvasına takılmamış ve cilası tamamlanmamış, ancak yüzük şeklini almış altından yüzük taslağının 71.13 pozisyonunda sınıflandırılmasında hangi kurallar uygulanır?",
+    "GYK 1 ve 2(a)", ["GYK 1 ve 2(b)", "GYK 3(a)", "GYK 3(c)", "GYK 4"], "A",
+    "GYK 2(a), imali bitirilmemiş eşyanın, bitmiş eşyanın asli niteliğini taşıması şartıyla bitmiş eşya gibi sınıflandırılmasını sağlar; 71.13 açıklama notu da mücevherci eşyasının taslaklarını ve bitirilmemiş hallerini kapsar. 71.06 açıklama notu yüzük taslaklarını yarı işlenmiş kıymetli metal pozisyonlarından açıkça çıkarır. 2(b) karışım ve bileşik maddelere ilişkindir.",
+    "GYK 1 ve 2(a); 71.06 ve 71.13 Açıklama Notları."))
+
+# ---------- Eşleştirme / Boşluk doldurma (2) ----------
+S.append(soru(ESLES,
+    "Aşağıdaki işlenmemiş veya yarı işlenmiş ürünler ile pozisyonları hangi seçenekte doğru eşleştirilmiştir? I. Altın yaldızlı gümüş levha · II. Mekanik usulle altın kaplanmış bakır şerit · III. Mekanik usulle platin kaplanmış gümüş tel · IV. Mekanik usulle gümüş kaplanmış çelik levha — a) 71.06 · b) 71.07 · c) 71.09 · d) 71.11",
+    "I-a, II-c, III-d, IV-b",
+    ["I-c, II-a, III-d, IV-b", "I-a, II-b, III-c, IV-d", "I-d, II-c, III-a, IV-b", "I-a, II-c, III-b, IV-d"], "C",
+    "71.06 pozisyon metni altın veya platin yaldızlı gümüşü kapsar. Mekanik usulle altın kaplanmış gümüş veya adi metal 71.09’da, platin kaplanmış altın, gümüş veya adi metal 71.11’de, gümüş kaplanmış adi metal 71.07’dedir. Yaldızlı gümüş ile kaplamalı gümüşün karıştırılması tipik tuzaktır.",
+    "71.06, 71.07, 71.09 ve 71.11 pozisyon metinleri; Fasıl 71 Not 7."))
+
+S.append(soru(ESLES,
+    "“Kıymetli metal alaşımlarında önce ....., sonra ....., en son ..... aranır ve her biri için eşik ağırlıkça ..... dir.” Fasıl 71 Not 5’e göre bu cümledeki boşluklara sırasıyla hangisi gelmelidir?",
+    "Platin – altın – gümüş – %2",
+    ["Altın – platin – gümüş – %2", "Gümüş – altın – platin – %2", "Platin – altın – gümüş – %5", "Altın – gümüş – platin – %10"], "E",
+    "Not 5’e göre önce platine bakılır (%2 veya fazla platin → platin alaşımı); platin %2’den azsa altına (%2 veya fazla altın → altın alaşımı), o da sağlanmazsa gümüşe (%2 veya fazla gümüş → gümüş alaşımı) bakılır. Eşik her metal için ağırlıkça %2’dir.",
+    "Fasıl 71 Not 5."))
+
+# ---------- Çoktan-çoğa (I–IV) (2) ----------
+S.append(soru(COKLU,
+    "Aşağıdakilerden hangileri Fasıl 71 Not 3 uyarınca bu faslın <b>dışında kalır</b>? I. Kıymetli metallerden diş dolguları · II. Mesnet üzerine yerleştirilmiş (destekli) platin katalizörler · III. Yüz yılı aşkın eskilikteki tabii inciler · IV. Altın kasalı kol saatleri",
+    "I, II ve IV", ["I ve II", "II, III ve IV", "I ve III", "III ve IV"], "D",
+    "Diş dolguları Not 3(b) ile Fasıl 30’a, destekli katalizörler Not 3(d) ile 38.15’e, saatler Not 3(l) ile Fasıl 91’e gider. Not 3(p) 100 yaşı aşan antikaları 97.06’ya gönderse de tabii veya kültür incileri ile kıymetli taşların bu fasılda kalacağını açıkça belirtir.",
+    "Fasıl 71 Not 3(b), (d), (l) ve (p)."))
+
+S.append(soru(COKLU,
+    "Aşağıdaki ifadelerden hangileri doğrudur? I. Galvanik yolla altın kaplanmış bakır levha, kaplama kalınlığına bakılmaksızın bakır ürünü olarak sınıflandırılır. · II. Tarifede kıymetli metale yapılan atıf, kıymetli metallerle kaplama metalleri de kapsar. · III. Değerli metal içeren elektronik devre kartı artıkları 71.12’de değil 85.49’da yer alır. · IV. Mıhlanmış veya takılmış kıymetli taşlar her durumda 71.03’te kalır.",
+    "I ve III", ["I ve II", "II ve IV", "I, III ve IV", "Yalnız III"], "B",
+    "Galvanik kaplama Not 7 anlamında kaplama sayılmaz; ürün adi metalin faslında kalır (I doğru). Not 6, kıymetli metale yapılan atfın kaplama metalleri kapsamadığını söyler (II yanlış). 71.12 açıklama notu elektronik kart artıklarını 85.49’a gönderir (III doğru). Mıhlanmış veya takılmış taşlar 71.13, 71.14 veya 71.16’ya girer (IV yanlış).",
+    "Fasıl 71 Not 6 ve Not 7; 71.03 ve 71.12 Açıklama Notları."))
+
+# ---------- Senaryo (2) ----------
+S.append(soru(SENARYO,
+    "Bir ithalatçı; gövdesi gümüşten yapılmış, kapağı sedef ve küçük yakutlarla süslenmiş, evlerde masa üzerinde kullanılan bir puro kutusu ithal etmektedir. Tarife Cetveline göre bu eşya hangi pozisyonda sınıflandırılır?",
+    "71.14", ["71.13", "71.16", "71.15", "42.02"], "A",
+    "Masada kullanılan puro ve sigara kutuları, Not 10 ve açıklama notundaki sigara takımları arasında kuyumcu eşyası olarak 71.14’tedir; kuyumcu eşyası inci, kıymetli taş ve sedefle donatılmış olabilir. 71.13 cepte veya üstte taşınan tabakaları kapsar; 71.16 kıymetli metal içermeyen inci ve taş eşyası içindir.",
+    "Fasıl 71 Not 10; 71.14 Açıklama Notu (D)."))
+
+S.append(soru(SENARYO,
+    "Bir firma iki tür yarı işlenmiş “beyaz altın” levha ithal etmektedir: Birincisi ağırlıkça %75 altın, kalanı bakır ve nikel olup platin grubu metal içermemekte; ikincisi ağırlıkça %75 altın ve %10 paladyum içermektedir. Tarife Cetveline göre bu levhalar sırasıyla hangi pozisyonlarda sınıflandırılır?",
+    "71.08 – 71.10", ["71.08 – 71.08", "71.10 – 71.10", "71.10 – 71.08", "71.09 – 71.11"], "C",
+    "Altın-bakır-nikel beyaz altın, platin grubu metal içermeyen ve %2’den fazla altın içeren bir alaşım olarak 71.08’dedir. Paladyum Not 4(B) gereği “platin” sayıldığından %10 paladyumlu alaşım Not 5(a) uyarınca platin alaşımıdır; 71.08 açıklama notu da %2 veya fazla paladyum içeren beyaz altınları 71.10’a gönderir. 71.09 ve 71.11 kaplamalı metaller içindir.",
+    "Fasıl 71 Not 4(B) ve Not 5; 71.08 Açıklama Notu (4)."))
+
+obj["sorular"] = S
+
+if __name__ == "__main__":
+    kaydet(obj, 71)

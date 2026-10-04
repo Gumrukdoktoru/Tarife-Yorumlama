@@ -1,0 +1,693 @@
+{
+ "tur": "fasil",
+ "fasil": 91,
+ "baslik": "Saatler ve bunların aksam ve parçaları",
+ "bolum": "XVIII",
+ "oz": {
+  "vurgu": "Fasıl 91’de üç soru sorulur: Eşya üzerinde taşınan bir saat mi (91.01–91.02), sabit bir saat mi (91.03–91.05), yoksa saatle çalışan bir cihaz mı (91.06–91.07)? İçindeki makina Not 3 anlamında “saat makinası” mı (kalınlık ≤ 12 mm; genişlik, uzunluk veya çap ≤ 50 mm)? Gelen şey komple saat mi, yoksa makina, zarf, kayış ya da parça mı (91.08–91.14)?",
+  "maddeler": [
+   "Kol ve cep saatlerinde ölçüt zarftır: zarf tamamen kıymetli metalden veya kıymetli metalle kaplama metalden ise 91.01, diğer bütün zarflar (kıymetli metal kakmalı adi metal dahil) 91.02.",
+   "Masa, duvar ve çalar saatlerinde ölçüt makinadır: Not 3 ölçülerine uyan makina 91.03; sarkaçlı, büyük makinalı veya senkron motorlu saat 91.05. Taşıt, uçak, gemi ve uzay aracı alet tablosu saati ise makinasına bakılmaksızın 91.04.",
+   "Zaman kaydeden veya ölçen cihazlar (devam kaydedici, satranç saati, dakika sayacı) 91.06; belirli zamanda devre açıp kapayan zaman şalterleri 91.07. İkisinde de saat makinası veya senkron motor şarttır.",
+   "Ayrı gelen makinalar 91.08–91.10, zarflar 91.11 (kol-cep) ve 91.12 (diğer), kayışlar 91.13, diğer parçalar 91.14’tedir. Saat camı, saat zinciri ve genel kullanıma mahsus parçalar fasıl dışıdır; saat yayı ise 91.14’te kalır."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+  "satirlar": [
+   [
+    "1",
+    "Güneş saati, kum saati, zaman kadranı olmayan müzik kutusu, saat makinası olmayan oyuncak saat mi?",
+    "Maddesine göre · <b>92.08</b> · <b>95.03</b>"
+   ],
+   [
+    "2",
+    "Not 1’de hariç tutulan eşya mı? (saat camı, saat zinciri, genel kullanıma mahsus parça, bilyalı rulman)",
+    "Maddesine göre · <b>71.13</b>/<b>71.17</b> · Bölüm XV · <b>84.82</b>"
+   ],
+   [
+    "3",
+    "Taşıt, uçak, uzay aracı veya gemi alet tablosuna mahsus saat mi?",
+    "<b>91.04</b> (makina tipi ve kalınlığı önemsiz)"
+   ],
+   [
+    "4",
+    "Üzerinde taşınan saat mi? (kol, cep, kronograf, zaman ölçen sayaç)",
+    "Zarf tamamen kıymetli metal / kaplama <b>91.01</b> · diğer <b>91.02</b>"
+   ],
+   [
+    "5",
+    "Günün saatini gösteren masa, duvar veya çalar saat mi?",
+    "Not 3 makinası <b>91.03</b> · diğer makina <b>91.05</b>"
+   ],
+   [
+    "6",
+    "Saat makinası veya senkron motorla zaman kaydeden / ölçen cihaz mı?",
+    "<b>91.06</b> (makina ve motor yoksa Fasıl 90)"
+   ],
+   [
+    "7",
+    "Belirli zamanda elektrik devresini açıp kapayan cihaz mı?",
+    "<b>91.07</b>"
+   ],
+   [
+    "8",
+    "Zarfsız, komple ve birleştirilmiş makina mı?",
+    "Not 3 makinası <b>91.08</b> · diğer <b>91.09</b>"
+   ],
+   [
+    "9",
+    "Makina seti, tamamlanmamış makina veya taslak mı?",
+    "<b>91.10</b>"
+   ],
+   [
+    "10",
+    "Zarf veya zarf parçası mı?",
+    "Kol-cep saati <b>91.11</b> · diğer <b>91.12</b>"
+   ],
+   [
+    "11",
+    "Kayış, bant veya bilezik mi?",
+    "<b>91.13</b>* · diğer parça <b>91.14</b>"
+   ]
+  ],
+  "dipnot": "* Saatle birlikte gelen kayış (saate bağlı olsun olmasın) saatin pozisyonunda (91.01 / 91.02) kalır."
+ },
+ "pozisyon_haritasi": [
+  [
+   "91.01",
+   "Kıymetli metal zarflı kol, cep saatleri",
+   "Zarf tamamen kıymetli metal veya kaplama; inci, taşla birleşik olabilir",
+   "Altın zarflı kol saati, platin cep saati"
+  ],
+  [
+   "91.02",
+   "Diğer kol, cep saatleri",
+   "Adi metal, plastik vb. zarf; kakmalı adi metal zarf dahil",
+   "Çelik zarflı kronograf, dalgıç saati, yüzük saat"
+  ],
+  [
+   "91.03",
+   "Saat makinalı masa-duvar ve çalar saatler",
+   "Not 3 makinası; 91.04 hariç",
+   "Kuvars makinalı çalar saat, seyahat saati"
+  ],
+  [
+   "91.04",
+   "Alet tablosu saatleri",
+   "Taşıt, uçak, gemi, uzay aracı; makina önemsiz",
+   "Otomobil gösterge paneli saati"
+  ],
+  [
+   "91.05",
+   "Diğer saatler",
+   "Not 3 dışı makina: sarkaçlı, büyük, senkron motorlu",
+   "Guguklu saat, bina saati, denizci kronometresi"
+  ],
+  [
+   "91.06",
+   "Zaman kontrol cihazları, zaman sayaçları",
+   "Saat makinası veya senkron motor; kayıt ve ölçüm",
+   "Devam kayıt saati, satranç saati, dakika sayacı"
+  ],
+  [
+   "91.07",
+   "Zaman şalterleri",
+   "Belirli zamanda devre açıp kapama",
+   "Vitrin ışığı zaman şalteri, jetonlu şalter"
+  ],
+  [
+   "91.08",
+   "Kol-cep saati makinaları (komple)",
+   "Not 3 ölçüleri; zarfsız, birleştirilmiş",
+   "Kuvars analog makina (pilli, pilsiz)"
+  ],
+  [
+   "91.09",
+   "Diğer saat makinaları (komple)",
+   "Not 3 dışı; analog gösterge",
+   "Sarkaçlı duvar saati makinası"
+  ],
+  [
+   "91.10",
+   "Makina setleri, eksik makinalar, taslaklar",
+   "Birleştirilmemiş tam set; eksik makina",
+   "Şablon, saat makinası taslağı"
+  ],
+  [
+   "91.11",
+   "Kol-cep saati zarfları ve parçaları",
+   "91.01 / 91.02 saatlerinin zarfı",
+   "Makinasız çelik kol saati zarfı, alt kapak"
+  ],
+  [
+   "91.12",
+   "Masa-duvar saati ve diğer zarflar",
+   "Olağan saat zarfı tipinde olmak",
+   "Ahşap duvar saati kasası, mermer kaide"
+  ],
+  [
+   "91.13",
+   "Saat kayışları, bantları, bilezikleri",
+   "Her maddeden; saatle gelen hariç",
+   "Deri kayış, çelik saat bileziği"
+  ],
+  [
+   "91.14",
+   "Diğer saat aksamı",
+   "Kadran, ibre, yay, işlenmiş taş, tabla, köprü",
+   "Kadran, zemberek, yakut taş, ibre"
+  ]
+ ],
+ "notlar": [
+  [
+   "Fasıl 91 Not 1",
+   "Fasıl dışı: saat camları ve saat ağırlıkları (maddesine göre); saat zincirleri (71.13 veya 71.17); Bölüm XV Not 2’deki genel kullanıma mahsus adi metal parçalar, plastikten benzerleri (Fasıl 39) veya kıymetli metalden benzerleri (genellikle 71.15) — <b>saat yayları ise 91.14’tedir</b>; rulman bilyeleri (73.26 veya 84.82); eşapmansız çalışan 84.12 eşyası; bilyalı rulmanlar (84.82); saat makinası veya parçası haline getirilmemiş Fasıl 85 eşyası."
+  ],
+  [
+   "Fasıl 91 Not 2",
+   "91.01 yalnızca zarfı <b>tamamen</b> kıymetli metalden veya kıymetli metalle kaplama metalden olan ya da bunların 71.01–71.04’teki inci veya kıymetli/yarı kıymetli taşlarla birleştirilmesiyle yapılmış zarflı saatleri kapsar. Adi metal zarflı olup kıymetli metal işlenmiş saatler (91.01 açıklama notunda: kıymetli metal kakmalı adi metal zarflı saatler) 91.02’dedir."
+  ],
+  [
+   "Fasıl 91 Not 3",
+   "“Saat makinası”: pandül ve zemberek, kuvars kristali veya zaman aralıklarını tespite elverişli başka bir sistemle ayarlanan, göstergesi olan veya mekanik gösterge birleştirilebilen tertibat. Kalınlığı <b>12 mm</b>’yi, genişliği, uzunluğu veya çapı <b>50 mm</b>’yi geçmez."
+  ],
+  [
+   "Fasıl 91 Not 4",
+   "Not 1 saklı kalmak şartıyla, hem saatlerde hem de diğer eşyada (ör. ayar aletleri) kullanılabilen makinalar ve diğer aksam ve parçalar Fasıl 91’de sınıflandırılır."
+  ],
+  [
+   "Genel Açıklamalar (ölçüm)",
+   "Not 3’teki kalınlık, kadran tarafındaki dış tabladan (veya makinaya birleşik göstergenin görünen yüzünden) karşı dış tablaya kadar ölçülür; dışa taşan vida, somun vb. dikkate alınmaz. Genişlik, uzunluk veya çap ölçülürken kurma mili ve baş dikkate alınmaz."
+  ],
+  [
+   "Genel Açıklamalar",
+   "Mobilya, lamba, hokka takımı, çakmak, el çantası, kalemlik, baston gibi diğer eşyayla birleştirilmiş saatlerin yeri genel yorum kurallarına göre belirlenir. Saatin içine konulan basit aydınlatma tertibatı Fasıl 91’de kalmasına engel değildir."
+  ],
+  [
+   "Genel Açıklamalar (hariç)",
+   "Güneş saatleri ve kum saatleri (maddesine göre); müzikli otomatlar ve zaman kadranı olmayan müzik kutuları (92.08); saat makinası olmayan oyuncak saatler, saat biçiminde Noel ağacı süsleri (95.03 veya 95.05); vitrin otomatları (96.18); sanat eserleri, koleksiyon eşyası, antikalar (Fasıl 97)."
+  ],
+  [
+   "91.02 Açıklama Notu",
+   "Taşınmak veya takılmak için yapılan, her konumda çalışan saatler makina kalınlığına bakılmaksızın buradadır (kronograflar, zaman ölçen sayaçlar, broş ve yüzük saatler, güverte saatleri). Saatle birlikte gelen kayışlar (bağlı olsun olmasın) buradadır. Pedometreler 90.29, denizci kronometreleri 91.05’tedir."
+  ],
+  [
+   "91.03 / 91.05 Açıklama Notu",
+   "91.03 yalnızca Not 3 makinalı ve günün saatini gösteren saatleri alır. Sarkaçlı saatler, kalınlığı 12 mm’yi veya genişliği, uzunluğu, çapı 50 mm’yi aşan makinalı saatler ve ayar sistemi olmayan makinalı (senkron motorlu) saatler 91.05’tedir. Ana saatin kumandasıyla çalışan tali saatlerden yalnızca dakika ve saniyeyi veya yalnızca saniyeyi gösterenler 91.06’dadır."
+  ],
+  [
+   "91.06 / 91.07 Açıklama Notu",
+   "Her iki pozisyonda da saat makinası (tali veya senkron makina dahil) ya da senkron motor şarttır. Saat makinası veya senkron motoru olmayan elektronik kronometreler 90.31’de; mutat saat kadranlı stadyum saatleri 91.05’te; metronomlar 92.09’da; zil çalmak yerine devre açıp kapayan zaman komütatörleri 91.07’dedir."
+  ],
+  [
+   "91.08 / 91.09 Açıklama Notu",
+   "Dijital elektronik makinada gösterge hücreleri makinanın parçasıdır; bunlar olmadan makina tam ve birleştirilmiş sayılmaz. Pille çalışan makinalar pil ile gelsin gelmesin 91.08’dedir. Makinalar diğer fasıllardaki alet ve cihazlara (ölçü aletleri, pedometreler, infilak tertibatı) mahsus olsa bile Fasıl 91’de kalır. Ayrı gelen senkron motorlar ve elektromıknatıslar ile eşapmansız yaylı motorlar (84.12) bu pozisyonlar dışındadır."
+  ],
+  [
+   "91.10 Açıklama Notu",
+   "<b>Makina seti (şablon)</b>: birleştirilmemiş veya kısmen birleştirilmiş tam parça seti. <b>Tamamlanmamış mekanik makina</b>: monte edilmiş, kadran, ibre veya kurma kolundan başka parçaları eksik makina. <b>Taslak</b>: tabla, köprü, takım, kurgu ve ayar tertibatı olan; eşapmanı, düzenleyicisi, ana yayı, kadranı veya ibreleri olmayan birleştirilmemiş parçalar."
+  ],
+  [
+   "91.11 / 91.12 Açıklama Notu",
+   "Kol ve cep saati zarfları 91.11’de; masa, duvar, çalar saat, taşıt saati, devam kaydedici vb. zarfları ile kaide, sehpa, cam çerçeve gibi aksamı 91.12’dedir. Olağan saat zarfına benzemeyen, daha çok fenni cihazlara mahsus zarflar kendi pozisyonlarına; ayrı gelen camdan koruyucu fanuslar 70.20’ye gider."
+  ],
+  [
+   "91.14 Açıklama Notu",
+   "Saatçi taşları yalnızca işlenmiş (tornalanmış, delinmiş, parlatılmış) veya monte edilmiş halde buradadır; işlenmemiş veya kabaca biçilmiş taşlar Fasıl 71’dedir. Tanımlanabilen taslaklar buradadır; delik açılmamış tabla ve köprü gibi tanımlanamayan metal parçalar maddesine göre sınıflandırılır."
+  ]
+ ],
+ "sinir_komsulari": [
+  [
+   "Güneş saati, kum saati",
+   "Maddesine göre",
+   "Fasıl 91 Genel Açıklamalar, hariç tutma"
+  ],
+  [
+   "Zaman kadranı olmayan müzik kutusu, şarkı söyleyen mekanik kuş",
+   "92.08",
+   "Müzikli otomatlar Fasıl 91 dışı"
+  ],
+  [
+   "Saat makinası olmayan oyuncak saat; saat biçiminde Noel ağacı süsü",
+   "95.03 / 95.05",
+   "Fasıl 91 Genel Açıklamalar"
+  ],
+  [
+   "Pedometre, devir sayacı, taksimetre",
+   "90.29",
+   "91.02 ve 91.06 hariç tutmaları"
+  ],
+  [
+   "Saat makinası veya senkron motoru olmayan elektronik kronometre",
+   "90.31",
+   "91.06 için makina veya motor şart"
+  ],
+  [
+   "Metronom",
+   "92.09",
+   "91.06 hariç tutması"
+  ],
+  [
+   "Saat zinciri",
+   "71.13 / 71.17",
+   "Fasıl 91 Not 1"
+  ],
+  [
+   "Kayış tokası (kıymetli metal / adi metal)",
+   "71.15 / 83.08",
+   "91.13 hariç tutması"
+  ],
+  [
+   "Saat için ayrı gelen camdan koruyucu fanus",
+   "70.20",
+   "91.12 hariç tutması"
+  ],
+  [
+   "Eşapmansız yaylı motor (ör. müzik kutusu motoru)",
+   "84.12",
+   "Fasıl 91 Not 1; 91.09 hariç tutması"
+  ],
+  [
+   "Bilyalı rulman",
+   "84.82",
+   "Fasıl 91 Not 1"
+  ],
+  [
+   "İşlenmemiş veya kabaca biçilmiş saatçi taşı",
+   "Fasıl 71",
+   "91.14 Açıklama Notu"
+  ],
+  [
+   "Saat makinalı bilardo oyun süresi sayacı",
+   "91.06",
+   "95.04’te değil, Fasıl 91’de"
+  ],
+  [
+   "Saatler için zil, çan, gong",
+   "91.14",
+   "92.06 hariç tutması; müzik aleti sayılmaz"
+  ],
+  [
+   "Ahşap ayaklı salon saati kasası",
+   "91.12",
+   "Fasıl 94 Not 1: saatler ve saat mahfazaları mobilya değildir"
+  ]
+ ],
+ "tuzaklar": [
+  "<b>Zarf belirler, kayış belirlemez.</b> 91.01 için zarfın tamamen kıymetli metalden veya kıymetli metalle kaplama metalden olması gerekir. Plastik zarflı saatin bileziği altın olsa da saat 91.02’dedir; kıymetli metal kakmalı adi metal zarf da 91.02’dir.",
+  "<b>Taşıt saati her zaman 91.04.</b> Alet tablosuna mahsus saat, makinası Not 3 ölçülerine uysa bile 91.03’e değil 91.04’e gider.",
+  "<b>Masa saatinin yerini makinası belirler.</b> 12 mm / 50 mm sınırına uyan makina 91.03; sarkaçlı, büyük veya ayar sistemi olmayan senkron motorlu saat 91.05.",
+  "<b>Kronograf, kronometre, denizci kronometresi farklıdır.</b> Kronograf ve zaman ölçen sayaç (kol-cep) 91.02; denizci kronometresi 91.05; senkron motorlu kronometreler 91.06; makinası ve motoru olmayan elektronik kronometre 90.31.",
+  "<b>Saat yayı genel kullanıma mahsus parça sayılmaz.</b> Not 1 genel kullanıma mahsus parçaları dışarıda bırakır, ama saat yaylarını açıkça 91.14’te tutar. Saat camı ve saat zinciri ise fasıl dışıdır.",
+  "<b>Dijital makinada gösterge şarttır.</b> LED veya LCD gösterge hücreleri olmayan dijital makina 91.08 anlamında tam ve birleştirilmiş sayılmaz; gösterge eksik elektronik makina 91.10’daki tamamlanmamış makinadır.",
+  "<b>Makina nereye takılırsa takılsın Fasıl 91’de kalır.</b> Pedometreye, ölçü aletine veya infilak tertibatına takılacak saat makinası 91.08 / 91.09’dadır (Not 4).",
+  "<b>Tali saatte gösterge belirleyicidir.</b> Saat ve dakikayı gösteren tali saat 91.05; yalnızca dakika ve saniye veya yalnızca saniye gösteren tali saat 91.06.",
+  "<b>Saatle birleşik eşya GYK ile çözülür.</b> Saatli lamba, saatli çakmak veya saatli kalemliğin yeri genel yorum kurallarıyla bulunur; saatin içindeki basit aydınlatma tertibatı ise saati fasıldan çıkarmaz."
+ ],
+ "hafiza": {
+  "kanca": "BİLEK (01–02) · DUVAR (03–05) · CİHAZ (06–07) · MAKİNA (08–10) · ZARF (11–12) · KAYIŞ (13) · PARÇA (14)",
+  "aciklama": "Fasıl dışarıdan içeriye ilerler: önce bilekteki saat, sonra duvardaki saat, sonra saatle çalışan cihazlar, sonra saatin kalbi olan makina, en son kabuk, kayış ve tek tek parçalar. Her ikilide “değerli/küçük” olan önce gelir: 91.01 kıymetli zarf, 91.03 küçük makinalı saat, 91.08 kol saati makinası, 91.11 kol saati zarfı."
+ },
+ "sinav_odagi": [
+  "Bu fasıl çıkmış sorularda daha çok seçeneklerde veya çeldirici olarak yer almıştır; doğrudan 4’lü pozisyon sorusu az sorulmuştur.",
+  "Fasıl–eşya eşleştirmesi: “Saat 91. fasılda yer alır” gibi doğru bir ifadenin, hatalı fasıl numarası verilen ifadeler arasında kullanılması.",
+  "Bölüm bilgisi: kol saatinin güneş gözlüğü ve gitarla aynı bölümde (Bölüm XVIII), tabancanın ise Bölüm XIX’da yer aldığının sorgulanması.",
+  "GYK 3(b) set kavramı: kol saati, kalem ve çikolatanın birlikte paketlenmesinin belirli bir ihtiyaca hizmet etmediği için set sayılmaması.",
+  "Mahfaza kuralı (GYK 5(a)): eşyaya uygun yapılmış ve onunla birlikte sunulan kutuların eşyayla birlikte sınıflandırılması; saat kutusu da bu mantıkla çözülür."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Tarife Cetveli’ne göre aşağıdaki ifadelerden hangisi <b>yanlıştır</b>?",
+   "secenekler": [
+    "Hububat 10. fasılda yer alır.",
+    "Gübre 31. fasılda yer alır.",
+    "Pamuk 53. fasılda yer alır.",
+    "Cam 70. fasılda yer alır.",
+    "Saat 91. fasılda yer alır."
+   ],
+   "cevap": "C",
+   "aciklama": "Pamuk Fasıl 52’dedir; Fasıl 53 diğer bitkisel dokumaya elverişli liflere aittir. Saatler ve bunların aksam ve parçaları Fasıl 91’in konusudur."
+  }
+ ],
+ "ozet": [
+  "Kol-cep saati: zarf tamamen kıymetli metal / kaplama ise 91.01, değilse 91.02; kayış saatle gelirse saatle kalır.",
+  "Masa-duvar-çalar saat: Not 3 makinası (≤ 12 mm, ≤ 50 mm) 91.03; sarkaçlı, büyük, senkron motorlu 91.05; alet tablosu saati her durumda 91.04.",
+  "Saatle çalışan cihaz: zaman kaydı veya ölçümü 91.06, devre açma-kapama 91.07; makina veya senkron motor yoksa Fasıl 90.",
+  "Ayrı gelen makina: komple Not 3 makinası 91.08, diğer komple makina 91.09, set-eksik-taslak 91.10.",
+  "Zarf 91.11 / 91.12, kayış 91.13, diğer parça 91.14; saat yayı içeride, saat camı ve zinciri dışarıda.",
+  "Güneş ve kum saati, zaman kadranı olmayan müzik kutusu, makinasız oyuncak saat Fasıl 91 dışındadır."
+ ],
+ "sorular": [
+  {
+   "soru": "Tarife Cetveline göre, otomobillerin gösterge paneline monte edilmek üzere özel olarak imal edilmiş, makinasının kalınlığı 8 mm ve çapı 30 mm olan elektronik saat hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "91.03",
+    "91.04",
+    "91.05",
+    "91.09",
+    "87.08"
+   ],
+   "cevap": "B",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "91.04, kara nakil vasıtaları, uçaklar, uzay araçları ve gemilerin alet tablolarına mahsus saatleri, makinasının tipi ve kalınlığına bakılmaksızın kapsar. Makinanın Not 3 ölçülerine uyması 91.03’ü düşündürür; tuzak budur. 91.05 diğer saatler, 91.09 zarfsız makinalar içindir; pozisyon metni bu saatleri açıkça saydığından taşıt parçası olarak 87.08’e de gitmez.",
+   "dayanak": "91.04 Açıklama Notu; 91.03 Açıklama Notu, hariç tutma (a)."
+  },
+  {
+   "soru": "Tarife Cetveline göre, zarfı tamamen 18 ayar altından yapılmış ve zarfı elmas taşlarla süslenmiş, otomatik kurmalı mekanik kol saati hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "91.01",
+    "91.02",
+    "71.13",
+    "91.11",
+    "71.16"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Fasıl 91 Not 2’ye göre zarfı tamamen kıymetli metalden olan veya kıymetli metalin 71.01–71.04’teki inci ya da kıymetli taşlarla birleştirilmesiyle yapılan zarflı saatler 91.01’dedir. 91.02 adi metal zarflı saatler, 91.11 makinasız zarflar içindir. Fasıl 71, Fasıl 91 eşyasını kapsamadığından mücevher (71.13) veya taşlı eşya (71.16) çeldiricidir.",
+   "dayanak": "Fasıl 91 Not 2; 91.01 Açıklama Notu; Fasıl 71 Not 3(l)."
+  },
+  {
+   "soru": "Tarife Cetveline göre, saat makinası ile çalışan ve fabrikada çalışanların kartlarına geliş-gidiş tarihini, saatini ve dakikasını damgalayan devam kaydedici cihaz hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "84.72",
+    "90.29",
+    "91.05",
+    "91.06",
+    "91.07"
+   ],
+   "cevap": "D",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "91.06, saat makinalı veya senkron motorlu zaman kontrol cihazlarını ve zaman sayaçlarını kapsar; devam kaydeden cihazlar açıklama notunda ilk sırada sayılmıştır. 91.05 günün saatini gösteren saatler, 91.07 devre açıp kapayan zaman şalterleri içindir. Büro makinası (84.72) veya sayaç (90.29) çeldiricidir.",
+   "dayanak": "91.06 pozisyon metni ve Açıklama Notu (1)."
+  },
+  {
+   "soru": "Tarife Cetveline göre, su ısıtıcısının elektrik devresini önceden ayarlanan günlük programa göre otomatik olarak açıp kapayan, senkron motorlu ve kadranlı zaman şalteri hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "85.36",
+    "91.06",
+    "91.07",
+    "90.32",
+    "91.09"
+   ],
+   "cevap": "C",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "91.07, asıl görevi belirli zamanlarda elektrik devrelerini otomatik olarak açıp kapamak olan saat makinalı veya senkron motorlu cihazları kapsar; açıklama notu su ısıtıcıları gibi ısıtma devrelerini örnek verir. 91.06 zamanı kaydeden veya ölçen cihazlar içindir. Senkron motorun varlığı eşyayı genel şalter (85.36) veya ayar cihazı (90.32) olmaktan çıkarır.",
+   "dayanak": "91.07 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre zarfsız olarak gelen; komple, birleştirilmiş ve kullanıma hazır; kalınlığı 4 mm, çapı 26 mm olan analog göstergeli kuvars kol saati makinası (pili ayrıca ambalajlanmış) hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "91.02",
+    "91.09",
+    "91.10",
+    "91.14",
+    "91.08"
+   ],
+   "cevap": "E",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Not 3 ölçülerine (≤ 12 mm, ≤ 50 mm) uyan, komple ve birleştirilmiş makina 91.08’dedir; pille çalışan makinalar pil ile gelsin gelmesin burada kalır. 91.09 Not 3 ölçülerini aşan diğer makinalar, 91.10 birleştirilmemiş setler ve eksik makinalar içindir. Zarfı olmadığı için saat (91.02) sayılmaz.",
+   "dayanak": "Fasıl 91 Not 3; 91.08 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 91. faslında <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Satranç oyuncuları için iki makinalı süre saati",
+    "Saat makinalı bilardo oyun süresi sayacı",
+    "Kum saati",
+    "Ağırlıkla çalışan sarkaçlı guguklu duvar saati",
+    "Denizci kronometresi"
+   ],
+   "cevap": "C",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Fasıl 91 Genel Açıklamalarına göre güneş saatleri ve kum saatleri fasıl dışıdır; mamul oldukları maddeye göre sınıflandırılır. Satranç süre saati ve saat makinalı bilardo sayacı 91.06’da; guguklu saat ve denizci kronometresi 91.05’tedir. Bilardo sayacının Fasıl 95’e gideceğini sanmak tuzaktır.",
+   "dayanak": "Fasıl 91 Genel Açıklamalar; 91.05 ve 91.06 Açıklama Notları."
+  },
+  {
+   "soru": "Ayrı olarak gelen aşağıdaki eşyadan hangisi 91.14 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Saat kadranı",
+    "Delinmiş ve parlatılmış saatçi yakut taşı",
+    "Kol saati ana yayı (zemberek)",
+    "Kol saati camı",
+    "Çalar saat için zil tokmağı"
+   ],
+   "cevap": "D",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Fasıl 91 Not 1’e göre saat camları fasıl dışıdır ve mamul oldukları maddeye göre sınıflandırılır. Kadranlar, işlenmiş taşlar, yaylar ve çalar tertibat aksamı 91.14’te sayılmıştır. Ana yayın genel kullanıma mahsus parça sanılması tuzaktır; Not 1 saat yaylarını açıkça 91.14’te tutar.",
+   "dayanak": "Fasıl 91 Not 1; 91.14 Açıklama Notu (A), (C), (D), (E)."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 91.06 pozisyonunda <b>yer almaz</b>?",
+   "secenekler": [
+    "Posta güvercinlerinin yuvaya dönüş zamanını kaydeden cihaz",
+    "Saat makinası veya senkron motoru bulunmayan elektronik kronometre",
+    "Bekçi kontrol saati",
+    "Belirli bir dakika dolunca zil çalan dakika sayacı (minütye)",
+    "Telefon konuşmalarının süresini kaydeden zaman sayacı"
+   ],
+   "cevap": "B",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "91.06 için saat makinası veya senkron motor şarttır; bunları içermeyen elektrikli veya elektronik kronometreler 90.31’dedir. Güvercin dönüş kaydedicisi, bekçi kontrol saati, minütye ve telefon konuşma sayacı 91.06 açıklama notunda tek tek sayılmıştır.",
+   "dayanak": "91.06 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 91.02 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Çelik zarflı, derinlik göstergeli dalgıç kol saati",
+    "Körler için kabartmalı, adi metal zarflı cep saati",
+    "Yüzüğe yerleştirilmiş adi metal zarflı saat",
+    "Çelik zarflı kronograf",
+    "Pedometre"
+   ],
+   "cevap": "E",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "91.02 açıklama notu pedometreleri hariç tutar ve 90.29’a gönderir. Derinlik göstergeli spor saatleri, körler için kabartmalı saatler, yüzüklere yerleştirilen saatler ve kronograflar ise zarfları adi metalden olduğu için 91.02’dedir.",
+   "dayanak": "91.02 Açıklama Notu, hariç tutma (a)."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Not 3 ölçülerine uyan kuvars makinalı çalar saat",
+    "Ağırlıkla çalışan sarkaçlı guguklu duvar saati",
+    "Sarkaçlı ayaklı salon saati",
+    "Ayar sistemi bulunmayan senkron motorlu duvar saati",
+    "Denizci kronometresi"
+   ],
+   "cevap": "A",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Not 3 anlamında saat makinası taşıyan çalar saat 91.03’tedir. Sarkaçlı saatler, ayar sistemi olmayan senkron motorlu saatler, guguklu saatler ve denizci kronometreleri 91.05’tedir. Tuzak, “çalar saat” ifadesinin 91.05’in alt kırılımında da geçmesidir; belirleyici olan makinadır.",
+   "dayanak": "Fasıl 91 Not 3; 91.03 Açıklama Notu; 91.05 Açıklama Notu."
+  },
+  {
+   "soru": "Ayrı olarak gelen aşağıdaki eşyadan hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Ahşap duvar saati zarfı",
+    "Çalar saat zarfı",
+    "Mermerden masa saati kaidesi",
+    "Makinasız paslanmaz çelik kol saati zarfı",
+    "Taşıt alet tablosu saatinin zarfı"
+   ],
+   "cevap": "D",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "91.01 ve 91.02 saatlerinin (kol, cep saatleri) zarfları 91.11’dedir. Masa ve duvar saati zarfları, çalar saat ve motorlu taşıt saati zarfları ile kaide, sehpa gibi zarf aksamı 91.12’dedir. Zarfın mermer veya ahşap olması sınıflandırmayı değiştirmez.",
+   "dayanak": "91.11 ve 91.12 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden farklı bir fasılda sınıflandırılır?",
+   "secenekler": [
+    "Metronom",
+    "Saat makinalı satranç süre saati",
+    "Zilli dakika sayacı (minütye)",
+    "Saat makinalı bilardo oyun süresi sayacı",
+    "Stadyumlar için oyun süresini gösteren zaman sayacı"
+   ],
+   "cevap": "A",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Metronomlar 91.06’dan açıkça hariç tutulmuş olup 92.09’dadır (Fasıl 92). Satranç saati, minütye, bilardo süre sayacı ve stadyum zaman sayacı 91.06’da sayılan zaman sayaçlarıdır. Metronomun zaman ölçtüğü için Fasıl 91’de olduğunu sanmak tuzaktır.",
+   "dayanak": "91.06 Açıklama Notu ve hariç tutmalar; 92.09 Açıklama Notu (A)."
+  },
+  {
+   "soru": "Ayrı olarak gelen aşağıdaki eşya gruplarından hangisinde yer alanların <b>tamamı</b> aynı pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Saat camı – kadran – ibre",
+    "Saat kayışı – saat zinciri – saat bileziği",
+    "Kol saati zarfı – duvar saati zarfı – kol saati zarfı alt kapağı",
+    "Makina seti (şablon) – saat makinası taslağı – komple ve birleştirilmiş kol saati makinası",
+    "Kadran – ibre – saat yayı"
+   ],
+   "cevap": "E",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Kadran, ibre ve saat yayı 91.14’tedir. Saat camı maddesine göre, saat zinciri 71.13 / 71.17’de; duvar saati zarfı 91.12’de (kol saati zarfı 91.11); komple kol saati makinası 91.08’de (set ve taslak 91.10) yer aldığından diğer gruplar karışıktır.",
+   "dayanak": "Fasıl 91 Not 1; 91.08, 91.10, 91.11, 91.12, 91.14 Açıklama Notları."
+  },
+  {
+   "soru": "Fasıl 91 Not 3’e göre, bir makinanın “saat makinası” sayılabilmesi için ölçüleriyle ilgili aşağıdakilerden hangisi <b>doğrudur</b>?",
+   "secenekler": [
+    "Kalınlığı 10 mm’yi, genişliği, uzunluğu veya çapı 40 mm’yi geçmez.",
+    "Kalınlığı 12 mm’yi, genişliği, uzunluğu veya çapı 50 mm’yi geçmez.",
+    "Kalınlığı 12 mm’yi geçmez; genişlik, uzunluk veya çap için sınır yoktur.",
+    "Kalınlığı 50 mm’yi, genişliği, uzunluğu veya çapı 12 mm’yi geçmez.",
+    "Kalınlığı 15 mm’yi, genişliği, uzunluğu veya çapı 50 mm’yi geçmez."
+   ],
+   "cevap": "B",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Not 3’e göre saat makinalarının kalınlığı 12 mm’yi, genişliği, uzunluğu veya çapı 50 mm’yi geçmez. Bu sınırları aşan makinalar 91.09’a, bu makinalı saatler 91.05’e gider. Kalınlık ölçülürken dışa taşan vidalar, genişlik ölçülürken kurma mili ve baş dikkate alınmaz.",
+   "dayanak": "Fasıl 91 Not 3; Fasıl 91 Genel Açıklamalar (ölçüm yöntemleri)."
+  },
+  {
+   "soru": "Fasıl 91 Not 2 ve 91.01 açıklama notuna göre aşağıdaki kol saatlerinden hangisi 91.01 pozisyonunda sınıflandırılır?",
+   "secenekler": [
+    "Zarfı paslanmaz çelikten, kadranı altın yaldızlı kol saati",
+    "Zarfı adi metalden olup kıymetli metal kakmalı kol saati",
+    "Zarfı tamamen platinden, kayışı deriden kol saati",
+    "Zarfı plastikten, bileziği altından kol saati",
+    "Zarfı titandan, camı sentetik safirden kol saati"
+   ],
+   "cevap": "C",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "91.01 için belirleyici olan zarftır: zarf tamamen kıymetli metalden (platin) olduğundan saat 91.01’dedir; deri kayış sonucu değiştirmez. Kıymetli metal kakmalı adi metal zarflı saatler açıklama notu gereği 91.02’dedir. Altın kadran veya altın bilezik, zarf adi metal ya da plastik olduğu sürece saati 91.01’e taşımaz.",
+   "dayanak": "Fasıl 91 Not 2; 91.01 Açıklama Notu."
+  },
+  {
+   "soru": "91.10 pozisyonu açıklama notuna göre “saat makinası taslağı” aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Birleştirilmemiş veya kısmen birleştirilmiş halde pazarlanan, saat makinası parçalarının tam bir setidir.",
+    "Monte edilmiş, fakat kadran, ibre veya kurma kolundan başka parçaları eksik olan mekanik makinadır.",
+    "Monte edilmiş, fakat pillerden başka bazı parçaları eksik olan elektronik makinadır.",
+    "Zarfı ve kayışı bulunmayan, komple ve birleştirilmiş makinadır.",
+    "Tabla, köprü, takım ve kurgu tertibatı olan; eşapmanı, düzenleyicisi, ana yayı, kadranı ve ibreleri olmayan birleştirilmemiş parçalardır."
+   ],
+   "cevap": "E",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Açıklama notuna göre taslak; tablası, köprüleri, takımı, kurgu ve ayar tertibatı bulunan, fakat eşapmanı, pandül ve zembereği veya diğer düzenleyicisi, ana yayı, kadranı ya da ibreleri olmayan birleştirilmemiş parçalardır. A makina setinin, B ve C tamamlanmamış makinaların tanımıdır; D ise 91.08 / 91.09’daki komple makinadır.",
+   "dayanak": "91.10 Açıklama Notu."
+  },
+  {
+   "soru": "Fasıl 91 Not 4’e göre, hem saatlerde hem de ayar aletleri gibi başka eşyada kullanılmaya elverişli makinalar ve diğer aksam ve parçalar hakkında aşağıdakilerden hangisi <b>doğrudur</b>?",
+   "secenekler": [
+    "Not 1 hükmü saklı kalmak şartıyla Fasıl 91’de sınıflandırılır.",
+    "Takılacakları eşyanın aksam ve parçası olarak sınıflandırılır.",
+    "GYK 3(c) uyarınca numara sırasına göre sonuncu pozisyonda sınıflandırılır.",
+    "Esas kullanım alanı saat değilse Fasıl 90’da sınıflandırılır.",
+    "Yalnızca kıymetli metalden olanlar Fasıl 91’de kalır."
+   ],
+   "cevap": "A",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Not 4, Not 1 saklı kalmak kaydıyla, hem saatlerde hem diğer eşyada kullanılabilen makinaları ve parçaları Fasıl 91’de tutar. 91.14 açıklama notu da oyuncak, sayaç ve ölçü aletlerinde kullanılabilen yay, çark, taş ve ibreleri bu pozisyonda sayar. Tuzak, bu parçaları takıldıkları cihazın parçası saymaktır; ancak Not 1’deki istisnalar (saat camı, genel kullanıma mahsus parça) yine dışarıdadır.",
+   "dayanak": "Fasıl 91 Not 4; 91.14 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, bir kol saati ile birlikte sunulan, bu saate uygun olarak yapılmış, uzun süre kullanılmaya elverişli ve normal olarak saatle birlikte satılan deri kaplı saat kutusu nasıl sınıflandırılır?",
+   "secenekler": [
+    "Kutu ve saat ayrı ayrı kendi pozisyonlarında, GYK 1",
+    "Kutu ve saat birlikte, kutunun pozisyonunda, GYK 3(b)",
+    "Kutu ve saat birlikte, numara sırasına göre sonuncu pozisyonda, GYK 3(c)",
+    "Kutu saatle birlikte, saatin pozisyonunda, GYK 5(a)",
+    "Kutu saatle birlikte, saatin pozisyonunda, GYK 5(b)"
+   ],
+   "cevap": "D",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 5(a), belli bir eşyaya uygun yapılmış, uzun süre kullanılmaya elverişli ve eşyayla birlikte sunulan, normal olarak onunla satılan kutuları eşyayla birlikte sınıflandırır. GYK 5(b) yalnızca olağan ambalaj malzemeleri içindir; sürekli kullanıma elverişli kutulara uygulanmaz. Saat ve kutusu bir set (3(b)) değildir.",
+   "dayanak": "GYK 5(a) ve 5(b) Açıklama Notları."
+  },
+  {
+   "soru": "Perakende satış kutusunda; komple ve birleştirilmiş sarkaçlı saat makinası, kadran, ibreler ve ahşap zarf birlikte ancak birleştirilmemiş halde sunulmaktadır. Parçalar yalnızca vidalarla monte edilerek duvar saati haline gelmektedir. Bu eşyanın sınıflandırılmasında hangi Genel Yorum Kuralları kullanılır?",
+   "secenekler": [
+    "GYK 1 ve 6",
+    "GYK 1, 2(a) ve 6",
+    "GYK 1, 2(b) ve 6",
+    "GYK 1, 3(b) ve 6",
+    "GYK 1, 3(c) ve 6"
+   ],
+   "cevap": "B",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "Bütün parçaları birlikte sunulan ve yalnızca montaj işlemi gerektiren eşya, GYK 2(a) uyarınca monte edilmiş eşya gibi sınıflandırılır; sarkaçlı makina nedeniyle duvar saati 91.05’e gider. Bu, tek bir eşyanın demonte halidir; farklı eşyadan oluşan bir set (3(b)) değildir. 91.10’daki makina seti ise yalnızca makina parçalarını kapsar.",
+   "dayanak": "GYK 2(a) Açıklama Notu (V)–(VII); 91.05 ve 91.10 Açıklama Notları."
+  },
+  {
+   "soru": "Ayrı olarak gelen aşağıdaki eşyayı sınıflandırıldıkları yerle eşleştiriniz.<br/>I. Saat zinciri<br/>II. Deri kol saati kayışı<br/>III. Saat camı<br/>IV. Kol saati ana yayı<br/>a) 91.13 · b) 91.14 · c) 71.13 veya 71.17 · d) Mamul olduğu maddeye göre",
+   "secenekler": [
+    "I-a, II-c, III-b, IV-d",
+    "I-c, II-a, III-b, IV-d",
+    "I-c, II-a, III-d, IV-b",
+    "I-d, II-a, III-c, IV-b",
+    "I-c, II-b, III-d, IV-a"
+   ],
+   "cevap": "C",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Not 1’e göre saat zincirleri 71.13 veya 71.17’de, saat camları maddesine göre sınıflandırılır. Kayış, bant ve bilezikler 91.13’te; saat yayları ise Not 1’in açık hükmüyle 91.14’tedir. Camın 91.14’e girdiğini sanmak en sık hatadır.",
+   "dayanak": "Fasıl 91 Not 1; 91.13 ve 91.14 Açıklama Notları."
+  },
+  {
+   "soru": "Fasıl 91 açıklama notlarına göre, ana saatin kumandasıyla çalışan tali saatlerden saat ve dakikayı gösterenler ……… pozisyonunda; yalnızca dakika ve saniyeyi veya yalnızca saniyeyi gösterenler ise ……… pozisyonunda sınıflandırılır. Boşluklara sırasıyla aşağıdakilerden hangisi gelmelidir?",
+   "secenekler": [
+    "91.05 – 91.06",
+    "91.06 – 91.05",
+    "91.03 – 91.06",
+    "91.05 – 91.07",
+    "91.04 – 91.06"
+   ],
+   "cevap": "A",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Elektrikli saat sistemlerinin saat ve dakikayı gösteren tali saatleri 91.05’tedir. Saat ayarı vb. için kullanılan, yalnızca dakika ve saniyeyi veya saniyeyi gösteren tali saatler 91.05’ten hariç tutulmuş ve 91.06’da sayılmıştır. 91.07 devre açıp kapayan zaman şalterleri içindir.",
+   "dayanak": "91.05 Açıklama Notu; 91.06 Açıklama Notu (12)."
+  },
+  {
+   "soru": "Fasıl 91 ile ilgili aşağıdaki ifadelerden hangileri <b>doğrudur</b>?<br/>I. Taşıtların alet tablolarına mahsus saatler, makinalarının tipi ve kalınlığı ne olursa olsun 91.04’tedir.<br/>II. Saat yayları genel kullanıma mahsus parça sayılarak Bölüm XV’te sınıflandırılır.<br/>III. Saatlerin içine konulan basit aydınlatma tertibatı, bunların Fasıl 91’de kalmasına engel değildir.<br/>IV. Güneş saatleri ve kum saatleri 91.05’te yer alır.",
+   "secenekler": [
+    "I ve II",
+    "II ve IV",
+    "I, II ve III",
+    "III ve IV",
+    "I ve III"
+   ],
+   "cevap": "E",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "I, 91.04 açıklama notuna; III, fasıl genel açıklamalarına uygundur. II yanlıştır: Not 1 genel kullanıma mahsus parçaları hariç tutar ama saat yaylarını açıkça 91.14’te bırakır. IV yanlıştır: güneş ve kum saatleri fasıl dışıdır, maddesine göre sınıflandırılır.",
+   "dayanak": "Fasıl 91 Not 1; Fasıl 91 Genel Açıklamalar; 91.04 Açıklama Notu."
+  },
+  {
+   "soru": "91.08 pozisyonu ile ilgili aşağıdaki ifadelerden hangileri <b>doğrudur</b>?<br/>I. Pil ile çalışan kol saati makinaları, pil ile birlikte gelmese de 91.08’de sınıflandırılır.<br/>II. Dijital zaman göstergeli elektronik makinalar, gösterge hücreleri olmadan da tam ve birleştirilmiş sayılır.<br/>III. Not 3 tanımına uyan bir makina, bir pedometreye takılmak üzere getirilse de 91.08’de kalır.<br/>IV. Analog göstergeli makinalar kadransız ve ibresiz olarak da 91.08’de sınıflandırılabilir.",
+   "secenekler": [
+    "I ve II",
+    "II ve III",
+    "I, III ve IV",
+    "II, III ve IV",
+    "I ve IV"
+   ],
+   "cevap": "C",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "I, III ve IV 91.08 açıklama notunda açıkça yer alır. II yanlıştır: dijital makinada gösterge hücreleri makinanın iç kısmıdır; onlar olmadan makina 91.08 anlamında tam ve birleştirilmiş sayılmaz (91.10’daki tamamlanmamış makina olur). III, Not 4 ile de desteklenir.",
+   "dayanak": "91.08 Açıklama Notu; 91.10 Açıklama Notu; Fasıl 91 Not 4."
+  },
+  {
+   "soru": "Paslanmaz çelik zarflı; akrep, yelkovan ve saniye ibrelerine ek olarak düğmeye basılarak başlatılıp durdurulan ve sıfırlanan bir merkezi saniye ibresi ile bu ibrenin kaç dakika çalıştığını gösteren bir ibresi bulunan; 100 m’ye kadar su geçirmez, pille çalışan bir kol saati, kendisine henüz takılmamış silikon kayışıyla aynı kutuda sunulmaktadır. Bu eşya Tarife Cetvelinde hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "91.01",
+    "91.02",
+    "91.06",
+    "91.08",
+    "91.13"
+   ],
+   "cevap": "B",
+   "tip": "Senaryo",
+   "gerekce": "Eşya günün saatini göstermekle birlikte kısa süreleri de ölçen bir kronograftır; zarfı adi metal olduğundan 91.02’dedir. Saatle birlikte gelen kayışlar bağlı olmasa da saatin pozisyonunda kalır, 91.13’e gitmez. Kronograflı saatler 91.06’dan açıkça hariç tutulmuştur; 91.01 kıymetli metal zarf ister.",
+   "dayanak": "91.02 Açıklama Notu; 91.06 hariç tutmalar; 91.13 hariç tutmalar; Fasıl 91 Not 2."
+  },
+  {
+   "soru": "Bir otel lobisi için üretilmiş, ağırlıkla çalışan ve sarkaçla düzenlenen makinası 25 cm genişliğinde olan, saat başlarında gong çalan, ahşap zarflı ayaklı salon saatinin zarfı içinde ayrıca küçük bir aydınlatma ampulü bulunmaktadır. Bu eşya Tarife Cetvelinde hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "91.03",
+    "91.09",
+    "94.03",
+    "91.05",
+    "94.05"
+   ],
+   "cevap": "D",
+   "tip": "Senaryo",
+   "gerekce": "Sarkaçlı ve 50 mm’yi aşan makinalı saat Not 3 anlamında “saat makinalı” olmadığından 91.03’e değil 91.05’e girer. Saatin içindeki basit aydınlatma tertibatı Fasıl 91’de kalmasına engel değildir; Fasıl 94 Not 1 de saatleri ve saat mahfazalarını mobilya kapsamından çıkarır. 91.09 zarfsız makinalar içindir.",
+   "dayanak": "Fasıl 91 Not 3; 91.03 ve 91.05 Açıklama Notları; Fasıl 91 Genel Açıklamalar; Fasıl 94 Not 1."
+  }
+ ]
+}

@@ -1,0 +1,314 @@
+{
+ "tur": "fasil",
+ "fasil": 3,
+ "baslik": "Balıklar, kabuklu hayvanlar, yumuşakçalar ve suda yaşayan diğer omurgasız hayvanlar",
+ "bolum": "I",
+ "oz": {
+  "vurgu": "Fasıl 3 iki soru sorar: Eşya balık, kabuklu, yumuşakça veya su omurgasızı mı? Cansızsa insanların yemesine elverişli mi? İkisi de evetse ve eşya yalnızca bu fasılda sayılan işlemleri (soğutma, dondurma, kurutma, tuzlama, salamura, tütsüleme) görmüşse buradadır.",
+  "maddeler": [
+   "Canlı ya da ölü bütün balıklar, kabuklular, yumuşakçalar ve su omurgasızları; amaç önemsizdir (tüketim, konserve sanayii, yumurta elde etme, akvaryum).",
+   "Yenilebilir balık sakatatı (karaciğer, yumurta, nefis, sperm, baş, kuyruk, yüzgeç, yüzme kesesi, deri) balığın haline göre 03.02, 03.03 veya 03.05’te yer alır.",
+   "Yenilebilir un, kaba un ve pelletler ayrı bir pozisyondadır: 03.09."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+  "satirlar": [
+   [
+    "1",
+    "Deniz memelisi mi? (balina, yunus, fok, deniz aslanı)",
+    "Canlı <b>01.06</b> · eti <b>02.08</b> / <b>02.10</b>"
+   ],
+   [
+    "2",
+    "Canlı mı?",
+    "Balık <b>03.01</b> · kabuklu <b>03.06</b> · yumuşakça <b>03.07</b> · diğer <b>03.08</b>"
+   ],
+   [
+    "3",
+    "Cansız ve insanların yemesine elverişsiz mi?",
+    "<b>05.11</b> (un, kaba un, pellet ise <b>23.01</b>)"
+   ],
+   [
+    "4",
+    "Yenilebilir un, kaba un veya pellet mi?",
+    "<b>03.09</b> (pişmiş olsa bile)"
+   ],
+   [
+    "5",
+    "Fasıl 3’te sayılmayan bir işlem görmüş mü? (pişirme*, hamur/ekmek kırıntısı kaplama, yağ, sirke, havyar)",
+    "Balık <b>16.04</b> · kabuklu, yumuşakça, diğer <b>16.05</b>"
+   ],
+   [
+    "6",
+    "Kabuklu, yumuşakça veya diğer su omurgasızı mı?",
+    "<b>03.06</b> / <b>03.07</b> / <b>03.08</b> (her hal)"
+   ],
+   [
+    "7",
+    "Balık kurutulmuş, tuzlanmış, salamura veya tütsülenmiş mi?",
+    "<b>03.05</b>"
+   ],
+   [
+    "8",
+    "Balık fileto veya kılçığı alınmış et mi?",
+    "<b>03.04</b>"
+   ],
+   [
+    "9",
+    "Balık dondurulmuş mu?",
+    "<b>03.03</b>"
+   ],
+   [
+    "10",
+    "Hiçbiri değilse (taze veya soğutulmuş balık)",
+    "<b>03.02</b>"
+   ]
+  ],
+  "dipnot": "* Pişirme istisnaları: tütsüleme öncesinde veya sırasında pişme (03.05–03.08); kabuğu içinde buharda veya suda pişirilmiş kabuklu (03.06); kabuğu açmak için uygulanan ısı şoku (03.07). Bunlar Fasıl 3’te kalır."
+ },
+ "pozisyon_haritasi": [
+  [
+   "03.01",
+   "Canlı balıklar",
+   "Canlı olmak; amaç önemsiz",
+   "Akvaryum süs balığı, canlı yılan balığı"
+  ],
+  [
+   "03.02",
+   "Balıklar (taze veya soğutulmuş)",
+   "Bütün, başsız, kılçıklı parça; fileto hariç; taze yenilebilir sakatat dahil",
+   "Soğutulmuş levrek, MAP ambalajlı taze balık"
+  ],
+  [
+   "03.03",
+   "Balıklar (dondurulmuş)",
+   "03.02 ile aynı mantık, dondurulmuş",
+   "Dondurulmuş bütün uskumru"
+  ],
+  [
+   "03.04",
+   "Balık filetoları ve diğer balık etleri",
+   "Omurgaya paralel kesim; kıyılmış olsun olmasın; taze, soğutulmuş, dondurulmuş",
+   "Dondurulmuş morina filetosu, kıyılmış balık eti"
+  ],
+  [
+   "03.05",
+   "Kurutulmuş, tuzlanmış, salamura; tütsülenmiş balıklar",
+   "Muhafaza işlemi; tütsülemede pişme serbest; fileto ve sakatat dahil",
+   "Tuzlu ringa, kurutulmuş morina, tütsülenmiş somon"
+  ],
+  [
+   "03.06",
+   "Kabuklu hayvanlar",
+   "Kabuklu/kabuksuz; kabuğu içinde buharda veya suda pişme serbest",
+   "Karides, ıstakoz, yengeç, kerevit"
+  ],
+  [
+   "03.07",
+   "Yumuşakçalar",
+   "Kabuklu/kabuksuz; ısı şoku pişirme sayılmaz",
+   "Midye, istiridye, kalamar, ahtapot, mürekkep balığı, salyangoz"
+  ],
+  [
+   "03.08",
+   "Diğer su omurgasızları",
+   "Kabuklu ve yumuşakça dışı",
+   "Deniz hıyarı, deniz kestanesi, deniz anası"
+  ],
+  [
+   "03.09",
+   "Yenilebilir un, kaba un ve pelletler",
+   "İnsan tüketimine uygunluk; pişmiş olsa bile",
+   "Balık unu (gıda), karides pelleti"
+  ]
+ ],
+ "notlar": [
+  [
+   "Fasıl 3 Not 1",
+   "Fasıl 3 dışı: 01.06’daki memeliler; bunların etleri (02.08, 02.10); yenmeyen cansız su hayvanları (Fasıl 5); yenmeyen un, kaba un, pellet (23.01); havyar ve havyar benzerleri (16.04)."
+  ],
+  [
+   "Fasıl 3 Not 2",
+   "“Pellet”: doğrudan sıkıştırma veya <b>az miktarda</b> bağlayıcıyla küçük topaklar. Oran verilmemiştir. (Bölüm IV notunda ise bağlayıcı ağırlıkça <b>%3</b>’ü geçemez.)"
+  ],
+  [
+   "Fasıl 3 Not 3",
+   "03.05–03.08, insanların yemesine elverişli un, kaba un ve pelletleri kapsamaz → 03.09."
+  ],
+  [
+   "Genel Açıklamalar",
+   "“Soğutulmuş”: dondurmadan sıcaklığın genellikle 0 °C civarına düşürülmesi. “Dondurulmuş”: donma derecesi altında tamamen donuncaya kadar soğutma (derece verilmemiştir)."
+  ],
+  [
+   "Fasıl 16 Not 2",
+   "Müstahzarda balık, kabuklu, yumuşakça vb. ağırlıkça <b>%20’den fazla</b> ise Fasıl 16. <b>İstisna:</b> 19.02’deki doldurulmuş ürünler (ör. karidesli mantı) ve 21.03, 21.04."
+  ]
+ ],
+ "sinir_komsulari": [
+  [
+   "Canlı balina, yunus, fok",
+   "01.06",
+   "Deniz memelisi (Fasıl 3 Not 1)"
+  ],
+  [
+   "Balina, yunus, fok eti; kurbağa bacağı",
+   "02.08 / 02.10",
+   "01.06 hayvanlarının eti"
+  ],
+  [
+   "Kaplumbağa yumurtası; yenilebilir böcek (çekirge)",
+   "04.10",
+   "Başka yerde yer almayan yenilebilir hayvansal ürün"
+  ],
+  [
+   "Deniz kabuğu, mürekkep balığı kemiği, mercan",
+   "05.08",
+   "Kabuk ve mercan pozisyonu"
+  ],
+  [
+   "Yenmeyen ölü balık, balık döküntüsü, yem amaçlı tuzlu morina yumurtası; yenmeyen cansız böcek",
+   "05.11",
+   "İnsanların yemesine elverişsiz"
+  ],
+  [
+   "Balık yağı",
+   "15.04",
+   "Balık ve deniz memelisi yağları"
+  ],
+  [
+   "Balık hülasası ve suyu",
+   "16.03",
+   "Hülasa ve sular"
+  ],
+  [
+   "Pişmiş, kaplanmış, yağda veya sirkede balık; havyar",
+   "16.04",
+   "Fasıl 3 dışı hazırlık"
+  ],
+  [
+   "Kabuğu çıkarılıp kaynatılmış karides; sirkede midye",
+   "16.05",
+   "Fasıl 3 dışı hazırlık"
+  ],
+  [
+   "Karidesli mantı (wonton)",
+   "19.02",
+   "Doldurulmuş makarna; Fasıl 16 Not 2 istisnası"
+  ],
+  [
+   "Balık çorbası",
+   "21.04",
+   "03.05 hariç tutması"
+  ],
+  [
+   "Yenmeyen balık unu (yem)",
+   "23.01",
+   "Fasıl 3 Not 1"
+  ],
+  [
+   "Deniz suyu",
+   "25.01",
+   "Tuz ve deniz suyu pozisyonu"
+  ]
+ ],
+ "tuzaklar": [
+  "<b>Tütsülenirken pişen balık ≠ pişmiş balık.</b> Tütsüleme öncesinde veya sırasında pişen balık 03.05’te kalır. Hamur veya ekmek kırıntısıyla kaplanan fileto ise pişmemiş olsa bile 16.04’e gider.",
+  "<b>Kabuk içinde pişirme ≠ kabuğu çıkarıp kaynatma.</b> Kabuğuyla buharda veya suda pişirilen kabuklu 03.06’da; kabuğu çıkarılıp kaynatılan 16.05’te.",
+  "<b>Isı şoku pişirme değildir.</b> Kabuğu açmak veya yumuşakçayı dengede tutmak için uygulanan haşlama 03.07’yi bozmaz.",
+  "<b>Balina, yunus ve fok memelidir.</b> Canlı 01.06, eti 02.08 veya 02.10.",
+  "<b>Balık yumurtası dört yola ayrılır.</b> Yenilebilir ve yalnız Fasıl 3 işlemi görmüşse balığın haline göre 03.02 / 03.03 / 03.05; havyar 16.04; yem amaçlı 05.11. Fasıl 4’te (yumurtalar) yer almaz.",
+  "<b>Fileto sınırı.</b> Deri ve küçük kılçık kalması 03.04’ü bozmaz; iki yan parçanın birleştirilmesi bozar. Tuzlanan fileto 03.05’e geçer.",
+  "<b>Ambalaj faslı değiştirmez, işlem değiştirir.</b> Hava geçirmez kutudaki tütsülenmiş somon ve MAP ambalajlı taze balık Fasıl 3’tedir.",
+  "<b>Pişmişlik 03.09’u bozmaz.</b> Pişmiş balıktan elde edilen yenilebilir un 03.09’da kalır.",
+  "<b>Mürekkep balığı balık değildir.</b> Yumuşakçadır → 03.07. Salyangoz da yumuşakçadır."
+ ],
+ "hafiza": {
+  "kanca": "CA – TA – DON – Fİ – KU  /  KA – YU – Dİ – UN",
+  "aciklama": "<b>CA</b>nlı 03.01 · <b>TA</b>ze 03.02 · <b>DON</b>durulmuş 03.03 · <b>Fİ</b>leto 03.04 · <b>KU</b>rutulmuş-tuzlu-tütsülü 03.05 · <b>KA</b>buklu 03.06 · <b>YU</b>muşakça 03.07 · <b>Dİ</b>ğer omurgasız 03.08 · <b>UN</b>-pellet 03.09. Görsel benzetme: bir balık tezgâhını soldan sağa yürüyün; önce akvaryum, sonra buz, derin dondurucu, fileto tahtası, en sağda tütsü dolabı; arkada kabuklular ve yumuşakçalar, kasadaki torbada un ve pellet."
+ },
+ "sinav_odagi": [
+  "Deniz memelilerinin (balina, yunus, fok) Fasıl 3 dışında kaldığı; canlı halinin 01.06’da, etinin 02.08’de yer aldığı.",
+  "“Hangisi 3. fasılda sınıflandırılmaz?” kalıbında balıkların, yumuşakçaların (deniz kulağı) ve diğer su omurgasızlarının (deniz hıyarı) memelilerle karıştırılması.",
+  "İnsan tüketimine uygunluk ölçütü: yenilebilir böcek 04.10’da, yenmeyen cansız hayvanlar 05.11’de.",
+  "Balık yumurtasının yeri: Fasıl 4’teki kuş ve kümes hayvanı yumurtalarıyla karıştırılması.",
+  "Hazırlanmış su ürünlerinin Fasıl 16’ya, karidesli doldurulmuş makarnanın 19.02’ye gitmesi; set ve GYK sorularıyla birleştirilmesi."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Aşağıdaki canlılardan hangisi Türk Gümrük Tarife Cetveli’nin 3. faslında <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Alabalık",
+    "Köpek balığı",
+    "Balina",
+    "Deniz kulağı",
+    "Deniz hıyarı"
+   ],
+   "cevap": "C",
+   "aciklama": "Balina bir deniz memelisidir; Fasıl 3 Not 1 uyarınca canlı hali 01.06’da yer alır. Deniz kulağı yumuşakça (03.07), deniz hıyarı diğer su omurgasızı (03.08) olarak Fasıl 3’tedir."
+  },
+  {
+   "soru": "Dondurulmuş balina eti tarife cetvelinde hangi pozisyondadır?",
+   "secenekler": [
+    "02.07",
+    "02.08",
+    "03.02",
+    "03.03"
+   ],
+   "cevap": "B",
+   "aciklama": "01.06’daki memelilerin etleri Fasıl 3 dışındadır; taze, soğutulmuş veya dondurulmuş balina eti 02.08’de sınıflandırılır."
+  }
+ ],
+ "ozet": [
+  "Memeli ise Fasıl 3 değil: canlı 01.06, eti 02.08 / 02.10.",
+  "Canlıysa 03.01 / 03.06 / 03.07 / 03.08; cansız ve yenmezse 05.11 (un-pellet ise 23.01).",
+  "Yenilebilir un, kaba un ve pellet daima 03.09; pişmiş olması fark etmez.",
+  "Fasıl 3 dışı hazırlık gördüyse balık 16.04, diğerleri 16.05.",
+  "Balıkta hal sırası şaşmaz: 03.05 → 03.04 → 03.03 → 03.02.",
+  "Ambalaj faslı değiştirmez; işlem değiştirir."
+ ],
+ "sorular": [
+  {
+   "soru": "Tarife Cetveline göre, kabuğu ile birlikte buharda pişirilmiş ve dondurulmuş karides hangi tarife pozisyonunda sınıflandırılır?",
+   "secenekler": [
+    "03.06",
+    "03.03",
+    "03.07",
+    "16.04",
+    "16.05"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "03.06, kabukları ile birlikte buharda veya suda pişirilmiş kabuklu hayvanları kapsar; bunlar soğutulmuş, dondurulmuş, kurutulmuş, tuzlanmış veya salamura edilmiş de olabilir. Kabuğu çıkarılıp pişirilen kabuklu 16.05’e gider (E). 03.03 balık, 03.07 yumuşakça, 16.04 balık müstahzarı pozisyonudur. Tuzak, “pişmiş” kelimesini tek başına fasıl dışı sanmaktır.",
+   "dayanak": "03.06 Açıklama Notu (3); Fasıl 3 Genel Açıklamalar."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 3. faslında <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Akvaryumda süs amacıyla kullanılacak canlı balık",
+    "Konserve kutusuna konulmuş tütsülenmiş somon balığı",
+    "Kabuğu çıkarılarak suda kaynatılmış karides",
+    "Dondurulmuş deniz kestanesi",
+    "Kabuğunu açmak için ısı şokuna tabi tutulmuş midye"
+   ],
+   "cevap": "C",
+   "tip": "Olumsuz teşhis · Fasıl",
+   "gerekce": "Kabuğu çıkarılarak suda kaynatılmış kabuklu, 03.06’da belirtilmeyen bir işlem gördüğünden 16.05’tedir. Canlı süs balığı 03.01’de (amaç önemsiz), konserve kutusundaki tütsülenmiş somon 03.05’te (hava geçirmez kap faslı değiştirmez), deniz kestanesi 03.08’de, ısı şoku görmüş midye 03.07’dedir.",
+   "dayanak": "03.06 Açıklama Notu, hariç tutmalar; Fasıl 3 Genel Açıklamalar; 03.07 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetvelinin 3. Fasıl notlarına göre “pellet” tabiri ile ilgili aşağıdakilerden hangisi <b>doğrudur</b>?",
+   "secenekler": [
+    "Ağırlığının %3’ünü geçmeyecek oranda bağlayıcı içeren topaklardır.",
+    "Doğrudan sıkıştırma veya az miktarda bağlayıcı ilavesiyle elde edilen küçük topaklardır.",
+    "Yalnızca pişirilmemiş balıklardan elde edilen topaklar pellet sayılır.",
+    "İnsan tüketimine uygun olsalar bile pelletler 23.01 pozisyonunda yer alır.",
+    "Pellet tabiri yalnızca 03.05 ila 03.08 pozisyonlarındaki ürünler için tanımlanmıştır."
+   ],
+   "cevap": "B",
+   "tip": "Fasıl notu · Tanım",
+   "gerekce": "Fasıl 3 Not 2’ye göre pellet, doğrudan sıkıştırma veya az miktarda bağlayıcı ilavesiyle küçük topaklar halinde bir araya getirilen üründür; oran verilmemiştir. A şıkkındaki %3 sınırı Bölüm IV notuna aittir (tuzak). Pişmiş ürünlerden elde edilenler de pellettir (C); yenilebilirler 03.09’dadır (D).",
+   "dayanak": "Fasıl 3 Not 2 ve Not 3; Bölüm IV Notu."
+  }
+ ]
+}

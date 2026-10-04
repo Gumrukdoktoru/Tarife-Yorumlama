@@ -1,0 +1,725 @@
+{
+ "tur": "fasil",
+ "fasil": 68,
+ "baslik": "Taş, alçı, çimento, amyant, mika veya benzeri maddelerden eşya",
+ "bolum": "XIII",
+ "oz": {
+  "vurgu": "Fasıl 68, Fasıl 25’teki ham mineral maddelerin <b>işçilik görmüş</b> hallerini ve taş, alçı, çimento, beton, asfalt, amyant, mika, aşındırıcı ve mineral yünden eşyayı kapsar. Sınır iki yöndedir: işlem Fasıl 25’in izin verdiği düzeyi aşmamışsa ürün Fasıl 25’te kalır; eşya <b>pişirilmeden önce şekil verilmiş topraktan</b> yapılmışsa Fasıl 69’a, camdan ise Fasıl 70’e gider.",
+  "maddeler": [
+   "Tabii taş: kaldırım, kenar ve döşeme taşları 68.01; işlenmiş yontu ve inşaat taşı ile mamulleri, mozaik küpler 68.02 (kayağan hariç); işlenmiş kayağan ve kayağan eşyası 68.03.",
+   "Aşındırıcılar: çerçevesiz değirmen ve bileği taşları, taşlama ve kesme diskleri 68.04; mesnetli aşındırıcı toz ve taneler (zımpara kâğıdı, zımpara bezi) 68.05.",
+   "Bağlayıcı esaslı eşya: asfalt 68.07, bitkisel lif + mineral bağlayıcı panolar 68.08, alçı 68.09, çimento, beton, suni taş 68.10, lif takviyeli çimento 68.11.",
+   "Yalıtım ve özel mineraller: mineral yünler ve genleştirilmiş mineraller 68.06, amyant eşyası 68.12, monte edilmemiş sürtünme malzemesi 68.13, mika 68.14, başka yerde yer almayan taş, grafit, karbon lifi ve turb eşyası 68.15."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı yeri verir.",
+  "satirlar": [
+   [
+    "1",
+    "Fasıl 25’in izin verdiği işlemi (kırma, öğütme, eleme, testereyle dikdörtgen kesme) aşmamış ham mineral mi?",
+    "Fasıl 25 (ör. <b>25.14</b>, <b>25.15</b>, <b>25.16</b>, <b>25.24</b>, <b>25.25</b>)"
+   ],
+   [
+    "2",
+    "Pişirilmeden önce şekil verilmiş topraktan (seramik) veya camdan mı?",
+    "Fasıl 69 · Fasıl 70 (seramik aşındırıcı eşya <b>68.04</b>’te kalır)"
+   ],
+   [
+    "3",
+    "Not 1 eşyası mı (Fasıl 71, Fasıl 82 aletleri, litografya taşı, izolatör, dişçi tornası uçları, saat, mobilya, oyuncak, düğme, arduvaz kalem/tahta, sanat eseri)?",
+    "Fasıl 71 · 82 · <b>84.42</b> · <b>85.46</b> · <b>90.18</b> · 91 · 94 · 95 · 96 · 97"
+   ],
+   [
+    "4",
+    "Tabii taştan kaldırım, kaldırım kenar veya döşeme taşı mı (kayağan hariç)?",
+    "<b>68.01</b>"
+   ],
+   [
+    "5",
+    "İşlenmiş yontu/inşaat taşı veya mamulü; tabii taştan mozaik küp veya boyanmış granül mü?",
+    "<b>68.02</b>"
+   ],
+   [
+    "6",
+    "İşlenmiş kayağan taşı veya kayağan eşyası mı?",
+    "<b>68.03</b>"
+   ],
+   [
+    "7",
+    "Çerçevesiz değirmen/bileği taşı, taşlama çarkı, el bileği taşı mı; mesnetli aşındırıcı toz/tane mi?",
+    "<b>68.04</b> · <b>68.05</b>"
+   ],
+   [
+    "8",
+    "Mineral yün, genleştirilmiş vermikülit/kil/perlit, mineral yalıtım karışımı mı?",
+    "<b>68.06</b>"
+   ],
+   [
+    "9",
+    "Asfalt eşyası mı; bitkisel lif veya talaşın mineral bağlayıcıyla aglomere edildiği pano mu?",
+    "<b>68.07</b> · <b>68.08</b>"
+   ],
+   [
+    "10",
+    "Alçı eşyası mı; çimento, beton, suni taş eşyası mı; lif takviyeli çimento eşyası mı?",
+    "<b>68.09</b> · <b>68.10</b> · <b>68.11</b>"
+   ],
+   [
+    "11",
+    "Amyant eşyası mı; monte edilmemiş sürtünme malzemesi mi?",
+    "<b>68.12</b> · <b>68.13</b>"
+   ],
+   [
+    "12",
+    "İşlenmiş mika mı; başka yerde yer almayan taş, grafit, karbon lifi, turb eşyası mı?",
+    "<b>68.14</b> · <b>68.15</b>"
+   ]
+  ],
+  "dipnot": "Kayağan taşından mozaik küpler ve suni olarak boyanmış granüller 68.02’de; kayağan taşından yazı tahtası 96.10’da, kalem 96.09’dadır."
+ },
+ "pozisyon_haritasi": [
+  [
+   "68.01",
+   "Tabii taştan kaldırım, kenar ve döşeme taşları",
+   "Yol ve kaldırım için hazırlanmış; kayağan hariç",
+   "Granit kaldırım taşı, bordür"
+  ],
+  [
+   "68.02",
+   "İşlenmiş yontu/inşaat taşları ve mamulleri; mozaik küpler",
+   "Fasıl 25’i aşan işçilik; kayağan hariç",
+   "Cilalı mermer levha, mezar taşı, taş vazo"
+  ],
+  [
+   "68.03",
+   "İşlenmiş kayağan taşı ve eşyası",
+   "25.14’ü aşan işlem; aglomere kayağan dahil",
+   "Kayağan çatı kaplaması, kayağan lavabo"
+  ],
+  [
+   "68.04",
+   "Değirmen, bileği taşları, bileği çarkları (çerçevesiz)",
+   "Öğütme, bileme, parlatma, kesme",
+   "Taşlama diski, bileği taşı, değirmen taşı"
+  ],
+  [
+   "68.05",
+   "Mesnetli aşındırıcı toz veya taneler",
+   "Mensucat, kâğıt, karton vb. mesnet",
+   "Zımpara kâğıdı, zımpara bezi, tırnak törpüsü"
+  ],
+  [
+   "68.06",
+   "Mineral yünler; genleştirilmiş mineraller; yalıtım eşyası",
+   "Isı/ses yalıtımı; amyant genelde %5’i geçmez",
+   "Taş yünü, cüruf yünü, genleştirilmiş perlit"
+  ],
+  [
+   "68.07",
+   "Asfalt ve benzerinden eşya",
+   "Belirli işe yönelik eşya şekli almış",
+   "Asfalt çatı levhası, bitümlü çatı örtüsü"
+  ],
+  [
+   "68.08",
+   "Bitkisel lif veya talaştan panolar (mineral bağlayıcılı)",
+   "Çimento, alçı, kireç, sodyum silikat bağlayıcı",
+   "Ahşap yünü–çimento panosu"
+  ],
+  [
+   "68.09",
+   "Alçı ve alçı esaslı eşya",
+   "Esası alçı",
+   "Alçı pano, alçı rozet, alçı heykel"
+  ],
+  [
+   "68.10",
+   "Çimento, beton, suni taş eşya",
+   "Takviyeli olsun olmasın; prefabrik dahil",
+   "Beton boru, briket, terazzo karo"
+  ],
+  [
+   "68.11",
+   "Lif takviyeli çimento eşyası",
+   "Amyant, selüloz vb. lif + çimento",
+   "Oluklu lifli çimento levha, boru"
+  ],
+  [
+   "68.12",
+   "İşlenmiş amyant ve amyant eşyası",
+   "68.11 ve 68.13 hariç",
+   "Amyant iplik, amyant itfaiyeci giysisi"
+  ],
+  [
+   "68.13",
+   "Monte edilmemiş sürtünme malzemeleri",
+   "Esası amyant, mineral madde veya selüloz",
+   "Takılmamış fren balatası, debriyaj diski"
+  ],
+  [
+   "68.14",
+   "İşlenmiş mika ve mika eşyası",
+   "Kesilmiş, aglomere veya terkip mika",
+   "Mikanit levha, kesilmiş mika pencere"
+  ],
+  [
+   "68.15",
+   "Başka yerde yer almayan taş/mineral eşya",
+   "Grafit, karbon lifi, turb dahil",
+   "Karbon elyaf, grafit filtre, turb saksı"
+  ]
+ ],
+ "notlar": [
+  [
+   "Fasıl 68 Not 1",
+   "Fasıl dışı: (a) Fasıl 25 eşyası; (b) 48.10 / 48.11’deki sıvanmış, emdirilmiş veya kaplanmış kâğıt ve karton (mika tozu, grafit, bitüm, asfalt kaplı gibi); (c) Fasıl 56 / 59’daki sıvanmış, emdirilmiş, kaplanmış mensucat; (d) Fasıl 71 eşyası; (e) Fasıl 82 aletleri ve aksamı; (f) 84.42’deki litografya taşları; (g) 85.46 izolatörleri ve 85.47 izole edici bağlantı parçaları; (h) 90.18’deki dişçi tornalarına mahsus küçük uçlar; (ij) Fasıl 91 eşyası; (k) Fasıl 94 eşyası (mobilya, lamba, prefabrik yapı); (l) Fasıl 95 eşyası; (m) 96.02 (Fasıl 96 Not 2(b) maddelerinden), 96.06 (düğme), 96.09 (arduvaz kalem), 96.10 (arduvaz yazı tahtası), 96.20 (monopod, tripod) eşyası; (n) Fasıl 97 eşyası."
+  ],
+  [
+   "Fasıl 68 Not 2",
+   "68.02 anlamında “yontulmaya ve inşaata elverişli taşlar”: 25.15 veya 25.16’daki taşlar ile aynı şekilde işlenmiş bütün tabii taşlar (kuvarsit, çakmaktaşı, dolomit, sabun taşı gibi); kayağan taşı hariç."
+  ],
+  [
+   "Genel Açıklamalar",
+   "Fasıl; Fasıl 25 Not 1’in izin verdiğinden ileri işçilik görmüş ürünleri, Fasıl 25 Not 2(e) ile o fasıldan çıkarılan ürünleri (kaldırım taşı, mozaik küp, çatı kayağanı), Bölüm V mineral maddelerinden ve Fasıl 28 maddelerinden (suni aşındırıcılar) yapılan eşyayı kapsar. Pişirilmeden önce şekil verilmiş topraktan eşya (68.04’teki seramik aşındırıcı eşya hariç) Fasıl 69’da; cam, cam-seramik ve eritilmiş kuvars Fasıl 70’tedir."
+  ],
+  [
+   "25.15 Açıklama Notu",
+   "Mermer ve benzeri taşlar ham, kabaca yontulmuş veya testereyle dikdörtgen (kare dahil) blok ya da levha halinde sadece kesilmişse Fasıl 25’tedir. Oyulmuş, taşçı kalemiyle işlenmiş, kumla perdahlanmış, cilalanmış, kenarı şevlenmiş blok ve taslaklar ile mozaik ve döşeme küpleri 68.02 / 68.01’dedir."
+  ],
+  [
+   "68.01 Açıklama Notu",
+   "Kaldırım, kenar ve döşeme taşı olduğu anlaşılacak şekilde yarılmış, biçilmiş, kabaca yontulmuş tabii taşlar (başka işe elverişli olsalar da). Çakıl ve şekilsiz yol taşları 25.17; seramik döşeme taşı Fasıl 69; beton veya suni taş bordür 68.10."
+  ],
+  [
+   "68.02 Açıklama Notu",
+   "Kare veya dikdörtgen dışı (üçgen, altıgen, daire vb.) biçilmiş levhalar ile perdahlanmış, cilalanmış, oyulmuş taşlar ve mamulleri (basamak, mezar taşı, sütun, vazo, biblo, yapma meyve). Mobilya üst tablası mobilyasıyla birlikte sunulursa Fasıl 94, ayrı sunulursa 68.02. Taş parçalarının çimento veya plastikle aglomere edilmesiyle yapılan eşya 68.10. Hariç: kayağan eşyası (68.03), eritilmiş bazalt (68.15), pişirilmiş steatit (Fasıl 69 / 85), taklit mücevher (71.17), taştan düğme (96.06), orijinal heykel (97.03)."
+  ],
+  [
+   "68.03 Açıklama Notu",
+   "Ham, yarılmış, kabaca yontulmuş veya testereyle dikdörtgen kesilmiş kayağan 25.14’te; başka şekilde kesilmiş, satıhları düzlenmiş, cilalanmış, delinmiş, emaye kaplanmış kayağan ve eşyası (çatı kaplaması, lavabo, şömine rafı) ile aglomere kayağan 68.03’te. Boyanmamış granül 25.14; mozaik küp ve boyanmış granül 68.02; kalem 96.09, yazı tahtası 96.10."
+  ],
+  [
+   "68.04 Açıklama Notu",
+   "Tabii taş, aglomere tabii/suni aşındırıcı veya seramikten değirmen taşları, bileği taşları, taşlama ve kesme diskleri, el ile bileme ve parlatma taşları; çerçevesiz olmalıdır. Çerçeveli olup el veya pedalla çalışanlar 82.05, motorlu olanlar Fasıl 84 / 85. Aşındırıcıyla kaplansa da kesici dişini koruyan aletler Fasıl 82’dedir (testere 82.02; dişli delici uç 82.07, düz ağızlı uç 68.04). Hariç: kokulu sünger taşı (33.04), mesnetli aşındırıcılar (68.05), dişçi tornaları (90.18)."
+  ],
+  [
+   "68.05 Açıklama Notu",
+   "Ezilmiş tabii veya suni aşındırıcılarla kaplı mensucat, kâğıt, karton, vulkanize fiber, deri vb.; rulo veya kesilmiş halde; ağaç şerit üzerine tespit edilmiş tırnak ve saatçi törpüleri dahil. Sert bir destekle birleşik öğütme milleri 68.04’tedir."
+  ],
+  [
+   "68.06 Açıklama Notu",
+   "Cüruf ve kaya yünü, seramik lifler; ısıl işlemle genleştirilmiş vermikülit (hacmi otuz beş katına kadar artabilir), perlit, kil, köpüklü cüruf; mineral yalıtım karışımları ve mamulleri. Kullanımı kolaylaştırmak için amyant içerebilir; oranı genellikle ağırlığın <b>%5</b>’ini geçmez. Granüle cüruf 26.18, aktive perlit 38.02, cam yünü 70.19, hafif beton 68.10, pişirilmiş mamuller Fasıl 69."
+  ],
+  [
+   "68.07 Açıklama Notu",
+   "Asfalt, bitüm, zift esaslı ve belirli işe yönelik eşya şeklini almış mamuller (levha, kiremit, çatı kaplama malzemesi, boru, kap). Kullanmadan önce eritilmesi gereken asfalt Fasıl 27’de; yalnızca bitüm kaplı kâğıt 48.11, mensucat Fasıl 56 / 59, cam lifi mensucat 70.19. Metalle kaplı asfalt borular esas niteliği veren maddeye göre sınıflandırılır."
+  ],
+  [
+   "68.08 Açıklama Notu",
+   "Bitkisel lif, saman, talaş, testere tozu vb.nin mineral bağlayıcılarla (çimento, alçı, kireç, sodyum silikat) aglomere edilmesiyle elde edilen panolar, levhalar, bloklar. Organik bağlayıcılı lif levha 44.11, yonga levha 44.10, aglomere mantar 45.04, lifli çimento eşyası 68.11’dedir."
+  ],
+  [
+   "68.09 Açıklama Notu",
+   "Alçı ve alçı esaslı bileşiklerden pano, levha, karo, heykel, rozet, endüstriyel kalıp vb. Hariç: perakende alçılı sargı (30.05), alçılı cebire (90.21), gösteri modelleri (90.23), terzi mankeni (96.18), orijinal heykel (97.03). Dişçilik alçısı (madde olarak) 25.20’dedir."
+  ],
+  [
+   "68.10 Açıklama Notu",
+   "Çimento, beton veya suni taştan döküm, pres veya santrifüjle elde edilen eşya; prefabrik yapı elemanları dahil. <b>Suni taş:</b> tabii taş tozu veya parçalarının kireç, çimento, plastik vb. bağlayıcılarla aglomere edilmesiyle elde edilen taklit (terazzo, granito). Otoklavda yaklaşık 140 °C’de buharla sertleştirilen kum-kireç tuğlaları dahil. Kırılmış beton 25.30; aglomere kayağan 68.03."
+  ],
+  [
+   "68.11 Açıklama Notu",
+   "Lifli maddelerin (amyant, selüloz, sentetik polimer, cam, metal lifleri) çimento ile karışımından elde edilen ve liflerin takviye görevi gördüğü levha, oluklu levha, boru, rezervuar, saksı vb."
+  ],
+  [
+   "68.12 Açıklama Notu",
+   "Dövme, temizleme ve sınıflandırmadan ileri işlenmiş (karde, boyanmış) amyant lifleri; amyant veya amyant–magnezyum karbonat esaslı karışımlar; bunlardan iplik, mensucat, giysi, başlık, ayakkabı, conta vb. Ham veya yalnız dövülmüş, temizlenmiş lifler ve amyant tozu 25.24; esası plastik olanlar Fasıl 39; amyantlı çimento 68.11; sürtünme malzemesi 68.13."
+  ],
+  [
+   "68.13 Açıklama Notu",
+   "Esası amyant, diğer mineral maddeler veya selüloz olan, monte edilmemiş sürtünme malzemeleri ve garnitürleri (levha, rulo, şerit, segman, disk, balata). Mineral madde veya selüloz içermeyenler (mantar gibi) maddesine göre; metal tabakaya takılı fren balataları ait oldukları taşıtın aksamı olarak (ör. 87.08)."
+  ],
+  [
+   "68.14 Açıklama Notu",
+   "Yarma ve kenar düzeltmeden ileri işlenmiş (belirli şekilde kesilmiş) mika, aglomere mika (mikanit) ve terkip mika ile bunlardan eşya. Yalnız yarılmış mika ve mika tozu 25.25; mika tozu kaplı kâğıt 48.10 / 48.14, mensucat 59.07; mika izolatörler 85.46–85.48, mika kondansatörler 85.32, mika koruyucu gözlükler 90.04, Noel ağacı mika süsleri 95.05."
+  ],
+  [
+   "68.15 Açıklama Notu",
+   "Başka yerde yer almayan taş ve mineral eşya: elektrik dışı grafit/karbon eşya, karbon lifleri ve eşyası, turb eşyası, pişirilmemiş aglomere manyezit tuğlalar, mihenk taşları, eritilmiş bazalt eşya. Pişirilmiş benzerleri 69.02 / 69.03; elektrik karbonları 85.45; elektrik fırçası için grafit yarı mamulleri 38.01."
+  ]
+ ],
+ "sinir_komsulari": [
+  [
+   "Testereyle dikdörtgen blok halinde sadece kesilmiş mermer veya granit",
+   "25.15 / 25.16",
+   "Fasıl 25 işçiliği; cilalanınca 68.02"
+  ],
+  [
+   "Ham veya yalnız dövülmüş, temizlenmiş amyant; amyant tozu",
+   "25.24",
+   "68.12 Açıklama Notu"
+  ],
+  [
+   "Yalnız yarılmış mika; mika tozu",
+   "25.25",
+   "68.14 Açıklama Notu"
+  ],
+  [
+   "Dişçilikte kullanılan özel kalsine alçı",
+   "25.20",
+   "Not 1(a): Fasıl 25 eşyası"
+  ],
+  [
+   "Çakıl ve şekilsiz yol taşları; kırılmış beton",
+   "25.17 / 25.30",
+   "68.01 ve 68.10 hariç tutmaları"
+  ],
+  [
+   "Seramik karo, tuğla; pişirilmiş ateş tuğlası",
+   "Fasıl 69",
+   "Pişirilmeden önce şekil verilmiş toprak"
+  ],
+  [
+   "Cam yünü, cam lifi mensucat",
+   "70.19",
+   "Mineral yün değil cam"
+  ],
+  [
+   "Çerçeveye monte, el veya pedal ile çalışan bileği taşı",
+   "82.05",
+   "68.04 Açıklama Notu"
+  ],
+  [
+   "Aşındırıcı kaplı testere; dişli delici uç",
+   "82.02 / 82.07",
+   "Kesici diş asıl fonksiyon"
+  ],
+  [
+   "Metal tabakaya takılı fren balatası",
+   "87.08",
+   "68.13 hariç tutması"
+  ],
+  [
+   "Mika izolatör; mika kondansatör",
+   "85.46 / 85.32",
+   "68.14 Açıklama Notu"
+  ],
+  [
+   "Litografya taşı",
+   "84.42",
+   "Not 1(f)"
+  ],
+  [
+   "Kayağan taşından yazı tahtası ve kalem",
+   "96.10 / 96.09",
+   "Not 1(m)"
+  ],
+  [
+   "Mobilyasıyla birlikte sunulan mermer masa tablası",
+   "Fasıl 94",
+   "68.02 Açıklama Notu"
+  ],
+  [
+   "Alçılı sargı; alçılı cebire",
+   "30.05 / 90.21",
+   "68.09 hariç tutmaları"
+  ]
+ ],
+ "tuzaklar": [
+  "<b>Fasıl 25 ile 68 arasındaki çizgi işçiliktir.</b> Testereyle dikdörtgen blok veya kalın dilim halinde sadece kesilmiş mermer ve granit Fasıl 25’te; cilalanmış, oyulmuş, şevlenmiş veya dikdörtgen dışı kesilmiş taş 68.02’dedir.",
+  "<b>Kayağan taşı 68.02’ye girmez.</b> İşlenmiş kayağan 68.03’tedir; ancak kayağandan mozaik küpler ve boyanmış granüller 68.02’de, yazı tahtası ve kalemler Fasıl 96’dadır.",
+  "<b>Pişirme Fasıl 69’a götürür.</b> Pişirilmeden önce şekil verilmiş topraktan eşya seramiktir; tek istisna 68.04’teki seramik aşındırıcı eşyadır. Pişirilmemiş aglomere manyezit tuğla 68.15’te, pişirileni 69.02 / 69.03’tedir.",
+  "<b>Çerçeve bileği taşını alete çevirir.</b> Çerçevesiz bileği taşı 68.04; el veya pedalla çalışan çerçeveli olanı 82.05, motorlu olanı Fasıl 84 / 85’tedir.",
+  "<b>Dişli ise Fasıl 82, düz ağızlı ise 68.04.</b> Aşındırıcıyla kaplı testere 82.02’de; delici uç ağzı düzse 68.04, dişliyse 82.07’dedir.",
+  "<b>Takılı balata taşıt parçasıdır.</b> Monte edilmemiş sürtünme malzemesi 68.13; metal tabakaya takılı fren balatası ait olduğu taşıtın aksamıdır (ör. 87.08).",
+  "<b>Amyant az ise 68.06, esas ise 68.12.</b> Yalıtım karışımlarında genellikle %5’i geçmeyen amyant 68.06’yı bozmaz; esası amyant olan karışım ve eşya 68.12, amyantlı çimento 68.11, sürtünme malzemesi 68.13’tür.",
+  "<b>Bağlayıcının cinsi pozisyonu değiştirir.</b> Ağaç talaşı + mineral bağlayıcı 68.08; organik bağlayıcılı lif levha 44.11, yonga levha 44.10’dur.",
+  "<b>Suni taş beton ailesindendir.</b> Taş kırıntısının çimento veya plastikle aglomere edilmesiyle yapılan terazzo, granito ve masa tablaları 68.10’dadır, 68.02’de değil.",
+  "<b>Kaplı kâğıt ve mensucat Fasıl 68 değildir.</b> Mika tozu veya bitümle kaplı kâğıt Fasıl 48’de, mensucat Fasıl 56 / 59’da kalır; asfalt çatı kaplama malzemesi ise 68.07’dedir."
+ ],
+ "hafiza": {
+  "kanca": "TAŞ (01–03) → AŞINDIRICI (04–05) → YALITIM (06) → BAĞLAYICI (07–11) → AMYANT-BALATA-MİKA (12–14) → DİĞER (15)",
+  "aciklama": "Fasıl 68’i bir şantiye gibi gezin: önce yol ve cephe taşları (68.01 kaldırım, 68.02 mermer, 68.03 kayağan), sonra atölyedeki taşlama ve zımpara (68.04–68.05), çatı arasındaki yalıtım yünü (68.06), ardından bağlayıcı sırasıyla asfalt, talaşlı pano, alçı, beton, lifli çimento (68.07–68.11), en sonda amyant, balata, mika (68.12–68.14) ve kalan her şey (68.15)."
+ },
+ "sinav_odagi": [
+  "Ham mineral (Fasıl 25) ile mineral eşyası (Fasıl 68) ayrımı: dişçilikte kullanılan alçının 25.20’de kalıp 68.09’a gitmediği; alçılı cebire (90.21) ve 30.06 gibi eczacılık pozisyonlarının çeldirici olarak kullanılması.",
+  "“Hangisi farklı fasıldadır?” kalıbında zımpara taşı, amyant ve tuz gibi Fasıl 25 minerallerinin cürufla (Fasıl 26) karşılaştırılması; işlenmemiş mineralin Fasıl 68’e girmediği.",
+  "Taşıtla ilgili pozisyonlar: monte edilmemiş fren balatası gibi sürtünme malzemelerinin 68.13’te yer aldığı; 84.07, 85.07, 85.12 ile birlikte seçeneklerde kullanılması.",
+  "Ayakkabıyla ilgili pozisyon sorularında amyanttan ayakkabıların 68.12’de sınıflandırıldığı.",
+  "Bölüm soruları: “taş, alçı, çimento” grubunun Bölüm V’te (mineral maddeler) değil Bölüm XIII’te yer aldığı."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Aşağıdaki tarife pozisyonlarından hangisinde binek otomobilleri ile ilgili bir ürün sınıflandırılmamaktadır?",
+   "secenekler": [
+    "68.13",
+    "84.07",
+    "85.07",
+    "85.12",
+    "87.10"
+   ],
+   "cevap": "E",
+   "aciklama": "68.13 Açıklama Notu, monte edilmemiş sürtünme malzemelerinin her türlü kara nakil vasıtasının fren balatalarında ve kavrama tertibatında kullanıldığını belirtir. 87.10 ise tanklar ve zırhlı muharebe araçları pozisyonudur."
+  }
+ ],
+ "ozet": [
+  "Ham veya yalnız kabaca işlenmiş mineral Fasıl 25’te; Fasıl 25 işçiliğini aşan taş ve mineral eşyası Fasıl 68’de; pişirilmiş toprak Fasıl 69’da, cam Fasıl 70’te.",
+  "Taş: kaldırım 68.01, işlenmiş taş ve mozaik küp 68.02, kayağan 68.03.",
+  "Aşındırıcı: çerçevesiz bileği taşı ve diskler 68.04; zımpara kâğıdı/bezi 68.05; dişli aletler ve çerçeveli bileği taşları Fasıl 82.",
+  "Bağlayıcı sırası: asfalt 68.07, talaşlı pano 68.08, alçı 68.09, beton ve suni taş 68.10, lifli çimento 68.11.",
+  "Yalıtım yünü 68.06; amyant 68.12; takılmamış balata 68.13 (takılı ise taşıt aksamı); mika 68.14; kalan taş, grafit, karbon lifi 68.15.",
+  "Not 1: Fasıl 71, 82, 84.42, 85.46, 90.18, 91, 94, 95, 96, 97 eşyası Fasıl 68’de değildir."
+ ],
+ "sorular": [
+  {
+   "soru": "Tarife Cetveline göre, bir masanın üst tablası olarak kullanılacak, kenarları şevlenmiş ve yüzeyi cilalanmış granit levha, masanın diğer parçalarından ayrı olarak sunulduğunda hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "68.02",
+    "25.16",
+    "68.10",
+    "94.03",
+    "68.01"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Cilalanmış ve kenarı şevlenmiş taş, Fasıl 25’in izin verdiği işçiliği aşmıştır; 68.02 Açıklama Notu mobilya üstünü teşkil eden taş levhaların ayrı sunulduğunda bu pozisyonda kalacağını belirtir. Mobilyasıyla birlikte sunulsaydı Fasıl 94’e giderdi. Tabii taş olduğundan suni taş (68.10) değildir; 68.01 kaldırım ve döşeme taşları içindir.",
+   "dayanak": "68.02 Açıklama Notu; 25.16 pozisyon metni; Fasıl 68 Not 2."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 68.03 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Kayağan taşından çatı kaplama levhası",
+    "Cilalanmış kayağan taşından lavabo",
+    "Aglomere kayağan taşından levha",
+    "Kayağan taşından okul yazı tahtası",
+    "Kayağan taşından şömine rafı"
+   ],
+   "cevap": "D",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Kayağan taşından kullanıma hazır yazı ve resim tahtaları Fasıl 68 Not 1(m) ve 68.03 Açıklama Notu gereği 96.10’dadır. Çatı kaplama levhaları, cilalanmış kayağan lavabolar, aglomere kayağan mamulleri ve şömine rafları 68.03’te sayılmıştır.",
+   "dayanak": "Fasıl 68 Not 1(m); 68.03 Açıklama Notu."
+  },
+  {
+   "soru": "Fasıl 68 Not 2’ye göre 68.02 pozisyonu anlamında “yontulmaya ve inşaata elverişli taşlar” tabiri ile ilgili aşağıdakilerden hangisi <b>doğrudur</b>?",
+   "secenekler": [
+    "Yalnızca 25.15 ve 25.16 pozisyonlarındaki taşları kapsar; diğer tabii taşlar 68.15’e gider.",
+    "Kayağan taşı dahil, aynı şekilde işlenmiş bütün tabii taşları kapsar.",
+    "25.15 ve 25.16 taşları ile aynı şekilde işlenmiş tüm tabii taşları kapsar; kayağanı kapsamaz.",
+    "Yalnızca mermer, traverten ve graniti kapsar; kuvarsit ve dolomit kapsam dışıdır.",
+    "Tabii taşlarla birlikte bunların taklidi olan suni taşları da kapsar."
+   ],
+   "cevap": "C",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Not 2’ye göre bu tabir sadece 25.15 veya 25.16’daki taşları değil, aynı şekilde işlenmiş kuvarsit, çakmaktaşı, dolomit, sabun taşı gibi bütün tabii taşları kapsar; kayağan taşı ise açıkça hariçtir (68.03). Suni taşlar tabii taş olmadığından 68.10’da yer alır.",
+   "dayanak": "Fasıl 68 Not 2; 68.10 Açıklama Notu."
+  },
+  {
+   "soru": "Döşemede kullanılan aşağıdaki ürünlerden hangisi Tarife Cetvelinde diğerlerinden farklı bir fasılda yer alır?",
+   "secenekler": [
+    "Cilalanmış mermer döşeme karosu",
+    "Betondan yapılmış döşeme karosu",
+    "Granitten yontulmuş döşeme taşı",
+    "Kayağan taşından çatı karosu",
+    "Pişirilmiş seramik döşeme karosu"
+   ],
+   "cevap": "E",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Fasıl 68 Genel Açıklamalarına göre pişirilmeden önce şekil verilmiş topraktan eşya Fasıl 69’dadır; seramik döşeme taşları 68.01 Açıklama Notunda da Fasıl 69’a gönderilmiştir. Cilalı mermer karo 68.02’de, beton karo 68.10’da, granit döşeme taşı 68.01’de, kayağan çatı karosu 68.03’te, yani hepsi Fasıl 68’dedir.",
+   "dayanak": "Fasıl 68 Genel Açıklamalar; 68.01 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, kaya yününden yapılmış, bir yüzü kâğıtla kaplanmış ve rulo halinde sunulan ısı yalıtım şiltesi hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "70.19",
+    "68.06",
+    "68.08",
+    "68.12",
+    "48.23"
+   ],
+   "cevap": "B",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "68.06 cüruf yünü, kaya yünü ve benzeri mineral yünleri ve bunlardan yalıtım eşyasını kapsar; Açıklama Notuna göre bu mamullerin yüzü kâğıtla kaplanmış olabilir. Cam yünü 70.19’dadır; mineral yünler kimyasal bileşimleriyle ondan ayrılır. Esası amyant olmadığından 68.12, bitkisel lif içermediğinden 68.08 söz konusu değildir.",
+   "dayanak": "68.06 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "Mermer üst tablası ve ahşap ayakları aynı ambalajda, monte edilmemiş halde birlikte sunulan bir masanın, ayrı ayrı taş ve ahşap eşya olarak değil mobilya olarak Fasıl 94’te sınıflandırılmasını sağlayan Genel Yorum Kuralı hangisidir?",
+   "secenekler": [
+    "GYK 2(b)",
+    "GYK 3(b)",
+    "GYK 2(a)",
+    "GYK 3(c)",
+    "GYK 5(a)"
+   ],
+   "cevap": "C",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 2(a), bir eşyaya yapılan atfın monte edilmemiş veya sökülmüş halde getirilen halini de kapsadığını belirtir; tüm parçaları birlikte sunulan masa bitmiş mobilya gibi sınıflandırılır. 68.02 Açıklama Notu da taş tablanın ait olduğu mobilyayla (monte edilmiş olsun olmasın) birlikte sunulduğunda Fasıl 94’te yer alacağını belirtir. Ayrı sunulsaydı 68.02’de kalırdı.",
+   "dayanak": "GYK 2(a); 68.02 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangileri 68.15 pozisyonunda sınıflandırılır? I. Karbon elyaftan mensucat II. Turbdan bitki yetiştirme saksısı III. Elektrik motorları için karbon fırça IV. Eritilmiş bazalttan döşeme taşı",
+   "secenekler": [
+    "I, II ve IV",
+    "I ve III",
+    "II ve III",
+    "I, III ve IV",
+    "II, III ve IV"
+   ],
+   "cevap": "A",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "68.15 başka yerde yer almayan taş ve mineral eşyayı kapsar; karbon lifleri ve bunlardan eşya, turb mamulleri (saksılar dahil) ve eritilmiş bazalttan bloklar ve döşeme taşları Açıklama Notunda sayılmıştır (I, II, IV). Elektrik işlerinde kullanılan karbon fırçalar ise 85.45’tedir (III).",
+   "dayanak": "68.15 pozisyon metni ve Açıklama Notu, hariç tutmalar."
+  },
+  {
+   "soru": "Tarife Cetveline göre, esası selüloz lifleri ve mineral maddeler olan, metal bir tabakaya takılmamış, şekline göre kesilip delinmiş fren balatası hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "87.08",
+    "68.12",
+    "40.16",
+    "68.15",
+    "68.13"
+   ],
+   "cevap": "E",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "68.13, esası amyant, mineral maddeler veya selüloz olan, frenlerde kullanılmak üzere monte edilmemiş sürtünme malzemelerini ve balataları kapsar; kesilmiş veya delinmiş olmaları bu durumu değiştirmez. Metal tabakaya takılı olsaydı taşıt aksamı olarak 87.08’e giderdi. Esası amyant olmadığı gibi, amyantlı sürtünme malzemesi de 68.12’de değil 68.13’tedir.",
+   "dayanak": "68.13 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 68. faslında <b>yer almaz</b>?",
+   "secenekler": [
+    "Karde edilip boyanmış amyant lifleri",
+    "Yalnızca dövülmüş ve temizlenmiş ham amyant lifleri",
+    "Amyanttan itfaiyeci eldiveni",
+    "Amyant ve magnezyum karbonat esaslı yalıtım karışımı",
+    "Amyanttan ip ve örgüler"
+   ],
+   "cevap": "B",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "68.12 Açıklama Notuna göre ham amyant lifleri ile yalnızca boylarına göre ayrılmış, dövülmüş veya temizlenmiş lifler 25.24’tedir; Fasıl 68 Not 1(a) Fasıl 25 eşyasını hariç tutar. Karde edilmiş ve boyanmış lifler, amyanttan giysiler, amyant–magnezyum karbonat karışımları ve amyant ipleri 68.12’de sayılmıştır.",
+   "dayanak": "Fasıl 68 Not 1(a); 68.12 Açıklama Notu."
+  },
+  {
+   "soru": "Bir firma, elektrikli el aletine takılacak şu ürünü ithal etmektedir: merkez gövdesi metalden; çevresine aglomere sentetik elmas tozundan bir halka sabit olarak tespit edilmiş; ağzı dişsiz, düz; taş ve seramik kesmede kullanılan disk. Tarife Cetveline göre bu ürün hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "82.07",
+    "68.05",
+    "82.02",
+    "68.04",
+    "71.16"
+   ],
+   "cevap": "D",
+   "tip": "Senaryo",
+   "gerekce": "68.04 Açıklama Notu, göbeği metal gibi sert maddeden olup çevresine aglomere aşındırıcı halka tespit edilmiş kesici diskleri bu pozisyonda sayar. Aşındırıcı kaplı olsa da asıl işlevini kesici dişleriyle gören aletler Fasıl 82’ye gider; bu disk dişsiz olduğundan 82.02 veya 82.07’ye girmez. Mesnetli toz/tane (68.05) değildir; Fasıl 71 Not 3 de 68.04 eşyasını hariç tutar.",
+   "dayanak": "68.04 Açıklama Notu; Fasıl 71 Not 3(k)."
+  },
+  {
+   "soru": "68.06 Açıklama Notuna göre ısı ve ses yalıtım karışımlarına ve mamullerine kullanımı kolaylaştırmak amacıyla katılan amyant lifi oranı genel olarak ağırlığın yüzde kaçını geçmez?",
+   "secenekler": [
+    "%1",
+    "%10",
+    "%20",
+    "%50",
+    "%5"
+   ],
+   "cevap": "E",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Açıklama Notu, 68.06’daki karışımların ve mamullerin kullanımı kolaylaştırmak amacıyla küçük miktarda amyant lifi içerebileceğini ve ilave amyant oranının genel olarak ağırlığın %5’inden fazla olmadığını belirtir. Esası amyant veya amyant–magnezyum karbonat olan karışımlar 68.12’de, amyantlı çimento mamulleri 68.11’de yer alır.",
+   "dayanak": "68.06 Açıklama Notu."
+  },
+  {
+   "soru": "Taştan yapılmış aşağıdaki eşyadan hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Mermerden mezar taşı",
+    "Granitten kaldırım kenar taşı",
+    "Oymalı taş sütun başlığı",
+    "Taştan çiçek vazosu",
+    "Altıgen biçilmiş traverten levha"
+   ],
+   "cevap": "B",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Tabii taştan kaldırım kenar taşları 68.01’dedir. Mezar taşları, sütun başlıkları, vazolar ve kare veya dikdörtgen dışı (altıgen gibi) biçilmiş levhalar 68.02 Açıklama Notunda işlenmiş yontu ve inşaat taşı mamulleri olarak sayılmıştır.",
+   "dayanak": "68.01 ve 68.02 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdaki eşya – yer eşleştirmelerinden hangisi <b>yanlıştır</b>?",
+   "secenekler": [
+    "Alçılı cebire – 90.21",
+    "Litografya taşı – 84.42",
+    "Taştan düğme – 96.06",
+    "Mikadan koruyucu gözlük – 68.14",
+    "Metal tabakaya takılı fren balatası – 87.08"
+   ],
+   "cevap": "D",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Mikadan koruyucu gözlükler ve camları 68.14 Açıklama Notunun hariç tutmalarında sayılmış olup 90.04’tedir. Alçılı cebireler 90.21, litografya taşları 84.42, taştan düğmeler 96.06 ve taşıta ait takılı fren balataları 87.08 ile doğru eşleştirilmiştir.",
+   "dayanak": "Fasıl 68 Not 1; 68.09, 68.13 ve 68.14 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetveline göre, dokuma bezden bir mesnet üzerine yapıştırıcı ile silisyum karbür tanecikleri tespit edilmiş, rulo halinde sunulan zımpara bezi hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "68.05",
+    "68.04",
+    "59.11",
+    "25.13",
+    "82.07"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "68.05, mesnedi dokumaya elverişli madde, kâğıt, karton veya diğer maddelerden olan tabii veya suni aşındırıcı toz ve taneleri, rulo veya kesilmiş halde kapsar; silisyum karbür Açıklama Notunda sayılan aşındırıcılardandır. 68.04 çerçevesiz taşlar ve çarklar içindir; tabii zımpara taşı hammadde olarak Fasıl 25’tedir.",
+   "dayanak": "68.05 pozisyon metni ve Açıklama Notu; 68.04 Açıklama Notu, hariç tutmalar."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 68.10 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Betondan demiryolu traversi",
+    "Otoklavda sertleştirilmiş kum-kireç tuğlası",
+    "Kırılmış beton parçaları",
+    "Prefabrik betonarme duvar paneli",
+    "Çimentodan bahçe saksısı"
+   ],
+   "cevap": "C",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "68.10 Açıklama Notu kırılmış beton parçalarını hariç tutar ve 25.30’a gönderir. Beton traversler, kum-kireç tuğlaları, prefabrik yapı elemanları ve çimentodan saksılar 68.10’da açıkça sayılmıştır.",
+   "dayanak": "68.10 Açıklama Notu."
+  },
+  {
+   "soru": "Mika içeren aşağıdaki ürünlerden hangisi Tarife Cetvelinde diğerlerinden farklı bir fasılda yer alır?",
+   "secenekler": [
+    "Mikanit (aglomere mika) levha",
+    "Mika tozu ile kaplanmış kâğıt",
+    "Belirli şekilde kesilmiş tabii mika diski",
+    "Terkip yoluyla elde edilmiş mika şerit",
+    "Soba gözetleme penceresi için kesilmiş mika"
+   ],
+   "cevap": "B",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Mika tozu ile kaplanmış kâğıt Fasıl 68 Not 1(b) ve 68.14 Açıklama Notu gereği Fasıl 48’dedir (48.10 veya 48.14). Mikanit, belirli şekilde kesilmiş tabii mika, terkip yoluyla elde edilen mika ve soba pencereleri için kesilmiş mika 68.14’te yer alır.",
+   "dayanak": "Fasıl 68 Not 1(b); 68.14 Açıklama Notu."
+  },
+  {
+   "soru": "68.10 Açıklama Notuna göre “suni taş” ifadesinden ne anlaşılır?",
+   "secenekler": [
+    "Kilin şekil verildikten sonra yüksek sıcaklıkta pişirilmesiyle elde edilen taş görünümlü ürünler",
+    "Eritilmiş bazaltın bağlayıcı katılmadan kalıba dökülmesiyle elde edilen blok ve döşeme taşları",
+    "Cam ve seramik kırıklarının eritilerek kalıplanmasıyla yapılan dekoratif taşlar",
+    "Ağaç talaşı veya bitkisel liflerin organik bağlayıcılarla preslenmesiyle elde edilen bloklar",
+    "Tabii taş toz veya parçalarının kireç, çimento, plastik gibi bağlayıcılarla aglomere edildiği taş taklitleri"
+   ],
+   "cevap": "E",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Açıklama Notuna göre suni taş, kireçtaşı, mermer, granit gibi tabii taşların toz, kırıntı veya parçalarının kireç, çimento veya plastik gibi bağlayıcılarla aglomere edilmesiyle elde edilen taklitlerdir; terazzo ve granito bunlardandır. Pişirilmiş kil Fasıl 69’da, eritilmiş bazalt 68.15’te, organik bağlayıcılı talaş levhalar Fasıl 44’tedir.",
+   "dayanak": "68.10 Açıklama Notu; 68.15 Açıklama Notu."
+  },
+  {
+   "soru": "68.07 Açıklama Notuna göre üzeri metalle kaplanmış veya metalle desteklenmiş asfalttan borular, kendilerine esas niteliğini veren maddeye göre metal veya asfalt eşya olarak sınıflandırılır. Bu yaklaşım hangi Genel Yorum Kuralının uygulamasıdır?",
+   "secenekler": [
+    "GYK 1",
+    "GYK 2(a)",
+    "GYK 3(b)",
+    "GYK 3(c)",
+    "GYK 4"
+   ],
+   "cevap": "C",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "Birden fazla maddeden oluşan ve birden fazla pozisyona girebilecek eşyanın, kendisine esas niteliği veren maddeye göre sınıflandırılması GYK 3(b)’dir. 3(c) ancak esas nitelik belirlenemediğinde son sıradaki pozisyonu seçtirir; 2(a) eksik veya monte edilmemiş eşya, 4 en çok benzeyen eşya içindir.",
+   "dayanak": "GYK 3(b); 68.07 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, mermer kırıntılarının çimento ile bağlanıp kalıba dökülmesiyle üretilmiş, yüzeyi parlatılmış terazzo döşeme karosu hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "68.10",
+    "68.02",
+    "69.07",
+    "25.17",
+    "68.11"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "68.10 Açıklama Notu, tabii taş parçalarının çimento veya diğer bağlayıcılarla aglomere edilmesiyle elde edilen suni taşları kapsar ve terazzoyu açıkça örnek verir. Taş kırıntısı içerse de tabii taşın kendisi işlenmediğinden 68.02’ye girmez; pişirilmediği için seramik karo (69.07) değildir; lif takviyesi olmadığından 68.11 de söz konusu olmaz.",
+   "dayanak": "68.10 Açıklama Notu; 68.02 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdaki ifadelerden hangileri <b>doğrudur</b>? I. Eritilmiş cürufun suya dökülmesiyle elde edilen granüle cüruf 68.06’da sınıflandırılır. II. Kullanılmadan önce tekrar eritilmesi gereken asfalt Fasıl 27’de kalır. III. Organik bağlayıcılarla aglomere edilmiş lif levhalar 44.11’dedir. IV. Mineral madde veya selüloz içermeyen, esası mantar olan sürtünme malzemesi 68.13’te yer alır.",
+   "secenekler": [
+    "I ve II",
+    "I, III ve IV",
+    "II, III ve IV",
+    "II ve III",
+    "III ve IV"
+   ],
+   "cevap": "D",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "68.07 Açıklama Notu tekrar eritilmesi gereken asfaltı Fasıl 27’ye bırakır (II doğru); 68.08 Açıklama Notu organik bağlayıcılı lif levhaları 44.11’e gönderir (III doğru). Granüle cüruf 26.18’dedir (I yanlış); mineral madde veya selüloz içermeyen sürtünme malzemeleri maddesine göre sınıflandırılır (IV yanlış).",
+   "dayanak": "68.06, 68.07, 68.08 ve 68.13 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 68.04 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Hububat öğütmeye mahsus çerçevesiz değirmen taşı",
+    "Aglomere korindondan çerçevesiz taşlama çarkı",
+    "Seramik bağlayıcılı çerçevesiz bileme çarkı",
+    "Çerçeveye monte edilmiş, el ile çevrilen bileği taşı",
+    "Ustura bilemeye mahsus el bileği taşı"
+   ],
+   "cevap": "D",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "68.04’teki taşlar çerçevesiz olmalıdır; Açıklama Notuna göre bir çerçeveye monte edilmiş, el veya pedal ile işletilen bileği taşları 82.05’te, motorlu olanlar Fasıl 84 veya 85’tedir. Değirmen taşları, aglomere aşındırıcıdan veya seramikten çarklar ve el bileği taşları 68.04’te sayılmıştır.",
+   "dayanak": "68.04 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "Isı yalıtımında kullanılan aşağıdaki ürünlerden hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Genleştirilmiş kil katkılı hafif beton blok",
+    "Dökme halde cüruf yünü",
+    "Isıl işlemle genleştirilmiş perlit",
+    "Eritilmiş cürufa su katılarak elde edilen köpüklü cüruf",
+    "Alümina-silikat esaslı seramik lifler"
+   ],
+   "cevap": "A",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "68.06 Açıklama Notu, genleştirilmiş vermikülit veya kil ile karıştırılarak imal edilen hafif beton mamullerini hariç tutar ve 68.10’a gönderir. Cüruf yünü, genleştirilmiş perlit, köpüklü cüruf ve seramik lifler 68.06’da sayılmıştır.",
+   "dayanak": "68.06 Açıklama Notu; 68.10 Açıklama Notu."
+  },
+  {
+   "soru": "Bir üretici şu ürünü ihraç etmektedir: selüloz lifleri, çimento ve su karışımından ince tabakaların preslenmesiyle üretilmiş; amyant içermeyen; lifler takviye görevi görmekte; oluklu çatı kaplama levhası. Tarife Cetveline göre bu ürün hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "68.10",
+    "68.08",
+    "68.11",
+    "68.12",
+    "48.23"
+   ],
+   "cevap": "C",
+   "tip": "Senaryo",
+   "gerekce": "68.11 pozisyon metni selülozlu çimentodan eşyayı açıkça kapsar; Açıklama Notu liflerin takviye görevi gördüğü lif–çimento karışımlarını ve oluklu levhaları sayar. 68.08 bitkisel lif ve talaşlı panolar içindir ve 68.11 mamullerini hariç tutar; 68.10 lif takviyesiz çimento eşyası için, 68.12 amyant eşyası içindir.",
+   "dayanak": "68.11 pozisyon metni ve Açıklama Notu; 68.08 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre kayağan taşı ham halde veya testere ile dikdörtgen bloklar halinde sadece kesilmişse ..... pozisyonunda; satıhları düzlenmiş, cilalanmış veya delinmişse ..... pozisyonunda sınıflandırılır. Boşluklara sırasıyla hangisi gelmelidir?",
+   "secenekler": [
+    "68.03 – 25.14",
+    "25.14 – 68.02",
+    "25.15 – 68.03",
+    "68.02 – 68.03",
+    "25.14 – 68.03"
+   ],
+   "cevap": "E",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "68.03 Açıklama Notuna göre 25.14 ham, yarılmış, kabaca yontulmuş veya testere ile dikdörtgen kesilmiş kayağanı kapsar; daha ileri işlem görmüş (düzlenmiş, cilalanmış, delinmiş) kayağan 68.03’tedir. Kayağan taşı Not 2 gereği 68.02’ye girmez; 25.15 mermer içindir.",
+   "dayanak": "68.03 Açıklama Notu; 25.14 pozisyon metni; Fasıl 68 Not 2."
+  },
+  {
+   "soru": "Fasıl 68 Genel Açıklamalarına göre pişirilmeden önce şekil verilmiş topraktan eşya ile ilgili aşağıdakilerden hangisi <b>doğrudur</b>?",
+   "secenekler": [
+    "Tamamı 68.15’te yer alır.",
+    "68.04’teki seramik aşındırıcı eşya hariç Fasıl 69’da yer alır.",
+    "Pişirme derecesine bakılmaksızın Fasıl 68’de kalır.",
+    "68.04’teki seramik aşındırıcı eşya da Fasıl 69’da yer alır.",
+    "Yalnızca sırlı olanları Fasıl 69’da yer alır."
+   ],
+   "cevap": "B",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Genel Açıklamalar, 68.04 pozisyonuna giren seramik aşındırıcı maddeden mamul eşya hariç, pişirilmeden önce şekil verilmiş topraktan eşyanın (seramik mamulleri) Fasıl 69’da yer aldığını belirtir. Seramik bileği taşları ve çarkları bu nedenle 68.04’te kalır. Sırlı olup olmama ölçüt değildir.",
+   "dayanak": "Fasıl 68 Genel Açıklamalar; 68.04 pozisyon metni."
+  }
+ ]
+}

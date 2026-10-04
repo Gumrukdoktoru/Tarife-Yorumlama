@@ -1,0 +1,781 @@
+{
+ "tur": "fasil",
+ "fasil": 73,
+ "baslik": "Demir veya çelikten eşya",
+ "bolum": "XV",
+ "oz": {
+  "vurgu": "Fasıl 73, demir veya çelikten mamul eşyanın faslıdır. Önce eşyanın Bölüm XV dışında (makine, taşıt, mobilya, oyuncak) ya da 82–83. fasıllarda özel bir yeri olup olmadığına, sonra 73.01–73.24’te adıyla sayılan pozisyonlardan birine uyup uymadığına bakılır; hiçbirine uymayan dökme eşya 73.25’e, diğerleri 73.26’ya gider.",
+  "maddeler": [
+   "Boru ailesi beş pozisyondur: dökme demir 73.03, dikişsiz 73.04, büyük çaplı dikişli 73.05, diğer dikişli 73.06, bağlantı parçaları 73.07.",
+   "Kaplarda hacim ve içerik belirleyicidir: 300 litreyi geçen 73.09, geçmeyen 73.10, sıkıştırılmış veya sıvılaştırılmış gaz için her hacimde 73.11.",
+   "73.07, 73.12, 73.15, 73.17, 73.18 eşyası ve yaylar “genel kullanıma mahsus aksam”dır; ait oldukları makine veya taşıtla değil, kendi pozisyonlarında sınıflandırılır.",
+   "Isıtma ve pişirme cihazları ısıtmada elektrik kullanmıyorsa 73.21 / 73.22’de; elektrik kullanıyorsa 85.16’dadır.",
+   "Birden çok adi metalden eşya, pozisyon metninde aksine hüküm yoksa ağırlıkça üstün metale göre sınıflandırılır; demir ve çeliğin bütün türleri tek metal sayılır."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı yeri verir.",
+  "satirlar": [
+   [
+    "1",
+    "Bölüm XV Not 1’de hariç tutulan eşya mı? (makine, elektrikli alet, taşıt, mobilya, lamba, prefabrik yapı, oyuncak, Fasıl 96 eşyası)",
+    "XVI–XIX. Bölüm, Fasıl <b>94</b>, <b>95</b>, <b>96</b>"
+   ],
+   [
+    "2",
+    "82 veya 83. fasılda adıyla sayılan eşya mı? (alet, bıçakçı eşyası, kilit, donanım, büro eşyası, süs, esnek boru, zımba teli)",
+    "Fasıl <b>82</b> / <b>83</b> (Bölüm XV Not 2 son paragraf)"
+   ],
+   [
+    "3",
+    "Palplanş, kaynaklı profil veya demiryolu-tramvay hattı malzemesi mi?",
+    "<b>73.01</b> / <b>73.02</b>"
+   ],
+   [
+    "4",
+    "Boru, içi boş profil veya boru bağlantı parçası mı?",
+    "Dökme demir <b>73.03</b> · dikişsiz <b>73.04</b> · dikişli, daire kesitli, dış çap 406,4 mm’yi geçen <b>73.05</b> · diğer dikişli <b>73.06</b> · bağlantı parçası <b>73.07</b>"
+   ],
+   [
+    "5",
+    "Yerine konunca orada kalan yapı veya inşaat için hazırlanmış ürün mü?",
+    "<b>73.08</b> (prefabrik yapı <b>94.06</b>)"
+   ],
+   [
+    "6",
+    "Mekanik veya termik tertibatı olmayan kap mı?",
+    "Gaz için <b>73.11</b> · 300 l’yi geçen <b>73.09</b> · geçmeyen <b>73.10</b> · taşıma konteyneri <b>86.09</b>"
+   ],
+   [
+    "7",
+    "Halat, dikenli tel, tel mensucat veya depluvaye mi?",
+    "<b>73.12</b> / <b>73.13</b> / <b>73.14</b>"
+   ],
+   [
+    "8",
+    "Zincir, çapa, çivi, vida-cıvata, el iğnesi veya yay mı?",
+    "<b>73.15</b> · <b>73.16</b> · <b>73.17</b> · <b>73.18</b> · <b>73.19</b> · <b>73.20</b>"
+   ],
+   [
+    "9",
+    "Isıtması elektrikli olmayan soba, ocak, radyatör veya sıcak hava jeneratörü mü?",
+    "<b>73.21</b> / <b>73.22</b> (elektrikliyse <b>85.16</b>)"
+   ],
+   [
+    "10",
+    "Sofra, mutfak, ev veya sağlığı koruyucu eşya mı?",
+    "<b>73.23</b> / <b>73.24</b> (alet niteliğindeyse Fasıl 82)"
+   ],
+   [
+    "11",
+    "Hiçbiri değilse",
+    "Dökme <b>73.25</b> · diğer <b>73.26</b>"
+   ]
+  ],
+  "dipnot": "* Birden çok adi metal içeren eşyada önce ağırlıkça üstün metal bulunur (Bölüm XV Not 7). Demir veya çelik üstünse bu tabloya gelinir."
+ },
+ "pozisyon_haritasi": [
+  [
+   "73.01",
+   "Palplanşlar; kaynaklı profiller",
+   "Uzun kenarlarda geçme tertibatı; kaynaklı içi boş profil 73.06",
+   "Baraj palplanşı, köşe palplanşı, kaynaklı I profil"
+  ],
+  [
+   "73.02",
+   "Demiryolu ve tramvay hattı malzemesi",
+   "Hat tipinde ray; kapı rayı hariç; birleştirilmiş hat 86.08",
+   "Ray, makas dili, travers, cebire, selet"
+  ],
+  [
+   "73.03",
+   "Dökme demirden borular ve içi boş profiller",
+   "Fasıl 73 Not 1’deki dökme demir",
+   "Santrifüj döküm kanalizasyon borusu"
+  ],
+  [
+   "73.04",
+   "Dikişsiz borular ve içi boş profiller",
+   "Dökme demir hariç; dikişsiz",
+   "Sondaj borusu, kazan borusu, flanşlı dikişsiz boru"
+  ],
+  [
+   "73.05",
+   "Diğer büyük dikişli borular",
+   "İç-dış kesit daire, dış çap 406,4 mm’yi geçen",
+   "Kaynaklı petrol-gaz hat borusu"
+  ],
+  [
+   "73.06",
+   "Diğer dikişli borular ve içi boş profiller",
+   "Kaynaklı, perçinli, açık dikişli; kesit kare olabilir",
+   "Kare kutu profil, mobilya çerçeve borusu"
+  ],
+  [
+   "73.07",
+   "Boru bağlantı parçaları",
+   "Boruyu boruya veya alete bağlar, ucu kapatır",
+   "Flanş, dirsek, manşon, rakor, T boru"
+  ],
+  [
+   "73.08",
+   "İnşaat ve inşaat aksamı",
+   "Yerine konunca orada kalır; 94.06 hariç",
+   "Köprü, kule, kapı, pencere, iskele, korkuluk"
+  ],
+  [
+   "73.09",
+   "Depo, sarnıç, küv (300 l’yi geçen)",
+   "Mekanik-termik tertibat yok; gaz hariç",
+   "Akaryakıt deposu, fermantasyon tankı"
+  ],
+  [
+   "73.10",
+   "Depo, varil, kutu (300 l’yi geçmeyen)",
+   "Taşıma ve ambalaj kabı; gaz hariç",
+   "Varil, bidon, konserve kutusu"
+  ],
+  [
+   "73.11",
+   "Sıkıştırılmış veya sıvılaştırılmış gaz kapları",
+   "Hacim sınırı yok",
+   "Oksijen tüpü, bütan tüpü, asetilen şişesi"
+  ],
+  [
+   "73.12",
+   "Demetlenmiş teller, halat, kablo",
+   "Elektrik için izole edilmemiş",
+   "Çelik halat, vinç halatı, toron"
+  ],
+  [
+   "73.13",
+   "Dikenli tel; çit için burulmuş tel",
+   "Gevşekçe burulmuş çit teli",
+   "Dikenli tel, burma kaytanı"
+  ],
+  [
+   "73.14",
+   "Tel mensucat, ızgara, ağ, kafeslik; depluvaye",
+   "Tel örgü veya yarılıp gerilmiş saç",
+   "Kaynaklı beton ızgarası, tel elek bezi"
+  ],
+  [
+   "73.15",
+   "Zincirler ve aksamı",
+   "Boyut ve kullanım önemsiz",
+   "Transmisyon, kar, demirleme zinciri"
+  ],
+  [
+   "73.16",
+   "Çapalar, filika demirleri",
+   "Gemi, şamandıra, platform için",
+   "Gemi çapası, dört tırnaklı filika demiri"
+  ],
+  [
+   "73.17",
+   "Çiviler, pünezler, oluklu çiviler",
+   "Başı başka maddeden olabilir; bakır başlı hariç",
+   "Tel çivi, nal çivisi, pünez"
+  ],
+  [
+   "73.18",
+   "Vida, cıvata, somun, perçin, pim, rondela",
+   "Dişli veya dişsiz bağlantı elemanı",
+   "Somun, tirfon, sac vidası, yaylı rondela"
+  ],
+  [
+   "73.19",
+   "El dikiş iğnesi, şiş, tığ; çengelli ve toplu iğne",
+   "Elle kullanılan; makine iğnesi hariç",
+   "Dikiş iğnesi, örgü şişi, çuvaldız"
+  ],
+  [
+   "73.20",
+   "Yaylar ve yay yaprakları",
+   "Saat yayı hariç; kullanım önemsiz",
+   "Yaprak yay, helezon yay, disk yay"
+  ],
+  [
+   "73.21",
+   "Soba, ocak, barbekü, mangal",
+   "Ev-kamp tipi; ısıtması elektrikli değil",
+   "Gazlı ocak, kömür sobası, kamp ocağı"
+  ],
+  [
+   "73.22",
+   "Merkezi ısıtma radyatörü; sıcak hava jeneratörü",
+   "Elektriksiz; jeneratörde motorlu fan",
+   "Panel radyatör, fuel-oil hava ısıtıcısı"
+  ],
+  [
+   "73.23",
+   "Sofra, mutfak, ev eşyası; çelik yünü",
+   "Alet niteliği taşımaz",
+   "Tencere, süzgeç, çöp kovası, ütü masası"
+  ],
+  [
+   "73.24",
+   "Sağlığı koruyucu eşya",
+   "Sıhhi amaçlı",
+   "Küvet, evye, lavabo, rezervuar"
+  ],
+  [
+   "73.25",
+   "Diğer dökme eşya",
+   "Başka yerde yer almayan dökme eşya",
+   "Rögar kapağı, yangın musluğu sütunu, çeşme gövdesi"
+  ],
+  [
+   "73.26",
+   "Diğer eşya",
+   "Artık pozisyon; dövme, kesme, tel işi",
+   "Nal, merdiven, kalibresiz bilya, tel kapan"
+  ]
+ ],
+ "notlar": [
+  [
+   "Fasıl 73 Not 1",
+   "“Dökme demir”: demirin ağırlıkça diğer elementlerin her birinden fazla olduğu, döküm yoluyla elde edilen ve Fasıl 72 Not 1(d)’deki çeliğin kimyasal bileşimine uymayan ürünler."
+  ],
+  [
+   "Fasıl 73 Not 2",
+   "“Tel”: sıcak veya soğuk şekil verilmiş, enine kesiti herhangi bir şekilde olan ve çapı <b>16 mm</b>’yi geçmeyen ürünler. Rulo halinde olma şartı aranmaz."
+  ],
+  [
+   "Genel Açıklamalar",
+   "İnce ve kalın boru: iç ve dış yüzeyleri aynı formda, bütün uzunluğu boyunca aynı kesitte tek kapalı boşluğu olan içi boş ürün; parlatılmış, kaplanmış, bükülmüş, diş açılmış, delinmiş, konik, flanşlı veya halkalı olabilir. İçi boş profil: bu tanıma uymayan, genellikle iç ve dış yüzeyleri aynı formda olmayan içi boş ürün. Fasıl 72 Genel Açıklamaları bu fasla da uygulanır; kaplama, parlatma gibi işlemler pozisyonu değiştirmez."
+  ],
+  [
+   "Bölüm XV Not 1",
+   "Bölüm dışı: metal tozlu boyalar (32. fasıl), piroforik alaşımlar (36.06), başlıklar (65.06, 65.07), şemsiye iskeletleri (66.03), Fasıl 71 eşyası, makine ve elektrikli aletler (XVI. Bölüm), birleştirilmiş demiryolu hatları (86.08) ve taşıtlar (XVII. Bölüm), XVIII. Bölüm alet ve cihazları (saat zemberekleri dahil), silah ve mühimmat, mobilya, lamba ve prefabrik yapılar (94), oyuncak ve spor malzemesi (95), Fasıl 96 eşyası, sanat eserleri (97)."
+  ],
+  [
+   "Bölüm XV Not 2",
+   "“Genel kullanıma mahsus aksam ve parça”: 73.07, 73.12, 73.15, 73.17, 73.18 eşyası ve diğer adi metallerden benzerleri (implant için özel tıbbi ürünler hariç, 90.21); saat zemberekleri hariç yaylar ve yay yaprakları; 83.01, 83.02, 83.08, 83.10 eşyası ile 83.06’daki çerçeve ve aynalar. Bu deyim 73–76 ve 78–82. fasıllardaki eşyanın aksamını (73.15 hariç) kapsamaz. 82 veya 83. fasla giren eşya 72–76 ve 78–81. fasıllara verilmez."
+  ],
+  [
+   "Bölüm XV Not 7",
+   "İki veya daha fazla adi metalden eşya, pozisyon metninde aksine hüküm yoksa ağırlıkça diğer metallerin her birinden üstün olan metalden mamul sayılır. Demir ve çeliğin bütün türleri tek metal sayılır; alaşım, sınıflandırıldığı metal gibi işlem görür. Aksine hüküm örneği: başı bakır, gövdesi çelik çivi 74.15."
+  ],
+  [
+   "Bölüm XV Genel Açıklamalar (C)",
+   "Ait olduğu eşya belli olan aksam o eşyanın pozisyonuna gider; ancak müstakil sunulan genel kullanıma mahsus aksam kendi pozisyonundadır: merkezi ısıtma radyatörüne özel cıvata 73.22’de değil 73.18’de, motorlu taşıt yayı 87.08’de değil 73.20’de."
+  ],
+  [
+   "Fasıl 72 Not 1(n) ve 1(p)",
+   "73.01 veya 73.02’ye giren ürünler (palplanş, kaynaklı profil, demiryolu malzemesi) Fasıl 72’de yer almaz. Fasıl 72’deki sondaj için içi boş çubuk tanımına uymayan demir veya çelik içi boş çubuklar 73.04’te sınıflandırılır."
+  ],
+  [
+   "Fasıl 83 Not 1",
+   "73.12, 73.15, 73.17, 73.18 veya 73.20’deki eşya (halat, zincir, çivi, cıvata, yay) 83. fasıl eşyasının aksamı sayılmaz; kilit için özel yapılmış yay bile 73.20’de kalır."
+  ],
+  [
+   "73.05 ve 73.06 Açıklama Notları",
+   "73.05: iç ve dış kesiti daire, dış çapı <b>406,4 mm</b>’yi geçen dikişli (kaynaklı, perçinli vb.) borular. Diğer dikişli borular, açık dikişli borular ve dikişli içi boş profiller 73.06’da. Bütün uzunluğu boyunca açık yarığı olan ürün boru değildir (72.16, 72.22, 72.28)."
+  ],
+  [
+   "73.09–73.11 Açıklama Notları",
+   "Sınır <b>300 litre</b>: geçen 73.09, geçmeyen 73.10. Musluk, vana, seviye göstergesi, emniyet vanası, manometre takılabilir; karıştırıcı, ısıtıcı, soğutucu bobin varsa Fasıl 84 veya 85. Gaz kapları her kapasitede 73.11. Taşıma türüne göre özel donatılmış konteyner 86.09."
+  ],
+  [
+   "73.08 Açıklama Notu",
+   "Yapılar bir kez yerine konunca genellikle orada kalır. İnşaat için hazırlanmış (delinmiş, bükülmüş, kertik açılmış) saç, çubuk, profil ve borular, ayrı haddelenip birbirine sarılmış betonarme çubukları, dükkân ve depolardaki daimi büyük raflar dahildir. Prefabrik yapılar 94.06, hareketli raflı mobilya 94.03, kalıp niteliğindeki beton kutu bölmeleri 84.80."
+  ],
+  [
+   "73.21 ve 73.22 Açıklama Notları",
+   "73.21: ısıtma, pişirme veya kaynatma için ısı üreten, katı, sıvı, gaz yakıt veya güneş enerjisi gibi kaynak kullanan, normalde ev veya kampta kullanılan cihazlar; ısıtmada elektrik kullananlar (birleşik gazlı-elektrikli ocak dahil) 85.16. 73.22: elektriksiz merkezi ısıtma radyatörleri ve motorlu fanlı sıcak hava jeneratörleri; klima 84.15, elektrikli radyatör 85.16."
+  ],
+  [
+   "Fasıl 84 notu (çelik bilyalar)",
+   "En büyük ve en küçük çapları itibari çapa göre <b>%1</b>’den veya <b>0,05 mm</b>’den (hangisi azsa) fazla farklı olmayan kalibrelenmiş veya parlatılmış çelik bilyalar 84.82’de; diğer çelik bilyalar 73.26’da."
+  ]
+ ],
+ "sinir_komsulari": [
+  [
+   "Taşıma türüne göre özel donatılmış çelik konteyner",
+   "86.09",
+   "73.09 / 73.10 Açıklama Notu hariç tutması"
+  ],
+  [
+   "Birleştirilmiş demiryolu hattı, döner platform, tampon",
+   "86.08",
+   "Bölüm XV Not 1; 73.02 hariç tutması"
+  ],
+  [
+   "Çelik prefabrik yapı",
+   "94.06",
+   "73.08 pozisyon metni"
+  ],
+  [
+   "Hareketli raflı çelik mobilya",
+   "94.03",
+   "Daimi büyük mağaza rafı ise 73.08"
+  ],
+  [
+   "Esnek boru, termostatik körük; musluklu boru teferruatı",
+   "83.07 / 84.81",
+   "73.04–73.07 hariç tutmaları"
+  ],
+  [
+   "İzole edilmiş elektrik teli ve kablosu",
+   "85.44",
+   "73.12 yalnız izole edilmemişleri kapsar"
+  ],
+  [
+   "Şerit halinde zımba teli, kağıt raptiyesi",
+   "83.05",
+   "73.17 metni 83.05’i hariç tutar"
+  ],
+  [
+   "Zincirli kapı emniyeti; otomatik kapı kapama yayı",
+   "83.02",
+   "Donanım ve tertibat; Bölüm XV Not 2"
+  ],
+  [
+   "Saat zinciri, değersiz süs zinciri",
+   "71.17",
+   "Taklit mücevher; 73.15 hariç tutması"
+  ],
+  [
+   "Kesici dişli zincir; konserve açacağı, peynir rendesi",
+   "Fasıl 82",
+   "Alet niteliği; Bölüm XV Not 2 son paragraf"
+  ],
+  [
+   "Saat yayı ve zembereği",
+   "91.14",
+   "Bölüm XV Not 1 ve Not 2"
+  ],
+  [
+   "Kalibrelenmiş çelik bilya",
+   "84.82",
+   "Fasıl 84 notu: %1 / 0,05 mm"
+  ],
+  [
+   "Dikiş makinası iğnesi; tıbbi enjektör iğnesi",
+   "84.52 / 90.18",
+   "73.19 yalnız elle kullanılan iğneleri kapsar"
+  ],
+  [
+   "Gazlı-elektrikli birleşik ocak; elektrikli radyatör",
+   "85.16",
+   "73.21 ve 73.22 elektriksiz cihazlar içindir"
+  ],
+  [
+   "Başı bakırdan, gövdesi çelikten çivi",
+   "74.15",
+   "73.17 metnindeki aksine hüküm"
+  ]
+ ],
+ "tuzaklar": [
+  "<b>Dikişli boru 73.05 mi, 73.06 mı?</b> Ölçüt iç ve dış kesitin daire olması ve dış çapın 406,4 mm’yi geçmesidir. Bu şartlardan biri yoksa 73.06; dikişsiz her boru 73.04; dökme demir boru 73.03.",
+  "<b>Boruyu duvara tutturan bilezik bağlantı parçası değildir.</b> 73.07 boruyu boruya veya alete bağlar ya da ucunu kapatır. Destek, kanca, hortum kelepçesi 73.25 / 73.26; cıvata ve somun 73.18; musluklu teferruat 84.81.",
+  "<b>Başı bakır çivi Fasıl 74’tedir.</b> 73.17 başı porselen, plastik, ağaç olan çivileri kapsar ama bakır başlıları hariç tutar (74.15). Bakır kaplanmış çelik çivi ise 73.17’de kalır.",
+  "<b>Musluk mekanik tertibat değildir.</b> Depoya musluk, vana, seviye göstergesi veya manometre takılması 73.09 / 73.10’u bozmaz; karıştırıcı, ısıtıcı, soğutucu bobin bozar (Fasıl 84 / 85).",
+  "<b>Gaz kabında hacim sınırı yoktur.</b> 300 litre sınırı yalnız 73.09 / 73.10 içindir; sıkıştırılmış veya sıvılaştırılmış gaz kapları her kapasitede 73.11’dedir.",
+  "<b>Tek gözü elektrikli ocak 85.16’dır.</b> 73.21 ısıtmada elektrik kullanmayan cihazlar içindir; birleşik gazlı-elektrikli ocaklar açıkça 85.16’ya gönderilmiştir.",
+  "<b>Genel kullanıma mahsus aksam sahibinin peşinden gitmez.</b> Radyatöre özel cıvata 73.18’de, otomobil yayı 87.08’de değil 73.20’de, kilit yayı 83.01’de değil 73.20’dedir.",
+  "<b>Alet niteliğindeki mutfak eşyası Fasıl 82’dedir.</b> Konserve açacağı, şişe açacağı, peynir rendesi, fındık kırıcı Fasıl 82’de; kaşık, çatal, kepçe 82.15’te; tencere, süzgeç, çöp kovası 73.23’te.",
+  "<b>Dökme mi, değil mi?</b> Başka yerde yer almayan dökme eşya 73.25 (rögar kapağı); aynı tür eşya sinterleme, dövme, kesme gibi yöntemle elde edilmişse 73.26.",
+  "<b>Kalibreli çelik bilya makine faslındadır.</b> Çap farkı %1 veya 0,05 mm’yi (hangisi azsa) aşmayan bilya 84.82; diğer çelik bilyalar 73.26."
+ ],
+ "hafiza": {
+  "kanca": "ZEMİN – RAY – BORU – İSKELET – DEPO – TEL – BAĞLANTI – ISI – MUTFAK-BANYO – ARTIK",
+  "aciklama": "Bir çelik binayı baştan sona kurun: önce zemini palplanşla çevirin (<b>01</b>), rayla malzeme gelsin (<b>02</b>), boruları döşeyin (<b>03–07</b>: dökme, dikişsiz, büyük dikişli, diğer dikişli, bağlantı), iskeleti kurun (<b>08</b>), depoları yerleştirin (<b>09–11</b>: büyük, küçük, gaz), telleri gerin (<b>12–14</b>: halat, dikenli, örgü), her şeyi zincir, çapa, çivi, vida, iğne ve yayla tutturun (<b>15–20</b>), sobayı ve radyatörü yakın (<b>21–22</b>), mutfağı ve banyoyu donatın (<b>23–24</b>), kalan dökme parçalar <b>25</b>’e, geri kalan her şey <b>26</b>’ya."
+ },
+ "sinav_odagi": [
+  "“Hangisi 73. fasılda yer almaz?” kalıbı: 73.15–73.20 eşyası (yay, filika demiri, somun, tığ) arasına Fasıl 83 eşyası (şerit halinde zımba teli) yerleştirilmiştir.",
+  "Pozisyon içeriği soruları: 73.07’deki boru bağlantı parçalarının (flanş, rakor, dirsek, manşon) 73.18’deki somunla karıştırılması.",
+  "Ev eşyası olarak 73.23: demir gövdeli ütü masasının mensucat eşyası (63.07), makine (84.51) ve mobilya (94.03) seçenekleriyle karıştırılması.",
+  "Kaplar ve sınırları: uluslararası taşımacılığa uygun demir konteynerin 73.09 / 73.26 yerine 86.09’a; boş çelik yangın söndürme cihazının 73.26 veya 83.07 yerine 84.24’e gitmesi.",
+  "Fasıl 83 sınırı: bisikletlerde kullanılan demir zilin 73.26 veya 87.14 değil 83.06’da sınıflandırılması.",
+  "Isıtma-pişirme: “fırın” kavramının 73.21 (elektriksiz ev tipi), 84.17 (sanayi, elektriksiz), 85.14 ve 85.16 gibi pozisyonlarda geçtiğinin, 85.09’da geçmediğinin sorulması.",
+  "Karma malzemeli conta takımlarında 73.18’in çeldirici olarak kullanılması; adi metal sorularının GYK ve set kurallarıyla birleştirilmesi."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Aşağıdaki demir-çelikten mamul eşyalardan hangisi 73. Fasılda <b>yer almaz</b>?",
+   "secenekler": [
+    "Yay",
+    "Filika demiri",
+    "Somun",
+    "Tığ",
+    "Şerit halinde zımba teli"
+   ],
+   "cevap": "E",
+   "aciklama": "Şerit halinde zımba telleri 83.05 pozisyon metninde adıyla sayılmıştır; 73.17 metni de 83.05’teki eşyayı hariç tutar. Yay 73.20, filika demiri 73.16, somun 73.18, tığ 73.19’dadır."
+  },
+  {
+   "soru": "Boyanmış demirden mamul, ütü yapılan üst kısmı 10 mm kalınlığında keçe ve pamuk dokuma ile kaplanmış, kordonu, fişi ve prizi olan katlanabilir ütü masası hangi tarife pozisyonundadır?",
+   "secenekler": [
+    "63.07",
+    "73.23",
+    "84.51",
+    "94.03"
+   ],
+   "cevap": "B",
+   "aciklama": "Demir gövdeli ütü masası ev işlerinde kullanılan demir eşyadır (73.23). Açıklama Notu, demir eşya niteliği korundukça başka maddelerden parça ve aksesuar takılmasına izin verir; keçe-dokuma kaplama ile kordon ve priz bu niteliği değiştirmez."
+  }
+ ],
+ "ozet": [
+  "Fasıl 73 = demir veya çelikten adıyla sayılan eşya (73.01–73.24) + artık pozisyonlar (dökme 73.25, diğer 73.26); 82 / 83’te veya başka fasılda özel yeri olan eşya hariç.",
+  "Boru: dökme demir 73.03 · dikişsiz 73.04 · daire kesitli, dış çapı 406,4 mm’yi geçen dikişli 73.05 · diğer dikişli 73.06 · bağlantı parçası 73.07.",
+  "Kap: 300 l’yi geçen 73.09 · geçmeyen 73.10 · gaz her hacimde 73.11; mekanik-termik tertibat varsa Fasıl 84 / 85, taşıma konteyneri 86.09.",
+  "Halat, zincir, çivi, cıvata ve yaylar genel kullanıma mahsus aksamdır; makineyle, taşıtla veya kilitle gitmez.",
+  "Elektriksiz soba-ocak 73.21, radyatör ve sıcak hava jeneratörü 73.22; elektrikli olan 85.16.",
+  "Ev eşyası 73.23, sağlık eşyası 73.24; alet niteliği Fasıl 82, süs 83.06, mobilya 94.",
+  "Tel = çapı 16 mm’yi geçmeyen ürün (Fasıl 73 Not 2); dökme demir = çelik bileşimine uymayan döküm ürünü (Not 1)."
+ ],
+ "sorular": [
+  {
+   "soru": "Tarife Cetveline göre, iç ve dış kesitleri daire şeklinde, dış çapı 508 mm olan, çelik saçtan uzunlamasına toz altı ark kaynağıyla kapatılarak üretilmiş petrol boru hattı borusu hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "72.08",
+    "73.04",
+    "73.05",
+    "73.06",
+    "73.07"
+   ],
+   "cevap": "C",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "73.05, iç ve dış kesitleri daire şeklinde olup dış çapı 406,4 mm’yi geçen dikişli (kaynaklı, perçinli vb.) boruları kapsar; 508 mm bu sınırın üzerindedir. Dikişsiz borular 73.04’te, sınırı geçmeyen veya kesiti daire olmayan dikişli borular 73.06’da yer alır. Boru şekli verilmiş ürün artık yassı hadde ürünü (72.08) değildir; 73.07 yalnızca bağlantı parçalarını kapsar.",
+   "dayanak": "73.05 pozisyon metni ve Açıklama Notu; 73.06 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdaki demir veya çelik eşyadan hangisi 73.18 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Kelebek somun",
+    "Yaylı (Grower tipi) rondela",
+    "Ahşap işleri için tirfon",
+    "Kısmen boşluklu perçin çivisi",
+    "Ucu sivri, başı yarık olmayan vidalı çivi"
+   ],
+   "cevap": "E",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "73.18 Açıklama Notu, ucu sivri olup başı yarık olmayan vidalı çivileri hariç tutar; bunlar 73.17’de çivi olarak sınıflandırılır. Kelebek somun, yaylı rondela, tirfon ve kısmen boşluklu perçin çivisi notta açıkça 73.18’de sayılmıştır. Tuzak, gövdedeki dişi görüp eşyayı vida sanmaktır; sivri uçlu eşyada başın yarık olup olmaması belirleyicidir.",
+   "dayanak": "73.18 Açıklama Notu (A), (C), (E); 73.17 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetvelinin 73. Fasıl notlarına göre bu fasılda geçen “tel” tabiri aşağıdakilerden hangisini ifade eder?",
+   "secenekler": [
+    "Sıcak veya soğuk şekil verilmiş, enine kesiti herhangi bir şekilde olup çapı 16 mm’yi geçmeyen ürünler",
+    "Yalnızca soğuk çekilmiş, rulo halinde ve enine kesiti daire şeklinde olan ürünler",
+    "Enine kesitinin en geniş yeri 6 mm’yi geçmeyen, rulo halinde olan veya olmayan ürünler",
+    "Kalınlığı genişliğinin onda birini geçen, haddeleme veya çekme ile elde edilmiş rulo halinde ürünler",
+    "Çapı 16 mm’yi geçen, sıcak haddelenmiş ve düzensiz sarılmış rulo halindeki ürünler"
+   ],
+   "cevap": "A",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 73 Not 2’ye göre tel; sıcak veya soğuk şekil verilmiş, enine kesiti herhangi bir şekilde olan ve çapı 16 mm’yi geçmeyen üründür, rulo şartı yoktur. 6 mm sınırı nikel ve alüminyum fasıllarındaki alt pozisyon notlarına, D şıkkındaki ölçüt 74–76 ve 78–81. fasıllar için Bölüm XV Not 9(c)’ye aittir. E şıkkı ise Fasıl 72’deki filmaşin tanımını çağrıştırır.",
+   "dayanak": "Fasıl 73 Not 2; Bölüm XV Not 9(c); Fasıl 72 Not 1(l)."
+  },
+  {
+   "soru": "Aşağıdaki çivilerden hangisi diğerlerinden farklı bir fasılda sınıflandırılır?",
+   "secenekler": [
+    "Başı porselenden, gövdesi çelikten resim çivisi",
+    "Başı plastikten, gövdesi çelikten döşemeci çivisi",
+    "Başı ve gövdesi çelikten, bakır kaplanmış çivi",
+    "Başı bakırdan, gövdesi çelikten süs çivisi",
+    "Çelikten pünez"
+   ],
+   "cevap": "D",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "73.17 pozisyon metni başları başka maddelerden olan çivileri kapsar ama başı bakırdan olanları açıkça hariç tutar; bunlar ağırlıkça çelik fazla olsa bile 74.15’te (Fasıl 74) yer alır. Porselen veya plastik başlı çiviler, bakır kaplanmış çelik çiviler ve pünezler 73.17’dedir. Pozisyon metninde aksine hüküm bulunduğundan Bölüm XV Not 7’deki ağırlık kuralı burada uygulanmaz.",
+   "dayanak": "73.17 pozisyon metni ve Açıklama Notu; 74.15 pozisyon metni; Bölüm XV Not 7."
+  },
+  {
+   "soru": "Tarife Cetveline göre, bir şarap üretim tesisine sabit olarak kurulacak, yalnızca musluk, seviye göstergesi ve emniyet vanası bulunan, karıştırıcı, ısıtıcı veya soğutucu tertibatı olmayan 5.000 litre hacimli paslanmaz çelik fermantasyon tankı hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "73.08",
+    "73.09",
+    "73.10",
+    "84.19",
+    "86.09"
+   ],
+   "cevap": "B",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Hacmi 300 litreyi geçen, mekanik veya termik tertibatı olmayan demir veya çelik depolar 73.09’dadır; musluk, vana, seviye göstergesi, manometre gibi donanımlar bu niteliği bozmaz. 300 litreyi geçmeyenler 73.10’da, karıştırıcı, ısıtıcı veya soğutucu bobinli olanlar Fasıl 84 veya 85’te (ör. 84.19), taşıma türüne göre özel donatılmış konteynerler 86.09’dadır. 73.09 depoları zaten normal olarak sabit tesis edilir; bu durum onları inşaat aksamı (73.08) yapmaz.",
+   "dayanak": "73.09 pozisyon metni ve Açıklama Notu; 73.10 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdaki demir veya çelik eşya ile tarife pozisyonlarının doğru eşleştirildiği seçenek hangisidir? I. Dikenli tel  II. Demetlenmiş çelik tellerden halat  III. Metal depluvaye  IV. Otomobil kar zinciri — a) 73.12  b) 73.13  c) 73.14  d) 73.15",
+   "secenekler": [
+    "I-b, II-a, III-c, IV-d",
+    "I-a, II-b, III-c, IV-d",
+    "I-b, II-a, III-d, IV-c",
+    "I-c, II-a, III-b, IV-d",
+    "I-a, II-c, III-b, IV-d"
+   ],
+   "cevap": "A",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Dikenli tel 73.13’te, sıkıca demetlenmiş tellerden halat ve kablolar 73.12’de, metal depluvaye tel mensucat ve ızgaralarla birlikte 73.14’te, kar (patinaj) zincirleri 73.15’te yer alır. Tuzak, adında “tel” geçen her eşyayı aynı pozisyona koymaktır: sıkıca demetlenmiş teller 73.12’ye, gevşekçe burulmuş çit telleri 73.13’e gider.",
+   "dayanak": "73.12, 73.13, 73.14 ve 73.15 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 73. faslında <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Çelikten sıvılaştırılmış gaz tüpü",
+    "Demir veya çelik yünü",
+    "Kapının açılmasını önleyen zincirli çelik kapı emniyeti",
+    "Çelik telden fare kapanı",
+    "Çelik gemi çapası"
+   ],
+   "cevap": "C",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Zincirle donatılmış kapı emniyetleri 73.15 Açıklama Notunda hariç tutulmuş olup adi metallerden donanım ve tertibat olarak 83.02’de yer alır; Bölüm XV Not 2 son paragrafı gereği 83. fasla giren eşya 73. fasla verilmez. Gaz tüpü 73.11’de, çelik yünü 73.23’te, tel fare kapanı 73.26’da, gemi çapası 73.16’dadır.",
+   "dayanak": "73.15 Açıklama Notu, hariç tutmalar; Bölüm XV Not 2."
+  },
+  {
+   "soru": "Tüm parçaları aynı ambalajda birlikte sunulan, demonte (sökülmüş) halde, kömürle çalışan çelik bahçe barbeküsü hangi Genel Yorum Kuralları uyarınca 73.21 pozisyonunda sınıflandırılır?",
+   "secenekler": [
+    "GYK 1 ve 3(b)",
+    "GYK 1 ve 2(b)",
+    "GYK 1 ve 3(c)",
+    "GYK 1 ve 4",
+    "GYK 1 ve 2(a)"
+   ],
+   "cevap": "E",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 2(a), bir eşyaya yapılan atfın o eşyanın sökülmüş veya monte edilmemiş olarak sunulan halini de kapsadığını belirtir; bütün parçaları birlikte gelen demonte barbekü, 73.21 metninde sayılan barbekü olarak sınıflandırılır. GYK 2(b) madde karışımları ve birleşimleri, 3(b) karışık eşya ve takımlar, 3(c) son sıradaki pozisyon, 4 ise en çok benzeyen eşya içindir.",
+   "dayanak": "GYK 1 ve 2(a); 73.21 pozisyon metni."
+  },
+  {
+   "soru": "Aşağıdaki demir veya çelik eşyadan hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "At nalı",
+    "Dökme demirden kanalizasyon kontrol (rögar) kapağı",
+    "Çadır kazığı",
+    "Fıçı ve varil çemberi",
+    "Çelik saçtan açılır kapanır basamaklı merdiven"
+   ],
+   "cevap": "B",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Kanalizasyon ve su sistemleri için kontrol kapakları ve ızgaralar, başka yerde yer almayan dökme eşya olarak 73.25’te yer alır. Nallar, çadır kazıkları, fıçı çemberleri ve basamaklı merdivenler 73.26 Açıklama Notunda sayılan “demir veya çelikten diğer eşya”dır. Ayırıcı ölçüt üretim yöntemidir: dökme ise 73.25; aynı tür eşya sinterleme gibi başka bir yöntemle elde edilmişse 73.26.",
+   "dayanak": "73.25 ve 73.26 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdakilerden hangileri 73.08 pozisyonunda sınıflandırılır? I. Çelikten pencere çerçevesi  II. Mağazada daimi donanım olarak monte edilecek büyük ölçekli çelik raflama  III. Betonarme işlerinde kullanılan, ayrı ayrı haddelenmiş iki veya daha fazla çubuğun birbirine sarılmasıyla elde edilen ürün  IV. Kalıp niteliğine sahip, beton dökmeye mahsus çelik kutu bölmeler",
+   "secenekler": [
+    "I ve II",
+    "II ve IV",
+    "I, III ve IV",
+    "I, II ve III",
+    "II, III ve IV"
+   ],
+   "cevap": "D",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "Kapı ve pencere çerçeveleri 73.08 pozisyon metninde sayılmıştır; dükkân ve depolarda daimi donanım için büyük ölçekli raflar ile betonarmede kullanılan, ayrı haddelenip birbirine sarılmış çubuklar Açıklama Notunda açıkça yer alır. Kalıp niteliğindeki beton kutu bölmeleri ise 84.80’e gider. Hareketli raflı mobilya olsaydı 94.03’te yer alırdı.",
+   "dayanak": "73.08 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, dökme demirden santrifüj döküm usulüyle elde edilmiş, bir ucu yuvalı (geçmeli) kanalizasyon borusu hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "73.03",
+    "73.04",
+    "73.06",
+    "73.07",
+    "73.25"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Fasıl 73 Not 1’de tanımlanan dökme demirden ince ve kalın borular ile içi boş profiller, kalıba veya santrifüj döküm usulüyle elde edilmiş olsun, ağızları yuvalı veya flanşlı olsun 73.03’tedir. 73.04 ve 73.06 dökme demir dışındaki demir veya çelik boruları, 73.07 boru bağlantı parçalarını kapsar. 73.25 başka yerde yer almayan dökme eşya içindir; borular için özel pozisyon bulunduğundan uygulanmaz.",
+   "dayanak": "73.03 pozisyon metni ve Açıklama Notu; Fasıl 73 Not 1."
+  },
+  {
+   "soru": "Tarife Cetvelinin 73. Fasıl notlarına göre bu fasılda geçen “dökme demir” tabiri aşağıdakilerden hangisini ifade eder?",
+   "secenekler": [
+    "Ağırlıkça %2 veya daha az karbon içeren, genellikle dövülerek işlenebilen demirli maddeler",
+    "Ağırlıkça %4 veya daha fazla demir içeren, diğer alaşımların imalinde katkı maddesi olarak kullanılan alaşımlar",
+    "Demirin ağırlıkça diğer elementlerin her birine üstün geldiği, döküm yoluyla elde edilen ve Fasıl 72’deki çelik bileşimine uymayan ürünler",
+    "Ağırlıkça %1,2 veya daha az karbon ve %10,5 veya daha fazla krom içeren çelik alaşımları",
+    "Ağırlıkça %6’dan fazla fakat %30’u geçmeyen oranda manganez içeren demir-karbon alaşımları"
+   ],
+   "cevap": "C",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 73 Not 1 dökme demiri iki ölçütle tanımlar: demirin ağırlıkça diğer her elementten fazla olması ve ürünün döküm yoluyla elde edilip Fasıl 72 Not 1(d)’deki çelik bileşimine uymaması. A şıkkı çeliğin, B ferro-alyajın, D paslanmaz çeliğin, E aynalı demirin Fasıl 72’deki tanımlarından alınmıştır.",
+   "dayanak": "Fasıl 73 Not 1; Fasıl 72 Not 1(b), (c), (d), (e)."
+  },
+  {
+   "soru": "Bir firma ev tipi, emaye kaplı çelik gövdeli, fırınlı bir mutfak ocağı ithal etmektedir. Ocağın dört gözünden üçü tüp gazla, biri elektrikli ısıtıcı elemanla çalışmakta; fırın bölümü de gazla ısınmaktadır. Bu eşya Tarife Cetveline göre hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "73.21",
+    "73.22",
+    "73.23",
+    "84.19",
+    "85.16"
+   ],
+   "cevap": "E",
+   "tip": "Senaryo",
+   "gerekce": "73.21 yalnızca ısıtmada elektrik kullanmayan ev tipi pişirme ve ısıtma cihazlarını kapsar; Açıklama Notu birleşik gazlı-elektrikli ocakları açıkça hariç tutarak 85.16’ya gönderir. Emaye kaplama ve gazlı fırın sonucu değiştirmez. 73.22 merkezi ısıtma radyatörleri, 73.23 ısıtıcı elemanı olmayan mutfak eşyası, 84.19 ise ev dışı özel ısıtma-pişirme cihazları içindir.",
+   "dayanak": "73.21 Açıklama Notu; 85.16 pozisyonu."
+  },
+  {
+   "soru": "Aşağıdaki eşya çiftlerinden hangisinde her iki eşya da Tarife Cetvelinde aynı pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Çelik halat – dikenli tel",
+    "Çelik yünü – çelik telden bulaşık süngeri",
+    "Çelik küvet – çelik tencere",
+    "Dökme demir boru – dikişsiz çelik boru",
+    "Çelik zincir – çelik çapa"
+   ],
+   "cevap": "B",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Demir veya çelik yünü ile tel veya şeritten yapılan temizleme ve parlatma süngerleri 73.23 pozisyon metninde birlikte sayılmıştır. Diğer çiftler komşu ama ayrı pozisyonlardadır: halat 73.12 – dikenli tel 73.13; küvet 73.24 – tencere 73.23; dökme demir boru 73.03 – dikişsiz boru 73.04; zincir 73.15 – çapa 73.16. “Çelik sünger” Fasıl 72’deki süngerimsi demir de değildir.",
+   "dayanak": "73.23 pozisyon metni ve Açıklama Notu (B); 72.03 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 73.19 pozisyonunda <b>yer almaz</b>?",
+   "secenekler": [
+    "Elle kullanılan yorgancı iğnesi",
+    "Tığ",
+    "Toplu iğne",
+    "Dikiş makinası iğnesi",
+    "Gözü açılmış fakat ucu henüz sivriltilmemiş el dikiş iğnesi taslağı"
+   ],
+   "cevap": "D",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "73.19 elle kullanılan dikiş iğnelerini, örgü şişlerini, çuvaldız, tığ ve işleme bızlarını, ayrıca başka yerde yer almayan çengelli ve toplu iğneleri kapsar; bunların bitirilmemiş taslakları da buradadır. Dikiş makinası iğneleri 84.52’de, örme makinası iğneleri 84.48’de yer alır. Tuzak, “iğne” kelimesini görüp makine iğnesini de el iğnesi saymaktır.",
+   "dayanak": "73.19 Açıklama Notu (A), (B) ve hariç tutmalar."
+  },
+  {
+   "soru": "Tarife Cetveline göre, demir veya çelikten, fuel-oil yakan, ısıtması elektrikli olmayan ve ürettiği sıcak havayı motorlu bir vantilatörle dağıtan seyyar hava ısıtıcısı (sıcak hava jeneratörü) hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "73.22",
+    "84.14",
+    "84.15",
+    "84.19",
+    "85.16"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "73.22, ısıtması elektrikli olmayan, motorlu bir hava püskürtücüsü veya vantilatörü olan sıcak hava jeneratörlerini ve distribütörlerini, nerede kullanılırsa kullanılsın kapsar. Vantilatör tek başına 84.14’te, klima cihazları 84.15’te, elektrikli ısıtıcılar 85.16’da yer alır. Bünyede motorlu fan bulunması eşyayı Fasıl 84’e göndermez.",
+   "dayanak": "73.22 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre çelik bilyaların 84.82 pozisyonunda mı yoksa 73.26 pozisyonunda mı sınıflandırılacağını belirleyen ölçüt hangisidir?",
+   "secenekler": [
+    "Bilyanın döküm yoluyla mı dövme yoluyla mı elde edildiği",
+    "Bilya çapının 16 mm’yi geçip geçmediği",
+    "Bilyanın ağırlıkça %0,6 veya daha fazla karbon içerip içermediği",
+    "Bilyanın öğütme makinelerinde kullanılmaya mahsus olup olmadığı",
+    "En büyük ve en küçük çaplarının itibari çapa göre %1’den veya 0,05 mm’den (hangisi azsa) fazla farklı olup olmadığı"
+   ],
+   "cevap": "E",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 84 notuna göre en büyük ve en küçük çapları itibari çaptan %1’den veya 0,05 mm’den (hangisi daha az ise) fazla farklı olmayan kalibrelenmiş veya parlatılmış çelik bilyalar 84.82’dedir; bu tarife uymayanlar 73.26’ya verilir. 16 mm Fasıl 73’ün tel tanımına aittir. Dökme öğütücü bilyaların 73.25’e gitmesi ise kalibrasyondan bağımsız ayrı bir ayrımdır.",
+   "dayanak": "Fasıl 84 notu (kalibrelenmiş çelik bilyalar); 73.26 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, evde kullanılan, pedalla açılan kapaklı, çelik saçtan seyyar çöp kovası hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "73.09",
+    "73.10",
+    "73.23",
+    "73.26",
+    "94.03"
+   ],
+   "cevap": "C",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "73.23 Açıklama Notu, çöp kutularını ve seyyar çöp kutularını (dışarıda kullanılanlar dahil) ev eşyası olarak sayar; 73.26 Açıklama Notu da bunları açıkça hariç tutar. 73.10 ticari taşıma ve ambalaj kapları, 73.09 300 litreyi geçen depolar içindir. Atık kağıt sepeti ise 73.23’ten hariç tutulmuş olup duruma göre 73.25 veya 73.26’dadır.",
+   "dayanak": "73.23 Açıklama Notu (A); 73.26 Açıklama Notu, hariç tutmalar."
+  },
+  {
+   "soru": "Boru tesisatında kullanılan aşağıdaki demir veya çelik eşyadan hangisi diğerlerinden farklı bir pozisyonda yer alır?",
+   "secenekler": [
+    "Uç uca kaynak yapılacak boru dirseği",
+    "Boruları duvara tespit etmeye yarayan bilezik",
+    "Borunun açık ucunu kapatan boru kapağı",
+    "T boru (üç yollu bağlantı parçası)",
+    "Dişli rakor"
+   ],
+   "cevap": "B",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "73.07 iki boruyu birleştiren, boruyu başka bir aletle birleştiren veya borunun açık ucunu kapatan bağlantı parçalarını (dirsek, T boru, kapak, rakor, flanş, manşon) kapsar. Boru çapıyla bütünleşmeyen, boruyu duvara tutturan veya destekleyen kanca, bilezik ve mesnetler Açıklama Notunda hariç tutulmuş olup 73.25 veya 73.26’dadır.",
+   "dayanak": "73.07 Açıklama Notu; 73.26 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre; her türlü madde için (sıkıştırılmış veya sıvılaştırılmış gaz hariç) hacmi ...(1)... litreyi geçmeyen, mekanik veya termik tertibatı olmayan demir veya çelik variller ve kutular 73.10 pozisyonunda; sıkıştırılmış veya sıvılaştırılmış gazlar için demir veya çelik kaplar ise kapasitelerine bakılmaksızın ...(2)... pozisyonunda sınıflandırılır. Boşluklara sırasıyla hangileri gelmelidir?",
+   "secenekler": [
+    "50 – 73.11",
+    "300 – 73.09",
+    "500 – 73.11",
+    "300 – 73.11",
+    "300 – 84.19"
+   ],
+   "cevap": "D",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "73.09 ile 73.10 arasındaki sınır 300 litredir; 50 litre yalnız alt pozisyon düzeyinde bir ayrımdır. Sıkıştırılmış veya sıvılaştırılmış gaz kapları hacimleri ne olursa olsun 73.11’de yer alır; 73.09 300 litreyi geçen diğer kaplar içindir. 84.19 ısıtma veya soğutma tertibatlı cihazları kapsar.",
+   "dayanak": "73.09, 73.10 ve 73.11 pozisyon metinleri; 73.09 Açıklama Notu."
+  },
+  {
+   "soru": "Ağırlıkça %60’ı paslanmaz çelikten, %40’ı alüminyumdan oluşan ev tipi bir tencere, Bölüm XV Not 7 uyarınca 73.23 pozisyonunda sınıflandırılır. Bu sınıflandırmada esas alınan Genel Yorum Kuralı hangisidir?",
+   "secenekler": [
+    "GYK 1",
+    "GYK 2(a)",
+    "GYK 3(a)",
+    "GYK 3(b)",
+    "GYK 3(c)"
+   ],
+   "cevap": "A",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 1’e göre sınıflandırma pozisyon metinleri ile bölüm ve fasıl notlarına göre yapılır. Bölüm XV Not 7, iki veya daha fazla adi metalden eşyanın ağırlıkça üstün metalden mamul sayılacağını hükme bağladığından sonraki kurallara (asli nitelik için 3(b), son sıra için 3(c)) başvurmaya gerek kalmaz. Tuzak, karışık malzemeyi görünce doğrudan 3(b)’ye gitmektir.",
+   "dayanak": "GYK 1; Bölüm XV Not 7; 73.23 pozisyon metni."
+  },
+  {
+   "soru": "Bölüm XV ve 73. Fasıl hükümlerine göre aşağıdaki ifadelerden hangileri doğrudur? I. Merkezi ısıtma radyatörleri için özel olarak yapılmış, müstakil sunulan çelik cıvatalar 73.18’de sınıflandırılır. II. Motorlu taşıtlara ait çelik helezoni yaylar, müstakil sunulduğunda 87.08’de sınıflandırılır. III. Yalnızca plastikle kaplanmış çelik tel mensucat, plastik eşya olarak 39. fasılda sınıflandırılır. IV. 82 veya 83. fasıllara giren eşya 73. fasla verilmez.",
+   "secenekler": [
+    "I ve II",
+    "II ve III",
+    "I, III ve IV",
+    "III ve IV",
+    "I ve IV"
+   ],
+   "cevap": "E",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "Bölüm XV Genel Açıklamalarının (C) kısmına göre genel kullanıma mahsus aksam ait olduğu eşyanın parçası sayılmaz: radyatör cıvatası 73.18’de, otomobil yayı 87.08’de değil 73.20’de yer alır (I doğru, II yanlış). 73.14 Açıklama Notuna göre basitçe plastikle kaplanmış tel mensucat 73.14’te kalır (III yanlış). Bölüm XV Not 2 son paragrafı 82 ve 83. fasıl eşyasının 72–76. fasıllara verilmeyeceğini öngörür (IV doğru).",
+   "dayanak": "Bölüm XV Not 2; Bölüm XV Genel Açıklamalar (C); 73.14 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdaki demir veya çelikten ev eşyalarından hangisi 73.23 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Düdüklü tencere",
+    "Çay süzgeci",
+    "Elle kullanılan konserve açacağı",
+    "Sulama kabı",
+    "Ekmek kutusu"
+   ],
+   "cevap": "C",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "73.23 Açıklama Notu, alet niteliğindeki ev eşyasını (konserve açacağı, şişe açacağı, peynir rendesi, fındık kırıcı, tirbuşon vb.) hariç tutarak Fasıl 82’ye gönderir. Düdüklü tencere, çay süzgeci, sulama kabı ve ekmek kutusu notta sayılan sofra, mutfak ve ev eşyasıdır.",
+   "dayanak": "73.23 Açıklama Notu (A) ve hariç tutmalar."
+  },
+  {
+   "soru": "Bir firma, paslanmaz çelikten, dikişsiz, soğuk çekilmiş, kesiti daire şeklinde, dış çapı 60 mm, 6 m boyunda borular ithal etmektedir. Boruların uçlarına diş açılmış ve bir uçlarına flanş takılmıştır; borular belirli bir makinenin veya taşıtın aksamı olarak tanınamamaktadır. Bu eşya hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "72.22",
+    "73.04",
+    "73.06",
+    "73.07",
+    "84.81"
+   ],
+   "cevap": "B",
+   "tip": "Senaryo",
+   "gerekce": "Dikişsiz demir veya çelik borular 73.04’tedir. Fasıl Genel Açıklamalarına göre borular diş açılmış, delinmiş, flanşlı (yakalı) veya halkalı olabilir; bu işlemler boruyu bağlantı parçası (73.07) yapmaz. 73.06 dikişli borular içindir; 72.22 paslanmaz çelik çubuk ve profilleri kapsar; musluk veya vana bulunmadığından 84.81 söz konusu değildir.",
+   "dayanak": "Fasıl 73 Genel Açıklamalar; 73.04 Açıklama Notu."
+  },
+  {
+   "soru": "Bölüm XV Not 2’ye göre aşağıdakilerden hangisi “genel kullanıma mahsus aksam ve parça” <b>değildir</b>?",
+   "secenekler": [
+    "Demir veya çelikten cıvata ve somun",
+    "Demir veya çelikten zincir",
+    "Adi metalden yay yaprağı",
+    "Çelik soba için özel olarak yapılmış ızgara",
+    "Demir veya çelikten boru dirseği"
+   ],
+   "cevap": "D",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Bölüm XV Not 2; 73.07, 73.12, 73.15, 73.17 ve 73.18 eşyasını, saat zemberekleri hariç adi metal yaylarını ve 83.01, 83.02, 83.08, 83.10 eşyası ile 83.06’daki çerçeve ve aynaları genel kullanıma mahsus aksam sayar. Sobaya özgü ızgara bu listede yoktur; ait olduğu sobanın aksam ve parçası olarak 73.21’de sınıflandırılır.",
+   "dayanak": "Bölüm XV Not 2; 73.21 Açıklama Notu."
+  }
+ ]
+}

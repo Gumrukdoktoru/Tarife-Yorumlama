@@ -1,0 +1,651 @@
+{
+ "tur": "fasil",
+ "fasil": 22,
+ "baslik": "Meşrubat, alkollü içkiler ve sirke",
+ "bolum": "IV",
+ "oz": {
+  "vurgu": "Fasıl 22 içecekleri dört grupta toplar: sular ve alkolsüz içecekler, fermente alkollü içecekler, damıtılmış alkollü içkiler ve etil alkol, sirke. İki sayı belirleyicidir: hacimce <b>%0,5</b> alkol (alkolsüz ile alkollü arasındaki sınır) ve tağyir edilmemiş etil alkolde hacimce <b>%80</b> (22.07 ile 22.08 arasındaki sınır).",
+  "maddeler": [
+   "Tatlandırılmamış ve aromalandırılmamış sular, maden suları, gazlı sular, buz ve kar 22.01; tatlandırılmış veya aromalı sular ve alkolsüz içecekler (alkolsüz bira dahil) 22.02.",
+   "Malttan bira 22.03; taze üzüm şarabı ve alkol derecesi %0,5’i aşan üzüm şırası 22.04; vermut ve aromalı taze üzüm şarapları 22.05; elma, armut, bal şarabı, sake gibi diğer fermente içkiler ve karışımlar 22.06.",
+   "Tağyir edilmemiş etil alkol %80 ve fazlası ile her derecedeki tağyir edilmiş etil alkol 22.07; %80’den az tağyirsiz etil alkol, damıtık içkiler ve likörler 22.08.",
+   "Sirke ve asetik asitten elde edilen sirke yerine geçen maddeler 22.09; deniz suyu 25.01, damıtılmış su 28.53, yemeklik şarap 21.03."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+  "satirlar": [
+   [
+    "1",
+    "Yemek pişirmek için hazırlanmış ve içilmeye elverişsiz mi? (sirke hariç)",
+    "Genellikle <b>21.03</b>"
+   ],
+   [
+    "2",
+    "Deniz suyu, damıtılmış veya iletken su, ilaç ya da parfümeri ürünü mü?",
+    "<b>25.01</b> / <b>28.53</b> / <b>30.03–30.04</b> / <b>Fasıl 33</b>"
+   ],
+   [
+    "3",
+    "Sirke veya asetik asitten sirke yerine geçen madde mi?",
+    "<b>22.09</b> (ağırlıkça %10’dan fazla asetik asitli çözelti <b>29.15</b>)*"
+   ],
+   [
+    "4",
+    "Etil alkol veya damıtma yoluyla elde edilen içki mi?",
+    "Tağyirli (her derece) veya tağyirsiz %80+: <b>22.07</b> · tağyirsiz %80’den az, damıtık içkiler, likörler: <b>22.08</b>"
+   ],
+   [
+    "5",
+    "Hacimce %0,5’ten fazla alkollü fermente içecek mi?",
+    "Bira <b>22.03</b> · taze üzüm şarabı/şıra <b>22.04</b> · vermut <b>22.05</b> · diğerleri ve karışımlar <b>22.06</b>"
+   ],
+   [
+    "6",
+    "Fermente edilmemiş meyve veya sebze suyu mu? (alkol en çok %0,5)",
+    "<b>20.09</b>"
+   ],
+   [
+    "7",
+    "Tatlandırılmış veya aromalandırılmış su ya da alkolsüz içecek mi? (alkolsüz bira dahil)",
+    "<b>22.02</b>"
+   ],
+   [
+    "8",
+    "Tatlandırılmamış, aromasız su, maden suyu, gazlı su, buz veya kar mı?",
+    "<b>22.01</b>"
+   ]
+  ],
+  "dipnot": "Alkol derecesi hacim itibariyle 20 °C’de tespit edilir (Fasıl 22 Not 2). * Gıdayla kullanılmak üzere aromalandırılıp renklendirilmiş, %10–15 asetik asitli sirke ikameleri 22.09’da kalır. Sıvı yoğurt ve diğer fermente sütler 04.03’tedir."
+ },
+ "pozisyon_haritasi": [
+  [
+   "22.01",
+   "Sular, maden suları, gazlı sular (tatlandırılmamış, aromasız); buz ve kar",
+   "Deniz suyu ve damıtık su hariç",
+   "Kaynak suyu, maden suyu, soda, tabii kar, buz"
+  ],
+  [
+   "22.02",
+   "Tatlandırılmış/aromalı sular; alkolsüz diğer içecekler",
+   "Alkol en çok %0,5; 20.09 suları hariç",
+   "Limonata, kola, aromalı maden suyu, alkolsüz bira"
+  ],
+  [
+   "22.03",
+   "Malttan üretilen biralar",
+   "Maltlanmış hububatın fermentasyonu",
+   "Ale, stout, konsantre bira"
+  ],
+  [
+   "22.04",
+   "Taze üzüm şarabı; üzüm şırası (20.09 hariç)",
+   "Taze üzümden; şırada alkol %0,5’in üstünde",
+   "Kırmızı, beyaz, köpüklü şarap; porto; alkollü şıra"
+  ],
+  [
+   "22.05",
+   "Vermut ve aromalı taze üzüm şarapları",
+   "22.04 şarabı + bitki veya aroma maddesi",
+   "Vermut, şarap esaslı aperatif"
+  ],
+  [
+   "22.06",
+   "Diğer fermente içecekler; fermente içecek karışımları",
+   "22.03–22.05 dışındaki fermente içkiler",
+   "Elma şarabı, bal şarabı, sake, kuru üzüm şarabı"
+  ],
+  [
+   "22.07",
+   "Tağyirsiz etil alkol (%80+); tağyir edilmiş etil alkol ve içkiler",
+   "Tağyirsizde %80 eşiği; tağyirlide derece önemsiz",
+   "Yüksek dereceli etil alkol, denatüre alkol"
+  ],
+  [
+   "22.08",
+   "Tağyirsiz etil alkol (%80’den az); damıtık içkiler, likörler",
+   "Damıtma; tağyir edilmemiş",
+   "Viski, rom, cin, votka, konyak, likör"
+  ],
+  [
+   "22.09",
+   "Sirkeler; asetik asitten sirke yerine geçen maddeler",
+   "Asetik fermentasyon; %10 üstü asetik asitli çözelti 29.15",
+   "Şarap sirkesi, elma şarabı sirkesi, alkol sirkesi"
+  ]
+ ],
+ "notlar": [
+  [
+   "Fasıl 22 Not 1",
+   "Fasıl 22 dışı: (a) yemek pişirmede kullanılmak amacıyla hazırlanmış ve bu nedenle içecek olarak tüketilmeye uygun olmayan Fasıl 22 ürünleri (22.09 hariç) (genellikle 21.03); (b) deniz suyu (25.01); (c) damıtılmış veya iletkenliği olan sular ve benzeri saflıktaki sular (28.53); (d) ağırlık itibariyle <b>%10’dan fazla</b> asetik asit içeren asetik asit çözeltisi (29.15); (e) 30.03 veya 30.04’teki ilaçlar; (f) parfümeri ve tuvalet müstahzarları (Fasıl 33)."
+  ],
+  [
+   "Fasıl 22 Not 2",
+   "Bu Fasıl ile 20. ve 21. Fasılların uygulanmasında hacim itibariyle alkol derecesi <b>20 °C</b> sıcaklıkta tespit edilir."
+  ],
+  [
+   "Fasıl 22 Not 3",
+   "22.02 anlamında “alkolsüz içecekler”: alkol derecesi hacim itibariyle <b>%0,5’i geçmeyen</b> içecekler. Alkollü içkiler duruma göre 22.03–22.06 veya 22.08’de yer alır."
+  ],
+  [
+   "Genel Açıklamalar",
+   "Fasıl dört gruptur: su, alkolsüz içecekler ve buz; fermente alkollü içecekler; damıtılmış alkollü sıvılar ve etil alkol; sirke. Hariç: Fasıl 4’teki sıvı süt mamulleri, yemeklik olarak hazırlanmış içilmeye elverişsiz ürünler, ilaçlar, Fasıl 33 ürünleri."
+  ],
+  [
+   "22.01 Açıklama Notu",
+   "Temizlenmiş, berraklaştırılmış veya saflaştırılmış alelade tabii sular, tabii veya suni maden suları ve basınçlı karbondioksit katılmış gazlı sular buradadır. “Buz ve kar” tabii kar ve buz ile suni dondurulmuş suyu kapsar. Hariç: tatlandırılmış veya aromalı sular (22.02), yenilen buzlar (21.05), kuru buz (28.11)."
+  ],
+  [
+   "22.02 Açıklama Notu",
+   "Limonata, kola gibi içecekler; tatlandırılmış veya aromalı maden suları; alkolsüz bira (alkolü %0,5’e kadar malt birası, zencefil ve bitki birası, bira-limonata karışımları); içilmeye hazır demir hindi nektarı; süt ve kakao esaslı içilmeye hazır içecekler. Hariç: sıvı yoğurt ve fermente sütler (04.03), şeker şurupları (17.02) ve aromalı şuruplar (21.06), meyve ve sebze suları (20.09)."
+  ],
+  [
+   "22.03 Açıklama Notu",
+   "Bira maltlanmış hububat, su ve genellikle şerbetçi otundan hazırlanan likörün fermentasyonuyla elde edilir; malt haline getirilmemiş hububat da kullanılabilir. Vakumla orijinal hacminin <b>1/5–1/6’sına</b> kadar konsantre edilen biralar da buradadır. Su ve karamelize şekerden yapılan “bira” adlı alkolsüz içecekler ve alkolü %0,5 veya altına düşürülmüş biralar 22.02’dedir."
+  ],
+  [
+   "22.04 Açıklama Notu",
+   "Taze üzüm şırasının alkolik fermentasyonuyla elde edilen şarap: alelade, kuvvetlendirilmiş, köpüklü (kendiliğinden veya sonradan gazlandırılmış) ve tatlı yemek sonu şarapları (porto, şeri, marsala vb.). Kısmen fermente olmuş şıra ile fermente olmamış fakat alkol katılmış şıra, alkol derecesi %0,5’i aşıyorsa buradadır; %0,5’i geçmeyen üzüm suyu ve şırası 20.09’dadır."
+  ],
+  [
+   "22.05 Açıklama Notu",
+   "Vermut ve bitki parçaları veya aromatik maddelerle aromalandırılmış taze üzüm şarapları (aperatif, tonik) buradadır; vitamin veya demir bileşiği katılmış olabilir. Kuru üzümden aromatik bitkilerle hazırlanan şaraplar 22.06’dadır."
+  ],
+  [
+   "22.06 Açıklama Notu",
+   "22.03–22.05 dışındaki bütün fermente içecekler: elma şarabı, armut şarabı, bal şarabı, kuru üzüm şarabı, alkolü %0,5’i aşan meyve ve sebze şarapları, malton, spruce, sake, hurma şarabı, fermente zencefil ve bitki biraları; ayrıca alkolü %0,5’i aşan fermente içecek–alkolsüz içecek karışımları (limonata-bira, bira-şarap)."
+  ],
+  [
+   "22.07 Açıklama Notu",
+   "Etil alkol, Fasıl 29 Not 2(b) gereği 29.05’teki asiklik alkollerden ayrılmıştır. Tağyir (denatüre) edilmiş etil alkol içilmeye elverişsiz hale getirilmiştir (metanol, aseton, piridin vb. katılarak). Nötr alkollü içkiler de buradadır. Hariç: %80’den az tağyirsiz etil alkol (22.08), katılaştırılmış alkol yakıtlar (36.06)."
+  ],
+  [
+   "22.08 Açıklama Notu",
+   "Damıtık alkollü içkiler (konyak, viski, rom, cin, votka, kirsch, calvados, arak vb.), likörler ve kordiyaller, alkollü aperatifler, alkollü limonatalar, ilave alkollü ve %0,5’i aşan meyve suları (22.04 hariç). Hacimce %80’den az tağyirsiz etil alkol, insan tüketimi veya sanayi için olsun, buradadır. Hariç: vermut (22.05), tağyirli veya %80+ etil alkol (22.07)."
+  ],
+  [
+   "22.09 Açıklama Notu",
+   "Sirke, alkollü sıvıların veya şeker ya da nişasta çözeltilerinin asetik asit fermentasyonuyla elde edilir (şarap, bira-malt, elma şarabı, alkol, hububat, melas sirkeleri). Sirke yerine geçen maddeler asetik asidin suyla seyreltilmesiyle yapılır. Not 1(d), gıdayla kullanılmak üzere aromalandırılıp renklendirilmiş <b>%10–15</b> asetik asitli sirke ikamelerine uygulanmaz; bunlar 22.09’dadır. Tuvalet sirkeleri 33.04."
+  ]
+ ],
+ "sinir_komsulari": [
+  [
+   "Deniz suyu",
+   "25.01",
+   "Fasıl 22 Not 1(b)"
+  ],
+  [
+   "Damıtılmış veya iletken su",
+   "28.53",
+   "Fasıl 22 Not 1(c)"
+  ],
+  [
+   "Kuru buz (katı karbondioksit)",
+   "28.11",
+   "22.01 hariç tutması"
+  ],
+  [
+   "Dondurma, şerbet gibi yenilen buzlar",
+   "21.05",
+   "22.01 hariç tutması"
+  ],
+  [
+   "Fermente edilmemiş meyve suyu; alkolü %0,5’i geçmeyen üzüm suyu ve şırası",
+   "20.09",
+   "22.02 ve 22.04 hariç tutmaları"
+  ],
+  [
+   "Sıvı yoğurt ve diğer fermente sütler",
+   "04.03",
+   "22.02 hariç tutması"
+  ],
+  [
+   "Şeker şurupları; aromalı şeker şurupları",
+   "17.02 / 21.06",
+   "22.02 hariç tutması"
+  ],
+  [
+   "Suyla seyreltilerek içecek yapılan, doğrudan içilmeyen müstahzarlar",
+   "21.06",
+   "İçecek değil, içecek müstahzarı"
+  ],
+  [
+   "Yemek pişirmek için hazırlanmış, içilmeye elverişsiz şarap ve konyak",
+   "21.03",
+   "Fasıl 22 Not 1(a)"
+  ],
+  [
+   "Ağırlıkça %10’dan fazla asetik asitli sulu çözelti",
+   "29.15",
+   "Fasıl 22 Not 1(d)"
+  ],
+  [
+   "Katılaştırılmış alkol (yakıt)",
+   "36.06",
+   "22.07 hariç tutması"
+  ],
+  [
+   "Tuvalet sirkeleri; parfümeri müstahzarları",
+   "33.04 / Fasıl 33",
+   "Fasıl 22 Not 1(f)"
+  ],
+  [
+   "Malt hülasası (içecek değil)",
+   "19.01",
+   "Bira ve malton Fasıl 22’de"
+  ],
+  [
+   "Etil alkol (asiklik alkol olmasına rağmen)",
+   "22.07 / 22.08",
+   "29.05 dışında (Fasıl 29 Not 2(b))"
+  ]
+ ],
+ "tuzaklar": [
+  "<b>Şeker veya aroma suyu 22.01’den çıkarır.</b> Sade maden suyu ve soda 22.01; limon aromalı veya şekerli maden suyu 22.02.",
+  "<b>Kar ve buz Fasıl 22’dedir.</b> Tabii kar ve buz ile suni dondurulmuş su 22.01; kuru buz 28.11, yenilen buzlar 21.05, deniz suyu 25.01.",
+  "<b>%0,5 hacim sınırı.</b> Alkolü %0,5’i geçmeyen malt birası 22.02 (alkolsüz bira); geçen 22.03. Ölçüm 20 °C’de ve hacimce yapılır.",
+  "<b>Adı “bira” olan her içecek bira değildir.</b> Su ve karamelize şekerden yapılan alkolsüz “bira” 22.02; fermente zencefil birası ve bitki birası 22.06.",
+  "<b>Üzüm şırasının yeri alkol derecesine bağlıdır.</b> Fermente olmamış veya alkolü %0,5’i geçmeyen şıra (kristal halde “üzüm şekeri” dahil) 20.09; kısmen fermente veya alkol katılmış ve %0,5’i aşan şıra 22.04.",
+  "<b>Kuru üzüm şarabı 22.06’dır.</b> 22.04 ve 22.05 taze üzüm şarabı içindir; kuru üzümden yapılan şarap aromalandırılmış olsa da 22.06.",
+  "<b>%80 eşiği yalnız tağyir edilmemiş etil alkol içindir.</b> Tağyirsiz %80 ve fazlası 22.07, azı 22.08; tağyir edilmiş etil alkol derecesi ne olursa olsun 22.07.",
+  "<b>Amaç önemsizdir.</b> %80’in altındaki tağyirsiz etil alkol sanayide kullanılmak üzere üretilse de 22.08’dedir.",
+  "<b>Sirke ikamesinde %10 sınırının istisnası vardır.</b> Ağırlıkça %10’dan fazla asetik asitli sulu çözeltiler 29.15’te; gıdayla kullanılmak üzere aromalandırılıp renklendirilmiş %10–15’lik sirke ikameleri ise 22.09’da.",
+  "<b>Yemeklik şarap içki sayılmaz.</b> İçilmeye elverişsiz hale getirilmiş yemeklik şarap ve konyak genellikle 21.03; sirke bu hariç tutmanın dışındadır ve daima 22.09’dadır."
+ ],
+ "hafiza": {
+  "kanca": "SU – İÇECEK – BİRA – ŞARAP – VERMUT – DİĞER – ALKOL – İÇKİ – SİRKE",
+  "aciklama": "<b>Su</b> 22.01 · alkolsüz <b>İçecek</b> 22.02 · <b>Bira</b> 22.03 · <b>Şarap</b> 22.04 · <b>Vermut</b> 22.05 · <b>Diğer</b> fermente 22.06 · etil <b>Alkol</b> (%80+ veya tağyirli) 22.07 · damıtık <b>İçki</b> 22.08 · <b>Sirke</b> 22.09. Sıra mantığı: alkol arttıkça numara büyür; en sonda alkolün ekşimiş hali sirke gelir."
+ },
+ "sinav_odagi": [
+  "22.02 anlamında “alkolsüz içecek” tanımı doğrudan sorulmuştur: alkol derecesi hacimce en çok %0,5 (Fasıl 22 Not 3).",
+  "Kayak merkezinde kullanılacak tabii karın 22.01’de sınıflandırılması; seçeneklerde tuz ve deniz suyu pozisyonu (25.01), spor malzemesi pozisyonu (95.06) ve 23.03 çeldirici olarak verilmiştir.",
+  "“Hangisi 22. Fasılda sınıflandırılmaz” kalıbında deniz suyunun (25.01) sirke, kar, bal şarabı ve alkolsüz bira ile birlikte sorulması.",
+  "Bölüm IV kapsamı sorularında sirke ve meşrubatın Bölüm IV’te, kahvenin ise Bölüm II’de yer aldığı.",
+  "Tarife sıralaması sorularında içkinin (Fasıl 22) sigaradan (Fasıl 24) önce geldiği dizilişlerin kullanılması."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Aşağıda sayılan eşyadan hangisi Türk Gümrük Tarife Cetvelinin 22 inci faslında sınıflandırılmamaktadır?",
+   "secenekler": [
+    "Sirke",
+    "Kar",
+    "Bal şarabı",
+    "Deniz suyu",
+    "Alkolsüz bira"
+   ],
+   "cevap": "D",
+   "aciklama": "Deniz suyu Fasıl 22 Not 1(b) gereği fasıl dışındadır ve 25.01’de yer alır. Sirke 22.09’da, kar 22.01’de, bal şarabı 22.06’da, alkolsüz bira 22.02’dedir."
+  },
+  {
+   "soru": "22.02 tarife pozisyonu anlamında alkolsüz içecek tabirinden alkol derecesi hacim itibariyle en fazla kaç olan içecekler anlaşılır?",
+   "secenekler": [
+    "%0,2",
+    "%0,5",
+    "%1",
+    "%2"
+   ],
+   "cevap": "B",
+   "aciklama": "Fasıl 22 Not 3’e göre alkolsüz içecekler, alkol derecesi hacim itibariyle %0,5’i geçmeyen içeceklerdir; alkol derecesi Not 2 uyarınca 20 °C’de tespit edilir."
+  }
+ ],
+ "ozet": [
+  "Sade su, maden suyu, gazlı su, buz ve kar 22.01; tatlandırılmış veya aromalı su ve alkolsüz içecekler 22.02.",
+  "Alkolsüz = hacimce en çok %0,5 (20 °C’de); aşanlar 22.03–22.06 veya 22.08.",
+  "Bira 22.03, taze üzüm şarabı ve alkollü şıra 22.04, vermut 22.05, diğer fermente içkiler (elma, bal, kuru üzüm şarabı, sake) 22.06.",
+  "Tağyirsiz etil alkol %80+ 22.07, altı 22.08; tağyirli her derece 22.07; damıtık içkiler ve likörler 22.08.",
+  "Sirke 22.09; ağırlıkça %10’dan fazla asetik asitli çözelti 29.15 (aromalı ve renkli %10–15’lik sirke ikamesi hariç).",
+  "Deniz suyu 25.01, damıtılmış su 28.53, yemeklik şarap 21.03, meyve suyu 20.09."
+ ],
+ "sorular": [
+  {
+   "soru": "Tarife Cetveline göre, alkol derecesi hacimce %96 olan, tağyir (denatüre) edilmemiş etil alkol hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "29.05",
+    "22.08",
+    "38.24",
+    "22.06",
+    "22.07"
+   ],
+   "cevap": "E",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "22.07 metni, alkol derecesi hacim itibariyle %80 veya daha fazla olan tağyir edilmemiş etil alkolü kapsar. %80’in altında olsaydı 22.08’e girerdi. Etil alkol, asiklik bir alkol olsa da Fasıl 29 Not 2(b) gereği 29.05 dışında bırakılmıştır.",
+   "dayanak": "22.07 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 22.01 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Sonradan karbondioksit eklenmiş tabii maden suyu",
+    "Kayak pistinde kullanılmak üzere ithal edilen tabii kar",
+    "Limon aromalı ve tatlandırılmış maden suyu",
+    "Mineral tuzlar katılarak hazırlanan suni maden suyu",
+    "Saflaştırılmış ve berraklaştırılmış alelade içme suyu"
+   ],
+   "cevap": "C",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "22.01 Açıklama Notu, tatlandırılmış veya aromalandırılmış maden sularını (portakal, limon vb.) hariç tutar ve 22.02’ye gönderir. Gazlı tabii maden suyu, suni maden suyu, saflaştırılmış içme suyu ve tabii kar 22.01’dedir.",
+   "dayanak": "22.01 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetvelinin 22. Fasıl notlarına göre, 20., 21. ve 22. Fasılların uygulanmasında hacim itibariyle alkol derecesi hangi sıcaklıkta tespit edilir?",
+   "secenekler": [
+    "20 °C",
+    "15 °C",
+    "0 °C",
+    "25 °C",
+    "4 °C"
+   ],
+   "cevap": "A",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 22 Not 2’ye göre bu fasıl ile 20. ve 21. Fasılların tatbikinde hacim itibariyle alkol derecesi 20 °C sıcaklıkta tespit edilir. Bu kural, meyve sularındaki (20.09) ve içecek müstahzarlarındaki %0,5 sınırının ölçümünde de geçerlidir.",
+   "dayanak": "Fasıl 22 Not 2."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden farklı bir tarife pozisyonunda sınıflandırılır?",
+   "secenekler": [
+    "Elma suyunun fermentasyonuyla elde edilen elma şarabı",
+    "Balın sudaki çözeltisinin fermente edilmesiyle yapılan bal şarabı",
+    "Pirinçten elde edilen sake",
+    "Bitkilerle aromalandırılmış taze üzüm şarabı (vermut)",
+    "Kuru üzümden elde edilen şarap"
+   ],
+   "cevap": "D",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Vermut ve bitkiler veya kokulu maddelerle aromalandırılmış diğer taze üzüm şarapları 22.05’tedir. Elma şarabı, bal şarabı, sake ve kuru üzüm şarabı 22.06 Açıklama Notunda “fermente edilmiş diğer içecekler” arasında sayılmıştır.",
+   "dayanak": "22.05 ve 22.06 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetveline göre, maltlanmış arpa, su ve şerbetçi otundan hazırlanan likörün fermentasyonuyla elde edilmiş, alkol derecesi hacimce %0,4 olan bira hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "22.03",
+    "22.02",
+    "22.06",
+    "19.01",
+    "20.09"
+   ],
+   "cevap": "B",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Fasıl 22 Not 3’e göre alkol derecesi hacimce %0,5’i geçmeyen içecekler alkolsüzdür; 22.02 Açıklama Notu alkol derecesi %0,5 veya daha az olan malt birasını “alkolsüz bira” olarak bu pozisyona alır. 22.03 Açıklama Notu da alkolü %0,5 veya altına düşürülmüş biraları hariç tutar.",
+   "dayanak": "Fasıl 22 Not 3; 22.02 ve 22.03 Açıklama Notları."
+  },
+  {
+   "soru": "Bir ürün, taze üzümlerin sıkılmasıyla elde edilmiş ve kısmen fermente olduktan sonra fermentasyonu alkol katılarak durdurulmuş üzüm şırasıdır. Ürünün alkol derecesi hacimce %15 olup likör şarapları ve aperatif üretiminde kullanılmaktadır. Bu ürün hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "20.09",
+    "22.08",
+    "22.05",
+    "22.04",
+    "22.06"
+   ],
+   "cevap": "D",
+   "tip": "Senaryo",
+   "gerekce": "22.04 metni üzüm şırasını (20.09’dakiler hariç) kapsar; Açıklama Notu fermentasyonu durdurulmuş olsun olmasın kısmen fermente olmuş şıra ile alkol katılmış şırayı, alkol derecesi %0,5’i aştığında bu pozisyonda sayar (likör şarabı yapımında kullanılan “mistel” türü). 20.09 yalnız alkolü %0,5’i geçmeyen şırayı alır; ürün aromalandırılmadığı için 22.05’e de girmez.",
+   "dayanak": "22.04 Açıklama Notu (Üzüm şırası); 20.09 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetvelinin 22. Fasıl Not 1 hükmüne göre, asetik asit çözeltileri ile ilgili aşağıdakilerden hangisi <b>doğrudur</b>?",
+   "secenekler": [
+    "Ağırlıkça %10’dan fazla asetik asit içeren asetik asit çözeltisi 29.15’tedir.",
+    "Hacimce %10’dan fazla asetik asit içeren çözeltiler 22.09’da sirke sayılır.",
+    "Asetik asit oranı ne olursa olsun tüm çözeltiler sirke ikamesi olarak 22.09’dadır.",
+    "Ağırlıkça %5’ten fazla asetik asit içeren çözeltiler 29.15’te sınıflandırılır.",
+    "Ağırlıkça %10’dan fazla asetik asitli çözeltiler 38.24’te sınıflandırılır."
+   ],
+   "cevap": "A",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 22 Not 1(d), ağırlık itibariyle %10’dan fazla asetik asit içeren asetik asit çözeltisini fasıl dışında bırakır ve 29.15’e gönderir. Ölçüt hacim değil ağırlıktır; ancak 22.09 Açıklama Notu, gıdayla kullanılmak üzere aromalandırılıp renklendirilmiş %10–15’lik sirke ikamelerini 22.09’da tutar.",
+   "dayanak": "Fasıl 22 Not 1(d); 22.09 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 22. Faslında <b>yer almaz</b>?",
+   "secenekler": [
+    "Alkol derecesi %0,5’i geçmeyen zencefil birası",
+    "Ardıç meyvesi aromalı cin",
+    "Esası alkol olan, yakıt olarak kullanılan katılaştırılmış alkol",
+    "Su, şeker ve süzücü maddelerle içilmeye hazır hale getirilmiş demir hindi nektarı",
+    "Bira ve limonata karışımından oluşan, alkol derecesi %2 olan içecek"
+   ],
+   "cevap": "C",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "22.07 Açıklama Notu, esası alkol olan katı veya yarı katı yanıcı maddeleri (katılaştırılmış alkol) hariç tutar ve 36.06’ya gönderir. Alkolü %0,5’i geçmeyen zencefil birası ve içilmeye hazır demir hindi nektarı 22.02’de, cin 22.08’de, %0,5’i aşan bira-limonata karışımı 22.06’dadır.",
+   "dayanak": "22.02, 22.06, 22.07, 22.08 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdaki seçeneklerin hangisinde sayılan eşyanın <b>tamamı</b> 22.08 pozisyonunda yer alır?",
+   "secenekler": [
+    "Viski – bitkilerle aromalı vermut – cin",
+    "Rom – votka – %96’lık tağyirsiz etil alkol",
+    "Konyak – elma suyunun fermentasyonuyla elde edilen elma şarabı – likör",
+    "Kirsch – tağyir edilmiş etil alkol – votka",
+    "Calvados – yumurta likörü – %70’lik tağyirsiz etil alkol"
+   ],
+   "cevap": "E",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Calvados (elma şarabından damıtık içki), yumurta likörü ve %80’den az tağyirsiz etil alkol 22.08’dedir. Vermut 22.05’te, elma şarabı 22.06’da; %80 ve üzeri tağyirsiz etil alkol ile her derecedeki tağyir edilmiş etil alkol 22.07’dedir.",
+   "dayanak": "22.07 ve 22.08 pozisyon metinleri ve Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetveline göre, malt hülasası ve şarap tortusundan hazırlanan fermente bir içecek olan “malton” hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "22.03",
+    "22.06",
+    "19.01",
+    "22.02",
+    "23.07"
+   ],
+   "cevap": "B",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "22.06 Açıklama Notu, malt hülasası ve şarap tortusundan hazırlanan fermente içecek olan maltonu bu pozisyonda sayar; 19.01 Açıklama Notu da bira ve malton gibi malt esaslı içkileri Fasıl 22’ye gönderir. 22.03 yalnız malttan üretilen biraları, 19.01 malt hülasasının kendisini, 23.07 şarap tortusunun kendisini kapsar.",
+   "dayanak": "22.06 Açıklama Notu; 19.01 Açıklama Notu, hariç tutmalar."
+  },
+  {
+   "soru": "Genel Yorum Kurallarının açıklama notlarına göre, 22.08 pozisyonundaki bir şişe alkollü içki ile 22.04 pozisyonundaki bir şişe şarabın birlikte bir kutuda sunulması halinde aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "GYK 3(b) uyarınca takım, asli niteliği veren içkiye göre 22.08’dedir.",
+    "GYK 3(c) uyarınca takım, numara sırasına göre son olan 22.08’dedir.",
+    "Takım oluşturmaz; her ürün kendi pozisyonunda sınıflandırılır.",
+    "GYK 3(a) uyarınca daha özel tanımlanan 22.04 pozisyonu esas alınır.",
+    "GYK 5(b) uyarınca kutu ile birlikte şarap pozisyonu 22.04’tedir."
+   ],
+   "cevap": "C",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 3(b) Açıklama Notu, 22.08’deki bir şişe alkollü içki ile 22.04’teki bir şişe şarabın bir araya getirilmesinin perakende takım oluşturmadığını açıkça belirtir; bu durumda her ürün kendi uygun pozisyonunda sınıflandırılır. Takım şartları sağlanmadığından 3(b) veya 3(c) uygulanmaz.",
+   "dayanak": "GYK 3(b) Açıklama Notu (X)."
+  },
+  {
+   "soru": "Tarife Cetveline göre etil alkol ile ilgili aşağıdaki ifadelerden hangileri <b>doğrudur</b>? I. Tağyir edilmiş etil alkol, alkol derecesi ne olursa olsun 22.07 pozisyonunda yer alır. II. Alkol derecesi hacimce %80’den az olan tağyir edilmemiş etil alkol, sanayide kullanılmak üzere üretilmişse 22.07 pozisyonunda yer alır. III. Etil alkol, diğer asiklik alkollerle birlikte 29.05 pozisyonunda sınıflandırılır. IV. Alkol derecesi hacimce %80 veya daha fazla olan tağyir edilmemiş etil alkol 22.07 pozisyonunda yer alır.",
+   "secenekler": [
+    "I ve II",
+    "II ve III",
+    "I, II ve IV",
+    "III ve IV",
+    "I ve IV"
+   ],
+   "cevap": "E",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "22.07 metni tağyirli etil alkolü derecesine bakmadan (I) ve %80 veya üzeri tağyirsiz etil alkolü (IV) kapsar. 22.08 Açıklama Notuna göre %80’den az tağyirsiz etil alkol, insan tüketimi veya sanayi için üretilmiş olsun, 22.08’de kalır (II yanlış). Etil alkol Fasıl 29 Not 2(b) gereği 29.05 dışında bırakılmıştır (III yanlış).",
+   "dayanak": "22.07 ve 22.08 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetveline göre aşağıdaki eşya – pozisyon eşleştirmelerinden hangisi <b>doğrudur</b>?",
+   "secenekler": [
+    "Kuru üzüm şarabı – 22.06",
+    "Kuru buz – 22.01",
+    "Damıtılmış su – 22.01",
+    "Tuvalet sirkesi – 22.09",
+    "Sıvı yoğurt – 22.02"
+   ],
+   "cevap": "A",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Kuru üzüm şarabı 22.06 Açıklama Notunda sayılmıştır. Kuru buz 28.11’de, damıtılmış su 28.53’te, tuvalet sirkesi 33.04’te, sıvı yoğurt 04.03’tedir; bunların her biri ilgili Fasıl 22 Açıklama Notlarında hariç tutulmuştur.",
+   "dayanak": "Fasıl 22 Not 1(c) ve 1(f); 22.01, 22.02, 22.06, 22.09 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 22.02 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Su ve karamelize şekerden hazırlanan, bira olarak adlandırılan alkolsüz içecek",
+    "Esası süt ve kakao olan, içilmeye hazır alkolsüz içecek",
+    "Meyve suyu ile aromalandırılmış gazlı su",
+    "Fermente edilmemiş, şeker katılmış portakal suyu",
+    "Alkol derecesi %0,5’e düşürülmüş malt birası"
+   ],
+   "cevap": "D",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "22.02 metni 20.09’daki meyve ve sebze sularını hariç tutar; şeker katılmış olsa da fermente edilmemiş portakal suyu 20.09’dadır. Karamelli “bira”, süt ve kakao esaslı hazır içecek, meyve suyuyla aromalı gazlı su ve alkolü %0,5’e düşürülmüş bira 22.02 Açıklama Notunda sayılmıştır.",
+   "dayanak": "22.02 pozisyon metni ve Açıklama Notu; 22.03 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetvelinin 22.09 pozisyonu Açıklama Notuna göre, gıda maddeleriyle birlikte kullanılmak üzere aromalandırılmış ve renklendirilmiş, ağırlık esasına göre genellikle %10 ilâ %15 asetik asit içeren sulu çözeltiler hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "29.15",
+    "22.09",
+    "21.03",
+    "38.24",
+    "33.04"
+   ],
+   "cevap": "B",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 22 Not 1(d) %10’dan fazla asetik asitli çözeltileri 29.15’e gönderse de 22.09 Açıklama Notu bu hükmün sirke ikamesi olarak aromalandırılıp renklendirilmiş %10–15’lik çözeltilere uygulanmadığını ve bunların 22.09’da yer aldığını belirtir.",
+   "dayanak": "Fasıl 22 Not 1(d); 22.09 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden farklı bir fasılda yer alır?",
+   "secenekler": [
+    "Tabii buz",
+    "Soda (karbonatlanmış içme suyu)",
+    "Alkolsüz bira",
+    "Alkol sirkesi",
+    "Damıtılmış su"
+   ],
+   "cevap": "E",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Damıtılmış veya iletkenliği olan sular ve benzeri saflıktaki sular Fasıl 22 Not 1(c) gereği 28.53’te (Fasıl 28) yer alır. Tabii buz ve soda 22.01’de, alkolsüz bira 22.02’de, alkol sirkesi 22.09’dadır.",
+   "dayanak": "Fasıl 22 Not 1(c); 22.01 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, üzüm şarabı veya üzüm cibresinin damıtılmasıyla elde edilen konyak (brandy) hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "22.08",
+    "22.04",
+    "22.07",
+    "22.05",
+    "22.06"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "22.08 Açıklama Notu, üzüm şarabı veya üzüm posasının (cibre) damıtılmasıyla elde edilen alkollü içkileri (konyak, armagnac, brandy, grappa vb.) bu pozisyonda sayar. Şarabın kendisi 22.04’tedir; tağyir edilmemiş içki olduğu için 22.07’ye girmez.",
+   "dayanak": "22.08 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 22.04 pozisyonunda <b>yer almaz</b>?",
+   "secenekler": [
+    "Fermentasyonun son bölümü kapalı kaplarda yapılarak kendiliğinden köpüren şarap",
+    "Alkolle kuvvetlendirilmiş tatlı yemek sonu şarabı (porto)",
+    "Konsantre edilmiş, fermente olmamış ve alkolü %0,5’i geçmeyen üzüm şırası",
+    "Fermente olmamış fakat alkol katılmış, alkol derecesi %0,5’i aşan üzüm şırası",
+    "Şişelemeden sonra suni olarak karbondioksit katılan gazlı şarap"
+   ],
+   "cevap": "C",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "22.04 Açıklama Notu, konsantre edilmiş olsun olmasın fermente edilmemiş veya alkol derecesi hacimce %0,5’i geçmeyen üzüm suyu ve şırasını hariç tutar ve 20.09’a gönderir. Köpüklü ve gazlı şaraplar, kuvvetlendirilmiş tatlı şaraplar ve alkol katılmış %0,5’i aşan şıra 22.04’tedir.",
+   "dayanak": "22.04 Açıklama Notu; Fasıl 20 Not 6."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Limonata",
+    "Kola",
+    "Tatlandırılmış ve aromalandırılmış maden suyu",
+    "Alkol derecesi %4 olan bira ve limonata karışımı",
+    "Alkol derecesi %0,5’i geçmeyen bira ve limonata karışımı"
+   ],
+   "cevap": "D",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "22.06 Açıklama Notu, alkol derecesi hacimce %0,5’ten fazla olan limonata–bira gibi fermente içecek ile alkolsüz içecek karışımlarını bu pozisyona alır. Limonata, kola ve aromalı maden suyu ile alkolü %0,5’i geçmeyen bira-limonata karışımı 22.02’dedir.",
+   "dayanak": "Fasıl 22 Not 3; 22.02 ve 22.06 Açıklama Notları."
+  },
+  {
+   "soru": "Yemek pişirmede kullanılmak üzere hazırlanmış ve bu nedenle içecek olarak tüketilmeye uygun olmayan şarabın 22.04 yerine 21.03 pozisyonunda sınıflandırılmasının dayanağı hangisidir?",
+   "secenekler": [
+    "GYK 3(b): ürüne asli niteliği katkı maddelerinin vermesi",
+    "GYK 1: Fasıl 22 Not 1(a) hükmü ve 21.03 pozisyon metni",
+    "GYK 3(c): geçerli pozisyonlardan numarası en büyük olanın seçilmesi",
+    "GYK 4: eşyaya en çok benzeyen eşyanın bulunduğu pozisyon",
+    "GYK 2(a): eksik veya bitirilmemiş şarap sayılması"
+   ],
+   "cevap": "B",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "Fasıl 22 Not 1(a), yemek pişirmede kullanılmak için hazırlanmış ve içilmeye uygun olmayan Fasıl 22 ürünlerini (22.09 hariç) fasıl dışında bırakır; 21.03 Açıklama Notu bunları sos ve çeşniler arasında sayar. Sonuç doğrudan not ve pozisyon metinlerinden çıktığı için GYK 1 uygulanır.",
+   "dayanak": "GYK 1; Fasıl 22 Not 1(a); 21.03 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetvelinin 22.03 pozisyonu Açıklama Notuna göre, konsantre biralarla ilgili aşağıdakilerden hangisi <b>doğrudur</b>?",
+   "secenekler": [
+    "Malt hülasası fazla bira vakumla hacminin 1/5–1/6’sına indirilir; 22.03’tedir.",
+    "İçecek imalinde kullanıldıkları için konsantre biralar 21.06’da içecek müstahzarı sayılır.",
+    "Konsantre biralar, alkol derecelerine bakılmaksızın alkolsüz içecek olarak 22.02’dedir.",
+    "Orijinal hacminin yarısına kadar konsantre edilen biralar 19.01’de malt hülasası sayılır.",
+    "Konsantre biralar ancak damıtma yoluyla elde edildiklerinde 22.08’de sınıflandırılır."
+   ],
+   "cevap": "A",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "22.03 Açıklama Notu, düşük alkol dereceli fakat malt hülasası içeriği fazla olan biraların vakum yoğunlaştırma ile orijinal hacimlerinin 1/5–1/6’sına kadar konsantre edilmesiyle elde edilen konsantre biraları da bu pozisyona alır. Konsantre olmaları onları içecek müstahzarı (21.06) veya malt hülasası (19.01) yapmaz.",
+   "dayanak": "22.03 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre aşağıdakilerden hangileri 22.06 pozisyonunda yer alır? I. Ladin ağacı yapraklarından veya ladin esansından yapılan spruce II. Kuru üzümden elde edilen ve aromatik bitkilerle hazırlanmış şarap III. Palmiye öz sularından elde edilen hurma şarabı IV. Elma şarabının damıtılmasıyla elde edilen calvados",
+   "secenekler": [
+    "I ve IV",
+    "II ve IV",
+    "I, II ve IV",
+    "III ve IV",
+    "I, II ve III"
+   ],
+   "cevap": "E",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "Spruce ve hurma şarabı 22.06 Açıklama Notunda sayılmıştır (I, III); kuru üzümden aromatik bitkilerle hazırlanan şaraplar 22.05 Açıklama Notunda hariç tutulup 22.06’ya gönderilmiştir (II). Calvados ise elma şarabından damıtılmış bir içki olarak 22.08’dedir (IV).",
+   "dayanak": "22.05, 22.06, 22.08 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetveline göre; tatlandırılmamış ve aromalandırılmamış maden suyu (I), aromalandırılmış maden suyu (II), deniz suyu (III), kuru buz ise (IV) pozisyonunda sınıflandırılır. Boşlukları sırasıyla dolduran seçenek hangisidir?",
+   "secenekler": [
+    "22.01 / 22.01 / 25.01 / 28.11",
+    "22.01 / 22.02 / 25.01 / 28.11",
+    "22.02 / 22.02 / 22.01 / 22.01",
+    "22.01 / 22.02 / 22.01 / 28.11",
+    "22.01 / 22.02 / 25.01 / 21.05"
+   ],
+   "cevap": "B",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Sade maden suyu 22.01’de, tatlandırılmış veya aromalandırılmış maden suyu 22.02’dedir. Deniz suyu Fasıl 22 Not 1(b) gereği 25.01’e, kuru buz (katı karbondioksit) 22.01 Açıklama Notu gereği 28.11’e gider; 21.05 yenilen buzlar içindir.",
+   "dayanak": "Fasıl 22 Not 1(b); 22.01 ve 22.02 Açıklama Notları."
+  },
+  {
+   "soru": "Bir ürün; tahıl gibi tarımsal kaynaklı fermente mayşenin damıtılmasıyla elde edilmiş, aktif kömürle ileri derecede işlem görmüş, tağyir edilmemiş ve alkol derecesi hacimce %40 olan renksiz bir alkollü içkidir. Ürün perakende şişelerde satılmaktadır. Bu ürün hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "22.07",
+    "22.06",
+    "22.08",
+    "22.04",
+    "29.05"
+   ],
+   "cevap": "C",
+   "tip": "Senaryo",
+   "gerekce": "22.08 Açıklama Notu, tarımsal kaynaklı fermente mayşenin damıtılmasıyla elde edilen ve bazen aktif kömürle işlenen votkayı bu pozisyonda sayar. Ürün tağyir edilmemiş ve %80’in altında olduğundan 22.07’ye girmez; damıtma ürünü olduğu için fermente içecek pozisyonlarına (22.04, 22.06) da girmez.",
+   "dayanak": "22.08 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, elma şarabının asetobakterler tarafından asetik asit fermentasyonuna uğratılmasıyla elde edilen elma şarabı sirkesi hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "29.15",
+    "20.09",
+    "21.03",
+    "22.09",
+    "22.06"
+   ],
+   "cevap": "D",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "22.09 Açıklama Notu, alkollü sıvıların sirke bakterisi veya asetobakterler tarafından gerçekleştirilen asetik asit fermentasyonuyla elde edilen sirkeleri kapsar ve elma şarabı sirkesini örnek olarak sayar. Fasıl 22 Not 1(a)’daki yemeklik kullanım hariç tutması 22.09’a uygulanmadığından sirke 21.03’e gitmez.",
+   "dayanak": "22.09 Açıklama Notu; Fasıl 22 Not 1(a)."
+  }
+ ]
+}

@@ -1,0 +1,270 @@
+import os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from yardim_09_13 import *  # noqa: F401,F403
+
+d = {
+ "tur": "fasil",
+ "fasil": 13,
+ "baslik": "Lak; sakız, reçine ve diğer bitkisel özsu ve hülasalar",
+ "bolum": "II",
+ "oz": {
+  "vurgu": "Fasıl 13 yalnız iki pozisyondan oluşur: 13.01 bitkilerden akan ve havayla katılaşan salgılar (sakız, reçine, sakız-reçine, yağ reçine, pelesenk) ile böcek kaynaklı laktır; 13.02 ise tabii özsular, çözücüyle çıkarılan hülasalar, pektik maddeler ve bitkisel kıvam vericilerdir. Sınav sorusu çoğunlukla “ürün daha özel bir yere gidiyor mu?” sorusudur; Fasıl 13 Not 1’deki uzun hariç tutma listesi belirleyicidir.",
+  "maddeler": [
+   "13.01’deki salgılar ham, yıkanmış, saflaştırılmış, ağartılmış, ezilmiş veya toz olabilir; basınçlı su, asit veya ısıyla işlenirlerse 13.02, 35.06 veya 38.06’ya geçerler.",
+   "Hülasa; katkı maddeleriyle gıda veya ilaç karakteri kazanırsa ya da kromatografi gibi yöntemlerle yüksek oranda saflaştırılırsa 13.02 dışına çıkar.",
+   "İçecek hülasaları ayrılır: kahve, çay ve paraguay çayı hülasaları 21.01’de, alkollü içki özsuları Fasıl 22’de; kola hülasası ise 13.02’de kalır.",
+   "Uçucu yağlar ve rezinoitler Fasıl 33’te, tabii kauçuk ve çıkıl 40.01’de, amber 25.30’dadır."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+  "satirlar": [
+   ["1", "Fasıl 13 Not 1’de daha özel bir yere gönderilen ürün mü?", "<b>17.04</b> · <b>19.01</b> · <b>21.01</b> · Fasıl 22 · <b>29.39</b> · Fasıl 33 · <b>40.01</b> vb.*"],
+   ["2", "Böcek salgısı lak mı? (çubuk, dane, pul, düğme, artık lak)", "<b>13.01</b> (lak-boya <b>32.03</b>)"],
+   ["3", "Havayla katılaşan bitkisel salgı mı? (sakız, reçine, sakız-reçine, yağ reçine, pelesenk)", "<b>13.01</b>"],
+   ["4", "Bu salgı basınçlı su, asit veya ısıyla işlenmiş mi?", "Suda çözünür sakız <b>13.02</b> · asitle <b>35.06</b> · ısıyla reçine <b>38.06</b>"],
+   ["5", "Uçucu yağ, rezinoit veya çıkarılmış yağ reçinesi mi?", "<b>33.01</b>"],
+   ["6", "Tabii sızma veya yarma ile elde edilen özsu ya da çözücüyle çıkarılan hülasa mı?", "<b>13.02</b> (katkıyla müstahzar olmuşsa <b>21.06</b> veya <b>30.03</b>/<b>30.04</b>)"],
+   ["7", "Pektin ya da bitkisel yapışkan ve kıvam verici mi? (agar-agar, keçiboynuzu veya guar unu, carrageenan)", "<b>13.02</b> (ham yosun <b>12.12</b>; aljinat <b>39.13</b>)"]
+  ],
+  "dipnot": "* Not 1 hariç tutmaları: %10’dan fazla sakkaroz içeren veya şekerleme olarak hazırlanmış meyan kökü hülasası 17.04 · malt hülasası 19.01 · kahve, çay ve paraguay çayı hülasaları 21.01 · alkollü içecek yapımında kullanılan özsu ve hülasalar Fasıl 22 · kafur ve glisirhizin 29.14/29.38 · en az %50 alkaloid içeren haşhaş samanı konsantresi 29.39 · ilaçlar 30.03/30.04 ve kan grubu reaktifleri 38.22 · debagat ve boya hülasaları 32.01/32.03 · uçucu yağlar ve rezinoitler Fasıl 33 · tabii kauçuk, balata, güta-perka, guayül, çıkıl 40.01."
+ },
+ "pozisyon_haritasi": [
+  ["13.01", "Lak; tabii sakızlar, reçineler, sakız-reçineler ve yağ reçineler (pelesenkler gibi)", "Havayla katılaşan salgı; yalnız yıkama, saflaştırma, ağartma, toz etme", "Arap zamkı, kitre zamkı, mastika, günlük, mür, pul lak, kenevir reçinesi"],
+  ["13.02", "Bitkisel özsu ve hülasalar; pektik maddeler; agar-agar ve diğer bitkisel kıvam vericiler", "Çözücüyle çıkarma; kıvam vericiler tadil edilmiş olsun olmasın", "Afyon, meyan kökü hülasası, aloe, ginseng hülasası, pektin, agar-agar, guar unu"]
+ ],
+ "notlar": [
+  ["Fasıl 13 Not 1", "13.02, diğerleri meyanında meyan kökü hülasası, pire otu hülasası, şerbetçi otu hülasası, sabır bitkisi (aloe) hülasası ve afyon hülasasını da kapsar."],
+  ["Fasıl 13 Not 1 (hariç tutmalar)", "13.02’ye dahil değildir: ağırlıkça <b>%10’dan fazla</b> sakkaroz içeren veya şekerleme olarak hazırlanmış meyan kökü hülasası (17.04); malt hülasası (19.01); kahve, çay ve paraguay çayı hülasaları (21.01); alkollü içecek yapımında kullanılan bitkisel özsu ve hülasalar (Fasıl 22); kafur, glisirhizin vb. (29.14, 29.38); ağırlıkça <b>en az %50</b> alkaloid içeren haşhaş samanı konsantreleri (29.39); ilaçlar (30.03, 30.04) ve kan grubu reaktifleri (38.22); debagat ve boyacılık hülasaları (32.01, 32.03); uçucu yağlar, rezinoitler, yağ reçinesi hülasası ve içecek imalinde kullanılan kokulu madde müstahzarları (Fasıl 33); tabii kauçuk, balata, güta-perka, guayül, çıkıl ve benzeri tabii sakızlar (40.01)."],
+  ["13.01 Açıklama Notu", "Lak: kırmız böceği ile aynı familyaya mensup bir böceğin bazı tropik ağaçlar üzerinde oluşturduğu reçineli madde (çubuk lak, dane lak, pul lak, düğme lak, artık lak). Doğu ağaçlarının havayla sertleşen özsuyu (Japon lakı, Çin lakı) 13.02’dedir."],
+  ["13.01 Açıklama Notu", "Hakiki sakızlar kokusuz, tatsızdır ve suda az çok çözünerek yapışkan madde oluşturur; reçineler suda çözünmez, ısıyla yumuşar; sakız-reçineler ikisinin tabii karışımıdır; pelesenkler yüksek oranda benzoik ve sinamik madde içerir."],
+  ["13.01 Açıklama Notu", "Ürünler ham, yıkanmış, saflaştırılmış, ağartılmış, ezilmiş veya toz olabilir. Basınçlı suyla suda çözünür hale getirilen sakızlar 13.02; sülfürik asitle çözünür hale getirilenler 35.06; kuruyan yağlarda çözünmesi için ısıl işlem görmüş reçineler 38.06. Hariç: amber 25.30; lak-boya 32.03; rezinoitler ve yağ reçine hülasası 33.01; tall oil 38.03; terebentin esansı 38.05; kolofanlar Fasıl 38."],
+  ["13.02 Açıklama Notu", "Özsu tabii sızma veya yarma ile, hülasa çözücü maddeler yardımıyla elde edilir. 33.01’deki uçucu yağlardan farkı: uçucu koku bileşiklerinin yanında klorofil, tanen, acı maddeler, karbonhidratlar gibi diğer bitkisel unsurları daha yüksek oranda içermeleridir."],
+  ["13.02 Açıklama Notu", "Kolay toz etme veya standart etkinlik için eklenen etkisiz maddeler (Arap zamkı, nişasta) sınıflandırmayı etkilemez; kromatografik saflaştırma, ultrafiltrasyon veya ilave çıkarma döngüleriyle yüksek oranda rafine edilen hülasalar ise 13.02 dışındadır. Basit ve bileşik hülasalar 13.02’dedir."],
+  ["13.02 Açıklama Notu", "Hariç: aromalandırılmış şuruplar 21.06; içecek müstahzarları 21.06 veya 33.02; tıbbi karışımlar ve ölçülü dozlu basit hülasalar 30.03 veya 30.04; pyrethrin muhtevası <b>%2’den az</b> olacak şekilde seyreltilmiş pire otu ara ürünleri 38.08; tütün hülasası 24.03; ginseng çayı (laktoz veya glukozlu karışım) 21.06; papain 35.07; quassin 29.32."],
+  ["13.02 Açıklama Notu", "Pektik maddeler (pektinler), pektinatlar ve pektatlar şekerle standart hale getirilmiş olsalar da 13.02’dedir. Kıvam vericiler: agar-agar, keçiboynuzu endosperm unu ve guar tohumu unu (tadil edilmiş olsun olmasın), carrageenan, suda çözünür hale getirilmiş sakızlardan kıvam artırıcılar, demirhindi tohumu kotiledon unu. Hariç: ham deniz yosunu 12.12; aljinik asit ve aljinatlar 39.13."]
+ ],
+ "sinir_komsulari": [
+  ["Amber", "25.30", "13.01 hariç tutması; reçine sayılmaz"],
+  ["Lak-boya (laktan çıkarılan boyar madde)", "32.03", "13.01 hariç tutması"],
+  ["Uçucu yağlar, rezinoitler, çıkarılmış yağ reçineleri", "33.01", "Fasıl 13 Not 1"],
+  ["Tall oil; terebentin esansı", "38.03 / 38.05", "13.01 hariç tutması"],
+  ["Kolofan; kuruyan yağlarda çözünür hale getirilmiş reçine", "38.06", "13.01 hariç tutması"],
+  ["Sülfürik asitle çözünür hale getirilmiş sakız", "35.06", "13.01 Açıklama Notu"],
+  ["Tabii kauçuk, balata, güta-perka, çıkıl", "40.01", "Fasıl 13 Not 1"],
+  ["Meyan kökü (bitki) / şekerli meyan kökü hülasası / glisirhizin", "12.11 / 17.04 / 29.38", "Fasıl 12 Not 4; Fasıl 13 Not 1"],
+  ["Malt hülasası", "19.01", "Fasıl 13 Not 1"],
+  ["Kahve, çay ve paraguay çayı hülasaları", "21.01", "Fasıl 13 Not 1"],
+  ["Ginseng çayı (hülasa ile laktoz veya glukoz karışımı)", "21.06", "13.02 hariç tutması"],
+  ["Tütün hülasası", "24.03", "13.02 hariç tutması"],
+  ["Haşhaş samanı konsantresi (en az %50 alkaloid)", "29.39", "Fasıl 13 Not 1"],
+  ["Papain", "35.07", "13.02 hariç tutması"],
+  ["Ham deniz yosunu / aljinik asit ve aljinatlar", "12.12 / 39.13", "13.02 hariç tutması"]
+ ],
+ "tuzaklar": [
+  "<b>Reçine 13.01, hülasa 13.02.</b> Kenevir reçinesi 13.01’de, kenevir hülasası 13.02’dedir; aynı bitkiden elde edilmeleri pozisyonu birleştirmez.",
+  "<b>Üç “lak” üç ayrı yerde.</b> Böcek salgısı lak (pul lak, düğme lak) 13.01; laktan çıkarılan lak-boya 32.03; Japon veya Çin lakı denilen ağaç özsuyu 13.02.",
+  "<b>İşlem türü 13.01’i bozar.</b> Yıkama, saflaştırma, ağartma ve toz etme serbesttir; basınçlı suyla çözünür hale getirilen sakız 13.02, asitle 35.06, ısıyla işlenmiş reçine 38.06.",
+  "<b>Her “sakız” Fasıl 13’te değildir.</b> Çıkıl, balata, güta-perka ve tabii kauçuk 40.01’dedir; amber 25.30’dadır.",
+  "<b>Meyan kökü dört yere dağılır.</b> Kök 12.11; hülasası 13.02; %10’dan fazla sakkaroz içeren veya şekerleme olarak hazırlanmış hülasa 17.04; glisirhizin 29.38.",
+  "<b>İçecek hülasalarında ayrım vardır.</b> Kahve, çay ve paraguay çayı hülasaları 21.01; alkollü içki yapımında kullanılan özsu ve hülasalar Fasıl 22; buna karşılık kola hülasası 13.02’dedir.",
+  "<b>Uçucu yağ hülasa değildir.</b> Esas olarak uçucu kokulu maddelerden oluşan uçucu yağlar, rezinoitler ve çıkarılmış yağ reçineleri 33.01’dedir.",
+  "<b>Etkisiz katkı serbest, aşırı saflaştırma değil.</b> Arap zamkı veya nişasta eklenmiş katı hülasa 13.02’de kalır; kromatografik saflaştırma veya ultrafiltrasyonla yüksek oranda rafine edilen hülasa 13.02 dışına çıkar.",
+  "<b>Afyon 13.02’dedir, konsantre değildir.</b> Ağırlıkça en az %50 alkaloid içeren haşhaş samanı konsantreleri 29.39’a gider; olgunlaşmamış kuru haşhaş kellesi 12.11’dedir.",
+  "<b>Yosun, agar ve aljinat üç farklı yerdedir.</b> Deniz otu 12.12, agar-agar ve carrageenan 13.02, aljinik asit ve aljinatlar 39.13."
+ ],
+ "hafiza": {
+  "kanca": "BİR AKAR, İKİ ÇIKAR",
+  "aciklama": "<b>13.01</b>: ağaçtan <b>akan</b> ve havayla katılaşan salgılar (sakız, reçine, pelesenk) ile böceğin bıraktığı lak. <b>13.02</b>: çözücüyle <b>çıkarılan</b> hülasalar ve tabii özsular; ayrıca meyveden çıkarılan pektin ve yosundan çıkarılan agar gibi kıvam vericiler. Görsel benzetme: soldaki kavanozda damla damla sakız, sağdaki şişede koyu hülasa ve yanında bir kase jöle."
+ },
+ "sinav_odagi": [
+  "Fasıl 13 çıkmış sorularda çok az yer almıştır; daha çok fasıl başlığı ve hariç tutmalar üzerinden, seçeneklerde sorulmuştur.",
+  "Bölüm II’nin fasıl başlıkları sorusunda “Lak; sakız, reçine ve diğer bitkisel özsu ve hülasalar” başlığının bitkisel ürünler bölümünde olduğu, “Yenilen çeşitli gıda müstahzarları”nın bu bölümde olmadığı sınanmıştır.",
+  "“Farklı fasıl” sorusunda tabii kauçuk ve çıkıl, butadien kauçuk ve rejenere kauçukla birlikte Fasıl 40 grubunda verilmiş; çıkılın “sakız” adına rağmen Fasıl 13’te olmadığı (Not 1) bilgisi gerekmiştir.",
+  "“Aynı fasıl” sorusunda çay hülasası dondurma, ketçap ve canlı maya ile birlikte Fasıl 21 grubunda verilmiştir; Fasıl 13 Not 1 kahve, çay ve paraguay çayı hülasalarını 21.01’e gönderir."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetveli’nin 2. Bölümünde bulunan “Bitkisel Ürünler” içerisinde <b>yer almaz</b>?",
+   "secenekler": ["Yenilen sebzeler ve bazı kök ve yumrular", "Yenilen çeşitli gıda müstahzarları", "Hububat", "Lak; sakız, reçine ve diğer bitkisel özsu ve hülasalar"],
+   "cevap": "B",
+   "aciklama": "“Yenilen çeşitli gıda müstahzarları” Fasıl 21’in başlığıdır ve Bölüm IV’tedir. Fasıl 7 (sebzeler), Fasıl 10 (hububat) ve Fasıl 13 (lak, sakız, reçine, özsu ve hülasalar) Bölüm II’dedir."
+  },
+  {
+   "soru": "Tarife Cetveline göre aşağıdakilerden hangisi farklı fasılda yer alır?",
+   "secenekler": ["Tabii kauçuk", "Çıkıl", "Silikon", "Butadien kauçuk", "Rejenere kauçuk"],
+   "cevap": "C",
+   "aciklama": "Silikonlar 39.10’da, yani Fasıl 39’dadır. Tabii kauçuk ve çıkıl, Fasıl 13 Not 1 uyarınca 13.01’e değil 40.01’e; butadien kauçuk sentetik kauçuk olarak 40.02’ye, rejenere kauçuk 40.03’e girer."
+  }
+ ],
+ "ozet": [
+  "13.01: lak ve havayla katılaşan bitkisel salgılar (sakız, reçine, sakız-reçine, yağ reçine, pelesenk).",
+  "13.02: bitkisel özsu ve hülasalar, pektik maddeler, agar-agar ve diğer bitkisel kıvam vericiler (tadil edilmiş olsun olmasın).",
+  "Not 1’deki özel yerler önce gelir: 17.04, 19.01, 21.01, Fasıl 22, 29.39, 30.03/30.04, 32.01/32.03, Fasıl 33, 40.01.",
+  "Basınçlı su 13.02, asit 35.06, ısı 38.06: işlem türü 13.01 salgısını başka pozisyona taşır.",
+  "Etkisiz katkı hülasayı değiştirmez; gıda veya ilaç karakteri ya da yüksek saflaştırma değiştirir.",
+  "Amber 25.30, lak-boya 32.03, rezinoit 33.01, aljinat 39.13, papain 35.07."
+ ]
+}
+
+S = {}
+# ---- Eşya → 4’lü pozisyon
+S["E1"] = Q(T_ES,
+ "Tarife Cetveline göre, çeşitli akasya türlerinden elde edilen, yalnızca yıkanmış ve toz haline getirilmiş Arap zamkı hangi pozisyonda sınıflandırılır?",
+ "13.01", ["13.02", "35.06", "40.01", "38.06"], "A",
+ "Arap zamkı 13.01 Açıklama Notunda başlıca tabii sakızlar arasında sayılmıştır; tabii sakızlar ham, yıkanmış, saflaştırılmış, ağartılmış, ezilmiş veya toz halinde olabilir. Basınçlı suyla suda çözünür hale getirilseydi 13.02’ye, sülfürik asitle çözünür hale getirilseydi 35.06’ya giderdi. 40.01 kauçuk benzeri tabii sakızlar içindir.",
+ "13.01 pozisyon metni ve Açıklama Notu.")
+S["E2"] = Q(T_ES,
+ "Tarife Cetveline göre, elma posasından elde edilen ve sabit aktivite sağlamak için şeker katılarak standart hale getirilmiş toz pektin hangi pozisyonda sınıflandırılır?",
+ "13.02", ["17.02", "21.06", "35.05", "13.01"], "D",
+ "13.02 pektik maddeleri, pektinatları ve pektatları kapsar; Açıklama Notuna göre bunlar şeker (glukoz, sakkaroz vb.) katılarak standart hale getirilmiş olsalar da bu pozisyondadır. Şeker katkısı ürünü şeker (17.02) veya gıda müstahzarı (21.06) yapmaz; 35.05 nişasta türevleri içindir.",
+ "13.02 pozisyon metni ve Açıklama Notu.")
+S["E3"] = Q(T_ES,
+ "Tarife Cetveline göre, eritme ve süzme yoluyla saflaştırılmış, ince ve saydam pullar halindeki pul lak (shellac) hangi pozisyonda sınıflandırılır?",
+ "13.01", ["32.03", "13.02", "33.01", "38.06"], "C",
+ "Pul lak, 13.01 Açıklama Notunda lakın başlıca ticari çeşitleri arasında sayılmıştır; eritme ve süzme ile saflaştırılması onu bu pozisyondan çıkarmaz. Laktan çıkarılan boyar madde (lak-boya) 32.03’te, Japon veya Çin lakı denilen ağaç özsuyu 13.02’dedir.",
+ "13.01 Açıklama Notu.")
+S["E4"] = Q(T_ES,
+ "Tarife Cetveline göre, Podophyllum peltatum bitkisinin kurutulmuş rizomlarından alkol ile çıkarılan reçinemsi madde (podofilin) hangi pozisyonda sınıflandırılır?",
+ "13.02", ["12.11", "13.01", "33.01", "29.39"], "E",
+ "13.02 Açıklama Notu podofilini bitkisel hülasalar arasında sayar; çözücü (alkol) ile çıkarıldığı için hülasadır. Podofüllüm bitkisinin kökleri ve rizomları ise 12.11’dedir. “Reçinemsi” görünümü onu tabii salgılar pozisyonuna (13.01) götürmez.",
+ "13.02 Açıklama Notu; 12.11 Açıklama Notu.")
+S["E5"] = Q(T_ES,
+ "Tarife Cetveline göre, ilk şekillerde sunulan ve kauçuk benzeri bir tabii sakız olan çıkıl (chicle) hangi pozisyonda sınıflandırılır?",
+ "40.01", ["13.01", "13.02", "17.04", "38.06"], "B",
+ "Fasıl 13 Not 1; tabii kauçuk, balata, güta-perka, guayül, çıkıl ve benzeri tabii sakızları fasıl dışında bırakır; bunlar 40.01’dedir. “Sakız” kelimesi 13.01’i düşündürse de kauçuk benzeri tabii sakızlar Fasıl 40’a aittir. 17.04 ise Fasıl 13 bakımından şekerleme olarak hazırlanmış meyan kökü hülasası gibi ürünler için söz konusudur.",
+ "Fasıl 13 Not 1; 40.01 pozisyon metni.")
+# ---- Olumsuz teşhis
+S["O1"] = Q(T_OL,
+ "Aşağıdakilerden hangisi 13.01 pozisyonunda <b>sınıflandırılmaz</b>?",
+ "Amber",
+ ["Kitre zamkı", "Mastika", "Mür", "Peru pelesengi"], "C",
+ "Amber, 13.01 Açıklama Notunda hariç tutulmuş ve 25.30’a gönderilmiştir. Kitre zamkı, mastika, mür ve Peru pelesengi 13.01 Açıklama Notundaki başlıca tabii sakız, reçine, sakız-reçine ve pelesenk listelerinde sayılmıştır.",
+ "13.01 Açıklama Notu.")
+S["O2"] = Q(T_OL,
+ "Aşağıdakilerden hangisi 13.02 pozisyonunda <b>sınıflandırılmaz</b>?",
+ "Tütün hülasası",
+ ["Afyon", "Sarı sabır (aloe) özsuyu", "Pire otu hülasası", "Su ile çıkarılmış ginseng hülasası"], "E",
+ "Tütün hülasaları, 13.02 Açıklama Notunda daha özel pozisyonda sınıflandırılan hülasalar arasında sayılmış ve 24.03’e gönderilmiştir. Afyon, aloe, pire otu ve ginseng hülasaları 13.02’dedir; ilk üçü Fasıl 13 Not 1’de açıkça anılmıştır.",
+ "Fasıl 13 Not 1; 13.02 Açıklama Notu.")
+S["O3"] = Q(T_OL,
+ "Aşağıdakilerden hangisi Tarife Cetvelinin 13. faslında <b>sınıflandırılmaz</b>?",
+ "Aljinik asit",
+ ["Agar-agar", "Guar tohumu unu", "Carrageenan", "Demirhindi tohumu kotiledon unu"], "B",
+ "Aljinik asit ve aljinatlar 13.02 Açıklama Notunda hariç tutulmuş ve 39.13’e gönderilmiştir. Agar-agar, guar tohumu unu, carrageenan ve demirhindi tohumu kotiledon unu bitkisel ürünlerden elde edilen yapışkan ve kıvam verici maddeler olarak 13.02’dedir.",
+ "13.02 Açıklama Notu.")
+S["O4"] = Q(T_OL,
+ "Aşağıdakilerden hangisi Tarife Cetvelinin 13. faslında <b>yer almaz</b>?",
+ "Malt hülasası",
+ ["Şerbetçi otu hülasası", "Kenevir reçinesi", "Kola hülasası", "Papain olarak saflaştırılmamış papaw suyu"], "A",
+ "Fasıl 13 Not 1 malt hülasasını fasıl dışında bırakır; bu ürün 19.01’dedir. Şerbetçi otu hülasası, kola hülasası ve papaw suyu 13.02’de, kenevir reçinesi 13.01’dedir. Papaw suyu papain enzimi olarak saflaştırılırsa 35.07’ye gider.",
+ "Fasıl 13 Not 1; 13.01 ve 13.02 Açıklama Notları.")
+# ---- Farklı/aynı
+S["F1"] = Q(T_FA,
+ "Aşağıdakilerden hangisi diğerlerinden farklı bir tarife pozisyonunda yer alır?",
+ "Ağırlıkça %5 sakkaroz içeren meyan kökü hülasası",
+ ["Kahve hülasası", "Çay hülasası", "Paraguay çayı hülasası", "Hazır (instant) kahve"], "D",
+ "Kahve, çay ve paraguay çayı hülasaları ile esası kahve hülasası olan instant kahve, Fasıl 13 Not 1 ve 09.01 Açıklama Notu uyarınca 21.01’dedir. Meyan kökü hülasası ise ağırlıkça %10’dan fazla sakkaroz içermediği ve şekerleme olarak hazırlanmadığı sürece 13.02’de kalır.",
+ "Fasıl 13 Not 1; 13.02 Açıklama Notu.")
+S["F2"] = Q(T_FA,
+ "Kenevir ve diğer bitkilerden elde edilen aşağıdaki ürünlerden hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+ "Kenevir hülasası",
+ ["Arap zamkı", "Kitre zamkı", "Benzoin sakızı", "Kenevir reçinesi"], "B",
+ "Kenevir cinsi bitkilerin hülasaları ve eriyikleri 13.02’de yer alır. Kenevir reçinesi (ham veya saflaştırılmış) ise Arap zamkı, kitre zamkı ve benzoin sakızı gibi 13.01’dedir. Aynı bitkiden elde edilmeleri, salgı ile hülasayı aynı pozisyona taşımaz.",
+ "13.01 ve 13.02 Açıklama Notları.")
+S["F3"] = Q(T_FA,
+ "Aşağıdaki ikililerden hangisinde yer alan ürünler aynı tarife pozisyonunda sınıflandırılır?",
+ "Agar-agar – Pektin",
+ ["Lak – Lak-boya", "Çam yağ reçinesi – Terebentin esansı", "Papaw suyu – Papain", "Afyon – En az %50 alkaloid içeren haşhaş samanı konsantresi"], "E",
+ "Agar-agar ve pektin 13.02 pozisyon metninde birlikte sayılmıştır. Lak 13.01 / lak-boya 32.03; çam yağ reçinesi 13.01 / terebentin esansı 38.05; papaw suyu 13.02 / papain 35.07; afyon 13.02 / ağırlıkça en az %50 alkaloid içeren haşhaş samanı konsantresi 29.39.",
+ "13.01 ve 13.02 pozisyon metinleri ve Açıklama Notları; Fasıl 13 Not 1.")
+S["F4"] = Q(T_FA,
+ "Aşağıdakilerden hangisi diğerlerinden farklı bir fasılda yer alır?",
+ "Acı ağaç odununun başlıca acılı maddesi olan quassin",
+ ["Vanilya oleorezini", "Kola hülasası", "Kurare hülasası", "Acı ağaç (Quassia) hülasası"], "A",
+ "Quassin, acı ağaç odununun başlıca acılı hülasası olup heterosiklik bir bileşik olarak 29.32’de (Fasıl 29) yer alır. Vanilya oleorezinleri, kola hülasası, kurare hülasası ve acı ağaç hülasası 13.02 Açıklama Notunda sayılmıştır. Tuzak, “hülasa” adına rağmen kimyasal olarak belirli bileşiğin Fasıl 29’a gitmesidir.",
+ "13.02 Açıklama Notu.")
+# ---- Fasıl notu
+S["N1"] = Q(T_NO,
+ "Fasıl 13 Not 1’e göre meyan kökü hülasası ağırlık itibariyle hangi orandan fazla sakkaroz içerdiğinde 13.02 dışında kalarak 17.04 pozisyonunda sınıflandırılır?",
+ "%10", ["%2", "%5", "%8", "%20"], "D",
+ "Not 1’e göre ağırlık itibariyle %10’dan fazla sakkaroz içeren veya şekerleme mamulü olarak hazırlanmış meyan kökü hülasası 17.04’tedir; 13.02 Açıklama Notu, şekerleme olarak hazırlanmışsa şeker muhtevasının önemli olmadığını vurgular. %2 eşiği ise pire otu ara ürünlerindeki pyrethrin muhtevasına aittir.",
+ "Fasıl 13 Not 1; 13.02 Açıklama Notu.")
+S["N2"] = Q(T_NO,
+ "Fasıl 13 Not 1’e göre haşhaş samanı konsantreleri ağırlık itibariyle en az hangi oranda alkaloid içerdiğinde 13.02 dışında, 29.39 pozisyonunda sınıflandırılır?",
+ "%50", ["%10", "%25", "%75", "%90"], "C",
+ "Not 1 ağırlık itibariyle en az %50 alkaloid içeren haşhaş samanı konsantrelerini 29.39’a gönderir. Afyon, yani olgunlaşmamış haşhaş kapsüllerinin kurutulmuş özsuyu ise 13.02’dedir. %10, meyan kökü hülasasındaki sakkaroz eşiğidir; iki eşik karıştırılmamalıdır.",
+ "Fasıl 13 Not 1; 13.02 Açıklama Notu.")
+S["N3"] = Q(T_NO,
+ "13.02 Açıklama Notuna göre, bitkisel özsu ve hülasaları 33.01’deki uçucu yağlardan ayıran temel özellik aşağıdakilerden hangisidir?",
+ "Uçucu bileşiklerin yanında klorofil, tanen, acı maddeler ve karbonhidrat gibi diğer bitkisel unsurları daha yüksek oranda içermeleri",
+ ["Yalnızca su veya buhar kullanılarak, hiçbir organik çözücü olmadan çıkarılmış olmaları",
+  "Esas olarak uçucu kokulu maddelerden oluşmaları ve hiçbir koşulda alkol içermemeleri",
+  "Sıvı veya hamur halinde değil, her zaman katı halde sunulmaları",
+  "Yalnızca tek bir bitki türünden elde edilmiş basit hülasalar olmaları"], "A",
+ "Açıklama Notuna göre özsu ve hülasalar, uçucu koku bileşiklerinden ayrı olarak klorofil, tanenler, acımtırak maddeler ve karbonhidratlar gibi diğer bitkisel unsurları daha yüksek oranda içerdikleri için 33.01’deki uçucu yağlardan ayrılır. Hülasalar sıvı, hamur veya katı olabilir, çözücü olarak alkol de kullanılabilir ve bileşik hülasalar da 13.02’dedir.",
+ "13.02 Açıklama Notu.")
+S["N4"] = Q(T_NO,
+ "Pire otu hülasası, pyrethrin muhtevası %1 olacak şekilde mineral yağ eklenerek seyreltilmiş ve böcek öldürücü imalinde kullanılacak bir ara ürün haline getirilmiştir. 13.02 Açıklama Notuna göre bu ürün hangi pozisyonda sınıflandırılır?",
+ "38.08", ["13.02", "12.11", "33.01", "30.04"], "E",
+ "13.02 Açıklama Notuna göre pyrethrin muhtevası %2’den az olacak şekilde mineral yağ veya sinerjist eklenerek seyreltilen pire otu hülasası içeren, böcek öldürücü imalinde kullanılan ara ürünler 38.08’dedir. Mineral yağla %2, %20 veya %25 gibi ticari standartlara getirilmiş pire otu hülasası ise 13.02’de kalır; ölçüt %2 eşiğidir.",
+ "13.02 Açıklama Notu.")
+# ---- GYK
+S["G1"] = Q(T_GY,
+ "Güzel avrat otu hülasasına, kolayca toz haline getirilebilmesi için etkisiz (inert) madde olarak toz Arap zamkı eklenmiştir. Bu eşyanın sınıflandırılmasıyla ilgili hangisi <b>doğrudur</b>?",
+ "13.02’de; eklenen etkisiz madde sınıflandırmayı etkilemediğinden GYK 1 ile",
+ ["13.01’de; Arap zamkı asli karakteri verdiğinden GYK 3(b) ile",
+  "30.04’te; eczacılıkta kullanılan bitkiden elde edildiğinden GYK 3(a) ile",
+  "12.11’de; bitkinin kendisine en çok benzediğinden GYK 4 ile",
+  "21.06’da; numara sırasına göre son pozisyon olduğundan GYK 3(c) ile"], "B",
+ "13.02 Açıklama Notu, bazı katı hülasalara kolay toz haline getirmek için etkisiz maddeler eklenebileceğini ve bunun sınıflandırmayı etkilemeyeceğini belirtir; güzel avrat otu hülasasına toz Arap zamkı eklenmesi metinde örnek olarak verilmiştir. Sınıflandırma pozisyon metni ve açıklama notu çerçevesinde GYK 1 ile yapılır; asli karakter tartışmasına gerek yoktur.",
+ "GYK 1; 13.02 Açıklama Notu.")
+S["G2"] = Q(T_GY,
+ "Çamdan elde edilmiş sıvı haldeki taze yağ reçinesi, tekrar kullanıma elverişli olduğu açıkça belli olan sağlam çelik variller içinde gümrüğe sunulmuştur. Bu eşyanın sınıflandırılmasıyla ilgili hangisi <b>doğrudur</b>?",
+ "Reçine 13.01’de, variller kendi pozisyonlarında ayrı ayrı sınıflandırılır; GYK 5(b) uygulanmaz.",
+ ["Variller GYK 5(b) uyarınca reçine ile birlikte 13.01’de sınıflandırılır.",
+  "Variller GYK 5(a) uyarınca reçine ile birlikte 13.01’de sınıflandırılır.",
+  "Eşya GYK 3(b) uyarınca varillerin pozisyonunda sınıflandırılır.",
+  "Eşya GYK 2(a) uyarınca bitirilmemiş eşya olarak 13.02’de sınıflandırılır."], "D",
+ "GYK 5(b)’ye göre ambalaj maddeleri, eşyanın ambalajında normal olarak kullanılan türden ise eşya ile birlikte sınıflandırılır; ancak sürekli kullanıma elverişli olduğu açıkça belli olanlara bu hüküm uygulanmaz (Açıklama Notu örneği bazı metal varillerdir). Çam ve diğer kozalaklı ağaçlardan elde edilen taze yağ reçineleri 13.01’de yer alır; variller ayrı sınıflandırılır.",
+ "GYK 5(b) ve Açıklama Notu (IV); 13.01 Açıklama Notu.")
+# ---- Eşleştirme / Boşluk
+S["B1"] = Q(T_EB,
+ "13.01 Açıklama Notuna göre; basınç altında suyla muamele edilerek suda çözünür hale getirilmiş sakızlar ……, sülfürik asitle muamele edilerek çözünür hale getirilmiş sakızlar ……, kuruyan yağlarda çözünür hale getirmek için ısı işlemine tabi tutulan reçineler ise …… pozisyonunda yer alır. Boşluklara sırasıyla gelmesi gerekenler hangisidir?",
+ "13.02 – 35.06 – 38.06",
+ ["13.01 – 35.06 – 38.06", "13.02 – 35.05 – 38.05", "35.06 – 13.02 – 38.06", "13.02 – 38.06 – 35.06"], "C",
+ "13.01’deki salgılar basınçlı su, mineral asitler veya ısıyla işlenirse pozisyon dışına çıkar: basınçlı suyla çözünür hale getirilen sakızlar 13.02’de (kıvam artırıcılar), sülfürik asitle çözünür hale getirilenler 35.06’da, kuruyan yağlarda çözünür hale getirilen reçineler 38.06’da yer alır. Yıkama, saflaştırma ve ağartma ise 13.01’i bozmaz.",
+ "13.01 Açıklama Notu; 13.02 Açıklama Notu.")
+S["B2"] = Q(T_EB,
+ "Aşağıdaki ürünleri sınıflandırıldıkları pozisyonlarla eşleştiriniz. I. Rezinoitler  II. Tall oil (sıvı kolofan)  III. Laktan çıkarılan lak-boya  IV. Terebentin esansı — a. 32.03  b. 33.01  c. 38.03  d. 38.05",
+ "I-b, II-c, III-a, IV-d",
+ ["I-c, II-b, III-a, IV-d", "I-b, II-d, III-a, IV-c", "I-a, II-c, III-b, IV-d", "I-b, II-c, III-d, IV-a"], "E",
+ "13.01 Açıklama Notu bu ürünlerin hepsini 13.01 dışında bırakır: rezinoitler ve yağ reçine hülasası 33.01’de, tall oil 38.03’te, lak-boya 32.03’te, terebentin esansı 38.05’tedir. Ortak tuzak, reçineden veya laktan elde edildikleri için 13.01’de sanılmalarıdır.",
+ "13.01 Açıklama Notu.")
+# ---- Çoktan-çoğa
+S["C1"] = Q(T_CC,
+ "13.01 Açıklama Notuna göre aşağıdaki ifadelerden hangileri doğrudur? I. Tabii sakızlar ham, yıkanmış, saflaştırılmış, ağartılmış veya toz haline getirilmiş olabilir.  II. Hakiki sakızlar kokusuz ve tatsızdır, suda az çok çözünerek yapışkan bir madde oluşturur.  III. Reçineler suda çözünmez ve ısı uygulanınca yumuşar.  IV. Japon lakı ve Çin lakı olarak bilinen ağaç özsuları 13.01’de yer alır.",
+ "I, II ve III", ["I ve II", "II ve IV", "I, III ve IV", "II, III ve IV"], "A",
+ "Açıklama Notu, 13.01’deki ürünlerin ham, yıkanmış, saflaştırılmış, ağartılmış, ezilmiş veya toz halinde olabileceğini (I), hakiki sakızların kokusuz, tatsız olup suda yapışkan madde oluşturarak çözündüğünü (II), reçinelerin suda çözünmeyip ısıyla yumuşadığını (III) belirtir. Japon ve Çin lakı olarak bilinen özsular ise 13.02’dedir (IV yanlış).",
+ "13.01 Açıklama Notu.")
+S["C2"] = Q(T_CC,
+ "Fasıl 13 Not 1’e göre aşağıdakilerden hangileri 13.02 pozisyonu dışında kalır? I. Kahve, çay ve paraguay çayı hülasaları  II. Alkollü içecek yapımında kullanılan bitkisel özsu ve hülasalar  III. Sabır bitkisi (aloe) hülasası  IV. Debagatte veya boyacılıkta kullanılan hülasalar",
+ "I, II ve IV", ["I ve II", "I ve III", "II, III ve IV", "I, II ve III"], "D",
+ "Not 1 kahve, çay ve paraguay çayı hülasalarını 21.01’e (I), alkollü içecek yapımında kullanılan özsu ve hülasaları Fasıl 22’ye (II), debagat ve boyacılık hülasalarını 32.01 veya 32.03’e (IV) gönderir. Sabır bitkisi hülasası ise Not 1’de 13.02 kapsamında açıkça sayılmıştır (III).",
+ "Fasıl 13 Not 1.")
+# ---- Senaryo
+S["S1"] = Q(T_SE,
+ "Ceratonia siliqua tohumlarının endosperminden elde edilen un, viskozitesini artırmak amacıyla kimyasal işlemle tadil edilmiştir ve gıda sanayinde kıvam verici olarak kullanılacaktır. Eşya hangi pozisyonda sınıflandırılır?",
+ "13.02", ["12.12", "35.05", "11.06", "21.06"], "C",
+ "13.02 Açıklama Notu keçiboynuzu (Ceratonia siliqua) endosperm ununu, yapışkanlık özelliğini artırmak için kimyasal olarak tadil edilmiş olsun olmasın bitkisel kıvam verici olarak bu pozisyonda sayar; pozisyon metni de “tadil edilmiş olsun olmasın” der. 12.12 keçiboynuzunu kapsar ama endosperm ununu 13.02’ye gönderir; 35.05 nişasta türevleri içindir.",
+ "13.02 pozisyon metni ve Açıklama Notu; 12.12 Açıklama Notu.")
+S["S2"] = Q(T_SE,
+ "Ginseng köklerinden su ile çıkarılmış, başka hiçbir madde katılmamış toz halindeki hülasa, perakende satışa hazır küçük kutularda sunulmaktadır. Ürün tedavi veya koruma amaçlı ölçülü dozlar halinde değildir. Eşya hangi pozisyonda sınıflandırılır?",
+ "13.02", ["12.11", "21.06", "30.04", "33.01"], "B",
+ "13.02 Açıklama Notuna göre su veya alkol ile çıkarılan ginseng hülasası perakende satışa hazır vaziyette olsun olmasın bu pozisyondadır. Ginseng kökünün kendisi 12.11’de, laktoz veya glukozla karıştırılmış ginseng “çayı” 21.06’da yer alır. Tedavi amaçlı ölçülü dozda sunulmadığından 30.04 de söz konusu değildir.",
+ "13.02 Açıklama Notu; Fasıl 12 Not 4.")
+
+SIRA = ["E1", "N1", "O1", "F1", "E3", "B1", "O2", "G1", "F2", "N2", "E2", "C1", "O3",
+        "S1", "F3", "E4", "N3", "B2", "O4", "G2", "E5", "C2", "N4", "F4", "S2"]
+d["sorular"] = sirala(S, SIRA)
+yaz(13, d)

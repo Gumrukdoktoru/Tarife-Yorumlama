@@ -1,0 +1,610 @@
+{
+ "tur": "fasil",
+ "fasil": 47,
+ "baslik": "Odun veya diğer selülozik maddelerin hamurları; geri kazanılmış kağıt veya karton (döküntü, kırpıntı ve hurdalar)",
+ "bolum": "X",
+ "oz": {
+  "vurgu": "Fasıl 47 kağıdın hammaddesini düzenler: eşya ya kağıt yapımına yarayan bir hamurdur ya da hamura dönüşecek kağıt-karton hurdasıdır (47.07). Hamurlar önce hammaddeye (odun mu; yoksa geri kazanılmış kağıt, linter, bambu gibi diğer lifli selülozik madde mi → 47.06), sonra elde ediliş yöntemine göre ayrılır: mekanik 47.01, çözünür kimyasal 47.02, soda-sülfat 47.03, sülfit 47.04, mekanik + kimyasal 47.05.",
+  "maddeler": [
+   "Çözünür kimyasal odun hamuru Not 1’deki testle tanımlanır: 20 °C’de %18 NaOH çözeltisinde bir saat; çözünmeyen fraksiyon soda/sülfat için ≥ %92, sülfit için ≥ %88; sülfitte kül ≤ %0,15.",
+   "Hamur kahverengi veya beyaz, ıslak veya kuru; balya levha, rulo, toz veya pul halinde olabilir; bu özellikler faslı değiştirmez.",
+   "Eski gazete ve dergiler, matbaa provaları ve ıskartaları, kağıt-karton eşya hurdaları 47.07’dedir; başka amaçla (paketleme) kullanılabilmeleri bunu değiştirmez.",
+   "Pamuk linterleri 14.04, sentetik (PE/PP) kağıt hamuru 39.20, lif levha 44.11, kağıt hamurundan filtre blokları 48.12, kağıt yünü 48.23’tedir."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+  "satirlar": [
+   [
+    "1",
+    "Selülozik olmayan sentetik kağıt hamuru, lif levha ya da kağıt hamurundan şekil verilmiş eşya mı?",
+    "<b>39.20</b> / <b>44.11</b> / Fasıl 48 (filtre blokları <b>48.12</b>)"
+   ],
+   [
+    "2",
+    "Esas olarak kıymetli metal geri kazanımı için kullanılan kağıt hurdası mı? (gümüşlü fotoğraf kağıdı)",
+    "<b>71.12</b>"
+   ],
+   [
+    "3",
+    "Kağıt veya karton döküntü, kırpıntı, hurda; eski gazete-dergi mi? (kağıt yünü <b>48.23</b>)",
+    "<b>47.07</b>"
+   ],
+   [
+    "4",
+    "Hamur geri kazanılmış kağıt-karton liflerinden veya odun dışı lifli selülozik maddeden mi? (linter, bambu, saman, posa)",
+    "<b>47.06</b>"
+   ],
+   [
+    "5",
+    "Odun hamuru yalnız mekanik işlemle mi elde edilmiş? (SGW, PGW, RMP, TMP)",
+    "<b>47.01</b>"
+   ],
+   [
+    "6",
+    "Mekanik ve kimyasal işlemler birlikte mi kullanılmış? (yarı kimyasal, CTMP, eleme hamuru)",
+    "<b>47.05</b>"
+   ],
+   [
+    "7",
+    "Kimyasal odun hamuru Not 1 çözünürlük ölçütünü karşılıyor mu?",
+    "<b>47.02</b>"
+   ],
+   [
+    "8",
+    "Soda veya sülfat işlemiyle mi elde edilmiş?",
+    "<b>47.03</b>"
+   ],
+   [
+    "9",
+    "Sülfit işlemiyle mi elde edilmiş?",
+    "<b>47.04</b>"
+   ]
+  ],
+  "dipnot": ""
+ },
+ "pozisyon_haritasi": [
+  [
+   "47.01",
+   "Mekanik odun hamuru",
+   "Yalnız mekanik ayrıştırma; kısa lif",
+   "Taşla ezilmiş odun hamuru, TMP"
+  ],
+  [
+   "47.02",
+   "Çözünür kimyasal odun hamuru",
+   "Not 1 çözünürlük ve kül ölçütü",
+   "Viskoz ve asetat hamuru"
+  ],
+  [
+   "47.03",
+   "Sodalı veya sülfatlı kimyasal hamur",
+   "Alkalin kaynatma; çözünür olmayan",
+   "Sülfat hamuru, emici ürün hamuru"
+  ],
+  [
+   "47.04",
+   "Sülfitli kimyasal hamur",
+   "Asit sülfit çözeltisi; çözünür olmayan",
+   "Yazı ve baskı kağıdı hamuru"
+  ],
+  [
+   "47.05",
+   "Mekanik ve kimyasal birleşik hamur",
+   "Yarı kimyasal, kimyasal-mekanik",
+   "NSSC, CTMP, eleme hamuru"
+  ],
+  [
+   "47.06",
+   "Geri kazanılmış lif ve diğer selülozik hamurlar",
+   "Odun dışı lifli madde veya atık kağıt",
+   "Linter, atık kağıt, bambu hamuru"
+  ],
+  [
+   "47.07",
+   "Geri kazanılmış kağıt-karton döküntü ve hurdası",
+   "Hamura dönüşecek kağıt atığı",
+   "Eski gazete, oluklu karton hurdası"
+  ]
+ ],
+ "notlar": [
+  [
+   "Bölüm X",
+   "Bölüm X’un bölüm notu yoktur. Bölüm; Fasıl 47 (hamurlar ve kağıt-karton hurdası), Fasıl 48 (kağıt ve karton; kağıt hamurundan, kağıttan veya kartondan eşya) ve Fasıl 49 (basılı kitaplar, gazeteler, resimler ve baskı sanayii mamulleri) fasıllarından oluşur: hamur → kağıt → basılı ürün."
+  ],
+  [
+   "Fasıl 47 Not 1",
+   "47.02 anlamında “çözünür kimyasal odun hamuru”: <b>20 °C’de %18 sodyum hidroksit</b> içeren kostik soda çözeltisinde bir saat bekletildikten sonra çözünmeyen fraksiyonu soda veya sülfatlı hamurda ağırlıkça <b>%92</b> veya daha fazla, sülfitli hamurda <b>%88</b> veya daha fazla olan ve sülfitli hamurda kül miktarı ağırlıkça en fazla <b>%0,15</b> olan kimyasal odun hamuru."
+  ],
+  [
+   "Genel Açıklamalar",
+   "Hamur başlıca mekanik, kimyasal, yarı kimyasal veya kimyasal-mekanik olarak ayrılır. Odun dışı hammaddeler: pamuk linterleri, geri dönüşümlü kağıt ve karton, paçavralar ve eski ipler, tahıl sapları ve samanı, halfa veya alfa otu, keten, rami, jüt, kendir, sisal, şeker kamışı posası, hint kamışı, bambu."
+  ],
+  [
+   "Genel Açıklamalar",
+   "Hamur beyazlatılmış, yarı beyazlatılmış veya beyazlatılmamış olabilir; imalattan sonra parlaklığı artırılmışsa beyazlatılmış sayılır. Suni dokuma maddesi, plastik, vernik ve patlayıcı yapımında selüloz kaynağı, sığır yemi olarak da kullanılabilir. Islak veya kuru balya levha, kalın dilim, rulo, toz veya pul halinde bulunabilir."
+  ],
+  [
+   "Genel Açıklamalar",
+   "Fasıl dışı: pamuk linterleri (14.04); yapışık olmayan polietilen veya polipropilen lif tabakalarından sentetik kağıt hamurları (39.20); lif levha (44.11); kağıt hamurundan filtre edici blok, dilim ve levhalar (48.12); kağıt hamurundan diğer eşya (Fasıl 48)."
+  ],
+  [
+   "47.01 Açıklama Notu",
+   "Mekanik hamur yalnız mekanik işlemlerle elde edilir: taşla ezilen (SGW), taş basıncıyla ezilen (PGW), rafine mekanik (RMP), termo mekanik (TMP). Kimyasal işlem görmüş rafine hamurlar 47.05’tedir. Lifleri kısa olduğundan çoğunlukla kimyasal hamurla karıştırılır; gazete kağıdı bu karışımdan yapılır."
+  ],
+  [
+   "47.02 Açıklama Notu",
+   "Yalnız Not 1 ölçütündeki çözünür kimyasal hamuru kapsar; rejenere selüloz, selüloz eter ve esterleri, film, lif ve özel kağıtların yapımında kullanılır (viskoz hamuru, asetat hamuru). Kimyasal hamur, aynı hammaddeden mekanik hamura göre lif uzunluğu bakımından üstün ve selülozca zengindir."
+  ],
+  [
+   "47.03 / 47.04 Açıklama Notları",
+   "47.03: soda işleminde sodyum hidroksit, sülfat işleminde modifiye sodyum hidroksit çözeltisi; yüksek dirençli kağıt ve emici ürünler (çocuk bezi) için. 47.04: bisülfitlerle hazırlanan asit çözelti, serbest kükürt dioksit; yazı-baskı ve yağ geçirmez kağıtlar için."
+  ],
+  [
+   "47.05 Açıklama Notu",
+   "Mekanik ve kimyasal işlemlerin birlikte kullanıldığı hamurlar: yarı kimyasal (NSSC, bisülfitli, kraft yarı kimyasal), kimyasal-mekanik (CTMP, CRMP, TCMP) ve eleme hamuru."
+  ],
+  [
+   "47.06 Açıklama Notu",
+   "Geri kazanılmış kağıt-karton liflerinin hamurları temizleme, eleme ve mürekkep giderme ile elde edilir; genellikle kuru balya halindedir, mürekkep, kil, nişasta gibi küçük kalıntılar içerebilir. Diğer lifli selülozik maddelerin (linter, bambu vb.) hamurları da buradadır."
+  ],
+  [
+   "47.07 Açıklama Notu",
+   "Kağıt-karton döküntü, kırpıntı ve artıkları, eski gazete ve dergiler, matbaa provaları ve ıskartaları, kağıt-karton eşya hurdaları. Paketleme gibi başka kullanım olasılığı sınıflandırmayı değiştirmez. Kağıt yünü 48.23’e; gümüş içeren fotoğraf kağıdı gibi kıymetli metal geri kazanımına yönelik hurdalar 71.12’ye gider."
+  ],
+  [
+   "49.02 Açıklama Notu",
+   "Gazete, periyodik yayın ve mecmuaların eski nüshaları kağıt döküntüsü sayılır ve 47.07’de yer alır."
+  ]
+ ],
+ "sinir_komsulari": [
+  [
+   "Pamuk linterleri",
+   "14.04",
+   "Hammadde; linterden hamur 47.06"
+  ],
+  [
+   "Polietilen veya polipropilen liflerinden sentetik kağıt hamuru",
+   "39.20",
+   "Selülozik değil; Genel Açıklamalar"
+  ],
+  [
+   "Selüloz hamuru üretimine mahsus odun yongası",
+   "44.01",
+   "Henüz hamur değil"
+  ],
+  [
+   "Kağıt hamuru üretimine mahsus yuvarlak kağıtlık odun",
+   "44.03",
+   "Yuvarlak ağaç"
+  ],
+  [
+   "Lif levha (MDF, sert levha)",
+   "44.11",
+   "Genel Açıklamalar"
+  ],
+  [
+   "Gazete kağıdı (rulo veya tabaka)",
+   "48.01",
+   "Hamurdan üretilmiş kağıt"
+  ],
+  [
+   "Kağıt hamurundan filtre blokları ve levhaları",
+   "48.12",
+   "Genel Açıklamalar"
+  ],
+  [
+   "Kağıt döküntüsünden yapılmış kağıt yünü",
+   "48.23",
+   "47.07 hariç tutması"
+  ],
+  [
+   "Kağıt hamurundan şekil verilmiş diğer eşya",
+   "Fasıl 48",
+   "Genel Açıklamalar"
+  ],
+  [
+   "Günün gazetesi, güncel dergi",
+   "49.02",
+   "Eski nüshası ise 47.07"
+  ],
+  [
+   "Gümüş içeren fotoğraf kağıdı kırpıntıları",
+   "71.12",
+   "Kıymetli metal geri kazanımı; 47.07 hariç tutması"
+  ]
+ ],
+ "tuzaklar": [
+  "<b>Linter ile linter hamuru aynı yerde değildir.</b> Pamuk linterleri 14.04’te; linterden elde edilen hamur 47.06’dadır.",
+  "<b>Önce çözünürlük, sonra yöntem.</b> Kimyasal hamur Not 1 ölçütünü karşılıyorsa sülfit de olsa 47.02; karşılamıyorsa soda-sülfat 47.03, sülfit 47.04.",
+  "<b>%92 ile %88 karıştırılmamalı.</b> Çözünmeyen fraksiyon soda-sülfat hamurunda en az %92, sülfit hamurunda en az %88; kül sınırı (%0,15) yalnız sülfit hamuru içindir. %18 ise test çözeltisinin NaOH oranıdır.",
+  "<b>Kimyasal katkılı rafine hamur 47.01 değildir.</b> Rafine edilerek elde edilip kimyasal işlem gören hamurlar (CTMP, CRMP) 47.05’tedir; TMP ve RMP ise 47.01’de kalır.",
+  "<b>Hamur mu, hurda mı?</b> Atık kağıdın kendisi 47.07; mürekkebi giderilip liflerine ayrılmış hamuru 47.06.",
+  "<b>Eski gazete kağıt hurdasıdır.</b> Gazete ve dergilerin eski nüshaları 47.07; güncel gazete 49.02; gazete kağıdı 48.01.",
+  "<b>Başka kullanım 47.07’yi bozmaz, işlenme bozar.</b> Paketlemede kullanılabilecek kırpıntılar yine 47.07; kağıt döküntüsünden yapılmış kağıt yünü 48.23.",
+  "<b>Kıymetli metal içeren hurda 71.12’dir.</b> Gümüş içeren fotoğraf kağıdı kırpıntıları esas olarak metal geri kazanımı için kullanıldığından 47.07 dışındadır.",
+  "<b>“Hamur” adı yetmez.</b> Polietilen veya polipropilenden sentetik kağıt hamuru selülozik olmadığı için 39.20’dedir."
+ ],
+ "hafiza": {
+  "kanca": "ME – ÇÖ – SO – SÜ – KAR – GERİ – HURDA",
+  "aciklama": "<b>ME</b>kanik 47.01 · <b>ÇÖ</b>zünür 47.02 · <b>SO</b>da-sülfat 47.03 · <b>SÜ</b>lfit 47.04 · <b>KAR</b>ma (mekanik + kimyasal) 47.05 · <b>GERİ</b> kazanılmış lifler ve odun dışı lifler 47.06 · <b>HURDA</b> kağıt 47.07. Bölüm X’u bir fabrika hattı gibi düşünün: hamur (47) → kağıt (48) → basılı ürün (49); okunan gazete de hurdaya dönünce yeniden 47.07’ye gelir."
+ },
+ "sinav_odagi": [
+  "Bu fasıl çıkmış sorularda çok az yer almıştır; görüldüğü soru tarife sıralaması (dizilim) kalıbındadır.",
+  "Sıralama sorusunda geri kazanılmış kağıt liflerinin hamuru (47.06) → önceki günden satılmayan gazeteler (47.07) → gazete kağıdı (48.01) → günün gazetesi (49.02) dizilimi esas alınmıştır.",
+  "Eski veya satılmamış gazetelerin kağıt hurdası sayılarak 47.07’ye girdiği; güncel gazetenin 49.02’de, gazete kağıdının 48.01’de kaldığı ayrımı ölçülmüştür.",
+  "Bölüm X’un iç düzeni (hamur → kağıt → basılı ürün) bu tür dizilim sorularının çözüm anahtarıdır."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Aşağıda yer alan eşyanın tarife cetvelindeki sıraya göre doğru dizilişi aşağıdakilerden hangisidir? I- Gazete kağıdı II- Bugünün gazetesi III- Önceki günden satılmayan gazeteler IV- Geri kazanılmış kağıt liflerinin hamurları",
+   "secenekler": [
+    "I-II-III-IV",
+    "I-III-II-IV",
+    "IV-I-III-II",
+    "IV-III-I-II"
+   ],
+   "cevap": "D",
+   "aciklama": "Geri kazanılmış kağıt liflerinin hamurları 47.06’da, eski (satılmamış) gazeteler kağıt döküntüsü olarak 47.07’de, gazete kağıdı 48.01’de, günün gazetesi 49.02’dedir. Bu nedenle doğru sıra IV-III-I-II’dir."
+  }
+ ],
+ "ozet": [
+  "Fasıl 47 = kağıdın hammaddesi: hamurlar (47.01–47.06) ve kağıt-karton hurdası (47.07).",
+  "Odun dışı lifler ve geri kazanılmış kağıt lifleri hamuru 47.06; hurdanın kendisi 47.07.",
+  "Odun hamurunda yöntem: mekanik 47.01, karma 47.05; kimyasalda önce Not 1 çözünürlüğü (47.02), sonra soda-sülfat 47.03 / sülfit 47.04.",
+  "Not 1 sayıları: 20 °C, %18 NaOH, bir saat; çözünmeyen ≥ %92 (soda-sülfat) / ≥ %88 (sülfit); kül ≤ %0,15 (sülfit).",
+  "Eski gazete 47.07, gazete kağıdı 48.01, güncel gazete 49.02; kağıt yünü 48.23, gümüşlü hurda 71.12, linter 14.04, sentetik hamur 39.20."
+ ],
+ "sorular": [
+  {
+   "soru": "Tarife Cetveline göre, kabukları ayrılmış yuvarlak odunların atmosfer basıncı altında taşla ezilmesiyle elde edilen ve hiçbir kimyasal işlem görmemiş odun hamuru hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "47.01",
+    "47.05",
+    "47.03",
+    "47.06",
+    "44.05"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Yalnız mekanik işlemlerle (ezme, değirmenden geçirme, rafine etme) elde edilen odun hamuru 47.01’dedir; taşla ezilen odun (SGW) Açıklama Notunda başlıca tipler arasında sayılmıştır. Kimyasal işlem de görseydi 47.05’e girerdi. Ağaç unu (44.05) bir toz olup hamur değildir.",
+   "dayanak": "47.01 Açıklama Notu."
+  },
+  {
+   "soru": "Fasıl 47 Not 1’e göre, sülfitli kimyasal odun hamurunun “çözünür kimyasal odun hamuru” sayılabilmesi için ağırlık itibarıyla çözünmeyen fraksiyonu en az ve kül miktarı en fazla ne olmalıdır?",
+   "secenekler": [
+    "Çözünmeyen fraksiyon en az %92; kül en fazla %0,15",
+    "Çözünmeyen fraksiyon en az %88; kül en fazla %1,5",
+    "Çözünmeyen fraksiyon en az %88; kül en fazla %0,15",
+    "Çözünmeyen fraksiyon en az %18; kül en fazla %0,15",
+    "Çözünmeyen fraksiyon en az %92; kül en fazla %0,5"
+   ],
+   "cevap": "C",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Not 1’e göre çözünmeyen fraksiyon soda veya sülfatlı hamurda ağırlıkça %92 veya daha fazla, sülfitli hamurda %88 veya daha fazla olmalıdır; sülfitli hamur için ayrıca kül miktarı en fazla %0,15’tir. %18, test çözeltisindeki sodyum hidroksit oranıdır. %92’yi sülfit hamuruna uygulamak tipik tuzaktır.",
+   "dayanak": "Fasıl 47 Not 1; 47.02 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 47. faslında <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Linter pamuğu hamuru",
+    "Eski dergilerden oluşan balyalanmış kağıt hurdası",
+    "Viskoz üretiminde kullanılan çözünür kimyasal odun hamuru",
+    "Matbaa makinelerinden çıkan ıskarta kağıtlar",
+    "Pamuk linterleri"
+   ],
+   "cevap": "E",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Fasıl 47 Genel Açıklamaları pamuk linterlerini hariç tutar ve 14.04’e gönderir; linterden elde edilen hamur ise 47.06’dadır. Eski dergiler ve matbaa ıskartaları 47.07’de, çözünür kimyasal odun hamuru 47.02’dedir. Hammadde ile ondan elde edilen hamurun ayrı yerlerde olduğu unutulmamalıdır.",
+   "dayanak": "Fasıl 47 Genel Açıklamalar; 47.02, 47.06 ve 47.07 Açıklama Notları."
+  },
+  {
+   "soru": "Odun yongalarının sıkı kapanan kazanlarda kimyasal yollarla yumuşatıldıktan sonra mekanik olarak rafine edilmesiyle elde edilen yarı kimyasal odun hamuru hangi pozisyonda yer alır?",
+   "secenekler": [
+    "47.01",
+    "47.03",
+    "47.04",
+    "47.05",
+    "47.02"
+   ],
+   "cevap": "D",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Mekanik ve kimyasal hamur üretme işlemlerinin birleşmesinden elde edilen hamurlar 47.05’tedir; yarı kimyasal hamur (ör. NSSC) Açıklama Notunda bu iki aşamalı işlemle tanımlanmıştır. Yalnız mekanik hamur 47.01’de, yalnız kimyasal hamurlar 47.02–47.04’te yer alır.",
+   "dayanak": "47.05 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdaki odun hamurlarından hangisi diğerlerinden farklı bir pozisyonda yer alır?",
+   "secenekler": [
+    "Kimyasal-termomekanik odun hamuru (CTMP)",
+    "Termo mekanik odun hamuru (TMP)",
+    "Nötr sülfitli yarı kimyasal odun hamuru (NSSC)",
+    "Eleme hamuru olarak bilinen odun hamuru",
+    "Kimyasal-rafine mekanik odun hamuru (CRMP)"
+   ],
+   "cevap": "B",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "TMP, yongaların yüksek basınçlı buhardan sonra rafine edilmesiyle elde edilen mekanik odun hamurudur ve 47.01’dedir. CTMP, CRMP, NSSC ve eleme hamuru mekanik ve kimyasal işlemlerin birleşiminden elde edildiğinden 47.05’te sayılmıştır. Adında “termo” veya “mekanik” geçmesi tek başına belirleyici değildir; kimyasal katkı olup olmadığına bakılır.",
+   "dayanak": "47.01 ve 47.05 Açıklama Notları."
+  },
+  {
+   "soru": "Fasıl 47 Not 1’de “çözünür kimyasal odun hamuru” tanımı için öngörülen test koşulu aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "20 °C’de %8 sodyum hidroksit içeren kostik soda çözeltisinde 24 saat bekletme",
+    "100 °C’de %18 sodyum sülfat çözeltisinde kaynatma",
+    "20 °C’de saf suda bir saat bekletme",
+    "Kükürt dioksit içeren asit çözeltide bir saat kaynatma",
+    "20 °C’de %18 NaOH içeren kostik soda çözeltisinde bir saat bekletme"
+   ],
+   "cevap": "E",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Not 1’e göre hamur, 20 °C’de %18 sodyum hidroksit içeren kostik soda çözeltisinde bir saat bekletilir; ardından çözünmeyen fraksiyon oranına (soda/sülfat için ≥ %92, sülfit için ≥ %88) bakılır. Diğer seçeneklerdeki çözeltiler ve süreler notta yer almaz; kükürt dioksitli asit çözelti sülfit üretim işlemine aittir.",
+   "dayanak": "Fasıl 47 Not 1."
+  },
+  {
+   "soru": "Fasıl 47 Genel Açıklamalarına göre aşağıdaki ifadelerden hangileri doğrudur? I. Odun hamuru kimyasal maddelerle beyazlatılmış olabilir. II. Odun hamurları sığır cinsi hayvanların yemi olarak da kullanılabilir. III. Odun hamuru yalnızca ıslak levhalar halinde bulunur; toz veya pul halindekiler fasıl dışıdır. IV. Pamuk linterleri bu fasılda yer alır.",
+   "secenekler": [
+    "I ve II",
+    "I ve III",
+    "II ve IV",
+    "I, II ve IV",
+    "II, III ve IV"
+   ],
+   "cevap": "A",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "Genel Açıklamalara göre hamur beyazlatılmış, yarı beyazlatılmış veya beyazlatılmamış olabilir (I) ve sığır yemi olarak da kullanılabilir (II). Hamur ıslak veya kuru balya levhaları, kalın dilim, rulo, toz veya pul halinde bulunabilir (III yanlış). Pamuk linterleri 14.04’tedir (IV yanlış).",
+   "dayanak": "Fasıl 47 Genel Açıklamalar."
+  },
+  {
+   "soru": "Kağıt hamuru üretiminde kullanılmak üzere toplanmış, ayıklanmamış oluklu karton kutu hurdaları hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "47.06",
+    "47.07",
+    "48.19",
+    "48.23",
+    "44.01"
+   ],
+   "cevap": "B",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "47.07 geri kazanılmış kağıt veya karton döküntü, kırpıntı ve hurdalarını kapsar; Açıklama Notu kağıt ve karton eşyaların hurdalarını da bu pozisyona alır. Hurdadan elde edilen hamur 47.06’ya girerdi. Kullanılmaya devam eden karton kutular 48.19’un konusudur; hurda haline gelmiş kutular ise 47.07’dedir.",
+   "dayanak": "47.07 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 47.07 pozisyonunda <b>yer almaz</b>?",
+   "secenekler": [
+    "Eski gazete ve dergiler",
+    "Matbaa provalarına ait kağıtlar",
+    "Kağıt ve karton eşyaların hurdaları",
+    "Kağıt döküntülerinden imal edilmiş kağıt yünü",
+    "Paketlemede de kullanılabilecek kağıt kırpıntıları"
+   ],
+   "cevap": "D",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "47.07 Açıklama Notu, kağıt döküntülerinden imal edilmiş olsa bile kağıt yününü hariç tutar ve 48.23’e gönderir. Eski gazete ve dergiler, matbaa provaları ve kağıt eşya hurdaları 47.07’dedir; döküntülerin paketleme gibi başka amaçlarla kullanılabilmesi bu sınıflandırmayı değiştirmez.",
+   "dayanak": "47.07 Açıklama Notu."
+  },
+  {
+   "soru": "47.03 pozisyonu içinde beyazlatılmamış hamurlarla yarı beyazlatılmış veya beyazlatılmış hamurlar arasındaki ayrımın yapılmasında aşağıdaki Genel Yorum Kurallarından hangisi uygulanır?",
+   "secenekler": [
+    "GYK 1",
+    "GYK 3(a)",
+    "GYK 6",
+    "GYK 3(b)",
+    "GYK 4"
+   ],
+   "cevap": "C",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "Bir pozisyonun alt pozisyonları arasındaki sınıflandırma GYK 6’ya göre, yalnız aynı seviyedeki alt pozisyonlar karşılaştırılarak yapılır. GYK 1 pozisyon (dört rakam) düzeyindeki tespiti, 3(a) ve 3(b) birden çok pozisyona girebilen eşyayı, 4 ise hiçbir pozisyona uymayan eşyayı düzenler.",
+   "dayanak": "GYK 6; 47.03 pozisyon metni."
+  },
+  {
+   "soru": "Aşağıdaki hamur – pozisyon eşleştirmelerinden hangisi <b>doğrudur</b>?",
+   "secenekler": [
+    "Bambudan elde edilen hamur – 47.01",
+    "Rafine edilmiş mekanik odun hamuru (RMP) – 47.05",
+    "Çözünür olmayan sülfatlı kimyasal odun hamuru – 47.03",
+    "Viskoz üretimine uygun çözünür kimyasal odun hamuru – 47.04",
+    "Mürekkebi giderilmiş geri kazanılmış kağıt lifleri hamuru – 47.07"
+   ],
+   "cevap": "C",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Çözünür kimyasal hamur dışındaki sodalı veya sülfatlı kimyasal odun hamuru 47.03’tedir. Bambu hamuru odun dışı lifli selülozik madde hamuru olarak 47.06’da, RMP yalnız mekanik işlemle elde edildiğinden 47.01’de, çözünür hamur 47.02’de, geri kazanılmış liflerin hamuru 47.06’dadır (47.07 hurdanın kendisidir).",
+   "dayanak": "47.01, 47.02, 47.03 ve 47.06 pozisyon metinleri ve Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden farklı bir fasılda yer alır?",
+   "secenekler": [
+    "Kağıt hamurundan filtre blokları",
+    "Mekanik odun hamuru",
+    "Sülfitli kimyasal odun hamuru",
+    "Eski gazete ve dergi hurdası",
+    "Linter pamuğundan elde edilen hamur"
+   ],
+   "cevap": "A",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Fasıl 47 Genel Açıklamaları kağıt hamurundan filtre edici blok, dilim ve levhaları hariç tutar ve 48.12’ye gönderir. Mekanik hamur 47.01’de, sülfitli hamur 47.04’te, eski gazete 47.07’de, linter pamuğu hamuru 47.06’dadır.",
+   "dayanak": "Fasıl 47 Genel Açıklamalar; 48.12 pozisyon metni."
+  },
+  {
+   "soru": "Bir geri dönüşüm tesisi, toplanan atık kağıtları mekanik temizleme, eleme ve mürekkep giderme işlemlerinden geçirerek az miktarda kil ve nişasta kalıntısı içeren, kuru ve balyalanmış tabakalar halinde beyazlatılmış bir hamur üretmektedir. Bu ürün hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "47.07",
+    "47.01",
+    "47.05",
+    "48.23",
+    "47.06"
+   ],
+   "cevap": "E",
+   "tip": "Senaryo",
+   "gerekce": "47.06 Açıklama Notuna göre geri kazanılmış kağıt veya kartondan elde edilen liflerin hamurları temizleme, eleme ve mürekkep giderme işlemleriyle elde edilir, genellikle kuru balya halindedir ve mürekkep, kil, nişasta gibi küçük kalıntılar içerebilir. Hurdanın kendisi 47.07’de kalırdı; odundan elde edilmediği için 47.01 veya 47.05’e girmez.",
+   "dayanak": "47.06 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "Fasıl 47 Genel Açıklamalarına göre aşağıdakilerden hangisi bu fasıl kapsamı <b>dışındadır</b>?",
+   "secenekler": [
+    "Bambudan elde edilen hamur",
+    "Polietilen veya polipropilen liflerinden sentetik kağıt hamuru",
+    "Şeker kamışı posasından elde edilen hamur",
+    "Balyalanmış kuru levhalar halindeki beyazlatılmış kimyasal odun hamuru",
+    "Pul halindeki mekanik odun hamuru"
+   ],
+   "cevap": "B",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Genel Açıklamalar, yapışık olmayan polietilen veya polipropilen liflerin tabakalarından oluşan sentetik kağıt hamurlarını hariç tutar ve 39.20’ye gönderir; selülozik olmadıkları için Fasıl 47’ye girmezler. Bambu ve şeker kamışı posası hamurları 47.06’da, levha veya pul halindeki odun hamurları kendi pozisyonlarındadır.",
+   "dayanak": "Fasıl 47 Genel Açıklamalar (hariç tutmalar)."
+  },
+  {
+   "soru": "Odunun sodyum hidroksit çözeltisinde kaynatılmasıyla (soda işlemi) elde edilen, Fasıl 47 Not 1’deki çözünürlük ölçütünü karşılamayan, beyazlatılmamış kimyasal odun hamuru hangi pozisyonda yer alır?",
+   "secenekler": [
+    "47.02",
+    "47.04",
+    "47.05",
+    "47.03",
+    "47.06"
+   ],
+   "cevap": "D",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Soda veya sülfat işlemiyle elde edilen ve çözünür kimyasal hamur sayılmayan odun hamuru 47.03’tedir; soda hamurunda kaynatma çözeltisi sodyum hidroksittir. Not 1 ölçütünü karşılasaydı 47.02’ye girerdi. Sülfitli hamur 47.04’te, mekanik-kimyasal karma hamur 47.05’tedir.",
+   "dayanak": "47.03 pozisyon metni ve Açıklama Notu; Fasıl 47 Not 1."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 47.06 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Linter pamuğu hamuru",
+    "Geri kazanılmış kağıt veya karton liflerinin hamuru",
+    "Bambudan elde edilen hamur",
+    "Ladin odunundan elde edilen termo mekanik hamur",
+    "Şeker kamışı posasından elde edilen kimyasal hamur"
+   ],
+   "cevap": "D",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "47.06 geri kazanılmış kağıt-karton liflerinin ve odun dışındaki diğer lifli selülozik maddelerin (linter, bambu, şeker kamışı posası vb.) hamurlarını kapsar. Ladin odunundan termo mekanik hamur odun hamuru olup 47.01’dedir. Hamur sınıflandırmasında önce hammaddenin odun olup olmadığına bakılır.",
+   "dayanak": "47.06 pozisyon metni ve Açıklama Notu; 47.01 Açıklama Notu; Fasıl 47 Genel Açıklamalar."
+  },
+  {
+   "soru": "Aşağıdaki eşya çiftlerinden hangisinde her iki eşya da aynı pozisyonda yer alır?",
+   "secenekler": [
+    "Pamuk linterleri – Linter pamuğu hamuru",
+    "Eski dergiler – Matbaa makinelerinden çıkan ıskarta kağıtlar",
+    "Kağıt döküntüsü – Kağıt yünü",
+    "Mekanik odun hamuru – Kimyasal işlem görmüş rafine odun hamuru",
+    "Çözünür kimyasal odun hamuru – Çözünür olmayan sülfitli kimyasal odun hamuru"
+   ],
+   "cevap": "B",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Eski gazete ve dergiler ile matbaa ıskartaları 47.07 Açıklama Notunda birlikte sayılmıştır. Linter 14.04, linter hamuru 47.06; kağıt döküntüsü 47.07, kağıt yünü 48.23; mekanik hamur 47.01, kimyasal işlem görmüş rafine hamur 47.05; çözünür hamur 47.02, çözünür olmayan sülfitli hamur 47.04’tedir.",
+   "dayanak": "47.01–47.07 Açıklama Notları; Fasıl 47 Genel Açıklamalar."
+  },
+  {
+   "soru": "Aşağıdaki ifadelerden hangileri doğrudur? I. Sülfat işleminde kaynatma çözeltisi olarak modifiye edilmiş sodyum hidroksit çözeltileri kullanılır. II. Sülfitli işlemde genellikle asit çözelti kullanılır ve çözeltide serbest kükürt dioksit bulunur. III. Mekanik odun hamurunun lifleri kimyasal hamura göre daha uzun ve dayanıklıdır. IV. Kimyasal odun hamuru, aynı hammaddeden elde edilen mekanik hamura göre selüloz bakımından daha zengindir.",
+   "secenekler": [
+    "I, II ve IV",
+    "I ve III",
+    "II ve III",
+    "I, III ve IV",
+    "II, III ve IV"
+   ],
+   "cevap": "A",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "47.03 Açıklama Notuna göre sülfatlı hamurda modifiye sodyum hidroksit çözeltileri kullanılır (I); 47.04 Açıklama Notuna göre sülfit işleminde asit çözelti ve serbest kükürt dioksit vardır (II). 47.02 Açıklama Notu kimyasal hamurun lif uzunluğu ve selüloz bakımından mekanik hamurdan üstün olduğunu belirtir (IV). Mekanik hamurun lifleri oldukça kısadır (III yanlış).",
+   "dayanak": "47.01, 47.02, 47.03 ve 47.04 Açıklama Notları."
+  },
+  {
+   "soru": "Rejenere selüloz, selüloz asetat ve filtre kağıdı yapımında kullanılmak üzere özel olarak rafine edilmiş ve saflaştırılmış, Fasıl 47 Not 1 ölçütlerini karşılayan sülfitli odun hamuru hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "47.04",
+    "47.03",
+    "47.05",
+    "39.12",
+    "47.02"
+   ],
+   "cevap": "E",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Not 1’deki çözünürlük ve kül ölçütlerini karşılayan kimyasal odun hamuru, elde ediliş yöntemi sülfit de olsa çözünür kimyasal odun hamuru olarak 47.02’dedir; 47.04 metni çözünür hamuru açıkça hariç tutar. Hamur, selüloz türevlerinin hammaddesi olduğu için 39.12’ye girmez.",
+   "dayanak": "Fasıl 47 Not 1; 47.02 ve 47.04 pozisyon metinleri."
+  },
+  {
+   "soru": "47.01 pozisyonu Açıklama Notuna göre aşağıdakilerden hangisi <b>doğrudur</b>?",
+   "secenekler": [
+    "Mekanik odun hamuru gazete kağıdı yapımında hiç kullanılmaz.",
+    "Rafine edilerek elde edilen odun hamurları sonradan kimyasal işlem görseler de 47.01’de kalır.",
+    "Ezmeden önce buharlanan odundan kahverengi, daha sağlam lifli mekanik hamur elde edilir.",
+    "Mekanik odun hamuru lifleri uzun olduğundan genellikle tek başına kullanılır.",
+    "Taş basıncıyla ezilen odun (PGW) yarı kimyasal hamur sayılır."
+   ],
+   "cevap": "C",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Açıklama Notuna göre ezmeden önce buharlanan odundan kahverengi mekanik odun hamuru elde edilir. Mekanik hamur kısa lifli olduğundan çoğunlukla kimyasal hamurla karıştırılır ve gazete kağıdı bu karışımdan yapılır. Kimyasal işlem gören rafine hamurlar 47.05’e gider; PGW mekanik hamurdur.",
+   "dayanak": "47.01 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 47.03 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Çözünür olmayan, beyazlatılmamış sodalı odun hamuru",
+    "Fasıl 47 Not 1’deki çözünürlük ölçütünü karşılayan sülfatlı kimyasal odun hamuru",
+    "Çözünür olmayan, beyazlatılmış sülfatlı odun hamuru",
+    "Geniş yapraklı ağaçlardan elde edilen, çözünür olmayan sülfatlı hamur",
+    "Çocuk bezi gibi emici ürünlerin üretiminde kullanılan, çözünür olmayan sülfatlı hamur"
+   ],
+   "cevap": "B",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "47.03 metni çözünür kimyasal odun hamurunu açıkça hariç tutar; Not 1 ölçütünü karşılayan hamur, sülfat işlemiyle elde edilse de 47.02’dedir. Beyazlatma derecesi ve ağaç türü yalnız alt pozisyon ayrımını etkiler; Açıklama Notu emici ürünlerin üretimini bu hamurların kullanım alanları arasında sayar.",
+   "dayanak": "47.03 pozisyon metni ve Açıklama Notu; Fasıl 47 Not 1."
+  },
+  {
+   "soru": "47.07 Açıklama Notuna göre: “Kağıt veya karton döküntü ve hurdaları normal olarak ……… imalinde kullanılır ve genellikle ……… halinde bulunur.” Cümlesindeki boşluklara sırasıyla aşağıdakilerden hangisi gelmelidir?",
+   "secenekler": [
+    "kağıt yünü – sarılmış rulolar",
+    "lif levha – preslenmiş levhalar",
+    "karton – pullar",
+    "selüloz esteri – toz",
+    "kağıt hamuru – balyalar"
+   ],
+   "cevap": "E",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "47.07 Açıklama Notuna göre bu döküntü ve hurdalar normal olarak kağıt hamuru imalinde kullanılır ve genellikle sıkıştırılmış balyalar halinde bulunur. Kağıt yünü 48.23’te, lif levha 44.11’de yer alan farklı ürünlerdir.",
+   "dayanak": "47.07 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre aşağıdaki kağıt artıklarından hangisi diğerlerinden farklı bir pozisyonda yer alır? (Gümüş içeren artıklar esas olarak gümüş geri kazanımı için kullanılmaktadır.)",
+   "secenekler": [
+    "Eski gazete ve dergilerin satılmamış nüshaları",
+    "Paketlemede de kullanılabilecek kağıt kırpıntıları",
+    "Gümüş içeren fotoğraf kağıdı kırpıntıları",
+    "Ayıklanmamış oluklu karton ve kağıt hurdası",
+    "Matbaa makinelerinden çıkan ıskarta ve prova kağıtları"
+   ],
+   "cevap": "C",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "47.07 Açıklama Notu, esas olarak kıymetli metalin geri kazanılması için kullanılan, gümüş içeren fotoğraf kağıdı kırpıntı ve hurdalarını hariç tutar ve 71.12’ye gönderir. Eski gazete, kağıt kırpıntısı, oluklu karton hurdası ve matbaa provaları 47.07’dedir.",
+   "dayanak": "47.07 Açıklama Notu; 71.12 pozisyon metni."
+  },
+  {
+   "soru": "“Sentetik kağıt hamuru” olarak satılan, yapışık olmayan polietilen liflerinin tabakalarından oluşan ürün, adına rağmen Fasıl 47’de değil 39.20’de sınıflandırılır. Bu sonuç öncelikle hangi kurala dayanır?",
+   "secenekler": [
+    "GYK 1 – pozisyon metinleri ve notlar",
+    "GYK 3(a) – eşyayı en özel niteleyen pozisyon",
+    "GYK 3(b) – esas nitelik",
+    "GYK 4 – en çok benzeyen eşya",
+    "GYK 2(b) – karışımlar"
+   ],
+   "cevap": "A",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 1’e göre sınıflandırma pozisyon metinlerine ve notlara göre yapılır. 47.01–47.06 metinleri odun veya diğer lifli selülozik maddelerin hamurlarını kapsar; polietilen selülozik olmadığından bu metinlere uymaz ve Genel Açıklamalar ürünü 39.20’ye gönderir. Eşya tek bir pozisyona girdiğinden 3. veya 4. kurallara gerek yoktur; ticari adı da belirleyici değildir.",
+   "dayanak": "GYK 1; Fasıl 47 Genel Açıklamalar."
+  },
+  {
+   "soru": "İğne yapraklı ağaç yongaları, sodyum hidroksit ve sodyum sülfat karışımı kaynatma çözeltisinde kaynatılarak hamur haline getirilmiş, ardından beyazlatılmıştır. Hamur, Not 1’deki çözünürlük ölçütünü karşılamamaktadır ve yırtılmaya dayanıklı ambalaj kağıdı üretiminde kullanılacaktır. Ürün hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "47.02",
+    "47.04",
+    "47.05",
+    "47.03",
+    "48.04"
+   ],
+   "cevap": "D",
+   "tip": "Senaryo",
+   "gerekce": "Sodyum hidroksit ve sodyum sülfat karışımıyla yapılan kaynatma sülfat işlemidir; çözünür olmayan sülfatlı kimyasal odun hamuru 47.03’tedir. Açıklama Notu bu hamurların yırtılmaya ve gerilmeye dirençli kağıtlar için kullanıldığını belirtir. Beyazlatılmış olması pozisyonu değiştirmez; henüz kağıt olmadığı için 48.04’e girmez.",
+   "dayanak": "47.03 pozisyon metni ve Açıklama Notu; Fasıl 47 Not 1."
+  }
+ ]
+}

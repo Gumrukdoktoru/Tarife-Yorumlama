@@ -1,0 +1,1835 @@
+[
+ {
+  "no": 1,
+  "metin": "Dokumaya elverişli maddeler ve bunlardan mamul eşya Türk Gümrük Tarife Cetvelinin hangi bölüm ve hangi fasıllarında yer almaktadır? A) Dördüncü bölüm, 16-24 fasıl B) Yedinci bölüm, 39-40 fasıl C) Dokuzuncu bölüm, 44-46 fasıl D) On birinci bölüm, 50-63 fasıl",
+  "cevap": "D",
+  "fasillar": [
+   24,
+   40,
+   46,
+   63
+  ]
+ },
+ {
+  "no": 2,
+  "metin": "Uyumlaştırılmış mal tanım ve kodlama sistemi olan Armonize Sistem ile ilgili aşağıdaki ifadelerden hangisi yanlıştır? A) 21 Bölüm ve 99 Fasıldan oluşur. B) Anlaşmazlıkları Dünya Ticaret Örgütü (DTÖ) tarafından sonuçlandırılır. C) Sınıflandırma ham maddeden mamule doğru bir sıra takip eder. D) Altı rakamlı kodlama tüm üye ülkelerde temel alınır.",
+  "cevap": "B",
+  "fasillar": []
+ },
+ {
+  "no": 3,
+  "metin": "Türk Gümrük Tarife Cetvelinde kullanılan ölçü birimleri ile bu ölçü birimlerinin kısaltılması ile ilgili aşağıdaki eşleştirmelerden hangisi yanlıştır? A) GT - Gross ton B) p / a - Adet C) ct / l - Ton başına taşıma kapasitesi D) ce / el - Hücre adedi",
+  "cevap": "B",
+  "fasillar": []
+ },
+ {
+  "no": 4,
+  "metin": "Türk Gümrük Tarife Cetvelinin yorumu ile ilgili genel kurallara ilişkin aşağıdaki ifadelerden hangisi yanlıştır? A) Eşyayı en özel şekilde tanımlayan pozisyon, daha genel şekilde tanımlayan pozisyona göre öncelik alır. B) Tarifenin belirli bir pozisyonunda herhangi bir eşyaya yapılan atıf bu eşyanın imali bitirilmemiş olanlarını da kapsar. C) Tarife yorumu ile ilgili genel kurallara uygun olarak sınıflandırılamayan eşya, bu eşyaya kıymet ve ticari miktar olarak en yakın aynı eşyanın bulunduğu pozisyonda sınıflandırılır. D) Tarifenin belirli bir pozisyonunda herhangi bir maddeye yapılan atıf, bu maddenin karışımlarını, biçimlerini ve diğer maddelerle birleştirilmiş veya karıştırılmış hallerini de içine alır.",
+  "cevap": "C",
+  "fasillar": []
+ },
+ {
+  "no": 5,
+  "metin": "İstatistik pozisyonlarına bölünmüş Türk Gümrük Tarife Cetvelinin ilk sütununda kullanılan 12 rakamlı kodun 7-8 inci rakamları aşağıdakilerden hangisini göstermek için kullanılır? A) AB Kombine Nomanklatürü kodunu B) Armonize Sistem Nomanklatürü kodunu C) Farklı vergi uygulamaları nedeniyle açılan pozisyon kodlarını D) İstatistik kodlarını",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 6,
+  "metin": "Boyanmış demirden mamul, ütü yapılan üst kısmı 10 mm kalınlığında keçe ve pamuk dokuma ile kaplanmış, kordonu, fişi ve prizi olan katlanabilir ütü masası hangi tarife pozisyonundadır? A) 63.07 B) 73.23 C) 84.51 D) 94.03",
+  "cevap": "B",
+  "fasillar": [
+   63,
+   73,
+   84,
+   94
+  ]
+ },
+ {
+  "no": 7,
+  "metin": "Kredi Kartı ile ödeme sağlayan POS makinaları hangi tarife pozisyonundadır? A) 84.70 B) 84.71 C) 84.72 D) 84.79",
+  "cevap": "A",
+  "fasillar": [
+   84
+  ]
+ },
+ {
+  "no": 8,
+  "metin": "Dış Yüzü pamuklu dokunmuş mensucattan mamul uyku tulumları hangi tarife pozisyonundadır? A) 62.03 B) 63.01 C) 63.04 D) 94.04",
+  "cevap": "D",
+  "fasillar": [
+   62,
+   63,
+   94
+  ]
+ },
+ {
+  "no": 9,
+  "metin": "Dondurulmuş balina eti tarife cetvelinde hangi pozisyonundadır? A) 02.07 B) 02.08 C) 03.02 D) 03.03",
+  "cevap": "B",
+  "fasillar": [
+   2,
+   3
+  ]
+ },
+ {
+  "no": 10,
+  "metin": "Dış tabanındaki boşluğa sökülemeyecek şekilde yerleştirilmiş iki adet tekerliği bulunan üst kısmı deri, alt kısmı kauçuktan tekerlekli ayakkabı hangi tarife pozisyonunda yer alır? A) 64.01 B) 64.03 C) 95.06 D) 95.03",
+  "cevap": "C",
+  "fasillar": [
+   64,
+   95
+  ]
+ },
+ {
+  "no": 11,
+  "metin": "Çakmaklarda kullanılan içi sıvılaştırılmış petrol gazı (LPG) ile doldurulmuş plastikten mamul gaz haznesi hangi tarife pozisyonundadır? A) 27.07 B) 27.11 C) 39.26 D) 96.13",
+  "cevap": "D",
+  "fasillar": [
+   27,
+   39,
+   96
+  ]
+ },
+ {
+  "no": 12,
+  "metin": "Uluslararası eşya taşımacılığına uygun olarak yapılmış demir konteynerler hangi tarife pozisyonundadır? A) 73.09 B) 73.26 C) 86.09 D) 87.09",
+  "cevap": "C",
+  "fasillar": [
+   73,
+   86,
+   87
+  ]
+ },
+ {
+  "no": 13,
+  "metin": "22.02 tarife pozisyonu anlamında alkolsüz içecek tabirinden alkol derecesi hacim itibariyle en fazla kaç olan içecekler anlaşılır? A) %0,2 B) %0,5 C) %1 D) %2",
+  "cevap": "B",
+  "fasillar": [
+   22
+  ]
+ },
+ {
+  "no": 14,
+  "metin": "Ham vazelin hangi tarife pozisyonundadır? A) 27.12 B) 33.04 C) 33.07 D) 34.01",
+  "cevap": "A",
+  "fasillar": [
+   27,
+   33,
+   34
+  ]
+ },
+ {
+  "no": 15,
+  "metin": "Elektro manyetik dalgalarla çalışan uzaktan kumanda cihazları hangi tarife pozisyonundadır? A) 85.26 B) 85.43 C) 90.14 D) 90.22",
+  "cevap": "A",
+  "fasillar": [
+   85,
+   90
+  ]
+ },
+ {
+  "no": 16,
+  "metin": "Aşağıdakilerden hangisi 42.02 tarife pozisyonunda sınıflandırılmaz? A) Koyun derisinden cüzdan B) Dış yüzü dokumaya elverişli maddelerden mamul tekerlekli, çekme kollu valiz C) Ahşap mücevher kutusu D) Kalıplanmış plastik maddeden mamul okul çantası",
+  "cevap": "C",
+  "fasillar": [
+   42
+  ]
+ },
+ {
+  "no": 17,
+  "metin": "Aşağıdakilerden hangisi halen yürürlükte olan Türk Gümrük Tarife cetvelinin yapısal dayanağını oluşturmaktadır? A) Armonize sistem nomanklatürü B) Cenevre nomanklatürü C) Brüksel nomanklatürü D) Gümrük İş birliği nomanklatürü",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 18,
+  "metin": "Aşağıdakilerden hangisi kombine nomanklatür pozisyonudur? A) 8473.30 B) 85.17 C) 8471.49.00.10.00 D) 8479.89.97",
+  "cevap": "D",
+  "fasillar": [
+   10,
+   49,
+   84,
+   85,
+   89
+  ]
+ },
+ {
+  "no": 19,
+  "metin": "Bağlayıcı Tarife Bilgisinin, Dünya Gümrük Örgütünün uymakla yükümlü bulunduğumuz nomanklatür, izahname, tarife pozisyonlarına ilişkin kararlarındaki bir değişikliğe uymaması nedeniyle geçerliliğini kaybetme tarihi hangisidir? A) Dünya Gümrük Örgütünün nomanklatürü, izahname ve tarife pozisyonlarına ilişkin kararlarındaki değişikliğin yapıldığı tarih B) BTB’nin geçerliliğini kaybetmesinin hak sahibine tebliğ edildiği tarih C) Değişikliklerin resmi gazetede yayımlandığı tarih D) Kararların resmi gazetede yayınlanmasına müteakip ilgiliye yapılacak tebliğ tarihi",
+  "cevap": "C",
+  "fasillar": []
+ },
+ {
+  "no": 20,
+  "metin": "Aşağıdakilerden hangisi tarife cetvelinde 8. Fasılda sınıflandırılmaz? A) Hindistan Cevizi B) Yer Fıstığı C) Kestane D) Antep Fıstığı",
+  "cevap": "B",
+  "fasillar": [
+   8
+  ]
+ },
+ {
+  "no": 21,
+  "metin": "Aşağıdakilerden hangisi tarife cetvelinde 12. Fasılda sınıflandırılır? A) Kuş yemi B) Mısır C) Fiğ D) Darı",
+  "cevap": "C",
+  "fasillar": [
+   12
+  ]
+ },
+ {
+  "no": 22,
+  "metin": "Aşağıdakilerden hangisi tarife cetvelinde aynı Fasılda yer almaz? A) Buz dolabı B) Bulaşık Makinası C) Çamaşır Makinası D) Fırın",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 23,
+  "metin": "Eritilmiş Kuvartz ’tan mamul borular hangi fasılda sınıflandırılır? A) 70 B) 71 C) 81 D) 82",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 24,
+  "metin": "Deniz suyu hangi fasıldadır? A) 22 B) 25 C) 30 D) 33",
+  "cevap": "B",
+  "fasillar": []
+ },
+ {
+  "no": 25,
+  "metin": "Aşağıdakilerden hangisi Armonize sistemde yer almaz? A) Bölüm notu B) Fasıl notu C) Ek not D) Alt Pozisyon Notu",
+  "cevap": "C",
+  "fasillar": []
+ },
+ {
+  "no": 26,
+  "metin": "Sınıflandırılması yapılan bir eşyayı “Çift tireli (- -) 2711.11 tarife alt pozisyonu” başlığı altında mı yoksa yine “çift tireli (- -) 2711.12 tarife alt pozisyonu” başlığı altında mı değerlendirmemiz gerektiğine karar verirken tarife cetvelinin yorumu ile ilgili genel kurallardan (GYK) hangisi kullanılır? A) GYK 1 B) GYK 2-a C) GYK 3-a D) GYK 6",
+  "cevap": "D",
+  "fasillar": [
+   27
+  ]
+ },
+ {
+  "no": 27,
+  "metin": "Aşağıdakilerden hangisi 94’üncü fasılda sınıflandırılmaz? A) Kitap rafları B) Uyku tulumları C) Prefabrik yapılar D) Hava ile şişirilen yatak",
+  "cevap": "D",
+  "fasillar": [
+   94
+  ]
+ },
+ {
+  "no": 28,
+  "metin": "Aşağıdaki GTİP’lerde hangisinde istatistik amaçlı ulusal açılımımız vardır? A) 8473.30.10.00.00 B) 8481.80.19.00.12 C) 8471.80.00.90.00 D) 8517.10.00.00.00",
+  "cevap": "B",
+  "fasillar": [
+   10,
+   30,
+   80,
+   84,
+   85,
+   90
+  ]
+ },
+ {
+  "no": 29,
+  "metin": "BTB’nin, Dünya Gümrük Örgütünün uymakla yükümlü bulunduğumuz nomanklatür, izahname, tarife pozisyonlarına ilişkin kararlarındaki bir değişikliğe uymaması nedeniyle geçerliliğini kaybetme tarihi hangisidir? A) Değişiklerin Resmî Gazete’de yayımlandığı tarih B) BTB’nin geçerliliğini kaybetmesinin hak sahibi- ne tebliğ edildiği tarih C) Kararların Resmî Gazete’de yayınlanmasına müteakip ilgiliye yapılacak tebliğ tarihi D) Dünya Gümrük Örgütünün nomanklatürü, izahname ve tarife pozisyonlarına ilişkin kararlarındaki değişikliğin yapıldığı tarih",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 30,
+  "metin": "Aşağıdakilerden hangisi tarife mevzuatının uygulanmasında bağlayıcı kaynaklar arasında değildir? A) Türk Gümrük Tarife cetveli B) Gümrük Tarife Cetveli İzahnamesi C) Avrupa Birliği Bağlayıcı Tarife Bilgisi veri tabanı D) Avrupa Birliği Kombine Nomanklatürü Açıklama Notları",
+  "cevap": "C",
+  "fasillar": []
+ },
+ {
+  "no": 31,
+  "metin": "Fotoğraf makinesi kabı, müzik aleti mahfazası, kolye kutuları ve benzeri kutular gibi belli bir eşya ya da takım hâlinde eşyaya uygun olarak yapılmış olup, uzun süre kullanılmaya uygun ve ait oldukları eşya ile birlikte ithal edilen mahfaza ve kutular kaç nolu kural kapsamında değerlendirilir? A) Kural 2 B) Kural 3 C) Kural 4 D) Kural 5",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 32,
+  "metin": "Aşağıdakilerden hangisi tarifenin genel yorum kurallarından 3 (b) kuralı kapsamındadır? A) Cep telefonu ile birlikte perakende satılacak şekilde paketlenmiş cep telefonunun yeniden şarj edilebilir pili B) Üç ajanda ve bir şişe cilt temizleme losyonu paketlenmiş hâlde C) Abajur dayanağı imal edilmek üzere alaşımsız çelikten mamul taslaklar D) Plastik mahfaza içinde tıraş losyonu, kemer, bileklik, cam bardak",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 33,
+  "metin": "Aşağıdakilerden hangisi eşyaların fasıllar hâlinde gruplandırılmalarında gözetilen kriterlerden biri değildir? A) Maddelere göre gruplandırma B) Vergi oranlarına göre gruplandırma C) Kullanım alanına göre gruplandırma D) İmalat ve işleme derecesine göre gruplandırma",
+  "cevap": "B",
+  "fasillar": []
+ },
+ {
+  "no": 34,
+  "metin": "Aşağıdakilerden hangisi 87.03 tarife pozisyonunda (Binek otomobilleri ve esas itibariyle insan taşımak üzere imal edilmiş diğer motorlu taşıtlar) sınıflandırılmaz? A) Ambulans B) İtfaiye aracı C) Motorlu karavan D) Golf arabası",
+  "cevap": "B",
+  "fasillar": [
+   87
+  ]
+ },
+ {
+  "no": 35,
+  "metin": "Kılıçlı baston isimli eşya Türk Gümrük Tarife Cetvelinin hangi fasılında yer almaktadır? A) 66 B) 93 C) 95 D) 90",
+  "cevap": "B",
+  "fasillar": []
+ },
+ {
+  "no": 36,
+  "metin": "Vulkanize kauçuktan contalar hangi tarife pozisyonundadır? A) 84.14 B) 84.13 C) 40.16 D) 40.12",
+  "cevap": "C",
+  "fasillar": [
+   40,
+   84
+  ]
+ },
+ {
+  "no": 37,
+  "metin": "Hava yastığı kullanarak yerle temas etmeden yol alan ve kılavuz bir hat üzerinde gidebilen hava treni hangi fasılda sınıflandırılır? A) 88 B) 86 C) 87 D) 84",
+  "cevap": "B",
+  "fasillar": []
+ },
+ {
+  "no": 38,
+  "metin": "Tarife mevzuatına göre “mücevherci eşyası” tabiri hangisini içermez? A) Çatal-bıçak B) Yüzük, kolye C) Kravat iğnesi D) Tespih",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 39,
+  "metin": "Tarife Cetvelindeki GTİP’lerin esasını teşkil eden fasıl ve tarife pozisyonu dayanağını nereden almaktadır? A) Milli Alt Açılım Kodu B) İstatistiki Açılım Kodu C) AB Kombine Nomanklatürü D) Dünya Gümrük Örgütü Armonize Sistem Nomanklatürü",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 40,
+  "metin": "Aşağıdaki hayvanlardan hangisinin tüyleri ve yünleri alınmamış ham derileri 43. Fasılda sınıflandırılır? A) Tibet keçisi B) İngiliz atı C) Hecin devesi D) Ren geyiği",
+  "cevap": "A",
+  "fasillar": [
+   43
+  ]
+ },
+ {
+  "no": 41,
+  "metin": "Aşağıdaki kara nakil vasıtası aksam, parça ve aksesuar gruplarından hangisinde 87. Fasılda sınıflandırılmayan eşya yoktur? A) Emniyet kemeri, amortisör, cam silici B) Direksiyon simidi, jant, hava yastığı C) Fren, vites kutusu, dikiz aynası D) Debriyaj, radyatör, motor",
+  "cevap": "B",
+  "fasillar": [
+   87
+  ]
+ },
+ {
+  "no": 42,
+  "metin": "Oyuncak bebeklere mahsus camdan gözlerin 7018.90.10.00.11 GTİP no. da sınıflandırılmasında aşağıdaki genel yorum kurallarından (GYK) hangileri kullanılmıştır? A) GYK 1 ve 6 B) GYK 1, 3(b) ve 6 C) GYK 1 ve 3(a) D) GYK 3(a) ve 6",
+  "cevap": "A",
+  "fasillar": [
+   70,
+   90
+  ]
+ },
+ {
+  "no": 43,
+  "metin": "Taşınmasında kolaylık sağlamak için geçici bir ipe dizilmiş 150 yıllık tabii incilerin sınıflandırılması gereken fasıl aşağıdakilerden hangisidir? A) 25 B) 26 C) 71 D) 97",
+  "cevap": "C",
+  "fasillar": []
+ },
+ {
+  "no": 44,
+  "metin": "Deniz Suyu hangi fasıldadır? A) 22 B) 25 C) 27 D) 28",
+  "cevap": "B",
+  "fasillar": []
+ },
+ {
+  "no": 45,
+  "metin": "Aşağıdakilerden hangisi tarifeyle ilgili 2(a) Genel Yorum Kuralının uygulanacağı eşyaya bir örnektir? A) Kravat B) Beton kalıbı C) Tükenmez kalem seti D) Demonte ahşap dolap",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 46,
+  "metin": "Plastik mahfaza içine konulmuş (42.02 pozisyonu), bir cetvel (90.17 pozisyonu), bir hesap diski (90.17 pozisyonu), bir çizim pergeli (90.17 pozisyonu), bir kurşun kalem (96.09 pozisyonu) ve bir kalem açacağı (82.14 pozisyonu) içeren çizim takımları hangi tarife pozisyonunda sınıflandırılır? A) 42.02 B) 90.17 C) 96.09 D) 82.14",
+  "cevap": "B",
+  "fasillar": [
+   42,
+   82,
+   90,
+   96
+  ]
+ },
+ {
+  "no": 47,
+  "metin": "Bakanlar Kurulu Kararı ile Resmî Gazete’de yayımlanarak her yılın 1 Ocak tarihinden geçerli olmak üzere yürürlüğe girmekte olan Türk Gümrük Tarife Cetvelindeki sütunlardan hangisi uygulamaya esas alınmamaktadır? A) Pozisyon No B) Vergi Oranları C) Ölçü Birimleri D) Eşyanın Tanımı",
+  "cevap": "B",
+  "fasillar": []
+ },
+ {
+  "no": 48,
+  "metin": "Aşağıdakilerden hangisi perakende satılacak şekilde birlikte paketlenmiş olarak gümrüğe sunulduğunda set olarak değerlendirilebilir? A) 2 adet not defteri, 1 şişe parfüm B) 1 kalem, 1 kol saati, 1 kutu çikolata C) 1 kurşun kalem, 1 kalem pil, 1 kontrol kalemi D) 1 resim fırçası, 1 kutu suluboya, 1 resim defteri",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 49,
+  "metin": "Üst yüzeyi bambudan örülmüş, ayakları metalden mamul sehpa 9403.20.80.90.00 GTİP no.da “Metalden diğer mobilyalar; diğerleri; diğerleri” olarak sınıflandırılmıştır. Söz konusu sınıflandırmada yararlanılan Genel Yorum Kuralları aşağıdaki seçeneklerin hangisinde doğru olarak verilmiştir? A) 1, 6 B) 1, 3(a), 6 C) 1, 3(b), 6 D) 1, 3(c), 6",
+  "cevap": "B",
+  "fasillar": [
+   20,
+   90,
+   94
+  ]
+ },
+ {
+  "no": 50,
+  "metin": "Pil kömürleri hangi tarife pozisyonunda yer alır? A) 27.06 B) 85.45 C) 85.06 D) 27.13",
+  "cevap": "B",
+  "fasillar": [
+   27,
+   85
+  ]
+ },
+ {
+  "no": 51,
+  "metin": "Hazır çocuk bezleri hangi pozisyonda sınıflandırılır? A) Dış yüzeyi plastikten olduğunda 39.26 B) Emici dokusu kağıttan olduğunda 48.18 C) Emici dokusu pamuktan olduğunda 56.01 D) Mamul olduğu maddeye bakılmaksızın 96.19",
+  "cevap": "D",
+  "fasillar": [
+   39,
+   48,
+   56,
+   96
+  ]
+ },
+ {
+  "no": 52,
+  "metin": "BTB’nin, Dünya Gümrük Örgütünün uymakla yükümlü bulunduğumuz nomanklatür, izahname, tarife pozisyonlarına ilişkin kararlarındaki bir değişikliğe uymaması nedeniyle geçerliliğini kaybetme tarihi hangisidir? A) Değişikliklerin Resmi Gazetede yayımlandığı tarih B) Dünya Gümrük Örgütünün nomanklatürü, izahname ve tarife pozisyonlarına ilişkin kararlarındaki değişikliğin yapıldığı tarih C) BTB’nin geçerliliğini kaybetmesinin hak sahibine tebliğ edildiği tarih D) Kararların Resmi Gazetede yayınlanmasına müteakip ilgiliye yapılacak tebliğ tarihi",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 53,
+  "metin": "Tarife mevzuatına göre ince hayvan kılı hangi hayvandan elde edilemez? A) Katır B) Lama C) Yak D) Keçi",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 54,
+  "metin": "Hava limanlarında kullanılan yolcuların uçağa inip binmelerini sağlayan hareketli bir tünelden oluşan yolcu biniş köprüleri hangi tarife pozisyonundadır? A) 84.26 B) 84.27 C) 84.29 D) 84.79",
+  "cevap": "D",
+  "fasillar": [
+   84
+  ]
+ },
+ {
+  "no": 55,
+  "metin": "Demonte olarak gelen ahşap masa hangi fasılda sınıflandırılır? A) 42 B) 44 C) 47 D) 94",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 56,
+  "metin": "Gümrük vergisinin hesaplanması için kullanılan eşya tanımlama mekanizması aşağıdakilerden hangisidir? A) Fasıl Sistem Sınıflandırması B) Rakam Sistem Sınıflandırması C) Tarife Sistem Sınıflandırması D) Armonize Sistem Sınıflandırması",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 57,
+  "metin": "Türk Gümrük Tarife Cetveli’nde eşyalar kaç haneli rakamlarla gösterilir? A) 7 B) 9 C) 12 D) 15",
+  "cevap": "C",
+  "fasillar": []
+ },
+ {
+  "no": 58,
+  "metin": "Türk Gümrük Tarife Cetveli’nde “Kombine Nomanklatür Kodunu” aşağıdaki hangi haneler gösterir? A) 5 – 6 B) 7 – 8 C) 9 – 10 D) 11 – 12",
+  "cevap": "B",
+  "fasillar": []
+ },
+ {
+  "no": 59,
+  "metin": "İthal malların bir ülkeye girişinde, hangi matrah üzerinden ve ne oranda vergilendirileceklerini bildiren tarife aşağıdakilerden hangisidir? A) Gümrük tarifesi B) Asgari ücret tarifesi C) Harç tarifesi D) Satış bilgi tarifesi",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 60,
+  "metin": "Tarife Cetveli’nde yer alan “fasıla ilişkin ilk iki rakamdan sonra gelen iki rakamla birlikte dörtlü rakamlarla ifade edilen sayı grupları” tanımı, aşağıdakilerden hangisidir? A) Bölüm B) Alt pozisyon notu C) Alt pozisyon D) Tarife pozisyonu",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 61,
+  "metin": "Bağlayıcı tarife bilgisi ile ilgili olarak aşağıdakilerden hangisi yanlıştır? A) Bir idari karardır. B) Müsteşarlıkça veya Müsteşarlık tarafından yetkilendirilmiş gümrük ve muhafaza başmüdürlüklerince verilir. C) Yazılı talep üzerine verilir. D) Verildiği tarihten itibaren 1 yıl geçerlidir.",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 62,
+  "metin": "Tarife Cetveline göre aşağıdakilerden hangisi farklı fasılda yer alır? A) Cüruf B) Tuz C) Zımpara taşı D) Amyant",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 63,
+  "metin": "Tarife Cetveline göre aşağıdakilerden hangisi 30. Fasılda yer almaz? A) İnsan kanı B) Gaz bezi C) Sigara bırakmaya yardımcı bant D) Kızamık aşısı",
+  "cevap": "C",
+  "fasillar": [
+   30
+  ]
+ },
+ {
+  "no": 64,
+  "metin": "Tarife Cetveline göre aşağıdaki plastik eşyalardan hangisi 39. Fasılda yer alır? A) Tarak B) Heykel C) Sandalye D) Kurşun kalem",
+  "cevap": "B",
+  "fasillar": [
+   39
+  ]
+ },
+ {
+  "no": 65,
+  "metin": "Tarife mevzuatına göre aşağıdakilerden hangisi tropikal ağaç değildir? A) Limba B) Balsa C) Okaliptus D) Teak",
+  "cevap": "C",
+  "fasillar": []
+ },
+ {
+  "no": 66,
+  "metin": "Perakende satışa hazır hale getirilmiş, yünden mamul bir pantolon ile pamuktan yapılmış bir gömlek hangi genel yorum kuralına (GYK) göre ve ne şekilde sınıflandırılır? A) Ayrı ayrı, GYK 1 B) Ayrı ayrı, GYK 3 C) Gömleğin pozisyonunda, GYK 3 D) Pantolonun pozisyonunda, GYK 3",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 67,
+  "metin": "Tarife mevzuatına göre aşağıdakilerden hangisi spor ayakkabısı değildir? A) Güreş ayakkabısı B) Kayak ayakkabısı C) Bisiklet ayakkabısı D) Deniz ayakkabısı",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 68,
+  "metin": "Tarife mevzuatına göre aşağıdakilerden hangisi kıymetli taştır? A) Akik B) Kehribar C) Lüle taşı D) Arduvaz taşı",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 69,
+  "metin": "Tarife mevzuatına göre aşağıdakilerden hangisi 84. Fasılda yer almaz? A) POS cihazı B) Kalender C) Tanecik hızlandırıcı D) Lazer yazıcı",
+  "cevap": "C",
+  "fasillar": [
+   84
+  ]
+ },
+ {
+  "no": 70,
+  "metin": "Tarife Cetveline göre jelatin kapsüller hangi tarife pozisyonundadır? A) 96.02 B) 35.03 C) 05.11 D) 38.24",
+  "cevap": "A",
+  "fasillar": [
+   5,
+   35,
+   38,
+   96
+  ]
+ },
+ {
+  "no": 71,
+  "metin": "Tarife Cetveline göre kayak merkezinde kullanılmak için ithal edilen tabii kar hangi tarife pozisyonundadır? A) 22.01 B) 25.01 C) 95.06 D) 23.03",
+  "cevap": "A",
+  "fasillar": [
+   22,
+   23,
+   25,
+   95
+  ]
+ },
+ {
+  "no": 72,
+  "metin": "Tarife mevzuatına göre aşağıdakilerden hangisi farklı fasılda yer alır? A) Tuvalet takımı B) Dikiş takımı C) Ayakkabı temizleme takımı D) Manikür takımı",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 73,
+  "metin": "Tarife mevzuatına göre aşağıdakilerden hangisi 94.05 pozisyonundaki bir aydınlatma cihazının aksamı olarak bu pozisyonda sınıflandırılmaz? A) Abajur ayağı B) Reflektör C) Mum D) Lamba camı",
+  "cevap": "C",
+  "fasillar": [
+   94
+  ]
+ },
+ {
+  "no": 74,
+  "metin": "Tarifenin genel yorum kurallarına ilişkin olarak aşağıdakilerden hangisi yanlıştır? A) Tüm kurallar hiyerarşik olarak uygulanır. Yani önce 1. kural uygulanır, bu kuralın uygulanmasıyla eşyanın tarifedeki yeri tespit edilemiyorsa, sırasıyla 2, 3, 4, 5 ve 6 ncı kurallar uygulanır. B) 6 adet Genel Yorum Kuralı bulunmaktadır. C) 1 ila 5 inci kurallar tarife pozisyonu yani dört rakamlı kodlar seviyesinde sınıflandırmayı düzenler, D) Bir sınıflandırmada 1, 5 ve 6. Kurallar birlikte kullanılabilir.",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 75,
+  "metin": "Tarife Cetveline göre bir traktöre monte edilmiş halde çayır biçme makinesi hangi tarife pozisyonunda sınıflandırılır? A) 87.01 B) 84.33 C) 84.29 D) 87.02",
+  "cevap": "B",
+  "fasillar": [
+   84,
+   87
+  ]
+ },
+ {
+  "no": 76,
+  "metin": "Türk Gümrük Tarife Cetveline göre ayakkabı boyası hangi tarife pozisyonunda sınıflandırılır? A) 32.05 B) 35.01 C) 34.05 D) 38.24",
+  "cevap": "C",
+  "fasillar": [
+   32,
+   34,
+   35,
+   38
+  ]
+ },
+ {
+  "no": 77,
+  "metin": "Anahtar taslakları (çelikten mamul) tarifenin hangi yorum kuralına göre sınıflandırılır? A) 2 a B) 2 b C) 3 b D) 4",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 78,
+  "metin": "Tarife Cetveline göre bisikletlerde kullanılan demirden mamul ziller hangi tarife pozisyonundadır? A) 87.14 B) 73.26 C) 96.07 D) 83.06",
+  "cevap": "D",
+  "fasillar": [
+   73,
+   83,
+   87,
+   96
+  ]
+ },
+ {
+  "no": 79,
+  "metin": "Aşağıdaki eşyadan hangisi ihtisas gümrüğü uygulamasına tabidir? A) Düz Cam B) Otomatik vezne makinaları (ATM'ler) C) Kozmetik ürünleri D) Kol saatleri",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 80,
+  "metin": "Tarife Cetveli’nde yer alan eşyaların gümrük vergisi had ve nispetleri, Bakanlar Kurulu’nca bu cetveldeki had ve nispetlerin ne kadarına kadar artırılabilir? A) 3 katına kadar artırılabilir. B) 5 katına kadar artırılabilir. C) %50’sine kadar artırılabilir. D) %30’una kadar artırılabilir.",
+  "cevap": "C",
+  "fasillar": []
+ },
+ {
+  "no": 81,
+  "metin": "Aşağıdakilerden hangisi Tarife Cetveli’nde yer alan tarifenin yorumu ile ilgili genel kurallardan birisi değildir? A) Bölüm, fasıl ve tali fasıl başlıkları bağlayıcı niteliktedir. B) Tarifenin belirli bir pozisyonunda herhangi bir maddeye yapılan atıf, bu maddenin karışımlarını, bileşimlerini ve diğer maddelerle birleştirilmiş hâlini de içine alır. C) Eşyayı en özel şekilde tanımlayan pozisyon, daha genel şekilde tanımlayan pozisyona göre öncelik alır. D) Tarifenin belirli bir pozisyonunda bir eşyaya yapılmış atıf, ayırt edici niteliğini içermesi şartıyla imali bitirilmemiş ve aksamı tamamlanmamış olanlarını da kapsar.",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 82,
+  "metin": "Aşağıdakilerden hangisi Tarife Cetveli’nin 2. Bölümünde bulunan “Bitkisel Ürünler” içerisinde yer almaz? A) Yenilen sebzeler ve bazı kök ve yumrular B) Yenilen çeşitli gıda müstahzarları C) Hububat D) Lak; sakız, reçine ve diğer bitkisel özsu ve hülasalar",
+  "cevap": "B",
+  "fasillar": []
+ },
+ {
+  "no": 83,
+  "metin": "Tarife Cetveli’nin 5. Bölümünde aşağıda verilen hangi ürün grupları yer alır? A) Mineral Maddeler B) Taş, Alçı, Çimento C) Ağaç ve Ahşap Eşya D) Deriler ve Köseleler",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 84,
+  "metin": "Tarife Cetveli’nde aynı tarife pozisyonunun alt açılımında bulunan ve aynı kanuni veya tercihli vergi oranına tabi olan eşya çeşidine ne denir? A) Kalem sayısı B) Aynı eşya C) Yaklaşık eşya D) Bir kalem eşya",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 85,
+  "metin": "Teleferikler, Türk Gümrük Tarife Cetveli’nin hangi pozisyonunda sınıflandırılır? A) 84.25 B) 84.28 C) 87.09 D) 88.04",
+  "cevap": "B",
+  "fasillar": [
+   84,
+   87,
+   88
+  ]
+ },
+ {
+  "no": 86,
+  "metin": "Aşağıdakilerden hangisi Türk Gümrük Tarife Cetveli’nde diğerlerinden daha sonraki bir pozisyonda sınıflandırılır? A) Şemsiye B) Baston C) Peruk D) Miğfer",
+  "cevap": "C",
+  "fasillar": []
+ },
+ {
+  "no": 87,
+  "metin": "Aşağıdakilerden hangisi Türk Gümrük Tarife Cetvelinde diğerlerinden farklı bir fasılda sınıflandırılır? A) Biodizel B) Antrasit C) Fuel Oil D) Turba",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 88,
+  "metin": "Aşağıdaki adi metallerden hangisi için Armonize Sistem Nomanklatüründe özel olarak açılmış bir fasıl bulunmaktadır? A) Magnezyum B) Titanyum C) Krom D) Kalay",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 89,
+  "metin": "Aşağıdaki bitkisel ürünlerden hangisi Türk Gümrük Tarife Cetveli’nin 9. faslında sınıflandırılmaz? A) Salep B) Vanilya C) Tarçın D) Defne yaprağı",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 90,
+  "metin": "%35 sentetik lif, %20 suni lif, %40 ipek ve %5 pamuk karışımından dokunmuş kumaşın tarife cetvelinde sınıflandırılmasında tarifenin hangi genel yorum kuralı kullanılır? A) 3 (b) B) 2 (b) C) 2 (a) D) 1",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 91,
+  "metin": "Aşağıdakilerden hangisi tarifenin 3 (b) genel yorum kuralının uygulanmasında “perakende olarak satılacak hâle getirilmiş takım hâlinde bulunan eşya” nın belirlenmesinde gözetilen şartlardan biri değildir? A) İlk bakışta farklı pozisyonlarda sınıflandırılabilen, en az iki farklı parçadan mamul eşya olması B) Özel bir gereksinmeyi karşılamak veya belirli bir işlevi yerine getirmek üzere bir araya getirilmiş ürünlerden oluşması C) Aynı pozisyona giren aynı cins eşyanın çok sayıda bulunduğu ambalajlar hâlinde olması D) Yeniden paketlemeye gerek kalmadan kullanıcılara doğrudan satış için uygun biçimde düzenlenmiş olması",
+  "cevap": "C",
+  "fasillar": []
+ },
+ {
+  "no": 92,
+  "metin": "Aşağıdaki otomobil aksamlarından hangisi Türk Gümrük Tarife Cetvelinde motorlu taşıt aksam ve parçalarının sınıflandırıldığı 87.08 tarife pozisyonunda değildir? A) Cam siliciler B) Radyatörler C) Hava yastıkları D) Emniyet kemerleri",
+  "cevap": "A",
+  "fasillar": [
+   87
+  ]
+ },
+ {
+  "no": 93,
+  "metin": "Tarife Cetveli’nin 32. fasıl notlarına göre; 39.01 ila 39.13 pozisyonlarında belirtilen ürünlerin herhangi birinden oluşan çözeltiler (kollodyonlar hariç); uçucu organik çözücüler içinde, çözücünün ağırlığı çözeltinin ağırlığının %50’sinden fazla olduğu zaman hangi pozisyonda yer alır? A) 27.10 B) 32.08 C) 34.03 D) 38.14",
+  "cevap": "B",
+  "fasillar": [
+   27,
+   32,
+   34,
+   38,
+   39
+  ]
+ },
+ {
+  "no": 94,
+  "metin": "Aşağıdakilerden hangisi Türk Gümrük Tarife Cetveli’nin 84.43 tarife pozisyonunda sınıflandırılır? A) Teksir makinesi B) Çek yazma makinesi C) Yazı makinesi D) Faks makinesi",
+  "cevap": "D",
+  "fasillar": [
+   84
+  ]
+ },
+ {
+  "no": 95,
+  "metin": "Para ayırma, sayma veya paketleme makineleri Türk Gümrük Tarife Cetveli’nin hangi pozisyonunda sınıflandırılır? A) 84.13 B) 84.19 C) 84.52 D) 84.72",
+  "cevap": "D",
+  "fasillar": [
+   84
+  ]
+ },
+ {
+  "no": 96,
+  "metin": "Aşağıdakilerden hangisinde eşyalar Türk Gümrük Tarife Cetvelindeki tarife pozisyon numara sıralamasına uygun olarak dizilmiştir? A) Gözlük çerçevesi - Şırınga - Mikroskop B) Şırınga - Gözlük çerçevesi - Mikroskop C) Gözlük çerçevesi - Mikroskop - Şırınga D) Mikroskop - Gözlük çerçevesi - Şırınga",
+  "cevap": "C",
+  "fasillar": []
+ },
+ {
+  "no": 97,
+  "metin": "Aşağıdakilerden hangisi Türk Gümrük Tarife Cetveli’nde diğerlerinden farklı bir fasılda sınıflandırılır? A) Koltuk B) Tripod C) Avize D) Ameliyat masası",
+  "cevap": "B",
+  "fasillar": []
+ },
+ {
+  "no": 98,
+  "metin": "Aşağıdakilerden hangisi Türk Gümrük Tarife Cetveli’nde diğerlerinden farklı bir bölümde sınıflandırılır? A) Klinker B) Yağlı boya C) Şampuan D) Haşarat öldürücü",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 99,
+  "metin": "Aşağıdakilerden hangisi Türk Gümrük Tarife Cetveli’nde 49. fasılda sınıflandırılır? A) Sigara kâğıdı B) Takvim C) Ajanda D) Gazete kâğıdı",
+  "cevap": "B",
+  "fasillar": [
+   49
+  ]
+ },
+ {
+  "no": 100,
+  "metin": "Aşağıdakilerden hangisi Türk Gümrük Tarife Cetveli’nde taze turunçgillerin yer aldığı 08.05 pozisyonunda sınıflandırılmaz? A) Portakal B) Mandarin C) Kivi D) Greyfurt",
+  "cevap": "C",
+  "fasillar": [
+   8
+  ]
+ },
+ {
+  "no": 101,
+  "metin": "Aşağıdakilerden hangisi Türk Gümrük Tarife Cetveli’nde 87.01 ila 87.05 tarife pozisyonların- da yer alan motorlu taşıtların aksam-parça ve aksesuarını içeren 87.08 tarife pozisyonunda sınıflandırılmaz? A) Direksiyon simidi B) Ateşleme bujisi C) Emniyet Kemeri D) Rot",
+  "cevap": "B",
+  "fasillar": [
+   87
+  ]
+ },
+ {
+  "no": 102,
+  "metin": "Tarife Cetveli ile ilgili aşağıdakilerden hangisi doğrudur? A) Türk Gümrük Tarife Cetveli’nin XIV. Bölümü kıymetli taşları kapsar. B) 2017 yılı Türk Gümrük Tarife Cetveli tebliğ olarak Resmî Gazete’de yayınlanmıştır. C) Türk Gümrük Tarife Cetvelinde yer alan tarife pozisyonu metinleri bağlayıcı değildir. D) Türk Gümrük Tarife Cetvelinde 5 adet yorum kuralı bulunur.",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 103,
+  "metin": "Birlikte gümrüğe sunulan keman ve bu kemana uygun olarak yapılmış mahfazası hangi yorum kuralına göre ve ne şekilde sınıflandırılır? A) Birlikte kemanın pozisyonunda, GYK 2 B) Birlikte kemanın pozisyonunda, GYK 5 C) Keman ve mahfazası ayrı olarak kendi pozisyonlarında, GYK 3 D) Keman ve mahfazası ayrı olarak kendi pozisyonlarında, GYK 6",
+  "cevap": "B",
+  "fasillar": []
+ },
+ {
+  "no": 104,
+  "metin": "Gümrük Genel Tebliği (Tarife) Seri No:14’e göre aşağıdakilerden hangisi yanlıştır? A) Bağlayıcı Tarife Bilgisi verilmesi için 6 Gümrük ve Ticaret Bölge Müdürlüğü yetkilendirilmiştir. B) Talep edenin verdiği yanlış ve eksik bilgiye dayanan Bağlayıcı Tarife Bilgisi iptal edilir. C) Bağlayıcı Tarife Bilgisi başvurusu elektronik olarak da yapılabilir. D) Bağlayıcı Tarife Bilgisi veriliş tarihinden itibaren 3 yıl geçerlidir.",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 105,
+  "metin": "Aşağıdakilerden hangisi 73.07 tarife pozisyonunda sınıflandırılan demir-çelikten boru bağlantı parçalarından değildir? A) Somun B) Flanş C) Rakor D) Dirsek E) Manşon",
+  "cevap": "A",
+  "fasillar": [
+   73
+  ]
+ },
+ {
+  "no": 106,
+  "metin": "Aşağıdakilerden hangisi 84.83 tarife pozisyonunda sınıflandırılan eşyalardan değildir? A) Krank mili B) Kavrama C) Transmisyon kolanı D) Yatak kovanı E) Kaplin",
+  "cevap": "C",
+  "fasillar": [
+   84
+  ]
+ },
+ {
+  "no": 107,
+  "metin": "Aşağıdaki hububat tanelerinden hangisi Türk Gümrük Tarife Cetveli’nin 10. Faslında sınıflandırılır? A) Kırık buğday B) Kırık arpa C) Kırık pirinç D) Kırık mısır E) Kırık çavdar",
+  "cevap": "C",
+  "fasillar": []
+ },
+ {
+  "no": 108,
+  "metin": "Aşağıdakilerden hangisi Tarife Cetveli’nin 71. Faslında sınıflandırılan kıymet- li/yarı kıymetli taşlardan biri değildir? A) Safir B) Süleyman taşı C) Akik D) Yakut E) Zümrüt",
+  "cevap": "B",
+  "fasillar": []
+ },
+ {
+  "no": 109,
+  "metin": "Aşağıdakilerden hangisi 87.08 tarife pozisyonunda sınıflandırılır? A) Bisiklet tekerleği B) Motorsiklet tekerleği C) Forklift tekerleği D) At arabası tekerleği E) Kamyon tekerleği",
+  "cevap": "E",
+  "fasillar": [
+   87
+  ]
+ },
+ {
+  "no": 110,
+  "metin": "Seyahat battaniyeleri hangi tarife pozisyonun- da sınıflandırılır? A) 60.05 B) 61.17 C) 62.05 D) 63.01 E) 96.05",
+  "cevap": "D",
+  "fasillar": [
+   60,
+   61,
+   62,
+   63,
+   96
+  ]
+ },
+ {
+  "no": 111,
+  "metin": "Aşağıdaki eşyalardan hangisi 94.04 tarife pozisyonunda sınıflandırılır? A) Çekyat kanepe B) Hava ile şişirilmiş koltuk C) Hava ile şişirilmiş yatak D) Su ile şişirilmiş yatak E) Yaylı yatak",
+  "cevap": "E",
+  "fasillar": [
+   94
+  ]
+ },
+ {
+  "no": 112,
+  "metin": "Elektromanyetik frenler hangi tarife pozisyonunda sınıflandırılır? A) 84.12 B) 84.81 C) 85.05 D) 87.09 E) 88.04",
+  "cevap": "C",
+  "fasillar": [
+   84,
+   85,
+   87,
+   88
+  ]
+ },
+ {
+  "no": 113,
+  "metin": "Aşağıdaki tarife pozisyonlarının hangisinde eldiven sınıflandırılır? A) 39.25 B) 40.15 C) 48.19 D) 61.15 E) 62.15",
+  "cevap": "B",
+  "fasillar": [
+   39,
+   40,
+   48,
+   61,
+   62
+  ]
+ },
+ {
+  "no": 114,
+  "metin": "Aşağıdaki tarife pozisyonlarının hangisinde bir kenarı 50 cm uzunluğunda kare biçiminde fular sınıflandırılır? A) 62.13 B) 62.14 C) 62.15 D) 62.16 E) 62.17",
+  "cevap": "A",
+  "fasillar": [
+   62
+  ]
+ },
+ {
+  "no": 115,
+  "metin": "Aşağıdaki seçeneklerin hangisinde aynı tarife pozisyonunda (4’lü) yer almayan eşya bulunmaktadır? A) Spektrometre, pozmetre, mikrotom B) Taksimetre,stroboskop, pedometre C) Termometre, barometre, mikrometre D) Debimetre, manometre, kalorimetre E) Pantograf, iletki,sürgülü cetvel",
+  "cevap": "C",
+  "fasillar": []
+ },
+ {
+  "no": 116,
+  "metin": "Kare sert meşe masa ve ekose kumaş minderli eşleşen ahşap 2 sandalyeden oluşan, perakende satışta tek kutu içine konulan demonte set halindeki eşya hangi yorum kuralına göre hangi pozisyonda sınıflandırılır? A) 94.01 GYK 1, 2 (a), 3(c) ve 6 B) 94.01 GYK 1, 2 (a), 3(b) ve 6 C) 94.03 GYK 1, 2 (a), 3(a) ve 6 D) 94.03 GYK 1, 2 (b), 3(b) ve 6 E) 94.03 GYK 1, 2 (a), 3(c) ve 6",
+  "cevap": "E",
+  "fasillar": [
+   94
+  ]
+ },
+ {
+  "no": 117,
+  "metin": "Aşağıdaki eşyaların hangisinin aksam-parçaları için 4’lü bazda özel bir tarife pozisyonu oluşturulmamıştır? A) Plastik enjeksiyon makinası B) İçten yanmalı motor C) Dokuma makinası D) Torna tezgâhı E) Asansör",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 118,
+  "metin": "Tarife Cetvelinde 82.02 ila 82.05 pozisyonlarındaki aletlerin iki veya daha fazlasından meydana gelen perakende satış için hazırlanmış takımlar 82.06 tarife pozisyonunda yer almaktadır. Buna göre aşağıdaki hangi takım 82.06 pozisyonunda sınıflandırılmaz? A) El testeresi, pens, sıkıştırma anahtarı B) Çit makası, kaynak lambası, portatif demirci ocağı C) Eğe, tenekeci makası, camcı elması D) Kerpeten, boru kesici, örs E) Mengene, testere ağzı, törpü",
+  "cevap": "B",
+  "fasillar": [
+   82
+  ]
+ },
+ {
+  "no": 119,
+  "metin": "Aşağıdaki demir-çelikten mamul eşyalardan hangisi 73. Fasılda yer almaz? A) Yay B) Filika demiri C) Somun D) Tığ E) Şerit halinde zımba teli",
+  "cevap": "E",
+  "fasillar": [
+   73
+  ]
+ },
+ {
+  "no": 120,
+  "metin": "Ayakla hareket ettirilen, 2 tekerlekli, sele, pedal veya krank dişlisi olmayan, yaklaşık 10 kg ağırlığında araç hangi yorum kuralına göre hangi pozisyonda sınıflandırılır? A) 87.12 GYK 1, 2(a) ve 6 B) 87.12 GYK 1 ve 6 C) 87.16 GYK 1, 2(a) ve 6 D) 87.16 GYK 1 ve 6 E) 87.13 GYK 1, 3(c) ve 6",
+  "cevap": "D",
+  "fasillar": [
+   87
+  ]
+ },
+ {
+  "no": 121,
+  "metin": "Aşağıdakilerden hangisinde eşyalar TGTC’deki pozisyon numaralarına göre küçükten büyüğe olarak doğru sıralanmıştır? A) Deri Ceket – Kâğıt Not Defteri – Plastik Madenci Başlığı – Gazlı Bez B) Elektrik Transformatörü – Pilli El Feneri – Baskılı Devre –Kullanılmış Elektrik Pili C) Sıvı Pompası – Forklift – Süt Sağma Makinası – Buhar Türbini D) Biyodizel – Plastik Şişe – Taklit Kürk – Ateşe Dayanıklı Çimento E) Dudak Ruju – Diş Macunu – Parfüm – Şampuan",
+  "cevap": "B",
+  "fasillar": []
+ },
+ {
+  "no": 122,
+  "metin": "I. Genişliği 700 mm, rulo halinde, sadece sıcak haddelenmiş, kabartmalı motife sahip olmayan ve dekapaj işlemine tabi tutulmamış, kalınlığı 10 mm, ağırlık itibariyle %1 karbon içeren, yeniden haddelemeye mahsus ürün II. Genişliği 600 mm, rulo halinde olmayıp sadece sıcak haddelenmiş, kabartmalı motife sahip olmayan, kalınlığı 12 mm, ağırlık itibariyle %0,1 karbon içeren ürün III. Genişliği 700 mm, rulo halinde, sıcak haddelenmiş, kabartmalı motife sahip olmayan ve dekapaj işlemine tabi tutulmamış, delinmiş, kalınlığı 10 mm, ağırlık itibariyle %1 karbon içeren, dairesel şekilli ürün IV. Genişliği 600 mm, rulo halinde, sadece sıcak haddelenmiş, kabartmalı motife sahip olmayan ve dekapaj işlemine tabi tutulmamış, kalınlığı 2 mm, ağırlık itibariyle %0,1 karbon içeren, yeniden haddelemeye mahsus olmayan ürün TGTC’nin 72.08 pozisyonunda sınıflandırılan yukarıdaki eşyaların GTİP’leri hangi seçenekte doğru olarak belirtilmiştir? (Soru kitapçığının sonunda yer alan TGTC Tablosunu kullanarak cevaplayınız.) A) I - 7208.51.98.90.00 II - II- 7208.37.00.10.11 III - 7208.39.00.90.19 IV - 7208.90.20.10.11 B) I - 7208.90.20.10.11 II - 7208.39.00.90.19 III - 7208.37.00.10.11 IV - 7208.51.98.90.00 C) I - 7208.37.00.10.11 II - 7208.51.98.90.00 III - 7208.39.00.90.19 IV - 7208.90.20.10.11 D) I - 7208.39.00.90.19 II - 7208.90.20.10.11 III - 7208.51.98.90.00 IV - 7208.37.00.10.11 E) I - 7208.37.00.10.11 II - 7208.51.98.90.00 III - 7208.90.20.10.11 IV - 7208.39.00.90.19",
+  "cevap": "E",
+  "fasillar": [
+   10,
+   37,
+   39,
+   51,
+   72,
+   90
+  ]
+ },
+ {
+  "no": 123,
+  "metin": "474 Sayılı Gümrük Giriş Tarife Cetveli Hakkında Kanuna göre, Türkiye'de imal ve istihsal olunan yatırım maddelerinin maliyetine giren vasıtalı vergiler hakkında bu türlü vergilerden yatırım maliyetlerinde teşhis ve tespiti mümkün olabilenlerin, kaç yılda ödenmesini sağlamak üzere gerekli tedbirleri karar ile almaya Cumhurbaşkanı yetkilidir? A) 1 B) 2 C) 3 D) 4 E) 5",
+  "cevap": "E",
+  "fasillar": []
+ },
+ {
+  "no": 124,
+  "metin": "474 Sayılı Gümrük Giriş Tarife Cetveli Hakkında Kanun’da yer alan işlerin hazırlık çalışmalarının yapılması için Cumhurbaşkanı tarafından kurulan komisyon en geç ne kadar zamanda bir toplanmalıdır? A) 15 gün B) 1 ay C) 2 ay D) 3 ay E) 6 ay",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 125,
+  "metin": "474 sayılı Gümrük Giriş Tarife Cetveli Hakkında Kanuna göre; Cumhurbaşkanı, yatırım maddesi sayılacak ve ithali uzun vadeli plan hedeflerine uygun görülecek eşyanın gümrük vergileri ile ithalde alınan istihsal vergisini ve belediyelere ait vergilerle rıhtım resmini, bunların gümrük hattını aştıkları tarihten itibaren en fazla kaç yıl içinde tahsiline karar ile müsaade etmeye yetkilidir? A) Bir B) İki C) Üç D) Dört E) Beş",
+  "cevap": "E",
+  "fasillar": []
+ },
+ {
+  "no": 126,
+  "metin": "Elektrikli çelenk isimli eşya, Tarife Cetvelinde hangi tarife pozisyonunda sınıflandırılır? A) 94.05 B) 95.04 C) 85.39 D) 84.79",
+  "cevap": "A",
+  "fasillar": [
+   84,
+   85,
+   94,
+   95
+  ]
+ },
+ {
+  "no": 127,
+  "metin": "Aşağıdaki ürünlerin hangisi, Tarife Cetvelinin 39. fasılında yer almaz? A) Plastik banyo Küveti B) Plastik şişe C) Plastik ilaç ölçü kaşıkları D) Plastik okul çantası",
+  "cevap": "D",
+  "fasillar": [
+   39
+  ]
+ },
+ {
+  "no": 128,
+  "metin": "Dişçilikte kullanılan alçılar, Tarife Cetvelinde hangi tarife pozisyonunda sınıflandırılır? A) 25.20 B) 68.09 C) 90.21 D) 30.06",
+  "cevap": "A",
+  "fasillar": [
+   25,
+   30,
+   68,
+   90
+  ]
+ },
+ {
+  "no": 129,
+  "metin": "Kullanılmış giyim eşyası, Tarife Cetvelinin hangi fasılında yer almaktadır? A) 62 B) 61 C) 60 D) 63",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 130,
+  "metin": "Aşağıda belirtilen ürünlerden hangisi Kara Nakil vasıtaları ve bunların aksam, parça ve aksesuarlarının yer aldığı 87. fasılda sınıflandırılmaz? A) Traktör B) Bebek Arabalar C) Tank D) Motorlu Kara nakil vasıtaları için far ve stop camları",
+  "cevap": "D",
+  "fasillar": [
+   87
+  ]
+ },
+ {
+  "no": 131,
+  "metin": "Aşağıda belirtilen ürünlerden hangisi, Eczacılık ürünlerinin yer aldığı 30. fasılda sınıflandırılmaz? A) Kızamık Aşısı B) Alçılı Sargı Bezi C)Tedavi edici veya koruyucu olarak hazırlanmamış kan albümini D) Serum",
+  "cevap": "C",
+  "fasillar": [
+   30
+  ]
+ },
+ {
+  "no": 132,
+  "metin": "Dokumaya elverişli maddelerden; Sentetik liflerden yangın hortumları, Tarife Cetvelinde hangi Tarife pozisyonunda sınıflandırılır? A) 58.11 B) 39.17 C) 63.06 D) 59.09",
+  "cevap": "D",
+  "fasillar": [
+   39,
+   58,
+   59,
+   63
+  ]
+ },
+ {
+  "no": 133,
+  "metin": "Üç tekerlekli bisikletler, Türk Gümrük Tarife Cetvelinde hangi Tarife pozisyonunda sınıflandırılır? A) 95.03 B) 84.79 C) 87.12 D) 87.15",
+  "cevap": "A",
+  "fasillar": [
+   84,
+   87,
+   95
+  ]
+ },
+ {
+  "no": 134,
+  "metin": "Deniz taşıtları için sıkıştırmayla ateşlemeli içten yanmalı pistonlu motorlar (dizel ve yarı dizel), Tarife Cetvelinde hangi tarife pozisyonunda sınıflandırılır? A) 89.03 B) 88.02 C) 84.08 D) 85.01",
+  "cevap": "C",
+  "fasillar": [
+   84,
+   85,
+   88,
+   89
+  ]
+ },
+ {
+  "no": 135,
+  "metin": "Aşağıdakilerden hangisi, Tarife Cetvelinde kullanılan ölçü birimlerinden değildir? A) Terajul (Brüt kalori değeri) B) Hücre adedi C) Gross ton D) Metretül",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 136,
+  "metin": "Birlikte paketlenmiş olarak gümrüğe sunulan iki not defteri ve bir şişe parfümün tarife pozisyonu nedir? A) Not defteri B) Parfüm C) Genel Yorum Kuralı 3 (c )‟ye göre her biri için geçerli olan pozisyonların sonuncusunda D) Özel bir gereksinimi karşılamadığından Genel Yorum Kuralı 3 (b)‟ye göre set olarak değerlendirilmez. Ayrı ayrı her eşya kendi pozisyonunda sınıflandırılır",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 137,
+  "metin": "Birlikte gümrüğe sunulan av tüfeği ve bu tüfeğin şekline uygun olarak yapılmış mahfazası ne şekilde sınıflandırılır? A) Tüfeğin tarife pozisyonunda B) Tüfek ve mahfazası ayrı ayrı C) Mahfazanın tarife pozisyonunda D) Tüfek ve mahfazanın tarife pozisyonlarının numara sırasına göre sonuncusunda",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 138,
+  "metin": "Eşya iki veya daha fazla pozisyona girebildiği takdirde o eşyanın tarifedeki yerinin saptanması hangi yorum kuralına göre yapılır? A) 2(b) kuralı B) 3(a) kuralı C) Sırasıyla 3a, 3b, 3c kuralları D) Sırasıyla 2-a, 2-b kuralları",
+  "cevap": "C",
+  "fasillar": []
+ },
+ {
+  "no": 139,
+  "metin": "Aşağıdakilerden hangisi platin tabirine girmez? A) Osmiyum B) Berilyum C) Paladyum D) Rodyum",
+  "cevap": "B",
+  "fasillar": []
+ },
+ {
+  "no": 140,
+  "metin": "Tarife tekniğine göre bir tarife pozisyonunun alt açılımının olmadığı nasıl gösterilir? A) Tek tire ile B) 00 (Çift sıfır) ile C) Çift tire ile D) Diğerleri ifadesi ile",
+  "cevap": "B",
+  "fasillar": []
+ },
+ {
+  "no": 141,
+  "metin": "Sınıflandırılması yapılan bir eşyayı “Çift tireli (- -) 8501.32 tarife alt pozisyonu” başlığı altında mı yoksa yine “çift tireli (- -) 8501.33 tarife alt pozisyonu” başlığı altında mı değerlendirmemiz gerektiğini söyleyen Yorum Kuralı aşağıdakilerden hangisidir? A) GYK 1 B) GYK 2-a C) GYK 3-a D) GYK 6",
+  "cevap": "D",
+  "fasillar": [
+   85
+  ]
+ },
+ {
+  "no": 142,
+  "metin": "Aşağıdakilerden hangisi 42.02 tarife pozisyonunda sınıflandırılmaz? A) Timsah derisinden para kesesi B) Dış yüzü dokumaya elverişli maddelerden mamul tekerlekli, çekme kollu valiz C) Ahşap mücevher kutusu D) Kalıplanmış plastik maddeden mamul okul çantası",
+  "cevap": "C",
+  "fasillar": [
+   42
+  ]
+ },
+ {
+  "no": 143,
+  "metin": "Alüminyumdan mamul su terazisinin tarife alt pozisyonu nedir? A) 2202.10 B) 7607.11 C) 9031.80 D) 9305.10",
+  "cevap": "C",
+  "fasillar": [
+   22,
+   76,
+   90,
+   93
+  ]
+ },
+ {
+  "no": 144,
+  "metin": "Perakende satılacak şekilde hazırlanmış kontak lens solüsyonları hangi tarife pozisyonundadır? A) 38.24 B) 34.02 C) 33.07 D) 34.01",
+  "cevap": "C",
+  "fasillar": [
+   33,
+   34,
+   38
+  ]
+ },
+ {
+  "no": 145,
+  "metin": "Bir traktöre takılmak üzere getirilen ve toprağı islemede kullanılan kültivatörler ne şekilde sınıflandırılır? A) 87.01 B) 84.24 C) 84.32 D) 84.33",
+  "cevap": "C",
+  "fasillar": [
+   84,
+   87
+  ]
+ },
+ {
+  "no": 146,
+  "metin": "Aşağıdakilerden hangisi platin tabirine girmez? A) Osmiyum B) Rodyum C) Paladyum D) Berilyum",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 147,
+  "metin": "Aşağıdakilerden hangisi yanlıştır? A) 6 adet Genel Yorum Kuralı bulunmaktadır. B) Tüm kurallar hiyerarşik olarak uygulanır. Yani önce 1. kural uygulanır, bu kuralın uygulanmasıyla eşyanın tarifedeki yeri tespit edilemiyorsa, sırasıyla 2, 3, 4, 5 ve 6 ncı kurallar uygulanır. C) 1 ila 5 inci kurallar tarife pozisyonu yani dört rakamlı kodlar seviyesinde sınıflandırmayı düzenler, D) 6 nolu kural tarife alt pozisyonu ve daha ileri düzeydeki açılımlar seviyesinde sınıflandırmayı düzenlemektedir.",
+  "cevap": "B",
+  "fasillar": []
+ },
+ {
+  "no": 148,
+  "metin": "Bitkisel çay yapımında kullanılacak ada çayı aşağıdaki tarife pozisyonlarının hangisinde sınıflandırılır? A) 09.02 B) 09.10 C) 12.11 D) 07.12",
+  "cevap": "C",
+  "fasillar": [
+   7,
+   9,
+   12
+  ]
+ },
+ {
+  "no": 149,
+  "metin": "Aşağıdakilerden hangisi Tük Gümrük Tarife Cetvelinde aynı fasılda sınıflandırılmaz? A) Bira mayası- kavrulmuş hindiba- çemen B) Mikroorganizma kültürü-ilk yardım çantası- steril dikiş malzemesi C) Elektrik enerjisi- vazelin- turb D) Jelatin-sertleştirilmiş protein- enzim",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 150,
+  "metin": "Çelikten mamul boş yangın söndürme cihazı Tarife Cetvelinde hangi tarife pozisyonunda sınıflandırılır? A) 73.26 B) 83.07 C) 84.24 D) 84.79",
+  "cevap": "C",
+  "fasillar": [
+   73,
+   83,
+   84
+  ]
+ },
+ {
+  "no": 151,
+  "metin": "Aşağıdakilerden hangisi Tarife Cetvelinde 85.28 tarife pozisyonunda sınıflandırılmaz? A) Bilgisayar monitörü B) Video monitörü C) TV alıcı cihazları D) Katot ışınlı TV görüntü tüpü",
+  "cevap": "D",
+  "fasillar": [
+   85
+  ]
+ },
+ {
+  "no": 152,
+  "metin": "Otomobillerde kullanılan elektrik motorlu cam siliciler hangi tarife pozisyonunda sınıflandırılır? A) 87.08 B) 40.16 C) 85.12 D) 39.26",
+  "cevap": "C",
+  "fasillar": [
+   39,
+   40,
+   85,
+   87
+  ]
+ },
+ {
+  "no": 153,
+  "metin": "Basılı ve rölyef halindeki dünya haritası hangi tarife alt pozisyonundadır? A) 4905.91 B) 4905.99 C) 9023.00 D) 4906.00",
+  "cevap": "C",
+  "fasillar": [
+   49,
+   90
+  ]
+ },
+ {
+  "no": 154,
+  "metin": "Dizüstü bilgisayarlara monte edilmek üzere üretilmiş LCD ekran modülleri hangi tarife pozisyonunda sınıflandırılır? A) 84.73 B) 85.28 C) 85.29 D) 85.31",
+  "cevap": "A",
+  "fasillar": [
+   84,
+   85
+  ]
+ },
+ {
+  "no": 155,
+  "metin": "Aşağıdakilerden hangisinde tarife cetvelindeki sıralamaya uygun olmayan bir diziliş vardır? A) Odun Kömürü – Ahşap Demiryolu Traversi – Laminat Parke – Ahşap Tabut B) Silgi – Okul Defteri – Kalemtıraş – Tahta Cetvel C) Cep Radyosu – Mp3 Çalar – DVD Player – Video Monitör D) İçki – Sigara – Sigara Tabakası – Çakmak",
+  "cevap": "C",
+  "fasillar": []
+ },
+ {
+  "no": 156,
+  "metin": "Gümrüğe, demonte vaziyette metal işlemeye mahsus işleme merkezi ve bunun montajında kullanılacak olan adi metalden mamul dinamo metrik sıkıştırma el aleti gelmiştir. İşleme merkezi ile aynı beyannamede beyan edilecek olan el aletinin beyan edilmesi gereken tarife pozisyonu hangisidir? A) 82.04 B) 84.57 C) 84.66 D) 90.31",
+  "cevap": "B",
+  "fasillar": [
+   82,
+   84,
+   90
+  ]
+ },
+ {
+  "no": 157,
+  "metin": "Aşağıdaki mantardan yapılmış eşyadan hangisi tarife cetvelinde 45 inci fasılda sınıflandırılır? A) Ayakkabı topuğu B) Şapka siperliği C) Dart oyunu tablası D) Şişe tıpası",
+  "cevap": "D",
+  "fasillar": [
+   45
+  ]
+ },
+ {
+  "no": 158,
+  "metin": "Tarife Cetvelinde 4’üncü Bölüm, 16’ncı Fasıl, 5’inci pozisyonda sınıflandırılan bir eşyanın tarife alt pozisyonu aşağıdakilerden hangisi olabilir? A) 0416.50 B) 0416.05 C) 1605.21 D) 1604.50",
+  "cevap": "C",
+  "fasillar": [
+   4,
+   16
+  ]
+ },
+ {
+  "no": 159,
+  "metin": "Aşağıdakilerden hangisi doğrudur? A) Tarife pozisyonu büyük eşyanın Gümrük Vergisi de yüksek olur. B) Eşyanın tarife pozisyonunun belirlenmesinde Gümrük Vergileri dikkate alınmaz. C) Aynı eşyanın farklı kıymetlerde olan çeşitleri farklı tarife pozisyonlarında yer alır. D) Eşyanın kıymeti yükseldikçe uygulanacak Gümrük Vergisi oranı artar.",
+  "cevap": "B",
+  "fasillar": []
+ },
+ {
+  "no": 160,
+  "metin": "Aşağıdakilerden hangisi Tarife Cetvelinin 71. Faslı anlamında \"platin\" kapsamına girmez? A) Rodyum B) İridyum C) Osmiyum D) Paladyum E) Kadmiyum",
+  "cevap": "E",
+  "fasillar": []
+ },
+ {
+  "no": 161,
+  "metin": "Aşağıdakilerden hangisi Tarife Cetveli'nin 27. Faslı altında sınıflandırılamaz? A) Havagazı B) Tarımda Kullanılan Turba C) Elektrik D) Hidrojen Gazı E) Vazelin",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 162,
+  "metin": "Aşağıdakilerden hangisi Türk Gümrük Tarife Cetvelinin 93.Faslında sınıflandırılmaz? A) Av Tüfeği B) Mızrak C) Süngü D) Ok ve Yay E) Kılıç Kını",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 163,
+  "metin": "Tarife Cetvelinin 63.07 tarife pozisyonunda aşağıdakilerden hangisi sınıflandırılamaz? A) Tek kullanımlık tıbbi maske B) Tek kullanımlık bebek bezi C) Toz bezi (deterjan, cila vb. emdirilmemiş) D) Yer bezi (deterjan, cila vb. emdirilmemiş) E) Cankurtaran yeleği",
+  "cevap": "B",
+  "fasillar": [
+   63
+  ]
+ },
+ {
+  "no": 164,
+  "metin": "Tarifenin Yorumuna İlişkin Genel Kurallardan (GYK) 3(b) anlamında \"perakende satılacak hale getirilmiş takım halinde bulunan eşya\" için aşağıdakilerden hangisi uygun bir örnektir? A) Tek bir kutu içinde paketlenmiş, aynı malzemeden mamul, aynı renk ve tasarıma sahip 12 adet balık bıçağı B) Tek bir kutu içinde paketlenmiş, bir adet göz farı ve bir adet göz kalemi C) Tek bir kutu içinde paketlenmiş; bir poşet makarna ve üzerine dökmek için bir poşet rendelenmiş peynir ile bir poşet domates sosu (tüm ürünler sadece bir porsiyon makarna hazırlamaya yetecek gramajdadır) D) Tek bir kutu içinde paketlenmiş, bir kavanoz kahve (200 gr) ve bir adet seramik fincan E) Tek bir koli içinde paketlenmiş; bir paket makarna, bir şişe sıvı yağ, bir kavanoz salça, bir paket un ve bir paket patates cipsi",
+  "cevap": "C",
+  "fasillar": []
+ },
+ {
+  "no": 165,
+  "metin": "Aşağıdakilerden hangisi Tarife Cetvelinin 96.03 tarife pozisyonunda sınıflandırılamaz? A) Saç Fırçası B) Elbise Fırçası C) Resim Fırçası D) Badana Rulosu E) Dişçilik Tornasında Kullanılan Fırça",
+  "cevap": "E",
+  "fasillar": [
+   96
+  ]
+ },
+ {
+  "no": 166,
+  "metin": "Aşağıdakilerden hangisinde sayılan bitkilerin tümü Tarife Cetvelinin 12.11 tarife pozisyonunda sınıflandırılır? A) Tonka Fasulyesi – Ginseng Kökü – Nane B) Vanilya – Tarçın – Karanfil C) Kişniş Tohumu – Kimyon Tohumu – Anason Tohumu D) Zencefil – Kekik – Nane E) Ihlamur Çayı – Adaçayı – Paraguay Çayı",
+  "cevap": "A",
+  "fasillar": [
+   12
+  ]
+ },
+ {
+  "no": 167,
+  "metin": "Aşağıdaki sınıflandırma örneklerinden hangisinde sınıflandırmaya esas Genel Yorum Kuralları (GYK) yanlış gösterilmiştir? A) Tüm parçaları birlikte paketlenmiş, demonte halde bilyalı rulmanlı bisiklet – 8712.00.30.00.00 – GYK 1, 2(a) ve 6 B) Birlikte satılacağı normal mahfazasının içinde dijital fotoğraf makinesi – 8525.80.30.00.00-GYK 1, 5(a) ve 6 C) Seyahatte kullanılmak üzere plastik kutu içinde perakende olarak paketlenmiş; bir dikiş iğnesi, az miktarda olmak üzere dikiş iplikleri, bir düğme, bir çıtçıt ve küçük bir makastan oluşan dikiş takımı9605.00.00.90.00-GYK 1, 3(b) ve 6 D) 87.03 tarife pozisyonundaki taşıta takılacak dikiz aynası- 7009.10.00.90.00-GYK 1, 3 (a) ve 6 E) Sadece soğutma tertibatı bulunan, başka bir fonksiyonu bulunmayan su sebili – 8418.69.00.99.19- GYK 1 ve 6",
+  "cevap": "C",
+  "fasillar": [
+   10,
+   69,
+   70,
+   80,
+   84,
+   85,
+   87,
+   90
+  ]
+ },
+ {
+  "no": 168,
+  "metin": "Aşağıdakilerden hangisi Tarife Cetvelinin 30. Faslında sınıflandırılır? A) İlk yardım kutusu B) Tıbbi madde içeren el sabunu C) Vitamin B12 D) Akne azaltan yüz bakım müstahzarı E) Sigarayı bırakmaya yardımcı müstahzar emdirilmiş bant",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 169,
+  "metin": "Karidesli Çin Mantısı (Wonton) ve küçük bir kese çorba tozundan oluşan set, dondurulmuş ve kâğıt kutuda perakende olarak satışa sunulmuştur. Tüketimden önce çorba tozu suyla karıştırılmalı, mantılarservis edilmeden önce çorbanın içinde pişirilmelidir (mantıların ağırlık itibarıyla % 25'i karidestir). Yukarıda tanımı ve görseli bulunan eşyanın sınıflandırılmasında aşağıdakilerden hangisi doğrudur? A) 1 ve 6 no.lu Genel Yorum Kuralları uygulanır ve eşya karides ürünü olarak 1605.21 alt pozisyonunda sınıflandırılır. B) 1, 2(b), 3(b) ve 6 no.lu Genel Yorum Kuralları uygulanır ve eşya karides ürünü olarak 1605.21 alt pozisyonunda sınıflandırılır. C) 1, 2(b), 3(c) ve 6 no.lu Genel Yorum Kuralları uygulanır ve eşya karides ürünü olarak 1605.21 alt pozisyonunda sınıflandırılır. D) 1, 2(a), 3(c) ve 6 no.lu Genel Yorum Kuralları uygulanır ve eşya çorba olarak 2104.10 alt pozisyonunda sınıflandırılır E) 1, 2(b), 3(b) ve 6 no.lu Genel Yorum Kuralları uygulanır ve eşya doldurulmuş makarna olarak 1902.20 tarife alt pozisyonunda sınıflandırılır.",
+  "cevap": "E",
+  "fasillar": [
+   16,
+   19,
+   21
+  ]
+ },
+ {
+  "no": 170,
+  "metin": "4602.11.00.10.00 GTİP’li bir eşya için aşağıdakilerden hangisi söylenemez? A) Eşya Tarife Cetveli 10. bölüm kapsamındadır. B) İstatistik amaçlı açılım yapılmamıştır. C) Kombine Nomanklatür açılımı yapılmamıştır. D) Milli alt açılım yapılmıştır. E) Hasırcı eşyasıdır.",
+  "cevap": "A",
+  "fasillar": [
+   10,
+   11,
+   46
+  ]
+ },
+ {
+  "no": 171,
+  "metin": "Elektronik sigaralar ………………...……..pozisyonunda; söz konusu cihazlarda kullanılan kartuşlar …….…….., tütün içeren sigaralar ……..……., sigara kağıdı ............... , pozisyonlarında sınıflandırılır. Yukarıdaki cümlede boşlukları tamamlayan ifadeler hangi seçenekte doğru olarak verilmiştir? A) 85.43/ 24.02/ 24.04/ 48.13 B) 24.02/ 24.04/ 85.43/ 48.13 C) 24.04/ 85.43/ 24.02/ 48.13 D) 85.43/ 24.04/ 24.02/ 48.13 E) 48.13/ 24.04/ 24.02/ 85.43",
+  "cevap": "D",
+  "fasillar": [
+   24,
+   48,
+   85
+  ]
+ },
+ {
+  "no": 172,
+  "metin": "Tarife Cetveli’nde dijital kamera ile donatılmış uzaktan kumandalı “drone veya quadcopter” olarak tanımlanan insansız hava taşıtları hangi tarife pozisyonunda sınıflandırılabilir? A) 85.25 B) 88.04 C) 88.05 D) 88.06 E) 88.07",
+  "cevap": "D",
+  "fasillar": [
+   85,
+   88
+  ]
+ },
+ {
+  "no": 173,
+  "metin": "Aşağıdaki canlılardan hangisi 2022 yılı Türk Gümrük Tarife Cetveli’nin (TGTC) 3. faslında sınıflandırılmaz? A) Alabalık B) Köpek balığı C) Balina D) Deniz kulağı E) Deniz hıyarı",
+  "cevap": "C",
+  "fasillar": []
+ },
+ {
+  "no": 174,
+  "metin": "Tarife Cetveli’nin 52. faslında yer alan bir eşya için aşağıdakilerden hangisi söylenebilir? A) Eşya TGTC 10. Bölüm kapsamındadır. B) Viskoz ipeği bu fasılda yer alır. C) Sentetik ve suni filamentleri içerir. D) Keten döküntüleri bu fasıl kapsamındadır. E) Pamuk ipliği bu fasılda yer alır.",
+  "cevap": "E",
+  "fasillar": []
+ },
+ {
+  "no": 175,
+  "metin": "Aşağıdakilerden hangisi Tarife Cetveli’nin 64. faslında yer alan eşyalardan değildir? A) Güreş ayakkabısı B) Bisiklet ayakkabısı C) Kar sörfü ayakkabısı D) Koşu ayakkabısı E) Ortopedik ayakkabı",
+  "cevap": "E",
+  "fasillar": []
+ },
+ {
+  "no": 176,
+  "metin": "Aşağıdakilerden hangisi mamul olduğu maddeye göre sınıflandırılır? A) Baston B) Şemsiye C) Diş fırçası D) Tabak E) Antika biblo",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 177,
+  "metin": "Tarife Cetveli’ ne göre aşağıdaki ifadelerden hangisi yanlıştır? A) Hububat 10. fasılda yer alır. B) Gübre 31. fasılda yer alır. C) Pamuk 53. fasılda yer alır. D) Cam 70. fasılda yer alır. E) Saat 91. fasılda yer alır.",
+  "cevap": "C",
+  "fasillar": [
+   10,
+   31,
+   53,
+   70,
+   91
+  ]
+ },
+ {
+  "no": 178,
+  "metin": "İnsan tüketimine uygun olmayan cansız böcekler aşağıdaki seçeneklerde yer verilen hangi tarife pozisyonunda sınıflandırılmaktadır? A) 04.09 B) 04.10 C) 05.08 D) 05.10 E) 05.11",
+  "cevap": "E",
+  "fasillar": [
+   4,
+   5
+  ]
+ },
+ {
+  "no": 179,
+  "metin": "Aşağıdaki plastikten mamul eşyalardan hangisi 39.26 tarife pozisyonunda yer almaz? A) Küçük heykeller ve diğer süs eşyası B) Emzikler C) Okul ve büro malzemeleri D) Biberonlar E) Diş kaşıyıcı",
+  "cevap": "D",
+  "fasillar": [
+   39
+  ]
+ },
+ {
+  "no": 180,
+  "metin": "Az miktarlarda olmak üzere yaygın kullanılan ilaçlardan (oksijenli su, tentürdiyot, civa krom, arnika tentürü vb.) birkaçı, bir miktar pansuman eşyası (sargı bezleri, bandajlar, flasterler, vb.) ve birkaç basit alet (makas, pens, vb.)” aynı kutuda birlikte paketlenmiş olarak sunulmuştur ve 3006.50.00.00.00 Gümrük Tarife İstatistik Pozisyonunda (GTİP) sınıflandırılmıştır. Söz konusu GTİP’in eşya tanımı 2022 yılı Türk Gümrük Tarife Cetveli’nde (TGTC) “ilk yardım kutuları ve setleri” dir. 30. faslın 4 no.lu notuna göre “ilk yardım kutuları ve setleri” 30.06 tarife pozisyonundadır. Yukarıdaki bilgiler ve Genel Yorum Kuralları (GYK) çerçevesinde bu sınıflandırma ile ilgili olarak aşağıdakilerden hangisi doğrudur? A) Eşya, 1 ve 6 no.lu GYK’ler uyarınca sınıflandırılmıştır. B) Eşya, 1, 3(b) ve 6 no.lu GYK’ler uyarınca set olarak sınıflandırılmıştır. C) Eşyanın sınıflandırılmasında yalnızca 1 no.lu GYK kullanılmıştır. D) Eşyanın içinde yer alan tüm unsurların, 3(b) no.lu GYK uyarınca kendi uygun pozisyonlarında ayrı ayrı sınıflandırılması gerekir. E) Eşyanın içerdiği unsurlar 30. fasılda farklı farklı pozisyonlarda yer aldığından, eşya, 3(c) no.lu GYK’ye göre olası pozisyonların numerik olarak en sonuncusunda sınıflandırılmıştır.",
+  "cevap": "A",
+  "fasillar": [
+   30,
+   50
+  ]
+ },
+ {
+  "no": 181,
+  "metin": "474 Sayılı Gümrük Giriş Tarife Cetveli Hakkındaki Kanun’a göre Cumhurbaşkanı’nın, bu Kanunun eki Gümrük Tarife Cetvelinde yer alan eşyaların gümrük vergisi had ve nispetlerini yükseltebileceği en yüksek düzey aşağıdakilerden hangisidir? A) Yetmiş B) Kırk C) Altmış D) Elli E) Otuz",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 182,
+  "metin": "Eşyanın tarife tespitine ilişkin uygulanan Genel Yorum Kuralları (GYK) hakkında aşağıdakilerden hangisi doğrudur? A) Eşyanın sınıflandırılmasında 6 no.lu GYK haricinde, tüm kurallar herhangi bir sırada uygulanır. B) Eşyanın dört haneli tarife pozisyonunun belirlenmesinde en son 6 no.lu GYK uygulanır. C) Eşyanın dört haneli tarife pozisyonu 3 no.lu GYK’ya göre belirlendikten sonra artık 4 no.lu GYK uygulanmaz. D) 1 no.lu GYK, yasal amaçlar için eşyanın tarifedeki yerinin saptanmasının; Bölüm Başlıkları, Fasıl Başlıkları ve Tali Fasıl Başlıklarına göre yapılmasını ifade eder. E) Tamamı aynı Gümrük Tarife İstatistik Pozisyonunda (GTİP) yer alan birden fazla eşyanın 3 no.lu GYK’ya göre “takım halinde” eşya olarak sınıflandırılması için perakende satılacak şekilde hazır halde birlikte paketlenmiş olması gerekir.",
+  "cevap": "C",
+  "fasillar": []
+ },
+ {
+  "no": 183,
+  "metin": "474 Sayılı Gümrük Giriş Tarife Cetveli Hakkında Kanununa göre bu Kanunun eki Gümrük Giriş Tarife Cetvelinde yer alan eşyaların gümrük vergisi had ve nispetlerini 50'ye kadar yükseltebilme veya sıfıra kadar indirebilme yetkisi aşağıdakilerden hangisindedir? A) Ticaret Bakanı B) TBMM C) Cumhurbaşkanı D) Maliye Bakanı E) Gümrük Bakanı",
+  "cevap": "C",
+  "fasillar": []
+ },
+ {
+  "no": 184,
+  "metin": "Gümrük Tarife Cetvelinde 2. Fasıl başlığı “Etler ve Yenilen Sakatat” olmasına karşın hayvan bağırsakları, mesaneleri veya midelerinin 5. Fasılda “Tarifenin başka yerinde belirtilmeyen veya yer almayan hayvansal menşeli ürünler” olarak sınıflandırılması hangi Genel Yorum Kuralının (GYK) gereğidir? A) GYK 1 B) GYK 3 C) GYK 4 D) GYK 2 E) GYK 6",
+  "cevap": "A",
+  "fasillar": [
+   2,
+   5
+  ]
+ },
+ {
+  "no": 185,
+  "metin": "Kullanım süresi bitmiş hazır ilaçların sınıflandırıldığı tarife pozisyonu nedir? A) 30.04 B) 30.06 C) 38.25 D) 39.15",
+  "cevap": "B",
+  "fasillar": [
+   30,
+   38,
+   39
+  ]
+ },
+ {
+  "no": 186,
+  "metin": "Aşağıda yer alan eşyanın tarife cetvelindeki sıraya göre doğru dizilişi aşağıdakilerden hangisidir? I- Gazete kağıdı II- Bugünün gazetesi III- Önceki günden satılmayan gazeteler IV-Geri kazanılmış kağıt liflerinin hamurları A) I-II-III-IV B) I-III-II-IV C) IV-I-III-II D) IV-III-I-II",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 187,
+  "metin": "Aşağıdaki fasılların hangisinde Fona ödenecek Tarım Payının hesabında Bileşim (Meursing) Tablosu kullanılmasını gerektiren bir ürün sınıflandırılmamaktadır? A) 16 B) 17 C) 18 D) 19",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 188,
+  "metin": "Yurt dışı sefer yapan deniz taşıtlarına verilen aşağıdaki belirtilen eşyadan hangisi 99 uncu fasılda sınıflandırılmaz? A) Dondurulmuş hazır pizza B) Alkollü İçki C) Sigara D) Deniz motorini",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 189,
+  "metin": "Tarife cetvelindeki “terkip yoluyla elde edilen deri” tabirine uyan levha ve yapraklar hangi tarife pozisyonunda sınıflandırılır? A) 39.21 B) 41.15 C) 56.03 D) 59.03",
+  "cevap": "B",
+  "fasillar": [
+   39,
+   41,
+   56,
+   59
+  ]
+ },
+ {
+  "no": 190,
+  "metin": "Dondurulmuş şehriye hangi fasıldadır? A) 16 B) 20 C) 21 D) 19",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 191,
+  "metin": "Türk Gümrük Tarife mevzuatına göre ince hayvan kılı aşağıda yer alan hayvanlardan hangisinden elde edilemez? A) Lama B) Yak C) Tibet keçisi D) Alpaka E) Katır",
+  "cevap": "E",
+  "fasillar": []
+ },
+ {
+  "no": 192,
+  "metin": "Aşağıdaki seçeneklerde yer verilen eşyadan hangisi Türk Gümrük Tarife Cetveli’nin 84.18 tarife pozisyonunda sınıflandırılmamaktadır? A) Yatay tip dondurucular B) Isı pompaları C) Mobilya tip dondurucular D) Ev tipi soğutucular E) Isı değiştiriciler (eşanjörler)",
+  "cevap": "E",
+  "fasillar": [
+   84
+  ]
+ },
+ {
+  "no": 193,
+  "metin": "Türk Gümrük Cetveli’ne göre aşağıdaki eşyalardan hangisi “gezici hayvan sergileri” ile aynı fasılda sınıflandırılır? A) Kamp çadırı B) Heykel ve yontu sanatının orijinal bir eseri C) Çocuklar için üç tekerlekli bisiklet D) Tiyatro dekoru E) Zooloji bilim dalına ait bir koleksiyon eşyası",
+  "cevap": "C",
+  "fasillar": []
+ },
+ {
+  "no": 194,
+  "metin": "Türk Gümrük Tarife Cetveli’ne göre kültivatör ne şekilde sınıflandırılır? A) 84.32 B) 84.24 C) 84.37 D) 84.33 E) 87.01",
+  "cevap": "A",
+  "fasillar": [
+   84,
+   87
+  ]
+ },
+ {
+  "no": 195,
+  "metin": "Aşağıdaki seçeneklerden hangisinde aynı fasılda yer almayan eşya bulunmaktadır? A) Kontakt lens, sinema kamerası, kalp pili, takometre B) Dondurma, ketçap, canlı maya, çay hülasası C) Nükleer reaktör, bilyalı yatak, gemi pervanesi, yürüyen merdiven D) Mikrofon, boş CD, LED ampul, buhar türbini E) Kopra, pamuk tohumu, şeker kamışı, ginseng kökü",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 196,
+  "metin": "Aşağıdakilerden hangisi Türk Gümrük Tarife Cetvelinde diğerlerinden farklı bir tarife pozisyonunda yer alır? A) Baston B) Kamçı C) Şemsiye D) Kırbaç E) İskemle baston",
+  "cevap": "C",
+  "fasillar": []
+ },
+ {
+  "no": 197,
+  "metin": "Türk Gümrük Tarife Cetveli’nin 87.02 tarife pozisyonuna ait aşağıdaki bilgilere göre “2007 model, 190.000 km’de, yalnızca dizel, 2500 cm3 silindir hacminde motorlu midibüs” hangi tarife pozisyonunda sınıflandırılır? 87.02 10 veya daha fazla kişi taşımaya mahsus (sürücü dahil) motorlu taşıtlar: 8702.10- Sadece sıkıştırma ateşlemeli içten yanmalı pistonlu motorlu olanlar (dizel veya yarı dizel): -- Silindir hacmi 2500 cm3'ü geçenler: - - - Yeni olanlar: 8702.10.11.11.00 ---------Otobüs 8702.10.11.12.00 ---------Midibüs 8702.10.11.13.00 ---------Minibüs - - - Kullanılmış olanlar: 8702.10.19.11.00 ---------Otobüs 8702.10.19.12.00 ---------Midibüs 8702.10.19.13.00 ---------Minibüs - Silindir hacmi 2500 cm3'ü geçmeyenler: - - - Yeni olanlar: 8702.10.91.11.00 ---------Otobüs 8702.10.91.12.00 ---------Midibüs 8702.10.91.13.00 ---------Minibüs - - - Kullanılmış olanlar: 8702.10.99.11.00 ---------Otobüs 8702.10.99.12.00 ---------Midibüs 8702.10.99.13.00 ---------Minibüs 8702.20- Hem sıkıştırma ateşlemeli içten yanmalı pistonlu motorlu (dizel veya yarı dizel) hem de tahrik gücü veren elektrik motorlu olanlar 8702.20.10.00.00 Silindir hacmi 2500 cm3'ü geçenler 8702.20.90.00.00------Silindir hacmi 2500 cm3'ü geçmeyenler A) 8702.10.11.12.00 B) 8702.10.19.12.00 C) 8702.10.91.12.00 D) 8702.10.99.12.00 E) 8702.20.10.00.00",
+  "cevap": "D",
+  "fasillar": [
+   10,
+   11,
+   12,
+   13,
+   20,
+   87
+  ]
+ },
+ {
+  "no": 198,
+  "metin": "Türk Gümrük Tarife Cetveli’nin 84.68 tarife pozisyonunda sınıflandırılan bir makina, elektrikli olması durumunda hangi pozisyonda sınıflandırılır? A) 84.67 B) 84.69 C) 85.14 D) 85.15 E) 85.16",
+  "cevap": "D",
+  "fasillar": [
+   84,
+   85
+  ]
+ },
+ {
+  "no": 199,
+  "metin": "Türk Gümrük Tarife Cetveli’nin XV. Bölüm Notlarına göre “çubuk” ve “tel” arasındaki farklılık nedir? A) Enine kesitleri B) Üretim yöntemleri C) İçlerinin dolu-boş olması D) Rulo halde olup olmaması E) Mamul oldukları madde",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 200,
+  "metin": "Plastikten (10 adet), kauçuktan (20 adet) ve çelikten mamul (30 adet) farklı boyutlarda contalar bir poşet içerisine konulmuş olarak ithal edilmektedir. Bu contaların sınıflandırılacağı hangisidir? tarife pozisyonu aşağıdakilerden A) 39.26 D) 84.84 B) 40.16 E) 84.87 C) 73.18",
+  "cevap": "D",
+  "fasillar": [
+   39,
+   40,
+   73,
+   84
+  ]
+ },
+ {
+  "no": 201,
+  "metin": "Türk Gümrük Tarife Cetveli İzahnamesi Genel Yorum Kuralları Açıklama Notlarına göre 2-a nolu Genel Yorum Kuralı aşağıdaki hangi bölüme giren eşyaya uygulanmaz? A) VI B) VII C) VIII D) IX E) X",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 202,
+  "metin": "42.02 Sandıklar, bavullar, valizler, makyaj valizleri, evrak - iş çantaları, okul çantaları, gözlük kılıfları, dürbün mahfazaları, fotoğraf makinası mahfazası, müzik aletleri mahfazaları, silah ve tabanca mahfazaları ve benzeri mahfazalar; tabii veya terkip yoluyla elde edilen deri ve köseleden, plastik madde yapraklarından, dokumaya elverişli maddelerden, vulkanize edilmiş liflerden, kartondan yapılmış veya tamamen yahut kısmen bu maddelerle veya kağıtla kaplanmış seyahat çantaları, izole edilmiş yiyecek veya içecek torbaları, tuvalet çantaları, sırt çantaları el çantaları, erzak çantaları, portföyler, para keseleri, harita ve kimlik mahfazaları, sigara kutuları, tabaka ve tütün kese ve kutuları takım çantaları, spor çantaları, şişe mahfazaları, mücevher kutuları, pudra - baharat - barut kutuları, bıçak kılıfları ve benzeri mahfazalar: Yukarıda verilen 42.02 tarife pozisyonu metnine göre aşağıdakilerden hangisi 42.02 tarife pozisyonunda yer alamaz? A) Deri bavul B) Plastik gözlük kılıfı C) Metal tabanca mahfazası D) Metal sigara kutusu E) Dokumaya elverişli maddeden para kesesi",
+  "cevap": "D",
+  "fasillar": [
+   42
+  ]
+ },
+ {
+  "no": 203,
+  "metin": "Aşağıdakilerden hangisi Türk Gümrük Tarife Cetveli’nin 2008 tarife pozisyonunda yer alan eşyanın nihai Gümrük Tarife İstatistik Pozisyonunun belirlenmesinde kullanılan bilgilerden biri değildir? A) Ağırlık B) Alkol derecesi C) Şeker oranı D) Brix değeri E) İlave alkol içerip içermediği",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 204,
+  "metin": "Türk Parası Kıymetini Koruma Hakkında 32 sayılı Karar’a göre aşağıdaki ifadelerden hangisi kıymetli taş değildir? A) Ametist B) Elmas C) Zebercet D) Topaz E) İnci",
+  "cevap": "A",
+  "fasillar": []
+ },
+ {
+  "no": 205,
+  "metin": "Aşağıdakilerden hangisi Türk Gümrük Tarife Cetveli'nin farklı faslında yer alır? A) Odun kömürü B) Yonga levha C) Ahşap merdiven D) Kontrplak E) Ahşap bavul",
+  "cevap": "E",
+  "fasillar": []
+ },
+ {
+  "no": 206,
+  "metin": "Aşağıdaki cam eşyalardan hangisi Türk Gümrük Tarife Cetveli 70. Fasılda sınıflandırılmaz? A. Lokomotife ait ısıtma tertibatlı çerçevesiz ön cam B. Lokomotife ait çerçevesiz ön cam C. Cam ayna D. Far camı E. Cam tülü",
+  "cevap": "A",
+  "fasillar": [
+   70
+  ]
+ },
+ {
+  "no": 207,
+  "metin": "Aşağıdaki tarife pozisyonlarından hangisinde binek otomobilleri ile ilgili bir ürün sınıflandırılmamaktadır? A. 68.13 B. 84.07 C. 85.07 D. 85.12 E. 87.10",
+  "cevap": "E",
+  "fasillar": [
+   68,
+   84,
+   85,
+   87
+  ]
+ },
+ {
+  "no": 208,
+  "metin": "84. Fasıl 9 nolu notuna göre aşağıda ölçüleri verilen hesap makinalarından hangisi cep tipidir? A. 46 mm X 46 mm X 46 mm B. 100 mm X 50 mm X 47 mm C. 168 mm X 100 mm X 44 mm D. 170 mm X 101 mm X 45 mm E. 171 mm X 100 mm X 45 mm",
+  "cevap": "C",
+  "fasillar": [
+   9,
+   84
+  ]
+ },
+ {
+  "no": 209,
+  "metin": "Aşağıda sayılan eşyadan hangisi Türk Gümrük Tarife Cetvelinin 22 inci faslında sınıflandırılmamaktadır? A. Sirke B. Kar C. Bal şarabı D. Deniz suyu E. Alkolsüz bira",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 210,
+  "metin": "Fotokopi kağıdı tarifenin hangi bölümünde yer alır? a. VII b. X c. IX d. VIII",
+  "cevap": "B",
+  "fasillar": []
+ },
+ {
+  "no": 211,
+  "metin": "Tabii bal ile karıştırılmış olsun olmasın diabetik suni bal’ ın G.T.İ.P.’ nu aşağıdakilerden hangisidir? a. 0905.00.00.00.00 b. 0409.00.00.00.12 c. 1905.90.60.00.15 d. 1702.90.60.00.11",
+  "cevap": "D",
+  "fasillar": [
+   4,
+   9,
+   17,
+   19,
+   90
+  ]
+ },
+ {
+  "no": 212,
+  "metin": "Ham Gliserin; gliserinli sular ve gliserinli lesivlerden “Ham Gliserin” hangi tarifede yer alır? a. 1301.90.00.39 b. 1520.00.00.10 c. 3307.20.00.00 d. 3404.10.00.00",
+  "cevap": "B",
+  "fasillar": [
+   10,
+   13,
+   15,
+   20,
+   33,
+   34,
+   90
+  ]
+ },
+ {
+  "no": 213,
+  "metin": "Aşağıdakilerden hangisi IV ’ncü Bölüm kapsamında değildir? a. Sirke b. Kakao c. Şeker d. Kahve e. Meşrubat",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 214,
+  "metin": "Aşağıdakilerden hangisi VIII’ nci Bölümde yer alan eşyalardan değildir? a. Kürkler b. Köseler c. Çantalar d. Ayakkabılar e. Kedi / Köpek elbiseleri",
+  "cevap": "D",
+  "fasillar": []
+ },
+ {
+  "no": 215,
+  "metin": "Aşağıdakilerden hangisi 4’ncü fasılda yer almaz? a. Kaplumbağa yumurtası b. Bıldırcın yumurtası c. Alabalık yumurtası d. Dondurulmuş böcekler e. Salyangoz kabuğu unu",
+  "cevap": "C",
+  "fasillar": [
+   4
+  ]
+ },
+ {
+  "no": 216,
+  "metin": "“Örme eşyasından, önü soldan sağa kapanacak şekilde hazırlanan erkekler veya erkek çocukların, sağdan sola kapanacak şekilde hazırlananlar ise kadınlar veya kız çocukların giyim eşyasısayılır. Bu hükümler giyim eşyasının kesiminde açıkça erkeklere veya erkek çocuklara yada kadınlara veya kız çocuklara ait olduğunun belli olmaması halinde uygulanmaz.” Erkek veya erkek çocuklara, kadın veya kız çocuklara ait olduğu belirlenemeyen, 61’inci fasılda yer alan bu eşya için aşağıdaki kurallardan hangisi uygulanır? a. Kadınların veya kız çocukların giyim eşyasının sınıflandırıldığı pozisyonlarda sınıflandırılır. b. Erkeklerin veya erkek çocukların giyim eşyasının sınıflandırıldığı pozisyonlarda sınıflandırılır. c. Giyim eşyasını en özelşekilde tanımlayan pozisyonda sınıflandırılır. d. Her biri geçerli olabilecek pozisyonların numara sırasına göre sonuncusunda sınıflandırılır. e. Bu eşyaya en çok benzeyen eşyanın bulunduğu pozisyonda sınıflandırılır.",
+  "cevap": "A",
+  "fasillar": [
+   61
+  ]
+ },
+ {
+  "no": 217,
+  "metin": "Dişçi koltukları tarifenin hangi bölümünde yer alır? a. XII’inci Bölüm b. XV’inci Bölüm c. XVI’ıncı Bölüm d. XVII’inci Bölüm e. XX’nci Bölüm",
+  "cevap": "E",
+  "fasillar": []
+ },
+ {
+  "no": 218,
+  "metin": "Aşağıdakilerden hangisi tarife cetvelinde diğerlerinden farklı bir fasılda sınıflandırılır? a. Diş macunu b. Diş ipliği c. El sabunu d. Saç boyası e. Kontakt-lens solüsyonları",
+  "cevap": "C",
+  "fasillar": []
+ },
+ {
+  "no": 219,
+  "metin": "Tarife Cetveline göre insan tüketimine uygun kurutulmuş ve tuzlanmış çekirge hangi tarife pozisyonundadır? A. 04.09 B. 04.10 C. 05.09 D. 05.11 E. 16.02",
+  "cevap": "B",
+  "fasillar": [
+   4,
+   5,
+   16
+  ]
+ },
+ {
+  "no": 220,
+  "metin": "Tarife Cetveline göre aşağıdakilerden hangisi farklı fasılda yer alır? A. Tabii kauçuk B. Çıkıl C. Silikon D. Butadien kauçuk E. Rejenere kauçuk",
+  "cevap": "C",
+  "fasillar": []
+ },
+ {
+  "no": 221,
+  "metin": "Tarife Cetveline göre aşağıdaki tarife pozisyonlarından hangisinde “fırın” sınıflandırılmaz? A) 73.21 B) 84.17 C) 85.09 D) 85.14 E) 85.16",
+  "cevap": "C",
+  "fasillar": [
+   73,
+   84,
+   85
+  ]
+ },
+ {
+  "no": 222,
+  "metin": "Tarife Cetveline göre aşağıdakilerden hangisinde aynı bölümde yer alan eşyalar sayılmıştır? A) Güneş gözlüğü – kol saati – gitar – tabanca B) Ameliyat masası – avize – resim fırçası – cam bardak C) Traş makinesi – jeneratör – valf – adi metalden kapı kilidi D) Pamuk ipliği – gömlek – toz bezi – düğme E) Ciklet – kahve – şarap tortusu – tütün",
+  "cevap": "E",
+  "fasillar": []
+ },
+ {
+  "no": 223,
+  "metin": "Aşağıdakilerden hangisi Tarife Cetveline göre diğerlerinden farklı bir tarife pozisyonunda yer alır? A) Güneş yatakları B) Mikrodalga yükselteçler C) Elektrik izolatörü D) Kızılötesi uzaktan kumanda E) Elektronik kitap okuyucu",
+  "cevap": "C",
+  "fasillar": []
+ },
+ {
+  "no": 224,
+  "metin": "Tarife Cetveline göre aşağıdakilerden hangisi 64.06 pozisyonunda sınıflandırılır? A) Ayakkabı çivisi B) Ayakkabı kopçası C) Ayakkabı tokası D) Ayakkabı topuk rampası E) Ayakkabı bağı",
+  "cevap": "D",
+  "fasillar": [
+   64
+  ]
+ },
+ {
+  "no": 225,
+  "metin": "Tarife Cetveline göre piyano ile birlikte getirilen uyumlu sayı ve özellikteki piyano hafıza kartı hangi tarife pozisyonunda sınıflandırılır? A) 85.23 B) 85.42 C) 92.01 D) 92.08 E) 92.09",
+  "cevap": "E",
+  "fasillar": [
+   85,
+   92
+  ]
+ },
+ {
+  "no": 226,
+  "metin": "Tarife Cetveline göre eskiliği 100 yılı aşan orijinal antika heykel hangi gerekçe ile hangi tarife pozisyonunda sınıflandırılır? A) Genel Yorum Kuralı 1, 97.03 B) Genel Yorum Kuralı 1, 97.06 C) Genel Yorum Kuralı 3-A, 97.03 D) Genel Yorum Kuralı 3-A, 97.06 E) Genel Yorum Kuralı 3-C, 97.06",
+  "cevap": "A",
+  "fasillar": [
+   97
+  ]
+ },
+ {
+  "no": 227,
+  "metin": "Tarife Cetveline göre ürün ve sınıflandırıldığı tarife pozisyonu ile ilgili aşağıdaki eşleştirmelerden hangisi yanlıştır? A) Yumurta sarısı 04.08 B) Buğday unu 11.01 C) Kuskus 19.02 D) Reçel 20.08 E) Et suyu 21.04",
+  "cevap": "D",
+  "fasillar": [
+   4,
+   11,
+   19,
+   20,
+   21
+  ]
+ },
+ {
+  "no": 228,
+  "metin": "Tarife Cetveline göre sınai yağ alkolleri aşağıdaki tarife pozisyonlarından hangisinde yer alır? A) 15.18 B) 15.20 C) 29.34 D) 38.23 E) 38.24",
+  "cevap": "D",
+  "fasillar": [
+   15,
+   29,
+   38
+  ]
+ },
+ {
+  "no": 229,
+  "metin": "Tarife Cetveline göre aşağıdakilerden hangisi 11 inci fasılda sınıflandırma için kullanılan bilgilerden değildir? A) Nişasta oranı B) Kül oranı C) Şeker oranı D) Elekten geçme oranı E) Hububatın cinsi",
+  "cevap": "C",
+  "fasillar": [
+   11
+  ]
+ },
+ {
+  "no": 230,
+  "metin": "Tarife Cetveline göre aşağıdakilerden hangisi 8 inci fasılda diğerlerinden farklı bir pozisyonda sınıflandırılır? A) Taze fındık B) Taze kaju cevizi C) Taze kestane D) Taze pekan cevizi E) Taze kola cevizi",
+  "cevap": "B",
+  "fasillar": [
+   8
+  ]
+ },
+ {
+  "no": 231,
+  "metin": "Tarife Cetveline göre aşağıdakilerden hangisi diğerlerinden farklı bir tarife pozisyonunda yer alır? A) Ahşap kapı B) Ahşap kontrplak C) Ahşap padavra D) Ahşap merdiven E) Ahşap panjur",
+  "cevap": "B",
+  "fasillar": []
+ },
+ {
+  "no": 232,
+  "metin": "Tarife Cetveline göre 85.24 tarife pozisyonunda yer alan eşya için aşağıdaki ifadelerden hangisi yanlıştır? A) Esnek olabilir B) Başka eşyalara monte edilmek üzere tasarlanmışlardır C) Bir görüntüleme ekranı içerir D) Likit kristal olabilir E) Video sinyallerini dönüştürmek için bileşenler içerir",
+  "cevap": "E",
+  "fasillar": [
+   85
+  ]
+ },
+ {
+  "no": 233,
+  "metin": "Römorkörler, Tarife Cetvelinde hangi pozisyonda sınıflandırılır? A) 84.08 B) 87.01 C) 87.16 D) 88.04 E) 89.04",
+  "cevap": "E",
+  "fasillar": [
+   84,
+   87,
+   88,
+   89
+  ]
+ },
+ {
+  "no": 234,
+  "metin": "Tarife Cetveline göre aşağıdaki tarife pozisyonlarından hangisinde ayakkabı veya ayakkabı ile ilgili bir ürün sınıflandırılmamaktadır? A) 34.05 B) 44.17 C) 68.12 D) 84.54 E) 96.05",
+  "cevap": "D",
+  "fasillar": [
+   34,
+   44,
+   68,
+   84,
+   96
+  ]
+ },
+ {
+  "no": 235,
+  "metin": "Aşağıdaki eşyalardan hangisi ile ilgili Tarife Cetveli 85 inci Fasıl notlarında bir açıklama bulunmamaktadır? A. Radar B. Akıllı kart C. Baskılı devre D. LED ampul E. Hibrit entegre devre",
+  "cevap": "A",
+  "fasillar": [
+   85
+  ]
+ },
+ {
+  "no": 236,
+  "metin": "Aşağıda görseline yer verilen, buz arenaları ve buz pateni pistlerinin yüzeyini düzeltmek amacıyla kullanılan kar tankı, su tankı, düzenleyici ve fırçadan oluşan kendinden hareketli buz doldurma makinesi Tarife Cetvelinde hangi tarife pozisyonunda yer alır? A) 84.18 B) 84.29 C) 84.30 D) 84.79 E) 87.05",
+  "cevap": "D",
+  "fasillar": [
+   84,
+   87
+  ]
+ }
+]

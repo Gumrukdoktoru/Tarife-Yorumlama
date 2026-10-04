@@ -1,0 +1,322 @@
+#!/usr/bin/env python3
+"""Fasıl 96 modülü üreteci."""
+import json
+import os
+
+KITAP = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+EP = "Eşya → 4’lü pozisyon"
+OT = "Olumsuz teşhis"
+FA = "Farklı/aynı pozisyon veya fasıl"
+TN = "Fasıl notu · Tanım/Eşik"
+GY = "Genel Yorum Kuralı"
+ES = "Eşleştirme / Boşluk doldurma"
+CC = "Çoktan-çoğa (I–IV)"
+SN = "Senaryo"
+
+
+def S(soru, dogru, yanlislar, harf, tip, gerekce, dayanak):
+    assert len(yanlislar) == 4, soru
+    opts = list(yanlislar)
+    opts.insert("ABCDE".index(harf), dogru)
+    return {"soru": soru, "secenekler": opts, "cevap": harf, "tip": tip,
+            "gerekce": gerekce, "dayanak": dayanak}
+
+
+sorular = [
+    # 1 EP
+    S("Tarife Cetveline göre, emici dolgusu selüloz hamurundan, dış katmanı plastikten yapılmış tek kullanımlık yetişkin (yaşlı) bezi hangi pozisyonda sınıflandırılır?",
+      "96.19", ["48.18", "39.26", "56.01", "63.07"], "C", EP,
+      "96.19; hijyenik havlu ve tamponları, bebek bezlerini ve yaşlı bezleri dahil benzeri eşyayı hangi maddeden olursa olsun kapsar. Emici dolgunun selüloz olması 48.18’e, dış katmanın plastik olması 39.26’ya, vatka içermesi 56.01’e götürmez. 63.07 dokumaya elverişli maddeden diğer hazır eşyaya aittir.",
+      "96.19 pozisyon metni ve Açıklama Notu; Fasıl 96 Genel Açıklamalar."),
+    # 2 EP
+    S("Tarife Cetveline göre, tamamı plastikten tek parça halinde kalıba dökülmüş klozet temizleme fırçası hangi pozisyonda sınıflandırılır?",
+      "96.03", ["39.24", "39.26", "96.16", "96.04"], "A", EP,
+      "96.03 Açıklama Notu, kauçuk veya plastikten tek parça halinde kalıba dökülmüş, tuvalet küvetlerini temizlemeye mahsus fırçaları açıkça kapsar. Fasıl 39 notu fırçalar gibi 96. Fasıl eşyasını kendi kapsamı dışında bıraktığından plastikten ev eşyası (39.24) veya diğer plastik eşya (39.26) pozisyonları uygulanmaz.",
+      "96.03 Açıklama Notu (B)(4); Fasıl 39 notu (hariç tutmalar)."),
+    # 3 EP
+    S("Tarife Cetveline göre, akıllı telefonu ucundaki ayarlanabilir tutucuya yerleştirip elde tutarak otoportre çekmek için tasarlanmış, uzatılabilir alüminyum selfie çubuğu hangi pozisyonda sınıflandırılır?",
+      "96.20", ["85.17", "90.06", "85.29", "76.16"], "E", EP,
+      "96.20 Açıklama Notu, “selfie çubuğu” olarak bilinen selfie podunu, kablolu veya kablosuz uzaktan kontrolü olsun olmasın, monopod, bipod ve tripodlarla birlikte bu pozisyonda sayar. Eşya telefonun (85.17) veya fotoğraf makinesinin (90.06) aksamı değildir; bu pozisyondaki eşya herhangi bir maddeden olabileceğinden alüminyumdan yapılması 76.16’ya götürmez.",
+      "96.20 pozisyon metni ve Açıklama Notu."),
+    # 4 EP
+    S("Tarife Cetveline göre, arı kovanlarında kullanılmak üzere mumdan kalıba dökülerek petek şekli verilmiş suni petekler hangi pozisyonda sınıflandırılır?",
+      "96.02", ["15.21", "04.09", "34.04", "34.06"], "B", EP,
+      "96.02 Açıklama Notu, mumlardan kalıba dökülmüş veya oyulmuş eşya arasında suni petekleri ilk sırada sayar; 15.21 Açıklama Notu da kovanlar için petek haline getirilmiş mumları 96.02’ye gönderir. Ham veya rafine balmumu 15.21’de, suni mumlar 34.04’te, aydınlatma mumları 34.06’dadır; 04.09 tabii bal pozisyonudur.",
+      "96.02 Açıklama Notu (II)(1); 15.21 Açıklama Notu, hariç tutmalar."),
+    # 5 EP
+    S("Tarife Cetveline göre, kayağan taşından (arduvaz) yapılmış, ahşap çerçeveli, öğrencilerin tebeşir veya arduvaz kalemiyle yazı yazdığı kullanıma hazır küçük yazı tahtası hangi pozisyonda sınıflandırılır?",
+      "96.10", ["25.14", "68.03", "95.03", "44.14"], "D", EP,
+      "96.10, kayağan taşından veya diğer maddelerden yazı ve resim tahtalarını çerçeveli olsun olmasın kapsar; Fasıl 68 notu da 96.10’daki arduvaz tahtaları kendi kapsamı dışında bırakır. Kullanıma hazır olmayan arduvaz levhalar 25.14 veya 68.03’te kalır. 95.03 Açıklama Notu taş tahtaları ve kara tahtaları oyuncaklardan ayrıca hariç tutar.",
+      "96.10 Açıklama Notu; Fasıl 68 Not 1(m); 95.03 Açıklama Notu, hariç tutma (l)."),
+    # 6 OT
+    S("Aşağıdakilerden hangisi Tarife Cetvelinin 96. faslında <b>sınıflandırılmaz</b>?",
+      "Kaş kalemi", ["Terzi tebeşiri", "Nargile", "Fermuar sürgüsü", "Saç firketesi"], "A", OT,
+      "Makyaj veya tuvalet kalemleri Fasıl 96 Not 1(a) uyarınca Fasıl 33’tedir; 96.09 Açıklama Notu da kaş kalemlerini 33.04 veya 33.07’ye gönderir. Terzi tebeşiri 96.09’da, nargile 96.14’te, fermuar sürgüsü fermuar aksamı olarak 96.07’de, saç firketesi 96.15’tedir.",
+      "Fasıl 96 Not 1(a); 96.09 Açıklama Notu, hariç tutma (c)."),
+    # 7 OT
+    S("Aşağıdakilerden hangisi 96.03 pozisyonunda <b>sınıflandırılmaz</b>?",
+      "Pudra sürmeye mahsus ponpon",
+      ["Elektrikli süpürge için hazırlanmış fırça", "Tıraş fırçası", "Atları tımar etmeye mahsus fırça", "Boya rulosu"], "D", OT,
+      "Kozmetik veya tuvalet müstahzarlarının uygulanmasında kullanılan pudra ponponları ve pedleri 96.03’ten hariç tutulmuştur ve 96.16’dadır. Elektrikli ev aletleri için hazırlanmış fırçalar, tıraş fırçaları, hayvan tımar fırçaları ve boya ruloları 96.03’te sayılır. Tuzak: kozmetik sürmeye yarayan fırçalar 96.03’te kalırken ponpon 96.16’ya gider.",
+      "96.03 Açıklama Notu (B)(2), (9), (III), (F) ve hariç tutma (g)."),
+    # 8 OT
+    S("Aşağıdakilerden hangisi 96.08 pozisyonunda <b>sınıflandırılmaz</b>?",
+      "Dolma kalem için mürekkep kartuşu",
+      ["Bilyalı kalem yedek ucu (bilyalı uç ve mürekkep haznesi)", "Dolma kalem klipsi", "Keçe uçlu işaret kalemi", "Kurşun kalem sapı"], "B", OT,
+      "Mürekkepli kalemler için mürekkep kartuşları 96.08 Açıklama Notunda hariç tutulmuştur ve 32.15’tedir. Buna karşılık bilya ve mürekkep haznesini içeren bilyalı kalem yedek uçları, klipsler, keçe uçlu kalemler ve kurşun kalem sapları 96.08’dedir. Tuzak, bilyalı kalem kartuşunu (96.08) dolma kalem mürekkep kartuşuyla (32.15) karıştırmaktır.",
+      "96.08 Açıklama Notu, aksam ve hariç tutma (a)."),
+    # 9 OT
+    S("Aşağıdakilerden hangisi 96.01 pozisyonunda <b>sınıflandırılmaz</b>?",
+      "Fildişinden piyano tuşu",
+      ["Fildişinden mektup açacağı", "Kemikten ayakkabı çekeceği", "Sedeften resim çerçevesi", "Boynuzdan peçetelik"], "E", OT,
+      "96.01 Açıklama Notu, tarifenin başka bir pozisyonunda aksam ve parça olarak tanımlanabilen parçaları hariç tutar: piyano tuşları 92.09’da, silah dipçik levhaları 93.05’tedir. Mektup açacağı, ayakkabı çekeceği, resim çerçevesi ve peçetelik 96.01 Açıklama Notunun (B) grubunda sayılır. Sonradan tuş yapılacak basit levha ve şeritler ise 96.01’de kalır.",
+      "96.01 Açıklama Notu, ikinci paragraf ve (B) grubu."),
+    # 10 FA
+    S("Aşağıdakilerden hangisi diğerlerinden farklı bir fasılda sınıflandırılır?",
+      "Gözlük çerçevesi", ["Kamera tripodu", "Plastik düğme", "Paslanmaz çelik termos", "Plastikten saç tarağı"], "C", FA,
+      "Gözlük çerçeveleri Fasıl 96 Not 1(f) uyarınca Fasıl 90’da (90.03) yer alır. Tripod 96.20’de, düğme 96.06’da, termos 96.17’de, tarak 96.15’tedir. Fasıl 39 notu düğme, tarak ve tripod gibi 96. Fasıl eşyasını plastikten olsalar bile kendi kapsamı dışında bırakır.",
+      "Fasıl 96 Not 1(f); 96.06, 96.15, 96.17, 96.20 pozisyon metinleri."),
+    # 11 FA
+    S("Aşağıdaki yazı ve çizim gereçlerinden hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+      "Dolma kurşun kalem", ["Ahşap kılıflı kurşun kalem", "Pastel boya", "Kömür kalem", "Yazı tebeşiri"], "E", FA,
+      "Dolma kurşun kalemler 96.08’de adıyla sayılır. 96.09 pozisyon metni “96.08 pozisyonundakiler hariç” kaydıyla kılıflı kurşun kalemleri, pastelleri, kömür kalemleri ve yazı tebeşirlerini kapsar. Tuzak, “kurşun kalem” sözcüğü nedeniyle dolma kurşun kalemi 96.09’a koymaktır.",
+      "96.08 Açıklama Notu (5); 96.09 pozisyon metni ve Açıklama Notu."),
+    # 12 FA
+    S("Aşağıdaki eşyadan hangisi diğerlerinden farklı bir fasılda sınıflandırılır?",
+      "Manikür takımı",
+      ["Seyahat dikiş takımı", "Elle kullanılan tarih damgası", "Mutfakta kullanılan el eleği", "Mürekkepli daktilo şeridi"], "A", FA,
+      "Manikür takımları 96.05 Açıklama Notunda hariç tutulmuştur ve 82.14’tedir (Fasıl 82). Seyahat dikiş takımı 96.05’te, elle kullanılan tarih damgası 96.11’de, el eleği 96.04’te, mürekkepli daktilo şeridi 96.12’dedir.",
+      "96.05 Açıklama Notu; 96.04, 96.11, 96.12 pozisyon metinleri."),
+    # 13 FA
+    S("Aşağıdaki eşya çiftlerinden hangisinde her iki eşya da aynı pozisyonda sınıflandırılır?",
+      "Bebek bezi – Hijyenik tampon",
+      ["Diş fırçası – Pudra ponponu", "Gazlı cep çakmağı – Çakmak taşı",
+       "Termos – Termosun ayrı gelen camdan iç gövdesi", "Pipo – Elektronik sigara"], "B", FA,
+      "Bebek bezleri ve hijyenik tamponlar hangi maddeden olursa olsun 96.19’dadır. Diğer çiftlerde eşyalar ayrılır: diş fırçası 96.03, ponpon 96.16; çakmak 96.13, çakmak taşı 36.06; termos 96.17, ayrı gelen camdan iç gövde 70.20; pipo 96.14, elektronik sigara 85.43.",
+      "96.19 pozisyon metni; 96.03, 96.13, 96.14, 96.16, 96.17 Açıklama Notları."),
+    # 14 TN
+    S("Fasıl 96 Not 2’ye göre, 96.02 pozisyonu anlamında “yontulmaya elverişli bitkisel veya mineral maddeler” tabirine aşağıdakilerden hangisi <b>girmez</b>?",
+      "Fildişi", ["Korozo cevizi", "Dom palmiyesi cevizi", "Kehribar", "Lületaşı"], "D", TN,
+      "Not 2; (a) sert tohumları, çekirdekleri, cevizleri, kabukları ve korozo cevizi ile dom palmiyesi gibi bitkisel maddeleri, (b) kehribar, lületaşı, bunların aglomere halleri ve siyah kehribarı sayar. Fildişi hayvansal bir maddedir ve 96.01’de yer alır.",
+      "Fasıl 96 Not 2; 96.01 Açıklama Notu (I)."),
+    # 15 TN
+    S("Fasıl 96 Not 4’e göre, kıymetli metal veya kıymetli taşı önemsiz süs ya da teferruat ölçüsünü aşan miktarda içerse bile Fasıl 96’da kalan eşya aşağıdakilerden hangisidir?",
+      "Dolma kalem", ["Düğme", "Saç tarağı", "Kemikten oyma biblo", "Seyahat dikiş takımı"], "C", TN,
+      "Not 4’e göre 96.01–96.06 ve 96.15 dışındaki pozisyonların eşyası (96.08’deki dolma kalem gibi) tamamen veya kısmen kıymetli metal, inci veya kıymetli taş içerse de Fasıl 96’da kalır. Düğme (96.06), tarak (96.15), kemik biblo (96.01) ve seyahat takımı (96.05) bu maddeleri yalnız önemsiz süs veya teferruat ölçüsünde içerebilir; aksi halde Fasıl 71’e gider.",
+      "Fasıl 96 Not 4; Fasıl 96 Genel Açıklamalar."),
+    # 16 TN
+    S("96.01 pozisyonu Açıklama Notuna göre, tarifenin neresinde geçerse geçsin “fildişi” gibi değerlendirilen maddeler ile ilgili aşağıdakilerden hangisi <b>doğrudur</b>?",
+      "Gergedan boynuzları ile bütün hayvanların dişleri fildişi gibi değerlendirilir.",
+      ["Yalnızca fil azıdişleri fildişi sayılır.",
+       "Mors ve su aygırı dişleri kemik sayılır; bu nedenle işlenmiş halleri fildişi kapsamına girmez.",
+       "Gergedan boynuzu, boynuz olduğu için fildişi sayılmaz.",
+       "Yaban domuzu azıdişleri işlense bile 96.01’e girmez."], "A", TN,
+      "96.01 Açıklama Notu, tarifenin neresinde geçerse geçsin fil, su aygırı, mors, denizgergedanı ve yaban domuzu azıdişlerinin, gergedan boynuzlarının ve bütün hayvanların dişlerinin fildişi gibi değerlendirileceğini belirtir (Fasıl 5 Not 3’e atıf). Bu nedenle diğer seçeneklerdeki sınırlamalar yanlıştır.",
+      "96.01 Açıklama Notu (I); Fasıl 5 Not 3."),
+    # 17 TN
+    S("96.02 pozisyonu Açıklama Notuna göre aşağıdakilerden hangisi <b>doğrudur</b>?",
+      "Jelatin levhalardan kare veya dikdörtgen dışında kesilenler 96.02’de; kare veya dikdörtgen olanlar 35.03’te veya Fasıl 49’da yer alır.",
+      ["Her şekildeki sertleştirilmemiş jelatin levhalar, kesim şekline bakılmaksızın 35.03’te yer alır.",
+       "Kare veya dikdörtgen kesilmiş jelatin levhalar, yüzeyleri işlenmiş veya boyanmışsa 96.02’ye girer.",
+       "Blok, küp, levha, çubuk veya şerit şeklinde kalıplanmış mum ve stearin eşya, sıkıştırılmış olsun olmasın 96.02’de yer alır.",
+       "Eczacılık ürünleri ve çakmak benzini için sertleştirilmemiş jelatinden kapsüller 35.03’te yer alır."], "E", TN,
+      "96.02 Açıklama Notu, kare veya dikdörtgenden başka şekillerde kesilmiş sertleştirilmemiş jelatin plakaları ve eczacılık ürünleri ile çakmak benzini için kapsülleri bu pozisyona alır; kare veya dikdörtgen olanlar, yüzeyleri işlenmiş olsun olmasın 35.03’te veya 49. Fasılda kalır. Blok, küp, levha, çubuk vb. şekillerde kalıplanan eşya “kalıba dökülme suretiyle yapılan eşya” sayılmaz.",
+      "96.02 Açıklama Notu (II), (8)."),
+    # 18 GY
+    S("Plastik bir çanta içinde perakende satışa sunulan; makas, mezura, dikiş iğneleri, makaralı iplik, çengelli iğne, yüksük ve düğmelerden oluşan seyahat dikiş takımı 96.05 pozisyonunda hangi Genel Yorum Kuralı uyarınca sınıflandırılır?",
+      "GYK 1", ["GYK 3(b)", "GYK 3(c)", "GYK 2(a)", "GYK 5(b)"], "B", GY,
+      "96.05 pozisyon metni, tarifenin farklı pozisyonlarına giren eşyadan oluşan seyahat dikiş takımlarını adıyla kapsadığından sınıflandırma doğrudan pozisyon metnine, yani GYK 1’e dayanır. GYK 3(b), hiçbir pozisyon takımı bir bütün olarak kapsamadığında esas karakter için başvurulan kuraldır; burada gerekmez. Çanta takımın bir parçası olduğundan 5(b) de uygulanmaz.",
+      "GYK 1; 96.05 pozisyon metni ve Açıklama Notu (2)."),
+    # 19 GY
+    S("Yalnızca belirli bir dolma kalemi içine almak üzere özel olarak şekillendirilmiş, uzun süre kullanılmaya elverişli deri kılıfı ile birlikte sunulan ve normal olarak onunla birlikte satılan dolma kalemin, kılıfıyla birlikte 96.08 pozisyonunda sınıflandırılmasını sağlayan Genel Yorum Kuralı hangisidir?",
+      "GYK 5(a)", ["GYK 5(b)", "GYK 3(b)", "GYK 2(a)", "GYK 3(c)"], "D", GY,
+      "GYK 5(a), belirli bir eşyaya göre şekil verilmiş, uzun süre kullanılmaya uygun ve eşya ile birlikte sunulan mahfazaların, normal olarak bu eşya ile satılan türdense eşya ile birlikte sınıflandırılacağını hükme bağlar. Kılıf ayrı gelseydi kendi pozisyonunda sınıflandırılırdı. 5(b) ambalaj maddelerine, 3(b) ve 3(c) karışık eşya ve setlere, 2(a) eksik veya demonte eşyaya ilişkindir.",
+      "GYK 5(a); 96.08 pozisyon metni."),
+    # 20 ES
+    S("96.14 pozisyonu Açıklama Notuna göre her çeşit pipo ve nargile ……… pozisyonunda; pipo veya nargile şeklinde olsun olmasın elektronik sigaralar ve benzeri kişisel elektrikli buharlaştırıcı cihazlar ise ……… pozisyonunda sınıflandırılır. Boşluklara sırasıyla gelmesi gerekenler hangi seçenekte verilmiştir?",
+      "96.14 – 85.43", ["96.14 – 96.13", "85.43 – 85.43", "96.14 – 24.04", "24.02 – 85.43"], "A", ES,
+      "96.14 Açıklama Notu barış çubukları, Türk pipoları ve nargileler dahil her çeşit pipoyu kapsar; elektronik sigaralar ve benzeri kişisel elektrikli buharlaştırıcılar ise pipo veya nargile şeklinde olsalar bile hariç tutularak 85.43’e gönderilir. 96.13 çakmaklara, 24.02 sigaralara aittir.",
+      "96.14 Açıklama Notu ve hariç tutmalar."),
+    # 21 ES
+    S("Aşağıdaki eşyalar ile sınıflandırıldıkları pozisyonlar doğru eşleştirildiğinde hangi seçenek elde edilir?<br/>I. Adi metalden taklit kol düğmesi<br/>II. Plastikten mikrofon standı<br/>III. Elektrikli saç bigudisi<br/>IV. Ham tebeşir",
+      "I–71.17, II–85.18, III–85.16, IV–25.09",
+      ["I–96.06, II–85.18, III–85.16, IV–25.09",
+       "I–71.17, II–96.20, III–85.16, IV–25.09",
+       "I–71.17, II–85.18, III–96.15, IV–25.09",
+       "I–71.17, II–85.18, III–85.16, IV–96.09"], "C", ES,
+      "Kol düğmeleri 96.06’dan hariçtir (taklit olanlar 71.17); mikrofon standları 96.20’den hariçtir (85.18); 85.16’ya giren elektrikli bigudiler 96.15 pozisyon metninde hariç tutulmuştur; ham tebeşir 96.09’a değil 25.09’a girer. Her çeldiricide eşyalardan biri yanlışlıkla Fasıl 96’ya konmuştur.",
+      "96.06, 96.09, 96.15, 96.20 Açıklama Notları ve hariç tutmalar; Fasıl 96 Not 1(c)."),
+    # 22 CC
+    S("Aşağıdakilerden hangileri 96.13 pozisyonunda sınıflandırılır?<br/>I. Çakmaklara ait olduğu anlaşılan boş yakıt haznesi<br/>II. Gaz sobasına monte edilecek şekilde tasarlanmış elektrikli ateşleyici<br/>III. Çakmak taşları<br/>IV. Çakmak doldurmaya mahsus kaba konulmuş sıvılaştırılmış gaz",
+      "I ve II", ["I ve III", "II ve IV", "I, II ve III", "I, III ve IV"], "B", CC,
+      "96.13 Açıklama Notu, çakmaklara ait olduğu anlaşılan dolu veya boş yakıt haznelerini aksam olarak, duvara veya gaz sobasına monte edilecek ateşleyicileri de çakmak olarak bu pozisyona alır. Çakmak taşları ve çakmak doldurmaya mahsus kaplara konulmuş yanıcı maddeler 36.06’dadır; pozisyon metni de çakmak taşlarını ve fitilleri hariç tutar.",
+      "96.13 pozisyon metni ve Açıklama Notu."),
+    # 23 CC
+    S("Tarife Cetveline göre aşağıdaki ifadelerden hangileri <b>doğrudur</b>?<br/>I. Bebek bezleri ve hijyenik tamponlar hangi maddeden yapılmış olursa olsun 96.19’da sınıflandırılır.<br/>II. Hastane yatakları için tek kullanımlık emici pedler 96.19’da sınıflandırılır.<br/>III. Dokuma kumaştan üretilen, yıkandıktan sonra tekrar kullanılabilen geleneksel bezler de 96.19’dadır.<br/>IV. Mikrofon standları 96.20’de sınıflandırılır.",
+      "I ve III", ["I ve II", "II ve IV", "I, II ve III", "I, III ve IV"], "E", CC,
+      "96.19 hangi maddeden olursa olsun hijyenik havlu, tampon ve bezleri, yıkanıp tekrar kullanılabilen dokuma kumaştan geleneksel benzerleriyle birlikte kapsar. Hastane yatakları, ameliyat masaları ve tekerlekli sandalyeler için emici pedler genellikle mamul oldukları maddeye göre sınıflandırılır. Mikrofon standları 96.20’den hariç tutulmuştur (85.18).",
+      "96.19 ve 96.20 Açıklama Notları."),
+    # 24 SN
+    S("Bir mağaza vitrininde belirli bir ürünün reklamını yapmak amacıyla kullanılan, elektrik motoruyla başını ve kollarını hareket ettiren, plastikten insan figürü şeklindeki otomat Tarife Cetveline göre hangi pozisyonda sınıflandırılır?",
+      "96.18", ["95.03", "90.23", "85.43", "39.26"], "D", SN,
+      "96.18, vitrinlerde eşya teşhiri veya reklam amacıyla kullanılan, elektrikle veya mekanik olarak çalışan otomatik hareketli insan veya hayvan modellerini kapsar; 95.03 Açıklama Notu da dükkan vitrinleri için otomatları oyuncaklardan hariç tutar. Yalnızca gösteri amaçlı modeller 90.23’tedir; plastikten olması 39.26’ya götürmez.",
+      "96.18 Açıklama Notu (3) ve hariç tutmalar; 95.03 Açıklama Notu, hariç tutma (m)."),
+    # 25 SN
+    S("Ahşap saplı, ucuna metal bir kuşakla domuz kılı demeti tutturulmuş, ressamların yağlı boya resim yapmakta kullandığı ve sapında yalnızca küçük bir gümüş monogram bulunan fırça Tarife Cetveline göre hangi pozisyonda sınıflandırılır?",
+      "96.03", ["71.14", "44.21", "05.02", "96.01"], "C", SN,
+      "Yağlı boya ve resim fırçaları 96.03’te sayılır. 96.03 Açıklama Notu, kıymetli metali monogram veya bordür gibi basit süs ya da önemsiz teferruat ölçüsünde içeren fırçaları bu pozisyonda tutar; süs niteliğini aşan miktarda içerenler Fasıl 71’e gider (Not 4). Domuz kılı hammadde olarak 05.02’de, ahşap eşya 44.21’de kalır.",
+      "96.03 Açıklama Notu (B)(16) ve kıymetli metal paragrafları; Fasıl 96 Not 4."),
+]
+
+obj = {
+    "tur": "fasil",
+    "fasil": 96,
+    "baslik": "Çeşitli mamul eşya",
+    "bolum": "XX",
+    "oz": {
+        "vurgu": "Fasıl 96, tarifenin başka yerinde daha özel olarak yer almayan çeşitli mamul eşyanın faslıdır. İki blok vardır: 96.01–96.02 yontulmaya ve kalıba dökülmeye elverişli maddeler (fildişi, kemik, mercan, sedef, korozo, kehribar, mum, jelatin) ve bunlardan eşya; 96.03–96.20 ise eşyayı adıyla sayan, çoğunlukla maddeden bağımsız pozisyonlardır (fırça, düğme, fermuar, kalem, çakmak, pipo, tarak, termos, manken, bebek bezi, tripod).",
+        "maddeler": [
+            "96.01–96.02 kalıntı niteliğindedir: aynı maddeden yapılmış düğme 96.06, tarak 96.15, pipo 96.14, kalem 96.08, fırça 96.03’e; piyano tuşu 92.09’a, dipçik levhası 93.05’e gider.",
+            "Not 4: 96.01–96.06 ve 96.15 dışındaki eşya kıymetli metal, inci veya taş içerse de Fasıl 96’da kalır; 96.01–96.06 ve 96.15 ise bunları yalnız önemsiz süs-teferruat ölçüsünde içerebilir (aksi halde Fasıl 71).",
+            "Not 1 dışlamaları: makyaj kalemi (Fasıl 33), taklit mücevher (71.17), gözlük çerçevesi, teknik çizim kalemi ve tıbbi fırça (Fasıl 90), saat mahfazası (91), müzik aleti (92), silah (93), mobilya ve lamba (94), oyuncak ve spor eşyası (95), sanat eseri ve antika (97).",
+            "96.19 bebek bezi, hijyenik ped ve tampon “hangi maddeden olursa olsun” buradadır; 96.20 tripod ve selfie çubuğu da herhangi bir maddeden olabilir.",
+        ],
+    },
+    "karar_tablosu": {
+        "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı yeri verir.",
+        "satirlar": [
+            ["1", "Not 1’deki dışlamalardan mı? (makyaj kalemi, taklit mücevher, gözlük çerçevesi, teknik çizim kalemi, tıbbi-dişçilik fırçası, saat mahfazası, müzik aleti, silah, mobilya-lamba, oyuncak, sanat eseri)", "Kendi faslı (Not 1)"],
+            ["2", "Bebek bezi, yaşlı bezi, hijyenik ped veya tampon mu?", "<b>96.19</b> (madde önemsiz)"],
+            ["3", "Monopod, bipod, tripod veya selfie çubuğu mu? (mikrofon standı 85.18, enstrüman standı 92.09 hariç)", "<b>96.20</b>"],
+            ["4", "Kalem mi? Bilyalı, keçe uçlu, dolma kalem, dolma kurşun kalem, kalem sapı ve aksamı / kılıflı kurşun kalem, boya kalemi, kurşun, pastel, tebeşir", "<b>96.08</b> / <b>96.09</b>"],
+            ["5", "Fırça, süpürge, paspas, tüy toz süpürgesi, hazırlanmış fırça başı, boya rulosu, silecek mi? (tıbbi fırça 90.18, oyuncak fırça 95.03, ponpon 96.16 hariç)", "<b>96.03</b>"],
+            ["6", "Tuvalet, dikiş veya ayakkabı-elbise temizleme seyahat takımı mı? (manikür takımı 82.14 hariç)", "<b>96.05</b>"],
+            ["7", "Düğme, çıtçıt, düğme taslağı / fermuar / tarak, toka, firkete, bigudi mi?", "<b>96.06</b> / <b>96.07</b> / <b>96.15</b>"],
+            ["8", "El eleği; yazı tahtası; el damgası; mürekkepli şerit veya ıstampa mı?", "<b>96.04</b> / <b>96.10</b> / <b>96.11</b> / <b>96.12</b>"],
+            ["9", "Çakmak veya ateşleyici; pipo, nargile, ağızlık; parfüm spreyi veya ponpon; termos; manken veya vitrin otomatı mı?", "<b>96.13</b> / <b>96.14</b> / <b>96.16</b> / <b>96.17</b> / <b>96.18</b>"],
+            ["10", "Hiçbiri değilse: işlenmiş fildişi, kemik, bağa, boynuz, mercan, sedef veya bunlardan eşya mı?*", "<b>96.01</b>"],
+            ["11", "Hiçbiri değilse: işlenmiş korozo, kehribar, lületaşı; mum, stearin, reçine, model patından kalıplanmış-yontulmuş eşya; sertleştirilmemiş jelatin mi?*", "<b>96.02</b>"],
+        ],
+        "dipnot": "* 96.01 ve 96.02 kalıntı pozisyonlardır: eşya fasılın başka pozisyonunda veya başka fasılda adıyla geçiyorsa (düğme, tarak, pipo, piyano tuşu 92.09, dipçik levhası 93.05, mum 34.06, oyun hamuru 34.07) oraya gider.",
+    },
+    "pozisyon_haritasi": [
+        ["96.01", "İşlenmiş fildişi, kemik, bağa, boynuz, mercan, sedef ve eşyası", "Basit hazırlığı aşan işlem; başka yerde adı geçen parça hariç", "Fildişi biblo, kemik kutu, sedef çerçeve"],
+        ["96.02", "İşlenmiş bitkisel-mineral yontma maddeleri; mum, stearin, reçine, model patı eşyası; sertleştirilmemiş jelatin", "Not 2 tanımı; blok-levha-çubuk hariç", "Lületaşı biblo, suni petek, jelatin kapsül"],
+        ["96.03", "Süpürgeler, fırçalar, paspaslar, fırça başları, boya rulosu, silecekler", "Makine fırçası dahil; tıbbi fırça hariç", "Diş fırçası, resim fırçası, paspas"],
+        ["96.04", "El kalburları ve el elekleri", "Sabit ve makine elekleri hariç", "Un eleği, laboratuvar eleği"],
+        ["96.05", "Tuvalet, dikiş, ayakkabı-elbise temizleme seyahat takımları", "Farklı pozisyon eşyasından takım; manikür hariç", "Seyahat dikiş seti"],
+        ["96.06", "Düğmeler, çıtçıtlar, düğme formları ve taslakları", "Kol düğmesi hariç", "Plastik düğme, çıtçıt"],
+        ["96.07", "Kayarak işleyen fermuarlar ve aksamı", "Her boy ve amaç", "Fermuar, sürgü"],
+        ["96.08", "Bilyalı, keçe uçlu, dolma kalemler; dolma kurşun kalemler; saplar; aksam", "Mürekkep kartuşu ve kalem kurşunu hariç", "Tükenmez kalem, yedek uç, klips"],
+        ["96.09", "Kurşun kalemler, boya kalemleri, kurşunlar, pasteller, kömür kalem, tebeşirler", "Makyaj kalemi, ham ve bilardo tebeşiri hariç", "Kurşun kalem, pastel, terzi tebeşiri"],
+        ["96.10", "Yazı ve resim tahtaları", "Kullanıma hazır; çerçeveli olsun olmasın", "Kara tahta, arduvaz tahta"],
+        ["96.11", "El damgaları, kaşeler, numaratörler, kumpaslar", "Elle kullanılan; masaya sabitlenen hariç", "Tarih damgası, numaratör"],
+        ["96.12", "Mürekkepli şeritler; ıstampalar", "İz bırakmaya hazırlanmış olma", "Daktilo şeridi, ıstampa"],
+        ["96.13", "Çakmaklar ve ateşleyiciler; aksamı", "Çakmak taşı ve fitil hariç", "Cep çakmağı, oto çakmağı, gaz haznesi"],
+        ["96.14", "Pipolar, lüleler, ağızlıklar; aksamı", "Elektronik sigara hariç", "Pipo, nargile, pipo taslağı"],
+        ["96.15", "Taraklar, tokalar, firketeler, bigudiler", "Elektrikli olanlar (85.16) hariç", "Saç tarağı, hayvan tarağı, toka"],
+        ["96.16", "Parfüm ve tuvalet spreyleri, başları; ponponlar", "Ayrı hazne ve kauçuk puar hariç", "Parfüm püskürtücüsü, pudra ponponu"],
+        ["96.17", "Termoslar ve vakumlu kaplar; aksamı", "Camdan iç gövde hariç", "Termos, vakumlu sürahi"],
+        ["96.18", "Terzi ve diğer mankenler; vitrin otomatları", "Gösteri modeli ve oyuncak hariç", "Terzi mankeni, vitrin otomatı"],
+        ["96.19", "Hijyenik havlu, tampon, bebek bezi ve benzerleri", "Hangi maddeden olursa olsun", "Bebek bezi, yaşlı bezi, ped"],
+        ["96.20", "Monopod, bipod, tripod ve benzerleri", "Mikrofon ve enstrüman standı hariç", "Kamera tripodu, selfie çubuğu"],
+    ],
+    "notlar": [
+        ["Fasıl 96 Not 1",
+         "Fasıl dışı: (a) makyaj veya tuvalet kalemleri (Fasıl 33); (b) Fasıl 66 eşyası (şemsiye, baston aksamı); (c) taklit mücevherat (71.17); (d) Bölüm XV Not 2’deki adi metalden genel kullanıma mahsus aksam ve plastikten benzerleri (Fasıl 39); (e) oyma veya kalıp maddelerinden sapı ya da aksamı ile birlikte gelen Fasıl 82 bıçakçı eşyası (sap ve aksam ayrı gelirse 96.01 veya 96.02); (f) Fasıl 90 eşyası (gözlük çerçevesi 90.03, teknik çizim kalemi 90.17, dişçilik-tıbbi-veterinerlik fırçaları 90.18); (g) Fasıl 91 eşyası (saat mahfazaları); (h) müzik aletleri ve aksamı (Fasıl 92); (ij) silahlar (Fasıl 93); (k) Fasıl 94 eşyası (mobilya, lamba); (l) Fasıl 95 eşyası (oyuncak, oyun, spor); (m) sanat eserleri, koleksiyon eşyası, antikalar (Fasıl 97)."],
+        ["Fasıl 96 Not 2",
+         "96.02 anlamında “yontulmaya elverişli bitkisel veya mineral maddeler”: (a) sert tohumlar, küçük çekirdekler, cevizler, kabuklar ve korozo cevizi, dom palmiyesi gibi yontulmaya elverişli bitkisel maddeler; (b) kehribar, lületaşı, aglomere kehribar, aglomere lületaşı, siyah kehribar ve siyah kehribar yerine kullanılan mineral maddeler."],
+        ["Fasıl 96 Not 3",
+         "96.03 anlamında “hazırlanmış süpürge ve fırça başları”: hayvan kılı, bitkisel lif veya diğer maddelerden, fırça imalinde kullanılmaya hazır ya da yalnızca baş kısmını keserek şekil verme gibi önemsiz tamamlayıcı işçilik gerektiren monte edilmemiş başlar."],
+        ["Fasıl 96 Not 4",
+         "96.01–96.06 ve 96.15 dışındaki pozisyonların eşyası tamamen veya kısmen kıymetli metal, kıymetli metal kaplama, inci veya kıymetli-yarı kıymetli taş içerse de bu fasılda kalır. 96.01–96.06 ve 96.15 ise bu maddeleri yalnızca <b>önemsiz süs veya teferruat</b> ölçüsünde içerebilir; fazlası Fasıl 71’e gider."],
+        ["Genel Açıklamalar",
+         "Fasıl; oyma ve kalıp maddelerini, bazı süpürge-fırça-elekleri, tuhafiye, büro ve sigara içme gereçlerini, hijyenik emici eşyayı kapsar; ancak tarifenin başka pozisyonlarında daha özel yer almamış olmak kaydıyla."],
+        ["96.01 Açıklama Notu",
+         "“İşlenmiş”: 05.05–05.08’deki basit hazırlamadan ileri işlem (kesilerek şekil verme, cilalama, tornalama). Fil, su aygırı, mors, denizgergedanı ve yaban domuzu azıdişleri, gergedan boynuzları ve bütün hayvan dişleri <b>fildişi</b> sayılır. Başka yerde aksam olarak tanımlanan parçalar hariç (piyano tuşu 92.09, dipçik levhası 93.05); yalnızca dış kabuğundan ayrılmış mercan 05.08’de kalır."],
+        ["96.02 Açıklama Notu",
+         "“Kalıba dökülme suretiyle yapılan eşya”: kullanılacağı maksada göre şekil verilmiş eşya; blok, küp, levha, çubuk, şerit halinde kalıplananlar hariç. Suni petekler, mum figürler, vitrin için mum taklitler, kolofandan keman reçinesi buradadır. Sertleştirilmemiş jelatin: kare-dikdörtgen dışı plakalar ve eczacılık-çakmak benzini kapsülleri 96.02; kare-dikdörtgen kesilmiş olanlar 35.03 veya Fasıl 49. Hariç: mühür mumu (32.14 / 34.04), mumlar (34.06), model yapma patları (34.07), ham kehribar-lületaşı blokları (25.30), gösteri modelleri (90.23)."],
+        ["96.03 Açıklama Notu",
+         "Makine, cihaz ve taşıt aksamı fırçalar, elektrikli ev aleti fırçaları ve plastikten tek parça kalıplanmış fırçalar dahildir. Hariç: fırça sapları (maddesine göre), tekstil cila diskleri (59.11), kart garnitürleri (84.48), disket sürücü temizleme disketleri (84.73), dişçilik-tıbbi fırçalar (90.18), oyuncak fırçalar (95.03), pudra ponponları (96.16), motorlu mekanik süpürgeler (84.79), fotoğrafçılık rulo silecekleri (90.10); ayrı gelen tekstil temizlik bezleri Bölüm XI."],
+        ["96.04 ve 96.05 Açıklama Notları",
+         "96.04: elle kullanılan kalbur ve elekler; sabit kalburlar (genellikle 73.26), basit süzgeçler (Fasıl 73) ve makine elekleri (84.37 / 84.74) hariç. 96.05: farklı pozisyonlara giren eşyadan oluşan tuvalet, dikiş ve ayakkabı temizleme seyahat takımları; manikür takımı (82.14) ve havayolu ikram setleri hariç (parçalar ayrı sınıflandırılır)."],
+        ["96.06–96.09 Açıklama Notları",
+         "Düğme taslağı, düğme imaline mahsus olduğu açıkça anlaşılacak şekilde işlenmiş olmalıdır; çok az işlenmişler maddesine göre. Kol düğmeleri 71.13 veya 71.17. 96.08 hariçleri: mürekkep kartuşu (32.15), çelik bilya (73.26 / 84.82), matematiksel çizim kalemleri (90.17), kalem kurşunları (96.09). 96.09 hariçleri: ham tebeşir (25.09), tıbbi kalemler (30.04), kozmetik kalemler (33.04 / 33.07), bilardo tebeşiri (95.04); silgili kurşun kalem dahildir."],
+        ["96.10–96.14 Açıklama Notları",
+         "Kullanıma hazır olmayan arduvaz levha 25.14 veya 68.03. Masaya sabitlenen damgalar 84.72; kurşun mühür kıskaçları 82.03; saat makinalı zaman damgaları 91.06. Yazı makinesinde kullanılamayan geniş karbon kağıdı şeritleri Fasıl 48. Çakmak aksamına dolu veya boş yakıt hazneleri dahildir; çakmak taşı ve kaba konulmuş çakmak yakıtı 36.06, fitiller 59.08 / 70.19; başka eşyayla birleşik çakmaklar GYK’ye göre. Elektronik sigaralar 85.43."],
+        ["96.15–96.20 Açıklama Notları",
+         "Hayvan tarakları 96.15’tedir; tekstil saç bantları Bölüm XI, elektrikli bigudiler 85.16. Ayrı gelen parfüm sprey hazneleri maddesine göre, kauçuk puarlar 40.14. Termosların ayrı gelen camdan iç gövdeleri 70.20. Gösteri modelleri (90.23) ve oyuncak bebekler (Fasıl 95) 96.18 dışıdır. 96.19 tekrar kullanılabilir dokuma bezleri de kapsar; hastane yatağı ve tekerlekli sandalye pedleri maddesine göre. 96.20 selfie çubuğunu kapsar; mikrofon standı 85.18, enstrüman standı 92.09, Fasıl 93 eşyası için tasarlananlar hariç."],
+    ],
+    "sinir_komsulari": [
+        ["Kaş, dudak, göz kalemi", "33.04 / 33.07", "Not 1(a); 96.09 hariç tutması"],
+        ["Taklit mücevher; kol düğmesi", "71.17 / 71.13", "Not 1(c); 96.06 hariç tutması"],
+        ["Gözlük çerçevesi; teknik çizim kalemi", "90.03 / 90.17", "Not 1(f)"],
+        ["Dişçilik, cerrahi, veterinerlik fırçaları", "90.18", "Not 1(f); 96.03 hariç tutması"],
+        ["Fildişinden piyano tuşu; dipçik levhası", "92.09 / 93.05", "Başka yerde aksam olarak tanımlı"],
+        ["Mum; model yapma patı (oyun hamuru)", "34.06 / 34.07", "96.02 hariç tutmaları"],
+        ["Kare-dikdörtgen kesilmiş jelatin levha", "35.03", "Kare-dikdörtgen dışı ise 96.02"],
+        ["Ham tebeşir; ham kehribar-lületaşı blokları", "25.09 / 25.30", "İşlenmemiş hammadde"],
+        ["Bilardo tebeşiri", "95.04", "96.09 hariç tutması"],
+        ["Çakmak taşı; çakmak doldurma kabında gaz", "36.06", "96.13 pozisyon metni ve Açıklama Notu"],
+        ["Elektronik sigara, nargile şeklinde olsa bile", "85.43", "96.14 hariç tutması"],
+        ["Elektrikli bigudi ve saç maşası", "85.16", "96.15 pozisyon metni"],
+        ["Manikür takımı", "82.14", "96.05 hariç tutması"],
+        ["Termosun camdan iç gövdesi", "70.20", "96.17 pozisyon metni"],
+        ["Mikrofon standı; enstrüman standı", "85.18 / 92.09", "96.20 hariç tutmaları"],
+    ],
+    "tuzaklar": [
+        "<b>Bebek bezinin maddesi sorulmaz.</b> Kağıt dolgulu, pamuklu veya plastik dış yüzeyli bez de 96.19’dur. Ancak hastane yatağı ve tekerlekli sandalye pedleri maddesine göre sınıflandırılır.",
+        "<b>Tıbbi fırça 96.03 değildir.</b> Dişçilik ve cerrahi fırçaları 90.18, oyuncak fırça 95.03, pudra ponponu 96.16. Ama makine fırçası ve elektrikli süpürge fırçası 96.03’te kalır.",
+        "<b>Jelatin kapsül 96.02’dir.</b> Sertleştirilmemiş jelatinden eczacılık ve çakmak benzini kapsülleri 96.02; kare veya dikdörtgen kesilmiş jelatin levha 35.03 veya Fasıl 49.",
+        "<b>Çakmak gaz haznesi aksamdır.</b> Dolu veya boş yakıt haznesi 96.13’te; çakmak taşı ve doldurma kabındaki gaz 36.06’da, fitil 59.08 veya 70.19’da.",
+        "<b>Kartuş kelimesine dikkat.</b> Bilyalı kalem yedek ucu (bilya ve mürekkep haznesi) 96.08; dolma kalem mürekkep kartuşu 32.15; kalem kurşunu 96.09.",
+        "<b>Dolma kurşun kalem 96.08’dir.</b> 96.09 “96.08 pozisyonundakiler hariç” kurşun kalemleri kapsar.",
+        "<b>Manikür takımı seyahat takımı sayılmaz.</b> 82.14’e gider; seyahat dikiş takımı ise pozisyon metniyle (GYK 1) 96.05’tedir.",
+        "<b>Kıymetli metal içeren kalem Fasıl 96’da kalır, düğme kalmayabilir.</b> Not 4: 96.01–96.06 ve 96.15 yalnız önemsiz süs ölçüsünde; kalem, çakmak, pipo, termos ise tamamen kıymetli metalden olsa da Fasıl 96.",
+        "<b>Fildişinden piyano tuşu 96.01 değildir.</b> Başka yerde aksam olarak tanımlanan parçalar oraya gider (92.09); tuş yapımı için basit levha ise 96.01.",
+        "<b>Tripod mobilya değildir.</b> Kamera tripodu ve selfie çubuğu 96.20’dir; Fasıl 94’teki mobilya ve lambalarla aynı bölümde ama farklı fasıldadır.",
+    ],
+    "hafiza": {
+        "kanca": "MADDE – TEMİZLİK – BAĞLANTI – YAZI – DUMAN – GÜZELLİK – VİTRİN – BEZ – AYAK",
+        "aciklama": "<b>MADDE</b> 96.01–96.02 (fildişi, korozo, mum, jelatin) · <b>TEMİZLİK</b> 96.03–96.05 (fırça, elek, seyahat takımı) · <b>BAĞLANTI</b> 96.06–96.07 (düğme, fermuar) · <b>YAZI</b> 96.08–96.12 (kalem, kurşun kalem, tahta, damga, şerit) · <b>DUMAN</b> 96.13–96.14 (çakmak, pipo) · <b>GÜZELLİK</b> 96.15–96.16 (tarak, parfüm spreyi) · <b>VİTRİN</b> 96.17–96.18 (termos, manken) · <b>BEZ</b> 96.19 · <b>AYAK</b> 96.20 (tripod). Bir sabah rutini gibi düşünün: kalkar, dişinizi fırçalar, düğmenizi ilikler, kaleminizi alır, pipo içer, saçınızı tarar, termosunuzu alıp vitrin önünden geçer, akşam tripodla fotoğraf çekersiniz.",
+    },
+    "sinav_odagi": [
+        "Hazır çocuk bezinin, emici dokusu kağıt veya pamuk, dış yüzeyi plastik olsa bile maddeden bağımsız olarak 96.19’da sınıflandırıldığı; 39.26, 48.18, 56.01 ve 63.07’nin çeldirici olarak kullanıldığı sorular.",
+        "“Hangisi 96.03’te sınıflandırılamaz?” kalıbı: dişçilik tornasında kullanılan fırçanın 90.18’e gittiği; saç, elbise, resim fırçası ve badana rulosunun 96.03’te kaldığı. Diş fırçasının yapıldığı maddeye göre sınıflandırılmadığı.",
+        "Aksam ve özel madde soruları: plastikten, gazla dolu çakmak haznesinin 96.13’te kaldığı (27.11 ve 39.26 çeldirici); jelatin kapsüllerin 96.02’de olduğu (35.03 çeldirici).",
+        "“Farklı fasıl / aynı bölüm” kalıbı: tripodun (96.20) koltuk, avize, ameliyat masası (Fasıl 94) arasında farklı fasılda olması; plastik tarağın 39. Fasıl dışında kalması; düğmenin tekstil bölümüne değil Bölüm XX’ye ait olması.",
+        "Seyahat takımları ve GYK: dikiş takımının 96.05’te GYK 1 ile (3(b) ile değil) sınıflandırılması; seyahat battaniyesinin 96.05 değil 63.01 olması; çizim takımında 96.09 kurşun kalemin çeldirici olması.",
+        "Çeldirici olarak Fasıl 96: elektronik sigaranın 85.43’te olması (96.14 dışı), bisiklet zilinin 83.06’da olması (96.07 çeldirici), ayakkabı temizleme takımının 96.05’te ayakkabıyla ilgili bir ürün olarak sorulması.",
+    ],
+    "cikmis_ornekler": [
+        {
+            "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 96.03 tarife pozisyonunda sınıflandırılamaz?",
+            "secenekler": ["Saç fırçası", "Elbise fırçası", "Resim fırçası", "Badana rulosu", "Dişçilik tornasında kullanılan fırça"],
+            "cevap": "E",
+            "aciklama": "Fasıl 96 Not 1(f) ve 96.03 Açıklama Notu, dişçilik, tıbbi, cerrahi veya veterinerlik amaçlı özel fırçaları (dişçi delicilerine monte edilenler gibi) 90.18’e gönderir. Saç, elbise ve resim fırçaları ile badana ruloları 96.03’te adıyla sayılır.",
+        },
+        {
+            "soru": "Çakmaklarda kullanılan, içi sıvılaştırılmış petrol gazı (LPG) ile doldurulmuş plastikten mamul gaz haznesi hangi tarife pozisyonundadır?",
+            "secenekler": ["27.07", "27.11", "39.26", "96.13"],
+            "cevap": "D",
+            "aciklama": "96.13 Açıklama Notu, çakmaklara ait olduğu anlaşılan dolu veya boş yakıt haznelerini aksam olarak bu pozisyona alır; plastikten olması 39.26’ya, içindeki gaz 27.11’e götürmez.",
+        },
+    ],
+    "ozet": [
+        "Önce Not 1: makyaj kalemi Fasıl 33, taklit mücevher 71.17, gözlük çerçevesi-teknik kalem-tıbbi fırça Fasıl 90, saat 91, müzik 92, silah 93, mobilya 94, oyuncak 95, sanat eseri 97.",
+        "96.01 hayvansal, 96.02 bitkisel-mineral oyma maddeleri ile mum-jelatin eşya; yalnız başka yerde adıyla geçmeyen eşya için.",
+        "96.03 fırça ve süpürge (makine fırçası dahil, tıbbi fırça ve ponpon hariç); 96.05 seyahat takımları (manikür takımı hariç).",
+        "Kalemde ayrım: mürekkep sistemi olan ve dolma kurşun kalem 96.08; kılıflı kurşun kalem, pastel, tebeşir 96.09; makyaj kalemi Fasıl 33.",
+        "Çakmak aksamı (gaz haznesi dahil) 96.13; çakmak taşı, fitil ve doldurma kabındaki gaz hariç; elektronik sigara 85.43.",
+        "96.19 bez-ped-tampon ve 96.20 tripod-selfie çubuğu maddeden bağımsızdır.",
+        "Not 4: kıymetli madde içeren kalem, çakmak, termos Fasıl 96’da kalır; 96.01–96.06 ve 96.15 eşyası ise yalnız önemsiz süs ölçüsünde.",
+    ],
+    "sorular": sorular,
+}
+
+if __name__ == "__main__":
+    out = os.path.join(KITAP, "data", "fasil_96.json")
+    with open(out, "w", encoding="utf-8") as f:
+        json.dump(obj, f, ensure_ascii=False, indent=1)
+    print("yazıldı:", out)

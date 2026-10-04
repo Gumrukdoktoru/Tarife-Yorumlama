@@ -1,0 +1,328 @@
+"""Giriş modülü: Tarifenin yorumu ile ilgili genel kurallar (GYK) → data/fasil_00.json"""
+from yardim_00_03 import q, yaz
+
+T_KT = "Genel Yorum Kuralı · Kural tespiti"
+T_E = "Eşya → 4’lü pozisyon"
+T_F = "Farklı/aynı kural"
+T_O = "Olumsuz teşhis"
+T_N = "Kural metni · Tanım"
+T_B = "Eşleştirme / Boşluk doldurma"
+T_C = "Çoktan-çoğa (I–IV)"
+T_S = "Senaryo"
+
+modul = {
+    "tur": "giris",
+    "fasil": 0,
+    "baslik": "Tarifenin yorumu ile ilgili genel kurallar",
+    "bolum": "",
+    "oz": {
+        "vurgu": "Genel Yorum Kuralları (GYK) eşyanın tarifedeki yerini bulmanın yasal yoludur. Önce pozisyon metinleri ile Bölüm ve Fasıl notları (GYK 1); bunlar aksini gerektirmedikçe sırasıyla GYK 2, 3 ve 4; mahfaza ve ambalaj için GYK 5; alt pozisyon için GYK 6. Bölüm, fasıl ve tali fasıl başlıkları yalnızca gösterici niteliktedir.",
+        "maddeler": [
+            "GYK 1: Sınıflandırma pozisyon metinlerine ve Bölüm veya Fasıl notlarına göre yapılır; birçok eşya başka kurala gerek kalmadan sınıflandırılır (canlı atlar 01.01).",
+            "GYK 2 pozisyonun kapsamını genişletir: 2(a) eksik, bitirilmemiş ve demonte eşyayı; 2(b) karışım, bileşim ve kısmen o maddeden yapılmış eşyayı içine alır.",
+            "GYK 3, eşya ilk bakışta iki veya daha fazla pozisyona girebildiğinde sırayla uygulanır: (a) en özel tanım, (b) esas nitelik, (c) numara sırasına göre sonuncu pozisyon.",
+            "GYK 4 en çok benzeyen eşyanın pozisyonunu verir; GYK 5 mahfaza ve ambalajı eşyayla birlikte sınıflandırır; GYK 6 yalnızca aynı seviyedeki alt pozisyonları karşılaştırır.",
+            "Notta veya pozisyon metninde aksine hüküm varsa GYK 2 ve 3 uygulanmaz (ör. Fasıl 97 Not 5(b), 15.03 “karıştırılmamış”)."
+        ]
+    },
+    "karar_tablosu": {
+        "aciklama": "Kuralları yukarıdan aşağıya uygulayın; bir adım pozisyonu tek başına veriyorsa sonraki adıma geçilmez. GYK 5 ve GYK 6 sıranın devamı değil, eşyaya göre eklenen hükümlerdir.",
+        "satirlar": [
+            ["1", "Pozisyon metni veya Bölüm/Fasıl notu eşyayı açıkça kapsıyor ya da hariç tutuyor mu? (başlıklar dikkate alınmaz)", "<b>GYK 1</b> → metin ve notun gösterdiği pozisyon"],
+            ["2", "Eşya eksik, bitirilmemiş, son şeklini almamış ya da birleştirilmemiş/demonte mi?", "<b>GYK 2(a)</b> → tamamlanmış eşyanın ayırt edici niteliğini taşıyorsa onun pozisyonu"],
+            ["3", "Bir maddenin karışımı, bileşimi ya da kısmen o maddeden yapılmış eşya mı?", "<b>GYK 2(b)</b> → maddenin pozisyonu; birden çok pozisyon mümkünse GYK 3"],
+            ["4", "Eşya ilk bakışta iki veya daha fazla pozisyona giriyor mu?", "<b>GYK 3(a)</b> → eşyayı en özel niteleyen pozisyon"],
+            ["5", "Pozisyonların her biri karışımın, bileşik eşyanın veya takımın yalnız bir kısmına mı atıf yapıyor?", "Pozisyonlar eşit derecede özel → <b>GYK 3(b)</b>: esas niteliği veren madde veya eşya"],
+            ["6", "Esas nitelik saptanamıyor mu?", "<b>GYK 3(c)</b> → geçerli pozisyonların numara sırasına göre sonuncusu"],
+            ["7", "1–3 numaralı kurallarla hiçbir pozisyona yerleştirilemiyor mu?", "<b>GYK 4</b> → en çok benzeyen eşyanın pozisyonu"],
+            ["8", "Eşya ile birlikte mahfaza, kutu veya ambalaj mı sunuldu?", "<b>GYK 5(a)</b> mahfaza / <b>GYK 5(b)</b> ambalaj → şartlar varsa eşya ile birlikte"],
+            ["9", "Pozisyon bulundu; alt pozisyon mu seçilecek?", "<b>GYK 6</b> → önce tek tireliler, sonra yalnız seçilen tek tirelinin iki tirelileri"]
+        ],
+        "dipnot": "* GYK 3 açıklama notu öncelik sırasını şöyle verir: (a) özel tanımlamalar, (b) asli karakter, (c) numara sırasına göre sonuncu. 3(b) ancak 3(a), 3(c) ancak 3(a) ve 3(b) yetersiz kaldığında uygulanır."
+    },
+    "pozisyon_haritasi_basliklar": ["Kural", "İçerik", "Ne zaman uygulanır", "Tipik örnek"],
+    "pozisyon_haritasi": [
+        ["GYK 1", "Başlıklar gösterici; yasal sınıflandırma pozisyon metni ve Bölüm/Fasıl notlarıyla", "Her sınıflandırmanın ilk adımı", "Canlı at 01.01; Fasıl 30 Not 4 gereği 30.06; Fasıl 2 başlığına rağmen bağırsak 05.04"],
+        ["GYK 2(a)", "Eksik, bitirilmemiş, son şeklini almamış eşya; birleştirilmemiş veya demonte eşya", "Ayırt edici nitelik varsa; normal olarak Bölüm I–VI dışı", "Selesiz ya da tekerleksiz bisiklet; demonte bisiklet; vida ağzı açılmış plastik şişe taslağı"],
+        ["GYK 2(b)", "Maddeye atıf karışım ve bileşimlerini; maddeden eşyaya atıf kısmen o maddeden eşyayı kapsar", "Notta veya pozisyonda aksine hüküm yoksa", "05.03 at kılı; 45.03 tabii mantardan eşya"],
+        ["GYK 3(a)", "En özel tanım önceliklidir; isimle tanım sınıf tanımından, açık tanım eksik tanımdan önce gelir", "Eşya iki veya daha fazla pozisyona girebildiğinde", "Tıraş makinesi 85.10; taşıt halısı 57.03; hava taşıtı emniyet camı 70.07"],
+        ["GYK 3(b)", "Esas niteliği veren madde veya eşyaya göre sınıflandırma", "Karışım, bileşik eşya, perakende takım; 3(a) yetersizse", "Çizim takımı 90.17; saç tuvalet takımı 85.10; spagetti takımı 19.02; sandviç ve cips 16.02"],
+        ["GYK 3(c)", "Geçerli pozisyonların numara sırasına göre sonuncusu", "3(a) ve 3(b) yetersiz kaldığında", "Esas niteliği saptanamayan eşya; aday pozisyonlardan numarası en büyük olan"],
+        ["GYK 4", "En çok benzeyen eşyanın bulunduğu pozisyon", "1–3 numaralı kurallarla sınıflandırılamayan eşya", "Benzerlik: özellik, nitelik, kullanım amacı"],
+        ["GYK 5(a)", "Belli eşyaya göre yapılmış, uzun süreli kullanıma uygun mahfaza ve kutular eşyayla birlikte", "Eşyayla birlikte sunulan ve normal olarak onunla satılan kaplar", "Mücevher kutusu 71.13; dürbün mahfazası 90.05; keman kutusu; silah mahfazası 93.03"],
+        ["GYK 5(b)", "Normal ambalaj maddeleri ve ambalaj mahfazaları içindeki eşyayla birlikte", "5(a) saklı kalmak üzere; tekrar kullanılabilirliği açıkça belli olanlar hariç", "Karton kutu; istisna: sıkıştırılmış gaz için çelik kap"],
+        ["GYK 6", "Alt pozisyonlarda sınıflandırma; yalnız aynı seviyedekiler karşılaştırılır", "Pozisyon belirlendikten sonra", "Tek tireliler arasından seçim, sonra o tek tirelinin iki tirelileri"]
+    ],
+    "notlar": [
+        ["GYK 1 Açıklama Notu (I)–(II)", "Bölüm, fasıl ve tali fasıl başlıkları kapsadıkları eşyanın tamamını göstermeye yetmez; “sadece gösterici nitelikte” olduklarından eşyanın tarifedeki yerinin saptanmasında yasal dayanak oluşturmaz."],
+        ["GYK 1 Açıklama Notu (III)", "Sınıflandırma (a) pozisyon metinleri ve Bölüm veya Fasıl notlarına, (b) gerektiğinde ve aksine hüküm yoksa 2, 3, 4 ve 5 numaralı kurallara göre yapılır. Örnek: Fasıl 31 notları, 2(b) ile bazı pozisyonlara girebilecek eşyanın oraya girmesini önler."],
+        ["GYK 2(a) Açıklama Notu (I)–(II)", "Eksik veya bitirilmemiş eşya, gümrüğe sunulduğunda asıl özelliğe sahipse tamamlanmış eşya gibi sınıflandırılır. “Son şeklini almamış eşya”: doğrudan kullanıma hazır olmayan, bitirilmiş eşya veya aksamın yaklaşık şekil ya da taslağına sahip ve istisnalar dışında yalnız onun tamamlanmasında kullanılabilen eşya (ör. vida ağzı açılmış plastik şişe taslağı). Çubuk, disk, boru gibi yarı mamuller bu tanıma girmez."],
+        ["GYK 2(a) Açıklama Notu (V)–(VII)", "Birleştirilmemiş veya demonte eşya monte edilmiş eşya ile aynı pozisyondadır. Tabir; parçaları yalnızca bağlantı elemanlarıyla (vida, somun, cıvata) ya da perçin veya kaynakla birleştirilecek eşyayı ifade eder. Montaj yönteminin karmaşıklığı dikkate alınmaz; ancak parçalar ileri işçilik görmemelidir. Montajdan arta kalan fazla parçalar ayrı sınıflandırılır."],
+        ["GYK 2(a) Açıklama Notu (III), (IX)", "Kuralın her iki kısmı da I ila VI. Bölümlere normal olarak giren eşyaya uygulanmaz."],
+        ["GYK 2(b) Açıklama Notu (X)–(XIII)", "Belirli bir maddeye (05.03 at kılı) veya belirli maddeden mamul eşyaya (45.03 tabii mantardan eşya) atıf yapan pozisyonlara uygulanır; aksine hüküm varsa uygulanmaz (15.03 “karıştırılmamış”). Notta veya pozisyon metninde belirtilen hazır karışımlar GYK 1’e göre sınıflandırılır. Eklenen madde asli karakteri değiştirmemelidir; eşya iki veya daha fazla pozisyona girebiliyorsa GYK 3 uygulanır."],
+        ["GYK 3 Açıklama Notu (I)–(II)", "Üç yöntem kuraldaki sırayla uygulanır. Bölüm veya Fasıl notunda ya da pozisyon metninde aksine hüküm varsa GYK 3 uygulanmaz: Fasıl 97 Not 5(b), hem 97.06’ya hem 97.01–97.05’e girebilecek eşyayı 97.01–97.05’e gönderir."],
+        ["GYK 3(a) Açıklama Notu (IV)–(V)", "İsmen yapılmış tanım sınıf tanımından, eşyayı daha açık tarif eden tanım eksik tanımdan öncelik alır. Pozisyonların her biri karışım, bileşik eşya veya takımın yalnız bir kısmına atıf yapıyorsa, biri daha kesin tanım verse de eşit derecede özel sayılır → 3(b) veya 3(c)."],
+        ["GYK 3(b) Açıklama Notu (VI)–(IX)", "Yalnız karışımlar, çeşitli maddelerden bileşik eşya, çeşitli eşyanın birleşmesinden bileşik eşya ve perakende takımlar için. Esas nitelik eşyanın cinsine göre değişir: içerik, hacim, ağırlık veya miktar, kıymet, kullanımdaki önem. Ayrılabilir parçalı bileşik eşya da bu kapsamdadır (kül tabağı ve kaidesi; kavanozlu baharat dolabı); parçalar birbirini tamamlamalı ve ayrı satışa arz edilmemelidir."],
+        ["GYK 3(b) Açıklama Notu (X)–(XI)", "Perakende takım: (a) ilk bakışta farklı pozisyonlara girebilen en az iki farklı eşya (altı fondü çatalı takım değildir), (b) belirli bir ihtiyaç veya işlev için bir araya getirilmiş, (c) yeniden paketlemeden son kullanıcıya satışa uygun. “Perakende satış”, daha fazla üretim, hazırlık, yeniden paketleme veya başka mallarla birleştirme sonrası yeniden satılacak ürünlerin satışını kapsamaz. Üretim sanayii için belirli miktarlarda ayrı paketlenmiş eşyaya uygulanmaz."],
+        ["GYK 4 Açıklama Notu", "1 ila 3 numaralı kurallarla sınıflandırılamayan eşya, benzeri eşyayla karşılaştırılır ve en çok benzediği eşyanın pozisyonunda sınıflandırılır. Benzerlik özellik, nitelik, kullanım amacı gibi faktörlere dayanır."],
+        ["GYK 5(a) Açıklama Notu", "Yalnız şu kaplara uygulanır: belli eşyaya göre şekil verilmiş; uzun süreli kullanıma elverişli; eşyayla birlikte sunulan; normal olarak onunla satılan; bir bütün olarak esas niteliği mahfaza olmayan. Ayrı sunulan kutular kendi pozisyonlarındadır. Çay konulan gümüş kupa ve tatlı için süslü seramik kase bu kurala girmez."],
+        ["GYK 5(b) Açıklama Notu", "Eşyanın ambalajında normal olarak kullanılan ambalaj maddeleri ve mahfazaları eşyayla birlikte sınıflandırılır; tekrar kullanıma elverişli olduğu açıkça belli olanlar hariçtir (sıkıştırılmış veya sıvılaştırılmış gaz için demir ve çelik kaplar). 5(b), 5(a)’ya bağlıdır."],
+        ["GYK 6 Açıklama Notu", "1–5 numaralı kurallar gerekli değişikliklerle alt pozisyonlarda da uygulanır. Aynı seviye: tek tireli (seviye 1) veya iki tireli (seviye 2) alt pozisyonlar. İki tirelilere ancak eşyayı en özel niteleyen tek tireli seçildikten sonra bakılır. Fasıl notu alt pozisyon notuyla çelişirse alt pozisyon notu uygulanır (Fasıl 71’de “platin”). İki tireli kapsam tek tireliyi, tek tireli kapsam pozisyonu aşamaz."],
+        ["Tarifenin yapısı", "Tarife eşyayı Bölüm, Fasıl ve tali fasıllara ayırarak sistematik gösterir. İçindekiler: Bölüm I–XXI ve Fasıl 1–97; Fasıl 77 ileride kullanılmak üzere, Fasıl 98 akit taraflarca özel amaçlarla kullanılmak üzere saklı tutulmuştur. Pozisyonlar dört rakamla yazılır; ilk iki rakam faslı gösterir (01.01, 85.10)."],
+        ["Tire kullanımı", "Alt pozisyon metinlerinin başındaki tek tire (-) birinci seviyeyi, iki tire (--) ikinci seviyeyi gösterir; GYK 6 karşılaştırması yalnız aynı seviyede yapılır."],
+        ["Kısaltmalar ve semboller", "Resmî listeden örnekler: AC alternatif akım, DC doğru akım, IR kızılötesi, UV ultraviyole, Bq bekerel, µCi mikroküri, cN santinewton, cP santipoise, kvar kilovolt-amper-reaktif, kVA kilovolt-amper, Pa.s pascal-saniye, mak. maksimum, min. minimum, o-, m-, p- orto-, meta-, para-, wt. ağırlık, % yüzde, x° x derece."]
+    ],
+    "sinir_komsulari_basliklar": ["Durum", "Uygulanan kural", "Neden"],
+    "sinir_komsulari": [
+        ["Fasıl 2 başlığına rağmen hayvan bağırsakları, mesaneleri, mideleri", "GYK 1 → 05.04", "Başlık gösterici; Fasıl 2 notu bunları hariç tutar"],
+        ["Fasıl 3 başlığına rağmen havyar", "GYK 1 → 16.04", "Fasıl 3 notu havyarı hariç tutar"],
+        ["Kendinden motorlu saç ve sakal tıraş makinesi", "GYK 3(a) → 85.10", "İsmen tanım; 84.67 ve 85.09’daki sınıf tanımlarından önce gelir"],
+        ["Motorlu taşıt için tufte halı", "GYK 3(a) → 57.03", "Halı olarak daha özel; 87.08 aksesuar tanımı daha eksik"],
+        ["Hava taşıtı için yalnız şekillendirilmiş çerçevesiz emniyet camı", "GYK 3(a) → 70.07", "88.07 parça tanımından daha özel"],
+        ["Deri mahfazada saç makası, tarak, makas, fırça, havlu", "GYK 3(b) → 85.10", "Takım; esas niteliği elektrikli saç makası verir"],
+        ["Karton kutuda karides konservesi, karaciğer ezmesi, peynir ve domuz pastırması kutuları", "Her biri kendi pozisyonunda", "Belirli bir ihtiyaç için bir araya getirilmemiş; takım değil"],
+        ["Bir şişe alkollü içki ve bir şişe şarap; kavanoz kahve ile fincan ve tabak", "Her biri kendi pozisyonunda", "Takım oluşturmaz (3(b) açıklama notu)"],
+        ["Kutuda altı adet fondü çatalı", "3(b) uygulanmaz", "Takım için farklı pozisyonlara girebilen en az iki farklı eşya gerekir"],
+        ["Belli eşyaya göre yapılmış kutu, eşyadan ayrı sunulmuş", "Kendi pozisyonunda", "5(a) eşyayla birlikte sunulmayı şart koşar"],
+        ["Çay konulan gümüş kupa; tatlı için süslü seramik kase", "5(a) uygulanmaz", "Kural, bütün olarak esas niteliği mahfaza olan eşyaya uygulanmaz"],
+        ["Sıkıştırılmış veya sıvılaştırılmış gaz için çelik kap", "5(b) uygulanmaz", "Tekrar kullanıma elverişli olduğu açıkça belli"],
+        ["Çubuk, disk, boru gibi yarı mamuller", "2(a) uygulanmaz", "Son şeklini almamış eşya sayılmaz"],
+        ["Hem 97.06’ya hem 97.01–97.05’e girebilen eşya", "Fasıl 97 Not 5(b) (GYK 1)", "Not hükmü varken GYK 3 uygulanmaz"]
+    ],
+    "tuzaklar": [
+        "<b>Başlık bağlayıcı değildir.</b> Bölüm, fasıl ve tali fasıl başlıkları gösterici niteliktedir; Fasıl 2 başlığına rağmen bağırsaklar 05.04’e, Fasıl 3 başlığına rağmen havyar 16.04’e gider.",
+        "<b>Not kuraldan önce gelir.</b> 2(b) ve 3, notta veya pozisyon metninde aksine hüküm varsa uygulanmaz (Fasıl 31 notları, 15.03 “karıştırılmamış”, Fasıl 97 Not 5(b)).",
+        "<b>3(b) kendi başına değil, 3(a) yetersiz kalınca.</b> Önce en özel tanım aranır; esas nitelik ikinci adımdır.",
+        "<b>3(c) “en uygun” değil, “numara sırasına göre sonuncu” der.</b> “En çok benzeyen eşya” ölçütü GYK 4’e aittir.",
+        "<b>Her ortak paket takım değildir.</b> Kahve ile fincan, alkollü içki ile şarap, birbiriyle ilgisiz konserveler ayrı ayrı sınıflandırılır; aynı cins eşyanın çokluğu da (altı fondü çatalı) takım yapmaz.",
+        "<b>Mahfaza ayrı gelirse kendi pozisyonuna gider.</b> GYK 5(a), mahfazanın ait olduğu eşyayla birlikte sunulmasını şart koşar.",
+        "<b>Tekrar kullanılabilir ambalaj 5(b) dışında kalır.</b> Sıkıştırılmış gaz için çelik kaplar içindeki eşyayla birlikte sınıflandırılmaz.",
+        "<b>Yarı mamul taslak değildir.</b> Çubuk, disk, boru “son şeklini almamış eşya” sayılmaz; 2(a) ayrıca normal olarak Bölüm I–VI’ya uygulanmaz.",
+        "<b>Montajın zorluğu önemsizdir, işçilik önemlidir.</b> Demonte eşyada montaj karmaşıklığı dikkate alınmaz; parçalar ileri işçilik gerektirmemelidir ve fazla parçalar ayrı sınıflandırılır.",
+        "<b>GYK 6’da seviyeler karışmaz.</b> Tek tireli bir alt pozisyon iki tireli bir alt pozisyonla karşılaştırılmaz; iki tirelilere seçilen tek tirelinin içinde bakılır."
+    ],
+    "hafiza": {
+        "kanca": "1 NOT · 2 TAMAMLA-KARIŞTIR · 3 ÖZEL-ESAS-SON · 4 BENZER · 5 KUTU · 6 TİRE",
+        "aciklama": "<b>1</b>: metin ve notlar (başlık değil). <b>2</b>: eksik/demonte eşya tamamlanmış sayılır (a), karışım maddeye dahil (b). <b>3</b>: en özel tanım (a) → esas nitelik (b) → numara sırasına göre son (c). <b>4</b>: en çok benzeyen. <b>5</b>: mahfaza (a) ve ambalaj (b) eşyayla birlikte. <b>6</b>: aynı tire seviyesi karşılaştırılır. Merdiven benzetmesi: ilk basamakta durabiliyorsanız üst basamağa çıkmazsınız."
+    },
+    "sinav_odagi": [
+        "Kuralların uygulanma sırası: 3(b)’nin ancak 3(a), 3(c)’nin ancak 3(a) ve 3(b) yetersiz kaldığında uygulandığı; “tüm kurallar 1’den 6’ya hiyerarşik uygulanır” ifadesinin yanlış seçenek olarak verildiği; 6 adet GYK bulunduğu.",
+        "GYK 1: başlıkların gösterici, notların bağlayıcı olduğu (Fasıl 2 başlığına rağmen bağırsakların 05.04’e gitmesi gibi) ve sınıflandırmanın yalnız GYK 1 ve 6 ile yapılabildiği örnekler.",
+        "GYK 3(b) takım şartları: farklı pozisyonlara girebilen en az iki farklı eşya, belirli ihtiyaç veya işlev, yeniden paketlemeden perakende satış; spagetti takımı, çizim takımı gibi set örnekleri ile not defteri ve parfüm, kahve ve fincan gibi set olmayan paketler.",
+        "GYK 5: fotoğraf makinesi, müzik aleti, silah mahfazası ve kolye kutusunun eşyayla birlikte sınıflandırıldığı; keman ve av tüfeği mahfazası soruları.",
+        "GYK 2(a): demonte ahşap masa ve dolap, anahtar taslakları gibi demonte veya bitirilmemiş eşya; eksik bir aracın tamamlanmış eşyanın ayırt edici niteliğini taşıyıp taşımadığının sorgulanması; kuralın Bölüm I–VI’ya uygulanmadığı.",
+        "GYK 6: iki tireli alt pozisyonlar arasında seçimin hangi kuralla yapıldığı; bir sınıflandırmada kullanılan kural kombinasyonlarının (1 ve 6; 1, 2(a) ve 6; 1, 3(b) ve 6) sorulması.",
+        "Yanlış kural tanımı çeldiricileri: GYK 4 için “kıymet ve ticari miktar olarak en yakın eşya”, GYK 1 için “başlıklar bağlayıcıdır” gibi ifadeler."
+    ],
+    "cikmis_ornekler": [
+        {
+            "soru": "Aşağıdakilerden hangisi tarifenin 3(b) genel yorum kuralının uygulanmasında “perakende olarak satılacak hâle getirilmiş takım hâlinde bulunan eşya”nın belirlenmesinde gözetilen şartlardan biri <b>değildir</b>?",
+            "secenekler": [
+                "İlk bakışta farklı pozisyonlarda sınıflandırılabilen, en az iki farklı parçadan mamul eşya olması",
+                "Özel bir gereksinmeyi karşılamak veya belirli bir işlevi yerine getirmek üzere bir araya getirilmiş ürünlerden oluşması",
+                "Aynı pozisyona giren aynı cins eşyanın çok sayıda bulunduğu ambalajlar hâlinde olması",
+                "Yeniden paketlemeye gerek kalmadan kullanıcılara doğrudan satış için uygun biçimde düzenlenmiş olması"
+            ],
+            "cevap": "C",
+            "aciklama": "GYK 3(b) açıklama notu takım için üç şart sayar: farklı pozisyonlara girebilen en az iki farklı eşya, belirli bir ihtiyaç veya işlev için bir araya getirilme ve yeniden paketlemeden son kullanıcıya satışa uygunluk. Aynı cins eşyanın çokluğu takım yapmaz (altı fondü çatalı örneği)."
+        },
+        {
+            "soru": "Birlikte gümrüğe sunulan keman ve bu kemana uygun olarak yapılmış mahfazası hangi yorum kuralına göre ve ne şekilde sınıflandırılır?",
+            "secenekler": [
+                "Birlikte kemanın pozisyonunda, GYK 2",
+                "Birlikte kemanın pozisyonunda, GYK 5",
+                "Keman ve mahfazası ayrı olarak kendi pozisyonlarında, GYK 3",
+                "Keman ve mahfazası ayrı olarak kendi pozisyonlarında, GYK 6"
+            ],
+            "cevap": "B",
+            "aciklama": "GYK 5(a) uyarınca müzik aleti mahfazası gibi belli bir eşyaya göre yapılmış, uzun süre kullanılmaya uygun ve eşyayla birlikte sunulan mahfazalar, normal olarak onunla satılan türdense eşya ile birlikte sınıflandırılır."
+        }
+    ],
+    "ozet": [
+        "Başlıklar gösterici; pozisyon metni ve Bölüm/Fasıl notları bağlayıcıdır (GYK 1).",
+        "Eksik, bitirilmemiş ve demonte eşya ayırt edici niteliği varsa tamamlanmış eşya gibi sınıflandırılır (GYK 2(a)); Bölüm I–VI’ya normal olarak uygulanmaz.",
+        "Karışım ve bileşimler maddenin pozisyonuna girer (GYK 2(b)); birden çok pozisyon mümkünse GYK 3’e geçilir.",
+        "GYK 3 sırası: en özel tanım → esas nitelik → numara sırasına göre son pozisyon.",
+        "Perakende takım: farklı pozisyonlara girebilen en az iki farklı eşya + belirli ihtiyaç veya işlev + yeniden paketlemeden satış.",
+        "GYK 4 en çok benzeyen eşya; GYK 5 eşyayla birlikte sunulan mahfaza ve normal ambalaj; GYK 6 aynı tire seviyesinde karşılaştırma.",
+        "Notta aksine hüküm varsa GYK 2 ve 3 devreye girmez."
+    ],
+}
+
+S = []
+# 1
+S.append(q("Fasıl 3 başlığı balıklardan söz etmesine karşın, balık yumurtasından hazırlanan havyarın Fasıl 3 notu gereğince 16.04 pozisyonunda sınıflandırılması hangi Genel Yorum Kuralının gereğidir?",
+           ["*GYK 1", "GYK 2(b)", "GYK 3(a)", "GYK 3(c)", "GYK 4"], T_KT,
+           "GYK 1’e göre bölüm, fasıl ve tali fasıl başlıkları sadece gösterici niteliktedir; yasal sınıflandırma pozisyon metinlerine ve Bölüm veya Fasıl notlarına göre yapılır. Fasıl 3 notu havyarı açıkça 16.04’e gönderdiğinden başka bir kurala başvurulmaz. GYK 3(a) iki pozisyon arasında seçim, GYK 4 hiçbir pozisyona girmeyen eşya içindir; tuzak, başlığı bağlayıcı sanmaktır.",
+           "GYK 1 ve Açıklama Notu (I)–(III); Fasıl 3 Not 1."))
+# 2
+S.append(q("Tüm parçaları aynı ambalajda bulunan ve yalnızca vida ve cıvatalarla birleştirilecek şekilde demonte halde gümrüğe sunulan ahşap kitaplığın, monte edilmiş kitaplıkla aynı pozisyonda sınıflandırılması hangi kurala dayanır?",
+           ["GYK 1", "*GYK 2(a)", "GYK 2(b)", "GYK 3(b)", "GYK 5(b)"], T_KT,
+           "GYK 2(a)’nın ikinci kısmı, birleştirilmemiş veya demonte sunulan eşyanın monte edilmiş eşya ile aynı pozisyonda sınıflandırılacağını belirtir; parçaların yalnızca vida, somun, cıvata gibi bağlantı elemanlarıyla birleştirilmesi yeterlidir. GYK 2(b) maddelerin karışım ve bileşimleriyle, GYK 3(b) karışım, bileşik eşya ve takımlarla ilgilidir. Parçaların ortak ambalajda olması GYK 5(b)’yi gündeme getirmez.",
+           "GYK 2(a); Açıklama Notu (V)–(VII)."))
+# 3
+S.append(q("Tarifenin belirli bir maddeden mamul eşyaya atıf yapan bir pozisyonunun (örneğin tabii mantardan eşya), kısmen bu maddeden mamul eşyayı da kapsayacak şekilde genişlemesi hangi kurala dayanır?",
+           ["GYK 1", "GYK 2(a)", "*GYK 2(b)", "GYK 3(a)", "GYK 5(b)"], T_KT,
+           "GYK 2(b)’ye göre belirli bir maddeye yapılan atıf, bu maddenin karışım ve bileşimlerini; belirli bir maddeden mamul eşyaya yapılan atıf da tamamen veya kısmen bu maddeden mamul eşyayı kapsar (45.03 örneği). Ancak eklenen madde eşyanın asli karakterini değiştirmemelidir; eşya iki veya daha fazla pozisyona girebiliyorsa GYK 3’e geçilir. GYK 2(a) eksik ve demonte eşyayla ilgilidir.",
+           "GYK 2(b); Açıklama Notu (X)–(XIII)."))
+# 4
+S.append(q("Genel Yorum Kurallarının açıklama notlarına göre aşağıdaki eşyadan hangisi, diğerlerinden <b>farklı</b> bir kural kapsamında değerlendirilir?",
+           ["Selesi ve tekerlekleri olmayan, ancak bisikletin ayırt edici niteliğini taşıyan bisiklet",
+            "Tüm parçaları bir arada ve birleştirilmemiş halde sunulan bisiklet",
+            "Vidalı kapakla kapatılmak üzere vida ağzı açılmış plastik şişe taslağı",
+            "Tüm parçaları birlikte sunulan, yalnızca perçin ve kaynakla birleştirilecek metal raf",
+            "*Ayrılabilir kül tabağı ve buna uygun kaidesinden oluşan, ortak ambalajdaki kül tablası"], T_F,
+           "Ayrılabilir kül tabağı ve kaidesi, birbirini tamamlayan ve ayrı satışa arz edilmeyen parçalardan oluşan bileşik eşya olarak GYK 3(b) kapsamında örnek gösterilmiştir. Eksik bisiklet ve son şeklini almamış şişe taslağı GYK 2(a)’nın birinci kısmına; demonte bisiklet ve perçin veya kaynakla birleştirilecek raf GYK 2(a)’nın ikinci kısmına girer.",
+           "GYK 1 Açıklama Notu (III); GYK 2(a) Açıklama Notu (II), (VII); GYK 3(b) Açıklama Notu (IX)."))
+# 5
+S.append(q("Canlı tavuklar 01.05 pozisyonunda yer alır; bu pozisyonda tek tireli alt pozisyonlar “ağırlığı 185 gramı geçmeyenler” ve “diğerleri” olarak ayrılmıştır. 2 kg ağırlığındaki canlı tavuğun bu alt pozisyonlardan hangisinde yer alacağının belirlenmesinde esas alınan kural hangisidir?",
+           ["GYK 2(a)", "GYK 3(a)", "GYK 3(c)", "GYK 4", "*GYK 6"], T_KT,
+           "Pozisyon belirlendikten sonra alt pozisyon düzeyindeki sınıflandırma GYK 6’ya göre, yalnızca aynı seviyedeki (burada tek tireli) alt pozisyonların metinleri karşılaştırılarak yapılır; 1–5 numaralı kurallar bu düzeyde gerekli değişikliklerle uygulanır. GYK 3(c) ve GYK 4 pozisyon düzeyinde yeri saptanamayan eşya içindir.",
+           "GYK 6 ve Açıklama Notu (I)–(II); 01.05 pozisyon metni."))
+# 6
+S.append(q("Tarifenin 1 ila 3 numaralı kuralları çerçevesinde hiçbir pozisyona yerleştirilemeyen bir eşyanın, özellik, nitelik ve kullanım amacı bakımından karşılaştırıldığı eşyalardan kendisine en çok benzeyeninin pozisyonunda sınıflandırılması hangi kuralın gereğidir?",
+           ["GYK 2(a)", "GYK 3(b)", "GYK 3(c)", "*GYK 4", "GYK 5(a)"], T_KT,
+           "GYK 4, 1 ila 3 numaralı kurallara göre sınıflandırılamayan eşyanın en çok benzeyen eşyanın bulunduğu pozisyonda sınıflandırılacağını öngörür; benzerlik özellik, nitelik, kullanım amacı gibi faktörlere dayanır. GYK 3(c) ise birden çok pozisyona girebilen ama 3(a) ve 3(b) ile seçilemeyen eşyayı numara sırasına göre son pozisyona gönderir; tuzak bu ikisini karıştırmaktır.",
+           "GYK 4 ve Açıklama Notu (I)–(III)."))
+# 7
+S.append(q("Sertleştirilmiş veya lamine edilmiş camlardan, hava taşıtlarında kullanılmak üzere şekillendirmenin ötesinde bir işleme tabi tutulmadan hazırlanmış çerçevesiz emniyet camları GYK 3(a) uyarınca hangi pozisyonda sınıflandırılır?",
+           ["*70.07", "87.08", "88.02", "88.06", "88.07"], T_E,
+           "Bu camlar 88.01, 88.02 veya 88.06’daki eşyaların parçaları olarak 88.07’de değil, daha özel bir şekilde tanımlandıkları 70.07’de sınıflandırılır. GYK 3(a)’ya göre eşyayı daha açık tarif eden tanım, daha eksik yapılmış tanımdan öncelik alır. 88.02 ve 88.06 taşıtın kendisini, 87.08 motorlu taşıt aksesuarını kapsar.",
+           "GYK 3(a) Açıklama Notu (IV)(b)(2)."))
+# 8
+S.append(q("Deri bir mahfaza içinde; elektrikli saç makası, tarak, bir çift makas, fırça ve dokumaya elverişli maddeden havludan oluşan, perakende satışa hazır saç tuvalet takımı hangi pozisyonda sınıflandırılır?",
+           ["42.02", "63.02", "82.13", "*85.10", "96.15"], T_E,
+           "Takım GYK 3(b) uyarınca esas niteliğini veren eşyaya, yani elektrikli saç makasına göre 85.10’da sınıflandırılır. Mahfaza (42.02), havlu (63.02), makas (82.13) ve tarak (96.15) takımın yalnızca birer kalemidir. Tuzak, mahfazayı ya da kalem sayısını belirleyici sanmaktır.",
+           "GYK 3(b) Açıklama Notu (X), örnek (2)."))
+# 9
+S.append(q("Çörek içinde sığır etinden oluşan, peynirli sandviç ile birlikte ambalajlanmış patates cipslerinden (french fries) oluşan perakende takım hangi pozisyonda sınıflandırılır?",
+           ["04.06", "*16.02", "19.05", "20.04", "21.06"], T_E,
+           "Açıklama notunda bu takım için 16.02 gösterilmiştir: sığır etli sandviç 16.02’de yer alır ve takıma esas niteliğini verir (GYK 3(b)). Patates cipsi tek başına 20.04’e, peynir 04.06’ya girer; ancak takımda birer kalemdir. Açıklama notu sandviçin kendisini 16.02’de gösterdiğinden 19.05 ve 21.06 çeldiricidir.",
+           "GYK 3(b) Açıklama Notu (X), örnek (a)."))
+# 10
+S.append(q("Dürbüne uygun olarak yapılmış, uzun süre kullanılmaya elverişli ve normal olarak dürbünle birlikte satılan mahfaza, dürbünle birlikte gümrüğe sunulduğunda hangi pozisyonda sınıflandırılır?",
+           ["39.26", "42.02", "90.04", "*90.05", "90.13"], T_E,
+           "GYK 5(a) uyarınca belli bir eşyaya göre yapılmış, uzun süreli kullanıma uygun ve eşyayla birlikte sunulan mahfazalar, normal olarak onunla satılan türdense eşya ile birlikte sınıflandırılır; açıklama notunda dürbün ve teleskop mahfazaları için 90.05 örneği verilmiştir. Mahfaza ayrı sunulsaydı kendi pozisyonunda (ör. 42.02) yer alırdı.",
+           "GYK 5(a); Açıklama Notu (I)–(II)."))
+# 11
+S.append(q("Bir eşya ilk bakışta 39.26, 44.21 ve 73.26 pozisyonlarının her birine girebilmektedir. Pozisyonların hiçbiri eşyayı diğerinden daha özel tanımlamamakta ve eşyaya esas niteliğini veren madde saptanamamaktadır. Bu eşya için aşağıdakilerden hangisi doğrudur?",
+           ["GYK 3(c) uyarınca 39.26 pozisyonunda sınıflandırılır.",
+            "*GYK 3(c) uyarınca 73.26 pozisyonunda sınıflandırılır.",
+            "GYK 3(b) uyarınca kıymeti en yüksek maddenin pozisyonunda sınıflandırılır.",
+            "GYK 4 uyarınca en çok benzeyen eşyanın pozisyonunda sınıflandırılır.",
+            "GYK 2(b) uyarınca her madde kendi pozisyonunda ayrı ayrı sınıflandırılır."], T_S,
+           "3(a) ve 3(b) ile yeri saptanamayan eşya, GYK 3(c) uyarınca her biri geçerli olabilecek pozisyonların numara sırasına göre sonuncusunda, yani 73.26’da sınıflandırılır. 39.26 numara sırasına göre ilk pozisyondur (tuzak). Esas nitelik saptanamadığı için 3(b) uygulanamaz; eşya birden çok pozisyona girebildiği için GYK 4’e de geçilmez.",
+           "GYK 3(c); GYK 3 Açıklama Notu (I) ve (XII)."))
+# 12
+S.append(q("Hem 97.06 pozisyonunda hem de 97.01 ila 97.05 pozisyonlarında yer alabilecek nitelikteki bir eşyanın sınıflandırılmasına ilişkin aşağıdakilerden hangisi doğrudur?",
+           ["GYK 3(a) uyarınca daha özel olan 97.06 pozisyonunda sınıflandırılır.",
+            "GYK 3(c) uyarınca numara sırasına göre sonuncu olan 97.06 pozisyonunda sınıflandırılır.",
+            "GYK 3(b) uyarınca esas niteliğe göre belirlenen pozisyonda sınıflandırılır.",
+            "GYK 4 uyarınca en çok benzeyen eşyanın pozisyonunda sınıflandırılır.",
+            "*Fasıl 97 Not 5(b) hükmü gereğince 97.01 ila 97.05 pozisyonlarında sınıflandırılır."], T_S,
+           "GYK 3, Bölüm veya Fasıl notlarında ya da pozisyon metinlerinde aksine hüküm bulunmadığı hallerde uygulanır. Fasıl 97 Not 5(b) bu eşyayı 97.01 ila 97.05’e yönlendirdiğinden sınıflandırma GYK 3’e göre değil, bu not hükmüne (GYK 1) göre yapılır. 3(c) uygulansaydı 97.06 çıkardı; tuzak budur.",
+           "GYK 3 Açıklama Notu (II); GYK 1."))
+# 13
+S.append(q("Genel Yorum Kurallarının uygulanmasına ilişkin aşağıdaki ifadelerden hangisi <b>yanlıştır</b>?",
+           ["Sınıflandırma öncelikle pozisyon metinlerine ve Bölüm veya Fasıl notlarına göre yapılır.",
+            "GYK 3(b), ancak GYK 3(a) yetersiz kaldığında uygulanır.",
+            "*GYK 3(c), eşyayı kendisine en çok benzeyen eşyanın bulunduğu pozisyona yönlendirir.",
+            "GYK 4, 1 ila 3 numaralı kurallara göre sınıflandırılamayan eşyaya uygulanır.",
+            "GYK 6, eşyanın bir pozisyonun alt pozisyonlarındaki yerini düzenler."], T_O,
+           "GYK 3(c), 3(a) ve 3(b) ile yeri saptanamayan eşyayı geçerli olabilecek pozisyonların numara sırasına göre sonuncusuna gönderir; “en çok benzeyen eşya” ölçütü GYK 4’e aittir. Diğer ifadeler GYK 1, GYK 3 açıklama notundaki öncelik sırası, GYK 4 ve GYK 6 ile uyumludur.",
+           "GYK 1; GYK 3 Açıklama Notu (I); GYK 4; GYK 6."))
+# 14
+S.append(q("GYK 5(a) açıklama notuna göre, ait olduğu eşya ile birlikte sınıflandırılacak mahfaza, kutu ve benzeri kaplarda aranan özelliklerden hangisi <b>değildir</b>?",
+           ["Belli bir eşyaya veya eşya takımına göre şekil verilmiş ya da uygun hale getirilmiş olması",
+            "Uzun süreli kullanıma elverişli olması",
+            "Muhafaza ettiği eşya ile birlikte sunulması",
+            "*Ait olduğu eşyadan ayrı olarak da satışa sunulabilecek kıymette olması",
+            "Bir bütün olarak esas niteliğinin mahfaza olmaması"], T_O,
+           "Açıklama notu beş şart sayar: belli eşyaya göre şekil verilmiş olma, uzun süreli kullanıma elverişlilik, eşyayla birlikte sunulma, normal olarak eşyayla birlikte satılan türden olma ve bir bütün olarak esas niteliğinin mahfaza olmaması. Kıymet veya ayrıca satılabilme bir şart değildir; ayrı sunulan kutular ise kendi pozisyonlarında sınıflandırılır.",
+           "GYK 5(a); Açıklama Notu (I)."))
+# 15
+S.append(q("GYK 3(b) açıklama notuna göre aşağıdakilerden hangisi “perakende olarak satılacak hale getirilmiş takım” <b>sayılmaz</b>?",
+           ["*Karton kutuda bir cam kavanoz hazır kahve ile seramik fincan ve tabağı",
+            "Karton kutuda pişirilmemiş spagetti paketi, küçük bir poşet rendelenmiş peynir ve küçük bir teneke domates sosu",
+            "Plastik mahfazada cetvel, hesap diski, çizim pergeli, kurşun kalem ve kalem açacağı",
+            "Deri mahfazada elektrikli saç makası, tarak, bir çift makas, fırça ve havlu",
+            "Birlikte ambalajlanmış sığır etli sandviç ve patates cipsi"], T_O,
+           "Açıklama notu, karton kutuda perakende sunulan hazır kahve ile fincan ve tabağı takım oluşturmayan paketlere örnek verir; her biri kendi pozisyonunda (21.01, 69.12) sınıflandırılır. Spagetti takımı (19.02), çizim takımı (90.17), saç tuvalet takımı (85.10) ve sandviç-cips takımı (16.02) ise 3(b) kapsamında takım olarak sınıflandırılır.",
+           "GYK 3(b) Açıklama Notu (X)."))
+# 16
+S.append(q("GYK 2(a) ve açıklama notuna göre aşağıdaki ifadelerden hangisi <b>yanlıştır</b>?",
+           ["Eksik eşya, gümrüğe sunulduğunda tamamlanmış eşyanın ayırt edici niteliğini taşıyorsa tamamlanmış eşyanın pozisyonunda sınıflandırılır.",
+            "Çubuk, disk ve boru gibi yarı mamuller “son şeklini almamış eşya” sayılmaz.",
+            "*Demonte eşyanın sınıflandırılmasında montaj yönteminin karmaşıklığı belirleyicidir.",
+            "Kuralın şartları, özel bir pozisyonda belirtilmedikçe son şeklini almamış eşya için de geçerlidir.",
+            "Kural, normal olarak I ila VI. Bölümlere giren eşyaya uygulanmaz."], T_O,
+           "Açıklama notu (VII), demonte eşyada montaj yönteminin karmaşıklığının dikkate alınmayacağını açıkça belirtir; önemli olan parçaların nihai şekil için ileri bir işçilik görmemesidir. Diğer ifadeler kuralın metni ile açıklama notlarının (II), (III) ve (IX) paragraflarına uygundur.",
+           "GYK 2(a); Açıklama Notu (I)–(III), (VII), (IX)."))
+# 17
+S.append(q("GYK 2(a) açıklama notuna göre “son şeklini almamış eşya” tabiri aşağıdakilerden hangisini ifade eder?",
+           ["Doğrudan kullanıma hazır olan, yalnızca ambalajı tamamlanmamış eşya",
+            "Bitirilmiş eşyanın esas şeklini henüz almamış çubuk, disk ve boru gibi yarı mamuller",
+            "Parçaları yalnızca vida, somun veya cıvatayla birleştirilecek şekilde sunulan eşya",
+            "Bir eşyanın imalinden arta kalan ve başka eşyanın yapımında kullanılabilen parçalar",
+            "*Bitirilmiş eşyanın yaklaşık şekline sahip, doğrudan kullanıma hazır olmayan ve istisnalar dışında yalnız onun tamamlanmasında kullanılabilen eşya"], T_N,
+           "Açıklama notu (II), son şeklini almamış eşyayı doğrudan kullanıma hazır olmayan, bitirilmiş eşya veya aksamın yaklaşık şekil veya taslağına sahip ve istisnai haller dışında sadece onun tamamlanması için kullanılabilen eşya olarak tanımlar. Çubuk, disk ve boru gibi yarı mamuller açıkça bu tanımın dışındadır; vida ve cıvatayla birleştirilecek eşya ise “demonte eşya” tanımıdır.",
+           "GYK 2(a) Açıklama Notu (II), (VII)."))
+# 18
+S.append(q("GYK 3(b) açıklama notuna göre “perakende satış” kavramı için aşağıdakilerden hangisi doğrudur?",
+           ["*Daha fazla üretim, hazırlık, yeniden paketleme veya başka mallarla birleştirme sonrasında yeniden satılması amaçlanan ürünlerin satışını kapsamaz.",
+            "Yeniden paketlendikten sonra son kullanıcıya satılacak ürünlerin satışını da kapsar.",
+            "Başka mallarla birleştirildikten sonra yeniden satılacak ürünlerin satışını da kapsar.",
+            "Yalnızca gıda maddelerinden oluşan takımlar için geçerli bir kavramdır.",
+            "Eşyanın son kullanıcıya doğrudan satışa uygun biçimde düzenlenmiş olmasını gerektirmez."], T_N,
+           "Açıklama notuna göre “perakende satış”, daha fazla üretim, hazırlık, yeniden paketleme veya başka mallarla birleştirme sonrasında yeniden satılması amaçlanan ürünlerin satışını kapsamaz; takım, birlikte kullanılması ve son kullanıcıya satılması amaçlanan eşyadan oluşmalıdır. Kavram gıdaya özgü değildir (çizim ve saç tuvalet takımları); yeniden paketlemeden son kullanıcıya satışa uygunluk ayrıca şarttır.",
+           "GYK 3(b) Açıklama Notu (X)."))
+# 19
+S.append(q("GYK 3(b) açıklama notuna göre, eşyaya esas niteliğini (mümeyyiz vasfını) veren madde veya eşyanın belirlenmesinde örnek olarak sayılan ölçütler arasında aşağıdakilerden hangisi <b>yer almaz</b>?",
+           ["Hacim", "Ağırlık veya miktar", "Kıymet", "Eşyanın kullanımındaki önemi", "*Eşyanın menşe ülkesi"], T_N,
+           "Açıklama notu (VIII), esas niteliğin eşyanın cinsine göre değiştiğini ve örneğin eşyayı oluşturan maddelerin veya eşyanın içeriği, hacmi, ağırlığı veya miktarı, kıymeti ya da eşyanın kullanımındaki önemine göre belirlenebileceğini belirtir. Menşe ülke sınıflandırmada esas nitelik ölçütü olarak sayılmamıştır.",
+           "GYK 3(b) Açıklama Notu (VIII)."))
+# 20
+S.append(q("GYK 6 ve açıklama notuna göre aşağıdakilerden hangisi doğrudur?",
+           ["Tek tireli ve iki tireli alt pozisyonlar, eşyayla ilişkileri bakımından birbirleriyle doğrudan karşılaştırılabilir.",
+            "*İki tireli alt pozisyonların içeriği, eşyayı en özel niteleyen tek tireli alt pozisyon seçildikten ve bu alt pozisyon kendi içinde ayrımlara sahipse dikkate alınır.",
+            "Bölüm ve Fasıl notları alt pozisyon düzeyindeki sınıflandırmada hiçbir durumda uygulanmaz.",
+            "İki tireli bir alt pozisyonun kapsamı, ait olduğu tek tireli alt pozisyonun kapsamını aşabilir.",
+            "Bir Fasıl notu ile Alt pozisyon notu aynı terimi farklı tanımlıyorsa alt pozisyonların yorumunda Fasıl notu esas alınır."], T_N,
+           "GYK 6’ya göre yalnızca aynı seviyedeki alt pozisyonlar karşılaştırılır; iki tirelilere, en özel tek tireli seçildikten ve bu alt pozisyon alt ayrımlara sahipse bakılır. Metinde aksi belirtilmedikçe Bölüm ve Fasıl notları da uygulanır; ancak Fasıl notu alt pozisyon notuyla çelişirse alt pozisyon notu esas alınır (Fasıl 71 “platin” örneği). İki tireli kapsam tek tireliyi aşamaz.",
+           "GYK 6; Açıklama Notu (I)–(II)."))
+# 21
+S.append(q("Aşağıdaki kural – içerik eşleştirmelerinden hangisi <b>yanlıştır</b>?",
+           ["GYK 2(b) – Bir maddeye yapılan atıf, bu maddenin karışım ve bileşimlerini de içine alır.",
+            "GYK 3(a) – Eşyayı en özel şekilde niteleyen pozisyon, daha genel niteleyene göre öncelik alır.",
+            "GYK 3(c) – Geçerli olabilecek pozisyonların numara sırasına göre sonuncusu seçilir.",
+            "*GYK 5(b) – Sürekli kullanıma elverişli olduğu açıkça belli ambalajlar da içindeki eşya ile birlikte sınıflandırılır.",
+            "GYK 6 – Alt pozisyonlarda yalnızca aynı seviyedeki alt pozisyonlar karşılaştırılır."], T_B,
+           "GYK 5(b), normal ambalaj maddelerini ve ambalaj mahfazalarını içindeki eşya ile birlikte sınıflandırır; ancak sürekli kullanıma elverişli olduğu açıkça belli olan ambalajlara bu hüküm uygulanmaz (ör. sıkıştırılmış gaz için çelik kaplar). Diğer eşleştirmeler kural metinleriyle uyumludur.",
+           "GYK 5(b) ve Açıklama Notu (IV); GYK 2(b); GYK 3; GYK 6."))
+# 22
+S.append(q("Tarife Cetvelinin “Kısaltmalar ve Semboller” listesine göre aşağıdaki eşleştirmelerden hangisi <b>yanlıştır</b>?",
+           ["*IR – ultraviyole", "kvar – kilovolt-amper-reaktif", "cP – santipoise", "Bq – bekerel", "p- – para-"], T_B,
+           "Resmî listede IR “kızılötesi”, UV ise “ultraviyole” olarak gösterilmiştir. kvar kilovolt-amper-reaktif, cP santipoise, Bq bekerel ve p- para- karşılıkları listeyle aynıdır. Tuzak, ışınım kısaltmalarının birbirine karıştırılmasıdır.",
+           "Tarife Cetveli, Kısaltmalar ve Semboller."))
+# 23
+S.append(q("GYK 3(b) açıklama notuna göre “perakende olarak satılacak hale getirilmiş takım halinde bulunan eşya” ile ilgili aşağıdaki ifadelerden hangileri doğrudur?  I. İlk bakışta farklı pozisyonlarda sınıflandırılabilen en az iki farklı eşyadan oluşmalıdır.  II. Özel bir gereksinmeyi karşılamak veya belirli bir işlevi yerine getirmek üzere bir araya getirilmiş olmalıdır.  III. Yeniden paketlemeye gerek kalmadan son kullanıcılara doğrudan satışa uygun biçimde düzenlenmiş olmalıdır.  IV. Üretim sanayiinde kullanılmak üzere belirli miktarlarda ayrı ayrı paketlenmiş eşya da ortak ambalajda ise takım sayılır.",
+           ["I ve II", "I ve III", "*I, II ve III", "II, III ve IV", "I, II, III ve IV"], T_C,
+           "I, II ve III açıklama notunda sayılan üç takım şartıdır. IV yanlıştır: açıklama notu (XI), kuralın üretim sanayiinde belirli miktarlar halinde ayrı ayrı paketlenmiş eşyaya, ortak ambalaj içinde olsun olmasın, uygulanmayacağını belirtir.",
+           "GYK 3(b) Açıklama Notu (X)–(XI)."))
+# 24
+S.append(q("Aşağıdakilerden hangileri GYK 5 uyarınca ait olduğu veya içindeki eşya ile birlikte sınıflandırılır?  I. Kolyeyle birlikte sunulan, o kolyeye uygun olarak yapılmış kolye kutusu  II. Ayrı olarak gümrüğe sunulan, belli bir kemana göre yapılmış keman kutusu  III. İçindeki sıkıştırılmış gazla birlikte sunulan, tekrar kullanıma elverişli olduğu açıkça belli çelik kap  IV. Elektrikli tıraş makinesiyle birlikte sunulan, makineye uygun mahfaza",
+           ["I ve II", "*I ve IV", "II ve III", "I, II ve IV", "I, III ve IV"], T_C,
+           "I ve IV, eşyaya göre yapılmış ve eşyayla birlikte sunulan mahfazalardır; GYK 5(a) uyarınca eşyayla birlikte sınıflandırılır (tıraş makinesi mahfazası için 85.10 örneği verilmiştir). II ayrı sunulduğundan kendi pozisyonunda kalır. III, tekrar kullanıma elverişli olduğu açıkça belli ambalaj olduğundan GYK 5(b) dışında kalır.",
+           "GYK 5(a) Açıklama Notu (I)–(II); GYK 5(b) Açıklama Notu (IV)."))
+# 25
+S.append(q("Demonte halde gümrüğe sunulan bir makineyle birlikte, montaj için gerekenden fazla sayıda vida ve cıvata gelmiştir. Parçaların birleştirilmesi için ileri bir işçilik gerekmemektedir. GYK 2(a) açıklama notuna göre aşağıdakilerden hangisi doğrudur?",
+           ["Makine ve fazla gelen vida ve cıvataların tamamı makinenin pozisyonunda sınıflandırılır.",
+            "Makine demonte geldiği için her parçası kendi pozisyonunda ayrı ayrı sınıflandırılır.",
+            "*Makine monte edilmiş gibi sınıflandırılır; montajdan arta kalan vida ve cıvatalar ayrı olarak sınıflandırılır.",
+            "Makine ve bağlantı elemanları GYK 3(b) uyarınca perakende takım olarak sınıflandırılır.",
+            "Fazla vida ve cıvatalar GYK 5(b) uyarınca ambalaj maddesi sayılarak makineyle sınıflandırılır."], T_S,
+           "GYK 2(a)’nın ikinci kısmına göre demonte makine monte edilmiş makine gibi sınıflandırılır; açıklama notu (VII), montaj için gereken parça sayısı fazla ise montajın tamamlanmasından arta kalan parçaların ayrı olarak sınıflandırılacağını belirtir. Demonte sunuluş eşyayı parçalarına bölmez; bağlantı elemanları ne takım kalemi ne de ambalaj maddesidir.",
+           "GYK 2(a) Açıklama Notu (V)–(VII)."))
+
+modul["sorular"] = S
+yaz(0, modul)

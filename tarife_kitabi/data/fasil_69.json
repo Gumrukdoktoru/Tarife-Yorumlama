@@ -1,0 +1,709 @@
+{
+ "tur": "fasil",
+ "fasil": 69,
+ "baslik": "Seramik mamulleri",
+ "bolum": "XIII",
+ "oz": {
+  "vurgu": "Fasıl 69 yalnızca <b>şekil verildikten sonra pişirilmiş</b> seramik mamullerini kapsar; 800 °C’nin altında ısıtılan ürünler pişirilmiş sayılmaz. Önce eşyanın silisli fosil toprağından veya ateşe dayanıklı olup olmadığına (Tali Fasıl I: 69.01–69.03) bakılır; değilse eşya <b>türüne</b> göre (tuğla, kiremit, boru, karo, teknik eşya, sıhhi eşya, sofra eşyası, süs eşyası) Tali Fasıl II’de sınıflandırılır.",
+  "maddeler": [
+   "Pişirme sınırı: pişirilmemiş taş ve mineral eşyası Fasıl 68’de; tamamen eriyerek camlaşan eşya ve cam-seramik Fasıl 70’te.",
+   "Tali Fasıl I: silisli fosil unlarından eşya 69.01; ateşe dayanıklı tuğla ve inşaat eşyası 69.02; ateşe dayanıklı diğer eşya (pota, karni, boru) 69.03. Ateşe dayanıklılık, madde kadar kullanım amacıyla da aranır.",
+   "Tali Fasıl II’de seramiğin cinsi genellikle önemsizdir; istisna: sofra, mutfak, ev ve tuvalet eşyası porselen/çiniden ise 69.11, diğer seramikten ise 69.12.",
+   "Fasıl dışı: 68.04 aşındırıcıları, Fasıl 71 eşyası, sermetler (81.13), Fasıl 82 eşyası, izolatörler (85.46 / 85.47), takma dişler (90.21), saatler, mobilya ve lambalar, oyuncaklar, düğme ve pipolar, sanat eserleri. 69.08 pozisyonu boştur."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı yeri verir.",
+  "satirlar": [
+   [
+    "1",
+    "Şekil verildikten sonra pişirilmemiş veya 800 °C’nin altında ısıtılmış mı? Tamamen camlaşmış (cam, cam-seramik) mı?",
+    "Fasıl 69 dışı (ör. Fasıl 68) · Fasıl 70"
+   ],
+   [
+    "2",
+    "Not 2 eşyası mı (28.44, 68.04, Fasıl 71, sermet, Fasıl 82, izolatör, takma diş, saat, mobilya-lamba, oyuncak, düğme-pipo, sanat eseri)?",
+    "<b>68.04</b> · <b>81.13</b> · <b>85.46</b> · <b>90.21</b> · <b>96.06</b> vb."
+   ],
+   [
+    "3",
+    "Silisli fosil unu (kiselgur, tripolit, diatomit) veya benzeri silisli topraktan mı?",
+    "<b>69.01</b>"
+   ],
+   [
+    "4",
+    "Yüksek sıcaklık işleri için ateşe dayanıklı tuğla, karo, inşaat eşyası mı?",
+    "<b>69.02</b>"
+   ],
+   [
+    "5",
+    "Ateşe dayanıklı diğer eşya mı (pota, karni, kapsül, tapa, boru, kal potası)?",
+    "<b>69.03</b>"
+   ],
+   [
+    "6",
+    "İnşaat tuğlası mı; kiremit, baca, mimari süs mü; boru, oluk, boru bağlantısı mı?",
+    "<b>69.04</b> · <b>69.05</b> · <b>69.06</b>"
+   ],
+   [
+    "7",
+    "Döşeme/kaplama karosu, kaldırım taşı, mozaik küp, bitirme seramiği mi?",
+    "<b>69.07</b> (69.08 boş)"
+   ],
+   [
+    "8",
+    "Laboratuvar, kimya, teknik iş eşyası; ziraat yalağı; nakil ve ambalaj kabı mı?",
+    "<b>69.09</b>"
+   ],
+   [
+    "9",
+    "Su veya kanalizasyona sabit bağlanan sıhhi eşya mı (lavabo, klozet, küvet, pisuar)?",
+    "<b>69.10</b>"
+   ],
+   [
+    "10",
+    "Sofra, mutfak, diğer ev veya tuvalet eşyası mı?",
+    "Porselen/çini <b>69.11</b> · diğer seramik <b>69.12</b>"
+   ],
+   [
+    "11",
+    "Heykelcik veya süs eşyası mı?",
+    "<b>69.13</b>"
+   ],
+   [
+    "12",
+    "Hiçbiri değilse",
+    "<b>69.14</b>"
+   ]
+  ],
+  "dipnot": "Ateşe dayanıklı maddeden (ör. sinterleşmiş alümina) yapılmış olsa da ateşe dayanıklılık gerektirmeyen işler için tasarlanan eşya (ör. dokuma tezgâhı iplik kılavuzu) Tali Fasıl II’de, 69.09’da yer alır."
+ },
+ "pozisyon_haritasi": [
+  [
+   "69.01",
+   "Silisli fosil unlarından tuğla, karo vb.",
+   "Kiselgur, tripolit, diatomit; ateşe dayanıklı olsun olmasın",
+   "Kiselgur yalıtım tuğlası"
+  ],
+  [
+   "69.02",
+   "Ateşe dayanıklı tuğla, karo, inşaat eşyası",
+   "Fırın, ocak inşası; yüksek sıcaklık",
+   "Şamot tuğla, manyezit fırın tuğlası"
+  ],
+  [
+   "69.03",
+   "Ateşe dayanıklı diğer seramik eşya",
+   "Taşınır kap ve fırın parçaları; borular",
+   "Pota, karni, kal potası, refrakter boru"
+  ],
+  [
+   "69.04",
+   "Seramik inşaat tuğlaları",
+   "Ateşe dayanıklı değil; duvar, baca, cephe",
+   "Delikli tuğla, cephe tuğlası"
+  ],
+  [
+   "69.05",
+   "Kiremit, baca şapkası, mimari süs",
+   "Birbirine geçen veya çivilenen çatı elemanları",
+   "Kiremit, baca külahı, korniş"
+  ],
+  [
+   "69.06",
+   "Seramik borular, oluklar, bağlantı parçaları",
+   "Akışkan iletimi; ateşe dayanıklı değil",
+   "Drenaj borusu, yağmur oluğu, sifon"
+  ],
+  [
+   "69.07",
+   "Döşeme/kaplama karosu, kaldırım taşı, mozaik küp, bitirme seramiği",
+   "Yan yana düz döşenen elemanlar; sırlı olabilir",
+   "Yer karosu, duvar fayansı, süpürgelik"
+  ],
+  [
+   "69.08",
+   "Boş pozisyon",
+   "Metinde içeriksiz olarak yer alır",
+   "—"
+  ],
+  [
+   "69.09",
+   "Laboratuvar, kimya, teknik seramik eşya; ziraat ve ambalaj kapları",
+   "Ateşe dayanıklılık gerektirmeyen teknik kullanım",
+   "Porselen havan, iplik kılavuzu, asit damacanası"
+  ],
+  [
+   "69.10",
+   "Seramik sıhhi tesisat eşyası",
+   "Su veya kanalizasyona sabit bağlanan",
+   "Lavabo, klozet, küvet, pisuar, rezervuar"
+  ],
+  [
+   "69.11",
+   "Porselen/çiniden sofra, mutfak, ev, tuvalet eşyası",
+   "Tamamen camlaşmış, yarı şeffaf porselen",
+   "Porselen tabak, çay takımı"
+  ],
+  [
+   "69.12",
+   "Diğer seramikten sofra, mutfak, ev, tuvalet eşyası",
+   "Porselen/çini dışı (toprak, fayans, gre, taklit porselen)",
+   "Toprak güveç, gre kupa, sabunluk"
+  ],
+  [
+   "69.13",
+   "Seramik heykelcik ve süs eşyası",
+   "Tamamen veya ağırlıklı olarak süs amaçlı",
+   "Biblo, süs vazosu, duvar tabağı"
+  ],
+  [
+   "69.14",
+   "Seramikten diğer eşya",
+   "Başka yerde yer almayan",
+   "Seramik soba, dekoratif olmayan saksı, kapı kolu"
+  ]
+ ],
+ "notlar": [
+  [
+   "Fasıl 69 Not 1",
+   "Fasıl yalnızca şekil verildikten sonra pişirilmiş seramik mamullerini kapsar. 69.04–69.14 yalnızca 69.01–69.03 dışındaki mamullere uygulanır. Reçine kürleme, hidratasyonu hızlandırma, su veya uçucu bileşenleri uzaklaştırma gibi amaçlarla <b>800 °C’den az</b> ısıtılan ürünler pişirilmiş sayılmaz ve Fasıl 69 dışındadır. Seramik ürünler, genellikle oda sıcaklığında hazırlanıp şekil verilmiş inorganik, metalik olmayan maddelerin (kil, silisli maddeler, erimiş silika, oksitler, karbürler, nitrürler, grafit vb.) pişirilmesiyle elde edilir."
+  ],
+  [
+   "Fasıl 69 Not 2",
+   "Fasıl dışı: (a) 28.44 ürünleri; (b) 68.04 eşyası; (c) Fasıl 71 eşyası (taklit mücevher gibi); (d) 81.13 sermetler; (e) Fasıl 82 eşyası; (f) elektrik izolatörleri (85.46) ve izole edici bağlantı parçaları (85.47); (g) takma dişler (90.21); (h) Fasıl 91 eşyası (saat ve mahfazaları); (ij) Fasıl 94 eşyası (mobilya, lamba, prefabrik yapı); (k) Fasıl 95 eşyası (oyuncak, oyun, spor); (l) 96.06 (düğme) veya 96.14 (pipo) eşyası; (m) Fasıl 97 eşyası (sanat eserleri)."
+  ],
+  [
+   "Genel Açıklamalar",
+   "Seramik mamulleri (A) inorganik, metalik olmayan maddelerin şekil verilip pişirilmesiyle veya (B) şekil verildikten sonra pişirilmiş kayalardan (steatit gibi) elde edilir. Pişirmede eşya 800 °C veya daha yüksek sıcaklığa ısıtılır. Şekil sonrası pişirme, Fasıl 69’u genellikle pişirilmemiş Fasıl 68 eşyasından ve tamamen eriyerek camlaşan Fasıl 70 eşyasından ayırır."
+  ],
+  [
+   "Genel Açıklamalar (hariç)",
+   "Kırık çömlek ve tuğla döküntüleri (25.30); elektrik fırçası için grafit yarı mamulleri (38.01); monte edilmemiş piezo-elektrik seramik elemanlar (38.24); cam-seramik (Fasıl 70); sinterleşmiş adi metal tozu karışımları (Bölüm XV); alet uçları için sermet levha ve uçlar (82.09)."
+  ],
+  [
+   "Tali Fasıl I Genel Açıklamalar",
+   "69.02 ve 69.03’teki ateşe dayanıklı eşya yüksek sıcaklığa (<b>1.500 °C</b> ve daha yukarı) dayanıklı olmalı ve aynı zamanda yüksek sıcaklık gerektiren işlerde kullanılmak üzere tasarlanmış olmalıdır. Sinterleşmiş alüminadan potalar 69.03’te, aynı maddeden dokuma tezgâhı iplik kılavuzları 69.09’dadır. Sanayi sıcaklığına dayanmayan “yarı ateşe dayanıklı” eşya Tali Fasıl II’ye gider."
+  ],
+  [
+   "69.01 Açıklama Notu",
+   "Kiselgur, tripolit, diatomit gibi silisli topraklardan (pirinç külü silisi dahil) tuğla, blok, levha, karo, boru vb.; ateşe dayanıklı olsun olmasın. Hafif ve gözeneklidir, ısı yalıtımında kullanılır. Silisli toprak içermeyen ateşe dayanıklı olmayan hafif tuğlalar 69.04’te, kiselgur–kuvars filtre levhaları 69.09’dadır."
+  ],
+  [
+   "69.02–69.03 Açıklama Notları",
+   "69.02: fırın, ocak ve tesis inşasında kullanılan ateşe dayanıklı tuğla ve karolar (makine inşası için özel şekilli olanlar dahil). 69.03: taşınır karniler, potalar, kal potaları, kapsüller, tapalar, brülör ağızlıkları, fırın mesnetleri, ingot kalıpları ile ateşe dayanıklı borular, rakorlar, dirsekler. Seger konileri (pişirilmeden kullanılan) 38.24’tedir."
+  ],
+  [
+   "Tali Fasıl II Genel Açıklamalar",
+   "Eşya türüne göre (tuğla, karo, sıhhi eşya vb.) sınıflandırılır; seramiğin cinsi genellikle etkili değildir. İstisna: sofra, mutfak, ev ve tuvalet eşyası porselen/çiniden ise 69.11, diğer seramikten ise 69.12. Pişirilmiş steatit eşya da Tali Fasıl II’dedir (elektrik işlerine ait olanlar genellikle Fasıl 85)."
+  ],
+  [
+   "Porselen veya çini",
+   "Sert, yumuşak, bisküvi (parian dahil) ve kemik esaslı porselen; tamamen camlaşmış, sert, sırsız olsa da su geçirmez, beyaz veya renklendirilmiş, yarı şeffaf (çok kalınlar hariç) ve sesi yansıtıcıdır. Taklit (yarı) porselenin kırık yeri pürüzlü, mat ve camlaşmamıştır; porselen sayılmaz."
+  ],
+  [
+   "Diğer seramikler",
+   "Gözenekli eşya (adi çömlek, fayans): sıvı sızdırır, demirle kolayca çizilir, kırığı dile yapışır. Sert seramik (gre): yoğun, demirle çizilmeyecek kadar sert, kısmen camlaşmış, mat, genellikle kahverengimsi veya gri."
+  ],
+  [
+   "69.04–69.06 Açıklama Notları",
+   "69.04: ateşe dayanıklı olmayan (1.500 °C’ye dayanmayan) inşaat tuğlaları; dolu, delikli, baca, cephe ve süs tuğlaları, pişirmede yanan talaş katkılı hafif tuğlalar. 69.05: birbirine geçecek şekilde kalıplanmış veya çivilenmek üzere delikli kiremitler, baca aksamı, mimari süsler. 69.06: borular, oluklar (yağmur oluğu dahil), boru bağlantıları; inşaatta kullanılsalar da 69.05’e girmez."
+  ],
+  [
+   "69.07 Açıklama Notu",
+   "Döşeme ve kaplama karoları, kaldırım taşları, mozaik küpler (mesnet üzerinde olsun olmasın) ve bitirme seramikleri (bordür, süpürgelik, köşe parçası). Kiremitlerden farklı olarak düzdür, dilli veya delikli değildir ve üst üste gelmeden yan yana döşenir; sırlı veya cilalı olabilir. Tabak altlığı karolar 69.11 / 69.12, süs eşyası 69.13, sobalar için özel karolar 69.14."
+  ],
+  [
+   "69.09 Açıklama Notu",
+   "Laboratuvar eşyası (pota, havan, filtre, beher), teknik eşya (tulumba, valf, iplik kılavuzu, öğütme bilyası), nakil ve ambalaj kapları (asit damacanası, gıda ve kozmetik kavanozları), ziraat yalakları. Hariç: ateşe dayanıklı potalar (69.03), mutfak kapları (69.11 / 69.12), genel amaçlı laboratuvar ve eczane-şekerci teşhir kavanozları (69.14), elektrik izolatörleri (85.46 / 85.47)."
+  ],
+  [
+   "69.10 Açıklama Notu",
+   "Su veya kanalizasyon tesisatına daimi bağlanan musluk taşı, lavabo, küvet, bide, klozet, rezervuar (mekanizmalı olsun olmasın), pisuar. Sabunluk, sünger sepeti, diş fırçalığı, havluluk, tuvalet kâğıdı askısı gibi küçük aksesuarlar duvara monte edilse bile ve taşınır lazımlıklar 69.11 / 69.12’dedir."
+  ],
+  [
+   "69.11–69.12 Açıklama Notu",
+   "Sofra (tabak, fincan, demlik), mutfak (tencere, kavanoz, merdane), diğer ev (kül tablası, sıcak su şişesi) ve tuvalet eşyası (sabunluk, havluluk, lazımlık). Hariç: nakil kapları (69.09), sıhhi eşya (69.10), süs eşyası (69.13), kıymetli metali basit süs mahiyetini aşan eşya (Fasıl 71), seramik hazneli metal öğütücüler (82.10), elektrotermik cihazlar (85.16), saatler (Fasıl 91)."
+  ],
+  [
+   "69.13 Açıklama Notu",
+   "İç ve dış dekorasyon için heykel, büst, kabartma, yapma çiçek ve meyve, mezar çelengi, duvar tabağı, süs vazosu; kullanımı süs niteliğine göre ikinci derecede olan eşya. Süslü olsa da kullanımı olumsuz etkilenmeyen sofra eşyası 69.11 / 69.12’de kalır. Hariç: mimari süsler (69.05), taklit mücevher (71.17), saatler (Fasıl 91), lambalar (94.05), oyuncaklar (Fasıl 95), orijinal heykel ve antikalar (Fasıl 97)."
+  ],
+  [
+   "69.14 Açıklama Notu",
+   "Başka yerde yer almayan seramik eşya: seramik sobalar ve soba karoları, dekoratif olmayan saksılar, kapı kolları ve tokmakları, aydınlatılmamış tabelalar, mekanizmalı şişe kapakları, genel amaçlı laboratuvar ve teşhir kavanozları, bıçak sapları. Hariç: takma diş (90.21), oyuncak (Fasıl 95), düğme ve pipo (Fasıl 96)."
+  ]
+ ],
+ "sinir_komsulari": [
+  [
+   "800 °C’nin altında ısıtılarak sertleştirilmiş ürün",
+   "Maddesine göre (ör. Fasıl 68)",
+   "Not 1: pişirilmiş sayılmaz"
+  ],
+  [
+   "Pişirilmemiş, kimyasal bağlayıcılı manyezit tuğla",
+   "68.15",
+   "Pişirilmiş benzeri 69.02 / 69.03"
+  ],
+  [
+   "Seramik bağlayıcılı taşlama çarkı, bileği taşı",
+   "68.04",
+   "Not 2(b)"
+  ],
+  [
+   "Cam-seramik eşya; cam eşya",
+   "Fasıl 70",
+   "Genel Açıklamalar: tamamen camlaşma"
+  ],
+  [
+   "Seramik elektrik izolatörü",
+   "85.46 / 85.47",
+   "Not 2(f)"
+  ],
+  [
+   "Seramik takma diş",
+   "90.21",
+   "Not 2(g)"
+  ],
+  [
+   "Seramik hazneli, metal mekanizmalı kahve öğütücü",
+   "82.10",
+   "69.12 hariç tutması"
+  ],
+  [
+   "Seramik gövdeli lamba",
+   "94.05",
+   "Not 2(ij); 69.13 hariç tutması"
+  ],
+  [
+   "Seramik saat mahfazası",
+   "Fasıl 91",
+   "Not 2(h)"
+  ],
+  [
+   "Seramikten taklit mücevher",
+   "71.17",
+   "Not 2(c)"
+  ],
+  [
+   "Seramik düğme; seramik pipo",
+   "96.06 / 96.14",
+   "Not 2(l)"
+  ],
+  [
+   "Kırık çömlek ve tuğla döküntüsü",
+   "25.30",
+   "Genel Açıklamalar"
+  ],
+  [
+   "Seger konisi",
+   "38.24",
+   "Şekil verildikten sonra pişirilmez"
+  ],
+  [
+   "Seramik elemanlı elektrikli ısıtıcı, pişirme tablası",
+   "85.16",
+   "69.12 ve 69.14 hariç tutmaları"
+  ],
+  [
+   "Sermet levha ve alet uçları",
+   "81.13 / 82.09",
+   "Not 2(d), (e)"
+  ]
+ ],
+ "tuzaklar": [
+  "<b>Pişirilmemiş seramik olmaz.</b> Şekil verildikten sonra pişirilmeyen veya 800 °C’nin altında ısıtılan eşya Fasıl 69’a giremez; pişirilmemiş aglomere manyezit tuğla 68.15’tedir.",
+  "<b>Ateşe dayanıklılık = madde + amaç.</b> Sinterleşmiş alüminadan pota 69.03’te, aynı maddeden iplik kılavuzu 69.09’dadır; sanayi sıcaklığına dayanmayan “yarı ateşe dayanıklı” eşya Tali Fasıl II’ye gider.",
+  "<b>Tali Fasıl II’de tür esastır, madde değil.</b> Porselen lavabo da gre lavabo da 69.10’dadır; madde ayrımı yalnız sofra, mutfak, ev ve tuvalet eşyasında (69.11 / 69.12) yapılır.",
+  "<b>Taklit porselen porselen değildir.</b> Kırık yeri mat, camlaşmamış ve dile yapışan “yarı porselen” sofra eşyası 69.11’e değil 69.12’ye gider.",
+  "<b>Sabunluk sıhhi tesisat değildir.</b> Duvara monte edilse bile sabunluk, havluluk, diş fırçalığı ve taşınır lazımlıklar 69.11 / 69.12’de; 69.10 yalnız su veya kanalizasyona sabit bağlanan eşya içindir.",
+  "<b>Kiremit ile karo farklıdır.</b> Birbirine geçen veya çivilenen çatı elemanı 69.05; yan yana düz döşenen karo 69.07; sobalar için özel karolar 69.14’tedir.",
+  "<b>Boru inşaatta kullanılsa da 69.06’dır.</b> Yağmur oluğu 69.06; baca aksamı 69.05; laboratuvar tüpü 69.09; ateşe dayanıklı boru 69.03.",
+  "<b>Süslü tabak hâlâ tabaktır.</b> Süslemesi kullanımını azaltmayan tabak 69.11 / 69.12’de; asılmak üzere yapılmış duvar tabağı 69.13’tedir.",
+  "<b>Her seramik kap sofra eşyası değildir.</b> Gıda veya kozmetik ambalajı olarak kullanılan kavanoz ve testiler 69.09’da; genel amaçlı laboratuvar ve eczane teşhir kavanozları 69.14’tedir.",
+  "<b>69.08 boştur.</b> 69.07 Açıklama Notuna göre döşeme ve kaplama karoları sırlı veya cilalı olabilir; hepsi 69.07’de toplanır."
+ ],
+ "hafiza": {
+  "kanca": "ATEŞ (01–03) → BİNA (04–07) → TEKNİK (09) → BANYO (10) → SOFRA (11–12) → SÜS (13) → DİĞER (14)",
+  "aciklama": "Önce fırının içine bakın: kiselgur ve ateşe dayanıklı eşya (69.01–69.03). Sonra binayı dışarıdan içeri gezin: tuğla duvar (69.04), çatıda kiremit (69.05), oluk ve boru (69.06), yerde karo (69.07). İçeride laboratuvar (69.09), banyo (69.10), sofra (69.11 porselen / 69.12 diğer), rafta biblo (69.13) ve kalan her şey (69.14). 69.08 boş bir odadır."
+ },
+ "sinav_odagi": [
+  "Bu fasıl çıkmış sorularda daha çok seçeneklerde/çeldirici olarak yer almıştır; doğrudan Fasıl 69’u soran soru azdır.",
+  "“Hangisi mamul olduğu maddeye göre sınıflandırılır?” kalıbında tabak gibi sofra eşyasının maddesine göre ayrıldığı (porselen 69.11, diğer seramik 69.12); şemsiye ve baston gibi maddeden bağımsız eşyayla karşılaştırılması.",
+  "GYK 3(b) takım sorularında kahve ile seramik fincanın birlikte paketlenmesi gibi seçeneklerde seramik ev eşyasının çeldirici olarak kullanılması.",
+  "Madde–fasıl eşleştirme sorularında camın Fasıl 70’te olduğunun sorulması; seramik ile cam arasındaki ayrımın (tamamen eriyerek camlaşma) bu tür sorularda bilinmesi gerektiği."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Aşağıdakilerden hangisi mamul olduğu maddeye göre sınıflandırılır?",
+   "secenekler": [
+    "Baston",
+    "Şemsiye",
+    "Diş fırçası",
+    "Tabak",
+    "Antika biblo"
+   ],
+   "cevap": "D",
+   "aciklama": "Tabak gibi sofra eşyası maddesine göre ayrılır: porselen veya çiniden ise 69.11’de, diğer seramikten ise 69.12’de sınıflandırılır. Baston ve şemsiye ise Fasıl 66’da maddelerine bakılmaksızın yer alır."
+  }
+ ],
+ "ozet": [
+  "Yalnızca şekil verildikten sonra pişirilmiş seramik Fasıl 69’dadır; 800 °C’nin altında ısıtma pişirme sayılmaz.",
+  "Tali Fasıl I: kiselgur 69.01, ateşe dayanıklı inşaat eşyası 69.02, ateşe dayanıklı diğer eşya 69.03 (yüksek sıcaklık için tasarlanmış olmalı).",
+  "Tali Fasıl II türe göre: tuğla 69.04, kiremit ve baca 69.05, boru 69.06, karo 69.07, teknik 69.09, sıhhi 69.10, süs 69.13, diğer 69.14.",
+  "Sofra, mutfak, ev ve tuvalet eşyasında madde belirleyicidir: porselen/çini 69.11, taklit porselen dahil diğer seramik 69.12.",
+  "Fasıl dışı: 68.04, Fasıl 71, sermet 81.13, Fasıl 82, izolatör 85.46 / 85.47, takma diş 90.21, saat, mobilya-lamba, oyuncak, düğme-pipo, sanat eseri; cam-seramik Fasıl 70."
+ ],
+ "sorular": [
+  {
+   "soru": "Tarife Cetveline göre, su ve kanalizasyon tesisatına sabit olarak bağlanacak, sırlı sert seramikten (gre) klozet ve rezervuarı hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "69.12",
+    "69.10",
+    "69.11",
+    "69.14",
+    "69.05"
+   ],
+   "cevap": "B",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "69.10, evlerde su veya kanalizasyon tesisatına daimi şekilde bağlanacak lavabo, klozet, rezervuar gibi sıhhi eşyayı kapsar; bu pozisyonda seramiğin porselen veya gre olması pozisyonu değiştirmez. 69.11 / 69.12 sofra, mutfak ve tuvalet eşyası içindir; sıhhi eşya bu pozisyonların hariç tutmalarında sayılmıştır.",
+   "dayanak": "69.10 Açıklama Notu; 69.12 Açıklama Notu, hariç tutmalar."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 69. faslında <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Porselen kahve fincanı",
+    "Pişmiş kilden dekoratif olmayan bahçe saksısı",
+    "Seramik lavabo",
+    "Seramik drenaj borusu",
+    "Seramikten elektrik izolatörü"
+   ],
+   "cevap": "E",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Elektrik izolatörleri Fasıl 69 Not 2(f) gereği 85.46’da, izole edici bağlantı parçaları 85.47’dedir. Porselen fincan 69.11’de, dekoratif olmayan saksı 69.14’te, lavabo 69.10’da, drenaj borusu 69.06’da sınıflandırılır.",
+   "dayanak": "Fasıl 69 Not 2(f); 69.06, 69.10, 69.11 ve 69.14 Açıklama Notları."
+  },
+  {
+   "soru": "Fasıl 69 Not 1’e göre reçinelerin kürlenmesi, hidratasyon reaksiyonlarının hızlandırılması veya su ve diğer uçucu bileşenlerin uzaklaştırılması amacıyla hangi sıcaklığın altında ısıtılan ürünler pişirilmiş sayılmaz?",
+   "secenekler": [
+    "800 °C",
+    "500 °C",
+    "1.000 °C",
+    "1.200 °C",
+    "1.500 °C"
+   ],
+   "cevap": "A",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Not 1 ve Genel Açıklamalara göre bu amaçlarla 800 °C’den az sıcaklığa kadar ısıtılan ürünler pişirilmiş kabul edilmez ve Fasıl 69 dışında kalır. 1.500 °C, Tali Fasıl I’de ateşe dayanıklı eşyanın dayanması gereken sıcaklıktır; pişirme eşiği ile karıştırılmamalıdır.",
+   "dayanak": "Fasıl 69 Not 1; Fasıl 69 Genel Açıklamalar (iv)."
+  },
+  {
+   "soru": "Mutfakta kullanılan aşağıdaki kaplardan hangisi Tarife Cetvelinde diğerlerinden farklı bir fasılda yer alır?",
+   "secenekler": [
+    "Gre (sert seramik) güveç",
+    "Porselen tabak",
+    "Cam-seramikten pişirme kabı",
+    "Fayans sürahi",
+    "Pişmiş topraktan çömlek"
+   ],
+   "cevap": "C",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Fasıl 69 Genel Açıklamaları cam-seramik ürünlerini açıkça hariç tutar; bunlar Fasıl 70’tedir. Gre güveç, fayans sürahi ve toprak çömlek 69.12’de, porselen tabak 69.11’de, yani hepsi Fasıl 69’da sınıflandırılır.",
+   "dayanak": "Fasıl 69 Genel Açıklamalar, hariç tutmalar (f); 69.11–69.12 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, kemik esaslı porselenden (bone china) yapılmış çay fincanı ve fincan tabağı hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "69.12",
+    "69.13",
+    "70.13",
+    "69.11",
+    "69.09"
+   ],
+   "cevap": "D",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Porselen veya çini tabiri sert, yumuşak, bisküvi ve kemik esaslı porseleni kapsar; porselenden sofra eşyası 69.11’dedir. 69.12 porselen dışı seramikler, 69.13 süs eşyası, 69.09 teknik ve ambalaj kapları içindir; 70.13 cam sofra eşyası pozisyonudur.",
+   "dayanak": "Tali Fasıl II Genel Açıklamalar (I); 69.11–69.12 Açıklama Notu."
+  },
+  {
+   "soru": "Perakende satış için bir kutuda birlikte sunulan bir porselen çaydanlık, altı porselen fincan ve altı porselen fincan tabağının tümü 69.11 pozisyonunda sınıflandırılır. Bu sınıflandırmaya esas olan Genel Yorum Kuralı aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "GYK 3(b)",
+    "GYK 2(a)",
+    "GYK 3(c)",
+    "GYK 1",
+    "GYK 5(b)"
+   ],
+   "cevap": "D",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "Kutudaki eşyanın tamamı porselenden sofra eşyası olarak aynı pozisyona (69.11) girdiğinden sınıflandırma doğrudan pozisyon metniyle, GYK 1 ile yapılır. GYK 3(b) Açıklama Notuna göre takım, ilk bakışta farklı pozisyonlarda sınıflandırılabilen en az iki farklı eşyadan oluşmalıdır; aynı pozisyondaki eşyanın bir arada paketlenmesi 3(b) takımı oluşturmaz.",
+   "dayanak": "GYK 1; GYK 3(b) Açıklama Notu (X); 69.11 pozisyon metni."
+  },
+  {
+   "soru": "Aşağıdakilerden hangileri 69.14 pozisyonunda sınıflandırılır? I. Esası seramik olan soba II. Dekoratif olmayan bahçe saksısı III. Seramik lavabo IV. Eczanelerde mal teşhiri için kullanılan seramik kavanoz",
+   "secenekler": [
+    "I ve III",
+    "I, II ve IV",
+    "II ve III",
+    "I, III ve IV",
+    "III ve IV"
+   ],
+   "cevap": "B",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "69.14 başka yerde yer almayan seramik eşyayı kapsar; seramik sobalar, dekoratif olmayan saksılar ve eczacı ve şekerciler için gösterim kavanozları Açıklama Notunda sayılmıştır (I, II, IV). Seramik lavabo sıhhi eşya olarak 69.10’dadır (III).",
+   "dayanak": "69.14 Açıklama Notu; 69.10 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, metalurji sanayiinde 1.500 °C’nin üzerinde metal eritmek için tasarlanmış, sinterleşmiş alüminadan yapılmış taşınabilir pota hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "69.03",
+    "69.02",
+    "69.09",
+    "68.15",
+    "69.14"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Tali Fasıl I Genel Açıklamaları sinterleşmiş alüminadan potaları 69.03’te sayar; 69.03 Açıklama Notu da 69.02’deki sabit inşaat eşyasından farklı olarak taşınır pota ve karnileri kapsar. Ateşe dayanıklılık gerektirmeyen işler için tasarlansaydı 69.09’a giderdi; pişirilmiş olduğu için 68.15 söz konusu değildir.",
+   "dayanak": "Tali Fasıl I Genel Açıklamalar; 69.03 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 69.10 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Seramikten yapılmış küvet",
+    "Seramikten yapılmış bide",
+    "Mekanizmalı seramik rezervuar",
+    "Seramikten yapılmış pisuar",
+    "Duvara monte seramik sabunluk"
+   ],
+   "cevap": "E",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "69.10 Açıklama Notu sabunluk, sünger sepeti, diş fırçalığı, havluluk gibi küçük banyo aksesuarlarını duvara monte edilecek şekilde imal edilmiş olsalar bile hariç tutar; bunlar 69.11 veya 69.12’dedir. Küvet, bide, rezervuar (mekanizmalı olsun olmasın) ve pisuar 69.10’da sayılmıştır.",
+   "dayanak": "69.10 Açıklama Notu; 69.11–69.12 Açıklama Notu (D)."
+  },
+  {
+   "soru": "Bir firma şu ürünü ithal etmektedir: alümina–silika esaslı; 1.600 °C’ye dayanıklı; şekil verildikten sonra pişirilmiş; cam eritme fırınının iç duvarlarının örülmesinde kullanılacak özel şekilli tuğla. Tarife Cetveline göre bu ürün hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "69.04",
+    "69.03",
+    "69.02",
+    "68.15",
+    "69.01"
+   ],
+   "cevap": "C",
+   "tip": "Senaryo",
+   "gerekce": "69.02, fırın ve ocak inşasında kullanılan ateşe dayanıklı tuğlaları, özel şekillenmiş olanlar dahil kapsar; ürün hem yüksek sıcaklığa dayanıklı hem de yüksek sıcaklık işi için tasarlanmıştır. 69.03 taşınır kaplar ve borular içindir; 69.04 ateşe dayanıklı olmayan tuğlaları kapsar. Pişirilmiş olduğundan 68.15’e, silisli fosil toprağından olmadığından 69.01’e girmez.",
+   "dayanak": "69.02 Açıklama Notu; Tali Fasıl I Genel Açıklamalar."
+  },
+  {
+   "soru": "Tali Fasıl I Genel Açıklamalarına göre bir seramik eşyanın 69.02 veya 69.03 pozisyonunda ateşe dayanıklı eşya sayılması için aşağıdakilerden hangisi gereklidir?",
+   "secenekler": [
+    "Kullanım amacına bakılmaksızın sinterleşmiş alüminadan yapılmış olması",
+    "Yalnızca şekil verildikten sonra 800 °C’nin üzerinde pişirilmiş olması",
+    "1.500 °C ve üstüne dayanıklı olması ve yüksek sıcaklık işleri için tasarlanmış olması",
+    "Ticarette ateşe dayanıklı veya yarı dayanıklı olarak tanımlanmış olması",
+    "Sırsız ve gözenekli olup ısı yalıtımında kullanılabilmesi"
+   ],
+   "cevap": "C",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Açıklama Notu, 69.02 ve 69.03’teki eşyanın sadece yüksek sıcaklığa dayanıklı olmasını değil, yüksek sıcaklık gerektiren işlerde kullanılmak üzere tasarlanmış olmasını da arar. 800 °C bütün seramiklerin pişirme eşiğidir; “yarı ateşe dayanıklı” diye tanımlanan ama sanayi sıcaklığına dayanmayan eşya Tali Fasıl II’ye gider.",
+   "dayanak": "Tali Fasıl I Genel Açıklamalar; Fasıl 69 Not 1."
+  },
+  {
+   "soru": "Aşağıdaki sofra eşyasından hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Taklit (yarı) porselenden yemek tabağı",
+    "Sert porselenden çay fincanı",
+    "Bisküvi porselenden şekerlik",
+    "Kemik esaslı porselenden servis tabağı",
+    "Yumuşak porselenden çorba kâsesi"
+   ],
+   "cevap": "A",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Tali Fasıl II Genel Açıklamalarına göre taklit (yarı) porselen mamulleri porselen veya çini eşya olarak kabul edilmez; bu tabak 69.12’dedir. Sert, bisküvi, kemik esaslı ve yumuşak porselenden sofra eşyası ise 69.11’de sınıflandırılır.",
+   "dayanak": "Tali Fasıl II Genel Açıklamalar (I) ve (II)(C); 69.11–69.12 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdaki eşya – yer eşleştirmelerinden hangisi <b>yanlıştır</b>?",
+   "secenekler": [
+    "Seramik düğme – 96.06",
+    "Seramik pipo – 96.14",
+    "Seramik bağlayıcılı taşlama çarkı – 68.04",
+    "Seramik takma diş – 69.14",
+    "Pişmiş kil çatı kiremidi – 69.05"
+   ],
+   "cevap": "D",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Takma dişler Fasıl 69 Not 2(g) ve 69.14 Açıklama Notu gereği 90.21’dedir. Seramik düğmeler 96.06, pipolar 96.14, 68.04 eşyası 68.04 ile doğru eşleştirilmiştir; çatı kiremitleri 69.05’te yer alır.",
+   "dayanak": "Fasıl 69 Not 2(b), (g), (l); 69.05 ve 69.14 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetveline göre, çatılarda birbirine geçecek şekilde kalıplanmış, pişmiş kilden kiremit hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "69.07",
+    "69.04",
+    "68.10",
+    "69.14",
+    "69.05"
+   ],
+   "cevap": "E",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "69.05 kiremitleri, baca aksamını ve mimari süsleri kapsar; Açıklama Notuna göre kiremitler birbirine kenetlenecek şekilde kalıplanmış veya çivilenmek üzere delikli olmalarıyla karolardan ayrılır. Düz ve yan yana döşenen karolar 69.07’de, inşaat tuğlaları 69.04’tedir; beton kiremit ise 68.10’da olurdu.",
+   "dayanak": "69.05 Açıklama Notu; 69.07 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 69.09 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Porselen laboratuvar havanı ve havan eli",
+    "Eczanelerde mal teşhiri için kullanılan seramik kavanoz",
+    "Sinterleşmiş alüminadan dokuma tezgâhı iplik kılavuzu",
+    "Asit taşımada kullanılan sert seramik damacana",
+    "Ziraatte kullanılan seramik yalak"
+   ],
+   "cevap": "B",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "69.09 Açıklama Notu, laboratuvarların genel kullanımına ait kavanozları ve eczanelerde, şekercilerde mal gösterimine ait kavanozları hariç tutar; bunlar 69.14’tedir. Laboratuvar havanları, iplik kılavuzları, asit damacanaları ve ziraat yalakları 69.09’da sayılmıştır.",
+   "dayanak": "69.09 Açıklama Notu; 69.14 Açıklama Notu (6)."
+  },
+  {
+   "soru": "Seramikten yapılmış aşağıdaki eşyadan hangisi diğerlerinden farklı bir pozisyonda yer alır?",
+   "secenekler": [
+    "Seramik yağmur oluğu",
+    "Seramik lağım borusu",
+    "Seramik sifon",
+    "Ziraatte kullanılan gözenekli seramik drenaj borusu",
+    "Seramik baca külahı"
+   ],
+   "cevap": "E",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Baca külahları, baca şapkaları ve diğer boru şeklindeki baca aksamı 69.05’te yer alır ve 69.06’nın hariç tutmalarında sayılmıştır. Yağmur olukları, lağım boruları, sifon gibi boru bağlantı parçaları ve drenaj boruları 69.06’dadır.",
+   "dayanak": "69.05 Açıklama Notu; 69.06 Açıklama Notu."
+  },
+  {
+   "soru": "Fasıl 69 Açıklama Notlarına göre porselen veya çini eşyanın özellikleri aşağıdakilerden hangisinde doğru olarak verilmiştir?",
+   "secenekler": [
+    "Gözenekli, sıvı sızdıran ve demirle kolayca çizilebilen",
+    "Kısmen camlaşmış, mat, demirle çizilmeyecek kadar sert ve genellikle kahverengimsi",
+    "Tamamen camlaşmış, sert, sırsız olsa da su geçirmez, yarı şeffaf ve sesi yansıtıcı",
+    "Kırık yeri pürüzlü, mat ve dile yapışan",
+    "Düşük sıcaklıkta pişirilmiş, mat toprak yüzeyli ve kırmızı renkli"
+   ],
+   "cevap": "C",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Açıklama Notuna göre porselen veya çini tamamen camlaşmış, sert, sırlanmamış olsa bile su geçirmez, yarı şeffaf (çok kalınlar hariç) ve sesi yansıtıcıdır. Gözenekli ve demirle çizilebilen eşya fayans ve adi çömlek, kısmen camlaşmış ve kahverengimsi olan sert seramik (gre), kırık yeri mat ve dile yapışan ise taklit porselendir.",
+   "dayanak": "Tali Fasıl II Genel Açıklamalar (I) ve (II)."
+  },
+  {
+   "soru": "Perakende satış için hazırlanmış bir hediye kutusunda, kahve servisinde birlikte kullanılmak üzere iki porselen kahve fincanı ve tabağı ile iki paslanmaz çelik tatlı kaşığı bulunmaktadır. Bu eşyanın, kendisine esas niteliğini veren porselen fincanların pozisyonunda takım olarak sınıflandırılmasını sağlayan Genel Yorum Kuralı hangisidir?",
+   "secenekler": [
+    "GYK 1",
+    "GYK 3(b)",
+    "GYK 3(a)",
+    "GYK 3(c)",
+    "GYK 5(a)"
+   ],
+   "cevap": "B",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "İlk bakışta farklı pozisyonlara giren (porselen sofra eşyası ve metal kaşık), belirli bir ihtiyaç için bir araya getirilmiş ve perakende satışa hazırlanmış eşya GYK 3(b) anlamında takımdır ve esas niteliği veren eşyaya göre sınıflandırılır. 3(a) en özel tanımı, 3(c) son sıradaki pozisyonu, 5(a) özel mahfazaları düzenler.",
+   "dayanak": "GYK 3(b) ve Açıklama Notu (X); 69.11 pozisyon metni."
+  },
+  {
+   "soru": "Tarife Cetveline göre, ateşe dayanıklı olmayan, içi delikli, duvar örmede kullanılan pişmiş kil tuğla hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "69.02",
+    "69.01",
+    "68.10",
+    "69.04",
+    "69.07"
+   ],
+   "cevap": "D",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "69.04, duvar, ev ve baca inşaatında kullanılan, ateşe dayanıklı olmayan (1.500 °C’ye dayanmayan) seramik tuğlaları, içi oyuk veya delikli olanlar dahil kapsar. Ateşe dayanıklı tuğlalar 69.02’de, kiselgurlu tuğlalar 69.01’de, döşeme karoları 69.07’dedir; beton tuğla 68.10’da olurdu.",
+   "dayanak": "69.04 Açıklama Notu."
+  },
+  {
+   "soru": "Fasıl 69 ile ilgili aşağıdaki ifadelerden hangileri <b>doğrudur</b>? I. 69.04 ila 69.14 pozisyonları yalnızca 69.01 ila 69.03 pozisyonlarında sınıflandırılanlar dışındaki mamullere uygulanır. II. Cam-seramik ürünleri Fasıl 69’da sınıflandırılır. III. Şekil verildikten sonra pişirilmiş steatit eşya Fasıl 69 kapsamındadır. IV. 69.08 pozisyonu sırlı karoları kapsar.",
+   "secenekler": [
+    "I ve III",
+    "I ve II",
+    "II ve IV",
+    "I, III ve IV",
+    "II, III ve IV"
+   ],
+   "cevap": "A",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "Not 1, 69.04–69.14’ün yalnızca 69.01–69.03 dışındaki mamullere uygulanacağını belirtir (I doğru); Genel Açıklamalar şekil verildikten sonra pişirilmiş kayaları (steatit gibi) seramik sayar (III doğru). Cam-seramik Fasıl 70’tedir (II yanlış); 69.08 boş bir pozisyondur, karolar sırlı olsun olmasın 69.07’dedir (IV yanlış).",
+   "dayanak": "Fasıl 69 Not 1; Fasıl 69 Genel Açıklamalar; 69.07 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 69.13 pozisyonunda <b>yer almaz</b>?",
+   "secenekler": [
+    "Seramik gövdeli masa lambası",
+    "Seramikten büst",
+    "Mezarlar için seramik çelenk",
+    "Duvara asılmak üzere yapılmış süs tabağı",
+    "Yalnızca süs amaçlı seramik vazo"
+   ],
+   "cevap": "A",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Lambalar ve aydınlatma cihazları Fasıl 69 Not 2(ij) ve 69.13 Açıklama Notu gereği 94.05’tedir. Büstler, mezar çelenkleri, asma tertibatlı duvar tabakları ve tamamen süs amaçlı vazolar 69.13’te sayılmıştır.",
+   "dayanak": "Fasıl 69 Not 2(ij); 69.13 Açıklama Notu."
+  },
+  {
+   "soru": "Seramikten yapılmış aşağıdaki eşyadan hangisi Tarife Cetvelinde diğerlerinden farklı bir fasılda yer alır?",
+   "secenekler": [
+    "Seramikten yapılmış kül tablası",
+    "Seramikten yapılmış süs biblosu",
+    "Seramikten yapılmış kapı kolu",
+    "Seramikten taklit mücevher küpe",
+    "Seramikten yapılmış mozaik küp"
+   ],
+   "cevap": "D",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Taklit mücevherci eşyası Fasıl 69 Not 2(c) gereği Fasıl 71’dedir (71.17). Kül tablası 69.11 / 69.12’de, biblo 69.13’te, kapı kolu 69.14’te, mozaik küp 69.07’de, yani hepsi Fasıl 69’da sınıflandırılır.",
+   "dayanak": "Fasıl 69 Not 2(c); 69.07, 69.13 ve 69.14 Açıklama Notları."
+  },
+  {
+   "soru": "Bir ithalatçı banyo için şu ürünleri getirmiştir: gövdesi sırlı sert seramikten (gre); duvara monte edilecek diş fırçalığı, sabunluk ve havluluk; su veya kanalizasyon tesisatıyla hiçbir bağlantısı yok; süs niteliği kullanım amacına göre ikinci derecede. Tarife Cetveline göre bu ürünler hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "69.10",
+    "69.11",
+    "69.14",
+    "69.13",
+    "69.12"
+   ],
+   "cevap": "E",
+   "tip": "Senaryo",
+   "gerekce": "69.10 yalnızca su veya kanalizasyona daimi bağlanan sıhhi eşyayı kapsar; Açıklama Notu duvara monte edilse bile sabunluk, diş fırçalığı ve havluluğu hariç tutar. Bunlar tuvalet eşyası olarak porselen veya çiniden ise 69.11’de, diğer seramikten (gre) ise 69.12’de sınıflandırılır. Süs eşyası olmadıkları için 69.13, başka yerde yer aldıkları için 69.14 söz konusu değildir.",
+   "dayanak": "69.10 Açıklama Notu; 69.11–69.12 Açıklama Notu (D)."
+  },
+  {
+   "soru": "Tarife Cetveline göre sofra, mutfak, diğer ev ve tuvalet eşyası porselen veya çiniden ise ..... pozisyonunda; taklit porselen dahil diğer seramiklerden ise ..... pozisyonunda sınıflandırılır. Boşluklara sırasıyla hangisi gelmelidir?",
+   "secenekler": [
+    "69.12 – 69.11",
+    "69.11 – 69.13",
+    "69.11 – 69.12",
+    "69.10 – 69.12",
+    "69.13 – 69.14"
+   ],
+   "cevap": "C",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Tali Fasıl II Genel Açıklamaları, bu eşya grubunda madde ayrımı yapar: porselen veya çiniden olanlar 69.11’de, diğer seramiklerden olanlar 69.12’de yer alır; taklit porselen porselen sayılmaz. 69.10 sıhhi eşya, 69.13 süs eşyası, 69.14 diğer seramik eşya içindir.",
+   "dayanak": "Tali Fasıl II Genel Açıklamalar (ii); 69.12 Açıklama Notu."
+  },
+  {
+   "soru": "69.07 Açıklama Notuna göre seramik döşeme ve kaplama karolarını çatı kiremitlerinden ayıran özellik aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Sırlı veya cilalı olmaları ve yalnızca iç mekânlarda kullanılmaları",
+    "Düz olmaları, dilli veya delikli olmamaları ve üst üste gelmeden yan yana döşenmeleri",
+    "Porselenden yapılmış olmaları ve tamamen camlaşmış bulunmaları",
+    "Kalınlıklarının inşaat tuğlalarından fazla olması ve taşıyıcı işlev görmeleri",
+    "1.500 °C’ye dayanıklı olmaları ve fırın yapımında kullanılabilmeleri"
+   ],
+   "cevap": "B",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Açıklama Notu, karoların satıhlarının düz olması, delikli, dilli veya birbirine geçecek şekilde biçimlendirilmemesi ve kiremitler gibi birbirine geçirilmeden yan yana döşenmesiyle kiremitlerden ayrıldığını belirtir. Karolar sırlı olabilir ve her seramikten yapılabilir; kalınlıkları tuğlalardan azdır; ateşe dayanıklılık 69.02’nin ölçütüdür.",
+   "dayanak": "69.07 Açıklama Notu; 69.05 Açıklama Notu."
+  }
+ ]
+}

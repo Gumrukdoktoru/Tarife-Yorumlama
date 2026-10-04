@@ -1,0 +1,668 @@
+{
+ "tur": "fasil",
+ "fasil": 81,
+ "baslik": "Diğer adi metaller; sermetler; bunlardan eşya",
+ "bolum": "XV",
+ "oz": {
+  "vurgu": "Fasıl 81, kendi faslı olmayan adi metallerin toplandığı fasıldır. Her metalin (veya metal grubunun) tek bir pozisyonu vardır ve bu pozisyon o metalin tozundan hurdasına, yarı mamulünden eşyasına kadar her halini kapsar. Önce metal kimliği belirlenir (Bölüm XV Not 3; alaşımda Not 5), sonra ferro-alyajlar, metal karbürler, cevherler ve makine aksamı gibi dış sınırlar kontrol edilir.",
+  "maddeler": [
+   "Tungsten 81.01, molibden 81.02, tantal 81.03, magnezyum 81.04, kobalt 81.05, bizmut 81.06, titanyum 81.08, zirkonyum 81.09, antimon 81.10, manganez 81.11; berilyum, krom, hafniyum, renyum, talyum, kadmiyum, germanyum, vanadyum, galyum, indiyum ve niyobyum 81.12; sermetler 81.13.",
+   "81.07 boştur: kadmiyum ve kadmiyumdan eşya 81.12’dedir.",
+   "Ferro-tungsten, ferro-titan, ferro-molibden, ferro-vanadyum gibi ferro-alyajlar Fasıl 72’dedir; demir oranı ferro-alyaj tanımının altında kalan ferro-manganez ise 81.11’e gelebilir.",
+   "Metal karbürler bu fasılda değildir: saf toz karbür 28.49, sinterlenmemiş müstahzar karışım 38.24, sinterlenmiş ve monte edilmemiş uç-levha 82.09.",
+   "Bölüm XV Not 3 listesinde olmayan metaller (ör. alkali metaller, cıva) Fasıl 28’de; cevherler ve ham sülfürler Fasıl 26’dadır."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+  "satirlar": [
+   [
+    "1",
+    "Metal Bölüm XV Not 3 listesinde yok mu (ör. sodyum, kalsiyum, cıva)?",
+    "Fasıl 28 (<b>28.05</b>)"
+   ],
+   [
+    "2",
+    "Cevher veya ham sülfür mü (beril, ham antimon, tantalit)?",
+    "Fasıl 26 (<b>26.15</b>, <b>26.17</b>)"
+   ],
+   [
+    "3",
+    "Ağırlıkça üstün metal demir-çelik, bakır, nikel, alüminyum, kurşun, çinko veya kalay mı?*",
+    "Fasıl 72–76 veya 78–80"
+   ],
+   [
+    "4",
+    "Ferro-alyaj tanımına uyuyor mu (ağırlıkça %4 veya daha fazla demir ve Fasıl 72 Not 1(c) eşikleri)?",
+    "<b>72.02</b>"
+   ],
+   [
+    "5",
+    "Metal karbür mü?",
+    "Saf toz <b>28.49</b> · sinterlenmemiş karışım <b>38.24</b> · sinterlenmiş, monte edilmemiş uç <b>82.09</b> · alete monte <b>82.07</b>"
+   ],
+   [
+    "6",
+    "Makine, taşıt veya elektrikli cihaz ya da bunların aksamı mı (komple kontak, rotor, pompa, valf)?",
+    "Bölüm XVI / XVII (Bölüm XV Not 1)"
+   ],
+   [
+    "7",
+    "Sermet mi (metal ve seramik bileşenin mikroskopik heterojen bileşimi)?",
+    "<b>81.13</b> (fizil veya radyoaktif ise 28.44; alet ucu ise 82.09)"
+   ],
+   [
+    "8",
+    "Hiçbiri değilse: hangi metal?",
+    "W <b>81.01</b> · Mo <b>81.02</b> · Ta <b>81.03</b> · Mg <b>81.04</b> · Co <b>81.05</b> · Bi <b>81.06</b> · Ti <b>81.08</b> · Zr <b>81.09</b> · Sb <b>81.10</b> · Mn <b>81.11</b> · diğerleri <b>81.12</b>"
+   ]
+  ],
+  "dipnot": "* Alaşım, ağırlıkça diğer metallerin her birinden üstün olan metalin alaşımıdır (Bölüm XV Not 5). Fasıl 81’de her pozisyon ilgili metalin işlenmemiş halini, tozunu, döküntü ve hurdasını, yarı mamullerini ve başka yerde yer almayan eşyasını birlikte kapsar."
+ },
+ "pozisyon_haritasi": [
+  [
+   "81.01",
+   "Tungsten (volfram) ve eşyası",
+   "Toz, sinterlenmiş çubuk, tel, hurda dahil; karbürler hariç",
+   "Ampul flaman teli, kontak için tungsten levha"
+  ],
+  [
+   "81.02",
+   "Molibden ve eşyası",
+   "81.01 mantığı; genel kullanım alaşımlarının çoğu hariç",
+   "Molibden tel, fırın rezistansı"
+  ],
+  [
+   "81.03",
+   "Tantal ve eşyası",
+   "Her şekil; potalar dahil",
+   "Tantal pota, tantal-tungsten levha"
+  ],
+  [
+   "81.04",
+   "Magnezyum ve eşyası",
+   "Külçe, hurda, granül, toz, yarı mamul, eşya; cüruf hariç",
+   "Magnezyum külçe, kalibrelenmiş granül"
+  ],
+  [
+   "81.05",
+   "Kobalt matları ve ara ürünler; kobalt ve eşyası",
+   "Mat ve ara ürünler dahil",
+   "Kobalt katot, stellit alaşımı"
+  ],
+  [
+   "81.06",
+   "Bizmut ve eşyası",
+   "Düşük erime noktalı bizmut alaşımları",
+   "Bizmut külçe, Wood alaşımı"
+  ],
+  [
+   "81.08",
+   "Titanyum ve eşyası",
+   "Sünger, külçe, toz, levha; makine aksamı hariç",
+   "Titan sünger, titan levha"
+  ],
+  [
+   "81.09",
+   "Zirkonyum ve eşyası",
+   "Hafniyum oranı alt ayrımda",
+   "Zirkonyum külçe, zircalloy levha"
+  ],
+  [
+   "81.10",
+   "Antimon ve eşyası",
+   "Regulus, yıldız antimon; ham sülfür hariç",
+   "Antimon külçe, antimon tozu"
+  ],
+  [
+   "81.11",
+   "Manganez ve eşyası",
+   "Demiri düşük ferro-manganez dahil olabilir",
+   "Elektrolitik manganez"
+  ],
+  [
+   "81.12",
+   "Be, Cr, Hf, Re, Tl, Cd, Ge, V, Ga, In, Nb ve eşyası",
+   "On bir metal tek pozisyonda; kadmiyum dahil",
+   "Krom tozu, galyum, germanyum, kadmiyum"
+  ],
+  [
+   "81.13",
+   "Sermetler ve eşyası",
+   "Metal + seramik bileşen; alet uçları ve radyoaktif olanlar hariç",
+   "Boral sermet levha, borolit"
+  ]
+ ],
+ "notlar": [
+  [
+   "Bölüm XV Not 3",
+   "“Adi metaller”: demir ve çelik, bakır, nikel, alüminyum, kurşun, çinko, kalay, tungsten, molibden, tantal, magnezyum, kobalt, bizmut, kadmiyum, titan, zirkonyum, antimon, manganez, berilyum, krom, germanyum, vanadyum, galyum, hafniyum, indiyum, niyobyum (kolombiyum), renyum ve talyum. Bunlardan kendi faslı olmayanlar Fasıl 81’dedir."
+  ],
+  [
+   "Bölüm XV Not 4",
+   "“Sermetler”: bir metal bileşeni ile bir seramik bileşeninin mikroskopik heterojen bir bileşimini içeren ürünler. Tabir, metal ile sinterlenmiş metal karbürleri (sert metaller) de kapsar."
+  ],
+  [
+   "Bölüm XV Not 5",
+   "Adi metal alaşımı, ağırlıkça diğer metallerin her birinden üstün olan metalin alaşımıdır. Bölüm XV metalleri ile Bölüm dışı elemanlardan oluşan alaşım, adi metallerin toplam ağırlığı diğer elemanların toplamına eşit veya fazlaysa Bölüm XV alaşımıdır. Sinterlenmiş karışımlar, eritmeyle elde edilen heterojen karışımlar (<b>sermetler hariç</b>) ve metallerarası bileşimler de alaşımdır."
+  ],
+  [
+   "Bölüm XV Not 7",
+   "Karma eşya ağırlıkça üstün metalden sayılır; bu hesapta alaşımlar alaşımı sayıldıkları metal, <b>81.13’teki sermet tek bir adi metal</b> kabul edilir."
+  ],
+  [
+   "Bölüm XV Not 8",
+   "Döküntü ve hurda: tamamen metal döküntüler ile kesinlikle kullanılmaz haldeki metal eşya. Toz: göz açıklığı <b>1 mm</b> olan elekten ağırlıkça <b>%90 veya daha fazlası</b> geçen ürün."
+  ],
+  [
+   "Bölüm XV Not 9",
+   "Çubuk, profil, tel, levha ve boru tanımları Fasıl 81’de de geçerlidir. Sadece makineye girişi kolaylaştırmak için uçları sivriltilmiş tel çubuklar ve kütüklerin işlenmemiş sayılması kuralı, Fasıl 81 ürünlerine de gerekli değişikliklerle uygulanır."
+  ],
+  [
+   "Fasıl 72 Not 1(c)",
+   "Ferro-alyaj: genellikle dövülmeye elverişli olmayan, ağırlıkça <b>%4 veya daha fazla demir</b> ve örneğin %10’dan fazla krom, %30’dan fazla manganez, %8’den fazla silisyum veya %10’dan fazla diğer elementler (karbon hariç) içeren katkı alaşımları. Bu tanıma uyanlar 72.02’dedir."
+  ],
+  [
+   "Genel Açıklamalar",
+   "Fasıl, başka yerde daha özel yer almayan bu metalleri, alaşımlarını ve eşyasını kapsar; bu fasılda veya Bölüm XV’in önceki fasıllarında yer almayan adi metaller Fasıl 28’de sınıflandırılır. Metal karbürler bu fasıl dışındadır. Alaşımlar Bölüm XV Not 5’e göre sınıflandırılır."
+  ],
+  [
+   "81.01 Açıklama Notu",
+   "Toz, işlenmemiş (blok, külçe, sinterlenmiş çubuk), hurda, işlenmiş (çubuk, profil, levha, şerit, tel) tungsten ve eşyası. Tungsten eşyasının çoğu Bölüm XVI–XVII’dedir: komple elektrik kontakları Fasıl 85’te, ama bunların yapımında kullanılan tungsten levhalar burada kalır. Karbürler: saf toz 28.49, sinterlenmemiş müstahzar 38.24, sinterlenmiş monte edilmemiş uç ve levha 82.09."
+  ],
+  [
+   "81.02 Açıklama Notu",
+   "81.01’deki sunuluş şekilleri ve karbür kuralları molibden için de geçerlidir. Genel kullanıma mahsus molibden alaşımlarında molibden üstün olmadığından bunlar 81.02 dışındadır."
+  ],
+  [
+   "81.04 Açıklama Notu",
+   "Tane boyutuna göre ayrılmamış rende ve torna talaşı ile granüller döküntü-hurda grubunda; aynı tane boyutunda olanlar, tozlar ve pullar işlenmiş ürün grubunda yer alır (hepsi 81.04). Magnezyum imalinden kalan cüruf, kül ve artıklar 26.20’dedir."
+  ],
+  [
+   "81.05 Açıklama Notu",
+   "Kobalt matları ve kobalt metalurjisinin diğer ara ürünleri ile her biçimdeki kobalt; kobalt-krom-tungsten (stellit), kobalt-demir-krom ve kobalt-krom-molibden alaşımları."
+  ],
+  [
+   "81.08 Açıklama Notu",
+   "Sünger, külçe, toz, anot, çubuk, levha, hurda dahil her biçimde titanyum ve titanyum eşyası; helikopter rotoru, pervane kanadı, pompa, valf gibi başka fasıllarda yer alan eşya hariç. Ferro-titanyum Fasıl 72’dedir."
+  ],
+  [
+   "81.10 ve 81.11 Açıklama Notları",
+   "Ham antimon denilen ham sülfür 26.17’dedir; antimonun kurşun veya kalayla alaşımları genellikle Fasıl 78 veya 80’dedir. Ferro-manganez ve siliko-manganez normal olarak Fasıl 72’de, demir oranı çok düşükse 81.11’dedir."
+  ],
+  [
+   "81.12 Açıklama Notu",
+   "Beril 26.17’de, zümrüt Fasıl 71’de; berilyum-bakır gibi az berilyum içeren alaşımlar Fasıl 72, 74 veya 75’te; makine ve cihaz aksamı halindeki berilyum ürünleri 81.12 dışındadır. Ferro-vanadyum Fasıl 72’de, kupro-vanadyum Fasıl 74’tedir."
+  ],
+  [
+   "81.13 Açıklama Notu",
+   "Sermetler: metal-oksit, zirkonyum veya krom boritleri (borolit), kobalt-nikel-niyobyum ile karbürler, bor karbür-alüminyum (boral). Hariç: fizil veya radyoaktif madde içeren sermetler (28.44); sinterlenmiş metal karbürlü sermetten alet levha ve uçları (82.09)."
+  ]
+ ],
+ "sinir_komsulari": [
+  [
+   "Cıva; sodyum, kalsiyum gibi alkali ve toprak alkali metaller",
+   "28.05",
+   "Bölüm XV Not 3 listesinde yok"
+  ],
+  [
+   "Toz halinde saf tungsten karbür",
+   "28.49",
+   "81.01 Açıklama Notu"
+  ],
+  [
+   "Sinterlenmemiş müstahzar metal karbür karışımı",
+   "38.24",
+   "81.01 Açıklama Notu"
+  ],
+  [
+   "Sinterlenmiş, alete monte edilmemiş karbür veya sermet uç ve levha",
+   "82.09",
+   "81.01 ve 81.13 Açıklama Notları"
+  ],
+  [
+   "Ferro-tungsten, ferro-molibden, ferro-titan, ferro-vanadyum",
+   "72.02",
+   "Ferro-alyaj (Fasıl 72 Not 1(c))"
+  ],
+  [
+   "Kupro-vanadyum; berilyum-bakır",
+   "Fasıl 74",
+   "Bakır üstün (81.12 Açıklama Notu)"
+  ],
+  [
+   "Ham antimon (ham antimon sülfür); beril",
+   "26.17",
+   "81.10 ve 81.12 Açıklama Notları"
+  ],
+  [
+   "Tantalit ve niyobit cevherleri",
+   "26.15",
+   "81.03 Açıklama Notu"
+  ],
+  [
+   "Zümrüt (kıymetli taş türünden beril)",
+   "Fasıl 71",
+   "81.12 Açıklama Notu"
+  ],
+  [
+   "Magnezyum imalinden kalan cüruf ve kül",
+   "26.20",
+   "81.04 Açıklama Notu"
+  ],
+  [
+   "Komple tungsten elektrik kontağı",
+   "Fasıl 85",
+   "81.01 Açıklama Notu; Bölüm XV Not 1"
+  ],
+  [
+   "Titanyumdan helikopter rotoru, pervane kanadı, pompa, valf",
+   "Bölüm XVI / XVII",
+   "81.08 Açıklama Notu"
+  ],
+  [
+   "Fizil veya radyoaktif madde içeren sermet",
+   "28.44",
+   "81.13 Açıklama Notu"
+  ],
+  [
+   "Sermetten kum püskürtme makinası ağızlığı",
+   "Fasıl 84",
+   "82.09 Açıklama Notu"
+  ]
+ ],
+ "tuzaklar": [
+  "<b>Kadmiyum 81.07’de değil, 81.12’dedir.</b> 81.07 boş bir pozisyondur; Genel Açıklamalardaki eski “kadmiyum (81.07)” atfına aldanmayın.",
+  "<b>Karbür metal değildir.</b> Tungsten, molibden, tantal ve titan karbürleri Fasıl 81 dışındadır: saf toz 28.49, sinterlenmemiş karışım 38.24, sinterlenmiş monte edilmemiş uç 82.09, alete monte uç 82.07.",
+  "<b>Ferro-alyaj Fasıl 72’dedir.</b> Ferro-tungsten, ferro-titan, ferro-vanadyum çelik katkısıdır; ancak demir oranı %4’ün altında kalan, manganezin üstün olduğu ürün ferro-alyaj sayılmaz ve 81.11’e gelir.",
+  "<b>Az miktarda nadir metal alaşımı değiştirmez.</b> Berilyum-bakır ve kupro-vanadyum bakır üstün olduğundan Fasıl 74’te; antimonlu kurşun Fasıl 78’de; genel kullanım molibden alaşımları 81.02 dışındadır.",
+  "<b>Her pozisyon her hali kapsar.</b> Fasıl 81’de toz, hurda, tel, levha ve eşya için ayrı pozisyon yoktur; hepsi ilgili metalin tek pozisyonunda kalır.",
+  "<b>Makine aksamı metal pozisyonunda kalmaz.</b> Titanyumdan pompa, valf, pervane kanadı ve komple tungsten kontak Bölüm XVI–XVII’dedir; kontak yapımında kullanılacak tungsten levha ise 81.01’dedir.",
+  "<b>Magnezyum toprak alkali metal olsa da Bölüm XV’tedir.</b> Bölüm XV Not 3 magnezyumu adi metal saydığından 28.05’e değil 81.04’e gider; cıva ise listede yoktur ve 28.05’tedir.",
+  "<b>Sermet alaşım değildir ama tek metal sayılır.</b> Not 5 sermetleri alaşım tanımından çıkarır; Not 7 uygulanırken 81.13’teki sermet tek bir adi metal kabul edilir.",
+  "<b>Cevher ve ham ürün Fasıl 26’dadır.</b> Ham antimon (sülfür) ve beril 26.17’de; tantalit ve niyobit 26.15’tedir."
+ ],
+ "hafiza": {
+  "kanca": "TU-MO-TA · MA-KO-Bİ · (boş koltuk) · Tİ-ZİR-AN-MAN · KALANLAR · SERMET",
+  "aciklama": "81.01 <b>Tu</b>ngsten · 81.02 <b>Mo</b>libden · 81.03 <b>Ta</b>ntal · 81.04 <b>Ma</b>gnezyum · 81.05 <b>Ko</b>balt · 81.06 <b>Bi</b>zmut · 81.07 boş koltuk (kadmiyum kalkıp kalabalığa, 81.12’ye geçti) · 81.08 <b>Ti</b>tanyum · 81.09 <b>Zir</b>konyum · 81.10 <b>An</b>timon · 81.11 <b>Man</b>ganez · 81.12 <b>kalan</b> on bir metal · 81.13 <b>sermet</b>."
+ },
+ "sinav_odagi": [
+  "Fasıl 81 metalleri çıkmış sorularda çoğunlukla seçeneklerde, Bölüm XV’in yapısını ve adi metal tanımını sorgulayan sorularda yer almıştır.",
+  "“Hangi adi metal için özel bir fasıl açılmıştır?” kalıbı: magnezyum, titanyum ve krom gibi metallerin kendi fasılları olmayıp Fasıl 81’de birer pozisyonda toplandığı.",
+  "Adi metal ile kıymetli metal ayrımı: kadmiyumun Fasıl 71’deki “platin” tanımına girmediği, Bölüm XV Not 3’te sayılan bir adi metal olduğu.",
+  "Bölüm XV Not 3 listesinin ezberlenmesi gerektiği; listede olmayan metallerin Fasıl 28’e, listedekilerin Bölüm XV’e gittiği."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Aşağıdaki adi metallerden hangisi için Armonize Sistem Nomanklatüründe özel olarak açılmış bir fasıl bulunmaktadır?",
+   "secenekler": [
+    "Magnezyum",
+    "Titanyum",
+    "Krom",
+    "Kalay"
+   ],
+   "cevap": "D",
+   "aciklama": "Kalay için ayrı bir fasıl (Fasıl 80) vardır. Magnezyum (81.04), titanyum (81.08) ve krom (81.12) ise kendi faslı olmayan adi metaller olarak Fasıl 81’de birer pozisyonda yer alır."
+  }
+ ],
+ "ozet": [
+  "Fasıl 81 = kendi faslı olmayan adi metaller; her metalin tek pozisyonu her hali (toz, hurda, yarı mamul, eşya) kapsar.",
+  "Sıra: 81.01 W · 81.02 Mo · 81.03 Ta · 81.04 Mg · 81.05 Co · 81.06 Bi · 81.08 Ti · 81.09 Zr · 81.10 Sb · 81.11 Mn · 81.12 diğer on bir metal · 81.13 sermet.",
+  "81.07 boştur: kadmiyum 81.12’dedir.",
+  "Dış sınırlar: karbürler 28.49 / 38.24 / 82.09; ferro-alyajlar 72.02; cevher ve ham sülfürler Fasıl 26; makine aksamı Bölüm XVI–XVII.",
+  "Sermet: metal ve seramik bileşen; Not 7’de tek adi metal sayılır; radyoaktifse 28.44, alet ucuysa 82.09.",
+  "Bölüm XV Not 3 listesinde olmayan metaller (cıva, alkali metaller) Fasıl 28’dedir."
+ ],
+ "sorular": [
+  {
+   "soru": "Tarife Cetveline göre işlenmemiş kadmiyum külçe hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "81.07",
+    "81.12",
+    "28.05",
+    "81.06",
+    "79.01"
+   ],
+   "cevap": "B",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Kadmiyum Bölüm XV Not 3’te sayılan bir adi metaldir ve 81.12 pozisyon metninde adıyla yer alır. 81.07 boş bir pozisyondur; Genel Açıklamalardaki eski atıf tuzaktır. 28.05 alkali metaller ve cıva içindir; 79.01 işlenmemiş çinko, 81.06 bizmut pozisyonudur.",
+   "dayanak": "Bölüm XV Not 3; 81.12 pozisyon metni."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 81. faslında <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Bizmutun ağırlıkça üstün olduğu bizmut-kurşun-kalay alaşımı",
+    "Tantal pota",
+    "Antimon külçe (yıldız antimon)",
+    "Krom tozu",
+    "Ferro-titanyum"
+   ],
+   "cevap": "E",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Ferro-titanyum, çelik imalinde kullanılan bir ferro-alyajdır ve 81.08 Açıklama Notunun da belirttiği gibi Fasıl 72’dedir. Bizmut alaşımı 81.06, tantal pota 81.03, yıldız antimon 81.10, krom tozu 81.12’de yer alır.",
+   "dayanak": "81.08 Açıklama Notu; Fasıl 72 Not 1(c); 81.03, 81.06, 81.10 ve 81.12 Açıklama Notları."
+  },
+  {
+   "soru": "Bölüm XV Not 4’e göre “sermet” tabirinden aşağıdakilerden hangisi anlaşılır?",
+   "secenekler": [
+    "Bir metal bileşeni ile bir seramik bileşeninin mikroskopik heterojen bir bileşimini içeren ürünler (metalle sinterlenmiş metal karbürler dahil)",
+    "Ağırlıkça %50’den fazla seramik içeren metal alaşımları",
+    "Yalnızca toz halinde, sinterlenmemiş metal karbür karışımları",
+    "İki veya daha fazla adi metal tozunun sinterlenmesiyle elde edilen alaşımlar",
+    "Seramik ile kaplanmış adi metal levhalar"
+   ],
+   "cevap": "A",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Bölüm XV Not 4’e göre sermet, bir metal bileşeni ile bir seramik bileşeninin mikroskopik heterojen bileşimidir; metal ile sinterlenmiş metal karbürler (sert metaller) de bu tabire girer. Metal tozlarının sinterlenmesiyle elde edilen karışımlar Not 5’e göre alaşımdır; sinterlenmemiş karbür karışımları 38.24’tedir.",
+   "dayanak": "Bölüm XV Not 4 ve Not 5; 81.13 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdaki metallerden hangisi diğerlerinden <b>farklı</b> bir pozisyonda yer alır?",
+   "secenekler": [
+    "Krom",
+    "Manganez",
+    "Vanadyum",
+    "Galyum",
+    "Hafniyum"
+   ],
+   "cevap": "B",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Manganez ve manganezden eşya kendi pozisyonunda, 81.11’dedir. Krom, vanadyum, galyum ve hafniyum, berilyum, renyum, talyum, kadmiyum, germanyum, indiyum ve niyobyum ile birlikte 81.12’de toplanmıştır.",
+   "dayanak": "81.11 ve 81.12 pozisyon metinleri."
+  },
+  {
+   "soru": "Tarife Cetveline göre, sinterlenmiş ancak henüz torna kalemine lehimlenmemiş (monte edilmemiş) tungsten karbür kesici uç hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "81.01",
+    "28.49",
+    "82.07",
+    "82.09",
+    "38.24"
+   ],
+   "cevap": "D",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "81.01 Açıklama Notu tungsten karbürleri bu pozisyondan hariç tutar ve sinterleme işlemine tabi tutulmuş, fakat ait oldukları alete monte edilmemiş uç, levha ve çubukları 82.09’a gönderir. Saf toz karbür 28.49, sinterlenmemiş müstahzar karışım 38.24’tedir; alete monte edildiğinde uç, aletin pozisyonuna (çoğunlukla 82.07) girer.",
+   "dayanak": "81.01 Açıklama Notu; 82.09 Açıklama Notu."
+  },
+  {
+   "soru": "Demonte halde, tüm parçaları birlikte sunulan, magnezyum alaşımından (magnezyum ağırlıkça üstün) yapılmış ve mekanik veya termik tertibatı bulunmayan bir sarnıç 81.04 pozisyonunda sınıflandırılırken hangi Genel Yorum Kuralları uygulanır?",
+   "secenekler": [
+    "GYK 1 ve 3(c)",
+    "GYK 1 ve 2(b)",
+    "GYK 1 ve 2(a)",
+    "GYK 1 ve 5(b)",
+    "GYK 1 ve 4"
+   ],
+   "cevap": "C",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 2(a)’nın ikinci kısmına göre birleştirilmemiş veya demonte halde sunulan eşya monte edilmiş eşya ile aynı pozisyonda sınıflandırılır. 81.04 Açıklama Notu, mekanik veya termik tertibatı olmayan magnezyumdan depo ve sarnıçları “diğer eşyalar” arasında sayar. 2(b) madde karışımları, 3(c) eşit özellikteki pozisyonlar, 5(b) ambalaj içindir.",
+   "dayanak": "GYK 1 ve 2(a); 81.04 Açıklama Notu; Bölüm XV Not 5."
+  },
+  {
+   "soru": "Fasıl 81 ile ilgili aşağıdaki ifadelerden hangileri <b>doğrudur</b>? I. Kadmiyum ve kadmiyumdan eşya 81.07 pozisyonunda yer alır. II. Tane boyutuna göre ayrılmamış magnezyum torna talaşları, 81.04’te döküntü ve hurda grubunda yer alır. III. Ferro-tungsten 81.01 pozisyonunda yer alır. IV. “Ham antimon” denilen ham antimon sülfür 26.17 pozisyonunda yer alır.",
+   "secenekler": [
+    "I ve II",
+    "I ve III",
+    "II ve IV",
+    "II, III ve IV",
+    "III ve IV"
+   ],
+   "cevap": "C",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "81.07 boştur, kadmiyum 81.12’dedir (I yanlış). 81.04 Açıklama Notu, tane boyutuna göre ayrılmamış rende ve torna talaşlarını döküntü-hurda grubunda sayar (II doğru). Ferro-tungsten bir ferro-alyaj olarak Fasıl 72’dedir (III yanlış). 81.10 Açıklama Notu ham antimon sülfürün 26.17’de olduğunu belirtir (IV doğru).",
+   "dayanak": "81.04, 81.10 ve 81.12 Açıklama Notları; 81.01 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 81.01 pozisyonunda <b>yer almaz</b>?",
+   "secenekler": [
+    "Tungsten tozu",
+    "Sadece sinterleme yoluyla elde edilmiş tungsten çubuk",
+    "Toz halinde saf tungsten karbür",
+    "Elektrik kontaklarının imalinde kullanılacak tungsten levha",
+    "Tungsten döküntü ve hurdası"
+   ],
+   "cevap": "C",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "81.01 Açıklama Notu, delici ve kesici aletlerde kullanılan tungsten karbürleri bu pozisyondan hariç tutar; toz halinde saf tungsten karbür 28.49’dadır. Tungsten tozu, sinterlenmiş çubuk, hurda ve kontak imalinde kullanılacak tungsten levha 81.01’de kalır; yalnız komple kontaklar Fasıl 85’e gider.",
+   "dayanak": "81.01 Açıklama Notu."
+  },
+  {
+   "soru": "Ağırlıkça %85 manganez, %2 demir ve %13 diğer elementler (silisyum ve karbon) içeren, katkı maddesi olarak kullanılan bir ürün Tarife Cetvelinde hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "72.02",
+    "81.11",
+    "72.01",
+    "38.24",
+    "81.12"
+   ],
+   "cevap": "B",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 72 Not 1(c)’ye göre ferro-alyaj sayılmak için ağırlıkça %4 veya daha fazla demir gerekir; %2 demirli ürün bu tanıma uymaz. Bölüm XV Not 5’e göre manganez ağırlıkça üstün olduğundan ürün manganez alaşımıdır; 81.11 Açıklama Notu da demir oranı çok düşük ferro-manganezin bu pozisyona girdiğini belirtir. 72.01 dökme ve aynalı demir içindir.",
+   "dayanak": "Fasıl 72 Not 1(c); Bölüm XV Not 5; 81.11 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre toz halinde saf tungsten karbür …… pozisyonunda, sinterlenmemiş müstahzar metal karbür karışımları …… pozisyonunda, sinterlenmiş ancak alete monte edilmemiş karbür uçlar ise …… pozisyonunda sınıflandırılır. Boşluklara sırasıyla hangisi gelmelidir?",
+   "secenekler": [
+    "81.01 – 38.24 – 82.07",
+    "28.49 – 81.01 – 82.09",
+    "81.01 – 81.01 – 82.09",
+    "38.24 – 28.49 – 82.07",
+    "28.49 – 38.24 – 82.09"
+   ],
+   "cevap": "E",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "81.01 Açıklama Notu karbürlerin yerini üç kademede belirler: toz halinde saf karbürler 28.49, müstahzar fakat sinterlenmemiş karışımlar 38.24, sinterlenmiş fakat alete monte edilmemiş uç, levha ve çubuklar 82.09. Karbürler hiçbir halde 81.01’de değildir; 82.07 alete monte edilmiş değişebilir aletler içindir.",
+   "dayanak": "81.01 Açıklama Notu; 82.09 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, aynı tane boyutuna ayrılmış ve piroteknide (işaret fişeği imalinde) kullanılmak üzere hazırlanmış magnezyum granülleri hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "81.04",
+    "36.04",
+    "28.05",
+    "26.20",
+    "81.12"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "81.04 Açıklama Notu, aynı tane boyutunda olan rende talaşı, torna talaşı ve granüller ile tozları magnezyumun ticari türleri arasında sayar ve bunların proteknide kullanıldığını belirtir. Magnezyum kimyasal olarak toprak alkali metal olsa da Bölüm XV Not 3 onu adi metal saydığından 28.05’e gitmez. Hazır işaret fişeği 36.04’tür; granül değil.",
+   "dayanak": "Bölüm XV Not 3; 81.04 Açıklama Notu."
+  },
+  {
+   "soru": "Bir elektronik valf üreticisine satılacak; ağırlıkça %90 tantal ve %10 tungsten içeren, haddelenmiş tantal-tungsten alaşımı levhalar gümrüğe sunulmuştur. Levhalar henüz herhangi bir valf parçası şekline getirilmemiştir. Ürün hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "81.01",
+    "81.03",
+    "85.40",
+    "81.12",
+    "72.26"
+   ],
+   "cevap": "B",
+   "tip": "Senaryo",
+   "gerekce": "Tantal ağırlıkça üstün olduğundan ürün tantal alaşımıdır (Bölüm XV Not 5); 81.03 Açıklama Notu elektronik valf imalinde kullanılan yüksek tantal içerikli tantal-tungsten alaşımlarını ve levha, şerit, yaprak gibi her şekli kapsar. Levha henüz valf parçası niteliği kazanmadığından 85.40’a gitmez; 72.26 alaşımlı çelik içindir.",
+   "dayanak": "Bölüm XV Not 5; 81.03 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden <b>farklı</b> bir fasılda yer alır?",
+   "secenekler": [
+    "Kobalt katot",
+    "Bizmut külçe",
+    "Nikel katot",
+    "Antimon külçe",
+    "Tantal tel"
+   ],
+   "cevap": "C",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Nikelin kendine ait bir faslı (Fasıl 75) vardır; bu nedenle nikel katot Fasıl 81’de değildir. Kobalt katot 81.05, bizmut külçe 81.06, antimon külçe 81.10, tantal tel 81.03’te, yani Fasıl 81’dedir.",
+   "dayanak": "Bölüm XV Not 3; Fasıl 81 Genel Açıklamalar."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 81.12 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Bakırın ağırlıkça üstün olduğu, az miktarda berilyum içeren berilyum-bakır alaşımı",
+    "Galyum",
+    "İndiyum",
+    "Kadmiyum döküntü ve hurdası",
+    "Renyum tozu"
+   ],
+   "cevap": "A",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "81.12 Açıklama Notu, berilyum-bakır gibi alaşımların çok az berilyum içerdiğini ve bu nedenle Fasıl 72, 74 veya 75’te sınıflandırıldığını belirtir; bakır üstün olduğundan Bölüm XV Not 5 uyarınca alaşım Fasıl 74’tedir. Galyum, indiyum, kadmiyum hurdası ve renyum tozu 81.12’dedir.",
+   "dayanak": "81.12 Açıklama Notu; Bölüm XV Not 5."
+  },
+  {
+   "soru": "Bölüm XV Not 7 uygulanırken, 81.13 pozisyonunda yer alan bir sermet nasıl dikkate alınır?",
+   "secenekler": [
+    "Tek bir adi metal sayılır",
+    "Metal bileşeni ile seramik bileşeni ayrı ayrı tartılarak hesaba katılır",
+    "Seramik bileşeni nedeniyle Bölüm XIII eşyası sayılır",
+    "İçindeki en ağır metalin alaşımı sayılır",
+    "Hesaplamada dikkate alınmaz"
+   ],
+   "cevap": "A",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Bölüm XV Not 7, iki veya daha fazla adi metalden eşyada ağırlıkça üstün metali belirlerken 81.13’teki sermetin tek bir adi metal sayılacağını açıkça hükme bağlar. Seramik bileşeni sermeti Bölüm XIII’e götürmez; Not 5 ise sermetleri alaşım tanımının dışında tutar.",
+   "dayanak": "Bölüm XV Not 7 ve Not 5."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden <b>farklı</b> bir bölümde yer alır?",
+   "secenekler": [
+    "Sinterlenmiş, monte edilmemiş sermet uç",
+    "Titanyumdan helikopter rotoru",
+    "Ferro-vanadyum",
+    "İş gören kısmı tungsten karbürden matkap ucu",
+    "Magnezyum alaşımı levha"
+   ],
+   "cevap": "B",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "81.08 Açıklama Notu, helikopter rotorları ve pervane kanatları gibi titanyum eşyanın tarifenin diğer fasıllarında (Bölüm XVII) yer aldığını belirtir; Bölüm XV Not 1 de Bölüm XVII eşyasını hariç tutar. Sermet uç 82.09, ferro-vanadyum 72.02, matkap ucu 82.07, magnezyum levha 81.04 olarak Bölüm XV’te kalır.",
+   "dayanak": "81.08 Açıklama Notu; Bölüm XV Not 1."
+  },
+  {
+   "soru": "Ağırlıkça %60 bizmut, %25 kurşun ve %15 kalay içeren düşük erime noktalı bir alaşımın 81.06 pozisyonunda sınıflandırılması hangi Genel Yorum Kuralına dayanır?",
+   "secenekler": [
+    "GYK 2(b) ve 3(b)",
+    "GYK 3(a)",
+    "GYK 3(c)",
+    "GYK 1 (Bölüm XV Not 5 ile birlikte)",
+    "GYK 4"
+   ],
+   "cevap": "D",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 1’e göre sınıflandırma pozisyon metinleri ve Bölüm notlarına göre yapılır. Bölüm XV Not 5 alaşımın ağırlıkça üstün metale göre sınıflandırılacağını hükme bağladığından alaşım bizmut alaşımıdır ve 81.06’dadır. GYK 2(b) Açıklama Notu da notlarda belirtilen karışımların Kural 1’e göre sınıflandırılacağını, Kural 3’ün notlarda aksine hüküm yoksa uygulanacağını belirtir.",
+   "dayanak": "GYK 1; GYK 2(b) ve 3 Açıklama Notları; Bölüm XV Not 5; 81.06 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdaki eşya çiftlerinden hangisinde her iki eşya da Tarife Cetvelinde <b>aynı</b> pozisyonda yer alır?",
+   "secenekler": [
+    "Kadmiyum – çinko",
+    "Tungsten tozu – toz halinde tungsten karbür",
+    "Ferro-molibden – molibden tel",
+    "Antimon külçe – ham antimon sülfür",
+    "Kobalt matı – kobalt tozu"
+   ],
+   "cevap": "E",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Kobalt matları ve kobalt metalurjisinin ara ürünleri, işlenmemiş kobalt ve tozlarla birlikte 81.05 pozisyon metninde sayılmıştır. Kadmiyum 81.12, çinko Fasıl 79; tungsten tozu 81.01, karbür tozu 28.49; ferro-molibden 72.02, molibden tel 81.02; antimon külçe 81.10, ham sülfür 26.17’dedir.",
+   "dayanak": "81.05 pozisyon metni ve Açıklama Notu; 81.01, 81.10 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdaki eşya ile pozisyonları eşleştirildiğinde hangisi <b>doğru</b> olur? I. Kobalt matı II. Zirkonyumun ağırlıkça üstün olduğu zirkonyum-kalay alaşımı (zircalloy) III. Yıldız antimon IV. Hafniyum a) 81.05 b) 81.09 c) 81.10 d) 81.12",
+   "secenekler": [
+    "I-a, II-b, III-c, IV-d",
+    "I-a, II-c, III-b, IV-d",
+    "I-d, II-b, III-c, IV-a",
+    "I-a, II-b, III-d, IV-c",
+    "I-b, II-a, III-c, IV-d"
+   ],
+   "cevap": "A",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Kobalt matı 81.05 pozisyon metninde sayılır; zirkonyum üstün olduğundan zircalloy 81.09’da; arıtılmış “yıldız antimon” 81.10’da; hafniyum ise 81.12’deki on bir metalden biridir.",
+   "dayanak": "81.05, 81.09, 81.10 ve 81.12 Açıklama Notları; Bölüm XV Not 5."
+  },
+  {
+   "soru": "Tarife Cetveline göre, titanyum sünger hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "72.02",
+    "28.05",
+    "81.09",
+    "81.12",
+    "81.08"
+   ],
+   "cevap": "E",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "81.08 Açıklama Notu, sünger, külçe, toz, anot, çubuk, levha, döküntü ve hurda gibi her biçimdeki titanyumu bu pozisyona alır. Ferro-titanyum 72.02’de olurdu; 81.09 zirkonyum, 81.12 diğer metaller içindir. Titanyum Bölüm XV Not 3’te sayıldığından 28.05’e gitmez.",
+   "dayanak": "81.08 Açıklama Notu; Bölüm XV Not 3."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 81.13 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Bor karbür ile alüminyumdan boral sermet levha",
+    "Zirkonyum boritlerinden borolit sermet",
+    "Nikel-magnezyum oksit sermet",
+    "Fizil madde içeren sermet",
+    "Krom-alüminyum oksit sermet"
+   ],
+   "cevap": "D",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "81.13 Açıklama Notu, fizil (çatlayıp yarılabilen) veya radyoaktif madde içeren sermetleri hariç tutar; bunlar 28.44’tedir. Boral, borolit ve metal-oksit sermetler Açıklama Notunda örnek olarak sayılır ve 81.13’te kalır.",
+   "dayanak": "81.13 Açıklama Notu."
+  },
+  {
+   "soru": "Bölüm XV Not 3’e göre aşağıdaki metallerden hangisi “adi metal” <b>sayılır</b>?",
+   "secenekler": [
+    "Cıva",
+    "Sodyum",
+    "Kalsiyum",
+    "Germanyum",
+    "Rutenyum"
+   ],
+   "cevap": "D",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Germanyum Bölüm XV Not 3’teki adi metal listesindedir ve 81.12’de yer alır. Cıva, sodyum ve kalsiyum listede yoktur; 28.05 alkali ve toprak alkali metaller ile cıvayı kapsar. Rutenyum ise Fasıl 71 Not 4(B) uyarınca “platin” tabirine girer.",
+   "dayanak": "Bölüm XV Not 3; 28.05 pozisyon metni; Fasıl 71 Not 4(B)."
+  },
+  {
+   "soru": "Aşağıdaki eşyadan hangileri Fasıl 81 <b>dışında</b> sınıflandırılır? I. Komple tungsten elektrik kontağı II. Molibden tel III. Titanyumdan pompa IV. Berilyum tozu",
+   "secenekler": [
+    "I ve II",
+    "II ve IV",
+    "I, III ve IV",
+    "I ve III",
+    "Yalnız III"
+   ],
+   "cevap": "D",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "81.01 Açıklama Notuna göre komple elektrik kontakları Fasıl 85’tedir (I); 81.08 Açıklama Notu pompaları titanyum pozisyonu dışında tutar ve Bölüm XV Not 1 Bölüm XVI eşyasını hariç tutar (III). Molibden tel 81.02’de, berilyum tozu 81.12’de kalır.",
+   "dayanak": "81.01, 81.02, 81.08 ve 81.12 Açıklama Notları; Bölüm XV Not 1."
+  },
+  {
+   "soru": "Yangın söndürme sistemlerinde, belirli bir sıcaklıkta eriyerek emniyet sübabını harekete geçirmek için kullanılan bir alaşım çubuk halinde ithal edilmektedir. Alaşım ağırlıkça %50 bizmut, %25 kurşun, %12,5 kalay ve %12,5 kadmiyum içermektedir. Ürün hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "78.06",
+    "80.03",
+    "81.12",
+    "84.81",
+    "81.06"
+   ],
+   "cevap": "E",
+   "tip": "Senaryo",
+   "gerekce": "Bölüm XV Not 5’e göre bizmut, diğer metallerin her birinden ağırlıkça fazla olduğundan alaşım bizmut alaşımıdır. 81.06 Açıklama Notu, yangın söndürme cihazlarında emniyet sübaplarını harekete geçiren düşük erime noktalı bizmut-kurşun-kalay (kadmiyumlu) alaşımları açıkça sayar. Ürün sübabın kendisi olmadığından 84.81’e gitmez.",
+   "dayanak": "Bölüm XV Not 5; 81.06 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre kobalt ağırlıkça üstün olmak üzere kobalt, krom ve tungstenden oluşan, aşınmaya dayanıklı valf yatakları imalinde kullanılacak “stellit” türü alaşım çubuk hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "81.01",
+    "81.12",
+    "81.05",
+    "72.28",
+    "82.09"
+   ],
+   "cevap": "C",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "81.05 Açıklama Notu, kobalt-krom-tungsten alaşımlarını (“stellit”) Bölüm XV Not 5 gereğince kobalt pozisyonunda yer alan alaşımlar arasında sayar ve valf yatağı, alet imalinde kullanıldıklarını belirtir. Tungsten veya krom üstün olmadığından 81.01 ve 81.12 söz konusu değildir; 72.28 alaşımlı çelik, 82.09 sermet uçlar içindir.",
+   "dayanak": "Bölüm XV Not 5; 81.05 Açıklama Notu."
+  }
+ ]
+}

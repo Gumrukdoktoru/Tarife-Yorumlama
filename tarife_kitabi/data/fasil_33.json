@@ -1,0 +1,636 @@
+{
+ "tur": "fasil",
+ "fasil": 33,
+ "baslik": "Uçucu yağlar ve rezinoitler; parfümeri, kozmetik veya tuvalet müstahzarları",
+ "bolum": "VI",
+ "oz": {
+  "vurgu": "Fasıl 33 iki bloktur: hammaddeler (33.01 tabii uçucu yağlar ve rezinoitler, 33.02 koku verici madde karışımları) ve kullanıma hazır parfümeri, kozmetik, tuvalet müstahzarları (33.03–33.07). Hazır müstahzarlar tedavi edici özellik taşısa da bu fasılda kalır; asıl soru ürünün vücudun hangi bölümüne, hangi amaçla uygulandığıdır.",
+  "maddeler": [
+   "33.01: tabii uçucu yağlar, rezinoitler, ekstraksiyonla elde edilen yağ reçineleri; uçucu yağların damıtılmış suları ve sulu çözeltileri (parfüm veya ilaç haline gelse bile).",
+   "33.02: koku veren maddelerin karışımları (sanayide hammadde) ve içecek imaline mahsus koku verici esaslı müstahzarlar.",
+   "33.03 parfüm ve tuvalet suyu · 33.04 makyaj, cilt bakımı, güneş, manikür-pedikür · 33.05 saç · 33.06 ağız-diş · 33.07 tıraş, deodorant, banyo, tüy dökücü, oda kokusu ve diğerleri.",
+   "Sabunlar ve 34.01 ürünleri, vazelin (perakende cilt bakımı hariç; 27.12) ve asıl kullanımı tedavi olan tıbbi müstahzarlar (Fasıl 30) bu fasla girmez."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+  "satirlar": [
+   [
+    "1",
+    "Sabun veya 34.01 ürünü mü? (kalıp sabun, perakende sıvı cilt yıkama müstahzarı, sabun emdirilmiş kağıt)",
+    "<b>34.01</b>"
+   ],
+   [
+    "2",
+    "Asıl kullanımı tedavi olan, tali olarak kozmetik özelliği bulunan tıbbi müstahzar mı?",
+    "<b>30.03</b> / <b>30.04</b> (muayene jeli <b>30.06</b>)"
+   ],
+   [
+    "3",
+    "Tabii uçucu yağ, rezinoit, ekstraksiyon yağ reçinesi, damıtık su veya sulu çözelti mi?",
+    "<b>33.01</b>"
+   ],
+   [
+    "4",
+    "Koku veren maddelerin karışımı (sanayi hammaddesi) veya içecek imaline mahsus koku verici esaslı müstahzar mı?",
+    "<b>33.02</b>"
+   ],
+   [
+    "5",
+    "Vücuda hoş koku vermek için parfüm veya tuvalet suyu mu?",
+    "<b>33.03</b>"
+   ],
+   [
+    "6",
+    "Makyaj, cilt bakımı, güneş, manikür veya pedikür müstahzarı mı?",
+    "<b>33.04</b>"
+   ],
+   [
+    "7",
+    "Saça uygulanan müstahzar mı? (şampuan, perma, sprey, boya)",
+    "<b>33.05</b>"
+   ],
+   [
+    "8",
+    "Ağız veya diş müstahzarı ya da perakende diş ipliği mi?",
+    "<b>33.06</b>"
+   ],
+   [
+    "9",
+    "Tıraş, deodorant, banyo, tüy dökücü, oda kokusu, lens solüsyonu, hayvan tuvalet müstahzarı veya diğerleri mi?",
+    "<b>33.07</b>"
+   ]
+  ],
+  "dipnot": "* Not 3: Karışım halinde olmayan ürünler (parfümsüz talk, aseton, şap, çamaşırcı toprağı) ancak bu kullanım için perakende ambalajlanıp etiketle belirtilmişse veya açıkça bu kullanıma özgü şekildeyse 33.03–33.07’ye girer. Uçucu yağların damıtık suları ve sulu çözeltileri her durumda 33.01’de kalır."
+ },
+ "pozisyon_haritasi": [
+  [
+   "33.01",
+   "Uçucu yağlar, rezinoitler, ekstraksiyon yağ reçineleri; damıtık sular",
+   "Bitkisel menşe; tabii yapı sınırları içinde",
+   "Limon yağı, nane yağı, gül suyu, kırmızı biber yağ reçinesi"
+  ],
+  [
+   "33.02",
+   "Koku veren madde karışımları; içecek imaline mahsus koku verici müstahzarlar",
+   "Karışım veya taşıyıcı eklenmiş; sanayi hammaddesi",
+   "Parfüm esası, menton yağı, içecek aroma bazı"
+  ],
+  [
+   "33.03",
+   "Parfümler ve tuvalet suları",
+   "Vücuda koku verme; sıvı, krem, katı",
+   "Parfüm, kolonya, lavanta suyu"
+  ],
+  [
+   "33.04",
+   "Güzellik, makyaj, cilt bakımı, güneş; manikür-pedikür",
+   "İlaç hariç; cilt ve tırnak",
+   "Ruj, maskara, pudra, güneş kremi, oje, tuvalet sirkesi"
+  ],
+  [
+   "33.05",
+   "Saç müstahzarları",
+   "Saça uygulanır (vücut tüyü hariç)",
+   "Şampuan, perma, saç spreyi, saç boyası, biryantin"
+  ],
+  [
+   "33.06",
+   "Ağız ve diş müstahzarları; perakende diş ipliği",
+   "Takma diş yapıştırıcıları dahil",
+   "Diş macunu, ağız suyu, takma diş tozu"
+  ],
+  [
+   "33.07",
+   "Tıraş, deodorant, banyo, tüy dökücü, oda kokusu, diğerleri",
+   "Başka yerde yer almayan; Not 4 listesi",
+   "Tıraş köpüğü, after-shave, banyo tuzu, agarbatti, lens solüsyonu"
+  ]
+ ],
+ "notlar": [
+  [
+   "Fasıl 33 Not 1",
+   "Fasıl dışı: (a) 13.01 veya 13.02’deki tabii yağ reçineleri (oleoresin) ve bitkisel hülasalar; (b) 34.01’deki sabunlar ve diğer ürünler; (c) 38.05’teki terebentin esansı, çam ağacı esansı, sülfat esansı ve diğer ürünler."
+  ],
+  [
+   "Fasıl 33 Not 2",
+   "33.02’deki “koku veren maddeler” <b>sadece</b> 33.01 maddelerini, bu maddelerden çıkarılmış koku verici bileşikleri ve sentez yoluyla elde edilen aromatik ürünleri kapsar."
+  ],
+  [
+   "Fasıl 33 Not 3",
+   "33.03–33.07, karıştırılmış olsun olmasın bu kullanıma uygun ve bu kullanım için perakende ambalajlanmış ürünleri de kapsar; <b>uçucu yağların damıtılmış aromatik suları ve sulu çözeltileri hariç</b>."
+  ],
+  [
+   "Fasıl 33 Not 4",
+   "33.07’deki “parfümeri, kozmetik ve tuvalet müstahzarları”na diğerleri yanında: koku yastıkları; yakılarak kullanılan kokulu müstahzarlar; parfümlü ve kozmetik emdirilmiş kağıtlar; kontak lens veya suni göz solüsyonları; parfüm veya kozmetik emdirilmiş vatka, keçe ve dokunmamış mensucat; hayvanlara ait tuvalet müstahzarları dahildir."
+  ],
+  [
+   "Genel Açıklamalar",
+   "33.03–33.07 ürünleri ilave eczacılık veya dezenfektan madde içerse ya da tedavi edici özellik taşısa da bu pozisyonlarda kalır (Fasıl 30 Not 1(e)). Oda deodorantları dezenfektan özelliği tali olmaktan öteye geçse de 33.07’dedir. Karışım olmayan ürünler perakende ambalajlanıp kullanım etiketle belirtilmişse veya bu kullanıma özgü şekildeyse girer."
+  ],
+  [
+   "Genel Açıklamalar",
+   "Hariç: vazelin 27.12 (perakende cilt bakımı için hazırlananlar hariç); tali kozmetik kullanımlı tıbbi müstahzarlar 30.03 / 30.04; muayene ve cerrahi jelleri 30.06; sabun veya deterjan emdirilmiş kağıt, vatka, keçe 34.01."
+  ],
+  [
+   "Fasıl 34 Not 1",
+   "Sabun veya diğer yüzey aktif organik maddeler içeren şampuanlar, diş macunları, tıraş kremi ve köpükleri ile banyo müstahzarları Fasıl 34’e değil 33.05, 33.06 veya 33.07’ye girer."
+  ],
+  [
+   "33.01 Açıklama Notu",
+   "Terpeni alınmış uçucu yağlar ve konkretler buradadır; standardize edilmiş ürün tabii yapı sınırları içinde kalmalıdır. Fraksiyonlarına ayrılmış veya önemli ölçüde tadil edilmiş ya da taşıyıcı eklenmiş ürünler 33.02; izole kimyasal bileşikler Fasıl 29; vanilya yağ reçinesi 13.02. Çiçek pomatları 33.01, saç pomatları 33.05."
+  ],
+  [
+   "33.02 Açıklama Notu",
+   "Uçucu yağ, rezinoit, yağ reçinesi ve sentetik aromatik madde karışımları; alkol eklenmeden kullanıma hazır olmayan parfüm esasları; içecek imaline mahsus koku verici esaslı müstahzarlar. Koku verici madde esaslı olmayan içecek müstahzarları genellikle 21.06."
+  ],
+  [
+   "33.03 Açıklama Notu",
+   "Parfümler ve tuvalet suları (lavanta suyu, kolonya). Hariç: tuvalet sirkeleri 33.04; tıraş sonrası losyonları ve vücut deodorantları 33.07."
+  ],
+  [
+   "33.04 Açıklama Notu",
+   "Dudak ve göz makyajı, pudralar (perakende parfümsüz talk dahil), kremler, perakende cilt bakımı vazelini, deri altı dolgu jelleri, yeterli aktif madde içermeyen sivilce müstahzarları, tuvalet sirkeleri, güneş ürünleri, manikür-pedikür. Hariç: ekzema kremi gibi ilaçlar (30.03 / 30.04), ayak deodorantı ve tırnak tedavi müstahzarı (33.07), yapay tırnak (plastikse 39.26)."
+  ],
+  [
+   "33.07 Açıklama Notu",
+   "Blok tıraş sabunu 34.01; parfümlü mum 34.06; sentetik yüzey aktif esaslı perakende sıvı cilt yıkama müstahzarı 34.01, perakende değilse 34.02. Buzdolabı için perakende aktif karbon koku giderici ve hijyen için perakende, ilaç olmayan sodyum klorür çözeltisi 33.07’dedir."
+  ]
+ ],
+ "sinir_komsulari": [
+  [
+   "Tabii yağ reçineleri; vanilya yağ reçinesi; bitkisel hülasalar",
+   "13.01 / 13.02",
+   "Fasıl 33 Not 1(a); 33.01 Açıklama Notu"
+  ],
+  [
+   "Uçucu yağlardan izole edilmiş kimyaca belirli bileşikler (izole terpenler)",
+   "Fasıl 29",
+   "33.01 Açıklama Notu"
+  ],
+  [
+   "Bitkisel veya hayvansal menşeli boyayıcı maddeler",
+   "32.03",
+   "33.01 Açıklama Notu"
+  ],
+  [
+   "Terebentin esansı, çam ağacı esansı, sülfat esansı",
+   "38.05",
+   "Fasıl 33 Not 1(c)"
+  ],
+  [
+   "Ham vazelin; perakende cilt bakımı için hazırlanmamış vazelin",
+   "27.12",
+   "Genel Açıklamalar"
+  ],
+  [
+   "Ekzema kremi gibi tıbbi müstahzarlar",
+   "30.03 / 30.04",
+   "33.04 Açıklama Notu"
+  ],
+  [
+   "Muayene ve ultrason jelleri; diş dolgu maddeleri",
+   "30.06",
+   "Genel Açıklamalar; Fasıl 30 Not 4"
+  ],
+  [
+   "Kalıp sabun, blok tıraş sabunu; sabun emdirilmiş kağıt",
+   "34.01",
+   "Fasıl 33 Not 1(b); 33.07 Açıklama Notu"
+  ],
+  [
+   "Sentetik yüzey aktif esaslı sıvı cilt yıkama müstahzarı",
+   "34.01 / 34.02",
+   "Perakende ise 34.01, değilse 34.02"
+  ],
+  [
+   "Parfümlü mum",
+   "34.06",
+   "33.07 Açıklama Notu"
+  ],
+  [
+   "Koku verici madde esaslı olmayan içecek müstahzarı",
+   "21.06",
+   "33.02 Açıklama Notu"
+  ],
+  [
+   "Plastikten yapay tırnak",
+   "39.26",
+   "33.04 Açıklama Notu"
+  ],
+  [
+   "Tedavi edici özellik taşıyan şampuan, diş macunu, güneş kremi",
+   "33.05 / 33.06 / 33.04",
+   "Fasıl 30 değil: Fasıl 30 Not 1(e)"
+  ]
+ ],
+ "tuzaklar": [
+  "<b>Tedavi edici özellik kozmetiği ilaç yapmaz.</b> 33.03–33.07 müstahzarları eczacılık maddesi içerse de Fasıl 33’te kalır (Fasıl 30 Not 1(e)); tersine, asıl kullanımı tedavi olan ve tali olarak kozmetik özelliği bulunan müstahzarlar Fasıl 30’dadır.",
+  "<b>Sabun içeren şampuan sabun değildir.</b> Sabunlu şampuan 33.05, diş macunu 33.06, tıraş köpüğü ve banyo köpüğü 33.07 (Fasıl 34 Not 1(c)); ama kalıp el sabunu ve blok tıraş sabunu 34.01.",
+  "<b>Saç mı, vücut tüyü mü?</b> Saça uygulanan müstahzarlar 33.05; vücut tüylerine uygulananlar ve tüy dökücüler 33.07.",
+  "<b>Ayak ve tırnak tedavisi 33.07’dir.</b> Ayak deodorantı ve tırnak tedavi müstahzarları 33.07; oje ve oje çıkarıcı gibi manikür-pedikür müstahzarları 33.04.",
+  "<b>Tuvalet sirkesi 33.03 değildir.</b> Tuvalet sirkesi 33.04; tıraş sonrası losyonları ve vücut deodorantları 33.07; lavanta suyu ve kolonya 33.03.",
+  "<b>Damıtık su 33.01’de kalır.</b> Gül suyu gibi uçucu yağların damıtılmış suları ve sulu çözeltileri, parfüm veya ilaç haline gelse ve perakende ambalajlansa bile 33.01’dedir (Not 3).",
+  "<b>Karışım veya taşıyıcı = 33.02.</b> Uçucu yağların birbirleriyle karışımı ve dekstroz, nişasta, bitkisel yağ gibi taşıyıcı eklenmiş uçucu yağ 33.02’dedir; yalnızca terpenlerin alınması ürünü 33.01’de bırakır.",
+  "<b>Vazelin iki yerde.</b> Ham veya diğer vazelin 27.12; perakende satışa sunulmuş ve cilt bakımı için hazırlanmış vazelin 33.04.",
+  "<b>Pomat iki yerde.</b> Uçucu yağın katı yağdaki konsantresi (“çiçek pomatı”) 33.01; saça sürülen pomat 33.05.",
+  "<b>Mum 34’te, tütsü 33’te.</b> Parfümlü mum 34.06; agarbatti ve yakılarak kullanılan kokulu müstahzarlar 33.07."
+ ],
+ "hafiza": {
+  "kanca": "YAĞ – KARIŞIM – KOKU – YÜZ – SAÇ – AĞIZ – GERİSİ",
+  "aciklama": "<b>YAĞ</b> 33.01 · <b>KARIŞIM</b> 33.02 · <b>KOKU</b> (parfüm) 33.03 · <b>YÜZ</b> ve cilt 33.04 · <b>SAÇ</b> 33.05 · <b>AĞIZ</b> 33.06 · <b>GERİSİ</b> 33.07. Görsel benzetme: önce laboratuvarda yağ damıtılır ve karıştırılır; sonra bir sabah rutini baştan aşağı ilerler: parfüm, yüze makyaj, saça şampuan, ağıza diş macunu; kalan her şey (tıraş, deodorant, banyo, oda kokusu, lens solüsyonu) 33.07 çantasına girer."
+ },
+ "sinav_odagi": [
+  "Fasıl 33 ile Fasıl 34 sınırı: el sabununun diş macunu, diş ipliği, saç boyası ve kontak lens solüsyonlarından farklı fasılda olduğu (“farklı fasıl” kalıbı).",
+  "Not 4’te sayılan eşyanın doğrudan sorulması: perakende kontak lens solüsyonlarının 33.07’de olduğu; 38.24, 34.02 ve 34.01 çeldirici.",
+  "Vazelinin yeri: ham vazelinin 27.12’de olduğu; 33.04, 33.07 ve 34.01 çeldirici olarak kullanılmıştır.",
+  "Pozisyon sıralaması soruları: dudak ruju (33.04), diş macunu (33.06), parfüm (33.03), şampuan (33.05) gibi ürünlerin numara sırasının bilinmesi.",
+  "GYK 3(b) set soruları: parfüm veya tıraş losyonunun not defteri, kemer, bardak gibi ilgisiz eşyayla birlikte paketlenmesinin set oluşturmadığı.",
+  "Bölüm düzeyinde gruplama: şampuanın yağlı boya ve haşere öldürücüyle aynı bölümde (Bölüm VI) yer aldığı."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Perakende satılacak şekilde hazırlanmış kontak lens solüsyonları hangi tarife pozisyonundadır?",
+   "secenekler": [
+    "38.24",
+    "34.02",
+    "33.07",
+    "34.01"
+   ],
+   "cevap": "C",
+   "aciklama": "Fasıl 33 Not 4, kontak lens veya suni göz solüsyonlarını 33.07 anlamında parfümeri, kozmetik ve tuvalet müstahzarları arasında sayar; temizleme işlevi ürünü 34.02’ye taşımaz."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi tarife cetvelinde diğerlerinden farklı bir fasılda sınıflandırılır?",
+   "secenekler": [
+    "Diş macunu",
+    "Diş ipliği",
+    "El sabunu",
+    "Saç boyası",
+    "Kontakt-lens solüsyonları"
+   ],
+   "cevap": "C",
+   "aciklama": "Sabunlar Fasıl 33 Not 1(b) uyarınca fasıl dışındadır ve 34.01’de yer alır. Diş macunu ve diş ipliği 33.06’da, saç boyası 33.05’te, kontak lens solüsyonları 33.07’dedir."
+  }
+ ],
+ "ozet": [
+  "33.01 tabii uçucu yağ, rezinoit ve damıtık sular; 33.02 karışımlar ve içecek bazları.",
+  "33.03 parfüm, 33.04 cilt-makyaj-güneş-manikür, 33.05 saç, 33.06 ağız-diş, 33.07 kalanlar.",
+  "Tedavi edici özellik Fasıl 33’ten çıkarmaz; sabun ve 34.01 ürünleri çıkarır.",
+  "Not 3: karışım olmayan ürün de perakende ambalajlanıp bu kullanım belirtilmişse 33.03–33.07; damıtık sular hariç.",
+  "Not 4: lens solüsyonu, koku yastığı, tütsü, kozmetikli kağıt ve keçe, hayvan tuvalet müstahzarı 33.07.",
+  "Vazelin 27.12; perakende cilt bakımı vazelini 33.04. Parfümlü mum 34.06."
+ ],
+ "sorular": [
+  {
+   "soru": "Perakende satış için şişelerde ambalajlanmış köpek şampuanı Tarife Cetvelinde hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "33.05",
+    "34.01",
+    "30.04",
+    "33.07",
+    "34.02"
+   ],
+   "cevap": "D",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Fasıl 33 Not 4, hayvanlara ait tuvalet müstahzarlarını 33.07 anlamında parfümeri, kozmetik ve tuvalet müstahzarları arasında sayar; açıklama notu köpek şampuanlarını ismen örnek verir. 33.05 insan saçına uygulanan müstahzarlar içindir; “şampuan” kelimesi tuzaktır.",
+   "dayanak": "Fasıl 33 Not 4; 33.07 Açıklama Notu."
+  },
+  {
+   "soru": "Gül yapraklarının buharla damıtılması sırasında uçucu yağ ayrıldıktan sonra kalan, başka madde katılmamış ve perakende şişelerde satılan gül suyu hangi pozisyonda yer alır?",
+   "secenekler": [
+    "33.03",
+    "33.01",
+    "33.02",
+    "33.04",
+    "33.07"
+   ],
+   "cevap": "B",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Uçucu yağların damıtılmış aromatik suları 33.01 pozisyon metninde sayılmıştır ve açıklama notuna göre parfüm veya ilaç haline getirilmiş olsalar da burada kalır. Not 3, damıtık suları ve sulu çözeltileri 33.03–33.07 kapsamından açıkça hariç tuttuğundan perakende ambalaj ürünü 33.03’e taşımaz.",
+   "dayanak": "Fasıl 33 Not 3; 33.01 Açıklama Notu; 33.03 Açıklama Notu."
+  },
+  {
+   "soru": "Etiketinde bebek pudrası olarak kullanılacağı belirtilen, perakende satış için 200 g’lık kutulara konulmuş, karıştırılmamış ve parfümlenmemiş talk hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "25.26",
+    "33.07",
+    "30.04",
+    "38.24",
+    "33.04"
+   ],
+   "cevap": "E",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Not 3 ve genel açıklamalar, karışım halinde olmayan ürünlerin bu kullanım için perakende ambalajlanıp etiketle belirtilmesi halinde 33.03–33.07’de sınıflandırılacağını belirtir. 33.04 açıklama notu bebek pudralarını “karıştırılmamış, parfümlenmemiş, perakende satışa sunulmuş talk pudrası dahil” diye sayar. Dökme talk ise 25.26’da kalırdı.",
+   "dayanak": "Fasıl 33 Not 3; Genel Açıklamalar; 33.04 Açıklama Notu."
+  },
+  {
+   "soru": "Kırışıklıkları gidermek ve dudakları dolgunlaştırmak için deri altına enjekte edilen, hyaluronik asit içeren jel hangi pozisyonda yer alır?",
+   "secenekler": [
+    "33.04",
+    "30.04",
+    "30.06",
+    "39.13",
+    "33.07"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "33.04 açıklama notu, kırışıklıkları gidermek ve dudakları dolgunlaştırmak için deri altına enjekte edilebilen jelleri (hyaluronik asit içerenler dahil) güzellik ve cilt bakımı müstahzarı olarak sayar. Enjeksiyon yolu ürünü ilaç (30.04) yapmaz; 30.06’daki jeller muayene ve cerrahide kullanılan yağlayıcı veya birleştirme jelleridir.",
+   "dayanak": "33.04 Açıklama Notu."
+  },
+  {
+   "soru": "Tıraş sonrasında küçük kesiklerde kanamayı durdurmak için kullanılan şap blokları ve kan durdurucu kalemler hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "28.33",
+    "30.05",
+    "33.07",
+    "33.04",
+    "30.06"
+   ],
+   "cevap": "C",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "33.07 açıklama notu, tıraş öncesinde, sırasında veya sonrasında kullanılan müstahzarlar arasında şap bloklarını ve kan durdurucu kalemleri ismen sayar. Şap kimyasal olarak 28.33’ü, kan durdurma işlevi 30.05 veya 30.06’yı çağrıştırır; ancak ürünler tıraş müstahzarı olarak 33.07’dedir.",
+   "dayanak": "33.07 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 33. faslında <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Sabun içeren tıraş köpüğü",
+    "Agarbatti ve yakılarak kullanılan kokulu çubuklar",
+    "Kalıp halinde tıraş sabunu",
+    "Parfüm emdirilmiş dokunmamış mensucat mendil",
+    "Takma dişleri ağızda sabit tutmaya mahsus toz"
+   ],
+   "cevap": "C",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "33.07 açıklama notu blok halindeki tıraş sabunlarını hariç tutar ve 34.01’e gönderir; Fasıl 33 Not 1(b) de sabunları fasıl dışında bırakır. Sabun içeren tıraş köpüğü ise Fasıl 34 Not 1(c) gereği 33.07’dedir. Agarbatti ve parfümlü dokunmamış mensucat 33.07’de, takma diş tozu 33.06’dadır.",
+   "dayanak": "Fasıl 33 Not 1(b) ve Not 4; Fasıl 34 Not 1(c); 33.07 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 33.04 pozisyonunda <b>yer almaz</b>?",
+   "secenekler": [
+    "Ayak deodorantı",
+    "Sirke ile parfümlü alkol karışımı tuvalet sirkesi",
+    "Cilt bakımı için perakende ambalajlanmış vazelin",
+    "Güneşlenme müstahzarı",
+    "Sahne makyajı boyası"
+   ],
+   "cevap": "A",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "33.04 açıklama notu, ayak deodorantlarını ve insan veya hayvan tırnaklarını tedaviye mahsus müstahzarları hariç tutarak 33.07’ye gönderir. Tuvalet sirkeleri, perakende cilt bakımı vazelini, güneşlenme müstahzarları ve sahne makyajı boyaları 33.04’te ismen sayılmıştır.",
+   "dayanak": "33.04 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 33.05 pozisyonunda <b>yer almaz</b>?",
+   "secenekler": [
+    "Saçı sabitlemeye mahsus saç spreyi (hair lacquer)",
+    "Perma ve saç düzleştirme müstahzarı",
+    "Kuaförlerde kullanılan saç boyası ve ağartıcısı",
+    "Bacak tüylerini dökmeye mahsus tüy dökücü krem",
+    "Saç biryantini ve saç düzenleyici krem"
+   ],
+   "cevap": "D",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "33.05 açıklama notu, saça uygulanmayıp vücut üzerindeki tüylere uygulanan müstahzarları hariç tutar; tüy dökücüler 33.07 pozisyon metninde ismen sayılır. Saç spreyi, perma ve defrize müstahzarları, saç boyaları ve biryantinler 33.05’tedir.",
+   "dayanak": "33.05 Açıklama Notu; 33.07 pozisyon metni."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 33.01 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Terpeni alınmış limon yağı",
+    "Kurutulmuş tabii hayvansal reçineli maddelerden rezinoit",
+    "Kırmızı biberden ekstraksiyonla elde edilmiş yağ reçinesi",
+    "Uçucu yağların terpeninin alınmasından arta kalan yan ürün",
+    "Vanilya yağ reçinesi"
+   ],
+   "cevap": "E",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "33.01 açıklama notu, bazen yanlışlıkla vanilya hülasası veya rezinoiti denilen vanilya yağ reçinesini 13.02’ye gönderir. Terpeni alınmış uçucu yağlar, rezinoitler, baharatlardan ekstraksiyonla elde edilen yağ reçineleri (listede kırmızı biber dahil) ve terpenli yan ürünler 33.01’de sayılmıştır.",
+   "dayanak": "33.01 pozisyon metni, Açıklama Notu ve eki."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden farklı bir tarife pozisyonunda sınıflandırılır?",
+   "secenekler": [
+    "Tıraş sonrası (after-shave) losyonu",
+    "Lavanta suyu",
+    "Vücut deodorantı",
+    "Parfümlü banyo tuzu",
+    "Kontak lens solüsyonu"
+   ],
+   "cevap": "B",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "33.03 açıklama notu lavanta suyunu ve kolonyayı tuvalet suyu örneği olarak verir. Tıraş sonrası losyonları ve vücut deodorantları aynı notta hariç tutularak 33.07’ye gönderilir; parfümlü banyo tuzları ve kontak lens solüsyonları da 33.07’dedir.",
+   "dayanak": "33.03 ve 33.07 Açıklama Notları; Fasıl 33 Not 4."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden farklı bir fasılda sınıflandırılır?",
+   "secenekler": [
+    "Diş hekiminin kullandığı diş dolgu maddesi",
+    "Diş macunu",
+    "Bireysel kullanıma mahsus perakende ambalajda diş ipliği",
+    "Takma dişleri ağızda sabit tutmaya mahsus tablet",
+    "Ağız parfümü"
+   ],
+   "cevap": "A",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Diş dolgu maddeleri Fasıl 30 Not 4(f) ile 30.06’dadır. Diş macunu (diş hekimlerince kullanılsa bile), perakende diş ipliği, takma diş yapıştırıcı tabletler ve ağız parfümleri 33.06’da yer alır. Tuzak, “diş” kelimesinin tüm seçenekleri aynı yere topladığını sanmaktır.",
+   "dayanak": "33.06 pozisyon metni ve Açıklama Notu; Fasıl 30 Not 4."
+  },
+  {
+   "soru": "Aşağıdaki eşya çiftlerinden hangisinde her iki eşya da aynı tarife pozisyonunda yer alır?",
+   "secenekler": [
+    "Çiçek pomatı – Saç pomatı",
+    "Gül yağı – Gül yağı ile lavanta yağı karışımı",
+    "Parfüm – Tuvalet sirkesi",
+    "Oje – Oje çıkarıcı",
+    "Sabun içeren şampuan – Kalıp el sabunu"
+   ],
+   "cevap": "D",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "33.04 açıklama notu tırnak cilalarını ve tırnak cilası gidericileri manikür-pedikür müstahzarı olarak birlikte sayar. Çiçek pomatı 33.01, saç pomatı 33.05; gül yağı 33.01, uçucu yağ karışımı 33.02; parfüm 33.03, tuvalet sirkesi 33.04; sabunlu şampuan 33.05, kalıp sabun 34.01’dir.",
+   "dayanak": "33.01–33.05 Açıklama Notları; Fasıl 34 Not 1(c)."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden farklı bir fasılda yer alır?",
+   "secenekler": [
+    "Agarbatti",
+    "Dolapları kokulandırmak için aromatik bitki parçalı koku torbacığı",
+    "Parfümlü mum",
+    "Aerosol kutuda kapalı yer koku giderici",
+    "Buzdolabı için perakende ambalajlı aktif karbon koku giderici"
+   ],
+   "cevap": "C",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "33.07 açıklama notu parfümlü mumları hariç tutarak 34.06’ya gönderir. Agarbatti ve yakılarak kullanılan kokulu müstahzarlar, koku torbacıkları, aerosol koku gidericiler ve buzdolabı için perakende aktif karbon koku gidericiler 33.07’de sayılmıştır.",
+   "dayanak": "33.07 Açıklama Notu; Fasıl 33 Not 4."
+  },
+  {
+   "soru": "Fasıl 33 Not 2’ye göre 33.02 pozisyonundaki “koku veren maddeler” tabiri neyi kapsar?",
+   "secenekler": [
+    "Yalnızca bitkisel menşeli ve terpeni alınmamış tabii uçucu yağları",
+    "Koku veren her türlü gıda maddesini, baharatı, meyve suyunu ve hülasayı",
+    "13.02’deki bitkisel hülasaları ve 13.01’deki tabii yağ reçinelerini de",
+    "Yalnızca alkol içinde çözülmüş ve kullanıma hazır parfüm ve kolonyaları",
+    "33.01 maddeleri, onlardan çıkarılan koku bileşikleri ve sentetik aromatikler"
+   ],
+   "cevap": "E",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Not 2, “koku veren maddeler” tabirini yalnız 33.01 maddeleri, bu maddelerden çıkarılmış koku verici bileşikler ve sentez yoluyla elde edilen aromatik ürünlerle sınırlar. 13.02 hülasaları Not 1(a) ile fasıl dışıdır; baharat gibi diğer maddeler ancak koku verici maddelerle karışımın esasını bunlar oluşturuyorsa 33.02’ye girer.",
+   "dayanak": "Fasıl 33 Not 1 ve Not 2; 33.02 Açıklama Notu."
+  },
+  {
+   "soru": "Fasıl 33 Not 3’e göre aşağıdakilerden hangisi, bu kullanıma uygun olup perakende ambalajlansa bile 33.03–33.07 pozisyonlarına giremez?",
+   "secenekler": [
+    "Parfümlenmemiş, karıştırılmamış talk pudrası",
+    "Uçucu yağların damıtık aromatik suları ve sulu çözeltileri",
+    "Tırnak cilasını çıkarmaya mahsus saf aseton",
+    "Tıraş sonrasında kullanılan blok halinde şap",
+    "Çamaşırcı toprağı denilen kil (karıştırılmamış)"
+   ],
+   "cevap": "B",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Not 3, karıştırılmış olsun olmasın bu kullanıma uygun ve perakende ambalajlı ürünleri 33.03–33.07’ye alırken uçucu yağların damıtılmış aromatik sularını ve sulu çözeltilerini açıkça hariç tutar; bunlar her durumda 33.01’dedir. Talk, aseton, şap ve çamaşırcı toprağı genel açıklamalarda şartları sağlarsa bu pozisyonlara girebilen ürünler olarak sayılır.",
+   "dayanak": "Fasıl 33 Not 3; Genel Açıklamalar."
+  },
+  {
+   "soru": "Fasıl 33 Not 4’e göre aşağıdakilerden hangisi 33.07 pozisyonu anlamında “parfümeri, kozmetik ve tuvalet müstahzarları” arasında <b>sayılmamıştır</b>?",
+   "secenekler": [
+    "Koku yastıkları",
+    "Kontak lens veya suni göz solüsyonları",
+    "Hayvanlara ait tuvalet müstahzarları",
+    "Sabun emdirilmiş kağıtlar",
+    "Kozmetik emdirilmiş veya kaplanmış kağıtlar"
+   ],
+   "cevap": "D",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Not 4; koku yastıklarını, yakılarak kullanılan kokulu müstahzarları, parfümlü ve kozmetikli kağıtları, kontak lens ve suni göz solüsyonlarını, parfüm veya kozmetik emdirilmiş vatka, keçe ve dokunmamış mensucatı ve hayvan tuvalet müstahzarlarını sayar. Sabun veya deterjan emdirilmiş kağıt ise genel açıklamalar gereği 34.01’dedir.",
+   "dayanak": "Fasıl 33 Not 4; Genel Açıklamalar (d)."
+  },
+  {
+   "soru": "Fasıl 33 Genel Açıklamalarına göre parfümlenmemiş talk pudrası gibi karışım halinde olmayan bir ürün hangi durumda 33.03–33.07 pozisyonlarında sınıflandırılır?",
+   "secenekler": [
+    "Perakende ambalajlanmış ve bu kullanımı etiket veya broşürle belirtilmişse",
+    "Ağırlığının yarısından fazlası kozmetik amaçla kullanılacağı beyan edilmişse",
+    "Dökme halde olsa bile kozmetik sanayiine satılacağı belgelenmişse",
+    "Kimyasal olarak saf olduğu analizle kanıtlanmışsa",
+    "Bir kozmetik firması tarafından ithal edilmişse"
+   ],
+   "cevap": "A",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Genel açıklamalara göre başka kullanımlara da uygun olan karışım halinde olmayan ürünler (parfümsüz talk, çamaşırcı toprağı, aseton, şap) ancak tüketiciye satılacak şekilde ambalajlanıp bu kullanım etiket, broşür veya diğer göstergelerle belirtilmişse ya da açıkça bu kullanıma özgü şekildeyse bu pozisyonlara girer. Alıcının kimliği veya saflık derecesi ölçüt değildir.",
+   "dayanak": "Fasıl 33 Not 3; Genel Açıklamalar."
+  },
+  {
+   "soru": "Perakende satış için aynı karton kutuda birlikte sunulan bir şişe kolonya ile bir adet USB bellekten oluşan eşya nasıl sınıflandırılır?",
+   "secenekler": [
+    "GYK 3(b) uyarınca esas karakteri veren kolonyaya göre set olarak 33.03’te",
+    "GYK 3(c) uyarınca numara sırasına göre en son pozisyonda",
+    "GYK 5(b) uyarınca karton kutu ve bellekle birlikte kolonya olarak 33.03’te",
+    "GYK 2(a) uyarınca tamamlanmamış eşya olarak kolonyanın pozisyonunda",
+    "Özel bir gereksinimi karşılamadığından set sayılmaz; her biri kendi pozisyonunda"
+   ],
+   "cevap": "E",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 3(b) açıklama notuna göre perakende set için ürünlerin özel bir gereksinimi karşılamak veya belirli bir işlevi yerine getirmek üzere bir araya getirilmesi gerekir. Kolonya ile USB bellek ortak bir amaca hizmet etmediğinden set oluşturmaz; şarap ile alkollü içki örneğindeki gibi her biri kendi pozisyonunda (kolonya 33.03) sınıflandırılır.",
+   "dayanak": "GYK 3(b) Açıklama Notu (X)."
+  },
+  {
+   "soru": "Normal türde, tekrar kullanıma elverişli olmayan cam şişe içinde ve karton kutuda perakende satılan parfüm, şişe ve kutusuyla birlikte 33.03’te sınıflandırılır. Ambalajın eşyayla birlikte sınıflandırılması hangi kurala dayanır?",
+   "secenekler": [
+    "GYK 5(a)",
+    "GYK 3(b)",
+    "GYK 5(b)",
+    "GYK 2(b)",
+    "GYK 4"
+   ],
+   "cevap": "C",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 5(b), eşya ile birlikte sunulan ve bu eşyanın ambalajında normal olarak kullanılan türden ambalaj maddelerinin eşya ile birlikte sınıflandırılacağını hükme bağlar; sürekli kullanıma elverişli olduğu açıkça belli ambalajlar hariçtir. GYK 5(a) ise belirli eşyaya göre şekil verilmiş, uzun süre kullanılmaya uygun mahfazalar (kolye kutusu, müzik aleti kutusu) içindir.",
+   "dayanak": "GYK 5(b); 33.03 pozisyon metni."
+  },
+  {
+   "soru": "Aşağıdaki eşya – pozisyon eşleştirmelerinden hangisi <b>yanlıştır</b>?",
+   "secenekler": [
+    "Sirke ile parfümlü alkolden tuvalet sirkesi – 33.04",
+    "Dozlandırılmış, ekzemayı tedavi edici krem – 33.04",
+    "Takma dişleri temizlemeye mahsus toz – 33.06",
+    "Kuşlarda tüyleri güzelleştirici yıkayıcı – 33.07",
+    "Hijyen için perakende, ilaç olmayan tuzlu su çözeltisi – 33.07"
+   ],
+   "cevap": "B",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "33.04 açıklama notu, ekzema kremleri gibi cilt rahatsızlıklarını tedavi eden tıbbi müstahzarları hariç tutar ve 30.03 veya 30.04’e gönderir; dozlandırılmış ürün 30.04’tedir. Tuvalet sirkesi 33.04, takma diş temizleme tozu 33.06, kuş tüyü yıkayıcıları ve ilaç olmayan perakende sodyum klorür çözeltileri 33.07’dedir.",
+   "dayanak": "33.04, 33.06 ve 33.07 Açıklama Notları."
+  },
+  {
+   "soru": "Parfümler ve güzel kokular ……… pozisyonunda; tıraş sonrası losyonları ve vücut deodorantları ……… pozisyonunda; tuvalet sirkeleri ise ……… pozisyonunda sınıflandırılır. Boşluklara sırasıyla hangisi gelmelidir?",
+   "secenekler": [
+    "33.03 – 33.07 – 33.04",
+    "33.03 – 33.04 – 33.07",
+    "33.02 – 33.07 – 33.04",
+    "33.03 – 33.05 – 33.04",
+    "33.07 – 33.03 – 33.04"
+   ],
+   "cevap": "A",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "33.03 açıklama notu parfümleri ve tuvalet sularını kapsar; aynı not tuvalet sirkelerini 33.04’e, tıraş sonrası losyonları ve vücut deodorantlarını 33.07’ye gönderir. 33.02 ise sanayide hammadde olarak kullanılan koku verici madde karışımları içindir.",
+   "dayanak": "33.03 Açıklama Notu; 33.04 ve 33.07 pozisyon metinleri."
+  },
+  {
+   "soru": "Aşağıdakilerden hangileri 33.07 pozisyonunda sınıflandırılır? I. Aktif bileşenleri sentetik organik yüzey aktif maddeler olan, perakende satışa sunulmuş sıvı el yıkama müstahzarı II. Banyo köpüğü müstahzarı III. Dini törenlerde yakılan hoş kokulu çubuklar IV. Çamaşır dolaplarını kokulandırmak için aromatik bitki parçaları içeren torbacıklar",
+   "secenekler": [
+    "I ve II",
+    "I, II ve III",
+    "I, III ve IV",
+    "II, III ve IV",
+    "III ve IV"
+   ],
+   "cevap": "D",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "33.07 açıklama notu banyo köpüklerini (sabun veya yüzey aktif madde içersin içermesin), dini törenlerde kullanılan kokulu müstahzarları ve kokulu torbacıkları sayar. Aynı not, aktif bileşenleri sentetik organik yüzey aktif maddeler olan ve perakende sunulan sıvı cilt yıkama müstahzarlarını 34.01’e gönderir (I).",
+   "dayanak": "33.07 Açıklama Notu; Fasıl 34 Not 1(c)."
+  },
+  {
+   "soru": "Fasıl 33 ile ilgili aşağıdaki ifadelerden hangileri doğrudur? I. Oda deodorantları, tali bir özellikten fazla dezenfektan özelliği olsa bile 33.07’dedir. II. Bitkisel yağ veya dekstroz gibi taşıyıcı eklenmiş uçucu yağ 33.01’de kalır. III. İçecek imalinde kullanılan, koku verici madde esaslı olmayan bileşik müstahzarlar genellikle 21.06’dadır. IV. Yapay tırnaklar manikür müstahzarı olarak 33.04’tedir.",
+   "secenekler": [
+    "I ve II",
+    "I ve III",
+    "II ve IV",
+    "I, III ve IV",
+    "II ve III"
+   ],
+   "cevap": "B",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "Genel açıklamalar oda deodorantlarının dezenfektan özelliği tali olmaktan öteye geçse de 33.07’de kaldığını (I), 33.02 açıklama notu koku verici madde esaslı olmayan içecek müstahzarlarının genellikle 21.06’da olduğunu (III) belirtir. Taşıyıcı veya seyreltici eklenmiş uçucu yağlar 33.02’dedir (II yanlış); yapay tırnaklar plastikten ise 39.26’dadır (IV yanlış).",
+   "dayanak": "Fasıl 33 Genel Açıklamalar; 33.01, 33.02 ve 33.04 Açıklama Notları."
+  },
+  {
+   "soru": "Bir firma; portakal çiçeği, bergamot ve lavanta uçucu yağları ile sabitleştiricilerin karışımından oluşan, alkol eklenmeden kullanıma hazır olmayan ve parfüm üreticilerine 25 kg’lık bidonlarda satılan bir parfüm esası ithal etmektedir. Eşya hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "33.01",
+    "33.03",
+    "33.07",
+    "38.24",
+    "33.02"
+   ],
+   "cevap": "E",
+   "tip": "Senaryo",
+   "gerekce": "33.02 açıklama notu, alkol eklenmedikçe kullanıma hazır olmayan, uçucu yağlar ve sabitleştiricilerin karışımından oluşan parfüm esaslarını ismen kapsar. Tek bir uçucu yağ değil karışım olduğundan 33.01’e, kullanıma hazır parfüm olmadığından 33.03’e girmez; sanayide hammadde olarak kullanılır.",
+   "dayanak": "33.02 pozisyon metni ve Açıklama Notu; Fasıl 33 Not 2."
+  },
+  {
+   "soru": "Perakende tüpte satılan, cildi güneşin zararlı ışınlarından korumak için hazırlanmış; kutusunda “cilt tahrişine karşı koruyucu” ibaresi bulunan ve tali olarak az miktarda antiseptik madde içeren bir krem ithal edilmektedir. Eşya hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "30.04",
+    "33.07",
+    "33.04",
+    "30.03",
+    "38.08"
+   ],
+   "cevap": "C",
+   "tip": "Senaryo",
+   "gerekce": "Güneş kremleri ve güneşlenme müstahzarları 33.04 pozisyon metninde sayılmıştır. Genel açıklamalar ve Fasıl 30 Not 1(e), 33.03–33.07 müstahzarlarının ilave eczacılık veya dezenfektan madde içerseler ya da tedavi edici veya koruyucu özellik taşısalar bile bu pozisyonlarda kalacağını belirtir; antiseptik ürünü 30.04’e taşımaz.",
+   "dayanak": "33.04 pozisyon metni; Fasıl 33 Genel Açıklamalar; Fasıl 30 Not 1(e)."
+  }
+ ]
+}

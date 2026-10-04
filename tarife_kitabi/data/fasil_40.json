@@ -1,0 +1,720 @@
+{
+ "tur": "fasil",
+ "fasil": 40,
+ "baslik": "Kauçuk ve kauçuktan eşya",
+ "bolum": "VII",
+ "oz": {
+  "vurgu": "Fasıl 40 kauçuğu ham halinden mamul eşyaya kadar izler: önce eşya Not 1 ve Not 4 anlamında “kauçuk” mu, sonra vulkanize edilmiş mi, sertleştirilmiş mi? Ham kauçuk 40.01–40.06’da, sertleştirilmemiş vulkanize kauçuktan yarı mamul ve eşya 40.07–40.16’da, sert kauçuk (ebonit) her şekliyle 40.17’dedir.",
+  "maddeler": [
+   "“Kauçuk” (Not 1): tabii kauçuk, balata, güta-perka, guayül, çıkıl ve benzeri tabii sakızlar, sentetik kauçuk, yağlardan türetilen taklit kauçuk ve bunların rejenere olanları; vulkanize veya sert olsun olmasın.",
+   "Sentetik kauçuk Not 4 testine bağlıdır: 18–29 °C’de kopmadan 3 kat uzama, 2 kat uzatılınca 5 dakikada en fazla 1,5 kata dönme. Testi geçemeyen elastomer Fasıl 39’a gider; tiyoplastlar testten muaftır.",
+   "Ham kauçuğa vulkanizasyon ajanı, dolgu, karbon karası, pigment veya organik çözücü katılınca 40.01 / 40.02’den 40.05’e geçer (Not 5).",
+   "Lastikler üç pozisyondadır: yeni dış lastik 40.11, sırt geçirilmiş-kullanılmış lastik ile dolgu lastiği, sırt ve kolan 40.12, iç lastik 40.13.",
+   "Not 2 dışlamaları: Bölüm XI, ayakkabı (64), başlık (65), makinelerin sert kauçuk parçaları (XVI), Fasıl 90, 92, 94, 96 ve 95 eşyası (spor eldiveni ve 40.11–40.13 eşyası hariç)."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+  "satirlar": [
+   [
+    "1",
+    "Not 2’de sayılan bir eşya mı? (tekstil eşyası, ayakkabı, başlık, makinenin sert kauçuk parçası, Fasıl 90, 92, 94, 96 eşyası, oyuncak-spor eşyası*)",
+    "Bölüm XI · Fasıl <b>64</b>, <b>65</b> · Bölüm XVI · Fasıl <b>90</b>, <b>92</b>, <b>94</b>, <b>95</b>, <b>96</b>"
+   ],
+   [
+    "2",
+    "Not 1 ve Not 4 anlamında kauçuk değil mi? (testi geçemeyen elastomer)",
+    "Fasıl <b>39</b> (silikon 39.10, poliizobütilen 39.02)"
+   ],
+   [
+    "3",
+    "Sertleştirilmiş kauçuk (ebonit) ya da bundan eşya veya döküntü mü?",
+    "<b>40.17</b>"
+   ],
+   [
+    "4",
+    "Döküntü, kırpıntı, kesinlikle kullanılamaz eşya veya bunların tozu-granülü mü?",
+    "<b>40.04</b> (yeniden kullanılabilir lastik 40.12)"
+   ],
+   [
+    "5",
+    "Vulkanize edilmemiş, ilk şekil veya levha-şerit halinde mi?",
+    "Tabii <b>40.01</b> · sentetik, taklit veya 40.01 karışımı <b>40.02</b> · rejenere <b>40.03</b> · Not 5(A) katkılı <b>40.05</b>"
+   ],
+   [
+    "6",
+    "Vulkanize edilmemiş, diğer şekilde (çubuk, boru, profil) veya eşya mı?",
+    "<b>40.06</b>"
+   ],
+   [
+    "7",
+    "Vulkanize kauçuktan iplik mi, levha-şerit-çubuk-profil mi?",
+    "Kesit ≤ 5 mm iplik <b>40.07</b> · diğerleri <b>40.08</b>"
+   ],
+   [
+    "8",
+    "Boru-hortum ya da taşıyıcı-transmisyon kolanı mı?",
+    "<b>40.09</b> · <b>40.10</b>"
+   ],
+   [
+    "9",
+    "Tekerlek lastiği mi?",
+    "Yeni dış <b>40.11</b> · sırt geçirilmiş, kullanılmış, dolgu, sırt, kolan <b>40.12</b> · iç <b>40.13</b>"
+   ],
+   [
+    "10",
+    "Hijyen-eczacılık eşyası mı, giyim eşyası veya eldiven mi?",
+    "<b>40.14</b> · <b>40.15</b>"
+   ],
+   [
+    "11",
+    "Hiçbiri değilse (conta, silgi, paspas, şişirilebilir eşya, taşıt parçası)",
+    "<b>40.16</b>"
+   ]
+  ],
+  "dipnot": "* Not 2(f): Spor eldivenleri, tek parmak ve koruma eldivenleri ile 40.11–40.13 eşyası (ör. tekerlekli oyuncak lastikleri) Fasıl 95’e gitmez, Fasıl 40’ta kalır."
+ },
+ "pozisyon_haritasi": [
+  [
+   "40.01",
+   "Tabii kauçuk, balata, güta-perka, çıkıl",
+   "İlk şekil veya levha; katkısız",
+   "Lateks, füme yaprak, krep, çıkıl"
+  ],
+  [
+   "40.02",
+   "Sentetik kauçuk, taklit kauçuk",
+   "Not 4 testi; 40.01 ile karışımlar dahil",
+   "SBR, NBR, EPDM, bütil, tiyoplast"
+  ],
+  [
+   "40.03",
+   "Rejenere kauçuk",
+   "Devulkanize edilmiş; ilk şekil veya levha",
+   "Eski lastikten rejenere kauçuk levha"
+  ],
+  [
+   "40.04",
+   "Kauçuk döküntü, kırpıntı; toz, granül",
+   "Kesinlikle kullanılamaz; sert kauçuk hariç",
+   "Hurda lastik parçaları, lastik granülü"
+  ],
+  [
+   "40.05",
+   "Karıştırılmış kauçuk (vulkanize edilmemiş)",
+   "Not 5(A) katkıları içerir",
+   "Karbon karası masterbatch, kauçuk çözeltisi"
+  ],
+  [
+   "40.06",
+   "Vulkanize edilmemiş diğer şekil ve eşya",
+   "Çubuk, boru, profil, disk, rondela",
+   "Lastik sırtı profili, ham kauçuk boru"
+  ],
+  [
+   "40.07",
+   "Vulkanize kauçuktan iplik ve ip",
+   "Tek kat iplikte kesit ≤ 5 mm",
+   "Lastik iplik"
+  ],
+  [
+   "40.08",
+   "Vulkanize kauçuktan levha, şerit, çubuk, profil",
+   "Sertleştirilmemiş; dikdörtgen kesim dahil",
+   "Sünger levha, kauçuk karo, pencere fitili"
+  ],
+  [
+   "40.09",
+   "Vulkanize kauçuktan boru ve hortum",
+   "Bağlantı elemanlı olsun olmasın",
+   "Tel takviyeli hidrolik hortum"
+  ],
+  [
+   "40.10",
+   "Taşıyıcı ve transmisyon kolanları",
+   "Kauçuklu tekstil kolanlar dahil (Not 8)",
+   "V-kayışı, konveyör bandı"
+  ],
+  [
+   "40.11",
+   "Yeni dış lastikler",
+   "Havalı, yeni",
+   "Otomobil, uçak, bisiklet lastiği"
+  ],
+  [
+   "40.12",
+   "Sırt geçirilmiş, kullanılmış lastik; dolgu lastik, sırt, kolan",
+   "Yeniden kullanıma uygun",
+   "Kaplanmış lastik, el arabası bandajı"
+  ],
+  [
+   "40.13",
+   "İç lastikler",
+   "Dış lastiğin içine yerleşir",
+   "Bisiklet iç lastiği"
+  ],
+  [
+   "40.14",
+   "Hijyen ve eczacılık eşyası",
+   "Emzikli biberon başlıkları dahil",
+   "Prezervatif, buz torbası, sıcak su şişesi"
+  ],
+  [
+   "40.15",
+   "Giyim eşyası ve aksesuarı",
+   "Eldivenler dahil",
+   "Cerrahi eldiven, dalgıç elbisesi, önlük"
+  ],
+  [
+   "40.16",
+   "Diğer vulkanize kauçuk eşya",
+   "Sertleştirilmemiş; artık pozisyon",
+   "Conta, silgi, paspas, havalı yatak"
+  ],
+  [
+   "40.17",
+   "Sertleştirilmiş kauçuk ve eşyası",
+   "Ebonit; döküntü dahil",
+   "Ebonit levha, bıçak sapı"
+  ]
+ ],
+ "notlar": [
+  [
+   "Fasıl 40 Not 1",
+   "Metinde aksi belirtilmedikçe tarifenin her yerinde “kauçuk”: vulkanize edilmiş veya sertleştirilmiş olsun olmasın tabii kauçuk, balata, güta-perka, guayül, çıkıl (chicle) ve benzeri tabii sakızlar, sentetik kauçuk, sıvı yağlardan türetilen taklit kauçuk ve bunların rejenere edilmiş olanları."
+  ],
+  [
+   "Fasıl 40 Not 2",
+   "Hariç: (a) Bölüm XI ürünleri; (b) Fasıl 64 ayakkabı ve aksamı; (c) Fasıl 65 başlıklar ve aksamı (banyo başlıkları dahil); (d) Bölüm XVI mekanik ve elektrikli cihazların sertleştirilmiş kauçuktan aksam ve parçaları; (e) Fasıl 90, 92, 94 ve 96 eşyası; (f) Fasıl 95 eşyası (spor eldivenleri, tek parmak ve koruma eldivenleri ile 40.11–40.13 eşyası hariç)."
+  ],
+  [
+   "Fasıl 40 Not 3",
+   "40.01–40.03 ve 40.05’te “ilk şekiller” yalnız: (a) sıvı ve hamurlar (prevulkanize olsun olmasın lateks, diğer dispersiyon ve çözeltiler dahil); (b) düzensiz bloklar, biçimsiz parçalar, balyalar, tozlar, granüller, kırıntılar ve benzeri düzensiz biçimler."
+  ],
+  [
+   "Fasıl 40 Not 4",
+   "“Sentetik kauçuk”: (a) kükürtle vulkanizasyonla geri dönmeyecek şekilde termoplastik olmayan maddeye dönüştürülebilen, <b>18 °C ile 29 °C</b> arasında kopmadan orijinal uzunluğunun <b>3 katına</b> uzayabilen ve <b>2 katına</b> uzatıldığında <b>5 dakika</b> içinde orijinal uzunluğunun <b>1,5 katına</b> dönebilen doymamış sentetik maddeler (testte çapraz bağ için gerekli olmayan genişletici, plastikleştirici, dolgu kullanılamaz); (b) tiyoplastlar (TM); (c) aynı şartlara uyan, plastiklerle graft veya karıştırma yoluyla modifiye tabii kauçuk, depolimerize tabii kauçuk ve doymamış sentetik maddelerin doymuş sentetik yüksek polimerlerle karışımları."
+  ],
+  [
+   "Fasıl 40 Not 5",
+   "(A) Vulkanizasyon ajanı, hızlandırıcı, geciktirici, aktive edici (prevulkanize lateks için katılanlar hariç); pigment veya boyayıcı (yalnız tanınmayı kolaylaştıranlar hariç); plastikleştirici, genişletici (yağla genişletilmiş kauçuktaki mineral yağ hariç), dolgu, takviye edici ajan, organik çözücü katılmış kauçuk 40.01 ve 40.02’de yer almaz. (B) Emülsifiye edici, yapışma önleyici, az miktarda emülsiyon bozucu ürün ve çok küçük miktarda antioksidan, pıhtılaştırıcı, stabilizatör, koruyucu vb. katkılar, kauçuk ham madde karakterini koruduğu sürece sınıflandırmayı etkilemez."
+  ],
+  [
+   "Fasıl 40 Not 6",
+   "40.04’te “döküntü, kırpıntı ve artık”: kesilme, eskime veya diğer sebeplerle kesinlikle kullanıma elverişli olmayan kauçuk eşya ile kauçuğun işlenmesinden veya eşya imalatından arta kalan döküntü, kırpıntı ve artıklar."
+  ],
+  [
+   "Fasıl 40 Not 7",
+   "Enine kesiti <b>5 mm’yi geçen</b>, tamamen vulkanize kauçuktan iplikler şerit, çubuk ve profil gibi <b>40.08</b>’de sınıflandırılır (geçmeyenler 40.07)."
+  ],
+  [
+   "Fasıl 40 Not 8",
+   "Kauçuk emdirilmiş, sıvanmış, kaplanmış veya lamine edilmiş dokumaya elverişli mensucattan ya da bu şekilde işlenmiş ip ve ipliklerden taşıyıcı veya transmisyon kolanları 40.10’dadır."
+  ],
+  [
+   "Fasıl 40 Not 9",
+   "40.01, 40.02, 40.03, 40.05 ve 40.08’de “levha, yaprak, şerit”: kesilmemiş veya yalnız dikdörtgen (kare dahil) kesilmiş (kullanıma hazır eşya karakterinde olsun olmasın), baskılı veya yüzeyi işlenmiş olsun olmasın, başka surette şekil verilmemiş ürünler ve düzenli geometrik bloklar. 40.08’de “çubuk” ve “profil”: uzunlamasına kesilmiş veya yüzeyi işlenmiş olsun olmasın, başka işlem görmemiş ürünler."
+  ],
+  [
+   "Genel Açıklamalar",
+   "Ham kauçuk 40.01–40.06; sertleştirilmemiş vulkanize kauçuktan yarı mamul ve eşya 40.07–40.16; sertleştirilmiş kauçuk her şekliyle 40.17. Sentetik kauçuk olup olmamanın ölçütü kükürtle vulkanizasyon testidir; test, mineral yağ gibi izin verilmeyen maddeler giderilmiş numuneyle yapılır. Sert kauçuk (ebonit), kauçuğun 100 birimine <b>15 birimden fazla</b> birleşik kükürtle vulkanize edilmesiyle elde edilir."
+  ],
+  [
+   "Genel Açıklamalar",
+   "Kauçuk + tekstil Fasıl 40’ta kalanlar: ağırlıkça %50 veya daha az tekstil içeren kauçuk emdirilmiş-kaplı keçe; tamamen kauçuk emdirilmiş veya iki yüzü görünür şekilde kaplı dokunmamış mensucat; ağırlıkça %50 veya daha az tekstil içeren ve <b>1.500 g/m2’den ağır</b> kauçuklu dokunmuş mensucat; tekstilin yalnız takviye amaçlı olduğu gözenekli kauçuk levhalar."
+  ],
+  [
+   "40.01 / 40.02 Açıklama Notları",
+   "40.01’de prevulkanize lateks dahil tabii kauçuk lateksi, füme yaprak, krep, granül, balata, güta-perka, guayül, çıkıl ve kauçuğa benzer tabii sakızlar. 40.02’de Not 4’e uyan sentetik kauçuklar, yaklaşık %50 yağla genişletilmiş kauçuk, yağlardan taklit kauçuk ve 40.01 ürünleriyle karışımlar. Not 4’e uymayan elastomerler genellikle Fasıl 39’dadır; tiyoplastlar 39.11’deki polisülfürlerle karıştırılmamalıdır."
+  ],
+  [
+   "40.04 / 40.05 / 40.06 Açıklama Notları",
+   "Yeniden kullanılabilir kullanılmış lastik 40.12; sert kauçuk döküntüsü 40.17. 40.05: 100 kısım kuru kauçuğa 40–70 kısım karbon karası içeren masterbatch, organik çözücülü kauçuk çözeltileri. Lateks boya-vernikleri Fasıl 32, macunlar 32.14, net 1 kg’ı geçmeyen perakende yapıştırıcılar 35.06. 40.06: lastik sırtı profilleri, ham kauçuk borular, iplikler, diskler; diğer maddeden contalarla takım halinde poşetlenmiş disk ve rondelalar 84.84."
+  ],
+  [
+   "40.08 / 40.09 / 40.10 Açıklama Notları",
+   "40.08: pencere çerçevesi için yapışkan yüzeyli profiller ve dikdörtgen kesilmiş kauçuk karolar dahil; kenarı şevlenmiş, köşesi yuvarlatılmış veya başka şekilde kesilmiş olanlar 40.14–40.16. 40.09: bağlantı elemanlı hortumlar (esas karakter hortumsa) dahil; içi kauçuk kaplı dokuma hortumlar 59.09. 40.10: makinesiyle birlikte sunulan kolan, takılı olmasa da makineyle sınıflandırılır."
+  ],
+  [
+   "40.14 / 40.15 / 40.16 Açıklama Notları",
+   "40.14: prezervatif, kanül, şırınga ampulü, damlalık, emzik, buz torbası, sıcak su şişesi, parmak kılıfı. Eldiven ve önlük gibi giyim eşyası 40.15’te (cerrahi, radyoloji, dalgıçlık eldivenleri dahil). 40.16: gözenekli kauçuk eşya, paspas, silgi, conta, rondela, gemi tamponu, havalı yatak ve diğer şişirilebilir eşya, makine ve taşıt için teknik parçalar, lavabo tıpası, mobilya ayağı."
+  ],
+  [
+   "40.16 / 40.17 hariç tutmaları",
+   "40.16 dışı: gözenekli kauçuktan yatak, yastık, şilte (94.04); kauçuk kayık ve sallar (Fasıl 89); vakumlu kap tutacakları (Bölüm XV); oyuncaklar (Fasıl 95); müzik aleti parçaları (Fasıl 92). 40.17 dışı: sert kauçuktan elektrikli cihaz parçaları (XVI), taşıt parçaları (86–88), Fasıl 90 aletleri, silah parçaları (93), mobilya (94), oyuncak (95), fırça (96)."
+  ]
+ ],
+ "sinir_komsulari": [
+  [
+   "Silikon elastomeri",
+   "39.10",
+   "Sentetik kauçuk tanımına uymaz"
+  ],
+  [
+   "Poliizobütilen (kauçuğa benzer)",
+   "39.02",
+   "Not 4 testini karşılamaz"
+  ],
+  [
+   "Klorlanmış, hidroklorürlü, siklize kauçuk",
+   "39.13",
+   "Tabii kauçuğun kimyasal türevi"
+  ],
+  [
+   "Polisülfürler (poli(fenilen sülfür))",
+   "39.11",
+   "Tiyoplastlardan (40.02) farklıdır"
+  ],
+  [
+   "Kauçuk tabanlı ayakkabı ve ayakkabı aksamı",
+   "Fasıl 64",
+   "Not 2(b)"
+  ],
+  [
+   "Kauçuktan banyo bonesi",
+   "Fasıl 65",
+   "Not 2(c)"
+  ],
+  [
+   "Sert kauçuktan elektrikli cihaz parçası",
+   "Bölüm XVI",
+   "Not 2(d); yumuşak kauçuk conta ise 40.16"
+  ],
+  [
+   "Gözenekli kauçuktan şilte, yastık",
+   "94.04",
+   "40.16 hariç tutması"
+  ],
+  [
+   "Kauçuktan şişme bot, sal",
+   "Fasıl 89",
+   "40.16 hariç tutması"
+  ],
+  [
+   "Kauçuk oyuncak, top",
+   "Fasıl 95",
+   "Not 2(f)"
+  ],
+  [
+   "Lateks boya; kauçuk esaslı perakende yapıştırıcı (net 1 kg’a kadar)",
+   "Fasıl 32 / 35.06",
+   "40.05 hariç tutması"
+  ],
+  [
+   "İçi kauçuk kaplı dokuma hortum (yangın hortumu)",
+   "59.09",
+   "40.09 hariç tutması"
+  ],
+  [
+   "Kauçuklu dokumaya elverişli mensucat; lastik kord bezi",
+   "59.06 / 59.02",
+   "Fasıl 59 Not 4; 40.08 hariç tutması"
+  ],
+  [
+   "Farklı malzemeden contaların poşette takımı",
+   "84.84",
+   "Pozisyon metni; 40.06 hariç tutması"
+  ],
+  [
+   "Dokumaya elverişli maddeyle kaplanmış kauçuk ip",
+   "56.04",
+   "40.07 hariç tutması"
+  ]
+ ],
+ "tuzaklar": [
+  "<b>Kauçuğa benzemek yetmez, Not 4 testi gerekir.</b> Testi geçemeyen elastomerler Fasıl 39’a gider: silikon elastomeri 39.10, poliizobütilen 39.02. Buna karşılık bütil kauçuk (izobüten-izopren) 40.02’dedir; tiyoplastlar testten muaftır.",
+  "<b>Katkı maddesi pozisyon değiştirir.</b> Vulkanizasyon ajanı, dolgu, karbon karası, pigment veya organik çözücü katılan kauçuk 40.01 / 40.02’den 40.05’e geçer; emülsifiye edici, antioksidan gibi çok küçük katkılar yeri değiştirmez.",
+  "<b>Prevulkanize lateks vulkanize sayılmaz.</b> İlk şekil olarak 40.01 veya 40.02’de kalır.",
+  "<b>Sert kauçuk ayrı dünyadır.</b> Ebonit döküntüsü dahil her şekliyle 40.17’dedir; 40.04 sert kauçuk döküntüsünü almaz. Ölçü: 100 birim kauçuğa 15 birimden fazla birleşik kükürt.",
+  "<b>Yumuşak kauçuktan makine contası 40.16’dır.</b> Not 2(d) yalnız sertleştirilmiş kauçuktan makine parçalarını dışlar. Farklı malzemeden contalar poşette takım halindeyse 84.84.",
+  "<b>Kullanılmış lastik iki yola ayrılır.</b> Yeniden kullanılabilir veya sırt geçirilebilirse 40.12; kesinlikle kullanılamazsa döküntü olarak 40.04. 40.12 yalnız kullanılmış lastik değildir: dolgu lastiği, tekerlek bandajı, sırt ve kolan da buradadır.",
+  "<b>5 mm sınırı.</b> Kesiti 5 mm’yi geçmeyen vulkanize kauçuk iplik 40.07, geçen 40.08 (Not 7). Plastikteki 1 mm sınırıyla (39.16) karıştırmayın.",
+  "<b>Eldiven 40.15, hijyen eşyası 40.14.</b> Cerrahi eldiven ve önlük 40.15’te; prezervatif, emzik, sıcak su şişesi 40.14’te. Spor eldiveni de Not 2(f) istisnasıyla 40.15’te kalır.",
+  "<b>Havalı yatak 40.16, gözenekli kauçuk şilte 94.04.</b> Şişirilebilir eşya Fasıl 40’ta kalır; gözenekli kauçukla doldurulmuş yatak takımı Fasıl 94’e gider. Şişme bot ise Fasıl 89.",
+  "<b>Dikdörtgen kesim levhayı korur.</b> Dikdörtgen kesilmiş kauçuk levha ve karo 40.08’de kalır; kenarı şevlenmiş, köşesi yuvarlatılmış veya başka şekilde kesilmiş olan eşya pozisyonuna (40.14–40.16) geçer."
+ ],
+ "hafiza": {
+  "kanca": "TA-SEN-RE-DÖ-KAR-ŞE · İP-LEV-BOR-KOL · YENİ-ESKİ-İÇ · HİJ-GİY-DİĞ · SERT",
+  "aciklama": "Kauçuğun hayat yolculuğu: <b>TA</b>bii 40.01, <b>SEN</b>tetik 40.02, <b>RE</b>jenere 40.03, <b>DÖ</b>küntü 40.04, <b>KAR</b>ıştırılmış 40.05, ham <b>ŞE</b>kil-eşya 40.06; vulkanizasyondan sonra <b>İP</b>lik 40.07, <b>LEV</b>ha-profil 40.08, <b>BOR</b>u 40.09, <b>KOL</b>an 40.10; lastikler <b>YENİ</b> 40.11, <b>ESKİ</b>-sırtlı 40.12, <b>İÇ</b> 40.13; eşya <b>HİJ</b>yen 40.14, <b>GİY</b>im 40.15, <b>DİĞ</b>er 40.16; en sonda taş gibi <b>SERT</b> kauçuk 40.17."
+ },
+ "sinav_odagi": [
+  "Vulkanize kauçuktan contaların yeri: 40.16’nın makine pozisyonlarıyla (84.13, 84.14) karıştırılması; plastik, kauçuk ve çelikten farklı contaların poşette takım halinde gelmesi durumunda ise 84.84.",
+  "Eldivenin hangi pozisyonda sınıflandırıldığı: kauçuk eldivenin 40.15’te olduğu, 39.25, 48.19 ve Fasıl 61–62 pozisyonlarının çeldirici olarak verildiği sorular.",
+  "“Hangisi farklı fasılda yer alır” kalıbında silikonun (39.10) tabii kauçuk, çıkıl, bütadien kauçuk ve rejenere kauçuktan (Fasıl 40) ayrılması; Not 1’deki kauçuk tanımının bilinmesi.",
+  "Taşıt donanımında daha özel pozisyon bulunması: elektrikli cam silicinin 85.12’de yer aldığı, 40.16 ve 39.26’nın yanlış seçenek olduğu soru.",
+  "Bölüm VII’nin Fasıl 39–40’tan oluştuğu bölüm-fasıl eşleştirme soruları; Fasıl 40 genellikle seçeneklerde ve çeldirici olarak yer almıştır."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Vulkanize kauçuktan contalar hangi tarife pozisyonundadır?",
+   "secenekler": [
+    "84.14",
+    "84.13",
+    "40.16",
+    "40.12"
+   ],
+   "cevap": "C",
+   "aciklama": "40.16 contaları, rondelaları ve diğer sızdırmazlık contalarını açıkça sayar. Not 2 yalnız sertleştirilmiş kauçuktan makine parçalarını dışladığından yumuşak vulkanize kauçuk conta makine pozisyonlarına gitmez; 40.12 sırt geçirilmiş ve kullanılmış lastikler içindir."
+  }
+ ],
+ "ozet": [
+  "Kauçuk (Not 1): tabii kauçuk ve benzeri sakızlar, sentetik kauçuk, yağlardan taklit kauçuk ve rejenere olanlar; vulkanize veya sert olsun olmasın.",
+  "Not 4 testi: 18–29 °C, 3 kat uzama, 2 kattan 5 dakikada 1,5 kata dönüş; geçemeyen elastomer Fasıl 39.",
+  "Ham kauçuk: katkısız 40.01 / 40.02 / 40.03; Not 5(A) katkılı 40.05; vulkanize edilmemiş diğer şekil ve eşya 40.06; döküntü 40.04.",
+  "Vulkanize yarı mamul: iplik (kesit ≤ 5 mm) 40.07 · levha-profil 40.08 · boru-hortum 40.09 · kolan 40.10.",
+  "Lastikler: yeni 40.11 · sırt geçirilmiş-kullanılmış, dolgu lastiği, sırt, kolan 40.12 · iç lastik 40.13.",
+  "Eşya: hijyen 40.14 · giyim ve eldiven 40.15 · diğer (conta, silgi, paspas, şişirilebilir) 40.16 · sert kauçuk her şekilde 40.17."
+ ],
+ "sorular": [
+  {
+   "soru": "Tarife Cetveline göre, sertleştirilmemiş vulkanize kauçuktan, cerrahide kullanılan tek kullanımlık eldivenler hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "40.14",
+    "40.15",
+    "40.16",
+    "90.18",
+    "62.16"
+   ],
+   "cevap": "B",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "40.15 pozisyon metni eldivenleri sayar; 40.14 Açıklama Notu da cerrahide veya radyolojide kullanılan eldiven ve önlükleri açıkça 40.15’e gönderir. Hijyen eşyası pozisyonu 40.14 ve artık pozisyon 40.16 bu nedenle seçilemez; Açıklama Notunda sayıldığından tıbbi kullanım eşyayı 90.18’e götürmez, 62.16 ise dokumaya elverişli maddeden eldivenler içindir.",
+   "dayanak": "40.15 pozisyon metni ve Açıklama Notu; 40.14 Açıklama Notu."
+  },
+  {
+   "soru": "Bir firma; tabii kauçuğun her 100 birimine karşılık 30 birim birleşik kükürtle vulkanize edilmesiyle elde edilen, sert, esnemeyen, cilalanmış, kahverengimsi-siyah renkte bıçak sapları ithal etmektedir. Bu eşya Tarife Cetveline göre hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "40.16",
+    "40.08",
+    "39.26",
+    "40.17",
+    "40.04"
+   ],
+   "cevap": "D",
+   "tip": "Senaryo",
+   "gerekce": "Kauçuğun 100 birimine 15 birimden fazla birleşik kükürtle vulkanize edilmesiyle sertleştirilmiş kauçuk (ebonit) elde edilir. 40.17 her şekildeki sertleştirilmiş kauçuğu ve başka yerde yer almayan sertleştirilmiş kauçuktan eşyayı kapsar; Açıklama Notu bıçak saplarını açıkça sayar. 40.16 ve 40.08 yalnız sertleştirilmemiş vulkanize kauçuk içindir.",
+   "dayanak": "40.17 pozisyon metni ve Açıklama Notu; Fasıl 40 Genel Açıklamalar."
+  },
+  {
+   "soru": "Tarife Cetvelinin 40. Fasıl notlarına göre, doymamış bir sentetik maddenin “sentetik kauçuk” sayılabilmesi için kükürtle vulkanize edildikten sonra sağlaması gereken şart hangisidir?",
+   "secenekler": [
+    "18 °C ile 29 °C arasında kopmadan orijinal uzunluğunun 3 katına uzayabilmesi; 2 katına uzatıldığında 5 dakika içinde orijinal uzunluğunun 1,5 katına dönebilmesi",
+    "15 °C ile 30 °C arasında kopmadan orijinal uzunluğunun 2 katına uzayabilmesi; 2 katına uzatıldığında 10 dakika içinde orijinal uzunluğuna dönebilmesi",
+    "18 °C ile 29 °C arasında kopmadan orijinal uzunluğunun 2 katına uzayabilmesi; 1,5 katına uzatıldığında 5 dakika içinde orijinal uzunluğuna dönebilmesi",
+    "20 °C sıcaklıkta kopmadan orijinal uzunluğunun 5 katına uzayabilmesi; 3 katına uzatıldığında 1 dakika içinde orijinal uzunluğuna dönebilmesi",
+    "18 °C ile 29 °C arasında kopmadan orijinal uzunluğunun 3 katına uzayabilmesi; 2 katına uzatıldığında 15 dakika içinde orijinal uzunluğuna dönebilmesi"
+   ],
+   "cevap": "A",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 40 Not 4(a)’ya göre kükürtle vulkanizasyonla geri dönmeyecek şekilde termoplastik olmayan maddeye dönüşen, 18–29 °C arasında kopmadan 3 katına uzayabilen ve 2 katına uzatıldığında 5 dakika içinde orijinal uzunluğunun 1,5 katına dönebilen doymamış sentetik maddeler sentetik kauçuktur. Testte genişletici, plastikleştirici ve dolgu kullanılamaz; tiyoplastlar ise testten bağımsız olarak sentetik kauçuktur.",
+   "dayanak": "Fasıl 40 Not 4; 40.02 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 40. Faslında <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Vulkanize kauçuktan cerrahi önlük",
+    "Vulkanize kauçuktan silgi",
+    "Kauçuktan bisiklet iç lastiği",
+    "Vulkanize kauçuktan sıcak su torbası",
+    "Kauçuktan banyo bonesi"
+   ],
+   "cevap": "E",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Fasıl 40 Not 2(c) uyarınca banyo başlıkları dahil başlıklar ve aksamı Fasıl 65’tedir. Cerrahi önlük giyim eşyası olarak 40.15’te, silgi 40.16’da, bisiklet iç lastiği 40.13’te, sıcak su torbası hijyen eşyası olarak 40.14’tedir.",
+   "dayanak": "Fasıl 40 Not 2(c); 40.13, 40.14, 40.15, 40.16 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinde diğerlerinden farklı bir fasılda sınıflandırılır?",
+   "secenekler": [
+    "Stiren-bütadien kauçuk (SBR)",
+    "Akrilonitril-bütadien kauçuk (NBR)",
+    "İlk şekillerde poliizobütilen",
+    "Tiyoplastlar",
+    "Etilen-propilen-konjuge olmamış dien kauçuk (EPDM)"
+   ],
+   "cevap": "C",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Poliizobütilen yeterince polimerize olduğunda kauçuğa benzese de sentetik kauçuk tanımına uymadığından 39.02’de (Fasıl 39) yer alır. Kauçuk niteliğindeki SBR, NBR ve EPDM Not 4(a)’daki doymamış sentetik maddelerdir; tiyoplastlar ise Not 4(b) gereği sentetik kauçuktur. Hepsi 40.02’dedir.",
+   "dayanak": "Fasıl 40 Not 4; 39.02 ve 40.02 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetveline göre, vulkanize edilmemiş tabii kauçuğun her 100 kısmına 50 kısım karbon karası katılarak hazırlanmış ve balyalar halinde ithal edilen karışım (masterbatch) hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "40.05",
+    "40.01",
+    "40.06",
+    "38.24",
+    "40.02"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Not 5(A) gereği dolgu veya takviye edici madde katılmış kauçuk 40.01 ve 40.02’de yer almaz. 40.05 Açıklama Notu, 100 kısım kuru kauçuğa 40–70 kısım karbon karası içeren masterbatch’leri açıkça sayar. Balya Not 3’e göre ilk şekil olduğundan ürün 40.06’ya (diğer şekiller ve eşya) gitmez.",
+   "dayanak": "Fasıl 40 Not 3 ve Not 5(A); 40.05 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetvelinin 40. Fasıl notlarına göre aşağıdaki ifadelerden hangileri doğrudur? I. Kauçuktan ayakkabılar ve aksamı Fasıl 40’ta değil Fasıl 64’te yer alır. II. Kauçuktan spor eldivenleri Fasıl 95’te sınıflandırılır. III. Bölüm XVI’daki elektrikli cihazların sertleştirilmiş kauçuktan aksam ve parçaları Fasıl 40 dışındadır. IV. Tekerlekli oyuncaklarda kullanılan kauçuktan yeni dış lastikler 40.11’de kalır.",
+   "secenekler": [
+    "I ve II",
+    "II ve III",
+    "I, II ve III",
+    "II, III ve IV",
+    "I, III ve IV"
+   ],
+   "cevap": "E",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "Not 2(b) ayakkabı ve aksamını Fasıl 64’e, Not 2(d) Bölüm XVI cihazlarının sertleştirilmiş kauçuktan parçalarını Bölüm XVI’ya gönderir. Not 2(f) Fasıl 95 eşyasını dışlarken spor eldivenlerini ve 40.11–40.13 eşyasını istisna tutar; bu nedenle spor eldiveni 40.15’te, oyuncak dış lastiği 40.11’de kalır ve II yanlıştır.",
+   "dayanak": "Fasıl 40 Not 2 (b), (d), (f); 40.11 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetvelinin 40. Fasıl notlarına göre boşlukları doğru tamamlayan seçenek hangisidir? “Enine kesitinin boyutu ..... geçen, tamamen vulkanize kauçuktan iplikler, şerit, çubuk ve profiller gibi ..... pozisyonunda sınıflandırılır.”",
+   "secenekler": [
+    "1 mm’yi – 40.07",
+    "5 mm’yi – 40.08",
+    "5 mm’yi – 40.07",
+    "1 mm’yi – 40.08",
+    "3 mm’yi – 40.16"
+   ],
+   "cevap": "B",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Fasıl 40 Not 7 uyarınca enine kesiti 5 mm’yi geçen tamamen vulkanize kauçuktan iplikler 40.08’de şerit, çubuk ve profil gibi sınıflandırılır; 5 mm’yi geçmeyenler 40.07’dedir. 1 mm sınırı Fasıl 39’daki plastik monofillere (39.16) aittir; karıştırılmamalıdır.",
+   "dayanak": "Fasıl 40 Not 7; 40.07 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdaki kauçuktan eşyalardan hangisi 40.16 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Vulkanize kauçuktan silgi",
+    "Vulkanize kauçuktan kapı durdurucu",
+    "Vulkanize kauçuktan şişirilebilir havalı yatak",
+    "Gözenekli kauçuktan şilte",
+    "Gemi ve doklarda kullanılan çarpmayı önleyici kauçuk tampon"
+   ],
+   "cevap": "D",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "40.16 Açıklama Notu gözenekli kauçuktan yatak, yastık ve şilteleri (kaplanmış olsun olmasın) 94.04’e gönderir; Not 2 de Fasıl 94 eşyasını dışlar. Silgi, kapı durdurucu, şişirilebilir havalı yatak ve gemi tamponu 40.16’da sayılır. Tuzak, “gözenekli kauçuktan eşya” ifadesinin 40.16’da da geçmesidir.",
+   "dayanak": "40.16 Açıklama Notu ve hariç tutmalar; Fasıl 40 Not 2(e)."
+  },
+  {
+   "soru": "Fasıl 40 Açıklama Notlarına göre, dokumaya elverişli maddelerden kısımları bulunan kauçuk giyim eşyası, ürüne esas karakterini kauçuğun vermesi halinde 40.15 pozisyonunda sınıflandırılır. Bu değerlendirmede esas alınan “esas karakter” ölçütü hangi Genel Yorum Kuralının ilkesidir?",
+   "secenekler": [
+    "GYK 2(a)",
+    "GYK 3(a)",
+    "GYK 3(b)",
+    "GYK 3(c)",
+    "GYK 5(a)"
+   ],
+   "cevap": "C",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "Farklı maddelerden oluşan eşya, GYK 3(b) uyarınca kendisine esas niteliğini veren maddeye göre sınıflandırılır; 40.15 Açıklama Notundaki “kauçuğun esas karakteri verdiği” ifadesi bu ilkeyi uygular. GYK 3(a) en özel tanımı, 3(c) numara sırasına göre son pozisyonu, 2(a) tamamlanmamış eşyayı, 5(a) özel mahfazaları düzenler.",
+   "dayanak": "40.15 Açıklama Notu; GYK 2(b) ve 3(b)."
+  },
+  {
+   "soru": "Tarife Cetveline göre, kullanılmış ancak yeniden sırt geçirilmeye uygun durumdaki kauçuktan otomobil dış lastiği hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "40.12",
+    "40.04",
+    "40.11",
+    "40.16",
+    "40.13"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "40.12, sırt geçirilmiş dış lastiklerle birlikte daha fazla kullanıma veya yeniden sırt geçirilmeye uygun kullanılmış dış lastikleri kapsar. Kesinlikle kullanılamaz hale gelmiş eski lastikler Not 6 gereği döküntü olarak 40.04’e gider; 40.11 yalnız yeni dış lastikler, 40.13 iç lastikler içindir.",
+   "dayanak": "40.12 pozisyon metni ve Açıklama Notu; Fasıl 40 Not 6; 40.04 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdaki sertleştirilmemiş vulkanize kauçuktan eşyalardan hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Silgi",
+    "Lavabo tıpası",
+    "Makine için conta",
+    "Sıcak su şişesi",
+    "Mobilya için kauçuk ayak"
+   ],
+   "cevap": "D",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Sıcak su şişeleri hijyen ve eczacılık eşyası olarak 40.14’tedir. Silgi, lavabo tıpası, conta ve mobilya ayağı 40.16 Açıklama Notunda sayılan diğer vulkanize kauçuk eşyadır; makine contası da Not 2(d) yalnız sertleştirilmiş kauçuktan makine parçalarını dışladığı için 40.16’da kalır.",
+   "dayanak": "40.14 ve 40.16 Açıklama Notları; Fasıl 40 Not 2(d)."
+  },
+  {
+   "soru": "Tarife Cetvelinin 40. Fasıl notlarına göre, aşağıdaki maddelerden hangisinin tabii kauçuğa katılması, kauçuğun esas ham madde karakterini koruması şartıyla, 40.01 pozisyonunda sınıflandırılmasını <b>etkilemez</b>?",
+   "secenekler": [
+    "Vulkanizasyon hızlandırıcısı",
+    "Çok küçük miktarda antioksidan",
+    "Karbon karası",
+    "Organik çözücü",
+    "Dolgu maddesi"
+   ],
+   "cevap": "B",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Not 5(B), emülsifiye ediciler ile çok küçük miktarlardaki antioksidan, stabilizatör, koruyucu, pıhtılaştırıcı gibi özel amaçlı katkıların 40.01 veya 40.02’deki sınıflandırmayı etkilemeyeceğini belirtir. Vulkanizasyon hızlandırıcıları, dolgu ve takviye maddeleri (karbon karası) ve organik çözücüler ise Not 5(A) gereği kauçuğu 40.05’e götürür.",
+   "dayanak": "Fasıl 40 Not 5 (A) ve (B)."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 40.01 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Prevulkanize edilmiş, amonyakla stabilize tabii kauçuk lateksi",
+    "Bloklar halinde balata",
+    "Kalıplar halinde çıkıl (chicle) zamkı",
+    "Füme yaprak halinde tabii kauçuk",
+    "Vulkanizasyon ajanı ve dolgu maddesi katılmış tabii kauçuk levha"
+   ],
+   "cevap": "E",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Not 5(A) uyarınca vulkanizasyon ajanı veya dolgu maddesi katılmış kauçuk 40.01’de yer almaz; karıştırılmış kauçuk olarak 40.05’e gider. Prevulkanize lateks Not 3 gereği ilk şekildir ve vulkanize edilmemiş kabul edilir; balata, çıkıl ve füme yapraklar da 40.01’dedir.",
+   "dayanak": "Fasıl 40 Not 3 ve Not 5(A); 40.01 Açıklama Notu ve hariç tutmalar."
+  },
+  {
+   "soru": "Tarife Cetveline göre, sertleştirilmemiş vulkanize kauçuktan buz torbası hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "40.16",
+    "40.15",
+    "40.14",
+    "63.07",
+    "39.24"
+   ],
+   "cevap": "C",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "40.14 Açıklama Notu hijyenik veya koruyucu amaçlarla kullanılan buz torbalarını, sıcak su şişelerini, oksijen torbalarını, parmak kılıflarını, emzikleri ve prezervatifleri sayar. 40.16 ancak önceki pozisyonlarda yer almayan eşyayı kapsar; 40.15 giyim eşyası, 39.24 plastikten ev ve tuvalet eşyası, 63.07 dokumaya elverişli maddeden hazır eşya içindir.",
+   "dayanak": "40.14 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdaki kauçuktan eşyalardan hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "El arabası için kauçuk tekerlek bandajı",
+    "Bisiklet için yeni dış lastik",
+    "Kauçuktan dolgu (katı) lastik",
+    "Dış lastikler için yivli lastik sırtı",
+    "İç lastiği jant uçlarından koruyan tekerlek kolanı"
+   ],
+   "cevap": "B",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Yeni dış lastikler 40.11’dedir. Dolgu lastikleri, tekerlek bandajları, dış lastikler için sırtlar ve tekerlek kolanları 40.12 pozisyon metninde sayılır. Tuzak, 40.12’yi yalnız kullanılmış lastik pozisyonu sanmaktır.",
+   "dayanak": "40.11 ve 40.12 pozisyon metinleri ve Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetvelinin 40. Fasıl notlarına göre 40.01, 40.02, 40.03, 40.05 ve 40.08 pozisyonlarındaki “levhalar, yapraklar ve şeritler” tabirleri ile ilgili aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Kesilmemiş ya da yalnız dikdörtgen kesilmiş, başka şekil verilmemiş ürünler ile düzenli geometrik blokları kapsar.",
+    "Dikdörtgen dışındaki şekillerde kesilmiş olanları da, başka bir işlem görmemiş olmaları şartıyla kapsar.",
+    "Üzerine baskı yapılmış veya yüzeyi kabartma gibi işçilik görmüş olanları kapsamaz.",
+    "Dikdörtgen kesilmekle kullanıma hazır eşya karakteri kazanmış olanları kapsamaz.",
+    "Düzenli geometrik şekilli blokları kapsamaz; bunlar ilk şekil olarak kabul edilir."
+   ],
+   "cevap": "A",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Not 9, kesilmemiş ya da dikdörtgen (kare dahil) basitçe kesilmiş —kullanıma hazır eşya karakterinde olsun olmasın— ve baskılı veya yüzeyi işlenmiş olsun olmasın, başka surette şekil verilmemiş levha, yaprak ve şeritlere ve düzenli geometrik bloklara uygulanır. Başka şekillerde kesilenler 40.06 veya 40.14–40.16’ya gider.",
+   "dayanak": "Fasıl 40 Not 9; 40.08 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre aşağıdaki ifadelerden hangileri doğrudur? I. Kauçuk emdirilmiş dokunmuş mensucattan yapılmış transmisyon kolanları 40.10 pozisyonunda yer alır. II. Tasarlandığı makineyle birlikte sunulan taşıyıcı kolan, makineye takılı olmasa da o makineyle birlikte sınıflandırılır. III. İç yüzeyi kauçuk lateksiyle kaplanarak su geçirmez hale getirilmiş dokumaya elverişli maddeden hortum 40.09 pozisyonunda yer alır. IV. Esas karakteri hortum olmak şartıyla, bağlantı elemanlarıyla birlikte sunulan vulkanize kauçuk hortum 40.09 pozisyonunda yer alır.",
+   "secenekler": [
+    "I ve II",
+    "II ve III",
+    "I, III ve IV",
+    "II, III ve IV",
+    "I, II ve IV"
+   ],
+   "cevap": "E",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "Not 8 kauçuklu tekstilden kolanları 40.10’a alır; 40.10 Açıklama Notu makinesiyle birlikte sunulan kolanları makineyle sınıflandırır. 40.09 Açıklama Notu bağlantı elemanlı hortumları kapsar, ancak içi kauçuk lateksle kaplanmış “dokunmuş hortumları” 59.09’a gönderir; bu nedenle III yanlıştır.",
+   "dayanak": "Fasıl 40 Not 8; 40.09 ve 40.10 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetveline göre aşağıdakilerden hangisi 40.04 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Vulkanize kauçuk eşya imalatından arta kalan kırpıntılar",
+    "Kesinlikle kullanılmaz hale gelmiş eski dış lastiklerden kesilmiş parçalar",
+    "Sertleştirilmiş kauçuk (ebonit) döküntüsünden elde edilen toz",
+    "Vulkanize kauçuk döküntülerinin öğütülmesiyle elde edilen granüller",
+    "Vulkanize edilmemiş kauçuğun işlenmesinden kalan artıklar"
+   ],
+   "cevap": "C",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "40.04 sertleştirilmiş kauçuk dışındaki kauçuğun döküntü, kırpıntı ve artıklarını ve bunlardan elde edilen toz ve granülleri kapsar; sert kauçuğun toz, granül ve döküntüleri 40.17’dedir. Kullanılmaz hale gelmiş eski lastikler ve bunlardan kesilen parçalar Not 6 gereği 40.04’te kalır.",
+   "dayanak": "40.04 pozisyon metni ve Açıklama Notu; Fasıl 40 Not 6; 40.17 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, vulkanize kauçuktan, metal tel spiralle takviye edilmiş ve uçlarına bağlantı elemanları takılmış, esas karakteri hortum olan hidrolik hortum hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "40.16",
+    "59.09",
+    "40.08",
+    "40.09",
+    "39.17"
+   ],
+   "cevap": "D",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "40.09, vulkanize kauçuktan boru ve hortumları, metal veya dokumaya elverişli maddelerle takviye edilmiş ve bağlantı elemanlarıyla birlikte sunulanlar dahil kapsar (esas karakter hortumsa). 59.09 dokumaya elverişli maddeden hortumlar, 39.17 plastik hortumlar içindir; bağlantı elemanları eşyayı 40.16’ya götürmez.",
+   "dayanak": "40.09 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "Vulkanize edilmemiş kauçuktan diskler ve rondelalar, plastik ve metalden contalarla birlikte farklı kompozisyonlarda takım halinde bir poşete konulmuş olarak ithal edilmektedir. Bu eşyanın sınıflandırıldığı pozisyon ve dayanak kural hangisidir?",
+   "secenekler": [
+    "84.84 – GYK 1 ve 6",
+    "40.06 – GYK 3(b) ve 6",
+    "40.16 – GYK 3(b) ve 6",
+    "84.84 – GYK 3(c) ve 6",
+    "39.26 – GYK 3(c) ve 6"
+   ],
+   "cevap": "A",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "84.84 pozisyon metni poşet, zarf veya benzeri ambalajlara farklı kompozisyonlarda takım halinde tertiplenmiş contaları açıkça sayar; 40.06 Açıklama Notu da bu takımlardaki kauçuk disk ve rondelaları 84.84’e gönderir. Pozisyon metni eşyayı doğrudan kapsadığından sınıflandırma GYK 1 (alt kırılımlar için GYK 6) ile yapılır; GYK 3’e başvurulmaz.",
+   "dayanak": "84.84 pozisyon metni; 40.06 Açıklama Notu, hariç tutma (b); GYK 1."
+  },
+  {
+   "soru": "Vulkanize kauçuktan gözenekli (sünger) levhalar; yalnızca bir yüzüne takviye amacıyla desensiz ve ağartılmamış dokunmuş mensucat uygulanmış, dikdörtgen biçiminde kesilmiş ve başka bir işlem görmemiş olarak ithal edilmektedir. Bu ürün Tarife Cetveline göre hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "59.06",
+    "40.08",
+    "40.16",
+    "56.03",
+    "40.05"
+   ],
+   "cevap": "B",
+   "tip": "Senaryo",
+   "gerekce": "40.08 Açıklama Notuna göre dokumaya elverişli maddenin yalnız takviye amacıyla bulunduğu gözenekli kauçuk levhalar bu pozisyondadır; desensiz, ağartılmamış mensucatın tek yüze uygulanması takviye sayılır. Dikdörtgen kesim Not 9 gereği levha niteliğini bozmaz (40.16 değil). İki yüzü mensucatlı olsaydı 56.02, 56.03 veya 59.06’ya giderdi; 40.05 vulkanize edilmemiş kauçuk içindir.",
+   "dayanak": "40.08 Açıklama Notu; Fasıl 40 Not 9."
+  },
+  {
+   "soru": "Aşağıdaki ürünlerin pozisyonlarla eşleştirilmesi hangi seçenekte doğru verilmiştir? I. Prevulkanize edilmiş tabii kauçuk lateksi; II. Bitkisel yağların kükürtle reaksiyonundan elde edilen taklit kauçuk; III. Kullanılmış lastiklerden devulkanizasyonla elde edilmiş rejenere kauçuk levhalar; IV. Vulkanize edilmemiş kauçuktan, lastiklere sırt geçirmede kullanılan profiller — a) 40.03 b) 40.06 c) 40.01 d) 40.02",
+   "secenekler": [
+    "I-d, II-c, III-a, IV-b",
+    "I-c, II-a, III-d, IV-b",
+    "I-c, II-d, III-b, IV-a",
+    "I-a, II-d, III-c, IV-b",
+    "I-c, II-d, III-a, IV-b"
+   ],
+   "cevap": "E",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Prevulkanize lateks ilk şekil sayılır ve tabii kauçuk olarak 40.01’de; yağlardan türetilen taklit kauçuk 40.02’de; rejenere kauçuk levhalar 40.03’te; vulkanize edilmemiş kauçuktan sırt geçirme profilleri diğer şekillerdeki vulkanize edilmemiş kauçuk olarak 40.06’dadır.",
+   "dayanak": "40.01, 40.02, 40.03, 40.06 Açıklama Notları; Fasıl 40 Not 3."
+  },
+  {
+   "soru": "Aşağıdaki kauçuktan eşyalardan hangisi diğerlerinden farklı bir fasılda sınıflandırılır?",
+   "secenekler": [
+    "Vulkanize kauçuktan banyo paspası",
+    "Kauçuktan otomobil iç lastiği",
+    "Vulkanize kauçuktan V-kayışı",
+    "Kauçuktan şişirilebilir bot",
+    "Vulkanize kauçuktan bahçe hortumu"
+   ],
+   "cevap": "D",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "40.16 Açıklama Notu kauçuktan kayık ve salları Fasıl 89’a gönderir. Banyo paspası 40.16’da, iç lastik 40.13’te, V-kayışı 40.10’da, hortum 40.09’da olup hepsi Fasıl 40’tadır. Şişirilebilir olması botu 40.16’ya götürmez.",
+   "dayanak": "40.16 Açıklama Notu ve hariç tutmalar."
+  },
+  {
+   "soru": "Tarife Cetvelinin 40. Fasıl notlarına göre, tarifenin neresinde geçerse geçsin “kauçuk” tabiri ile ilgili aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Yalnız vulkanize edilmemiş tabii kauçuk, balata, güta-perka ve sentetik kauçuğu kapsar; vulkanize edilmiş olanlar tanım dışıdır.",
+    "Tabii kauçuk ve sentetik kauçuğu kapsar; sertleştirilmiş kauçuk (ebonit) ile rejenere kauçuk bu tanımın dışında kalır.",
+    "Vulkanize veya sert olsun olmasın tabii kauçuk, balata, güta-perka, guayül, çıkıl, sentetik kauçuk, yağlardan taklit kauçuk ve bunların rejenere olanlarıdır.",
+    "Tabii ve sentetik kauçuk ile birlikte kauçuğa benzer özellik gösteren silikon elastomerlerini ve poliizobütileni de kapsar.",
+    "Tanım yalnız Fasıl 40 pozisyonları için geçerlidir; diğer fasıllarda geçen “kauçuk” ifadesine uygulanmaz."
+   ],
+   "cevap": "C",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 40 Not 1’e göre metinde aksi belirtilmedikçe tarifenin her yerinde “kauçuk”, vulkanize veya sertleştirilmiş olsun olmasın tabii kauçuk, balata, güta-perka, guayül, çıkıl ve benzeri tabii sakızları, sentetik kauçuğu, yağlardan türetilen taklit kauçuğu ve bunların rejenere olanlarını kapsar. Silikon elastomerleri ve poliizobütilen sentetik kauçuk tanımına uymadığından Fasıl 39’dadır.",
+   "dayanak": "Fasıl 40 Not 1 ve Not 4; 39.02 ve 39.10 Açıklama Notları."
+  }
+ ]
+}

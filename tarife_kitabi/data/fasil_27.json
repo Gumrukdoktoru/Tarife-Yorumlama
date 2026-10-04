@@ -1,0 +1,701 @@
+{
+ "tur": "fasil",
+ "fasil": 27,
+ "baslik": "Mineral yakıtlar, mineral yağlar ve bunların damıtılmasından elde edilen ürünler; bitümenli maddeler; mineral mumlar",
+ "bolum": "V",
+ "oz": {
+  "vurgu": "Fasıl 27 kömür, petrol ve bunların damıtma ürünlerini ham veya rafine halde kapsar; belirleyici sorular şunlardır: Ürün kimyaca belirli, saf bir bileşik mi (o zaman Fasıl 29, saf metan ve propan hariç)? Petrol yağı esaslı bir müstahzarsa ağırlıkça %70 veya daha fazla petrol yağı içeriyor ve bu yağ esas unsur mu (27.10)? Aromatik unsurlar baskınsa 27.07, aromatik olmayanlar baskınsa 27.10.",
+  "maddeler": [
+   "Katı yakıtlar türe göre ayrılır: taşkömürü 27.01, linyit 27.02, turb 27.03, kok ve semikok 27.04; petrol koku ise 27.13’te, zift koku 27.08’dedir.",
+   "Gazlar ikiye ayrılır: kömür gazı, su gazı, fakir gaz 27.05; petrol gazları ve gaz halindeki hidrokarbonlar (doğal gaz, propan, bütan) 27.11.",
+   "27.10 hem rafine petrol yağlarını, hem ağırlıkça en az %70 petrol yağı esaslı ve başka yerde belirtilmeyen müstahzarları, hem de atık yağları (Not 3) kapsar.",
+   "Mineral mumlar (vazelin, parafin, ozokerit) 27.12’de; tabii bitümen ve asfalt 27.14’te, bunların karışımları (cut-back, emülsiyon, sakız) 27.15’te; elektrik enerjisi 27.16’dadır."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+  "satirlar": [
+   [
+    "1",
+    "Kimyaca belirli yapıda izole (saf veya ticari anlamda saf) organik bileşik mi?",
+    "Fasıl <b>29</b> (saf metan ve propan → <b>27.11</b>)"
+   ],
+   [
+    "2",
+    "Elektrik enerjisi mi?",
+    "<b>27.16</b>"
+   ],
+   [
+    "3",
+    "Katı mineral yakıt mı?",
+    "Taşkömürü <b>27.01</b> · linyit <b>27.02</b> · turb <b>27.03</b> · kok, semikok, karni kömürü <b>27.04</b>"
+   ],
+   [
+    "4",
+    "Gaz mı?",
+    "Havagazı, su gazı, fakir gaz <b>27.05</b> · petrol gazları ve gaz hidrokarbonlar <b>27.11</b>"
+   ],
+   [
+    "5",
+    "Mineral katran veya katran damıtma ürünü mü?",
+    "Katran <b>27.06</b> · aromatik baskın yağlar <b>27.07</b> · zift ve zift koku <b>27.08</b>"
+   ],
+   [
+    "6",
+    "Ham petrol veya gaz kondensatı mı?",
+    "<b>27.09</b>"
+   ],
+   [
+    "7",
+    "Rafine petrol yağı, ≥%70 petrol yağı esaslı müstahzar veya atık yağ mı?*",
+    "<b>27.10</b>"
+   ],
+   [
+    "8",
+    "Vazelin, parafin veya mineral mum mu?",
+    "<b>27.12</b>"
+   ],
+   [
+    "9",
+    "Petrol koku, petrol bitümeni veya diğer petrol kalıntısı mı?",
+    "<b>27.13</b>"
+   ],
+   [
+    "10",
+    "Tabii bitümen, tabii asfalt, bitümenli şist veya katranlı kum mu?",
+    "<b>27.14</b>"
+   ],
+   [
+    "11",
+    "Bitümen, asfalt, katran veya zift esaslı karışım mı? (cut-back, emülsiyon, sakız)",
+    "<b>27.15</b> (mamul eşya <b>68.07</b>)"
+   ]
+  ],
+  "dipnot": "* Petrol yağı esas unsur değilse oran %70’i aşsa bile Fasıl 34 veya 38 (lanolinli pas önleyici 34.03, vernik incelticisi 38.14). Fasıl dışı: 300 cm³ veya daha küçük kaplarda çakmak yakıtı 36.06; odun katranı 38.07; polietilen mumu 34.04; perakende cilt bakımı vazelini 33.04."
+ },
+ "pozisyon_haritasi": [
+  [
+   "27.01",
+   "Taşkömürü; briket, topak ve benzeri katı yakıtlar",
+   "Toz, aglomere veya suda dağıtılmış (kömür pulpu)",
+   "Antrasit, kömür briketi, kömür pulpu"
+  ],
+  [
+   "27.02",
+   "Linyit",
+   "Aglomere olabilir; kara kehribar 25.30",
+   "Linyit, linyit briketi"
+  ],
+  [
+   "27.03",
+   "Turb (turb döküntüleri dahil)",
+   "Esas karakteri turb olan saksı toprağı dahil",
+   "Yakıt turbu, hayvan altlığı, saksı toprağı"
+  ],
+  [
+   "27.04",
+   "Kok ve semikok; karni kömürü",
+   "Taşkömürü, linyit, turbdan; petrol koku 27.13",
+   "Metalurji koku, semikok"
+  ],
+  [
+   "27.05",
+   "Havagazı, su gazı, fakir gaz",
+   "Petrol gazları 27.11",
+   "Kok fırını gazı, yüksek fırın gazı, sentez gazı"
+  ],
+  [
+   "27.06",
+   "Mineral katranlar",
+   "Yeniden terkip edilmiş dahil; odun katranı 38.07",
+   "Taşkömürü katranı"
+  ],
+  [
+   "27.07",
+   "Yüksek sıcaklık kömür katranı damıtma ürünleri",
+   "Aromatik unsurlar ağırlıkça baskın; saf olanlar Fasıl 29",
+   "Benzol, toluol, naftalin, kreozot yağı"
+  ],
+  [
+   "27.08",
+   "Zift ve zift koku",
+   "Mineral katran damıtma kalıntısı",
+   "Elektrot zifti, zift koku"
+  ],
+  [
+   "27.09",
+   "Ham petrol ve ham bitümenli mineral yağları",
+   "Yalnızca basit işlemler (tuz, su giderme, stabilizasyon)",
+   "Ham petrol, gaz kondensatı"
+  ],
+  [
+   "27.10",
+   "Petrol yağları (ham hariç); ≥%70 müstahzarlar; atık yağlar",
+   "Aromatik olmayan baskın; petrol yağı esas unsur",
+   "Benzin, kerosen, motorin, fuel oil, motor yağı, gres"
+  ],
+  [
+   "27.11",
+   "Petrol gazları ve gaz hidrokarbonlar",
+   "15 °C ve 1013 mbar’da gaz; sıvılaştırılmış olabilir",
+   "Doğal gaz, LPG, propan, bütan"
+  ],
+  [
+   "27.12",
+   "Vazelin, parafin, mineral mumlar",
+   "Sentetik benzerleri dahil; polietilen mumu 34.04",
+   "Ham vazelin, parafin, ozokerit, montan mumu"
+  ],
+  [
+   "27.13",
+   "Petrol koku, petrol bitümeni, diğer kalıntılar",
+   "Petrol veya bitümenli mineral yağı kalıntısı",
+   "Kalsine petrol koku, yol bitümeni"
+  ],
+  [
+   "27.14",
+   "Tabii bitümen ve asfalt; bitümenli şist; asfaltit",
+   "Su veya az yüzey aktif madde katılması sonucu değiştirmez",
+   "Trinidad gölü asfaltı, katranlı kum, yağlı şist"
+  ],
+  [
+   "27.15",
+   "Bitümenli karışımlar",
+   "Tabii veya petrol bitümeni, katran, zift esaslı",
+   "Cut-back, bitümen emülsiyonu, asfalt sakızı"
+  ],
+  [
+   "27.16",
+   "Elektrik enerjisi",
+   "Tercihli pozisyon",
+   "Elektrik"
+  ]
+ ],
+ "notlar": [
+  [
+   "Fasıl 27 Not 1",
+   "Fasıl dışı: kimyaca belirli yapıda izole organik bileşikler (<b>27.11’deki saf metan ve propan hariç</b>); 30.03 ve 30.04’teki ilaçlar; 33.01, 33.02 veya 38.05’teki doymamış hidrokarbon karışımları."
+  ],
+  [
+   "Fasıl 27 Not 2",
+   "27.10’daki “petrol yağları ve bitümenli minerallerden elde edilen yağlar”, herhangi bir işlemle elde edilen ve esasen doymamış hidrokarbon karışımlarından oluşan benzeri yağları da kapsar; şart: <b>aromatik olmayan unsurların ağırlığı aromatik unsurlardan fazla</b> olmalıdır. Düşük basınç yöntemiyle damıtılıp basınç 1013 milibara çevrildiğinde <b>300 °C’de hacimce %60’tan azı</b> damıtılan sıvı sentetik poliolefinler bu tabire girmez (Fasıl 39)."
+  ],
+  [
+   "Fasıl 27 Not 3",
+   "27.10 anlamında “atık yağlar”: suyla karışık olsun olmasın, esas olarak petrol yağları içeren atıklar; (a) asıl ürün olarak artık kullanılamayan yağlar (kullanılmış yağlama, hidrolik, transformatör yağları); (b) petrol yağı depolama tanklarının esasen bu yağları ve yüksek konsantrasyonda katkı içeren tortu yağları; (c) dökülme, tank yıkama veya kesme yağı kullanımı nedeniyle suda emülsiyon halinde ya da suyla karışık yağlar."
+  ],
+  [
+   "Genel Açıklamalar",
+   "Ürünler ham veya rafine olabilir. Kimyaca saf veya ticari anlamda saf izole organik bileşikler Fasıl 29’dadır; ancak metan ve propan saf olsalar dahi 27.11’dedir. “Aromatik unsurlar” tabiri, yan zincirlerine bakılmaksızın aromatik kısım içeren bütün molekülleri ifade eder. Hariç: ilaçlar (30.03, 30.04), parfümeri ve kozmetik (33.03–33.07), çakmak doldurmaya mahsus <b>300 cm³ veya daha küçük</b> kaplardaki akaryakıtlar (36.06)."
+  ],
+  [
+   "27.03 / 27.04 Açıklama Notları",
+   "Turb; yakıt, hayvan altlığı veya toprak ıslahı için olabilir; az miktarda azot, fosfor, potasyum içersin içermesin, esas karakteri turb olan turb-kum-kil karışımları (saksı toprağı) da 27.03’tedir; turb lifi Bölüm XI’e, turbdan eşya Fasıl 68’e gider. 27.04: taşkömürü, linyit veya turbdan kok ve semikok ile karni kömürü; zift koku 27.08, petrol koku 27.13, elektrik işleri için mamul hale getirilmiş karni kömürü 85.45."
+  ],
+  [
+   "27.09 Açıklama Notu",
+   "Ham petrol ve bitümenli minerallerden elde edilen ham yağlar; dekantasyon, tuz giderme, su alma, stabilizasyon, çok hafif kısımların ayrılması ve fiziksel yöntemle elde edilmiş hidrokarbon ilavesi gibi işlemler 27.09’u bozmaz. Doğal gazın stabilizasyonunda elde edilen gaz kondensatları da buradadır."
+  ],
+  [
+   "27.10 Açıklama Notu",
+   "(I) Birincil ürünler: petrol eterleri ve esansları, white spirit, kerosen, gaz yağları, fuel oiller, motor ve makine yağları, beyaz yağlar; ağırlıkça %70 veya daha fazla petrol yağı esaslı müstahzarlar (yağlayıcılar, gres, transformatör yağları, kesme yağları, temizleme yağları, kalıp yağları, hidrolik fren yağları). (II) Atık yağlar (PCB, PCT, PBB içerenler dahil). Hariç: petrol yağı içermeyen kurşunlu benzin tortuları (26.20); %70’ten az petrol yağı içeren müstahzarlar (34.03, 38.19); petrol yağının esas unsur olmadığı müstahzarlar (lanolin esaslı pas önleyici 34.03, dietil eter esaslı motor başlatma sıvısı 38.24, 38.08, 38.11, 38.14). Biyodizel (yakıt olarak kullanılan yağ asidi mono alkil esterleri) ve ağırlıkça %70’ten az petrol yağı içeren karışımları 38.26’dadır."
+  ],
+  [
+   "27.11 Açıklama Notu",
+   "15 °C ve 1013 milibarda gaz halinde olan ham hidrokarbonlar; basınçlı kaplarda sıvı halde ve kaçakları belli etmek için koku verici madde katılmış olabilir. Metan ve propan saf olsalar da buradadır; saflığı <b>%95’ten az</b> etan ve etilen, %95’ten az n-bütan ve izobütan ile propan-bütan karışımları dahildir; %95 veya daha saf etan ve etilen 29.01’e gider. Hariç: 300 cm³ veya daha küçük kaplarda çakmak doldurmaya mahsus sıvılaştırılmış bütan (36.06), sıvılaştırılmış bütan içeren çakmak aksamı (96.13)."
+  ],
+  [
+   "27.12 Açıklama Notu",
+   "Vazelin için ölçütler: donma noktası en az 30 °C, 70 °C’de yoğunluk 0,942 g/cm³’ten az, 25 °C’de işlenmiş koni girişi 350’den az, koni girişi en az 80. Cilt bakımı için perakende ambalajlanmış vazelin 33.04’tedir. Polietilen mumu gibi polimer mumları, kimyasal olarak değiştirilmiş linyit mumu ve bu fasıl mumlarının hayvansal, bitkisel veya suni mumlarla karışımları 34.04’e gider."
+  ],
+  [
+   "27.14 / 27.15 Açıklama Notları",
+   "Tabii bitümen ve asfalt suyu veya gangı giderilmiş, toz haline getirilmiş ya da birbirine karıştırılmış olabilir; yalnızca su veya emniyet ve taşıma için az miktarda yüzey aktif madde katılması 27.14’ü bozmaz. Diğer maddeler katılmış karışımlar 27.15’tedir: cut-back’ler (genellikle çözücüde %60 veya daha fazla bitümen), su içindeki emülsiyonlar, mineral madde katılmış asfalt sakızları. Hariç: katranlı makadam (25.17), asfalt eşya (68.07), bitümenli boya ve vernikler (32.10)."
+  ]
+ ],
+ "sinir_komsulari": [
+  [
+   "Kara kehribar (linyit türü)",
+   "25.30",
+   "27.01 ve 27.02 hariç tutması"
+  ],
+  [
+   "Katranlı makadam",
+   "25.17",
+   "27.14 ve 27.15 hariç tutması"
+  ],
+  [
+   "Petrol yağı içermeyen kurşunlu benzin tank tortuları",
+   "26.20",
+   "27.10 hariç tutması"
+  ],
+  [
+   "Hidrojen",
+   "28.04",
+   "Element; Fasıl 28"
+  ],
+  [
+   "Saf benzen; %95 veya daha saf etan ve etilen",
+   "Fasıl 29",
+   "Fasıl 27 Not 1; 27.11 Açıklama Notu"
+  ],
+  [
+   "Cilt bakımı için perakende ambalajlı vazelin",
+   "33.04",
+   "27.12 hariç tutması"
+  ],
+  [
+   "Çakmak doldurmaya mahsus küçük kaplarda bütan; LPG’li çakmak gaz haznesi",
+   "36.06 / 96.13",
+   "27.11 hariç tutması"
+  ],
+  [
+   "Odun katranı ve odun katranı yağları",
+   "38.07",
+   "27.06 ve 27.07 hariç tutması"
+  ],
+  [
+   "Karışım halinde alkilbenzenler ve alkilnaftalinler",
+   "38.17",
+   "27.07 hariç tutması"
+  ],
+  [
+   "%70’ten az petrol yağı içeren yağlama müstahzarları; lanolinli pas önleyici",
+   "34.03",
+   "27.10 hariç tutması"
+  ],
+  [
+   "Biyodizel ve %70’ten az petrol yağı içeren karışımları",
+   "38.26",
+   "27.10 Açıklama Notu"
+  ],
+  [
+   "Polietilen mumu; kimyasal olarak değiştirilmiş linyit mumu",
+   "34.04",
+   "27.12 hariç tutması"
+  ],
+  [
+   "Sıvı sentetik poliolefinler (300 °C’de hacimce %60’tan azı damıtılan)",
+   "Fasıl 39",
+   "Fasıl 27 Not 2"
+  ],
+  [
+   "Elektrik işleri için mamul karni kömürü (pil kömürü)",
+   "85.45",
+   "27.04 hariç tutması"
+  ],
+  [
+   "Asfalttan levha ve döşeme taşı",
+   "68.07",
+   "27.14 ve 27.15 hariç tutması"
+  ]
+ ],
+ "tuzaklar": [
+  "<b>Saf metan ve propan Fasıl 29’a gitmez.</b> Fasıl 27 Not 1 bu ikisini ayrı tutar; saf benzen veya %95 ya da daha saf etan ise Fasıl 29’dadır.",
+  "<b>%70 tek başına yetmez; petrol yağı esas unsur olmalıdır.</b> White spirit içinde lanolin (34.03), dietil eter esaslı motor başlatma sıvısı (38.24), vernik incelticisi (38.14) %70’i aşsa da 27.10 değildir.",
+  "<b>Aromatik mi, aromatik olmayan mı?</b> Aromatik unsurlar ağırlıkça baskınsa 27.07; aromatik olmayanlar baskınsa 27.10 (Not 2).",
+  "<b>Üç kok, üç pozisyon.</b> Kömür, linyit ve turb koku 27.04; zift koku 27.08; petrol koku 27.13; elektrik işleri için mamul karni kömürü 85.45.",
+  "<b>Tabii bitümen + su hâlâ 27.14’tür.</b> Az miktarda yüzey aktif madde ile suda dağıtılmış tabii bitümen 27.14; cut-back ve yol emülsiyonları 27.15; mamul asfalt levhalar 68.07.",
+  "<b>Vazelin: dökme 27.12, cilt bakımı için perakende 33.04.</b>",
+  "<b>Kap ile içerik ayrı düşünülür.</b> Tekrar doldurulabilir gaz tüpüne GYK 5(b) uygulanmaz; çakmak gaz haznesi 96.13; 300 cm³ veya daha küçük çakmak doldurma kabındaki bütan 36.06.",
+  "<b>Petrol esaslı atık 38.25 değil, 27.10’dur.</b> Kullanılmış motor yağı ve suyla karışık kesme yağı 27.10; petrol yağı içermeyen kurşunlu benzin tortusu ise 26.20.",
+  "<b>Turb ile bahçe toprağını karıştırmayın.</b> Esas karakteri turb olan saksı toprağı 27.03; bahçe toprağı 25.30; turbdan saksı ve levhalar Fasıl 68.",
+  "<b>Katran kaynağına göre ayrılır.</b> Mineral katran 27.06, odun katranı 38.07; ziftin kreozotla karışımı (yeniden terkip edilmiş katran) yine 27.06."
+ ],
+ "hafiza": {
+  "kanca": "KATI – GAZ – KATRAN – PETROL – MUM – KALINTI – ASFALT – ELEKTRİK",
+  "aciklama": "<b>KATI</b> 27.01–27.04 (taşkömürü, linyit, turb, kok) · <b>GAZ</b> 27.05 (kömür gazı) · <b>KATRAN</b> 27.06–27.08 (katran, aromatik yağ, zift) · <b>PETROL</b> 27.09–27.11 (ham, rafine, gaz) · <b>MUM</b> 27.12 · <b>KALINTI</b> 27.13 (petrol koku, bitümen) · <b>ASFALT</b> 27.14–27.15 (tabii asfalt ve karışımları) · <b>ELEKTRİK</b> 27.16. Bir kömür ocağından rafineriye, oradan asfalt şantiyesine ve en sonda enerji hattına yürüyün."
+ },
+ "sinav_odagi": [
+  "Ham vazelinin yeri: 33.04, 33.07 ve 34.01 çeldiricilerine karşı 27.12; perakende cilt bakımı vazelininin ise 33.04’e gittiği.",
+  "“Hangisi 27. fasılda sınıflandırılamaz / farklı fasıldadır?” kalıbı: hidrojen gazı (Fasıl 28) ve biyodizel (38.26) çeldirici olarak; havagazı, turba, elektrik, vazelin, antrasit ve fuel oil Fasıl 27’de.",
+  "Fasıl 27 dışına çıkan karbon ürünleri: pil kömürlerinin 85.45’te yer alması (27.06 ve 27.13 çeldiricileri).",
+  "Gaz ve kap ilişkisi: LPG ile doldurulmuş plastik çakmak gaz haznesinin 27.11 değil 96.13’te sınıflandırılması.",
+  "GYK 6 kullanımı: 27.11 içindeki aynı seviyedeki alt pozisyonlar (ör. sıvılaştırılmış doğal gaz ile propan) arasında seçim.",
+  "Aynı fasıl ve sıralama soruları: elektrik enerjisi, vazelin ve turbun aynı fasılda olması; biyodizelin plastik ve diğer eşyayla birlikte numara sırasına konulması."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Ham vazelin hangi tarife pozisyonundadır?",
+   "secenekler": [
+    "27.12",
+    "33.04",
+    "33.07",
+    "34.01"
+   ],
+   "cevap": "A",
+   "aciklama": "27.12 vazelini ham, rengi giderilmiş veya rafine halde kapsar. Yalnızca cilt bakımı için uygun ve bu kullanım için perakende ambalajlanmış vazelin 33.04’e gider; ham vazelin bu koşulu taşımaz."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Türk Gümrük Tarife Cetvelinde diğerlerinden farklı bir fasılda sınıflandırılır?",
+   "secenekler": [
+    "Biodizel",
+    "Antrasit",
+    "Fuel oil",
+    "Turba"
+   ],
+   "cevap": "A",
+   "aciklama": "27.10 Açıklama Notuna göre biyodizel ve ağırlıkça %70’ten az petrol yağı içeren karışımları 38.26’dadır (Fasıl 38). Antrasit 27.01, fuel oil 27.10, turba 27.03 ile Fasıl 27’dedir."
+  }
+ ],
+ "ozet": [
+  "Katı yakıtlar 27.01–27.04; petrol koku 27.13, zift koku 27.08.",
+  "Kömür gazı 27.05; petrol gazları ve doğal gaz 27.11 (saf metan ve propan dahil).",
+  "Aromatik baskın yağlar 27.07, aromatik olmayan baskın yağlar 27.10 (Not 2).",
+  "27.10 = rafine petrol yağları + ağırlıkça ≥%70 petrol yağı esaslı müstahzarlar + atık yağlar; %70’in altı genellikle 34.03, 38.19 veya 38.26.",
+  "Vazelin ve mineral mumlar 27.12 (perakende cilt bakımı vazelini 33.04, polietilen mumu 34.04).",
+  "Tabii bitümen 27.14, bitümenli karışımlar 27.15, mamul asfalt eşya 68.07; elektrik enerjisi 27.16."
+ ],
+ "sorular": [
+  {
+   "soru": "Tarife Cetveline göre, termik santralde yakıt olarak kullanılmak üzere su içinde dağıtılmış ve az miktarda yüzey aktif madde içeren toz haline getirilmiş taşkömürü (kömür pulpu) hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "27.04",
+    "27.15",
+    "38.24",
+    "27.01",
+    "27.02"
+   ],
+   "cevap": "D",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "27.01 Açıklama Notu, suda dağılmış ve az miktarda dağıtıcı unsur, özellikle yüzey aktif madde içeren toz haline getirilmiş kömürü (kömür pulpu) açıkça bu pozisyona dahil eder. Kok ve semikok 27.04’te, linyit 27.02’dedir; 27.15 bitümenli karışımlar içindir. Su ve dağıtıcı katılması ürünü kimyasal müstahzar (38.24) yapmaz.",
+   "dayanak": "27.01 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, petrolün kraking işlemine tabi tutulmasından oluşan ve elektrot imalatında hammadde olarak kullanılan kalsine edilmiş petrol koku hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "27.04",
+    "27.13",
+    "38.01",
+    "27.08",
+    "85.45"
+   ],
+   "cevap": "B",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "27.13 pozisyonu petrol kokunu (yeşil veya kalsine) kapsar; Açıklama Notu kalsine kokun elektrot imalatında hammadde olarak kullanıldığını belirtir. 27.04 yalnızca taşkömürü, linyit ve turbdan elde edilen koku, 27.08 zift kokunu kapsar ve 27.04 Açıklama Notu petrol kokunu 27.13’e gönderir. Suni grafit 38.01’de, mamul karbon elektrotlar 85.45’tedir.",
+   "dayanak": "27.13 Açıklama Notu; 27.04 Açıklama Notu, hariç tutmalar."
+  },
+  {
+   "soru": "Tarife Cetveline göre, ıslak doğal gazın çıkarılması sırasında soğutma ve basıncın kaldırılması yoluyla stabilizasyon esnasında elde edilen ham gaz kondensatları hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "27.11",
+    "27.10",
+    "27.05",
+    "29.01",
+    "27.09"
+   ],
+   "cevap": "E",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "27.09 Açıklama Notu, doğal gazın ekstraksiyonu sırasında stabilizasyonda elde edilen gaz kondensatlarını (yaklaşık 4 ile 20 karbonlu hidrokarbonlar) ham yağlar arasında sayar. Bunlar gaz değil sıvıdır (27.11 değil); rafinasyon görmedikleri için 27.10’a, kömür gazı olmadıkları için 27.05’e girmez.",
+   "dayanak": "27.09 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, ağırlıkça %85 oranında petrol yağı içeren ve bu yağın esas unsuru oluşturduğu, oksitlenme ve köpüklenmeyi önleyici katkılar ilave edilmiş motor yağlama yağı hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "27.10",
+    "34.03",
+    "38.11",
+    "38.19",
+    "27.13"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "27.10 pozisyonu, esas unsur olarak ağırlıkça %70 veya daha fazla petrol yağı içeren ve başka yerde belirtilmeyen müstahzarları kapsar; Açıklama Notu katkılı yağlama yağlarını örnek verir. 34.03 yalnızca %70’ten az petrol yağı içeren yağlama müstahzarları, 38.19 %70’ten az petrol yağı içeren hidrolik sıvılar, 38.11 ise mineral yağlar için hazırlanmış katkılar içindir.",
+   "dayanak": "27.10 pozisyon metni ve Açıklama Notu (I); 34.03 pozisyon metni."
+  },
+  {
+   "soru": "Tarife Cetveline göre, fitilli mum imalatında kullanılmak üzere dökme halde sunulan, renklendirilmiş rafine parafin hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "34.04",
+    "34.06",
+    "27.12",
+    "15.21",
+    "27.10"
+   ],
+   "cevap": "C",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "27.12 pozisyonu parafin ve diğer mineral mumları renklendirilmiş olsun olmasın kapsar; Açıklama Notu bu mumların fitilli mum imalatında kullanıldığını belirtir. 34.04 suni mumlar ve polietilen mumu gibi polimer mumları, 34.06 mamul mumları kapsar; 15.21 bitkisel ve böcek mumları içindir. Renklendirme sınıflandırmayı değiştirmez.",
+   "dayanak": "27.12 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 27. Faslında <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Saf metan (kimyaca belirli bileşik)",
+    "Basınçlı kapta saf propan",
+    "Sıvılaştırılmış doğal gaz",
+    "Elektrik enerjisi",
+    "Ticari anlamda saf, izole benzen"
+   ],
+   "cevap": "E",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Fasıl 27 Not 1 ve Genel Açıklamalar, kimyaca belirli yapıda izole edilmiş saf veya ticari anlamda saf organik bileşikleri Fasıl 29’a gönderir; saf benzen bu nedenle Fasıl 27 dışındadır. Not 1 metan ve propanı açıkça istisna tutar: saf olsalar da 27.11’dedir. Sıvılaştırılmış doğal gaz 27.11’de, elektrik enerjisi 27.16’dadır.",
+   "dayanak": "Fasıl 27 Not 1; Fasıl 27 Genel Açıklamalar; 27.07 ve 27.11 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 27.10 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Asıl ürün olarak artık kullanılamayan, kullanılmış transformatör yağları",
+    "Petrol depolama tanklarının yıkanmasından kaynaklanan, su ile karışık halde bulunan atık petrol yağları",
+    "Petrol yağı içermeyen, esasen kurşun bileşiklerinden oluşan kurşunlu benzin tank tortuları",
+    "White spirit",
+    "Kerosen"
+   ],
+   "cevap": "C",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "27.10 Açıklama Notu, esasen kurşun, kurşun bileşikleri ve demir oksitten oluşan, petrol yağı içermeyen kurşunlu benzin tortularını hariç tutar ve 26.20’ye gönderir. Kullanılmış transformatör yağları ve tank yıkamasından gelen suyla karışık yağlar Not 3 uyarınca atık yağ olarak, white spirit ve kerosen birincil ürün olarak 27.10’dadır.",
+   "dayanak": "Fasıl 27 Not 3; 27.10 Açıklama Notu; 26.20 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 27.11 pozisyonunda <b>yer almaz</b>?",
+   "secenekler": [
+    "Çakmak doldurmaya mahsus, 250 cm³’lük kaplara konulmuş sıvılaştırılmış bütan",
+    "Kaçakları belli etmek için koku verici madde katılmış sıvılaştırılmış propan-bütan karışımı",
+    "Basınçlı kapta sıvı halde sunulan saf propan",
+    "Saflığı %95’ten az olan etan",
+    "Gaz halindeki doğal gaz"
+   ],
+   "cevap": "A",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "27.11 Açıklama Notu, sigara çakmakları veya benzeri ateşleyiciler için 300 cm³ veya daha küçük kaplara konulmuş sıvılaştırılmış bütanı hariç tutar ve 36.06’ya gönderir. Koku verici katılmış propan-bütan karışımı, saf propan, %95’ten az saflıktaki etan ve doğal gaz 27.11’dedir.",
+   "dayanak": "27.11 Açıklama Notu; Fasıl 27 Genel Açıklamalar (c)."
+  },
+  {
+   "soru": "Aşağıdaki ürünlerden hangisi Tarife Cetvelinin 27. Faslı kapsamında <b>yer almaz</b>?",
+   "secenekler": [
+    "Taşkömürünün yüksek sıcaklıkta damıtılmasından elde edilen katran",
+    "Ziftin kreozot yağı ile karıştırılmasıyla elde edilen yeniden terkip edilmiş katran",
+    "Linyit mumu (montan mumu)",
+    "Odun katranı",
+    "Turb mumu"
+   ],
+   "cevap": "D",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "27.06 Açıklama Notu, mineral olmayan kaynaklardan elde edilen katranları (ör. odun katranı) hariç tutar ve 38.07’ye gönderir. Taşkömürü katranı ve yeniden terkip edilmiş katranlar 27.06’da, linyit mumu ve turb mumu 27.12’dedir. Tuzak, “katran” kelimesinin kaynağa bakılmadan Fasıl 27 sanılmasıdır.",
+   "dayanak": "27.06 ve 27.12 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden farklı bir fasılda sınıflandırılır?",
+   "secenekler": [
+    "Taşkömürü katranından elde edilen kreozot yağı",
+    "Polietilen mumu",
+    "Ozokerit",
+    "Asfaltit",
+    "Karni kömürü"
+   ],
+   "cevap": "B",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "27.12 Açıklama Notu, polietilen mumu gibi yüksek polimer mumlarını hariç tutar ve 34.04’e (Fasıl 34) gönderir. Kreozot yağı 27.07’de, ozokerit 27.12’de, asfaltit 27.14’te, karni kömürü 27.04’te, yani Fasıl 27’dedir.",
+   "dayanak": "27.04, 27.07, 27.12 ve 27.14 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdaki eşya çiftlerinden hangisinde her iki eşya da <b>aynı</b> pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Taşkömüründen elde edilen kok – kalsine edilmiş petrol koku",
+    "Petrol bitümeni – kullanılmış ağartıcı topraklar (petrol rafinasyonu artığı)",
+    "Trinidad gölü asfaltı – ham petrolün damıtılmasından kalan petrol bitümeni",
+    "Aglomere edilmiş linyit – kara kehribar (linyit türü)",
+    "Kok fırınından elde edilen havagazı – sıvılaştırılmış doğal gaz"
+   ],
+   "cevap": "B",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "27.13 Açıklama Notu hem petrol bitümenini hem de bir miktar yağ içeren asitli kalıntılar ile kullanılmış ağartıcı toprakları “diğer kalıntılar” olarak bu pozisyona dahil eder. Taşkömürü koku 27.04, petrol koku 27.13; tabii asfalt 27.14; linyit 27.02, kara kehribar 25.30; havagazı 27.05, doğal gaz 27.11’dedir.",
+   "dayanak": "27.13 Açıklama Notu; 27.02, 27.04, 27.05, 27.11, 27.14 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdaki bitümenli ürünlerden hangisi diğerlerinden farklı bir pozisyonda yer alır?",
+   "secenekler": [
+    "Yol kaplamasında kullanılan, çözücü içinde %60 bitümen içeren cut-back",
+    "Yol kaplamasında kullanılan, su içindeki bitümen emülsiyonu",
+    "Kum katılarak elde edilen ve kalafat işlerinde kullanılan asfalt sakızı",
+    "Kullanılmadan önce tekrar eritilmek üzere bloklar halinde aglomere edilmiş bitümenli karışım",
+    "Yalnızca su ve az miktarda yüzey aktif madde ile suda dağıtılmış toz tabii bitümen"
+   ],
+   "cevap": "E",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "27.14 Açıklama Notu, suyu alınmış ve toz haline getirilmiş tabii bitümenin yalnızca su ve emniyet ile taşıma için az miktarda yüzey aktif madde katılarak su içinde dağıtılmış olanını 27.14’te bırakır; 27.15 de bunu açıkça hariç tutar. Cut-back, yol emülsiyonu, asfalt sakızı ve bloklar halindeki karışımlar 27.15’tedir.",
+   "dayanak": "27.14 ve 27.15 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdaki ürünlerden hangisi diğerlerinden farklı bir fasılda yer alır?",
+   "secenekler": [
+    "Su alınarak aglomere edilmiş linyit briketleri",
+    "Linyitten elde edilen semikok",
+    "Rafineriden elde edilen ve dizel yakıt olarak kullanılan gaz yağı",
+    "%70’ten az petrol yağı içeren biyodizel karışımı",
+    "Toz haline getirilmiş asfaltlı kireç taşı"
+   ],
+   "cevap": "D",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "27.10 Açıklama Notu, biyodizel ve ağırlıkça %70’ten az petrol yağı içeren karışımlarını 38.26’ya (Fasıl 38) gönderir. Linyit 27.02, semikok 27.04, gaz yağı 27.10, asfaltlı kireç taşı 27.14 ile Fasıl 27’dedir. Asfaltlı kireç taşının “taş” olması onu Fasıl 25 yapmaz.",
+   "dayanak": "27.10 Açıklama Notu; 27.02, 27.04 ve 27.14 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetvelinin 27. Fasıl notlarına göre, herhangi bir işlemle elde edilen ve esasen doymamış hidrokarbon karışımlarından oluşan yağların 27.10 anlamında “petrol yağları” sayılabilmesi için aranan şart hangisidir?",
+   "secenekler": [
+    "Aromatik olmayan unsurların ağırlığının aromatik unsurlardan fazla olması",
+    "Aromatik unsurların ağırlığının aromatik olmayan unsurlardan fazla olması",
+    "Ağırlıkça en az %70 oranında ham petrolden elde edilmiş yağ içermesi",
+    "300 °C’de hacimce %60’tan azının damıtılması",
+    "Yalnızca ham petrolün damıtılmasıyla elde edilmiş olması"
+   ],
+   "cevap": "A",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 27 Not 2, bu tür yağların 27.10 kapsamına girmesini aromatik olmayan unsurların ağırlığının aromatik unsurlardan fazla olması şartına bağlar; elde ediliş yöntemi önemsizdir (E yanlış). Aromatik unsurlar baskınsa ürün 27.07’dedir (B). %60 ve 300 °C ölçütü sıvı sentetik poliolefinleri Fasıl 39’a gönderen istisnadır (D).",
+   "dayanak": "Fasıl 27 Not 2; 27.07 pozisyon metni."
+  },
+  {
+   "soru": "Tarife Cetvelinin 27. Fasıl notlarına göre “atık yağlar” ile ilgili aşağıdakilerden hangisi <b>doğrudur</b>?",
+   "secenekler": [
+    "Suyla karışmış veya suda emülsiyon halindeki yağlar atık yağ sayılmaz; 38.25’te sınıflandırılır.",
+    "Yalnızca motorlardan boşaltılan kullanılmış yağlama yağlarını kapsar; hidrolik ve transformatör yağları bu tanıma girmez.",
+    "Esasen petrol yağı içeren; kullanılamaz hale gelmiş yağları, tank tortu yağlarını ve suyla karışık yağları kapsar.",
+    "Petrol yağı oranı ağırlıkça %70’in altına düşmüş her türlü yağlama müstahzarını ifade eder.",
+    "Petrol yağı içermeyen kurşunlu benzin depolama tankı tortularını da kapsar."
+   ],
+   "cevap": "C",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 27 Not 3, atık yağları suyla karışık olsun olmasın esas olarak petrol yağları içeren atıklar olarak tanımlar ve üç grup sayar: artık kullanılamayan yağlar, tank tortu yağları, suda emülsiyon halindeki veya suyla karışık yağlar. Hidrolik ve transformatör yağları da dahildir (B yanlış). Petrol yağı içermeyen kurşunlu benzin tortuları 26.20’dedir (E).",
+   "dayanak": "Fasıl 27 Not 3; 27.10 Açıklama Notu (II)."
+  },
+  {
+   "soru": "Tarife Cetveline göre, esas unsur olarak petrol yağı içeren ve tarifenin başka yerinde belirtilmeyen müstahzarların 27.10 pozisyonunda yer alabilmesi için petrol yağı oranı ağırlıkça en az ne olmalıdır?",
+   "secenekler": [
+    "%50",
+    "%60",
+    "%70",
+    "%85",
+    "%90"
+   ],
+   "cevap": "C",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "27.10 pozisyon metni, esas unsur olarak ağırlık itibarıyla %70 veya daha fazla petrol yağı veya bitümenli minerallerden elde edilen yağ içeren müstahzarları kapsar. Bu oranın altındaki yağlama müstahzarları 34.03’e, hidrolik fren sıvıları 38.19’a gider. %60 cut-back’lerdeki bitümen oranı ve sentetik poliolefin ölçütünde geçen değerdir.",
+   "dayanak": "27.10 pozisyon metni ve Açıklama Notu; 34.03 ve 38.19 pozisyon metinleri."
+  },
+  {
+   "soru": "Tarife Cetvelinin 27. Fasıl notlarına göre, sıvı haldeki sentetik poliolefinler hangi durumda 27.10 kapsamı dışında kalarak Fasıl 39’da sınıflandırılır?",
+   "secenekler": [
+    "Aromatik unsurlar ağırlıkça aromatik olmayanlardan fazla olduğunda",
+    "Ağırlıkça %70’ten az petrol yağı veya bitümenli mineral yağı içerdiğinde",
+    "ISO 3405 yöntemine göre 210 °C’de hacimce %90’ı veya daha fazlası damıtıldığında",
+    "15 °C sıcaklık ve 1013 milibar basınç altında gaz halinde bulunduğunda",
+    "300 °C’de hacimce %60’tan azı damıtıldığında (1013 milibara çevrilmiş basınçta)"
+   ],
+   "cevap": "E",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 27 Not 2, düşük basınç yöntemiyle, basıncı 1013 milibara çevrildikten sonra 300 °C’de hacimce %60’ından azı damıtılan sıvı sentetik poliolefinleri “petrol yağları” tabirinin dışında bırakır (Fasıl 39). Aromatik baskınlık 27.07 ölçütü, 15 °C ve 1013 milibarda gaz halinde olma 27.11 ölçütüdür.",
+   "dayanak": "Fasıl 27 Not 2; 27.10 Açıklama Notu."
+  },
+  {
+   "soru": "Tekrar doldurulmaya elverişli çelik bir tüp içinde, tüple birlikte ithal edilen sıvılaştırılmış propan için aşağıdakilerden hangisi <b>doğrudur</b>?",
+   "secenekler": [
+    "GYK 5(b) gereği tüp, gazla birlikte 27.11’de sınıflandırılır.",
+    "Tüp tekrar kullanıma elverişli olduğundan GYK 5(b) uygulanmaz; tüp ayrıca sınıflandırılır.",
+    "GYK 5(a) gereği tüp, gaza göre özel şekil verilmiş mahfaza olarak gazla birlikte sınıflandırılır.",
+    "GYK 3(b) gereği esas niteliği tüp verdiğinden bütünü tüpün pozisyonunda sınıflandırılır.",
+    "GYK 2(a) gereği tüp, gazın tamamlanmamış hali sayılır."
+   ],
+   "cevap": "B",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 5(b), eşyayla birlikte sunulan normal ambalajları eşyayla birlikte sınıflandırır; ancak ambalajın sürekli kullanıma elverişli olduğu açıkça belliyse uygulanmaz. GYK 5(b) Açıklama Notu, sıkıştırılmış veya sıvı gazlar için demir ve çelikten bazı metal kapları bu istisnaya örnek verir. Propan 27.11’de, tüp ise kendi pozisyonunda sınıflandırılır.",
+   "dayanak": "GYK 5(b) ve Açıklama Notu (IV); 27.11 Açıklama Notu."
+  },
+  {
+   "soru": "Saf metan, kimyaca belirli yapıda izole bir organik bileşik olmasına rağmen Fasıl 29 yerine 27.11 pozisyonunda sınıflandırılır. Bu sonucun dayanağı aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "GYK 3(a) – en özel tanım",
+    "GYK 3(c) – numara sırasına göre sonuncu pozisyon",
+    "GYK 2(b) – maddenin karışım halleri",
+    "GYK 1 – Fasıl 27 Not 1 hükmü ve 27.11 pozisyonu",
+    "GYK 4 – en çok benzediği eşya"
+   ],
+   "cevap": "D",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 1’e göre sınıflandırma pozisyon metinleri ile bölüm ve fasıl notlarına göre yapılır. Fasıl 27 Not 1, izole organik bileşikleri fasıl dışında bırakırken 27.11’deki saf metan ve propanı açıkça istisna tutar; 27.11 Açıklama Notu da bunların saf olsalar dahi bu pozisyonda yer aldığını belirtir. Bu nedenle GYK 3 veya GYK 4’e gerek yoktur; GYK 3(c) ise sonuncu pozisyonu (Fasıl 29) gösterirdi.",
+   "dayanak": "GYK 1; Fasıl 27 Not 1; 27.11 Açıklama Notu."
+  },
+  {
+   "soru": "Elektrik işlerinde kullanılmak üzere mamul hale getirilmiş karni kömürü ………, kalsine edilmemiş petrol koku ………, zift koku ………, linyitten elde edilen kok ise ……… pozisyonunda sınıflandırılır. Boşlukları sırasıyla doğru tamamlayan seçenek hangisidir?",
+   "secenekler": [
+    "85.45 / 27.13 / 27.08 / 27.04",
+    "27.04 / 27.13 / 27.08 / 27.04",
+    "85.45 / 27.04 / 27.13 / 27.02",
+    "38.01 / 27.13 / 27.06 / 27.04",
+    "27.04 / 27.08 / 27.13 / 27.02"
+   ],
+   "cevap": "A",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "27.04 Açıklama Notu, elektrik işleri için mamul hale getirilmiş karni kömürlerini 85.45’e gönderir. Petrol koku (kalsine olsun olmasın) 27.13’te, zift koku 27.08’de, linyitten elde edilen kok 27.04’tedir. Linyitin kendisi 27.02’de olsa da koku 27.04’e girer.",
+   "dayanak": "27.04, 27.08 ve 27.13 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdaki eşya ile pozisyonlar eşleştirildiğinde hangi seçenek doğrudur? I. Taşkömürü katranından elde edilen ham benzol · II. White spirit · III. Ozokerit · IV. Trinidad gölü asfaltı — a) 27.07 · b) 27.10 · c) 27.12 · d) 27.14",
+   "secenekler": [
+    "I-b, II-a, III-c, IV-d",
+    "I-a, II-b, III-d, IV-c",
+    "I-a, II-b, III-c, IV-d",
+    "I-a, II-c, III-b, IV-d",
+    "I-b, II-a, III-d, IV-c"
+   ],
+   "cevap": "C",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Yüksek sıcaklık kömür katranı damıtma ürünü olan benzol 27.07’de, white spirit birincil petrol ürünü olarak 27.10’da, tabii mineral mum ozokerit 27.12’de, Trinidad gölü asfaltı tabii asfalt olarak 27.14’tedir. Tuzak, benzol ile white spiritin her ikisinin de çözücü olmasıdır; aromatik baskınlık ayırt edicidir.",
+   "dayanak": "27.07, 27.10, 27.12 ve 27.14 Açıklama Notları; Fasıl 27 Not 2."
+  },
+  {
+   "soru": "27.11 pozisyonu ile ilgili aşağıdaki ifadelerden hangileri <b>doğrudur</b>? I. Metan ve propan saf olsalar bile bu pozisyonda yer alır. II. Saflığı %95 veya daha fazla olan etan bu pozisyonda yer alır. III. Propan ve bütanın birbirleriyle karışımları bu pozisyonda yer alır. IV. Kaçakları belli etmek için az miktarda koku verici madde katılması bu pozisyondaki sınıflandırmayı değiştirmez.",
+   "secenekler": [
+    "I ve II",
+    "II ve III",
+    "I, II ve III",
+    "I, III ve IV",
+    "II, III ve IV"
+   ],
+   "cevap": "D",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "I, III ve IV doğrudur: 27.11 Açıklama Notu saf metan ve propanı, propan-bütan karışımlarını ve gaz kaçağını belli etmek için koku verici katılmış gazları kapsar. II yanlıştır: %95 veya daha saf etan ve etilen 29.01’e gider; yalnızca %95’ten az saflıktakiler 27.11’dedir.",
+   "dayanak": "27.11 Açıklama Notu; Fasıl 27 Not 1."
+  },
+  {
+   "soru": "Aşağıdaki ifadelerden hangileri <b>doğrudur</b>? I. Ağırlıkça %70’ten az petrol yağı içeren yağlama müstahzarları 34.03’te sınıflandırılır. II. White spirit içinde çözülmüş lanolin esaslı pas önleyici müstahzar, petrol yağı oranı %70’i aşsa bile 34.03’te sınıflandırılır. III. Vernikler için hazırlanmış karışık çözücü ve incelticiler, ağırlıkça %70 veya daha fazla petrol yağı içerdiklerinde 27.10’da sınıflandırılır. IV. Ağırlıkça %70 veya daha fazla petrol yağı içeren hidrolik fren sıvıları 38.19’da sınıflandırılır.",
+   "secenekler": [
+    "I ve II",
+    "I ve III",
+    "II ve IV",
+    "I, II ve III",
+    "II, III ve IV"
+   ],
+   "cevap": "A",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "I ve II doğrudur: 27.10 Açıklama Notu %70’ten az petrol yağı içeren yağlama müstahzarlarını ve petrol yağının yalnızca çözücü olduğu lanolinli pas önleyicileri 34.03’e gönderir. III yanlıştır: vernik incelticileri oran ne olursa olsun 38.14’tedir. IV yanlıştır: %70 veya daha fazla petrol yağı içeren hidrolik fren yağları 27.10’da kalır; 38.19 yalnızca %70’ten az içerenleri kapsar.",
+   "dayanak": "27.10 Açıklama Notu, hariç tutmalar; 38.19 pozisyon metni."
+  },
+  {
+   "soru": "Bir metal işleme fabrikasında tornalama işlemlerinde kesme yağı olarak kullanılmış, su ile emülsiyon halinde bulunan ve asıl ürün olarak tekrar kullanılamayan atık ithal edilmektedir. Atık esas olarak petrol yağı içermekte, poliklorlu bifenil içermemektedir. Bu atık hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "38.25",
+    "26.20",
+    "34.03",
+    "27.13",
+    "27.10"
+   ],
+   "cevap": "E",
+   "tip": "Senaryo",
+   "gerekce": "Fasıl 27 Not 3(c), makineli işlemlerde kesme yağı kullanımından kaynaklanan, suda emülsiyon halindeki veya suyla karışık yağları “atık yağlar” olarak tanımlar ve 27.10’a verir. Fasıl 38 Not 6, esasen petrol yağı içeren atıkları 38.25’teki “diğer atıklar”dan hariç tutar. 26.20 petrol yağı içermeyen metal kalıntıları, 34.03 kullanılmamış yağlama müstahzarları içindir.",
+   "dayanak": "Fasıl 27 Not 3; 27.10 Açıklama Notu (II); Fasıl 38 Not 6."
+  },
+  {
+   "soru": "Esas karakterini turbun verdiği, bir miktar kum ve kil karıştırılmış, tabii halinde az miktarda azot, fosfor ve potasyum içeren ürün perakende torbalarda saksı toprağı olarak satılmaktadır. Bu ürün hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "31.05",
+    "27.03",
+    "25.30",
+    "31.01",
+    "25.05"
+   ],
+   "cevap": "B",
+   "tip": "Senaryo",
+   "gerekce": "27.03 Açıklama Notu, az miktarda azot, fosfor veya potasyum içersin içermesin turb ile kum ve kilden oluşan ve esas karakteri turb olan karışımları bu pozisyona dahil eder ve bunların genellikle saksı toprağı olarak kullanıldığını belirtir. Gübre içeriği onu Fasıl 31’e götürmez; turb içermeyen bahçe toprağı ise 25.30’dadır.",
+   "dayanak": "27.03 Açıklama Notu; 25.30 Açıklama Notu."
+  }
+ ]
+}

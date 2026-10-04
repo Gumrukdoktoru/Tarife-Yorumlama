@@ -1,0 +1,665 @@
+{
+ "tur": "fasil",
+ "fasil": 93,
+ "baslik": "Silahlar ve mühimmat; bunların aksam, parça ve aksesuarı",
+ "bolum": "XIX",
+ "oz": {
+  "vurgu": "Fasıl 93 silahları çalışma biçimine göre ayırır: harp silahları 93.01, revolver ve tabancalar 93.02, patlayıcının itiş gücüyle çalışan diğer ateşli silahlar ve cihazlar 93.03, yaylı, havalı, gazlı silahlar ve vuruş sopaları 93.04, kesici-delici silahlar 93.07. Parçalar 93.05’te, mühimmat 93.06’dadır. Askeri amaçlı olsa da taşıtlar, patlayıcılar ve ayrı gelen dürbünler fasıl dışıdır. Bölüm XIX’un bölüm notu yoktur; bölüm yalnızca bu fasıldan oluşur.",
+  "maddeler": [
+   "Her tabanca 93.02 değildir: sürekli atış yapan makinalı tabanca 93.01’e; kuru sıkı, yalnızca işaret fişeği atan ve sürgülü hayvan öldürme tabancaları 93.03’e; havalı ve gazlı tabancalar 93.04’e gider.",
+   "Tank ve zırhlı araç (87.10), harp gemisi (89.06), askeri uçak (Fasıl 88), zırhlı demiryolu taşıtı (Fasıl 86) silahla donanmış olsa da fasıl dışıdır; bunlar için ayrı gelen toplar ve makinalı tüfekler 93.01’dedir.",
+   "Fasıl 36 eşyası (barut, patlayıcı, kapsül, fünye, işaret fişeği), ok-yay, eskrim kılıcı ve oyuncak silahlar (Fasıl 95), çelik miğfer (Fasıl 65), koleksiyon eşyası ve antikalar (Fasıl 97) fasıl dışıdır.",
+   "Kılıç, pala, süngü, mızrak ve hançer seremoni, dekorasyon veya tiyatro için yapılmış olsa da 93.07’dedir; kınları da buradadır. Av ve kamp bıçakları 82.11’dedir."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+  "satirlar": [
+   [
+    "1",
+    "Taşıt mı? (tank, zırhlı otomobil, harp gemisi, askeri uçak, zırhlı tren) — silahlı olsa bile",
+    "Fasıl 86 · <b>87.10</b> · Fasıl 88 · <b>89.06</b>"
+   ],
+   [
+    "2",
+    "Barut, hazır patlayıcı, kapsül, fünye, işaret fişeği mi?",
+    "<b>36.01</b> – <b>36.04</b>"
+   ],
+   [
+    "3",
+    "Oyuncak silah, okçuluk yayı-oku, eskrim kılıcı mı?",
+    "Fasıl 95 (<b>95.03</b> / <b>95.06</b>)"
+   ],
+   [
+    "4",
+    "Kılıç, pala, süngü, mızrak, hançer veya bunların parça ve kını mı?",
+    "<b>93.07</b>"
+   ],
+   [
+    "5",
+    "Askeri silah mı? (top, havan, makinalı tüfek, makinalı tabanca, roket atar, alev atıcı)",
+    "<b>93.01</b>"
+   ],
+   [
+    "6",
+    "Patlayıcıyla mermi atan, elde tutularak ateşlenen revolver veya tabanca mı?",
+    "<b>93.02</b>"
+   ],
+   [
+    "7",
+    "Patlayıcıyla çalışan diğer ateşli silah veya cihaz mı? (av tüfeği, kuru sıkı, işaret tabancası, sürgülü hayvan öldürme silahı, palamar atan tüfek)",
+    "<b>93.03</b> (perçin tabancası <b>82.05</b>)"
+   ],
+   [
+    "8",
+    "Yaylı, havalı, gazlı silah; cop, muşta, sapan, göz yaşartıcı sprey mi?",
+    "<b>93.04</b>"
+   ],
+   [
+    "9",
+    "93.01–93.04 silahlarının aksam, parça veya aksesuarı mı?",
+    "<b>93.05</b>* (kılıf <b>42.02</b>)"
+   ],
+   [
+    "10",
+    "Mermi, fişek, saçma, bomba, mayın, torpil, füze veya bunların parçası mı?",
+    "<b>93.06</b>"
+   ]
+  ],
+  "dipnot": "* Silahlarda kullanılmaya elverişli teleskopik dürbün silaha takılmışsa veya takılacağı silahla birlikte gelmişse silahla sınıflandırılır; aksi halde Fasıl 90’dadır (90.13)."
+ },
+ "pozisyon_haritasi": [
+  [
+   "93.01",
+   "Harp silahları",
+   "Revolver, tabanca ve 93.07 hariç bütün askeri silahlar",
+   "Top, obüs, havan, makinalı tüfek, torpil tüpü, alev atıcı"
+  ],
+  [
+   "93.02",
+   "Revolverler ve tabancalar",
+   "Patlayıcıyla mermi atar; elde tutularak ateşlenir",
+   "Yarı otomatik tabanca, revolver, kalem şeklinde tabanca"
+  ],
+  [
+   "93.03",
+   "Patlayıcıyla çalışan diğer ateşli silahlar ve cihazlar",
+   "Av, spor, hedef tüfekleri; kuru sıkı; işaret tabancası",
+   "Av tüfeği, ağızdan dolma tüfek, palamar atan tüfek, zıpkın tüfeği"
+  ],
+  [
+   "93.04",
+   "Diğer silahlar",
+   "Yay, hava, gaz veya vuruş; ateşli değil",
+   "Havalı tüfek, cop, muşta, sapan, göz yaşartıcı sprey"
+  ],
+  [
+   "93.05",
+   "93.01–93.04 eşyasının aksam, parça ve aksesuarı",
+   "Silaha özgü parça; genel kullanıma mahsus parça hariç",
+   "Namlu, şarjör, dipçik, kabza, susturucu"
+  ],
+  [
+   "93.06",
+   "Bombalar, mermiler, fişekler ve diğer mühimmat",
+   "Mühimmat ve parçaları; Fasıl 36 eşyası hariç",
+   "Av fişeği, havalı silah saçması, mayın, torpil, fişek kovanı"
+  ],
+  [
+   "93.07",
+   "Kılıçlar, palalar, süngüler, mızraklar vb.",
+   "Kesici-delici silahlar, parçaları, kın ve kılıfları",
+   "Tören kılıcı, süngü, hançer, baston kılıç, süngü kını"
+  ]
+ ],
+ "notlar": [
+  [
+   "Fasıl 93 Not 1",
+   "Fasıl dışı: (a) Fasıl 36 eşyası (infilak kapsülleri, infilak ettirici maddeler, işaret fişekleri); (b) Bölüm XV Not 2’deki genel kullanıma mahsus adi metal parçalar, plastikten benzerleri (Fasıl 39); (c) zırhlı savaş araçları (87.10); (d) silahlara takılmamış veya takılacağı silahla birlikte gelmemiş teleskopik dürbünler ve diğer optik tertibat (Fasıl 90); (e) oklar, yaylar, eskrim kılıçları, oyuncak silahlar (Fasıl 95); (f) koleksiyon eşyası, antikalar (97.05, 97.06)."
+  ],
+  [
+   "Fasıl 93 Not 2",
+   "93.06’daki “bunların aksam ve parçaları” deyimi 85.26’daki telsiz ve radar cihazlarını kapsamaz."
+  ],
+  [
+   "Genel Açıklamalar (kapsam)",
+   "Silahlı kuvvetler, polis, gümrük ve hudut teşkilatı gibi kuruluşlar için imal edilen her nevi silah; şahısların nefis müdafaası, av veya nişan talimi için kullandığı silahlar; bir patlayıcının itiş gücüyle çalışan diğer cihazlar (palamar atan toplar gibi); mermiler ve mühimmat (Fasıl 36 hariç); silahların ve mühimmatın aksam ve parçaları."
+  ],
+  [
+   "Genel Açıklamalar (taşıtlar)",
+   "Yalnızca askeri amaçla imal edilmiş ve silahla donanmış olsalar dahi taşıtlar fasıl dışıdır: zırhlı demiryolu taşıtları (Fasıl 86), tanklar ve zırhlı otomobiller (87.10), askeri uçaklar (88.01, 88.02, 88.06), harp gemileri (89.06). Bu taşıtlara mahsus olup ayrı gelen silahlar (toplar, makinalı tüfekler) Fasıl 93’tedir."
+  ],
+  [
+   "Genel Açıklamalar (hariç, süs)",
+   "Çelik miğferler ve askeri başlıklar Fasıl 65’te; göğüs zırhı, çelik yelek gibi vücut koruyucular maddesine göre; okçuluk ok ve yayları, zemberekli yaylar ve oyuncak silahlar Fasıl 95’te. Silahlar ve parçaları kıymetli metal, inci, kıymetli taş, bağa, sedef veya fildişi ile donatılmış olsa da Fasıl 93’te kalır."
+  ],
+  [
+   "93.01 Açıklama Notu",
+   "Toplar, obüsler, havanlar, uçaksavar ve tanksavar topları; demiryolu vagonuna monte uzun menzilli toplar (Fasıl 86’da değil); 87.10’daki tanklardan ayırt edilebilen seyyar ve kendinden hareketli toplar; makinalı tüfekler ve makinalı tabancalar; tüfek, karabina gibi ateşli harp silahları; füze rampaları, derinlik bombası atıcıları, torpil tüpleri, alev atıcılar. Zararlı otları yok etmeye mahsus alev atıcılar 84.24’tedir."
+  ],
+  [
+   "93.02 Açıklama Notu",
+   "Patlayıcının itiş gücüyle mermi atan, elde tutularak ateşlenen her çaptaki revolverler (tek namlu, döner silindir hazne) ve tabancalar; minyatür tabancalar ile kalem, çakı veya sigara kutusu şeklinde ateşli silahlar dahildir. Sürekli atış yapanlar 93.01’de; kuru sıkı, işaret fişeği, sürgülü hayvan öldürme ve tiyatro tabancaları 93.03’te; yaylı, havalı, gazlı tabancalar 93.04’tedir."
+  ],
+  [
+   "93.03 Açıklama Notu",
+   "Spor, av ve hedef tüfekleri (baston şeklinde olanlar dahil), ördek tüfekleri, ağızdan doldurulan kara barutlu silahlar, yalnızca işaret fişeği atan tabancalar, yalnızca kuru sıkı atan tabanca ve revolverler, sürgülü hayvan öldürme silahları, palamar atan tüfekler, zıpkın tüfekleri, ikaz tüfek ve havanları, yağmur topu. Hayvan öldürmede kullanılan mermi atan tabancalar 93.02’de; patlayıcıyla çalışan perçin tabancaları ve dübel aletleri 82.05’tedir."
+  ],
+  [
+   "93.04 Açıklama Notu",
+   "Coplar, ağır sopalar, içi dolu bastonlar; muştalar; sapanlar (oyuncak sapanlar 95.03); basınçlı hava, gaz veya sert yayla çalışan tüfek ve tabancalar; karbondioksit gazıyla hayvanlara anestezik içeren şırınga fırlatan tüfek ve tabancalar; göz yaşartıcı gaz içeren aerosol kutular."
+  ],
+  [
+   "93.05 Açıklama Notu",
+   "Namlular, geri tepme mekanizmaları, taretler, üçayaklar, tetik düzenekleri, horozlar, şarjörler, nişangahlar, dipçikler, kabzalar, taşıma kayışları, susturucular, sökülebilir geri tepme yavaşlatıcıları. Hariç: genel kullanıma mahsus parçalar (Bölüm XV, Fasıl 39), silah kılıfları (42.02), uçaklar için silah kameraları (90.07), teleskopik dürbünler (90.13), temizleme malzemeleri (82.05, 96.03 gibi)."
+  ],
+  [
+   "93.06 Açıklama Notu",
+   "Mermiler, her nevi fişekler (perçin tabancaları için kuru sıkılar dahil), havalı silah saçmaları ve küçük okları (oyuncak silahlarınki hariç), balistik füzeler, torpiller, güdümlü roketler, mayınlar, derinlik bombaları, el bombaları, zıpkınlar ve bunların gövde, kovan, tapa, kanat gibi parçaları. Hariç: sevk barutları ve hazırlanmış patlayıcılar (36.01, 36.02), emniyet fitilleri, kapsüller, fünyeler (36.03), işaret fişekleri ve yağmur roketleri (36.04), dolu yangın söndürme bombaları (38.13), roket ve torpil motorları (84.11, 84.12), telsiz ve radar (85.26), saat makinaları (91.08–91.10, 91.14)."
+  ],
+  [
+   "93.07 Açıklama Notu",
+   "Kılıç (baston şeklinde olanlar dahil), pala, kasatura, mızrak, zıpkın, kargı, hançer ve benzerleri seremoni, dekorasyon veya tiyatro için yapılmış olsa da buradadır; yalnızca dövülmüş kılıç ağzı taslakları, kabzalar, siperlikler ve kılıç, süngü ve kama kınları dahildir. Hariç: deri (42.03) veya tekstil (62.17) kılıç kuşamları, kılıç düğümleri (42.05, 63.07), av ve kamp bıçakları (82.11) ve kınları (42.02), kıymetli metal kınlar (71.15), eskrim kılıçları (95.06)."
+  ]
+ ],
+ "sinir_komsulari": [
+  [
+   "Tank, zırhlı otomobil",
+   "87.10",
+   "Fasıl 93 Not 1(c); silahlı olsa bile taşıt"
+  ],
+  [
+   "Harp gemisi; askeri uçak",
+   "89.06 / Fasıl 88",
+   "Fasıl 93 Genel Açıklamalar"
+  ],
+  [
+   "Zırhlı demiryolu taşıtı",
+   "Fasıl 86",
+   "Vagona monte uzun menzilli top ise 93.01"
+  ],
+  [
+   "Sevk barutu, hazırlanmış patlayıcı",
+   "36.01 / 36.02",
+   "93.06 hariç tutması"
+  ],
+  [
+   "Kapsül, fünye, emniyet fitili",
+   "36.03",
+   "Fasıl 93 Not 1(a)"
+  ],
+  [
+   "İşaret fişeği, yağmur roketi",
+   "36.04",
+   "Fişek 36.04; onu atan tabanca 93.03"
+  ],
+  [
+   "Dolu yangın söndürme bombası",
+   "38.13",
+   "93.06 hariç tutması"
+  ],
+  [
+   "Ayrı gelen teleskopik dürbün",
+   "90.13",
+   "Fasıl 93 Not 1(d); silahla gelirse silahla"
+  ],
+  [
+   "Uçaklar için silah kamerası",
+   "90.07",
+   "93.05 hariç tutması"
+  ],
+  [
+   "Tabanca veya tüfek kılıfı",
+   "42.02",
+   "93.05 hariç tutması"
+  ],
+  [
+   "Çelik miğfer; çelik yelek",
+   "Fasıl 65 / maddesine göre",
+   "Fasıl 93 Genel Açıklamalar"
+  ],
+  [
+   "Okçuluk yayı ve oku; eskrim kılıcı",
+   "95.06",
+   "Fasıl 93 Not 1(e)"
+  ],
+  [
+   "Oyuncak tabanca, oyuncak sapan",
+   "95.03",
+   "Fasıl 93 Not 1(e); 93.04 Açıklama Notu"
+  ],
+  [
+   "Patlayıcıyla çalışan perçin tabancası, dübel aleti",
+   "82.05",
+   "93.03 hariç tutması"
+  ],
+  [
+   "Zararlı ot yakmaya mahsus alev atıcı",
+   "84.24",
+   "93.01 hariç tutması"
+  ],
+  [
+   "Av ve kamp bıçağı; bunların kını",
+   "82.11 / 42.02",
+   "93.07 hariç tutması"
+  ],
+  [
+   "Kıymetli metal kılıç kını",
+   "71.15",
+   "93.07 hariç tutması"
+  ],
+  [
+   "Kılıçlı baston, tüfekli baston",
+   "93.07 / 93.03",
+   "66.02’de değil, Fasıl 93’te"
+  ]
+ ],
+ "tuzaklar": [
+  "<b>Askeri olmak taşıtı Fasıl 93’e sokmaz.</b> Tank 87.10, harp gemisi 89.06, zırhlı tren Fasıl 86’dadır; ama bunlar için ayrı gelen top ve makinalı tüfek 93.01’dedir. Demiryolu vagonuna monte uzun menzilli top da 93.01’dir.",
+  "<b>Her tabanca 93.02 değildir.</b> Makinalı tabanca 93.01; kuru sıkı, işaret fişeği tabancası ve sürgülü hayvan öldürme tabancası 93.03; havalı ve gazlı tabanca 93.04. Hayvan öldürmede kullanılan mermi atan tabanca ise 93.02’de kalır.",
+  "<b>İşaret fişeği ile işaret tabancası ayrıdır.</b> Fişeğin kendisi 36.04; yalnızca işaret fişeği atmak için yapılan tabanca 93.03.",
+  "<b>Patlayıcı mühimmat değildir.</b> Barut ve hazır patlayıcılar 36.01 / 36.02, kapsül ve fünyeler 36.03; dolu fişek, mermi, bomba ve top mermisi tapaları 93.06.",
+  "<b>Dürbün silahla gelirse silahla gider.</b> Silaha takılı veya silahla birlikte gelen teleskopik dürbün silahın pozisyonunda; ayrı gelirse 90.13.",
+  "<b>Seremoni kılıcı da silahtır.</b> Tören, dekorasyon veya tiyatro kılıcı 93.07; eskrim kılıcı 95.06; av bıçağı 82.11.",
+  "<b>Kın ve kılıf ayrı yollara gider.</b> Kılıç, süngü ve kama kını 93.07; tabanca ve tüfek kılıfı 42.02; av bıçağı kını 42.02; kıymetli metal kın 71.15.",
+  "<b>Patlayıcıyla çalışan alet silah değildir.</b> Perçin tabancası ve dübel aleti 82.05; ama bunlarda kullanılan kuru sıkı fişek 93.06.",
+  "<b>Telsiz ve radar mühimmat parçası sayılmaz.</b> Not 2 gereği 85.26’dadır; füze ve torpil motorları da 84.11 / 84.12’dedir.",
+  "<b>Sapan iki yere gider.</b> Kuşlara ve zararlılara atış için yapılan sapan 93.04; oyuncak sapan 95.03."
+ ],
+ "hafiza": {
+  "kanca": "HARP (01) · TABANCA (02) · BARUTLU DİĞER (03) · HAVALI-SOPA (04) · PARÇA (05) · MERMİ (06) · KILIÇ (07)",
+  "aciklama": "Bir cephanelikte yürüyün: önce ağır silahlar ve toplar (01), sonra tabanca rafı (02), av ve kuru sıkı tüfekleri (03), havalı tüfekler ve coplar (04), yedek parça dolabı (05), cephane sandıkları (06), en sonda duvarda asılı kılıçlar (07). Patlayıcı deposu (Fasıl 36), tank garajı (87.10) ve dürbün vitrini (Fasıl 90) cephaneliğin dışındadır."
+ },
+ "sinav_odagi": [
+  "Bu fasıl çıkmış sorularda az sayıda doğrudan soruyla yer almıştır; ağırlık “hangisi 93. fasılda sınıflandırılmaz” ve “hangi fasılda yer alır” kalıplarındadır.",
+  "Fasıl 93 Not 1(e): ok ve yayın Fasıl 95’e gittiği; av tüfeği, mızrak, süngü ve kılıç kınının Fasıl 93’te kaldığı.",
+  "Görünüşü başka fasılı düşündüren eşya: kılıçlı bastonun 66. Fasıl (bastonlar) yerine Fasıl 93’te sınıflandırılması.",
+  "GYK 5(a): av tüfeği ile tüfeğin şekline uygun yapılmış mahfazanın birlikte, tüfeğin pozisyonunda sınıflandırılması.",
+  "Bölüm ve komşu pozisyon bilgisi: tabancanın Bölüm XIX’da, kol saati ve gitarın Bölüm XVIII’de olması; silah ve tabanca mahfazalarının 42.02 pozisyon metninde sayılması."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Aşağıdakilerden hangisi Türk Gümrük Tarife Cetvelinin 93. Faslında <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Av tüfeği",
+    "Mızrak",
+    "Süngü",
+    "Ok ve yay",
+    "Kılıç kını"
+   ],
+   "cevap": "D",
+   "aciklama": "Fasıl 93 Not 1(e) okları ve yayları Fasıl 95’e gönderir. Av tüfeği 93.03’te; mızrak, süngü ve kılıç kını 93.07’de sınıflandırılır."
+  },
+  {
+   "soru": "Kılıçlı baston isimli eşya Türk Gümrük Tarife Cetvelinin hangi faslında yer almaktadır?",
+   "secenekler": [
+    "66",
+    "93",
+    "95",
+    "90"
+   ],
+   "cevap": "B",
+   "aciklama": "93.07 baston şeklindeki kılıçları açıkça kapsar; Fasıl 66 notu da tüfekli, kılıçlı ve kurşunlu bastonları Fasıl 93’e gönderir."
+  }
+ ],
+ "ozet": [
+  "Askeri silah 93.01, revolver-tabanca 93.02, barutlu diğer silah ve cihaz 93.03, havalı-gazlı silah ve sopa 93.04, kesici-delici silah 93.07.",
+  "Parça ve aksesuar 93.05; mermi, fişek, saçma, bomba, mayın, torpil ve parçaları 93.06.",
+  "Taşıtlar (87.10, 89.06, Fasıl 86 ve 88), patlayıcılar (Fasıl 36), çelik miğfer (Fasıl 65) fasıl dışıdır.",
+  "Ok-yay, eskrim kılıcı, oyuncak silah Fasıl 95; ayrı gelen dürbün 90.13; silah kılıfı 42.02; perçin tabancası 82.05.",
+  "Seremoni ve tiyatro kılıcı da 93.07’dedir; kıymetli metal süsleme silahı Fasıl 71’e götürmez.",
+  "Mühimmat parçası sayılmayanlar: telsiz-radar (85.26), roket motoru (84.11 / 84.12), saat makinası (Fasıl 91)."
+ ],
+ "sorular": [
+  {
+   "soru": "Tarife Cetveline göre, yalnızca kuru sıkı atış yapabilen, namlusunda gaz çıkış delikleri bulunan ve yarış başlatmada kullanılan tabanca hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "93.02",
+    "93.04",
+    "93.03",
+    "95.03",
+    "93.05"
+   ],
+   "cevap": "C",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "93.03 açıklama notu yalnızca kuru sıkı atış yapabilen taklit, imitasyon veya emniyet tabanca ve revolverlerini, yarış ve tiyatro tabancalarını kapsar. 93.02 patlayıcının itiş gücüyle mermi atan tabancalar içindir ve kuru sıkı tabancaları açıkça 93.03’e gönderir. Havalı-gazlı tabancalar 93.04, oyuncaklar 95.03’tedir.",
+   "dayanak": "93.02 hariç tutmaları; 93.03 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, tabanca fişeği atan ve tetiğe basılı tutulduğu sürece şarjör boşalana kadar ateşe devam eden, çoğunlukla elden atış yapılan ve dipçiği uzatılabilen makinalı tabanca hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "93.02",
+    "93.01",
+    "93.03",
+    "93.05",
+    "93.04"
+   ],
+   "cevap": "B",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "93.02 açıklama notu sürekli atış yapabilen ateşli silahları hariç tutar; bunlar yarı makinalı tüfek (makinalı tabanca) olarak 93.01’dedir. “Tabanca” adı 93.02’yi düşündürür; tuzak budur. 93.03 diğer ateşli silahlar, 93.04 havalı-gazlı silahlar içindir.",
+   "dayanak": "93.01 Açıklama Notu (2); 93.02 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, sıkıştırılmış karbondioksit gazıyla çalışan ve vahşi hayvanlara anestezik içeren otomatik bir şırıngayı uzaktan fırlatmakta kullanılan tüfek hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "90.18",
+    "93.03",
+    "93.06",
+    "90.19",
+    "93.04"
+   ],
+   "cevap": "E",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "93.04 açıklama notu, sıkıştırılmış karbondioksit gazıyla çalışan ve hayvanlara anestezik veya ilaç içeren şırınga fırlatan tüfek ve tabancaları açıkça sayar. Patlayıcı kullanmadığı için 93.03’e girmez. Veteriner amaçlı kullanımı onu 90.18’deki tıbbi alet yapmaz; fırlatılan şırınga mühimmat (93.06) değildir.",
+   "dayanak": "93.04 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, basınçlı havayla çalışan tüfeklerde kullanılan, ortası girintili kurşun saçmalar hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "93.06",
+    "78.06",
+    "93.05",
+    "95.03",
+    "93.04"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "93.06 açıklama notu yay, gaz veya tazyikli havayla işleyen tüfek, karabina ve tabancalar için mermi çekirdeklerini ve içi oyuk, küremsi, ortası girintili saçmaları kapsar. Kurşundan olması onu 78.06’ya götürmez. Silah parçası (93.05) değil mühimmattır; yalnızca 95.03’teki oyuncak silahlar için olanlar hariçtir.",
+   "dayanak": "93.06 Açıklama Notu (3)."
+  },
+  {
+   "soru": "Tarife Cetveline göre, ayrı olarak gelen, süngü için deriden yapılmış kın hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "42.02",
+    "42.05",
+    "93.05",
+    "93.07",
+    "71.15"
+   ],
+   "cevap": "D",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "93.07 kılıç, süngü ve kamaların kın ve kılıflarını açıkça kapsar; 42.02 açıklama notu da kılıç, pala, kama ve benzeri silahların mahfazalarını 93.07’ye gönderir. 42.02 bıçak kılıflarını ve silah kılıflarını kapsadığı için tuzaktır. 93.05 ateşli silah parçaları içindir; 71.15 yalnızca kıymetli metal kınları alır.",
+   "dayanak": "93.07 Açıklama Notu; 42.02 hariç tutmaları."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 93. faslında <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Seremonilerde kullanılmak üzere yapılmış süslü kılıç",
+    "Palamar atan tüfek",
+    "Muşta",
+    "Silahla donatılmış zırhlı savaş aracı",
+    "Torpil tüpü"
+   ],
+   "cevap": "D",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Fasıl 93 Not 1(c) zırhlı savaş araçlarını 87.10’a gönderir; genel açıklamalara göre silahla donanmış askeri taşıtlar fasıl dışıdır. Seremoni kılıcı 93.07’de, palamar atan tüfek 93.03’te, muşta 93.04’te, torpil tüpü 93.01’dedir.",
+   "dayanak": "Fasıl 93 Not 1(c); Fasıl 93 Genel Açıklamalar."
+  },
+  {
+   "soru": "Ayrı olarak gelen aşağıdaki eşyadan hangisi 93.05 pozisyonunda <b>yer almaz</b>?",
+   "secenekler": [
+    "Av tüfeği için ahşap dipçik",
+    "Tabanca şarjörü",
+    "Tabanca için deri kılıf",
+    "Spor ve hedef atış silahları için sökülebilir geri tepme yavaşlatıcısı",
+    "Susturucu"
+   ],
+   "cevap": "C",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "93.05 açıklama notu silah kılıflarını hariç tutar ve 42.02’ye gönderir. Ahşap dipçik, şarjör, sökülebilir geri tepme yavaşlatıcısı ve susturucu 93.05’te açıkça sayılmıştır. Kılıfın silaha özgü olması onu silah aksesuarı yapmaz.",
+   "dayanak": "93.05 Açıklama Notu ve hariç tutmalar."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 93.06 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Mühimmat doldurmaya hazır halde sevk barutu",
+    "El bombası gövdesi",
+    "Fişek kovanı",
+    "Top mermisi için yakınlık ayarlı infilak ettirici fitil (tapa)",
+    "Torpil için yüzdürücü"
+   ],
+   "cevap": "A",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "93.06 açıklama notu, mühimmat için doldurmaya hazır olsa dahi sevk barutlarını ve hazırlanmış patlayıcıları hariç tutar (36.01, 36.02). El bombası gövdesi, fişek kovanı, top mermisi tapası ve torpil yüzdürücüsü mühimmat parçası olarak 93.06’dadır.",
+   "dayanak": "Fasıl 93 Not 1(a); 93.06 Açıklama Notu ve hariç tutmalar."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 93.07 pozisyonunda <b>yer almaz</b>?",
+   "secenekler": [
+    "Tiyatroda kullanılmak üzere yapılmış kılıç",
+    "Yalnızca dövülmüş kılıç ağzı taslağı",
+    "Baston şeklindeki kılıç",
+    "Süngü kını",
+    "Eskrim kılıcı"
+   ],
+   "cevap": "E",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Eskrim kılıçları Fasıl 93 Not 1(e) ve 93.07 hariç tutması gereği 95.06’dadır. Tiyatro kılıcı, yalnızca dövülmüş kılıç ağzı taslağı, baston şeklindeki kılıç ve süngü kını 93.07 açıklama notunda açıkça sayılmıştır.",
+   "dayanak": "Fasıl 93 Not 1(e); 93.07 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Havalı tabanca",
+    "Polis copu",
+    "Oyuncak olmayan sapan",
+    "Göz yaşartıcı gaz içeren aerosol sprey kutusu",
+    "Yalnızca kuru sıkı atış yapabilen tabanca"
+   ],
+   "cevap": "E",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Kuru sıkı tabanca, bir patlayıcının itiş gücüyle çalıştığı için 93.03’tedir. Havalı tabanca, cop, sapan ve göz yaşartıcı sprey 93.04’teki diğer silahlardır. Kuru sıkı tabancayı “mermi atmadığı” için 93.04’e koymak tuzaktır.",
+   "dayanak": "93.03 ve 93.04 Açıklama Notları."
+  },
+  {
+   "soru": "Hayvan avlama veya öldürmeye ilişkin aşağıdaki silahlardan hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Ağızdan doldurmalı kara barutlu tüfek",
+    "Hayvanları öldürmekte kullanılan, mermi atan büyük çaplı tabanca",
+    "Zıpkın tüfeği",
+    "Hayvanları sersemletmeye mahsus sürgülü silah",
+    "Spor amaçlı av tüfeği"
+   ],
+   "cevap": "B",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "93.03 açıklama notu, çoğunlukla hayvan öldürmekte kullanılan mermi atan büyük çaplı tabancaları hariç tutar ve 93.02’ye gönderir. Ağızdan dolma tüfek, zıpkın tüfeği, sürgülü hayvan öldürme silahı (ok namludan çıkmaz) ve av tüfeği 93.03’tedir. Kullanım amacının aynı olması tuzaktır; belirleyici olan mermi atılıp atılmamasıdır.",
+   "dayanak": "93.03 Açıklama Notu ve hariç tutma; 93.02 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden farklı bir fasılda sınıflandırılır?",
+   "secenekler": [
+    "Demiryolu vagonuna monte edilmiş uzun menzilli top",
+    "Tanklardan ayırt edilebilen kendinden hareketli top",
+    "Zırhlı demiryolu taşıtı",
+    "Uçaksavar topu",
+    "Havan topu"
+   ],
+   "cevap": "C",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Zırhlı demiryolu taşıtları, silahla donanmış olsalar da taşıt oldukları için Fasıl 86’dadır. Demiryolu vagonuna monte uzun menzilli top ve 87.10’daki tanklardan ayırt edilebilen kendinden hareketli top açıklama notu gereği 93.01’de kalır; uçaksavar ve havan topları da 93.01’dedir.",
+   "dayanak": "Fasıl 93 Genel Açıklamalar; 93.01 Açıklama Notu (1)."
+  },
+  {
+   "soru": "Aşağıdaki gruplardan hangisinde yer alan eşyanın <b>tamamı</b> Fasıl 93’te sınıflandırılır?",
+   "secenekler": [
+    "Süngü – mızrak – kılıç kını",
+    "Av tüfeği – ayrı gelen teleskopik dürbün – fişek",
+    "Tabanca – çelik miğfer – şarjör",
+    "Kuru sıkı tabanca – perçin tabancası – fişek",
+    "Havalı tüfek – okçuluk yayı – saçma"
+   ],
+   "cevap": "A",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Süngü, mızrak ve kılıç kını 93.07’dedir. Ayrı gelen teleskopik dürbün Fasıl 90’a, çelik miğfer Fasıl 65’e, patlayıcıyla çalışan perçin tabancası 82.05’e, okçuluk yayı Fasıl 95’e gittiğinden diğer gruplar Fasıl 93 dışında bir eşya içerir.",
+   "dayanak": "Fasıl 93 Not 1(d), (e); Fasıl 93 Genel Açıklamalar; 93.03 ve 93.07 Açıklama Notları."
+  },
+  {
+   "soru": "Fasıl 93 Not 1 ve genel açıklamalarına göre, silahlarda kullanılmaya elverişli teleskopik dürbünler hangi durumda silahla birlikte Fasıl 93’te sınıflandırılır?",
+   "secenekler": [
+    "Askeri amaçla kullanılacak olduklarında",
+    "Silaha takılmış olarak veya takılacakları silahla birlikte geldiklerinde",
+    "Değerleri silahın değerini aşmadığında",
+    "Yalnızca 93.01’deki harp silahlarıyla birlikte geldiklerinde",
+    "Hiçbir durumda; her zaman Fasıl 90’da sınıflandırılırlar"
+   ],
+   "cevap": "B",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Not 1(d), silahlara takılmamış veya takılacağı silahla birlikte gelmemiş teleskopik dürbünleri Fasıl 90’a gönderir. Genel açıklamalar buna göre takılı veya birlikte gelen dürbünlerin silahla sınıflandırılacağını belirtir. Kullanım amacı, değer veya silah türü ölçüt değildir; ayrı gelen dürbün 90.13’tedir.",
+   "dayanak": "Fasıl 93 Not 1(d); Fasıl 93 Genel Açıklamalar; 93.05 hariç tutmaları."
+  },
+  {
+   "soru": "Fasıl 93 Not 2’ye göre, 93.06 pozisyonundaki “bunların aksam ve parçaları” deyimi aşağıdakilerden hangisini <b>kapsamaz</b>?",
+   "secenekler": [
+    "Bomba kanatları",
+    "Torpil pervaneleri ve jiroskopları",
+    "Fişek kovanları",
+    "85.26 pozisyonundaki telsiz ve radar cihazları",
+    "El bombası emniyet kamaları"
+   ],
+   "cevap": "D",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Not 2, 85.26’daki telsiz ve radar cihazlarını 93.06’daki mühimmat aksam ve parçası kapsamından çıkarır. Bomba kanatları, torpil pervaneleri ve jiroskopları, fişek kovanları ve el bombası emniyet kamaları 93.06 açıklama notunda mühimmat parçası olarak sayılmıştır.",
+   "dayanak": "Fasıl 93 Not 2; 93.06 Açıklama Notu."
+  },
+  {
+   "soru": "Fasıl 93 genel açıklamalarına göre aşağıdakilerden hangisi <b>doğrudur</b>?",
+   "secenekler": [
+    "Kıymetli metal veya kıymetli taşlarla donatılmış silahlar Fasıl 71’de sınıflandırılır.",
+    "Silahla donanmış ve yalnızca askeri amaçla imal edilmiş taşıtlar Fasıl 93’te sınıflandırılır.",
+    "Silahlar ve aksamı kıymetli metal, inci, kıymetli taş, sedef veya fildişi ile donatılmış olsa da Fasıl 93’te kalır.",
+    "İnsan vücudunu korumaya mahsus çelik yelekler 93.05’te sınıflandırılır.",
+    "Okçuluğa mahsus ok ve yaylar 93.04’te sınıflandırılır."
+   ],
+   "cevap": "C",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Genel açıklamalar, fasıldaki silahların ve parçalarının kıymetli metal, inci, kıymetli taş, bağa, sedef veya fildişi ile donatılmış olabileceğini belirtir; Fasıl 71 Not 3 de silahları kapsam dışında bırakır. Askeri taşıtlar Fasıl 86–89’da, vücut zırhları maddesine göre, okçuluk malzemesi Fasıl 95’tedir.",
+   "dayanak": "Fasıl 93 Genel Açıklamalar; Fasıl 93 Not 1(e); Fasıl 71 Not 3(m)."
+  },
+  {
+   "soru": "Fasıl 93 genel açıklamalarına göre aşağıdakilerden hangisi bu fasıl kapsamına giren eşya gruplarından biri <b>değildir</b>?",
+   "secenekler": [
+    "Silahlı kuvvetler ve polis tarafından kullanılmak üzere imal edilen silahlar",
+    "Şahısların nefis müdafaası, av veya nişan talimi için kullandığı türden silahlar",
+    "Bir patlayıcının itiş gücüyle çalışan palamar atan toplar gibi diğer cihazlar",
+    "Mermiler ve mühimmat (36. Fasıla girenler hariç)",
+    "Silahlı kuvvetlere mahsus çelik miğferler ve diğer askeri başlıklar"
+   ],
+   "cevap": "E",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Genel açıklamalar fasılın kapsamını askeri ve kolluk silahları, nefis müdafaası, av ve nişan silahları, patlayıcıyla çalışan diğer cihazlar ve Fasıl 36 dışındaki mühimmat olarak sayar. Çelik miğferler ve diğer askeri başlıklar ise açıkça hariç tutulmuş olup Fasıl 65’tedir.",
+   "dayanak": "Fasıl 93 Genel Açıklamalar."
+  },
+  {
+   "soru": "Tarife Cetveline göre, birlikte gümrüğe sunulan bir yarı otomatik tabanca ile bu tabancanın şekline uygun olarak yapılmış, uzun süre kullanılmaya elverişli ve normal olarak tabancayla birlikte satılan plastik mahfazası nasıl sınıflandırılır?",
+   "secenekler": [
+    "Birlikte, tabancanın pozisyonunda; GYK 5(a)",
+    "Ayrı ayrı: tabanca 93.02, mahfaza 42.02; GYK 1",
+    "Birlikte, aksesuar olarak 93.05’te; GYK 3(b)",
+    "Birlikte, mahfazanın pozisyonunda; GYK 3(c)",
+    "Birlikte, tabancanın pozisyonunda; GYK 5(b)"
+   ],
+   "cevap": "A",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 5(a), belli bir eşyaya uygun yapılmış, uzun süre kullanılmaya elverişli ve eşyayla birlikte sunulan mahfazaları eşyayla birlikte sınıflandırır; açıklama notu silah mahfazalarını örnek olarak sayar. Mahfaza ayrı gelseydi 42.02’ye girerdi. GYK 5(b) yalnızca olağan ambalaj malzemeleri içindir.",
+   "dayanak": "GYK 5(a) ve Açıklama Notu (II)(5); 93.02 Açıklama Notu."
+  },
+  {
+   "soru": "Nakliye kolaylığı için namlu, kundak ve tekerlekleri birbirinden ayrılmış halde, bütün parçaları aynı sevkiyatta birlikte sunulan ve yalnızca cıvatalarla yeniden monte edilecek bir sahra topunun sınıflandırılmasında hangi Genel Yorum Kuralları kullanılır?",
+   "secenekler": [
+    "GYK 1 ve 6",
+    "GYK 1, 2(b) ve 6",
+    "GYK 1, 3(b) ve 6",
+    "GYK 1, 2(a) ve 6",
+    "GYK 1, 4 ve 6"
+   ],
+   "cevap": "D",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 2(a)’nın ikinci kısmı, demonte halde sunulan tamamlanmış eşyanın monte edilmiş eşya gibi sınıflandırılacağını hükme bağlar; parçalar yalnızca bağlantı elemanlarıyla birleşmektedir. Böylece sahra topu 93.01’de sınıflandırılır; namlu ve kundak ayrıca 93.05’e gitmez. 3(b) farklı eşyadan oluşan setler, 2(b) madde karışımları içindir.",
+   "dayanak": "GYK 2(a) Açıklama Notu (V)–(VII); 93.01 Açıklama Notu (1)."
+  },
+  {
+   "soru": "Aşağıdaki silahları sınıflandırıldıkları pozisyonlarla eşleştiriniz.<br/>I. Revolver<br/>II. Havalı tüfek<br/>III. Obüs<br/>IV. Kama<br/>a) 93.01 · b) 93.02 · c) 93.04 · d) 93.07",
+   "secenekler": [
+    "I-a, II-c, III-b, IV-d",
+    "I-b, II-c, III-a, IV-d",
+    "I-b, II-d, III-a, IV-c",
+    "I-c, II-b, III-a, IV-d",
+    "I-b, II-a, III-c, IV-d"
+   ],
+   "cevap": "B",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Revolver 93.02’de; basınçlı havayla çalışan tüfek 93.04’te; obüs bir topçu silahı olarak 93.01’de; kama ve hançer 93.07’dedir. Havalı tüfeği “tüfek” olduğu için 93.01 veya 93.03’e koymak tipik hatadır.",
+   "dayanak": "93.01, 93.02, 93.04 ve 93.07 Açıklama Notları."
+  },
+  {
+   "soru": "93.01 açıklama notuna göre, zararlı otları yok etmeye mahsus alev atıcılar ……… pozisyonunda; düşman üzerine alev almış uçucu bir sıvı püskürten alev atıcılar ise ……… pozisyonunda sınıflandırılır. Boşluklara sırasıyla aşağıdakilerden hangisi gelmelidir?",
+   "secenekler": [
+    "93.01 – 84.24",
+    "93.04 – 93.01",
+    "84.24 – 93.04",
+    "36.04 – 93.01",
+    "84.24 – 93.01"
+   ],
+   "cevap": "E",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "93.01 açıklama notu, düşman üzerine alev almış uçucu sıvı püskürten alev atıcıları özel askeri fırlatıcılar arasında sayar; zararlı otları yok etmeye mahsus alev atıcıları ise hariç tutar ve 84.24’e gönderir. Belirleyici olan cihazın askeri amaçla tasarlanmasıdır.",
+   "dayanak": "93.01 Açıklama Notu (4)."
+  },
+  {
+   "soru": "Fasıl 93 ile ilgili aşağıdaki ifadelerden hangileri <b>doğrudur</b>?<br/>I. Kalem, çakı veya sigara kutusu şeklinde imal edilen ateşli silahlar 93.02’de sınıflandırılır.<br/>II. Bir patlayıcının itiş gücüyle çalışan perçin tabancaları ve dübel aletleri 93.03’tedir.<br/>III. Bulutların yağmura çevrilmesinde kullanılan, sac levhadan kesik koni şeklindeki yağmur topu 93.03’tedir.<br/>IV. Ucundaki zıpkını bir halatla atan zıpkın tüfekleri 93.03’tedir.",
+   "secenekler": [
+    "I ve II",
+    "II ve IV",
+    "I, III ve IV",
+    "II, III ve IV",
+    "I ve III"
+   ],
+   "cevap": "C",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "I, 93.02 açıklama notunda; III ve IV, 93.03 açıklama notunda açıkça yer alır. II yanlıştır: 93.03 açıklama notu patlayıcının itiş gücüyle çalışan perçin tabancalarını ve dübel aletlerini hariç tutar ve 82.05’e gönderir.",
+   "dayanak": "93.02 ve 93.03 Açıklama Notları."
+  },
+  {
+   "soru": "Fasıl 93 ile ilgili aşağıdaki ifadelerden hangileri <b>doğrudur</b>?<br/>I. Tanklara takılacak şekilde tasarlanmış, ayrı olarak gelen makinalı tüfekler 93.01’dedir.<br/>II. Uçaklar için silah kameraları 93.05’te sınıflandırılır.<br/>III. Güdümlü füzeler için 84.11 veya 84.12’deki motorlar 93.06’da mühimmat parçası olarak sınıflandırılır.<br/>IV. Mühimmat tapaları için saat makinaları ve bunların parçaları Fasıl 91’de sınıflandırılır.",
+   "secenekler": [
+    "I ve II",
+    "II ve III",
+    "I, II ve IV",
+    "I ve IV",
+    "III ve IV"
+   ],
+   "cevap": "D",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "I, 93.01 açıklama notuna ve genel açıklamalara; IV, 93.06 hariç tutmalarına (91.08–91.10, 91.14) uygundur. II yanlıştır: silah kameraları 90.07’dedir. III yanlıştır: roket ve torpil motorları 84.11 veya 84.12’de kalır.",
+   "dayanak": "Fasıl 93 Genel Açıklamalar; 93.01, 93.05 ve 93.06 Açıklama Notları."
+  },
+  {
+   "soru": "Ceviz ağacından dipçikli; iki namlusundan biri düz, diğeri yivli-setli; her atıştan sonra elle doldurulan; sportif avcılık için üretilmiş ve metal kısımları kıymetli metal kakmalı süslemelerle bezenmiş bir tüfek, üzerine takılı teleskopik dürbünüyle birlikte gümrüğe sunulmaktadır. Bu eşya Tarife Cetvelinde hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "93.03",
+    "93.01",
+    "93.02",
+    "90.13",
+    "93.05"
+   ],
+   "cevap": "A",
+   "tip": "Senaryo",
+   "gerekce": "Spor, av ve hedef tüfekleri, namluları düz veya yivli-setli olsun, 93.03’tedir; askeri tüfekler 93.01’e girer. Silaha takılı teleskopik dürbün silahla birlikte sınıflandırılır, 90.13’e gitmez. Kıymetli metal süslemeler silahı Fasıl 93 dışına çıkarmaz.",
+   "dayanak": "93.03 Açıklama Notu (1); Fasıl 93 Not 1(d); Fasıl 93 Genel Açıklamalar."
+  },
+  {
+   "soru": "Bir askeri tören birliği için yeni olarak üretilmiş; yüksek kaliteli çelikten bıçağı, gümüş kakmalı kabzası bulunan ve deri kınıyla birlikte sunulan, yalnızca törenlerde kullanılacak kılıç hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "71.15",
+    "93.07",
+    "82.11",
+    "95.06",
+    "97.05"
+   ],
+   "cevap": "B",
+   "tip": "Senaryo",
+   "gerekce": "93.07 kılıçları, yalnızca seremoni, dekorasyon veya tiyatro amacıyla yapılmış olsalar dahi kapsar; kılıçla birlikte gelen kın da buradadır. Gümüş kakma silahı Fasıl 71’e götürmez (71.15 yalnızca kıymetli metal kınlar içindir). Yeni üretildiği için koleksiyon eşyası (97.05) değildir; 82.11 av bıçakları, 95.06 eskrim kılıçları içindir.",
+   "dayanak": "93.07 Açıklama Notu; Fasıl 93 Genel Açıklamalar; Fasıl 71 Not 3(m)."
+  }
+ ]
+}

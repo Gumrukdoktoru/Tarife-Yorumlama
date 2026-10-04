@@ -1,0 +1,426 @@
+#!/usr/bin/env python3
+# Fasıl 39 modülü üreticisi
+import json, os
+
+KITAP = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+E4 = "Eşya → 4’lü pozisyon"
+OT = "Olumsuz teşhis"
+FA = "Farklı/aynı pozisyon veya fasıl"
+FN = "Fasıl notu · Tanım/Eşik"
+GY = "Genel Yorum Kuralı"
+ES = "Eşleştirme / Boşluk doldurma"
+CC = "Çoktan-çoğa (I–IV)"
+SN = "Senaryo"
+
+d = {
+ "tur": "fasil",
+ "fasil": 39,
+ "baslik": "Plastikler ve mamulleri",
+ "bolum": "VII",
+ "oz": {
+  "vurgu": "Fasıl 39 iki katlıdır: I. Tali Fasıl (39.01–39.14) ilk şekillerdeki polimerleri kimyasal yapısına göre, II. Tali Fasıl (39.15–39.26) hurdaları, yarı mamulleri ve eşyayı şekline ve işlevine göre ayırır. Plastik eşyada ilk soru daima şudur: Fasıl 39 Not 2 eşyayı daha özel bir fasla (42, 64–66, 94, 95, 96, Bölüm XVI, XVII vb.) gönderiyor mu?",
+  "maddeler": [
+   "“Plastik”: 39.01–39.14 maddeleri; dış etkiyle şekil alır, etki kalkınca şeklini korur. Vulkanize lifler dahil, Bölüm XI’in dokumaya elverişli maddeleri hariç (Not 1). Tanım tarifenin her yerinde geçerlidir.",
+   "İlk şekiller yalnız sıvı, hamur, dispersiyon, çözelti ile düzensiz blok, biçimsiz parça, toz, granül, pul ve benzeri dökme biçimlerdir (Not 6). Düzenli geometrik blok ilk şekil değil, levhadır (Not 10).",
+   "Kopolimer ve polimer karışımları ağırlıkça üstün gelen komonomer ünitesine göre; üstün olan yoksa numara sırasına göre en son pozisyona gider (Not 4).",
+   "Yarı mamulde ölçü ve şekil belirler: kesiti 1 mm’yi geçen monofil-profil 39.16, Not 8’e uyan boru 39.17, gözeneksiz ve takviyesiz levha 39.20, gözenekli veya takviyeli levha 39.21.",
+   "Eşya pozisyonları özelden genele dizilir: 39.22 hijyenik, 39.23 ambalaj, 39.24 ev-mutfak-tuvalet, 39.25 Not 11 inşaat malzemesi, en sonda 39.26."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+  "satirlar": [
+   ["1", "Fasıl 39 Not 2’de sayılan bir eşya mı? (çanta-bavul, ayakkabı-şapka-şemsiye, mobilya-lamba, oyuncak, düğme-tarak-fermuar-kalem, makine, taşıt parçası, saat, optik eşya)", "<b>42.02</b> · Bölüm XII · Fasıl <b>94</b>, <b>95</b>, <b>96</b> · Bölüm XVI, XVII · Fasıl 90, 91, 92"],
+   ["2", "Uçucu organik çözücüde çözelti mi ve çözücü ağırlıkça %50’yi geçiyor mu? (kollodiyon hariç)", "<b>32.08</b>"],
+   ["3", "Fasıl 40 anlamında sentetik kauçuk mu? Mum mu? Yapıştırıcı olarak hazırlanmış mı?", "Fasıl <b>40</b> · <b>34.04</b> · <b>35.06</b>"],
+   ["4", "İlk şekillerde polimer mi? (sıvı, hamur, dispersiyon, çözelti; düzensiz blok, toz, granül, pul)", "<b>39.01–39.14</b> (üstün komonomer; eşitlikte en son pozisyon)"],
+   ["5", "Döküntü, kalıntı veya hurda mı?", "<b>39.15</b> (ilk şekle dönmüş tek termoplastik ise 39.01–39.14)"],
+   ["6", "Enine kesitinin en geniş yeri 1 mm’yi geçen monofil, çubuk veya profil mi?", "<b>39.16</b>"],
+   ["7", "Not 8’e uyan boru, hortum, bağlantı elemanı veya sucuk kılıfı mı?", "<b>39.17</b>"],
+   ["8", "Yer kaplaması ya da Not 9’a uyan duvar-tavan kaplaması mı?", "<b>39.18</b>"],
+   ["9", "Kendinden yapışkan levha, bant, film veya diğer yassı şekil mi?", "<b>39.19</b>"],
+   ["10", "Diğer levha, film, folye, şerit mi? (Not 10)", "Gözeneksiz ve takviyesiz <b>39.20</b> · gözenekli veya takviyeli-lamine <b>39.21</b>"],
+   ["11", "Hijyenik eşya, ambalaj eşyası, ev-mutfak eşyası ya da Not 11 listesindeki inşaat malzemesi mi?", "<b>39.22</b> / <b>39.23</b> / <b>39.24</b> / <b>39.25</b>"],
+   ["12", "Hiçbiri değilse", "<b>39.26</b>"]
+  ],
+  "dipnot": "* Bölüm VII Not 2: Esas kullanım bakımından tali olmayan motif, oyma veya resim baskılı plastik eşya Fasıl 49’a gider; 39.18 ve 39.19 eşyası ise baskılı olsa da yerinde kalır."
+ },
+ "pozisyon_haritasi": [
+  ["39.01", "Etilen polimerleri (ilk şekil)", "Etilen üstün; klorlanmış PE dahil", "PE granül, EVA, LLDPE"],
+  ["39.02", "Propilen ve diğer olefin polimerleri", "Etilen dışındaki olefinler", "PP granül, poliizobütilen"],
+  ["39.03", "Stiren polimerleri", "Stiren üstün", "Genleşebilir polistiren, SAN, ABS"],
+  ["39.04", "Vinil klorür, halojenli olefin polimerleri", "Klor veya flor içeren olefin", "PVC tozu, PTFE"],
+  ["39.05", "Vinil ester ve diğer vinil polimerleri", "39.04 dışındaki vinil polimerleri", "Polivinil asetat dispersiyonu, PVAL"],
+  ["39.06", "Akrilik polimerler", "Akrilik-metakrilik asit türevleri", "PMMA granül"],
+  ["39.07", "Polieter, epoksi, polikarbonat, poliesterler", "Eter veya ester bağlı zincir", "PET cipsi, epoksi reçine, PLA"],
+  ["39.08", "Poliamidler", "Amid bağı; naylonlar", "Poliamid-6 granül"],
+  ["39.09", "Amino, fenolik reçineler; poliüretanlar", "Kondensasyon reçineleri ve PU", "Üre-formaldehit, melamin reçinesi, ham MDI"],
+  ["39.10", "Silikonlar", "Si-O-Si ve Si-C bağları", "Silikon yağı, reçinesi, elastomeri"],
+  ["39.11", "Petrol reçineleri, politerpenler vb.", "Not 3’teki diğer ürünler; başka yerde yer almayan", "Kumaron-inden reçinesi, polisülfon"],
+  ["39.12", "Selüloz ve kimyasal türevleri", "Başka yerde yer almayan; ilk şekil", "Selüloz asetat, CMC, kollodiyon"],
+  ["39.13", "Tabii ve tadil edilmiş tabii polimerler", "Başka yerde yer almayan; ilk şekil", "Aljinik asit, klorlanmış kauçuk, dekstran"],
+  ["39.14", "Polimer esaslı iyon değiştiriciler", "39.01–39.13 esaslı; ilk şekil", "İyon değiştirici reçine granülü"],
+  ["39.15", "Plastik döküntü, kalıntı, hurda", "Kullanılmaz eşya ve imalat artığı", "Kırık kasa, talaş, termoset hurda"],
+  ["39.16", "Monofil, çubuk, profil", "Kesit 1 mm’yi geçer; ileri işlem yok", "PVC pencere profili, plastik çubuk"],
+  ["39.17", "Boru, hortum, bağlantı elemanları", "Not 8 kesit şartı; sucuk kılıfı dahil", "Bahçe hortumu, dirsek, flanş"],
+  ["39.18", "Yer kaplamaları; duvar-tavan kaplamaları", "Rulo veya karo; duvar için Not 9", "Vinil yer karosu, plastik duvar kaplaması"],
+  ["39.19", "Kendinden yapışkan levha, bant, film", "Basınca duyarlı, kalıcı yapışkan", "Ambalaj bandı, yapışkan folyo"],
+  ["39.20", "Diğer levha, film, folye (gözeneksiz)", "Takviyesiz, lamine değil, mesnetsiz", "PE film, PET levha"],
+  ["39.21", "Diğer levha, film, folye", "Gözenekli veya takviyeli-lamine", "Köpük levha, cam elyaf takviyeli levha"],
+  ["39.22", "Küvet, lavabo, klozet vb. hijyenik eşya", "Sabit tesisat; rezervuar dahil", "Duş teknesi, klozet kapağı"],
+  ["39.23", "Taşıma-ambalaj eşyası; tıpa, kapak", "Ambalaj işlevi", "PET şişe, poşet, kasa, makara"],
+  ["39.24", "Sofra, mutfak, ev, tuvalet eşyası", "Ev içi kullanım", "Tabak, çöp kutusu, kova, lazımlık"],
+  ["39.25", "İnşaat malzemeleri (Not 11)", "Sınırlı liste; 300 litre üstü tank", "Pencere doğraması, panjur, foseptik"],
+  ["39.26", "Diğer plastik eşya", "Başka yerde yer almayan", "Yağmurluk, yapay tırnak, emzik, vida"]
+ ],
+ "notlar": [
+  ["Bölüm VII Not 1", "Karıştırıldıktan sonra Bölüm VI veya VII ürünü oluşturan, tamamen veya kısmen Bölüm VII maddelerinden takımlar o ürünün pozisyonunda sınıflandırılır. Şartlar: (a) yeniden bir araya getirmeye gerek duyulmadan birlikte kullanılacağı açıkça belli, (b) birlikte ithal ve (c) nitelik veya miktarca birbirini tamamlayıcı olmak. Karıştırılmadan birbiri ardına kullanılacak takımlar bu not dışındadır: perakende ise genellikle GYK 3(b), değilse bileşenler ayrı ayrı sınıflandırılır."],
+  ["Bölüm VII Not 2", "Esas kullanım bakımından tali derecede olmayan motif, oyma veya resim baskılı plastik, kauçuk ve bunlardan eşya Fasıl 49’dadır. İstisna: 39.18 (yer, duvar, tavan kaplamaları) ve 39.19 (kendinden yapışkan yassı şekiller) eşyası baskılı olsa da yerinde kalır."],
+  ["Fasıl 39 Not 1", "“Plastik”: dış etkiler (genellikle ısı ve basınç, gerekirse çözücü veya plastifiyan) altında polimerizasyon anında veya sonra kalıplama, dökme, çekme, haddeleme vb. ile şekil alabilen ve etki kalkınca şeklini koruyabilen 39.01–39.14 maddeleri. Tarifenin her yerinde geçerlidir; vulkanize lifleri kapsar, Bölüm XI’de dokumaya elverişli sayılan maddeleri kapsamaz."],
+  ["Fasıl 39 Not 2", "Hariç (a)–(l): yağlama müstahzarları (27.10, 34.03); mumlar (27.12, 34.04); kimyasal yapısı belirli izole organik bileşikler (Fasıl 29); heparin ve tuzları (30.01); çözücüsü ağırlıkça %50’yi geçen uçucu organik çözücülü çözeltiler (kollodiyon hariç) (32.08) ve ıstampacılık varakaları (32.12); yüzey aktif maddeler (34.02); eritilmiş sakızlar ve ester sakızları (38.06); mineral yağ katkıları (38.11); polimer esaslı hidrolik sıvılar (38.19); plastik mesnet üzerindeki laboratuvar ve teşhis reaktifleri (38.22); sentetik kauçuk (Fasıl 40)."],
+  ["Fasıl 39 Not 2", "Hariç (m)–(z): saraciye (42.01) ve sandık, bavul, el çantası vb. mahfazalar (42.02); hasır ve sepetçi eşyası (Fasıl 46); 48.14 duvar kaplamaları; Bölüm XI; Bölüm XII (ayakkabı, başlık, şemsiye, baston, kamçı ve parçaları); taklit mücevher (71.17); Bölüm XVI makine ve cihazları; Bölüm XVII hava ve kara taşıtı aksamı; Fasıl 90 (optik eleman, gözlük çerçevesi), 91 (saat, saat mahfazası), 92 (müzik aleti), 94 (mobilya, lamba, ışıklı işaret, prefabrik yapı), 95 (oyuncak, oyun, spor malzemesi), 96 (fırça, düğme, fermuar, tarak, pipo ağızlığı, dolma kalem, tripod vb.)."],
+  ["Fasıl 39 Not 3", "39.01–39.11 yalnız kimyasal sentezle elde edilen şu ürünleri kapsar: (a) alçak basınçta damıtmada 1.013 milibara dönüştürüldükten sonra 300 °C’de hacimce %60’tan azı damıtılan sıvı sentetik poliolefinler (39.01, 39.02); (b) yüksek derecede polimerleşmemiş kumaron-inden reçineleri (39.11); (c) ortalama en az 5 monomer birimli diğer sentetik polimerler; (d) silikonlar (39.10); (e) rezoller (39.09) ve diğer ön polimerler."],
+  ["Fasıl 39 Not 4", "“Kopolimer”: tek bir monomer ünitesinin toplam polimer içinde ağırlıkça <b>%95 veya daha fazla</b> olmadığı polimerler (ko-polikondensatlar, ko-poliadisyon ürünleri, blok ve graft kopolimerler dahil). Kopolimer ve polimer karışımları ağırlıkça üstün gelen komonomer ünitesinin pozisyonunda sınıflandırılır; aynı pozisyona giren üniteler birlikte sayılır. Üstün olan yoksa eşit derecede geçerli pozisyonlardan numara sırasına göre <b>en sondaki</b> seçilir."],
+  ["Fasıl 39 Not 5", "Yalnız ana polimer zincirine bağlı uç grupları kimyasal reaksiyonla değiştirilmiş polimerler, tadil edilmemiş polimerin pozisyonunda kalır (ör. klorlanmış veya klorosülfonlanmış polietilen 39.01). Bu hüküm graft kopolimerlere uygulanmaz."],
+  ["Fasıl 39 Not 6", "39.01–39.14’te “ilk şekiller” yalnız: (a) sıvılar ve hamurlar (dispersiyonlar – emülsiyon, süspansiyon – ve çözeltiler dahil); (b) düzensiz şekilli bloklar, biçimsiz parçalar, tozlar (kalıplama tozları dahil), granüller, pullar ve benzeri dökme biçimler."],
+  ["Fasıl 39 Not 7", "39.15, ilk şekillere dönüştürülmüş tek bir termoplastik maddenin döküntü, kalıntı ve hurdalarını kapsamaz (39.01–39.14). Açıklama Notu: tek bir termoset maddenin veya iki ya da daha fazla termoplastik karışımının döküntüsü ilk şekle dönüştürülmüş olsa da 39.15’te kalır."],
+  ["Fasıl 39 Not 8", "39.17’de “boru ve hortum”: gaz veya sıvı taşıma, iletme ve dağıtımında kullanılan türden delikli ürünler (yivli bahçe hortumu, delikli borular); sucuk-salam kılıfları ve diğer yassılaştırılmış borular dahil. Yassı borular hariç, iç kesiti yuvarlak, oval, dikdörtgen (boyu eninin <b>1,5 katını</b> geçmeyen) veya düzenli çokgen olmayanlar boru değil <b>profil</b> sayılır."],
+  ["Fasıl 39 Not 9", "39.18’deki duvar-tavan kaplaması: <b>kağıt dışında</b> bir mesnet üzerine sabitlenmiş, ön yüzü pürüzlendirilmiş, kabartılmış, boyanmış, desen basılmış veya başka şekilde süslenmiş plastikten, duvar-tavan süslemeye uygun, eni <b>en az 45 cm</b> rulolar. Kağıt esaslı duvar kaplamaları 48.14’tedir."],
+  ["Fasıl 39 Not 10", "39.20 ve 39.21’de “levha, folye, film, şerit”: baskılı veya yüzeyi işlenmiş olsun olmasın, dikdörtgen (kare dahil) kesilmiş veya kesilmemiş, fakat daha ileri işlem görmemiş ürünler (kesme onları kullanıma hazır eşya haline getirse bile) ile düzenli geometrik bloklar; Fasıl 54’tekiler hariç."],
+  ["Fasıl 39 Not 11", "39.25 yalnız şunları kapsar (II. Tali Fasılın önceki pozisyonlarındakiler hariç): (a) kapasitesi <b>300 litreyi geçen</b> sarnıç, tank (foseptik dahil), depo vb.; (b) yer, duvar, bölme, tavan, çatı yapı elemanları; (c) oluklar ve donanımları; (d) kapı, pencere, çerçeveleri, kapı eşikleri; (e) balkon, parmaklık, çit, bahçe kapısı vb.; (f) kepenk, panjur (venedik dahil) ve aksamı; (g) dükkan, atölye vb. için büyük raflar; (h) süs mahiyetinde mimari motifler; (ij) kapı, pencere, merdiven, duvara tespit edilecek bağlantı-montaj parçaları (saplar, kancalar, havlu rayları, elektrik düğmesi kapakları)."],
+  ["Genel Açıklamalar", "I. Tali Fasıl (39.01–39.14) ilk şekiller; II. Tali Fasıl (39.15–39.26) döküntü, yarı mamul ve eşya. Isıyla tekrar tekrar yumuşatılıp şekillendirilebilen madde termoplastik, eritilemez ürüne dönüşen termosettir. Örnekler: %55 vinil klorürlü vinil klorür-vinil asetat kopolimeri 39.04’te, %55 vinil asetatlı olan 39.05’te; %45 etilen, %35 propilen, %20 izobütilen kopolimeri 39.02’de (propilen + izobütilen = %55)."],
+  ["Genel Açıklamalar", "Polimer kısaltmaları yalnız yol göstericidir: kısaltmadaki sıra miktarı göstermez (ör. ABS, üstün monomer olarak stiren içerebilir); sınıflandırma monomer ünitelerinin ağırlığına göre yapılır. Çözücüsüz sıvı polimer yalnız vernik olarak kullanımı açıkça belli ise 32.10’da; macun olarak kullanıma uygun hale getirilmişse 32.14’te. Yapıştırıcı olarak özel formüle edilen veya net ağırlığı 1 kg’ı geçmeyen perakende yapıştırıcı ambalajındaki ürünler 35.06’dadır."],
+  ["Genel Açıklamalar", "Plastik + tekstil: ağırlıkça %50 veya daha az tekstil içeren plastik emdirilmiş-kaplı keçe; tamamen plastik içine konulmuş veya iki yüzü de görünür şekilde kaplı mensucat; 15–30 °C’de 7 mm çaplı silindir etrafında kırılmadan bükülemeyen plastik emdirilmiş tekstiller; tekstilin yalnız takviye amaçlı (ör. tek yüzde desensiz, tek renk dokunmuş mensucat) olduğu gözenekli plastik levhalar Fasıl 39’dadır. Her iki yüzü dokunmuş mensucatla birleşik gözenekli plastik levhalar Fasıl 39 dışıdır."],
+  ["Genel Açıklamalar", "Plastik içine basitçe daldırılmış adi metal örgü Bölüm XV’tedir. Ahşap tabakaları yalnız destek işlevi gören ahşap-plastik levhalar Fasıl 39’da, plastik tabakası tali olanlar Fasıl 44’tedir; ahşap-plastik inşaat levhaları kural olarak Fasıl 44’tedir."],
+  ["39.02 / 39.10 Açıklama Notları", "Poliizobütilen kauçuğa benzese de sentetik kauçuk tanımına uymadığından 39.02’de; silikon elastomerleri de bu tanıma uymadığından 39.10’dadır. Fasıl 34 Not 3’e uyan silikonlar 34.02’de, polietilen mumlar 34.04’te, Not 3(a)’ya uymayan sıvı poliolefinler 27.10’dadır."],
+  ["39.12 / 39.13 Açıklama Notları", "Selüloit, selüloz asetat, vulkanize lif ve sertleştirilmiş protein levha, çubuk, boru halindeyse ilk şekil değildir (39.16, 39.17, 39.20, 39.21). 39.13 dışı: tadil edilmemiş tabii reçineler (13.01), linoksin (15.18), heparin (30.01), nişasta eter ve esterleri (35.05), kolofan ve ester sakızları (38.06)."],
+  ["39.15 / 39.16 Açıklama Notları", "39.15: eskimiş, kırılmış plastik eşya ve imalat artıkları (talaş, toz, yonga); değerli metal içerenler 71.12’de. 39.16: sabit veya tekrarlı kesitli ürünler; yüzeyi basitçe işlenmiş veya en geniş kesitini aşan boyda kesilmiş olanlar dahil. Kesitini aşmayan boyda kesilmiş veya delinmiş, yapıştırılmış, dikilmiş olanlar 39.18–39.26."],
+  ["39.20 / 39.21 Açıklama Notları", "Toz, granül, küre veya yaprak dolgu; renklendirme, baskı, vakumla metal kaplama takviye sayılmaz → 39.20. Metal ağ, cam mensucat, mineral lif gibi gücü artıran maddeyle birleşik, lamine veya gözenekli olanlar → 39.21. Görünür genişliği 5 mm’yi geçmeyen şeritler Fasıl 54’tedir. Delinmiş, kenarı işlenmiş veya dikdörtgen dışı kesilmiş levhalar eşya pozisyonlarına gider."],
+  ["39.22 / 39.24 / 39.25 Açıklama Notları", "Mekanizmalı olsun olmasın rezervuarlar, taşınabilir klozet ve bebek küveti 39.22; lazımlık, yatak lazımlığı gibi küçük taşınabilir eşya 39.24. Sabunluk, havlu askısı, diş fırçalığı, tuvalet kağıdı tutacağı binanın duvarına daimi tespit edilmişse 39.25, edilmemişse 39.24."],
+  ["39.23 / 39.24 / 39.26 Açıklama Notları", "39.23: kutu, kasa, torba (külah ve çöp torbası dahil), şişe, damacana, şişe taslağı (preform), makara-bobin (bantsız kaset dahil), tıpa, kapak, kapsül; ambalaj niteliğindeki kulpsuz bardak. 42.02 kapları ve 63.05 esnek orta hacimli kaplar hariç. Çöp kutusu ve ambalaj niteliği olmayan bardak 39.24. 39.26: dikilerek veya yapıştırılarak yapılan yağmurluk-önlük, mobilya-karoseri bağlantı elemanı, küçük heykel, kitap kapağı, vida-cıvata, kayış, iyon değiştirici kolon, emzik, yapay tırnak."]
+ ],
+ "sinir_komsulari": [
+  ["Plastikten okul çantası, valiz, el çantası, gözlük kılıfı", "42.02", "Fasıl 39 Not 2(m)"],
+  ["Plastik ayakkabı, başlık, şemsiye", "Fasıl 64 / 65 / 66", "Not 2: Bölüm XII eşyası"],
+  ["Plastik tarak, düğme, fermuar, dolma kalem, tripod", "Fasıl 96", "Not 2(z)"],
+  ["Plastik sandalye, lamba, ışıklı tabela, prefabrik yapı", "Fasıl 94", "Not 2(x)"],
+  ["Plastik oyuncak, oyun ve spor malzemesi", "Fasıl 95", "Not 2(y)"],
+  ["Plastik gözlük çerçevesi, optik eleman", "Fasıl 90", "Not 2(u)"],
+  ["Plastik taklit mücevher", "71.17", "Not 2(r)"],
+  ["Polietilen mum", "34.04", "Not 2(b); 39.01 Açıklama Notu"],
+  ["Çözücüsü ağırlıkça %50’yi geçen polimer çözeltisi", "32.08", "Not 2(e); kollodiyon ise 39.12"],
+  ["Net 1 kg’ı geçmeyen perakende ambalajda polimer esaslı yapıştırıcı", "35.06", "Genel Açıklamalar, yapıştırıcı istisnası"],
+  ["Sentetik kauçuk (ör. önemli miktarda bütadien içeren stiren-bütadien)", "Fasıl 40", "Not 2(l); 39.03 Açıklama Notu"],
+  ["Silikon elastomeri; poliizobütilen", "39.10 / 39.02", "Kauçuğa benzese de kauçuk tanımına uymaz, Fasıl 39’da kalır"],
+  ["Kağıt mesnetli, plastik kaplı duvar kaplaması", "48.14", "Not 2(o); Not 9 kağıt dışı mesnet ister"],
+  ["Enine kesiti 1 mm’yi geçmeyen sentetik monofil; görünür genişliği 5 mm’yi geçmeyen şerit", "54.04", "39.16 metni ve 39.20 Açıklama Notu"],
+  ["Değerli metal içeren plastik hurdası", "71.12", "39.15 Açıklama Notu"]
+ ],
+ "tuzaklar": [
+  "<b>“Plastikten” demek “Fasıl 39” demek değildir.</b> Önce Not 2 listesine bakın: okul çantası 42.02, tarak ve düğme Fasıl 96, sandalye ve lamba Fasıl 94, oyuncak Fasıl 95, taşıt parçası Bölüm XVII.",
+  "<b>Düzenli geometrik blok ilk şekil değildir.</b> İlk şekil yalnız düzensiz blok, parça, toz, granül, pul ile sıvı, hamur, dispersiyon ve çözeltidir; düzgün blok Not 10 gereği levha sayılır (39.20 / 39.21).",
+  "<b>Kopolimerde isim değil ağırlık belirler.</b> Kısaltmadaki sıra miktarı göstermez (ABS’de stiren sonda yazılsa da üstün olabilir); %55 vinil asetatlı vinil klorür-vinil asetat kopolimeri 39.05’e gider. Eşitlikte numara sırasına göre en son pozisyon seçilir.",
+  "<b>Granüle edilmiş tek termoplastik hurdası 39.15 değildir.</b> İlk şekle dönmüşse ilgili polimer pozisyonuna (39.01–39.14) gider; termoset veya karışım hurdası granül olsa da 39.15’te kalır.",
+  "<b>1 mm ve 1,5 kat sınırları.</b> Kesiti 1 mm’yi geçen monofil 39.16, geçmeyen sentetik monofil 54.04. Dikdörtgen kesitli delikli üründe boy enin 1,5 katını aşarsa boru değil profildir (39.16).",
+  "<b>Kesme eşya yapmaz, işleme yapar.</b> Dikdörtgen kesilmiş levha kullanıma hazır olsa bile 39.20 / 39.21’de kalır; delinmiş, kenarı işlenmiş veya dikdörtgen dışı kesilmiş levha eşya pozisyonuna geçer.",
+  "<b>Dolgu, renk ve baskı takviye değildir.</b> Bunlarla ürün 39.20’de kalır; gözenekli, lamine veya metal ağ-cam mensucatla güçlendirilmiş levha 39.21’dir.",
+  "<b>Çöp torbası ≠ çöp kutusu.</b> Torba ambalaj eşyasıdır (39.23); çöp kutusu, kova ve sulama kabı ev eşyasıdır (39.24).",
+  "<b>Duvara tespit edilen askı inşaat malzemesidir.</b> Daimi tespit edilmiş havlu askısı veya sabunluk 39.25’te, serbest duran 39.24’te; rezervuar ise 39.22’de.",
+  "<b>Kauçuğa benzeyen her şey kauçuk değildir.</b> Silikon elastomeri (39.10) ve poliizobütilen (39.02) sentetik kauçuk tanımına uymaz; önemli miktarda bütadien içeren stiren-bütadien kopolimeri ise Fasıl 40’a gider."
+ ],
+ "hafiza": {
+  "kanca": "Önce NOT 2, sonra ŞEKİL: İLK ŞEKİL → HURDA → PROFİL → BORU → KAPLAMA → YAPIŞKAN → LEVHA → EŞYA",
+  "aciklama": "39.01–39.14 kimyanın katıdır, molekül sorulur; 39.15–39.26 şeklin katıdır, biçim ve işlev sorulur. II. Tali Fasılı bir fabrikada yürüyerek hatırlayın: hurda kovası (39.15) → ekstrüderden çıkan profil (39.16) ve boru (39.17) → kalenderden çıkan kaplama (39.18), yapışkan bant (39.19), levha (39.20 / 39.21) → montaj hattında banyo (39.22), ambalaj (39.23), mutfak (39.24), inşaat (39.25), kalan her şey (39.26)."
+ },
+ "sinav_odagi": [
+  "En sık kalıp, plastikten eşyanın Fasıl 39 Not 2 ile başka fasıllara gitmesidir: “hangisi 39. fasılda yer alır / yer almaz” sorularında okul çantası (42.02), tarak ve kurşun kalem (Fasıl 96), sandalye (Fasıl 94) gibi seçenekler plastik küçük heykelle (39.26) karıştırılmıştır.",
+  "39.26’nın kapsamı: “hangisi 39.26’da yer almaz” sorusunda küçük heykel, emzik, okul-büro malzemesi ve diş kaşıyıcı gibi 39.26 eşyası arasından biberonun ayırt edilmesi istenmiştir.",
+  "Plastik pozisyonları çoğu kez çeldirici olarak kullanılmıştır: çakmak gaz haznesi (96.13), bebek bezi (96.19), elektrikli cam silici (85.12), dokumaya elverişli maddeden yangın hortumu (59.09), terkip yoluyla elde edilen deri (41.15), kauçuk eldiven (40.15), farklı malzemeden conta takımı (84.84) sorularında 39.xx seçenekleri yanlıştır.",
+  "Fasıl 39 Not 2(e) eşiği: çözücüsü ağırlıkça %50’yi geçen polimer çözeltilerinin 32.08’de yer aldığı, Fasıl 32 notları üzerinden sorulmuştur.",
+  "Silikonun (39.10) tabii kauçuk, çıkıl, bütadien kauçuk ve rejenere kauçuktan (Fasıl 40) farklı fasılda olduğu; Bölüm VII’nin Fasıl 39–40’tan oluştuğu sorulmuştur.",
+  "39.15 (hurda) ve 39.25 (inşaat malzemesi) gibi pozisyonlar, kullanım süresi geçmiş ilaç veya eldiven gibi başka fasıllara ait sorularda yanlış seçenek olarak yer almıştır."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Tarife Cetveline göre aşağıdaki plastik eşyalardan hangisi 39. Fasılda yer alır?",
+   "secenekler": ["Tarak", "Heykel", "Sandalye", "Kurşun kalem"],
+   "cevap": "B",
+   "aciklama": "Plastikten küçük heykeller ve diğer süs eşyası 39.26’dadır. Tarak ve kurşun kalem Fasıl 96’ya, sandalye mobilya olarak Fasıl 94’e gider (Fasıl 39 Not 2)."
+  },
+  {
+   "soru": "Aşağıdaki ürünlerin hangisi, Tarife Cetvelinin 39. faslında yer almaz?",
+   "secenekler": ["Plastik banyo küveti", "Plastik şişe", "Plastik ilaç ölçü kaşıkları", "Plastik okul çantası"],
+   "cevap": "D",
+   "aciklama": "Fasıl 39 Not 2(m) uyarınca 42.02’deki okul çantaları plastikten olsa da Fasıl 39 dışındadır. Banyo küveti 39.22’de, şişe 39.23’te yer alır; ölçü kaşığı da plastik eşya olarak Fasıl 39’da kalır."
+  }
+ ],
+ "ozet": [
+  "Plastik tanımı tüm tarifede geçerlidir: 39.01–39.14 maddeleri; vulkanize lif dahil, tekstil maddeleri hariç.",
+  "Önce Not 2: çanta 42.02, ayakkabı-şapka-şemsiye Bölüm XII, mobilya-lamba 94, oyuncak 95, düğme-tarak-kalem 96, makine XVI, taşıt parçası XVII.",
+  "İlk şekiller (39.01–39.14): sıvı, hamur, çözelti, dispersiyon, düzensiz blok, toz, granül, pul; kopolimerde üstün monomer, eşitlikte en son pozisyon.",
+  "Çözücüsü %50’yi aşan çözelti 32.08; perakende 1 kg’a kadar yapıştırıcı 35.06; mum 34.04; sentetik kauçuk Fasıl 40.",
+  "Yarı mamul: 1 mm’yi geçen profil 39.16 · Not 8 borusu 39.17 · yer-duvar kaplaması 39.18 · yapışkan yassı şekil 39.19 · gözeneksiz-takviyesiz levha 39.20 · diğer levha 39.21.",
+  "Eşya: hijyenik 39.22 · ambalaj 39.23 · ev-mutfak 39.24 · Not 11 listesi 39.25 · kalan her şey 39.26."
+ ],
+ "sorular": [
+  {
+   "soru": "Tarife Cetveline göre, toz halinde ithal edilen ve ağırlıkça %60 vinil klorür ile %40 vinil asetat monomer ünitesinden oluşan kopolimer hangi pozisyonda sınıflandırılır?",
+   "secenekler": ["39.05", "39.01", "39.04", "39.15", "39.26"],
+   "cevap": "C", "tip": E4,
+   "gerekce": "Fasıl 39 Not 4 uyarınca kopolimer, ağırlıkça üstün gelen komonomer ünitesinin pozisyonunda sınıflandırılır; vinil klorür (%60) üstün olduğundan ürün 39.04’tedir. Vinil asetat üstün olsaydı 39.05 olurdu (A çeldiricisi). Toz Not 6’ya göre ilk şekil olduğundan 39.15 veya 39.26 söz konusu değildir.",
+   "dayanak": "Fasıl 39 Not 4 ve Not 6; Fasıl 39 Genel Açıklamalar (kopolimerler)."
+  },
+  {
+   "soru": "Tarife Cetveline göre, plastikten imal edilmiş, 2.000 litre kapasiteli foseptik tank hangi pozisyonda sınıflandırılır?",
+   "secenekler": ["39.25", "39.22", "39.23", "39.24", "39.26"],
+   "cevap": "A", "tip": E4,
+   "gerekce": "Fasıl 39 Not 11(a), kapasitesi 300 litreyi geçen sarnıç, tank (foseptikler dahil), depo ve benzeri kapları 39.25’e dahil eder. 39.22 klozet, lavabo, rezervuar gibi hijyenik eşyayı, 39.23 taşıma-ambalaj kaplarını, 39.24 ev eşyasını kapsar; 39.26 ise yalnız başka yerde yer almayan eşya içindir.",
+   "dayanak": "Fasıl 39 Not 11(a); 39.25 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetvelinin 39. Fasıl notlarına göre, 39.18 pozisyonundaki “plastiklerden duvar veya tavan kaplamaları” için aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Kağıt mesnet üzerine tespit edilmiş, eni en az 45 cm olan rulolardır.",
+    "Herhangi bir mesnet üzerine tespit edilmiş, eni en az 20 cm olan rulolardır.",
+    "Mesnetsiz, kendinden yapışkan, eni 45 cm’yi geçmeyen rulolardır.",
+    "Kağıt dışındaki bir mesnet üzerine tespit edilmiş, eni en az 60 cm olan levhalardır.",
+    "Kağıt dışındaki bir mesnet üzerine tespit edilmiş, eni en az 45 cm olan rulolardır."
+   ],
+   "cevap": "E", "tip": FN,
+   "gerekce": "Fasıl 39 Not 9’a göre bu kaplamalar kağıt dışında bir mesnet üzerine sabitlenmiş, ön yüzü süslenmiş plastikten, duvar veya tavan süslemeye uygun, eni en az 45 cm rulolardır. Kağıt mesnetli duvar kaplamaları Not 2(o) gereği 48.14’e gider (A). Kendinden yapışkan yassı plastikler ise 39.19’dadır (C).",
+   "dayanak": "Fasıl 39 Not 9 ve Not 2(o); 39.18 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdaki plastikten eşyalardan hangisi Tarife Cetvelinin 39. Faslında <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Plastik levhaların dikilmesiyle yapılmış yağmurluk",
+    "Plastikten giysi düğmesi",
+    "Plastikten pencere çerçevesi",
+    "Plastikten yivli bahçe hortumu",
+    "Plastikten şişe kapağı"
+   ],
+   "cevap": "B", "tip": OT,
+   "gerekce": "Düğmeler Fasıl 39 Not 2(z) uyarınca Fasıl 96’dadır. Plastik levhalardan dikilerek yapılan yağmurluk 39.26’da, pencere çerçevesi Not 11(d) ile 39.25’te, bahçe hortumu Not 8 ile 39.17’de, şişe kapağı 39.23’tedir. Tuzak, giyim eşyası çağrışımı yapan yağmurluğu fasıl dışı sanmaktır.",
+   "dayanak": "Fasıl 39 Not 2(z), Not 8, Not 11(d); 39.23 ve 39.26 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetveline göre aşağıdaki plastik eşyalardan hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Plastikten çöp kutusu",
+    "Plastikten kova",
+    "Plastikten sulama kabı",
+    "Plastikten çöp torbası",
+    "Plastikten kül tablası"
+   ],
+   "cevap": "D", "tip": FA,
+   "gerekce": "Çöp torbaları, torba ve çantalarla birlikte eşya taşıma veya ambalajlamaya mahsus malzeme olarak 39.23’tedir. Çöp kutusu, kova, sulama kabı ve kül tablası diğer ev eşyası olarak 39.24’te sınıflandırılır; 39.23 Açıklama Notu çöp kutularını açıkça 39.24’e gönderir.",
+   "dayanak": "39.23 ve 39.24 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetveline göre, plastikten, haddeden çekilerek elde edilmiş, enine kesitinin en geniş yeri 2 mm olan ve yüzeyi yalnızca parlatılmış monofil hangi pozisyonda sınıflandırılır?",
+   "secenekler": ["39.16", "39.17", "39.20", "54.04", "39.26"],
+   "cevap": "A", "tip": E4,
+   "gerekce": "39.16, enine kesitinin en geniş yeri 1 mm’yi geçen monofil, çubuk ve profilleri, yüzeyi basitçe işlenmiş olsa da kapsar. 54.04 yalnız enine kesiti 1 mm’yi geçmeyen sentetik monofilamentler içindir. Delikli olmadığından 39.17, yassı olmadığından 39.20 söz konusu değildir; daha ileri işlem görmediği için 39.26’ya da gitmez.",
+   "dayanak": "39.16 pozisyon metni ve Açıklama Notu; 54.04 pozisyon metni."
+  },
+  {
+   "soru": "Tarife Cetvelinin 39. Fasıl notlarına göre “kopolimer” tabiri ile ilgili aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Tek bir monomer ünitesinin ağırlıkça %50’den fazla olmadığı polimerlerdir.",
+    "En az iki farklı monomer ünitesi içeren, oranı ne olursa olsun tüm polimerlerdir.",
+    "Tek bir monomer ünitesinin ağırlıkça %95 veya daha fazla olmadığı polimerlerdir.",
+    "Yalnızca blok kopolimerler ile graft kopolimerlerdir.",
+    "Tek bir monomer ünitesinin ağırlıkça %90’dan az olduğu polimerlerdir."
+   ],
+   "cevap": "C", "tip": FN,
+   "gerekce": "Fasıl 39 Not 4’e göre kopolimer, toplam polimer içinde tek bir monomer ünitesinin ağırlıkça %95 veya daha fazla olmadığı polimerlerdir; ko-polikondensatlar, ko-poliadisyon ürünleri, blok ve graft kopolimerler de dahildir (D eksiktir). Bu nedenle %96 propilen ve %4 başka olefin içeren polimer kopolimer sayılmaz (B yanlıştır). A ve E’deki oranlar notta yer almaz.",
+   "dayanak": "Fasıl 39 Not 4; Fasıl 39 Genel Açıklamalar (kopolimerler)."
+  },
+  {
+   "soru": "Vidalı kapakla kapatılmak üzere ağzına vida yivi açılmış, bir ucu kapalı, tüp biçimli ve daha sonra istenilen şekil ve büyüklükte şişeye dönüştürülecek plastik şişe taslağı (preform), şişe olarak hangi Genel Yorum Kuralı uyarınca sınıflandırılır?",
+   "secenekler": ["GYK 2(b)", "GYK 3(a)", "GYK 4", "GYK 5(b)", "GYK 2(a)"],
+   "cevap": "E", "tip": GY,
+   "gerekce": "GYK 2(a), bitmiş eşyanın asli niteliğini taşıyan tamamlanmamış eşyayı ve son şeklini almamış eşyayı o eşyanın pozisyonunda sınıflandırır; GYK 2(a) Açıklama Notu bu plastik şişe taslaklarını “son şeklini almamış eşya” örneği olarak verir, 39.23 Açıklama Notu da bunları kapsar. GYK 2(b) madde karışımları, GYK 5(b) ise içindeki eşyayla sunulan ambalaj içindir.",
+   "dayanak": "GYK 2(a) ve Açıklama Notu (II); 39.23 Açıklama Notu."
+  },
+  {
+   "soru": "Bir firma; poliüretan köpükten üretilmiş, yalnızca bir yüzüne takviye amacıyla desensiz ve tek renk boyanmış dokunmuş mensucat yapıştırılmış, rulo halinde, kendinden yapışkan olmayan ve mobilya döşemeciliğinde kullanılan levhalar ithal etmektedir. Bu ürün Tarife Cetveline göre hangi pozisyonda sınıflandırılır?",
+   "secenekler": ["39.20", "39.18", "59.03", "39.21", "56.03"],
+   "cevap": "D", "tip": SN,
+   "gerekce": "Genel Açıklamalara göre, dokumaya elverişli maddenin yalnız takviye amacıyla kullanıldığı gözenekli plastik levhalar Fasıl 39’da kalır; desensiz, tek renk boyanmış dokunmuş mensucatın tek yüze uygulanması takviye sayılır. Ürün gözenekli ve takviyeli olduğundan 39.20 değil 39.21’dedir. Mensucat her iki yüze uygulanmış olsaydı ürün Fasıl 39 dışına çıkardı.",
+   "dayanak": "Fasıl 39 Genel Açıklamalar (plastik ve dokumaya elverişli madde bileşimleri); 39.21 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetvelinin 39. Fasıl notlarına göre aşağıdakilerden hangileri 39.01 ila 39.14 pozisyonları anlamında “ilk şekiller” kapsamındadır? I. Düzensiz şekilli bloklar ve biçimsiz parçalar; II. Düzenli geometrik şekilli bloklar; III. Emülsiyon ve süspansiyon halindeki dispersiyonlar; IV. Pullar ve granüller",
+   "secenekler": ["I ve III", "I, III ve IV", "II ve IV", "I, II ve III", "II, III ve IV"],
+   "cevap": "B", "tip": CC,
+   "gerekce": "Not 6’ya göre ilk şekiller yalnız sıvılar ve hamurlar (dispersiyonlar ve çözeltiler dahil) ile düzensiz şekilli bloklar, biçimsiz parçalar, tozlar, granüller, pullar ve benzeri dökme biçimlerdir. Düzenli geometrik şekilli bloklar ilk şekil değildir; Not 10 gereği levha kapsamında 39.20 veya 39.21’de yer alır.",
+   "dayanak": "Fasıl 39 Not 6 ve Not 10; Fasıl 39 Genel Açıklamalar (ilk şekiller)."
+  },
+  {
+   "soru": "Tarife Cetvelinin 39. Fasıl notlarına göre boşlukları doğru tamamlayan seçenek hangisidir? “39.17 pozisyonu anlamında, yassılaştırılmış-düz borular hariç, iç enine kesiti yuvarlak, oval, boyu eninin ..... katını geçmeyen dikdörtgen veya düzenli çokgen şeklinde olmayan ürünler boru ve hortum sayılmaz, ..... olarak kabul edilir.”",
+   "secenekler": ["2 – profil", "1,5 – levha", "3 – çubuk", "2 – monofil", "1,5 – profil"],
+   "cevap": "E", "tip": ES,
+   "gerekce": "Fasıl 39 Not 8, dikdörtgen kesitte boyun enin 1,5 katını geçmemesini arar; bu şartı sağlamayan delikli ürünler boru değil profil sayılır ve 39.16’ya gider. Sucuk-salam kılıfları ve diğer yassılaştırılmış borular ise bu kesit şartından bağımsız olarak 39.17’dedir.",
+   "dayanak": "Fasıl 39 Not 8; 39.16 ve 39.17 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinde diğerlerinden farklı bir fasılda sınıflandırılır?",
+   "secenekler": [
+    "Polietilen mum",
+    "Granül halinde polietilen",
+    "Toz halinde poli(vinil klorür)",
+    "Granül halinde genleşebilir polistiren",
+    "Sıvı halde silikon reçinesi"
+   ],
+   "cevap": "A", "tip": FA,
+   "gerekce": "Polietilen mumlar Fasıl 39 Not 2(b) ve 39.01 Açıklama Notu uyarınca 34.04’tedir (Fasıl 34). Granül polietilen 39.01, toz PVC 39.04, genleşebilir polistiren 39.03 ve silikon reçinesi 39.10’da, yani Fasıl 39’dadır. Tuzak, aynı polimer adını taşıyan mumu ilk şekil sanmaktır.",
+   "dayanak": "Fasıl 39 Not 2(b); 39.01, 39.03, 39.04, 39.10 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetveline göre, tamamen veya kısmen Bölüm VII maddelerinden oluşan, ancak önceden karıştırılmaksızın birbiri ardına kullanılacak farklı ürünlerden meydana gelen ve perakende satılacak şekilde bir arada ambalajlanmış takımlar Bölüm VII Not 1 kapsamı dışında kalır. Bu takımlar genellikle hangi Genel Yorum Kuralı dikkate alınarak sınıflandırılır?",
+   "secenekler": ["GYK 2(a)", "GYK 2(b)", "GYK 3(b)", "GYK 3(c)", "GYK 5(b)"],
+   "cevap": "C", "tip": GY,
+   "gerekce": "Bölüm VII Not 1 yalnız karıştırıldıktan sonra Bölüm VI veya VII ürünü oluşturan takımlar içindir. Birbiri ardına kullanılacak bileşenlerden oluşan takımlar bu nottan hariç tutulur; perakende satılacak şekilde hazırlanmışsa genellikle GYK 3(b) ile esas niteliği veren bileşene göre, perakende ambalajda değilse her bileşen ayrı ayrı sınıflandırılır.",
+   "dayanak": "Bölüm VII Not 1 ve Genel Açıklamalar; GYK 3(b)."
+  },
+  {
+   "soru": "Aşağıdaki plastik eşyalardan hangisi 39.26 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Yapay tırnak",
+    "Plastikten şişe tıpası",
+    "Mobilya için plastik bağlantı elemanı",
+    "Plastik levhaların yapıştırılmasıyla yapılmış kitap kapağı",
+    "Plastikten küçük süs heykeli"
+   ],
+   "cevap": "B", "tip": OT,
+   "gerekce": "Tıpalar, kapaklar ve diğer kapama malzemeleri pozisyon metninde açıkça sayıldığından 39.23’tedir. Yapay tırnak, mobilya bağlantı elemanı, plastik levhalardan yapılan kitap kapağı ve küçük heykeller 39.26 Açıklama Notunda sayılan eşyadır. 39.26 artık pozisyon olduğundan daha özel pozisyonu bulunan eşyayı almaz.",
+   "dayanak": "39.23 pozisyon metni; 39.26 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, alafranga tuvaletlerde kullanılan, yıkama mekanizmasıyla donatılmış plastikten su deposu (rezervuar) hangi pozisyonda sınıflandırılır?",
+   "secenekler": ["39.23", "39.24", "39.25", "39.22", "39.26"],
+   "cevap": "D", "tip": E4,
+   "gerekce": "39.22 pozisyon metni su depolarını ve benzeri hijyenik eşyayı sayar; Açıklama Notu mekanizmalarıyla donatılmış olsun olmasın plastik rezervuarları bu pozisyona alır. Not 11, II. Tali Fasılın önceki pozisyonlarında yer alan ürünleri 39.25’in dışında tuttuğundan 39.25 seçilemez. 39.24 ise küçük taşınabilir hijyenik eşya içindir.",
+   "dayanak": "39.22 pozisyon metni ve Açıklama Notu; Fasıl 39 Not 11."
+  },
+  {
+   "soru": "Aşağıdaki plastik ürünlerden hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Sertleştirilmiş proteinden yapılmış suni sucuk kılıfı",
+    "Plastikten, yivli ve rulo halinde bahçe hortumu",
+    "Plastik su borusu için birleştirme dirseği",
+    "Plastik boru hattı için bağlantı flanşı",
+    "Boyu eninin 3 katı dikdörtgen iç kesitli, delikli plastik ürün"
+   ],
+   "cevap": "E", "tip": FA,
+   "gerekce": "Not 8 gereği iç kesiti dikdörtgen olup boyu eninin 1,5 katını geçen delikli ürün boru sayılmaz, profil olarak 39.16’dadır. Sucuk kılıfları (yassılaştırılmış boru), bahçe hortumu ve dirsek, flanş gibi bağlantı elemanları 39.17’dedir.",
+   "dayanak": "Fasıl 39 Not 8; 39.16 ve 39.17 pozisyon metinleri."
+  },
+  {
+   "soru": "Tarife Cetvelinin 39. Fasıl notlarına göre, 39.20 ve 39.21 pozisyonlarındaki “levha, folye, film ve şerit” tabiri ile ilgili aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Dikdörtgen dışındaki şekillerde kesilmiş olanları da, başka işlem görmemek şartıyla kapsar.",
+    "Dikdörtgen kesilmiş, ileri işlem görmemiş olanları, kullanıma hazır hale gelseler bile kapsar.",
+    "Üzerine baskı yapılmış veya yüzeyi kabartma gibi işlem görmüş olanları kapsamaz.",
+    "Düzenli geometrik şekilli blokları kapsamaz; bunlar ilk şekil olarak kabul edilir.",
+    "Fasıl 54’teki şerit ve benzerlerini de, genişliğine bakılmaksızın kapsar."
+   ],
+   "cevap": "B", "tip": FN,
+   "gerekce": "Fasıl 39 Not 10, baskılı veya yüzeyi işlenmiş olsun olmasın, dikdörtgen (kare dahil) kesilmiş veya kesilmemiş, fakat daha ileri işlem görmemiş levha, film, folye ve şeritlere —kesme onları kullanıma hazır hale getirse bile— ve düzenli geometrik bloklara uygulanır; Fasıl 54’tekiler hariçtir. Dikdörtgen dışı kesilmiş olanlar eşya pozisyonlarına gider.",
+   "dayanak": "Fasıl 39 Not 10; 39.20 ve 39.21 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetveline göre aşağıdakilerden hangisi 39.15 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "İlk şekillere (granül) dönüştürülmüş, yalnızca polietilenden oluşan hurda",
+    "Eskimiş ve kırılmış, kendi amacıyla kullanılamayan plastik kasalar",
+    "Plastik eşya imalatından arta kalan talaş ve yongalar",
+    "İlk şekillere dönüştürülmüş, tek bir termoset maddenin hurdası",
+    "İki farklı termoplastiğin karışımından oluşan, granüle edilmiş döküntü"
+   ],
+   "cevap": "A", "tip": OT,
+   "gerekce": "Fasıl 39 Not 7’ye göre ilk şekillere dönüştürülmüş tek bir termoplastik maddenin döküntü ve hurdaları 39.15’e değil, maddesine göre 39.01–39.14’e (polietilen için 39.01) girer. Tek bir termoset maddenin veya iki ya da daha fazla termoplastik karışımının döküntüsü ilk şekle dönüştürülmüş olsa da 39.15’te kalır; kırık eşya ve imalat artıkları da 39.15’tedir.",
+   "dayanak": "Fasıl 39 Not 7; 39.15 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetvelinin 39. Fasıl notlarına göre aşağıdaki ifadelerden hangileri doğrudur? I. Heparin ve tuzları Fasıl 39’da değil 30.01 pozisyonunda yer alır. II. Plastik bir mesnet üzerindeki laboratuvar ve teşhis reaktifleri 38.22 pozisyonunda yer alır. III. 48.14 pozisyonuna giren duvar kaplamaları plastik içerdiğinde Fasıl 39’da sınıflandırılır. IV. Fasıl 39’daki polimerler esaslı hidrolik müstahzar sıvılar 38.19 pozisyonunda yer alır.",
+   "secenekler": ["I ve II", "II ve III", "I, II ve III", "I, II ve IV", "III ve IV"],
+   "cevap": "D", "tip": CC,
+   "gerekce": "Not 2(d), (k) ve (ij) heparini 30.01’e, plastik mesnetli laboratuvar ve teşhis reaktiflerini 38.22’ye, polimer esaslı hidrolik sıvıları 38.19’a gönderir. Not 2(o) ise 48.14’teki duvar kaplamalarını Fasıl 39 dışında bırakır; bu nedenle III yanlıştır.",
+   "dayanak": "Fasıl 39 Not 2 (d), (ij), (k), (o)."
+  },
+  {
+   "soru": "Tarife Cetveline göre, plastikten, içinde manyetik bant bulunmayan boş ses kaseti (makaralarıyla birlikte) hangi pozisyonda sınıflandırılır?",
+   "secenekler": ["85.23", "39.26", "39.23", "39.24", "39.16"],
+   "cevap": "C", "tip": E4,
+   "gerekce": "39.23 Açıklama Notu, manyetik teyp bandı olmayan görsel ve işitsel kasetleri makara, masura ve bobinlerle birlikte bu pozisyonda sayar. Kayda elverişli bant içermediğinden 85.23’teki kayıt mesnetlerinden değildir; 39.23’te açıkça yer aldığından artık pozisyon 39.26’ya gidilmez.",
+   "dayanak": "39.23 Açıklama Notu (b)."
+  },
+  {
+   "soru": "Tabii kauçuğun klorlanmasıyla elde edilen, küçük beyaz granüller halinde ithal edilen ve vernik ile boya hazırlanmasında kimyasal etkilere dayanıklı film oluşturmak için kullanılan ürün Tarife Cetveline göre hangi pozisyonda sınıflandırılır?",
+   "secenekler": ["39.13", "40.01", "39.04", "40.02", "39.11"],
+   "cevap": "A", "tip": SN,
+   "gerekce": "39.13, tadil edilmiş tabii polimerleri, bu arada klorlanmış, hidroklorürlü, oksitlenmiş ve siklize kauçuk gibi tabii kauçuğun kimyasal türevlerini kapsar. 40.01 tabii kauçuk, 40.02 sentetik kauçuk içindir. “Klorlanmış” ifadesi 39.04’ü (vinil klorür ve halojenlenmiş olefin polimerleri) çağrıştırsa da ürün sentetik bir olefin polimeri değildir.",
+   "dayanak": "39.13 pozisyon metni ve Açıklama Notu (3)."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 39.13 pozisyonunda <b>yer almaz</b>?",
+   "secenekler": [
+    "Aljinik asit tuzları",
+    "İlk şekillerde sertleştirilmiş proteinler",
+    "Hidroklorürlü kauçuk",
+    "Dekstran",
+    "Nişasta eterleri"
+   ],
+   "cevap": "E", "tip": OT,
+   "gerekce": "39.13 Açıklama Notu nişasta eter ve esterlerini 35.05’e gönderir. Aljinik asit ve tuzları, kimyasal işlemle sertleştirilmiş proteinler (ilk şekillerde), hidroklorürlü kauçuk ve dekstran bu pozisyonda sayılır. Aynı hariç tutma listesinde tadil edilmemiş tabii reçineler (13.01), kolofan (38.06) ve heparin (30.01) de bulunur.",
+   "dayanak": "39.13 Açıklama Notu ve hariç tutmalar."
+  },
+  {
+   "soru": "Aşağıdaki plastik ürünlerin pozisyonlarla eşleştirilmesi hangi seçenekte doğru verilmiştir? I. Polimer esaslı iyon değiştirici reçine granülleri; II. Plastikten kendinden yapışkan, rulo halinde ambalaj bandı; III. Plastikten yer karosu; IV. Kırılmış, kullanılamaz durumdaki plastik kasalar — a) 39.15 b) 39.18 c) 39.19 d) 39.14",
+   "secenekler": [
+    "I-a, II-c, III-b, IV-d",
+    "I-d, II-c, III-b, IV-a",
+    "I-d, II-b, III-c, IV-a",
+    "I-a, II-b, III-c, IV-d",
+    "I-d, II-a, III-b, IV-c"
+   ],
+   "cevap": "B", "tip": ES,
+   "gerekce": "İyon değiştiriciler ilk şekillerde 39.14’te, kendinden yapışkan bant 39.19’da, yer kaplamaları (rulo veya karo) 39.18’de, kırık ve kullanılamaz plastik eşya hurda olarak 39.15’tedir. Yer kaplaması kendinden yapışkan olsa bile 39.18’de kalır; 39.19 yalnız 39.18 dışındaki yapışkan yassı şekiller içindir.",
+   "dayanak": "39.14, 39.15, 39.18, 39.19 pozisyon metinleri ve Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdaki plastik eşyalardan hangisi diğerlerinden farklı bir fasılda sınıflandırılır?",
+   "secenekler": [
+    "Plastikten küçük süs heykeli",
+    "Plastikten vida ve cıvatalar",
+    "Plastik gövdeli masa lambası",
+    "Plastikten kapı eşiği",
+    "Plastikten banyo küveti"
+   ],
+   "cevap": "C", "tip": FA,
+   "gerekce": "Fasıl 39 Not 2(x) uyarınca lambalar ve aydınlatma cihazları Fasıl 94’tedir. Süs heykeli ve vidalar 39.26’da, kapı eşiği Not 11(d) ile 39.25’te, banyo küveti 39.22’de olup hepsi Fasıl 39’dadır.",
+   "dayanak": "Fasıl 39 Not 2(x) ve Not 11(d); 39.22 ve 39.26 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetvelinin 39. Fasıl notlarına göre “plastik” tabiri ile ilgili aşağıdakilerden hangisi <b>yanlıştır</b>?",
+   "secenekler": [
+    "39.01 ila 39.14 pozisyonlarındaki maddeleri ifade eder.",
+    "Dış etkiler kalktığında şeklini koruyabilme özelliği aranır.",
+    "Vulkanize edilmiş lifleri de kapsar.",
+    "Bölüm XI’de dokumaya elverişli madde olarak kabul edilen maddeleri de kapsar.",
+    "Tabirin tarifenin neresinde geçtiğine bakılmaksızın uygulanır."
+   ],
+   "cevap": "D", "tip": FN,
+   "gerekce": "Fasıl 39 Not 1’e göre plastik, dış etkilerle şekil alıp etki kalkınca şeklini koruyabilen 39.01–39.14 maddeleridir; tanım tarifenin her yerinde geçerlidir ve vulkanize lifleri kapsar. Ancak Bölüm XI’de dokumaya elverişli madde olarak kabul edilen maddeler bu tabire girmez.",
+   "dayanak": "Fasıl 39 Not 1."
+  }
+ ]
+}
+
+out = os.path.join(KITAP, "data", "fasil_39.json")
+with open(out, "w", encoding="utf-8") as f:
+    json.dump(d, f, ensure_ascii=False, indent=1)
+print("yazıldı:", out)

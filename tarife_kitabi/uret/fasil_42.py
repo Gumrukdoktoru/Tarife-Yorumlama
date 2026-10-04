@@ -1,0 +1,381 @@
+#!/usr/bin/env python3
+# Fasıl 42 modülü üreticisi
+import json, os
+
+KITAP = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+E4 = "Eşya → 4’lü pozisyon"
+OT = "Olumsuz teşhis"
+FA = "Farklı/aynı pozisyon veya fasıl"
+FN = "Fasıl notu · Tanım/Eşik"
+GY = "Genel Yorum Kuralı"
+ES = "Eşleştirme / Boşluk doldurma"
+CC = "Çoktan-çoğa (I–IV)"
+SN = "Senaryo"
+
+d = {
+ "tur": "fasil",
+ "fasil": 42,
+ "baslik": "Deri eşya; saraciye eşyası ve eyer ve koşum takımları; seyahat eşyası, el çantaları ve benzeri mahfazalar; hayvan bağırsağından mamul eşya (ipek böceği bağırsağı hariç)",
+ "bolum": "VIII",
+ "oz": {
+  "vurgu": "Fasıl 42’nin kalbi 42.02’dir ve iki kısımdan oluşur: ilk kısımdaki sandık, bavul, valiz, okul çantası, gözlük kılıfı, müzik aleti ve silah mahfazaları her maddeden olabilir; ikinci kısımdaki el çantası, cüzdan, sırt çantası, mücevher ve sigara kutuları ise yalnız sayılan maddelerden (deri, terkip deri, plastik yaprak, tekstil, vulkanize lif, karton) olur veya bunlarla ya da kağıtla kaplanır.",
+  "maddeler": [
+   "42.01 her tür hayvan için saraciye, eyer ve koşum takımıdır; imal edildiği madde önemsizdir (köpek elbisesi, kedi tasması, at battaniyesi dahil).",
+   "42.03 deriden giyim eşyası ve aksesuarıdır (Not 4: eldiven, önlük, askı, bel kemeri, palaska, bilek kayışı); saat kayışı 91.13, kürk astarlı giysi Fasıl 43.",
+   "42.05 deriden diğer eşyadır: makine kayışı, bagaj etiketi, ustura kayışı, kitap kabı, sümen, özel şekilli deri parçaları.",
+   "42.06 bağırsak, kursak, mesane ve tendondan eşyadır (katgüt); steril katgüt 30.06, müzik aleti teli 92.09.",
+   "“Deri” (Not 1) güderi, rugan, ruganla kaplanmış ve metalize deriyi de kapsar; 42.04 pozisyonu boştur."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+  "satirlar": [
+   ["1", "Not 2’de sayılan eşya mı? (steril katgüt, kürk astarlı giysi, ağ, ayakkabı, başlık, kamçı, taklit mücevher, ayrı sunulan eyer aksamı, müzik aleti aksamı, mobilya, oyuncak-spor, düğme)", "<b>30.06</b> · <b>43.03</b>/<b>43.04</b> · <b>56.08</b> · Fasıl 64, 65 · <b>66.02</b> · <b>71.17</b> · Bölüm XV · <b>92.09</b> · Fasıl 94, 95 · <b>96.06</b>"],
+   ["2", "Hayvanlar için saraciye, eyer, koşum, tasma veya hayvan elbisesi mi?", "<b>42.01</b> (madde önemsiz)"],
+   ["3", "Uzun süre kullanılmayacak plastik yapraktan saplı çanta ya da örülmeye elverişli maddeden eşya mı?", "<b>39.23</b> · <b>46.02</b> (Not 3(A))"],
+   ["4", "42.02’nin ilk kısmındaki bir mahfaza mı? (sandık, bavul, valiz, evrak-okul çantası, gözlük, dürbün, fotoğraf makinesi, müzik aleti, silah mahfazası ve benzerleri)", "<b>42.02</b> (her maddeden)*"],
+   ["5", "42.02’nin ikinci kısmındaki bir mahfaza mı ve sayılan maddelerden ya da bunlarla veya kağıtla kaplı mı?", "<b>42.02</b> (değilse maddesinin faslı, ör. ahşap kutu 44.20)"],
+   ["6", "Deriden giyim eşyası veya aksesuarı mı? (eldiven, önlük, askı, kemer, bilek kayışı)", "<b>42.03</b> (saat kayışı 91.13)"],
+   ["7", "Deriden başka eşya mı? (makine kayışı, bagaj etiketi, kitap kabı, şekilli deri parçası)", "<b>42.05</b>"],
+   ["8", "Bağırsak, kursak, mesane veya tendondan eşya mı?", "<b>42.06</b>"]
+  ],
+  "dipnot": "* İlk kısımdaki “benzeri mahfazalar”: şapka mahfazası, fişeklik, av bıçağı ve çakı kılıfı, belirli bir aletin konulacağı şekilde özel donatılmış taşınabilir alet kutuları. Kılıç, pala, kama kınları 93.07’dedir."
+ },
+ "pozisyon_haritasi": [
+  ["42.01", "Saraciye, eyer ve koşum takımları", "Her tür hayvan; madde önemsiz", "Köpek elbisesi, kedi tasması, at battaniyesi"],
+  ["42.02", "Sandık, bavul, çanta ve mahfazalar", "İlk kısım her madde; ikinci kısım sınırlı madde", "Valiz, okul çantası, el çantası, cüzdan"],
+  ["42.03", "Deriden giyim eşyası ve aksesuarı", "Not 4; kürk astarlılar hariç", "Deri ceket, eldiven, kemer, askı"],
+  ["42.05", "Deriden diğer eşya", "Başka yerde yer almayan; teknik eşya dahil", "Makine kayışı, bagaj etiketi, kitap kabı"],
+  ["42.06", "Bağırsak, kursak, mesane, tendondan eşya", "İpek böceği guddesi hariç", "Raket katgütü, suni bağırsak"]
+ ],
+ "notlar": [
+  ["Fasıl 42 Not 1", "Bu fasılda “deri” tabiri güderiyi (kombine deri dahil), ruganı, ruganla kaplanmış deri ve köseleleri ve metalize deri ve köseleleri (41.14 ürünleri) de kapsar."],
+  ["Fasıl 42 Not 2", "Hariç: (a) cerrahi steril katgüt ve benzeri steril malzeme (30.06); (b) içi tabii veya taklit kürkle kaplı ya da dışında basit süsü aşan kürk veya taklit kürk bulunan giyim eşyası ve aksesuarı (eldivenler hariç) (43.03, 43.04); (c) ağdan eşya (56.08); (d) Fasıl 64 eşyası; (e) Fasıl 65 başlıkları; (f) 66.02 kamçı ve kırbaçları; (g) kol düğmesi, bilezik ve diğer taklit mücevher (71.17); (h) ayrı getirilen eyer ve koşum aksamı ve süsü (üzengi, gem, halka, toka) (genellikle Bölüm XV); (ij) müzik aleti telleri, davul derileri ve diğer aksam (92.09); (k) Fasıl 94 eşyası; (l) Fasıl 95 eşyası; (m) düğmeler, çıtçıtlar ve aksamı (96.06)."],
+  ["Fasıl 42 Not 3", "(A) 42.02 ayrıca şunları kapsamaz: plastik madde yapraklarından, uzun süre kullanılmak üzere yapılmamış saplı çantalar (baskılı olsun olmasın) (39.23); örülmeye elverişli maddelerden eşya (46.02). (B) 42.02 ve 42.03 eşyasındaki kıymetli metal, inci veya kıymetli taştan aksam, küçük aksesuar veya süs mahiyetini aşsa bile eşyaya esas karakterini vermiyorsa eşya bu pozisyonlarda kalır; esas karakteri veren aksam Fasıl 71’dedir."],
+  ["Fasıl 42 Not 4", "42.03’te “giyim eşyası ve aksesuarları”: eldivenler (spor veya koruma için olanlar dahil), önlükler ve diğer koruyucu giysiler, askılar, bel kemerleri, kılıç kayışı ve palaskalar, bilek kayışları (91.13’teki saat kayışları hariç)."],
+  ["Genel Açıklamalar", "Fasıl kural olarak tabii veya terkip deriden eşyayı kapsar; ancak 42.01 ve 42.02 deri sanayiinin özelliklerini taşıyan başka maddelerden eşyayı da alır. Bağırsak, kursak, mesane ve tendondan eşya da bu fasıldadır. 42.04 pozisyonu boştur."],
+  ["42.01 Açıklama Notu", "Her tür hayvan için, her maddeden teçhizat: eyer ve koşum takımları (dizgin, yular ve ipleri dahil), dişlikler, burunsalıklar, eyer örtüleri ve torbaları (heybeler), köpek elbiseleri, dizlikler, göz siperlikleri, sirk hayvanı süslü koşumları, ağızlıklar, kedi ve köpek tasmaları, at battaniyeleri. Hariç: ayrı sunulan üzengi, gem, kopça (Bölüm XV); çocuk ve yetişkin kemerleri ve kayışları (39.26, 42.05, 63.07 vb.); kamçılar (66.02)."],
+  ["42.02 Açıklama Notu", "Yalnız pozisyonda adı geçen ve benzeri mahfazalar; sert iskeletli veya yumuşak olabilir. İlk kısım her maddeden olabilir; “benzeri mahfazalar”: şapka mahfazası, fotoğraf makinesi aksesuar mahfazası, fişeklik, av bıçağı ve kamp çakısı kılıfı, belirli bir alete göre özel donatılmış veya şekillendirilmiş taşınabilir alet kutuları. İkinci kısım yalnız sayılan maddelerden veya tamamen ya da esas olarak bunlarla veya kağıtla kaplı olmalıdır (iskelet ahşap, metal vb. olabilir); “benzeri mahfazalar”: not defteri, yazı, kalem, etiket, iğne, anahtar, puro, pipo kutuları, alet ve mücevher ruloları, ayakkabı ve fırça kutuları."],
+  ["42.02 Açıklama Notu", "“Spor çantaları”: golf, jimnastik, tenis raketi, kayak ve balıkçılık çantaları. “Mücevher kutuları”: mücevher saklamaya veya mücevherle birlikte satılmaya uygun, uzun süre kullanılan, içi özel donatılmış kapaklı kutular. “İzole yiyecek veya içecek torbaları”: taşıma veya geçici depolamada ısıyı koruyan yeniden kullanılabilir çantalar. Oniks klipsli, gümüş çerçeveli deri el çantası 42.02’de kalır (Not 3(B))."],
+  ["42.02 hariç tutmaları", "Uzun süre kullanılmayacak plastik saplı çantalar (gözenekli ara tabakalı olanlar dahil) 39.23; örme maddeden eşya 46.02; kitap ve dosya kapları, sümen, fotoğraf çerçevesi, şeker kutusu, tütün kavanozu, kül tablası (deriden ise 42.05, değilse diğer fasıllar); ağ ve fileler 56.08; taklit mücevher 71.17; belirli alete göre şekillendirilmemiş alet kutuları (genellikle 39.26 veya 73.26); kılıç, pala, kama kınları 93.07; Fasıl 95 eşyası."],
+  ["42.03 Açıklama Notu", "Deriden tüm giyim eşyası ve aksesuarları: palto, eldiven, koruyucu eldiven (spor dahil), önlük, kolluk, bilek kayışı, askı, kemer, kuşak, kravat; kemer yapılmak üzere bir ucu sivriltilmiş deri şeritler; deri ve kürkten veya deri ve taklit kürkten eldivenler; elektrikli ısıtıcı tertibatlı olanlar. Altın tokalı deri kemer 42.03’te kalır. Hariç: kılı veya yünüyle dabaklanmış deriden giysi (Fasıl 43); deri takviyeli mensucattan giysi (Fasıl 61, 62); ayakkabı (64); başlık (65); taklit mücevher (71.17); saat kayışı (91.13); spor koruyucu donanımı (Fasıl 95); düğmeler (96.06)."],
+  ["42.05 Açıklama Notu", "Makineler için deriden taşıyıcı ve transmisyon kolanları (makinesiyle birlikte gelirse makineyle sınıflandırılır); dokuma makinelerine mahsus deri eşya; contalar, rondelalar, valf köseleleri; deri hortumlar. Ayrıca: bagaj etiketi, ustura kayışı, ayakkabı bağı, paket kulpu, köşe bantları, içi doldurulmamış minder yüzleri (dolu minder 94.04), kayışlar, kitap kabı, sümen, matara ve su kırbası, şemsiye kılıfları, özel şekilli kesilmiş deri parçaları. Özel kesilmemiş güderi toz bezi parçaları 41.14’te; ayakkabı aksamı Fasıl 64’te."],
+  ["42.06 Açıklama Notu", "Katgüt (koyun bağırsağının bükülmesiyle; raket, olta, makine parçaları için), varakçı kursağından kesilmiş parçalar ve eşya, mesaneden tütün keseleri, tendondan eşya ve küçük tabii bağırsak parçalarının yapıştırılmasıyla yapılan suni bağırsaklar. Hariç: cerrahi steril katgüt (30.06), müzik aleti teli olarak hazırlanmış bağırsak (92.09)."]
+ ],
+ "sinir_komsulari": [
+  ["Plastik yapraktan, uzun süre kullanılmayacak saplı alışveriş çantası", "39.23", "Fasıl 42 Not 3(A)(a)"],
+  ["Hasır veya sepet örgüsünden çanta", "46.02", "Fasıl 42 Not 3(A)(b)"],
+  ["Masif ahşaptan mücevher kutusu", "44.20", "42.02 ikinci kısmı madde sınırlıdır"],
+  ["Ahşaptan bavul veya sandık", "42.02", "İlk kısım her maddeden olabilir"],
+  ["Deriden kitap kabı, dosya kabı, sümen", "42.05", "42.02 hariç tutması"],
+  ["Belirli alete göre şekillendirilmemiş alet kutusu", "39.26 / 73.26", "42.02 hariç tutması"],
+  ["Kılıç, pala veya kama kını", "93.07", "42.02 hariç tutması"],
+  ["İçi kürk veya taklit kürkle kaplı deri ceket", "43.03 / 43.04", "Fasıl 42 Not 2(b)"],
+  ["Yünüyle dabaklanmış koyun derisinden giysi", "Fasıl 43", "42.03 hariç tutması"],
+  ["Deri ayakkabı ve ayakkabı sayası", "Fasıl 64", "Not 2(d); 42.05 hariç tutması"],
+  ["Deri saat kayışı", "91.13", "Fasıl 42 Not 4"],
+  ["Deri kol düğmesi ve bilezik", "71.17", "Not 2(g)"],
+  ["Cerrahi steril katgüt; müzik aleti teli, davul derisi", "30.06 / 92.09", "Not 2(a) ve (ij)"],
+  ["Ayrı sunulan üzengi ve gem; kamçı", "Bölüm XV / 66.02", "Not 2(h) ve (f)"],
+  ["Mahfazası içinde sunulan dürbün", "90.05", "GYK 5(a): özel mahfaza eşyayla sınıflandırılır"]
+ ],
+ "tuzaklar": [
+  "<b>42.02’de “önce isim, sonra madde”.</b> İlk kısımdaki bavul, valiz, okul çantası, gözlük kılıfı, silah mahfazası her maddeden olabilir (ahşap bavul da 42.02); ikinci kısımdaki el çantası, cüzdan, mücevher ve sigara kutusu için madde de uymalıdır.",
+  "<b>Ahşap mücevher kutusu, metal para kesesi 42.02 değildir.</b> İkinci kısım eşyası deri, terkip deri, plastik yaprak, tekstil, vulkanize lif veya kartondan olmalı ya da bunlarla veya kağıtla kaplanmalıdır; iskeletin ahşap olması sorun değildir.",
+  "<b>Alışveriş poşeti 42.02 değil 39.23.</b> Uzun süre kullanılmak üzere yapılmamış plastik saplı çantalar 39.23’tür; hasır çanta 46.02.",
+  "<b>Köpek elbisesi ve kedi tasması saraciyedir.</b> 42.01 her hayvan ve her madde içindir; ancak insanlar için kemer ve kayışlar 42.01’e girmez.",
+  "<b>Özel şekilli alet kutusu 42.02, genel alet kutusu değil.</b> Belirli bir aletin konulacağı şekilde donatılmış taşınabilir kutu 42.02’dedir; genel amaçlı alet kutuları 39.26 veya 73.26.",
+  "<b>Kürk astar giysiyi Fasıl 43’e taşır, eldiveni taşımaz.</b> İçi kürk kaplı deri ceket 43.03 / 43.04; deri ve kürkten eldiven 42.03’te kalır.",
+  "<b>Deri boks eldiveni 42.03’tür.</b> Deriden spor giysileri ve spor eldivenleri 42.03’te; kriket bacak koruyucusu, eskrim maskesi gibi spor koruyucu donanımı Fasıl 95’tedir.",
+  "<b>Saat kayışı ve kol düğmesi deriden olsa da Fasıl 42 değildir.</b> Saat kayışı 91.13, kol düğmesi ve bilezik 71.17; bilek kayışı ise 42.03.",
+  "<b>Katgüt üç yere ayrılır.</b> Raket ve olta katgütü 42.06, cerrahi steril katgüt 30.06, müzik aleti teli olarak hazırlanmış bağırsak 92.09.",
+  "<b>Kıymetli metal süs eşyanın yerini değiştirmez.</b> Altın tokalı deri kemer 42.03’te, gümüş çerçeveli deri el çantası 42.02’de kalır; parça esas karakteri vermiyorsa Fasıl 71’e gitmez (Not 3(B))."
+ ],
+ "hafiza": {
+  "kanca": "HAYVAN – TAŞI – GİY – KALAN – BAĞIRSAK (01 · 02 · 03 · 05 · 06)",
+  "aciklama": "42.01 <b>hayvan</b>ın sırtındakiler (eyer, koşum, tasma, köpek elbisesi); 42.02 elde <b>taşı</b>nanlar (bavul, çanta, kılıf); 42.03 insanın <b>giy</b>dikleri (ceket, eldiven, kemer); 42.05 deriden <b>kalan</b> her şey (makine kayışı, kitap kabı, bagaj etiketi); 42.06 <b>bağırsak</b>tan eşya (katgüt). 42.04 boştur. 42.02 için: “Önce isim, sonra madde”."
+ },
+ "sinav_odagi": [
+  "En sık kalıp “hangisi 42.02’de sınıflandırılmaz” sorusudur: 42.02’nin ikinci kısmında adı geçen ama izin verilen maddeden yapılmamış eşya (ahşap mücevher kutusu, metal sigara kutusu) doğru cevaptır; koyun veya timsah derisinden cüzdan-para kesesi, tekstil yüzlü valiz ve plastik okul çantası 42.02’dedir.",
+  "42.02 pozisyon metni soru kökünde verilerek metne göre yorum istenmiştir: ilk kısımdaki mahfazalar her maddeden olabilir, ikinci kısımdakiler madde sınırlıdır.",
+  "Farklı fasıl soruları: ahşap bavulun, odun kömürü, yonga levha, kontrplak ve ahşap merdivenden (Fasıl 44) farklı olarak 42.02’de yer alması; plastik okul çantasının Fasıl 39 dışında kalması.",
+  "Takım halindeki eşyada mahfazanın belirleyici olmaması: plastik mahfaza içindeki çizim takımının 42.02’ye değil, esas niteliği veren aletlerin pozisyonuna (90.17) gitmesi.",
+  "Bölüm VIII kapsamı: kedi ve köpek elbiselerinin (42.01) bölümde yer aldığı, ayakkabıların ise yer almadığı."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Aşağıdakilerden hangisi 42.02 tarife pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Timsah derisinden para kesesi",
+    "Dış yüzü dokumaya elverişli maddelerden mamul tekerlekli, çekme kollu valiz",
+    "Ahşap mücevher kutusu",
+    "Kalıplanmış plastik maddeden mamul okul çantası"
+   ],
+   "cevap": "C",
+   "aciklama": "Mücevher kutuları 42.02’nin ikinci kısmındadır ve yalnız sayılan maddelerden (deri, plastik yaprak, tekstil, vulkanize lif, karton) olabilir; ahşap mücevher kutusu 44.20’dedir. Valiz ve okul çantası ilk kısımda yer aldığından her maddeden olabilir; timsah derisinden para kesesi ikinci kısımda izin verilen maddedendir."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Türk Gümrük Tarife Cetveli’nin farklı faslında yer alır?",
+   "secenekler": ["Odun kömürü", "Yonga levha", "Ahşap merdiven", "Kontrplak", "Ahşap bavul"],
+   "cevap": "E",
+   "aciklama": "Bavullar 42.02’nin ilk kısmında yer aldığından imal edildiği madde ne olursa olsun bu pozisyondadır; ahşap bavul Fasıl 42’dedir. Odun kömürü (44.02), yonga levha (44.10), kontrplak (44.12) ve ahşap merdiven (44.21) Fasıl 44’tedir."
+  }
+ ],
+ "ozet": [
+  "42.01: her hayvan için saraciye, her maddeden (köpek elbisesi, tasma, at battaniyesi); ayrı üzengi ve gem Bölüm XV.",
+  "42.02 ilk kısım (bavul, valiz, okul-evrak çantası, gözlük, dürbün, müzik aleti, silah mahfazası) her maddeden; ikinci kısım (el çantası, cüzdan, sırt-spor çantası, mücevher-sigara kutusu) yalnız deri, terkip deri, plastik yaprak, tekstil, vulkanize lif, karton veya kağıt kaplı.",
+  "42.02 dışı: plastik alışveriş poşeti 39.23, hasır çanta 46.02, kitap kabı 42.05, genel alet kutusu 39.26 / 73.26, kılıç kını 93.07.",
+  "42.03: deriden giysi ve aksesuar (eldiven, önlük, askı, kemer, bilek kayışı, spor eldiveni); saat kayışı 91.13, kürk astarlı giysi 43.03 / 43.04.",
+  "42.05: deriden diğer eşya (makine kayışı, bagaj etiketi, ustura kayışı, şekilli deri parçası); 42.06: katgüt ve bağırsaktan eşya.",
+  "Kıymetli metal süs esas karakter vermedikçe eşyayı 42.02 / 42.03’ten çıkarmaz (Not 3(B))."
+ ],
+ "sorular": [
+  {
+   "soru": "Tarife Cetveline göre, dokumaya elverişli maddeden dikilmiş köpek elbisesi hangi pozisyonda sınıflandırılır?",
+   "secenekler": ["61.14", "63.07", "62.11", "95.03", "42.01"],
+   "cevap": "E", "tip": E4,
+   "gerekce": "42.01 pozisyon metni, imal edildiği madde ne olursa olsun her tür hayvan için saraciye eşyasını ve köpek elbiselerini kapsar; Açıklama Notu kedi ve köpek tasmalarını da sayar. Dokumaya elverişli maddeden yapılmış olması eşyayı Bölüm XI’e (61.14, 62.11, 63.07) götürmez; oyuncak da değildir (95.03).",
+   "dayanak": "42.01 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetvelinin 42. Fasıl notlarına göre, 42.03 pozisyonu anlamında “giyim eşyası ve aksesuarları” tabirine aşağıdakilerden hangisi <b>girmez</b>?",
+   "secenekler": [
+    "Spor veya koruma için olanlar dahil eldivenler",
+    "Önlükler ve diğer koruyucu giysiler",
+    "Saat kayışları",
+    "Pantolon askıları ve bel kemerleri",
+    "Kılıç kayışları ve palaskalar"
+   ],
+   "cevap": "C", "tip": FN,
+   "gerekce": "Not 4; eldivenleri (spor veya koruma için olanlar dahil), önlükleri, diğer koruyucu giysileri, askıları, bel kemerlerini, kılıç kayışı ve palaskaları ve bilek kayışlarını sayar, ancak 91.13’teki saat kayışlarını açıkça hariç tutar. Deri saat kayışı bu nedenle Fasıl 91’dedir.",
+   "dayanak": "Fasıl 42 Not 4; 42.03 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 42.02 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Masif ahşaptan, dış yüzü yalnızca cilalanmış sigara kutusu",
+    "Ahşap iskeletli, dış yüzü tamamen deriyle kaplı mücevher kutusu",
+    "Kalıplanmış plastikten okul çantası",
+    "Alüminyumdan yapılmış valiz",
+    "Vulkanize liften yapılmış kalem kutusu"
+   ],
+   "cevap": "A", "tip": OT,
+   "gerekce": "42.02’nin ikinci kısmındaki eşya (sigara ve mücevher kutuları, kalem kutusu gibi benzeri mahfazalar) yalnız deri, terkip deri, plastik yaprak, dokumaya elverişli madde, vulkanize lif veya kartondan olmalı ya da tamamen veya esas olarak bunlarla veya kağıtla kaplanmalıdır; iskeletin ahşap olması sorun değildir (B). Masif ahşaptan cilalı kutu bu şartı taşımaz. Okul çantası ve valiz ilk kısımda olduğundan her maddeden olabilir.",
+   "dayanak": "42.02 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdaki deriden eşyalardan hangisi Tarife Cetvelinde diğerlerinden farklı bir fasılda sınıflandırılır?",
+   "secenekler": ["Deri bel kemeri", "Deri eldiven", "Deri pantolon askısı", "Deri saat kayışı", "Deri bilek kayışı"],
+   "cevap": "D", "tip": FA,
+   "gerekce": "Not 4, 42.03’teki aksesuarlar arasında bilek kayışlarını sayarken 91.13’teki saat kayışlarını hariç tutar; deri saat kayışı Fasıl 91’dedir. Kemer, eldiven, askı ve bilek kayışı deriden giyim aksesuarı olarak 42.03’tedir. Tuzak, bilek kayışı ile saat kayışını aynı sanmaktır.",
+   "dayanak": "Fasıl 42 Not 4; 91.13 pozisyon metni."
+  },
+  {
+   "soru": "Bir firma; içi belirli bir elektrikli matkap ve uçlarının yerleştirileceği şekilde özel olarak kalıplanmış, taşıma saplı plastik mahfazaları matkaplardan ayrı olarak ithal etmektedir. Bu mahfazalar Tarife Cetveline göre hangi pozisyonda sınıflandırılır?",
+   "secenekler": ["39.26", "42.02", "39.23", "84.67", "73.26"],
+   "cevap": "B", "tip": SN,
+   "gerekce": "42.02 Açıklama Notuna göre ilk kısımdaki “benzeri mahfazalar”, belli bir aletin aksesuarlarıyla birlikte konulacağı şekilde dahili olarak donatılmış veya özel şekil verilmiş taşınabilir alet kutularını kapsar ve bunlar her maddeden olabilir. Belirli alete göre şekillendirilmemiş genel alet kutuları 39.26 veya 73.26’da olurdu. Mahfaza ayrı ithal edildiğinden aletle birlikte (84.67) sınıflandırılmaz.",
+   "dayanak": "42.02 Açıklama Notu ve hariç tutmalar; GYK 5(a) Açıklama Notu (ayrı sunulan kutular)."
+  },
+  {
+   "soru": "Tarife Cetveline göre, deriden yapılmış boks eldivenleri hangi pozisyonda sınıflandırılır?",
+   "secenekler": ["95.06", "42.03", "43.03", "62.16", "42.05"],
+   "cevap": "B", "tip": E4,
+   "gerekce": "42.03 Açıklama Notu, deriden spor giysilerinin, spor eldivenlerinin ve koruyucu eldivenlerin Fasıl 95’e değil 42.03’e girdiğini belirtir; spor eldivenleri için boks eldivenleri örnek verilir. Fasıl 95’e kriket bacak koruyucusu, eskrim maskesi gibi spor koruyucu donanımı gider; 62.16 dokumaya elverişli maddeden eldivenler içindir.",
+   "dayanak": "Fasıl 42 Not 4; 42.03 Açıklama Notu ve altpozisyon açıklaması."
+  },
+  {
+   "soru": "Altın tokası bulunan deri bel kemeri, toka eşyaya esas karakterini vermediği sürece 42.03 pozisyonunda sınıflandırılır. Bu sonuç hangi hükme dayanır?",
+   "secenekler": [
+    "GYK 3(b): eşyaya esas niteliğini veren madde olan altındır",
+    "GYK 3(c): numara sırasına göre en son pozisyon olan Fasıl 71 seçilir",
+    "GYK 2(a): tamamlanmamış eşya hükmü uygulanır",
+    "GYK 5(a): özel mahfazalar eşyayla sınıflandırılır",
+    "GYK 1 ile Fasıl 42 Not 3(B)"
+   ],
+   "cevap": "E", "tip": GY,
+   "gerekce": "Fasıl 42 Not 3(B), 42.02 ve 42.03 eşyasının kıymetli metal, inci veya kıymetli taştan aksamı süs mahiyetini aşsa bile eşyaya esas karakterini vermiyorsa eşyanın bu pozisyonlarda kalacağını hükme bağlar; 42.03 Açıklama Notu altın tokalı deri kayışı örnek verir. Not hükmü uygulandığından sınıflandırma GYK 1’e dayanır, GYK 3’e geçilmez.",
+   "dayanak": "GYK 1; Fasıl 42 Not 3(B); 42.03 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetvelinin 42. Fasıl notlarına göre, bu fasılın uygulanmasında “deri” tabiri aşağıdakilerden hangisini <b>kapsamaz</b>?",
+   "secenekler": [
+    "Güderi (kombine güderi dahil)",
+    "Rugan ve ruganla kaplanmış deri",
+    "Plastik esaslı taklit deri",
+    "Metalize deri ve köseleler",
+    "Sırçalı, parçalanmamış sığır derisi"
+   ],
+   "cevap": "C", "tip": FN,
+   "gerekce": "Fasıl 42 Not 1, “deri” tabirinin güderiyi (kombine güderi dahil), ruganı, ruganla kaplanmış deriyi ve metalize deriyi, yani 41.14 ürünlerini de kapsadığını belirtir; sırçalı sığır derisi zaten deridir. Plastik esaslı taklit deri deri değil plastik yapraktır; 42.02 metninde ayrıca sayılan bir madde olarak yer alabilir ama “deri” tabirine girmez.",
+   "dayanak": "Fasıl 42 Not 1; Fasıl 41 Not 3."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 42. Faslında <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "İçi tabii kürkle kaplı deri ceket",
+    "Deriden makine transmisyon kayışı",
+    "Deri bagaj etiketi",
+    "Deri ve kürkten eldiven",
+    "Deriden ustura kayışı"
+   ],
+   "cevap": "A", "tip": OT,
+   "gerekce": "Not 2(b) gereği içi tabii veya taklit kürkle kaplı ya da dışında süsü aşan kürk aksamı bulunan giyim eşyası 43.03 veya 43.04’tedir. Eldivenler bu hükmün istisnasıdır: deri ve kürkten eldiven 42.03’te kalır. Makine kayışı, bagaj etiketi ve ustura kayışı 42.05’tedir.",
+   "dayanak": "Fasıl 42 Not 2(b); 42.03 ve 42.05 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdaki eşyaların pozisyonlarla eşleştirilmesi hangi seçenekte doğru verilmiştir? I. Deriden at eyeri; II. Deriden evrak çantası; III. Deriden pantolon askısı; IV. Raket yapımında kullanılan, steril olmayan katgüt — a) 42.06 b) 42.03 c) 42.02 d) 42.01",
+   "secenekler": [
+    "I-c, II-d, III-b, IV-a",
+    "I-d, II-b, III-c, IV-a",
+    "I-d, II-c, III-a, IV-b",
+    "I-d, II-c, III-b, IV-a",
+    "I-a, II-c, III-b, IV-d"
+   ],
+   "cevap": "D", "tip": ES,
+   "gerekce": "Eyer saraciye eşyası olarak 42.01’de, evrak çantası 42.02’nin ilk kısmında, pantolon askısı Not 4 gereği giyim aksesuarı olarak 42.03’te, raket katgütü bağırsaktan eşya olarak 42.06’dadır.",
+   "dayanak": "42.01, 42.02, 42.03, 42.06 pozisyon metinleri; Fasıl 42 Not 4."
+  },
+  {
+   "soru": "Tarife Cetveline göre, belirli bir makine için hazırlanmış, ancak makineden ayrı olarak ithal edilen deriden transmisyon kayışı hangi pozisyonda sınıflandırılır?",
+   "secenekler": ["40.10", "42.03", "42.05", "39.26", "42.01"],
+   "cevap": "C", "tip": E4,
+   "gerekce": "42.05 Açıklama Notu, makineler için deriden taşıyıcı ve transmisyon kolanlarını sayar. Ait olduğu makineyle birlikte getirilseydi makinenin pozisyonunda sınıflandırılırdı; ayrı geldiğinden 42.05’tedir. 40.10 vulkanize kauçuktan, 39.26 plastikten kayışlar içindir; kayış giyim aksesuarı olmadığından 42.03 de söz konusu değildir.",
+   "dayanak": "42.05 Açıklama Notu (1)."
+  },
+  {
+   "soru": "Aşağıdaki deriden eşyalardan hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+   "secenekler": ["Deriden kitap kabı", "Deriden el çantası", "Deriden cüzdan", "Deriden gözlük kılıfı", "Deriden sırt çantası"],
+   "cevap": "A", "tip": FA,
+   "gerekce": "42.02 Açıklama Notu kitap kap ve kılıflarını, dosya kaplarını ve sümenleri 42.02’nin dışında tutar; bunlar deriden ise 42.05’tedir. El çantası, cüzdan (portföy, para kesesi), gözlük kılıfı ve sırt çantası 42.02’de sayılır. Tuzak, her “kılıf”ı 42.02 sanmaktır.",
+   "dayanak": "42.02 Açıklama Notu, hariç tutmalar; 42.05 Açıklama Notu."
+  },
+  {
+   "soru": "42.02 pozisyon metnine göre aşağıdaki eşyalardan hangileri bu pozisyonda yer alır? I. Ahşaptan yapılmış bavul; II. Metalden yapılmış tüfek mahfazası; III. Metalden yapılmış para kesesi; IV. Dokumaya elverişli maddeden spor çantası",
+   "secenekler": ["I ve II", "II ve III", "I, II ve III", "III ve IV", "I, II ve IV"],
+   "cevap": "E", "tip": CC,
+   "gerekce": "42.02’nin ilk kısmındaki bavul ve silah (tüfek) mahfazaları her maddeden olabilir (I, II). İkinci kısımdaki spor çantası dokumaya elverişli maddeden olduğundan 42.02’dedir (IV). Para kesesi ikinci kısımda yer aldığından yalnız sayılan maddelerden olmalıdır; metalden para kesesi 42.02’ye girmez (III).",
+   "dayanak": "42.02 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 42.05 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Deriden ayakkabı bağı",
+    "Deriden ayakkabı sayası (ayakkabının üst kısmı)",
+    "Deriden valf köselesi",
+    "Deri kaplı kemer tokası",
+    "İçi doldurulmamış deri minder yüzü"
+   ],
+   "cevap": "B", "tip": OT,
+   "gerekce": "42.05 Açıklama Notu ayakkabı aksamını Fasıl 64’e gönderir; Not 2(d) de Fasıl 64 eşyasını dışlar. Ayakkabı bağı, valf köselesi, deri kaplı kemer tokası ve doldurulmamış minder yüzü 42.05’te sayılır; minder doldurulmuş olsaydı 94.04’e giderdi.",
+   "dayanak": "42.05 Açıklama Notu ve hariç tutmalar; Fasıl 42 Not 2(d)."
+  },
+  {
+   "soru": "Belirli bir dürbüne göre özel olarak biçimlendirilmiş, uzun süre kullanılmaya elverişli deri mahfaza, dürbünle birlikte ve onunla normal olarak satılan türden sunulduğunda dürbünle birlikte sınıflandırılır. Bu sonuç hangi Genel Yorum Kuralına dayanır?",
+   "secenekler": ["GYK 2(a)", "GYK 3(b)", "GYK 3(c)", "GYK 5(a)", "GYK 5(b)"],
+   "cevap": "D", "tip": GY,
+   "gerekce": "GYK 5(a), belirli bir eşyaya göre şekil verilmiş, uzun süre kullanılmaya elverişli, eşyayla birlikte sunulan ve normal olarak onunla satılan mahfazaların o eşyayla birlikte sınıflandırılacağını hükme bağlar; Açıklama Notu dürbün mahfazalarını örnek verir. Mahfaza ayrı sunulsaydı 42.02’de yer alırdı. GYK 5(b) ambalaj malzemeleri, GYK 3(b) takımlar ve bileşik eşya içindir.",
+   "dayanak": "GYK 5(a) ve Açıklama Notu; 42.02 pozisyon metni (dürbün mahfazaları)."
+  },
+  {
+   "soru": "Tarife Cetveline göre, koyun bağırsaklarının temizlenip kurutularak iplik şeklinde bükülmesiyle elde edilen ve olta yapımında kullanılacak, steril olmayan katgüt hangi pozisyonda sınıflandırılır?",
+   "secenekler": ["30.06", "92.09", "05.04", "42.06", "56.07"],
+   "cevap": "D", "tip": E4,
+   "gerekce": "42.06 Açıklama Notu, raket, olta ve makine parçalarında kullanılan katgütü bu pozisyonda sayar. Cerrahi dikiş için steril katgüt 30.06’da, müzik aleti teli olarak hazırlanmış bağırsak 92.09’dadır. Bükülerek eşyaya dönüştürüldüğünden ham bağırsak pozisyonu 05.04 söz konusu değildir; 56.07 dokumaya elverişli maddeden ip ve halatlar içindir.",
+   "dayanak": "42.06 pozisyon metni ve Açıklama Notu; Fasıl 42 Not 2(a) ve (ij)."
+  },
+  {
+   "soru": "Tarife Cetvelinin 42. Fasıl notlarına göre, aşağıdakilerden hangisi 42.02 pozisyonunda <b>yer almaz</b>?",
+   "secenekler": [
+    "Dış yüzü plastik madde yapraklarından olan sırt çantası",
+    "Uzun süre kullanılmak üzere yapılmamış, plastik yapraktan baskılı saplı çanta",
+    "Tabii deriden yapılmış, kilitli evrak çantası",
+    "Dokumaya elverişli maddeden yapılmış tuvalet çantası",
+    "Vulkanize liften yapılmış, tekerlekli valiz"
+   ],
+   "cevap": "B", "tip": FN,
+   "gerekce": "Not 3(A)(a), plastik madde yapraklarından yapılmış, uzun süre kullanılmak üzere yapılmamış saplı çantaları (baskılı olsun olmasın) 42.02’den hariç tutar; bunlar 39.23’tedir. Not 3(A)(b) ise örülmeye elverişli maddelerden eşyayı 46.02’ye gönderir. Diğer seçenekler pozisyonda sayılan eşya ve maddelerdir.",
+   "dayanak": "Fasıl 42 Not 3(A); 42.02 Açıklama Notu, hariç tutma (a)."
+  },
+  {
+   "soru": "Bir firma; dış yüzü kuzu derisinden yapılmış, iç yüzü tamamen tabii kürkle kaplanmış kadın montları ithal etmektedir. Bu eşya Tarife Cetveline göre hangi pozisyonda sınıflandırılır?",
+   "secenekler": ["42.03", "42.05", "62.02", "61.02", "43.03"],
+   "cevap": "E", "tip": SN,
+   "gerekce": "Fasıl 42 Not 2(b) ve 42.03 Açıklama Notu uyarınca içi tabii kürkle kaplı deri giyim eşyası 43.03’te sınıflandırılır (taklit kürk olsaydı 43.04). Deri dış yüzey eşyayı 42.03’te tutmaz; dokumaya elverişli maddeden olmadığı için Fasıl 61–62 de söz konusu değildir. Bu istisna eldivenlere uygulanmaz.",
+   "dayanak": "Fasıl 42 Not 2(b); 42.03 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdaki eşyalardan hangisi Tarife Cetvelinde diğerlerinden farklı bir fasılda sınıflandırılır?",
+   "secenekler": ["Deriden kılıç kını", "Deriden fişeklik", "Deriden av bıçağı kılıfı", "Deriden tabanca mahfazası", "Deriden dürbün mahfazası"],
+   "cevap": "A", "tip": FA,
+   "gerekce": "42.02 Açıklama Notu kılıç, pala, kama ve benzeri silahların mahfazalarını 93.07’ye gönderir; 93.07 metni bu silahların kın ve kılıflarını sayar. Fişeklik ve av bıçağı kılıfı ilk kısımdaki “benzeri mahfazalar” arasındadır; tabanca ve dürbün mahfazaları pozisyon metninde açıkça yer alır.",
+   "dayanak": "42.02 Açıklama Notu, hariç tutmalar; 93.07 pozisyon metni."
+  },
+  {
+   "soru": "Tarife Cetveline göre, dış yüzü tamamen dokumaya elverişli maddeyle kaplı, yiyecek ve içeceklerin ısısını korumaya yarayan, yeniden kullanılabilir izole piknik çantası hangi pozisyonda sınıflandırılır?",
+   "secenekler": ["63.05", "39.23", "42.02", "94.04", "63.07"],
+   "cevap": "C", "tip": E4,
+   "gerekce": "42.02 pozisyon metni “izole edilmiş yiyecek veya içecek torbalarını” ikinci kısımda sayar; Açıklama Notuna göre bu ifade, taşıma veya geçici depolama sırasında ısıyı korumaya yarayan yeniden kullanılabilir çantaları kapsar. Dokumaya elverişli madde ikinci kısımda izin verilen maddedir; eşya ambalaj torbası (63.05) veya plastik ambalaj (39.23) değildir.",
+   "dayanak": "42.02 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "42.02 Açıklama Notuna göre boşlukları doğru tamamlayan seçenek hangisidir? “Pozisyonun ..... kısmında yer alan eşya herhangi bir maddeden yapılmış olabilir; ..... kısmında yer alan eşya ise yalnızca burada belirtilen maddelerden olmalı veya tamamen ya da esas olarak bu maddelerle veya ..... kaplanmış olmalıdır.”",
+   "secenekler": ["ikinci – ilk – plastikle", "ilk – ikinci – metalle", "ilk – ikinci – kağıtla", "ikinci – ilk – kağıtla", "ilk – ikinci – ahşapla"],
+   "cevap": "C", "tip": ES,
+   "gerekce": "42.02 Açıklama Notuna göre ilk kısımdaki sandık, bavul, okul çantası, gözlük kılıfı ve silah mahfazaları her maddeden olabilir. İkinci kısımdaki eşya deri, terkip deri, plastik yaprak, dokumaya elverişli madde, vulkanize lif veya kartondan olmalı ya da tamamen veya esas olarak bu maddelerle veya kağıtla kaplanmış olmalıdır; iskeletin ahşap veya metal olması sonucu değiştirmez.",
+   "dayanak": "42.02 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 42.01 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Dokumaya elverişli maddeden at battaniyesi",
+    "Deriden kedi tasması",
+    "Deriden eyer çantası (heybe)",
+    "Deriden at yuları",
+    "Ayrı olarak sunulan çelik üzengi"
+   ],
+   "cevap": "E", "tip": OT,
+   "gerekce": "Not 2(h) ve 42.01 Açıklama Notu, ayrı olarak sunulan üzengi, gem, kopça gibi eyer ve koşum takımı aksam ve süslerini genellikle Bölüm XV’e gönderir. At battaniyesi (madde önemsiz), kedi tasması, eyer çantası ve yular 42.01’de sayılır.",
+   "dayanak": "Fasıl 42 Not 2(h); 42.01 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre aşağıdaki ifadelerden hangileri doğrudur? I. Kemer yapılmak üzere bir ucu sivriltilerek kesilmiş deri şeritler 42.03’te yer alır. II. Elektrikli ısıtıcı tertibatı bulunan deri giysi 42.03’te kalabilir. III. Deri ile takviye edilmiş dokunmuş mensucattan giyim eşyası 42.03’te yer alır. IV. Yünü ile birlikte dabaklanmış koyun derisinden yelek 42.03’te yer alır.",
+   "secenekler": ["I, II ve III", "I ve II", "II ve IV", "I, III ve IV", "III ve IV"],
+   "cevap": "B", "tip": CC,
+   "gerekce": "42.03 Açıklama Notu, kemer yapılmak üzere bir ucu sivriltilmiş deri şeritleri ve elektrikli ısıtıcı tertibatlı eşyayı pozisyona dahil eder (I, II). Deri ile takviyeli mensucattan giysiler Fasıl 61 veya 62’ye (III), yünüyle dabaklanmış derilerden giysiler Fasıl 43’e gider (IV).",
+   "dayanak": "42.03 Açıklama Notu ve hariç tutmalar."
+  },
+  {
+   "soru": "Aşağıdaki eşyalardan hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Toz bezi için özel olarak kesilmemiş güderi parçası",
+    "Deriden yapılmış ustura bileme kayışı",
+    "Deriden yapılmış su kırbası (matara)",
+    "Deriden yapılmış şemsiye kılıfı",
+    "Deriden yapılmış paket taşıma kulpu"
+   ],
+   "cevap": "A", "tip": FA,
+   "gerekce": "42.05 Açıklama Notuna göre toz bezi olarak kullanılmak üzere özel olarak kesilmemiş veya şekil verilmemiş güderi parçaları 41.14’te kalır. Ustura kayışı, su kırbası, şemsiye kılıfı ve paket taşıma kulpu deriden diğer eşya olarak 42.05’tedir.",
+   "dayanak": "42.05 Açıklama Notu; 41.14 pozisyon metni."
+  },
+  {
+   "soru": "Tarife Cetvelinin 42. Fasıl notlarına göre aşağıdakilerden hangisi 92.09 pozisyonunda sınıflandırılır?",
+   "secenekler": [
+    "Raket yapımında kullanılan katgüt",
+    "Cerrahi dikiş için steril katgüt",
+    "Tabii bağırsak parçalarının yapıştırılmasıyla elde edilen suni bağırsak",
+    "Davul için hazırlanmış deri",
+    "Mesaneden yapılmış tütün kesesi"
+   ],
+   "cevap": "D", "tip": FN,
+   "gerekce": "Not 2(ij), müzik aletlerine mahsus telleri, davul ve benzerleri için derileri ve müzik aletlerinin diğer aksamını 92.09’a gönderir. Raket katgütü, suni bağırsak ve mesaneden tütün kesesi 42.06’da, steril katgüt Not 2(a) gereği 30.06’dadır.",
+   "dayanak": "Fasıl 42 Not 2 (a) ve (ij); 42.06 Açıklama Notu."
+  }
+ ]
+}
+
+out = os.path.join(KITAP, "data", "fasil_42.json")
+with open(out, "w", encoding="utf-8") as f:
+    json.dump(d, f, ensure_ascii=False, indent=1)
+print("yazıldı:", out)

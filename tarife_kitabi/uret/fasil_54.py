@@ -1,0 +1,296 @@
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from yardim_53_58 import S, SX, yaz  # noqa: E402
+
+E4 = "Eşya → 4’lü pozisyon"
+OT = "Olumsuz teşhis"
+FA = "Farklı/aynı pozisyon veya fasıl"
+FN = "Fasıl notu · Tanım/Eşik"
+GY = "Genel Yorum Kuralı"
+ES = "Eşleştirme / Boşluk doldurma"
+CC = "Çoktan-çoğa (I–IV)"
+SN = "Senaryo"
+
+d = {
+ "tur": "fasil",
+ "fasil": 54,
+ "baslik": "Sentetik ve suni filamentler, şeritler ve benzeri sentetik ve suni dokumaya elverişli maddeler",
+ "bolum": "XI",
+ "oz": {
+  "vurgu": "Fasıl 54, sentetik ve suni liflerin devamlı (filament) halini kapsar: filament iplikleri, monofilamentler, şeritler ve bunlardan dokunmuş mensucat. Lif kısa kesilmişse (devamsız) eşya Fasıl 55’e gider. Üç ölçü sınırı kararı verir: 67 desiteks, 1 mm enine kesit ve 5 mm görünen genişlik.",
+  "maddeler": [
+   "Sentetik lif: organik monomerlerin polimerizasyonuyla (naylon, polyester, polipropilen, akrilik); suni lif: selüloz, kazein, aljinik asit gibi tabii organik polimerlerin çözünmesi veya kimyasal değişimiyle (viskoz, kupro, asetat, aljinat) üretilir (Fasıl 54 Not 1).",
+   "İplikler: dikiş ipliği 54.01 (perakende olsun olmasın); sentetik filament ipliği 54.02, suni 54.03 (67 desiteksten az monofilament dahil); perakende filament ipliği 54.06.",
+   "Monofilament (67 desiteks ve üzeri, kesit ≤ 1 mm) ve şerit (görünen genişlik ≤ 5 mm): sentetik 54.04, suni 54.05. Sınır aşılırsa Fasıl 39 (Bölüm XI Not 1(g)).",
+   "Dokunmuş mensucat: sentetik filament ve 54.04 maddelerinden 54.07, suni filament ve 54.05 maddelerinden 54.08."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+  "satirlar": [
+   ["1", "Devamsız (kesilmiş) lif, lif döküntüsü veya Fasıl 55 Not 1’e uyan filament demeti mi?", "<b>Fasıl 55</b> (55.01–55.07)"],
+   ["2", "Plastik monofilin enine kesiti 1 mm’yi veya şeridin görünen genişliği 5 mm’yi aşıyor mu?", "<b>Fasıl 39</b> · bunlardan dokunmuş mensucat <b>46.01</b>"],
+   ["3", "Kauçuk veya plastik kaplaması gözle görülen iplik ya da metalize iplik mi?", "<b>56.04</b> / <b>56.05</b>"],
+   ["4", "Sicim, ip, halat mı? (10.000 desiteksten fazla*; metal takviyeli)", "<b>56.07</b>"],
+   ["5", "Dikiş ipliği mi? (çok katlı veya kable; mesnetle ≤ 1.000 g; aprelenmiş; son büküm Z)", "<b>54.01</b>"],
+   ["6", "Perakende satış için hazırlanmış filament ipliği mi? (Bölüm XI Not 4)", "<b>54.06</b>"],
+   ["7", "Filament ipliği mi? (67 desiteksten az monofilament dahil)", "Sentetik <b>54.02</b> · suni <b>54.03</b>"],
+   ["8", "67 desiteks veya daha fazla monofilament (kesit ≤ 1 mm) ya da şerit (≤ 5 mm) mı?", "Sentetik <b>54.04</b> · suni <b>54.05</b>"],
+   ["9", "Dokunmuş mensucat mı?", "Sentetik <b>54.07</b> · suni <b>54.08</b>"]
+  ],
+  "dipnot": "* Bölüm XI Not 3(B): bükülmemiş veya metrede 5 turdan az bükülmüş çok filamentli iplikler, monofilamentler ve Fasıl 55’teki lif demetleri sicim eşiğine tabi değildir."
+ },
+ "pozisyon_haritasi": [
+  ["54.01", "Sentetik/suni filament dikiş ipliği", "Not 5 şartları; perakende olsun olmasın", "Makaraya sarılı polyester dikiş ipliği"],
+  ["54.02", "Sentetik filament iplikleri (perakende değil)", "67 dtex’ten az monofil dahil", "Tekstüre naylon iplik, aramid iplik"],
+  ["54.03", "Suni filament iplikleri (perakende değil)", "67 dtex’ten az monofil dahil", "Viskoz rayon filament ipliği"],
+  ["54.04", "Sentetik monofil ve şeritler", "≥ 67 dtex, kesit ≤ 1 mm; şerit ≤ 5 mm", "Çengelsiz misina, polipropilen şerit"],
+  ["54.05", "Suni monofil ve şeritler", "54.04 ile aynı ölçüler", "Viskoz şerit (≤ 5 mm)"],
+  ["54.06", "Filament iplikleri (perakende)", "Bölüm XI Not 4; dikiş ipliği hariç", "Küçük makarada kat bükülü naylon iplik"],
+  ["54.07", "Sentetik filament mensucat", "54.04 maddelerinden dokunmuş dahil", "Naylon paraşüt bezi, polyester astar"],
+  ["54.08", "Suni filament mensucat", "54.05 maddelerinden dokunmuş dahil", "Viskoz veya asetat astarlık"]
+ ],
+ "notlar": [
+  ["Fasıl 54 Not 1", "“Sentetik ve suni lifler”: (a) organik monomerlerin polimerizasyonuyla veya bu polimerlerin kimyasal değişimiyle (ör. poli(vinil asetat) hidroliziyle poli(vinil alkol)) üretilen organik polimer filamentleri ve devamsız lifleri = sentetik; (b) tabii organik polimerlerin (selüloz, kazein ve diğer proteinler, aljinik asit) çözünmesi, kimyasal işlenmesi veya değişimiyle üretilenler (viskoz, kupro, selüloz asetat, aljinat) = suni. Tanım tarifenin her yerinde geçerlidir."],
+  ["Fasıl 54 Not 1 (devam)", "54.04 veya 54.05’teki şerit ve benzerleri sentetik ve suni lif sayılmaz. Dokumaya elverişli maddelerle ilgili olarak “sentetik ve suni”, “sentetik” ve “suni” ifadeleri aynı anlamdadır."],
+  ["Fasıl 54 Not 2", "54.02 ve 54.03, Fasıl 55’teki sentetik veya suni filament demetlerine uygulanmaz."],
+  ["Bölüm XI Not 1(g)", "Enine kesitinin en geniş yeri 1 mm’yi geçen plastik monofiller ve genişliği 5 mm’yi geçen plastik şeritler Fasıl 39’da; bunlardan örgü, mensucat, hasırcı ve sepetçi eşyası Fasıl 46’dadır."],
+  ["Bölüm XI Not 2(B)(c)", "54. ve 55. fasılların her ikisi bir başka fasılla ilgili olduğunda tek fasıl kabul edilir. Açıklama Notu örneği: %35 sentetik filament + %25 sentetik devamsız lif + %40 taranmış yün → 54.07."],
+  ["Bölüm XI Not 3", "Suni veya sentetik liflerden iplik (54. fasıldaki monofillerden iki veya daha fazlasından oluşanlar dahil) 10.000 desiteksten fazlaysa sicim, ip ve halat sayılır (56.07). Bükülmemiş veya metrede 5 turdan az bükülmüş çok filamentli iplikler ve monofiller bu kurala tabi değildir."],
+  ["Bölüm XI Not 4", "Perakende satış için hazırlanmış (suni-sentetik filament iplikleri için): mesnete sarılı ve mesnetle 85 g’ı geçmeyen; 3.000 desiteksten az olup top veya çile halinde 85 g’ı geçmeyen. Hiçbir zaman perakende sayılmayanlar: tek kat iplik (yün hariç), çapraz sarılmış çile, sanayide kullanımını gösteren mesnetteki (bobin, konik bobin, masura) iplik."],
+  ["Bölüm XI Not 5", "Dikiş ipliği (52.04, 54.01, 55.08): çok katlı bükülü veya kable; mesnet üzerinde ve mesnetle 1.000 g’ı geçmeyen; dikiş ipliği olarak aprelenmiş; “Z” bükülü. Tek kat iplik ve monofilamentler dikişte kullanılsa da dikiş ipliği değildir (54.01 Açıklama Notu)."],
+  ["Bölüm XI Not 6", "Yüksek mukavemetli iplik: mukavemeti naylon/poliamid veya polyester tek kat iplikte 60 cN/tex’ten, bunların çok katlı veya kable ipliklerinde 53 cN/tex’ten, viskoz ipeği ipliklerinde 27 cN/tex’ten fazla olan iplik."],
+  ["Bölüm XI Not 12–13", "“Poliamidler” aramidleri kapsar. Elastomerik iplik: orijinal uzunluğunun üç katına gerildiğinde kopmayan ve iki katına gerilip bırakıldıktan sonra 5 dakika içinde orijinal uzunluğunun 1,5 katından fazla olmayan uzunluğa dönen sentetik filament iplik (monofilament dahil, tekstüre iplik hariç)."],
+  ["Genel Açıklamalar", "Filament demetleri, Fasıl 55 Not 1’dekiler dışında Fasıl 54’tedir (genellikle sigara filtresi imali). Fasıl dışı: diş iplikleri 33.06; kauçuk iplikler 40.07; devamsız lifler ve filament döküntüleri Fasıl 55; karbon lifleri 68.15; cam lifleri 70.19."],
+  ["54.04 Açıklama Notu", "Monofilament 67 desiteks veya daha fazla, kesiti ≤ 1 mm; şerit görünen genişliği ≤ 5 mm (katlanmış, düzleştirilmiş tüp, bükülmüş dahil; genişlik düzgün değilse ortalama). Kısa boyda kesilmiş veya perakende hazırlanmış olsa da burada kalır. Hariç: steril monofilament 30.06, çengelli olta 95.07, hazırlanmış fırça başları 96.03."],
+  ["54.07 / 54.08 Açıklama Notu", "Kesiti 1 mm’yi geçen monofil veya 5 mm’yi geçen şeritten dokunmuş mensucat 46.01; devamsız lif mensucatı 55.12–55.16; perakende bandaj 30.05; lastik iç-dış mensucatı 59.02; teknik mensucat 59.11."]
+ ],
+ "sinir_komsulari": [
+  ["Perakende ambalajlı diş ipi", "33.06", "Bölüm XI Not 1(e)"],
+  ["Kauçuk iplik", "40.07", "Fasıl 54 Genel Açıklamalar"],
+  ["Steril sentetik cerrahi dikiş monofili", "30.06", "54.04 hariç tutması"],
+  ["Çengel takılmış misinadan olta", "95.07", "54.04 hariç tutması"],
+  ["Hazırlanmış fırça başları", "96.03", "54.04 hariç tutması"],
+  ["Kesiti 1 mm’yi aşan monofil; 5 mm’yi aşan şerit (suni saman)", "Fasıl 39", "Bölüm XI Not 1(g)"],
+  ["Bunlardan dokunmuş mensucat veya örgü", "46.01", "54.07 ve 54.08 hariç tutmaları"],
+  ["Sentetik devamsız lif, filament döküntüsü", "55.03 / 55.05", "Fasıl 55 kapsamı"],
+  ["2 m’den uzun, Fasıl 55 Not 1’e uyan filament demeti", "55.01 / 55.02", "Fasıl 54 Not 2"],
+  ["Devamsız lif ipliğinden dokunmuş mensucat", "55.12–55.16", "Lif devamsız"],
+  ["Plastik kaplaması gözle görülen iplik; metalize iplik", "56.04 / 56.05", "Özel iplikler"],
+  ["10.000 desiteksi aşan sentetik bükülü iplik", "56.07", "Bölüm XI Not 3"],
+  ["Karbon lifleri; cam lifleri", "68.15 / 70.19", "Bölüm XI Not 1(q), (r)"],
+  ["Lastik iç-dış mensucatı; teknik amaçlı mensucat", "59.02 / 59.11", "54.07 hariç tutması"]
+ ],
+ "tuzaklar": [
+  "<b>Viskoz bitkisel lif değildir.</b> Selülozdan kimyasal yolla elde edildiği için suni liftir (Fasıl 54 Not 1(b)); Fasıl 52 veya 53 ile karıştırılmamalıdır.",
+  "<b>Monofilamentte üç basamak vardır.</b> 67 desiteksten az → iplik gibi 54.02/54.03; 67 desiteks ve üzeri, kesit ≤ 1 mm → 54.04/54.05; kesit 1 mm’yi aşarsa Fasıl 39.",
+  "<b>Şeritte ölçü görünen genişliktir.</b> Katlanmış, düzleştirilmiş veya bükülmüş şeridin görünen genişliği 5 mm’yi geçmiyorsa 54.04/54.05; düzgün değilse ortalama genişlik esas alınır.",
+  "<b>Tek kat iplik perakende sayılmaz.</b> Bölüm XI Not 4(B)(a): küçük makaraya sarılı olsa da tek katlı sentetik filament ipliği 54.06’ya değil 54.02’ye gider.",
+  "<b>Dikiş ipliği tek kat olamaz.</b> Not 5 çok katlı veya kable, Z bükümlü, aprelenmiş ve mesnetle 1.000 g’ı geçmeyen ipliği arar; dikişte kullanılan tek kat iplik ve monofil 54.02–54.05’tedir.",
+  "<b>Filament demeti iki fasla bölünür.</b> Fasıl 55 Not 1’in beş şartını taşıyan demet 55.01/55.02’de, 2 m’yi geçmeyen demet 55.03/55.04’te; diğer demetler (ör. sigara filtresi için) Fasıl 54’te kalır.",
+  "<b>54 ve 55 karışımda tek fasıldır.</b> Sentetik filament ve sentetik devamsız lif, başka bir fasıl lifine karşı toplanır (Bölüm XI Not 2(B)(c)).",
+  "<b>Misina ile olta aynı yerde değildir.</b> Çengelsiz monofil misina 54.04’te, çengel takılmış olta 95.07’dedir; steril cerrahi monofil 30.06’dadır.",
+  "<b>Aramid poliamiddir.</b> Bölüm XI Not 12 uyarınca “poliamidler” tabiri aramidleri kapsar."
+ ],
+ "hafiza": {
+  "kanca": "DİK – SEN – SUN – MONO – PER – KUMAŞ  ·  “67 – 1 – 5”",
+  "aciklama": "54.01 <b>dik</b>iş ipliği · 54.02 <b>sen</b>tetik iplik · 54.03 <b>sun</b>i iplik · 54.04/05 <b>mono</b>fil ve şerit · 54.06 <b>per</b>akende iplik · 54.07/08 <b>kumaş</b>. Her çiftte önce sentetik, sonra suni gelir. Ölçü kancası “67 – 1 – 5”: 67 desiteks, 1 mm kesit, 5 mm genişlik."
+ },
+ "sinav_odagi": [
+  "Bu fasıl çıkmış sorularda daha çok seçeneklerde ve çeldirici olarak yer almıştır; doğrudan Fasıl 54 pozisyonu soran soru azdır.",
+  "Fasıl 52 sorusunda “viskoz ipeği” ve “sentetik ve suni filamentler” seçeneklerinin çeldirici olarak kullanılması: bunların pamuk değil Fasıl 54 eşyası olduğu.",
+  "Sentetik, suni, ipek ve pamuk karışımından dokunmuş kumaşın sınıflandırılmasında Bölüm XI Not 2 nedeniyle GYK 1’in kullanıldığı.",
+  "Sentetik ve suni liflerin karışımda birlikte değerlendirilmesi; 54 ve 55. fasılların tek fasıl kabul edilmesi.",
+  "Dokumaya elverişli maddelerin Bölüm XI’de toplandığı ve fasılların madde (ipek, pamuk, sentetik) esasına göre ayrıldığı."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Tarife Cetveli’nin 52. faslında yer alan bir eşya için aşağıdakilerden hangisi söylenebilir?",
+   "secenekler": ["Eşya TGTC 10. Bölüm kapsamındadır.", "Viskoz ipeği bu fasılda yer alır.", "Sentetik ve suni filamentleri içerir.", "Keten döküntüleri bu fasıl kapsamındadır.", "Pamuk ipliği bu fasılda yer alır."],
+   "cevap": "E",
+   "aciklama": "Viskoz ipeği suni, naylon-polyester gibi filamentler sentetik lif olarak Fasıl 54’tedir (Fasıl 54 Not 1). Fasıl 52 pamuğa ayrılmıştır; pamuk ipliği oradadır."
+  },
+  {
+   "soru": "%35 sentetik lif, %20 suni lif, %40 ipek ve %5 pamuk karışımından dokunmuş kumaşın tarife cetvelinde sınıflandırılmasında tarifenin hangi genel yorum kuralı kullanılır?",
+   "secenekler": ["3 (b)", "2 (b)", "2 (a)", "1"],
+   "cevap": "D",
+   "aciklama": "Sentetik ve suni lifler aynı fasılda toplanır (%55) ve ipekten (%40) üstün gelir; karar Bölüm XI Not 2 ile verildiği için sınıflandırma GYK 1’e dayanır."
+  }
+ ],
+ "ozet": [
+  "Fasıl 54 = sentetik ve suni lifin devamlı hali: filament ipliği, monofil, şerit ve bunların dokunmuş mensucatı.",
+  "Sentetik: monomer polimerizasyonu; suni: tabii polimerin (selüloz, kazein, aljinat) kimyasal işlenmesi.",
+  "Dikiş ipliği 54.01; iplik 54.02/54.03; perakende 54.06 (tek kat iplik perakende sayılmaz).",
+  "Monofil: 67 desiteks altı iplik, üstü 54.04/54.05; kesit 1 mm veya şerit 5 mm aşılırsa Fasıl 39.",
+  "Kumaş: sentetik 54.07, suni 54.08; devamsız lif kumaşı Fasıl 55.",
+  "Kesilmiş lif, döküntü ve Fasıl 55 Not 1’e uyan demet Fasıl 55’tedir."
+ ],
+ "sorular": [
+  # --- Eşya → 4'lü (5)
+  S("Tarife Cetveline göre, 150 desiteks olan, enine kesitinin en geniş yeri 0,3 mm bulunan, makaraya sarılı ve çengel takılmamış naylon monofilament (olta misinası) hangi pozisyonda sınıflandırılır?",
+    "54.04", ["54.02", "54.05", "95.07", "56.07"], "C", E4,
+    "67 desiteks veya daha fazla olup enine kesiti 1 mm’yi geçmeyen sentetik monofilamentler 54.04’tedir; Açıklama Notu bunların oltalarda kullanıldığını belirtir. 67 desiteksten az olsaydı 54.02’ye, çengel takılmış olta olsaydı 95.07’ye giderdi. 54.05 suni monofilamentler içindir; monofiller sicim kuralına tabi değildir.",
+    "54.04 pozisyon metni ve Açıklama Notu; Bölüm XI Not 3(B)(c)."),
+  S("Tarife Cetveline göre, perakende satış için hazırlanmamış, bobine sarılı, metrede 80 tur bükülmüş tek katlı viskoz rayon filament ipliği hangi pozisyondadır?",
+    "54.03", ["54.02", "54.06", "55.10", "54.01"], "A", E4,
+    "Viskoz, selülozun kimyasal işlenmesiyle üretilen suni liftir; suni filament iplikleri (dikiş ipliği hariç, perakende değil) 54.03’tedir. 54.02 sentetik filament ipliği, 54.06 perakende filament ipliği, 55.10 suni devamsız lif ipliği, 54.01 dikiş ipliği içindir; tek kat iplik zaten dikiş ipliği olamaz.",
+    "Fasıl 54 Not 1(b); 54.03 pozisyon metni."),
+  S("Tarife Cetveline göre, makaraya sarılmış (mesnetle birlikte 200 g), dikiş ipliği olarak kullanılmak üzere silikonla aprelenmiş, son bükümü “Z” olan iki katlı polyester filament iplik hangi pozisyondadır?",
+    "54.01", ["54.02", "54.06", "55.08", "56.07"], "E", E4,
+    "Bölüm XI Not 5’in tüm şartları (çok katlı, mesnetle 1.000 g’ı geçmeyen, aprelenmiş, Z bükümlü) sağlandığından iplik dikiş ipliğidir; filamentten olduğu için 54.01’dedir ve perakende olup olmaması önemli değildir. 54.06 dikiş ipliğini kapsamaz; 55.08 devamsız lif dikiş ipliği içindir.",
+    "Bölüm XI Not 5; 54.01 pozisyon metni ve Açıklama Notu."),
+  S("Tarife Cetveline göre, tamamı naylon filament ipliklerinden dokunmuş, boyanmış, parça halindeki paraşüt kumaşı hangi pozisyonda sınıflandırılır?",
+    "54.07", ["54.08", "55.12", "59.11", "54.02"], "B", E4,
+    "Sentetik filament ipliklerinden dokunmuş mensucat 54.07’dedir; Açıklama Notu paraşütlük kumaşları açıkça sayar. 54.08 suni filament mensucatı, 55.12 sentetik devamsız lif mensucatı, 54.02 iplik içindir. Teknik kullanıma mahsus 59.11 mensucatı bu sayılan kullanım kumaşlarını kapsamaz.",
+    "54.07 Açıklama Notu."),
+  S("Tarife Cetveline göre, selüloz asetat filament ipliklerinden dokunmuş, parça halindeki astarlık kumaş hangi pozisyondadır?",
+    "54.08", ["54.07", "55.16", "54.03", "58.06"], "D", E4,
+    "Selüloz asetat, tabii polimerin kimyasal değişimiyle elde edilen suni liftir; suni filament ipliklerinden dokunmuş mensucat 54.08’dedir ve Açıklama Notu astarları sayar. 54.07 sentetik filament mensucatı, 55.16 suni devamsız lif mensucatı, 54.03 iplik içindir; 58.06 ise 30 cm’yi geçmeyen dar dokumalar (kordelalar) içindir.",
+    "Fasıl 54 Not 1(b); 54.08 Açıklama Notu."),
+  # --- Olumsuz teşhis (4)
+  S("Aşağıdakilerden hangisi 54.04 pozisyonunda <b>sınıflandırılmaz</b>?",
+    "Enine kesitinin en geniş yeri 1,5 mm olan polietilen monofilament",
+    ["Görünen genişliği 4 mm olan, uzunlamasına katlanmış polipropilen şerit",
+     "Kısa boylarda kesilip perakende satışa hazırlanmış 200 desiteks naylon monofilament",
+     "Raket kirişi imalinde kullanılan, kesiti 0,8 mm olan poliamid monofilament",
+     "Görünen genişliği 2 mm olan, bükülmüş polyester şerit (suni saman)"], "B", OT,
+    "Enine kesiti 1 mm’yi geçen plastik monofilamentler Bölüm XI Not 1(g) uyarınca Fasıl 39’dadır. Görünen genişliği 5 mm’yi geçmeyen katlanmış veya bükülmüş şeritler, kısa boyda kesilmiş veya perakende hazırlanmış monofilamentler ve raket kirişi monofilamenti (kesit ≤ 1 mm) 54.04’te kalır.",
+    "Bölüm XI Not 1(g); 54.04 Açıklama Notu."),
+  S("Aşağıdakilerden hangisi Tarife Cetvelinin 54. faslında <b>yer almaz</b>?",
+    "Her bir filamenti 67 desiteksten az olan, uzunluğu 2 metreyi geçmeyen sentetik filament demetleri",
+    ["Sigara filtresi imalinde kullanılan, Fasıl 55 Not 1 şartlarını taşımayan selüloz asetat filament demeti",
+     "Viskoz rayondan yüksek mukavemetli filament ipliği",
+     "Aramid filament ipliği",
+     "54.04’teki polipropilen şeritlerden dokunmuş mensucat"], "E", OT,
+    "Uzunluğu 2 metreyi geçmeyen sentetik filament demetleri 55.03’tedir (Fasıl 55 Not 1 son cümle). Fasıl 55 Not 1’e uymayan filament demetleri (sigara filtresi için) Fasıl 54’te, viskoz yüksek mukavemetli iplik 54.03’te, aramid iplik 54.02’de (Not 12: aramid poliamiddir), şeritten dokunmuş mensucat 54.07’dedir.",
+    "Fasıl 54 Genel Açıklamalar; Fasıl 55 Not 1; 54.02 Açıklama Notu hariç tutmaları."),
+  S("Aşağıdakilerden hangisi 54.07 pozisyonunda <b>sınıflandırılmaz</b>?",
+    "Tamamı devamsız poliester liflerinden dokunmuş mensucat",
+    ["Naylon filament ipliğinden dokunmuş çadır bezi",
+     "Görünen genişliği 3 mm olan polipropilen şeritten dokunmuş mensucat",
+     "Polyester filament ipliklerinin dik açıyla üst üste konulup kesişme noktalarında yapıştırılmasıyla oluşan mensucat",
+     "Polyester filamentten dokunmuş perdelik kumaş"], "A", OT,
+    "Sentetik devamsız liflerden dokunmuş mensucat 55.12–55.15’tedir (burada %85’ten fazla devamsız poliester olduğundan 55.12). Çadır bezi ve perdelik filament kumaşı, 54.04 şeritlerinden dokunmuş mensucat ve Bölüm XI Not 9’daki paralel iplik tabakalarından yapıştırılarak oluşturulan mensucat 54.07’dedir.",
+    "54.07 pozisyon metni ve Açıklama Notu; Bölüm XI Not 9."),
+  S("Aşağıdakilerden hangisi 54. fasıl kapsamı <b>dışında</b> kalır?",
+    "Bireysel kullanım için perakende ambalajlanmış naylon diş ipi",
+    ["Tekstüre polyester filament ipliği",
+     "Perakende satış için hazırlanmış, iki katlı viskoz rayon filament ipliği",
+     "67 desiteksten az sentetik monofilament",
+     "Selüloz asetat filamentlerinden dokunmuş mensucat"], "C", OT,
+    "Diş aralarını temizlemede kullanılan, bireysel kullanım için perakende hazırlanmış iplikler Bölüm XI Not 1(e) ve Fasıl 54 Genel Açıklamalar uyarınca 33.06’dadır. Tekstüre iplik ve 67 desiteksten az monofilament 54.02’de, perakende viskoz iplik 54.06’da, asetat mensucat 54.08’dedir.",
+    "Bölüm XI Not 1(e); Fasıl 54 Genel Açıklamalar."),
+  # --- Farklı/aynı (4)
+  S("Aşağıdaki liflerden hangisi, diğerlerinden <b>farklı</b> olarak Fasıl 54 Not 1 anlamında sentetik lif grubundadır?",
+    "Poli(vinil asetat) hidroliziyle hazırlanan poli(vinil alkol) lifleri",
+    ["Viskoz ipeği", "Kuproamonyum (kupro) ipeği", "Selüloz asetat lifleri", "Kalsiyum aljinat lifleri"], "E", FA,
+    "Not 1(a), polimerizasyonla üretilen polimerlerin kimyasal değişimini de sentetik sayar ve poli(vinil asetat) hidroliziyle hazırlanan poli(vinil alkol)ü örnek verir. Viskoz ve kupro (selülozun işlenmesi veya çözünmesi), selüloz asetat ve aljinat (tabii polimerlerin kimyasal değişimi) Not 1(b) uyarınca suni liftir.",
+    "Fasıl 54 Not 1."),
+  S("Aşağıdaki ipliklerden hangisi diğerlerinden <b>farklı</b> bir pozisyonda sınıflandırılır?",
+    "Perakende satış için 40 g’lık makaraya sarılmış tek katlı naylon filament ipliği",
+    ["Perakende satış için 50 g’lık makaraya sarılmış iki katlı naylon filament ipliği",
+     "Perakende satış için 80 g’lık çile halinde, boyanmış, 1.000 desiteks, kat bükülü polyester filament ipliği",
+     "Perakende satış için 60 g’lık makaraya sarılmış iki katlı, boyanmış viskoz filament ipliği",
+     "Perakende satış için 70 g’lık kartona sarılmış kable asetat filament ipliği"], "D", FA,
+    "Bölüm XI Not 4(B)(a) uyarınca tek kat iplikler (yün hariç) hangi ambalajda olursa olsun perakende satış için hazırlanmış sayılmaz; bu iplik 54.02’dedir. Diğerleri mesnetle 85 g’ı geçmeyen veya 3.000 desiteksten az olup 85 g’ı geçmeyen çile halindeki çok katlı/kable filament iplikleri olarak 54.06’dadır.",
+    "Bölüm XI Not 4(A) ve 4(B)(a); 54.06 Açıklama Notu."),
+  S("Aşağıdaki eşya çiftlerinden hangisinin her ikisi de <b>aynı</b> pozisyonda yer alır?",
+    "67 desiteksten az naylon monofilament – Tekstüre polyester filament ipliği",
+    ["Viskoz filament ipliği – Viskoz devamsız lif ipliği",
+     "Naylon filamentten dokunmuş mensucat – Viskoz filamentten dokunmuş mensucat",
+     "Polyester filament dikiş ipliği – Perakende satışa hazır, dikiş ipliği olmayan polyester filament ipliği",
+     "200 desiteks, kesiti 0,4 mm sentetik monofilament – Kesiti 1,2 mm sentetik monofilament"], "A", FA,
+    "54.02, 67 desiteksten az sentetik monofilamentleri ve tekstüre sentetik filament ipliklerini birlikte kapsar. Viskoz filament ipliği 54.03, viskoz devamsız lif ipliği 55.10; naylon kumaş 54.07, viskoz kumaş 54.08; dikiş ipliği 54.01, perakende iplik 54.06; kesiti 1 mm’yi geçmeyen monofil 54.04, geçen Fasıl 39’dadır.",
+    "54.02 pozisyon metni ve Açıklama Notu; Bölüm XI Not 1(g)."),
+  S("Aşağıdakilerden hangisi diğerlerinden <b>farklı</b> bir fasılda sınıflandırılır?",
+    "Karbon lifleri",
+    ["Tekstüre naylon ipliği", "Polyester filament ipliğinden dokunmuş mensucat",
+     "Viskoz rayon filament ipliği", "Görünen genişliği 3 mm olan polipropilen şerit"], "C", FA,
+    "Karbon lifleri ve karbon liflerinden eşya Bölüm XI Not 1(q) ve Fasıl 54 Genel Açıklamalar uyarınca 68.15’tedir. Tekstüre naylon iplik 54.02, polyester filament mensucat 54.07, viskoz filament ipliği 54.03, 5 mm’yi geçmeyen polipropilen şerit 54.04 ile Fasıl 54’tedir.",
+    "Bölüm XI Not 1(q); Fasıl 54 Genel Açıklamalar."),
+  # --- Fasıl notu · Tanım/Eşik (4)
+  S("Fasıl 54 Not 1’e göre aşağıdaki ifadelerden hangisi <b>doğrudur</b>?",
+    "Selüloz, kazein veya aljinik asit gibi tabii organik polimerlerin kimyasal değişimiyle üretilen lifler suni liftir.",
+    ["Poli(vinil asetat) hidroliziyle hazırlanan poli(vinil alkol) lifleri suni liftir.",
+     "54.04 veya 54.05 pozisyonundaki şeritler sentetik ve suni lif sayılır.",
+     "“Sentetik” ve “suni” ifadeleri dokumaya elverişli maddeler için kullanıldığında farklı anlam taşır.",
+     "Viskoz ipeği, organik monomerlerin polimerizasyonuyla elde edildiği için sentetik liftir."], "D", FN,
+    "Not 1(b), tabii organik polimerlerin (selüloz, kazein ve diğer proteinler, aljinik asit) kimyasal değişimiyle üretilen lifleri suni sayar. Poli(vinil alkol) Not 1(a) örneği olarak sentetiktir; 54.04/54.05 şeritleri lif sayılmaz; ifadeler dokumaya elverişli maddelerde aynı anlamdadır; viskoz selülozdan elde edilen suni liftir.",
+    "Fasıl 54 Not 1."),
+  S("Bölüm XI notlarına göre “elastomerik iplik” için aşağıdakilerden hangisi <b>doğrudur</b>?",
+    "Orijinal uzunluğunun üç katına kadar gerildiğinde kopmayan ve iki katına gerilip bırakıldıktan sonra 5 dakika içinde orijinal uzunluğunun 1,5 katından fazla olmayan uzunluğa dönen sentetik filament ipliğidir.",
+    ["Orijinal uzunluğunun iki katına kadar gerildiğinde kopmayan ve 10 dakika içinde eski uzunluğuna dönen her türlü ipliktir.",
+     "Tekstüre iplikler, uzayıp eski şekline dönebildikleri için elastomerik iplik sayılır.",
+     "Suni (selülozik) filament iplikleri de bu tanıma girer.",
+     "Monofilamentler elastomerik iplik tanımının dışındadır."], "B", FN,
+    "Bölüm XI Not 13’e göre elastomerik iplik, dokumaya elverişli sentetik maddelerden filament iplik (monofilament dahil) olup üç katına gerildiğinde kopmaz ve 5 dakika süreyle iki katına gerildikten sonra orijinal uzunluğunun 1,5 katını aşmayan uzunluğa döner. Tekstüre iplik açıkça hariçtir; tanım yalnız sentetik maddeleri kapsar.",
+    "Bölüm XI Not 13."),
+  S("Bölüm XI Not 5’e göre bir ipliğin 54.01 anlamında “dikiş ipliği” sayılması için aşağıdakilerden hangisi şart <b>değildir</b>?",
+    "Perakende satış için hazırlanmış olmak",
+    ["Çok katlı bükülü (rötor) veya katlı bükülü (kable) olmak",
+     "Mesnet üzerine sarılı olup mesnetle birlikte ağırlığının 1.000 g’ı geçmemesi",
+     "Dikiş ipliği olarak kullanılmak amacıyla aprelenmiş olmak",
+     "“Z” bükülü olmak"], "E", FN,
+    "Not 5 dikiş ipliği için çok katlı/kable yapı, mesnetle 1.000 g’ı aşmama, apreleme ve Z büküm şartlarını arar. 54.01 pozisyon metni “perakende olarak satılacak hale getirilmiş olsun olmasın” dediği için perakende hazırlık şart değildir; tuzak, 54.06 ile karıştırmaktır.",
+    "Bölüm XI Not 5; 54.01 pozisyon metni."),
+  S("54.04 pozisyonundaki sentetik monofilamentler için ölçü şartları hangi seçenekte doğru verilmiştir?",
+    "67 desiteks veya daha fazla; enine kesitinin en geniş yeri 1 mm’yi geçmeyen",
+    ["67 desiteksten az; enine kesiti 1 mm’yi geçmeyen",
+     "67 desiteks veya daha fazla; enine kesiti 5 mm’yi geçmeyen",
+     "20.000 desiteksten fazla; enine kesiti 1 mm’yi geçmeyen",
+     "10.000 desiteks veya daha az; genişliği 5 mm’yi geçmeyen"], "A", FN,
+    "54.04 pozisyon metni monofilamentleri “67 desiteks veya daha fazla olup enine kesiti 1 mm’yi geçmeyenler” diye tanımlar. 67 desiteksten az monofilament 54.02’dedir; 5 mm sınırı şeritlerin görünen genişliği içindir; 20.000 ve 10.000 desiteks sırasıyla demet ve sicim eşikleridir.",
+    "54.04 pozisyon metni ve Açıklama Notu; Bölüm XI Not 1(g)."),
+  # --- GYK (2)
+  S("Ağırlık itibariyle %30 naylon filament, %28 devamsız poliester lifi ve %42 taranmış yünden dokunmuş, parça halindeki mensucatın pozisyonu ve dayandığı kural hangi seçenekte doğru verilmiştir?",
+    "54.07 – GYK 1 (Bölüm XI Not 2 uyarınca)",
+    ["51.12 – GYK 1 (Bölüm XI Not 2 uyarınca)", "51.12 – GYK 3(c)", "55.15 – GYK 1 (Bölüm XI Not 2 uyarınca)", "54.07 – GYK 3(b)"], "B", GY,
+    "Not 2(B)(c) uyarınca Fasıl 54 ve 55 tek fasıl sayılır: sentetik lifler toplam %58 ile yünden (%42) üstündür. Sonra bu iki fasıl arasında filament (%30) devamsız liften (%28) ağır olduğundan Fasıl 54 ve sentetik filament mensucatı 54.07 seçilir. Karar bölüm notundan çıktığı için dayanak GYK 1’dir; tek tek en ağır lif yün olduğu için 51.12 seçmek tuzaktır.",
+    "Bölüm XI Not 2(A) ve 2(B)(c); Bölüm XI Genel Açıklamalar (I)(A)(4); GYK 1."),
+  S("Seyahatte kullanılmak üzere küçük bir kutuda perakende satışa sunulan; birkaç makara sentetik filament dikiş ipliği, iğneler, düğmeler ve küçük bir makastan oluşan dikiş takımı için aşağıdakilerden hangisi <b>doğrudur</b>?",
+    "Bölüm XI Not 1 uyarınca bu bölüm dışındadır; 96. fasılda pozisyon metnine göre (GYK 1) sınıflandırılır.",
+    ["Esas niteliğini dikiş ipliği verdiğinden GYK 3(b) uyarınca 54.01’de sınıflandırılır.",
+     "GYK 3(c) uyarınca içerdiği eşyanın pozisyonlarından numara sırasına göre sonuncusunda sınıflandırılır.",
+     "Her unsur GYK 1’e göre kendi pozisyonunda ayrı ayrı sınıflandırılır.",
+     "Dikiş iplikleri perakende satışa hazır olduğundan GYK 3(a) uyarınca 54.06’da sınıflandırılır."], "D", GY,
+    "Bölüm XI Not 1(u), dikiş dikmekte kullanılan seyahat takımlarını adıyla 96. fasıl eşyası sayıp bölüm dışında bırakır; sonuç not ve pozisyon metninden çıktığı için GYK 1 yeterlidir, takım kuralı GYK 3(b)’ye başvurulmaz. Dikiş ipliği zaten perakende olsun olmasın 54.01’dedir; 54.06 dikiş ipliğini kapsamaz.",
+    "Bölüm XI Not 1(u); 54.01 ve 54.06 pozisyon metinleri; GYK 1."),
+  # --- Eşleştirme / Boşluk (2)
+  S("Aşağıdaki eşya – pozisyon eşleştirmelerinden hangisi <b>doğrudur</b>?",
+    "Perakende satış için 60 g’lık makaraya sarılmış iki katlı naylon filament ipliği – 54.06",
+    ["Viskoz filament dikiş ipliği – 54.03",
+     "Görünen genişliği 4 mm olan polipropilen şerit – 54.05",
+     "Asetat filamentten dokunmuş astar – 54.07",
+     "50 desiteks naylon monofilament – 54.04"], "C", ES,
+    "Mesnetle 85 g’ı geçmeyen, çok katlı sentetik filament ipliği Not 4 anlamında perakendedir ve 54.06’dadır. Viskoz dikiş ipliği 54.01’de, polipropilen (sentetik) şerit 54.04’te, asetat (suni) mensucat 54.08’de, 67 desiteksten az monofilament 54.02’dedir.",
+    "Bölüm XI Not 4; 54.01–54.08 pozisyon metinleri."),
+  S("“67 desiteksten az sentetik monofilamentler ..... pozisyonunda; 67 desiteks veya daha fazla olup enine kesiti 1 mm’yi geçmeyenler ..... pozisyonunda; enine kesiti 1 mm’yi geçenler ise ..... yer alır.” Boşluklara sırasıyla gelmesi gerekenler hangisidir?",
+    "54.02 – 54.04 – Fasıl 39’da",
+    ["54.04 – 54.02 – Fasıl 39’da", "54.02 – 54.04 – 56.07’de", "54.03 – 54.05 – Fasıl 39’da",
+     "54.02 – 54.06 – Fasıl 46’da"], "E", ES,
+    "54.02 pozisyon metni 67 desiteksten az sentetik monofilamentleri içerir; 54.04 ise 67 desiteks ve üzerindeki, kesiti 1 mm’yi geçmeyen sentetik monofilamentleri kapsar. Kesiti 1 mm’yi geçen plastik monofilamentler Bölüm XI Not 1(g) uyarınca Fasıl 39’dadır; Fasıl 46 bunlardan örülen eşya içindir, 54.03/54.05 suni ürünler içindir.",
+    "54.02 ve 54.04 pozisyon metinleri; Bölüm XI Not 1(g)."),
+  # --- Çoktan-çoğa (2)
+  SX("Bölüm XI Not 4’e göre aşağıdaki ipliklerden hangileri “perakende satış için hazırlanmış” <b>sayılmaz</b>? I. 85 g’lık makaraya sarılı tek katlı naylon filament ipliği II. Çapraz sarılmış çile halinde, boyanmış, iki katlı polyester filament ipliği III. 70 g’lık makaraya sarılı, boyanmış, iki katlı viskoz filament ipliği IV. Dokuma sanayiinde kullanılacağını gösteren konik bobine sarılı, 80 g’lık, iki katlı naylon filament ipliği",
+     ["I ve II", "II ve III", "I, II ve IV", "I, III ve IV", "II, III ve IV"], "C", CC,
+     "Not 4(B) uyarınca tek kat iplik (I), çapraz sarılmış çileler (II) ve mensucat sanayiinde kullanımını gösteren mesnetlerdeki (konik bobin) iplikler (IV) ağırlıkları ne olursa olsun perakende sayılmaz. Mesnetle 85 g’ı geçmeyen, boyanmış iki katlı viskoz filament ipliği (III) perakendedir ve 54.06’dadır.",
+     "Bölüm XI Not 4(A) ve 4(B)(a), (d)."),
+  SX("Aşağıdakilerden hangileri 54. fasıl <b>dışında</b> sınıflandırılır? I. Steril sentetik cerrahi dikiş monofilamenti II. Kısa boylarda kesilmiş, perakende ambalajlı, kesiti 0,5 mm naylon monofilament III. Her bir filamenti 67 desiteksten az, uzunluğu 2 m’yi geçmeyen sentetik filament demeti IV. Görünen genişliği 4 mm olan polyester şerit",
+     ["I ve II", "I ve III", "II ve IV", "I, III ve IV", "II, III ve IV"], "B", CC,
+     "Steril sentetik monofilament (I) 30.06’da, 2 m’yi geçmeyen sentetik filament demeti (III) 55.03’tedir. Kısa boyda kesilmiş veya perakende hazırlanmış olsa da kesiti 1 mm’yi geçmeyen monofilament (II) ve görünen genişliği 5 mm’yi geçmeyen şerit (IV) 54.04’te kalır.",
+     "54.04 Açıklama Notu; Fasıl 55 Not 1; 55.03 Açıklama Notu."),
+  # --- Senaryo (2)
+  S("Bir tekstil firması, polipropilen tabakaların kesilmesiyle elde ettiği, görünen genişliği 2,5 mm olan şeritleri dokuyarak çuval imaline mahsus, parça halinde mensucat üretmiştir. Bu mensucat hangi pozisyonda sınıflandırılır?",
+    "54.07", ["54.04", "46.01", "55.12", "54.08"], "D", SN,
+    "Görünen genişliği 5 mm’yi geçmeyen polipropilen şeritler 54.04 maddesidir; 54.07 pozisyon metni 54.04’teki maddelerden dokunmuş mensucatı açıkça kapsar. Şerit 5 mm’yi geçseydi mensucat 46.01’e giderdi. 54.04 şeridin kendisi, 54.08 suni maddeler, 55.12 devamsız lif mensucatı içindir.",
+    "54.07 pozisyon metni ve Açıklama Notu; 54.04 Açıklama Notu."),
+  S("Bir firma; birbirine paralel ve demet uzunluğuna eşit uzunlukta filamentlerden oluşan, 3 m uzunluğunda, metrede 2 tur bükümlü, her bir filamenti 3 desiteks, toplam ölçüsü 60.000 desiteks olan ve gerilmiş olduğundan çekildiğinde uzunluğunun %100’ünden fazla uzamayan poliester filament demeti ithal etmektedir. Eşya hangi pozisyonda sınıflandırılır?",
+    "55.01", ["54.02", "55.03", "55.06", "54.04"], "A", SN,
+    "Demet, Fasıl 55 Not 1’in beş şartını da (2 m’den uzun, metrede 5 turdan az büküm, filament 67 desiteksten az, %100’den fazla uzamama, toplam 20.000 desiteksten fazla) sağladığından sentetik filament demeti olarak 55.01’dedir. Fasıl 54 Not 2 uyarınca 54.02 bu demetlere uygulanmaz; 55.03 2 m’yi geçmeyen demetler, 55.06 karde-taranmış lifler içindir.",
+    "Fasıl 54 Not 2; Fasıl 55 Not 1; 55.01 Açıklama Notu.")
+ ]
+}
+
+yaz(d, 54)

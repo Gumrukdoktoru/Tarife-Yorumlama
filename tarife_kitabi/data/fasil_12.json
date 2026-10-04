@@ -1,0 +1,680 @@
+{
+ "tur": "fasil",
+ "fasil": 12,
+ "baslik": "Yağlı tohum ve meyveler; muhtelif tane, tohum ve meyveler; sanayide veya tıpta kullanılan bitkiler; saman ve kaba yem",
+ "bolum": "II",
+ "oz": {
+  "vurgu": "Fasıl 12 dört aileyi toplar: yağ çıkarılan tohum ve meyveler (12.01–12.07) ile bunların unları (12.08); ekim tohumları (12.09); şerbetçi otu, parfümeri ve eczacılık bitkileri, keçiboynuzu-şeker pancarı grubu (12.10–12.12); saman ve kaba yem (12.13–12.14). Temel test: ürünün türü ve esas kullanımı hangi pozisyonu gösteriyor ve onu öne alan daha özel bir pozisyon var mı?",
+  "maddeler": [
+   "Yağlı tohumlar ekim için ayrılmış olsalar bile 12.01–12.07’de kalır; 08.01 ve 08.02 ürünleri, zeytin, kakao taneleri ve kayısı-şeftali-erik çekirdekleri bu gruba girmez.",
+   "12.09 yalnız Not 3’te sayılan türden tohumlar içindir; hububat, baklagil sebze, baharat, yağlı tohum ve 12.11 ürünleri ekim amaçlı olsa da kendi yerinde kalır.",
+   "12.11 tek türden bitki çaylarını da kapsar; değişik türlerin karışımı 21.06’ya, sos çeşnisi bitki karışımı 21.03’e gider.",
+   "Yağı alınmamış, kısmen alınmış veya orijinal yağı geri eklenmiş unlar 12.08’de; yağı alınmış küspeler 23.04–23.06’dadır."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+  "satirlar": [
+   [
+    "1",
+    "08.01 veya 08.02 meyvesi ya da zeytin mi?",
+    "Fasıl 8 · zeytin Fasıl 7 veya 20"
+   ],
+   [
+    "2",
+    "Yağ çıkarılan türden tohum veya meyve mi? (ekim amaçlı olsa bile)",
+    "Soya <b>12.01</b> · yer fıstığı <b>12.02</b> · kopra <b>12.03</b> · keten <b>12.04</b> · kolza <b>12.05</b> · ayçiçeği <b>12.06</b> · diğer <b>12.07</b>"
+   ],
+   [
+    "3",
+    "Bunların yağı alınmamış, kısmen alınmış veya yağı geri eklenmiş unu mu?",
+    "<b>12.08</b> (hardal unu <b>21.03</b>; küspe <b>23.04</b>–<b>23.06</b>)"
+   ],
+   [
+    "4",
+    "Ekim amaçlı tohum, meyve veya spor mu?",
+    "<b>12.09</b>*"
+   ],
+   [
+    "5",
+    "Şerbetçi otu kozalağı veya lüpülin mi?",
+    "<b>12.10</b>"
+   ],
+   [
+    "6",
+    "Esas olarak parfümeri, eczacılık, böcek veya mantar öldürücü amaçla kullanılan bitki mi?",
+    "<b>12.11</b> (karışık bitki çayı <b>21.06</b>)"
+   ],
+   [
+    "7",
+    "Keçiboynuzu, deniz otu veya alg, şeker pancarı, şeker kamışı, yenilebilir çekirdek içi, kavrulmamış hindiba kökü mü?",
+    "<b>12.12</b>"
+   ],
+   [
+    "8",
+    "İşlenmemiş hububat sapı veya kapçığı mı?",
+    "<b>12.13</b> (temizlenmiş, ağartılmış, boyanmış <b>14.01</b>)"
+   ],
+   [
+    "9",
+    "Hayvan yemi olarak yetiştirilen bitki mi? (kuru ot, yonca, fiğ, hayvan pancarı)",
+    "<b>12.14</b> (bitkisel artık <b>23.08</b>)"
+   ]
+  ],
+  "dipnot": "* Hububat (Fasıl 10), baklagil sebzeler ve tatlı mısır (Fasıl 7), Fasıl 9 baharatları, 12.01–12.07 ve 12.11 ürünleri ekilmeye mahsus olsa bile 12.09’a girmez (Fasıl 12 Not 3)."
+ },
+ "pozisyon_haritasi": [
+  [
+   "12.01",
+   "Soya fasulyesi",
+   "Kırılmış olsun olmasın; kahve yerine kavrulmuşu 21.01",
+   "Soya fasulyesi, tohumluk soya"
+  ],
+  [
+   "12.02",
+   "Yer fıstığı",
+   "Kavrulmamış ve pişirilmemiş; kavrulmuşu 20.08",
+   "Kabuklu veya kabuksuz yer fıstığı"
+  ],
+  [
+   "12.03",
+   "Kopra",
+   "Yenmeyen, kurutulmuş Hindistan cevizi içi",
+   "Yağlık kopra"
+  ],
+  [
+   "12.04",
+   "Keten tohumu",
+   "Kuruyan yağların başlıca kaynağı",
+   "Keten tohumu"
+  ],
+  [
+   "12.05",
+   "Rep veya kolza tohumları",
+   "Düşük erusik asitli olanlar dahil",
+   "Kolza, kanola tohumu"
+  ],
+  [
+   "12.06",
+   "Ayçiçeği tohumu",
+   "Adi ayçiçeği (Helianthus annuus)",
+   "Ayçiçeği çekirdeği"
+  ],
+  [
+   "12.07",
+   "Diğer yağlı tohum ve meyveler",
+   "Not 1 listesi; 08.01, 08.02 ve zeytin hariç",
+   "Susam, haşhaş, pamuk, hardal, aspir tohumu"
+  ],
+  [
+   "12.08",
+   "Yağlı tohum unları (hardal unu hariç)",
+   "Yağı alınmamış, kısmen alınmış veya yağı geri eklenmiş",
+   "Yağlı soya unu"
+  ],
+  [
+   "12.09",
+   "Ekim amaçlı tohum, meyve ve sporlar",
+   "Not 3; filizlenme yeteneği kalmayanlar dahil",
+   "Yonca, çim, sebze, şeker pancarı tohumu"
+  ],
+  [
+   "12.10",
+   "Şerbetçi otu kozalakları; lüpülin",
+   "Taze, kurutulmuş, toz veya pellet",
+   "Şerbetçi otu pelleti"
+  ],
+  [
+   "12.11",
+   "Parfümeri, eczacılık, böcek ve mantar öldürücü bitkiler",
+   "Not 4; daha özel pozisyon önceliklidir",
+   "Nane, adaçayı, ginseng kökü, ıhlamur, papatya"
+  ],
+  [
+   "12.12",
+   "Keçiboynuzu, algler, şeker pancarı ve kamışı, yenilebilir çekirdek içleri",
+   "Yenilebilir olsun olmasın tüm deniz otları",
+   "Keçiboynuzu, kayısı çekirdeği içi, hindiba kökü"
+  ],
+  [
+   "12.13",
+   "Hububat sapları ve kapçıkları (işlenmemiş)",
+   "Kıyılmış, toz, preslenmiş veya pellet olabilir",
+   "Buğday sapı, preslenmiş saman"
+  ],
+  [
+   "12.14",
+   "Kök yemler, kuru ot, yonca, fiğ ve benzeri yemler",
+   "Hayvan yemi olarak yetiştirilmiş olmak",
+   "Yonca pelleti, silaj, hayvan pancarı"
+  ]
+ ],
+ "notlar": [
+  [
+   "Bölüm II Notu",
+   "“Pellet”: doğrudan sıkıştırılarak veya ağırlığının <b>%3</b>’ünü geçmeyen oranda bağlayıcı ilavesiyle küçük topaklar halinde bir araya getirilen ürünler (12.10, 12.13 ve 12.14 pelletleri)."
+  ],
+  [
+   "Fasıl 12 Not 1",
+   "12.07, diğerleri meyanında palm meyvesi ve çekirdeği, pamuk tohumu, Hint yağı tohumu, susam, hardal, aspir, haşhaş tohumu ve shea (karite) fıstığına uygulanır; 08.01 veya 08.02 ürünlerine ve zeytine (Fasıl 7 veya 20) uygulanmaz."
+  ],
+  [
+   "Fasıl 12 Not 2",
+   "12.08, yağı alınmamış un ve kaba unlara ek olarak yağı kısmen alınmış veya yağı alınıp orijinal yağı tamamen ya da kısmen geri eklenmiş un ve kaba unlara da uygulanır; 23.04–23.06 artıklarına uygulanmaz."
+  ],
+  [
+   "Fasıl 12 Not 3",
+   "12.09’da “ekilmeye mahsus tohum”: pancar, ot ve diğer çim, süs çiçeği, sebze, orman ağacı, meyve ağacı, fiğ (<b>Vicia faba türü hariç</b>) ve acı bakla tohumları. Ekilmeye mahsus olsalar bile hariç: baklagil sebzeler ve tatlı mısır (Fasıl 7), Fasıl 9 baharatları, hububat (Fasıl 10), 12.01–12.07 ve 12.11 ürünleri."
+  ],
+  [
+   "Fasıl 12 Not 4",
+   "12.11, diğerleri meyanında fesleğen, zembil çiçeği, ginseng, çördük otu, meyan kökü, her türlü nane, biberiye, sedef otu, adaçayı ve pelini kapsar. Hariç: Fasıl 30 ilaçları; Fasıl 33 parfümeri, kozmetik ve tuvalet müstahzarları; 38.08’deki böcek, mantar, ot ilaçları, dezenfektanlar ve benzerleri."
+  ],
+  [
+   "Fasıl 12 Not 5",
+   "12.12’deki “deniz otları ve diğer algler” tabirine dahil değildir: 21.02’deki cansız tek hücreli mikroorganizmalar; 30.02’deki mikroorganizma kültürleri; 31.01 veya 31.05’teki gübreler."
+  ],
+  [
+   "Genel Açıklamalar",
+   "12.01–12.07, ekim veya başka amaçla hazırlanmış olsalar da yağ çıkarılan türden tohum ve meyveleri kapsar; bütün, kırılmış, ezilmiş, kabuğu alınmış ya da doğal özelliğini değiştirmeyen ısıl işlem görmüş olabilirler. Hariç: kayısı, şeftali, erik çekirdekleri (12.12); kakao taneleri (18.01); yağ çıkarımı artıkları (23.04–23.06)."
+  ],
+  [
+   "12.02 Açıklama Notu",
+   "Kavrulmamış veya başka şekilde pişirilmemiş yer fıstığı (daha iyi korunması için ısıtılmış olabilir) 12.02’de; kavrulmuş veya pişirilmiş yer fıstığı Fasıl 20’de."
+  ],
+  [
+   "12.03 Açıklama Notu",
+   "Kopra, yağ çıkarmada kullanılan ve insan tüketimine elverişli olmayan kurutulmuş Hindistan cevizi içidir; gıda olarak tüketime uygun kurutulmuş ve kıyılmış Hindistan cevizi 08.01."
+  ],
+  [
+   "12.11 Açıklama Notu",
+   "Taze, soğutulmuş, dondurulmuş, kurutulmuş, kesilmiş, ezilmiş, toz veya alkolle emdirilmiş olabilir. Tek türden bitki çayı 12.11’de; değişik türlerin karışımı 21.06’da. Esas olarak parfümeri veya eczacılıkta kullanılan odunlar ancak yonga, talaş, ezilmiş, tane veya toz halinde 12.11’de, aksi halde Fasıl 44’te. Daha özel pozisyondakiler hariç: turunçgil kabuğu 08.14, Fasıl 9 ürünleri, şerbetçi otu 12.10, hindiba kökü 12.12, sakız ve reçineler 13.01."
+  ],
+  [
+   "12.12 Açıklama Notu",
+   "Kayısı, şeftali ve erik çekirdek içleri yağ çıkarılsa bile 12.12’dedir. Hariç: agar-agar ve carrageenan 13.02; tek hücreli ölü algler 21.02; bagas 23.03; yapıştırıcı veya koyulaştırıcı olarak kullanılan keçiboynuzu endosperm unu 13.02; oymacılıkta kullanılan meyve çekirdekleri 14.04; kavrulmuş çekirdek içi ve kavrulmuş hindiba kökü 21.01."
+  ],
+  [
+   "12.13 Açıklama Notu",
+   "Harmandan elde edildiği halde, kıyılmış, toz, preslenmiş veya pellet halindeki işlenmemiş hububat sapları ve kapçıkları; temizlenmiş, ağartılmış veya boyanmış saplar 14.01."
+  ],
+  [
+   "12.14 Açıklama Notu",
+   "“Benzeri yem ürünleri” özellikle hayvan yemi olarak yetiştirilen bitkilerdir; tuzlanmış veya siloda işlenmiş olabilir. Hariç: kırmızımsı sarı havuç 07.06; hububat sapları 12.13; pancar yaprağı, mısır yaprağı gibi bitkisel artıklar 23.08; tatlandırılmış yemler gibi müstahzarlar 23.09."
+  ]
+ ],
+ "sinir_komsulari": [
+  [
+   "Yenilebilir kurutulmuş, kıyılmış Hindistan cevizi",
+   "08.01",
+   "Kopra değil; Fasıl 12 Not 1"
+  ],
+  [
+   "Badem, fındık, ceviz, kestane",
+   "08.02",
+   "Fasıl 12 Not 1"
+  ],
+  [
+   "Zeytin",
+   "Fasıl 7 / 20",
+   "Fasıl 12 Not 1"
+  ],
+  [
+   "Kakao taneleri",
+   "18.01",
+   "Fasıl 12 Genel Açıklamalar"
+  ],
+  [
+   "Kavrulmuş yer fıstığı; yer fıstığı ezmesi",
+   "20.08",
+   "12.02 ve 12.08 hariç tutmaları"
+  ],
+  [
+   "Kahve yerine kavrulmuş soya; kavrulmuş hindiba kökü; kavrulmuş çekirdek içi",
+   "21.01",
+   "12.01 ve 12.12 hariç tutmaları"
+  ],
+  [
+   "Hardal unu",
+   "21.03",
+   "12.08 hariç tutması"
+  ],
+  [
+   "Yağı alınmış küspe ve unlar",
+   "23.04–23.06",
+   "Fasıl 12 Not 2"
+  ],
+  [
+   "Değişik türlerden bitki çayı karışımı; sos çeşnisi bitki karışımı",
+   "21.06 / 21.03",
+   "12.11 hariç tutması"
+  ],
+  [
+   "Şerbetçi otu hülasası; şerbetçi otu posası",
+   "13.02 / 23.03",
+   "12.10 hariç tutması"
+  ],
+  [
+   "Agar-agar, carrageenan, keçiboynuzu endosperm unu",
+   "13.02",
+   "12.12 hariç tutması"
+  ],
+  [
+   "Tek hücreli ölü algler",
+   "21.02",
+   "Fasıl 12 Not 5"
+  ],
+  [
+   "Bagas (şeker kamışı küspesi)",
+   "23.03",
+   "12.12 hariç tutması"
+  ],
+  [
+   "Temizlenmiş, ağartılmış veya boyanmış saplar",
+   "14.01",
+   "12.13 hariç tutması"
+  ],
+  [
+   "Mısır yaprağı, pancar yaprağı (yem için yetiştirilmemiş)",
+   "23.08",
+   "12.14 hariç tutması"
+  ]
+ ],
+ "tuzaklar": [
+  "<b>Ekim amacı her tohumu 12.09’a götürmez.</b> Tohumluk buğday 10.01’de, tohumluk soya 12.01’de, ekim için ayrılmış Fasıl 9 baharatı ve baklagil sebze tohumu kendi yerinde kalır; 12.09 Not 3’teki tohumlar içindir.",
+  "<b>Yer fıstığı Fasıl 8’de değildir.</b> Kavrulmamış yer fıstığı yağlı tohum olarak 12.02’dedir; kavrulmuşu ve ezmesi 20.08’de.",
+  "<b>Kopra ile Hindistan cevizi farklıdır.</b> Yağ için kurutulmuş, yenmeyen iç kısım 12.03; yenilebilir kurutulmuş ve kıyılmış Hindistan cevizi 08.01.",
+  "<b>Kayısı çekirdeği içi yağlı tohum değildir.</b> Yağ çıkarılsa bile 12.12’dedir; badem yerine kullanılan insan gıdası grubundadır.",
+  "<b>Un mu küspe mi?</b> Yağı alınmamış, kısmen alınmış veya orijinal yağı geri eklenmiş un 12.08; yağı alınmış küspe Fasıl 23.",
+  "<b>Bitki çayında tür sayısı belirleyicidir.</b> Tek türden bitki çayı 12.11; değişik türlerin karışımı 21.06; anason gibi Fasıl 9 tohumları 09.09.",
+  "<b>Daha özel pozisyon 12.11’i yener.</b> Vanilya, karanfil, anason (Fasıl 9), şerbetçi otu (12.10), turunçgil kabuğu (08.14), sakız ve reçineler (13.01) eczacılıkta kullanılsa da 12.11’e girmez.",
+  "<b>Hindiba kökü üç yerdedir.</b> Cichorium intybus sativum çeşidinin kavrulmamış kökü 12.12; kavrulmuşu 21.01; diğer kavrulmamış hindiba kökleri 06.01.",
+  "<b>Yem için yetiştirilmiş mi?</b> Hayvan yemi olarak yetiştirilen bitki 12.14; yem olarak kullanılsa da bu amaçla yetiştirilmeyen mısır yaprağı 23.08; hububat sapı 12.13.",
+  "<b>Agar-agar yosun değildir.</b> Deniz otları ve algler 12.12’de; onlardan elde edilen agar-agar ve carrageenan 13.02’de."
+ ],
+ "hafiza": {
+  "kanca": "YEDİ YAĞ + UN · EKİM · ŞERBET · ŞİFA · ŞEKER · SAP · YEM",
+  "aciklama": "12.01–12.07 yedi <b>yağ</b>lı tohum (soya, yer fıstığı, kopra, keten, kolza, ayçiçeği, diğerleri) · 12.08 onların <b>un</b>u · 12.09 <b>ekim</b> tohumu · 12.10 <b>şerbet</b>çi otu · 12.11 <b>şifa</b> ve koku bitkileri · 12.12 <b>şeker</b> pancarı ve kamışı, keçiboynuzu, yosun · 12.13 <b>sap</b> · 12.14 <b>yem</b>. Görsel benzetme: bir çiftlik ambarında soldan sağa yağ presi, değirmen, tohum torbaları, bira fıçısı, aktar rafı, şeker deposu, saman yığını ve en sonda ahır."
+ },
+ "sinav_odagi": [
+  "“Hangisi 12. fasılda sınıflandırılır?” kalıbında yem bitkisi fiğin (12.14) doğru cevap olduğu; kuş yemi, mısır ve darı gibi Fasıl 10 hububatının çeldirici olarak kullanıldığı görülmüştür.",
+  "Yer fıstığı; Hindistan cevizi, kestane ve Antep fıstığıyla birlikte verilerek “8. fasılda sınıflandırılmaz” sorusunun cevabı olarak sorulmuştur.",
+  "12.11 listesi: “tümü 12.11’de” sorusunda tonka fasulyesi, ginseng kökü ve nane doğru grup; vanilya, tarçın, karanfil, kişniş, kimyon, anason, zencefil, kekik ve paraguay çayı içeren gruplar çeldiricidir.",
+  "Bitkisel çay yapımında kullanılacak adaçayının 12.11’de olduğu; 09.02, 09.10 ve 07.12 seçeneklerinin çeldirici olduğu sorulmuştur.",
+  "“Aynı fasıl” sorularında kopra, pamuk tohumu, şeker kamışı ve ginseng kökünün birlikte Fasıl 12 grubunu oluşturduğu kullanılmıştır."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Aşağıdakilerden hangisinde sayılan bitkilerin tümü Tarife Cetvelinin 12.11 tarife pozisyonunda sınıflandırılır?",
+   "secenekler": [
+    "Tonka fasulyesi – Ginseng kökü – Nane",
+    "Vanilya – Tarçın – Karanfil",
+    "Kişniş tohumu – Kimyon tohumu – Anason tohumu",
+    "Zencefil – Kekik – Nane",
+    "Ihlamur çayı – Adaçayı – Paraguay çayı"
+   ],
+   "cevap": "A",
+   "aciklama": "Ginseng ve her türlü nane Fasıl 12 Not 4’te, tonka taneleri 12.11 Açıklama Notu listesinde sayılmıştır. Diğer seçeneklerdeki vanilya, tarçın, karanfil, kişniş, kimyon ve anason tohumları, zencefil ve kekik Fasıl 9’da, paraguay çayı 09.03’tedir."
+  }
+ ],
+ "ozet": [
+  "12.01–12.07: yağ çıkarılan tohum ve meyveler (ekim amaçlı olsalar da); 08.01, 08.02, zeytin, kakao ve meyve çekirdekleri hariç.",
+  "12.08: yağlı tohum unları (hardal unu 21.03, yağı alınmış küspe 23.04–23.06).",
+  "12.09: Not 3 tohumları; hububat, baklagil sebze, baharat, yağlı tohum ve 12.11 ürünleri hariç.",
+  "12.10 şerbetçi otu · 12.11 parfümeri ve eczacılık bitkileri (tek tür bitki çayı dahil) · 12.12 keçiboynuzu, algler, şeker pancarı ve kamışı, çekirdek içleri.",
+  "12.13 işlenmemiş hububat sapı ve kapçığı · 12.14 yem için yetiştirilmiş kaba yemler.",
+  "Daha özel pozisyon önce gelir: Fasıl 9 baharatları, şerbetçi otu, turunçgil kabuğu, sakız ve reçine 12.11’e girmez."
+ ],
+ "sorular": [
+  {
+   "soru": "Tarife Cetveline göre, kavrulmamış ve başka şekilde pişirilmemiş, kabuğu çıkarılmış yer fıstığı hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "08.02",
+    "20.08",
+    "12.07",
+    "12.08",
+    "12.02"
+   ],
+   "cevap": "E",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "12.02 kavrulmamış veya başka şekilde pişirilmemiş yer fıstığını kabuklu, kabuksuz veya kırılmış olarak kapsar. Kavrulmuş yer fıstığı ve yer fıstığı ezmesi 20.08’de yer alır. Yer fıstığı 08.02’deki sert kabuklu meyvelerden değildir; 12.07 ise 12.01–12.06 dışındaki yağlı tohumlar içindir.",
+   "dayanak": "12.02 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "Fasıl 12 Not 2’ye göre aşağıdakilerden hangisi 12.08 pozisyonunda sınıflandırılır?",
+   "secenekler": [
+    "Yağı tamamen alınmış soya küspesi",
+    "Hardal unu",
+    "Yağı alınıp kendi orijinal yağı kısmen geri eklenmiş ayçiçeği unu",
+    "Yer fıstığı ezmesi",
+    "Yağı alınmış pamuk tohumu küspesi"
+   ],
+   "cevap": "C",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Not 2’ye göre 12.08, yağı alınmamış un ve kaba unlara ek olarak yağı kısmen alınmış veya yağı alınıp orijinal yağı tamamen ya da kısmen geri eklenmiş unlara da uygulanır. Yağı alınmış küspeler 23.04–23.06’da, hardal unu 21.03’te, yer fıstığı ezmesi 20.08’dedir.",
+   "dayanak": "Fasıl 12 Not 2; 12.08 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 12.07 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Susam tohumu",
+    "Haşhaş tohumu",
+    "Pamuk tohumu",
+    "Kakao taneleri",
+    "Shea (karite) fıstığı"
+   ],
+   "cevap": "D",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Fasıl 12 Genel Açıklamaları kakao tanelerini 12.01–12.07 dışında bırakır ve 18.01’e gönderir. Susam, haşhaş tohumu, pamuk tohumu ve shea (karite) fıstığı Fasıl 12 Not 1’de 12.07 kapsamında sayılmıştır.",
+   "dayanak": "Fasıl 12 Not 1; Fasıl 12 Genel Açıklamalar."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden farklı bir tarife pozisyonunda yer alır?",
+   "secenekler": [
+    "Papatya çiçeği",
+    "Kurutulmuş defne yaprağı",
+    "Ihlamur çiçeği",
+    "Adaçayı yaprağı",
+    "Nane yaprağı"
+   ],
+   "cevap": "B",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Defne yaprakları 09.10 pozisyon metninde sayılmış bir baharattır ve Fasıl 9’dadır. Papatya, ıhlamur, adaçayı ve nane esas olarak eczacılıkta kullanılan bitkiler olarak 12.11’dedir; adaçayı ve nane Fasıl 12 Not 4’te açıkça sayılmıştır.",
+   "dayanak": "Fasıl 12 Not 4; 12.11 Açıklama Notu; 09.10 pozisyon metni."
+  },
+  {
+   "soru": "Tarife Cetveline göre, Hindistan cevizi yağı çıkarılmasında kullanılan, Hindistan cevizinin etli iç kısmının kurutulmasıyla elde edilen ve insan tüketimine elverişli olmayan ürün hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "08.01",
+    "12.07",
+    "12.03",
+    "23.06",
+    "12.12"
+   ],
+   "cevap": "C",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Tanımlanan ürün kopradır ve 12.03’te yer alır. İnsanlar için gıda olarak tüketime uygun kurutulmuş ve kıyılmış Hindistan cevizi 08.01’dedir. Kopra 12.03’te isimle belirtildiğinden 12.07’ye girmez; 23.06 ise yağ çıkarımından kalan artıklar içindir.",
+   "dayanak": "12.03 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "12.10 Açıklama Notuna göre; şerbetçi otu hülasası ……, şerbetçi otu posaları ……, şerbetçi otunun uçucu yağı ise …… pozisyonunda yer alır. Boşluklara sırasıyla gelmesi gerekenler hangisidir?",
+   "secenekler": [
+    "13.01 – 23.03 – 33.01",
+    "13.02 – 23.03 – 33.01",
+    "13.02 – 23.08 – 33.02",
+    "12.10 – 23.03 – 13.02",
+    "13.02 – 12.13 – 33.01"
+   ],
+   "cevap": "B",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "12.10 Açıklama Notu şerbetçi otu hülasasını 13.02’ye, şerbetçi otu posalarını 23.03’e, uçucu yağını 33.01’e gönderir. Şerbetçi otu kozalakları ve lüpülin ise taze, kurutulmuş, toz veya pellet halinde 12.10’da kalır. Fasıl 13 Not 1 de şerbetçi otu hülasasını 13.02 kapsamında sayar.",
+   "dayanak": "12.10 Açıklama Notu; Fasıl 13 Not 1."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 12.11 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Şerbetçi otu kozalakları",
+    "Ginseng kökü",
+    "Meyan kökü",
+    "Biberiye",
+    "Pelin"
+   ],
+   "cevap": "A",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "12.11 Açıklama Notu, tarifenin başka pozisyonlarında daha özel olarak tanımlanan bitkisel ürünleri eczacılıkta kullanılsalar bile kapsam dışı bırakır; şerbetçi otu kozalakları 12.10’dadır. Ginseng, meyan kökü, biberiye ve pelin Fasıl 12 Not 4’te 12.11 kapsamında sayılmıştır.",
+   "dayanak": "Fasıl 12 Not 4; 12.11 Açıklama Notu."
+  },
+  {
+   "soru": "Ihlamur, adaçayı ve nane yapraklarının karışımından oluşan, bitkisel çay yapımında kullanılmak üzere süzen poşetlere konulmuş ürün hangi pozisyonda ve hangi gerekçeyle sınıflandırılır?",
+   "secenekler": [
+    "21.06 – değişik tür bitki karışımları 12.11 dışında bırakıldığından (GYK 1)",
+    "12.11 – karışıma asli karakteri veren bitkiye göre (GYK 3(b))",
+    "09.02 – eşyaya en çok benzeyen eşya çay olduğundan (GYK 4)",
+    "12.11 – bitkilerin her biri 12.11’de olduğundan (GYK 2(b))",
+    "21.03 – numara sırasına göre son pozisyon olduğundan (GYK 3(c))"
+   ],
+   "cevap": "A",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "12.11 Açıklama Notuna göre tek bir türün bitki parçalarını içeren bitkisel “çay” ürünleri 12.11’de kalır; değişik tür bitkileri içeren bu tür ürünler ise pozisyon dışındadır ve 21.06’da sınıflandırılır. Sınıflandırma pozisyon metni ve açıklama notu çerçevesinde GYK 1 ile yapılır; bitkilerin tek tek 12.11’de olması karışımı 12.11’e taşımaz.",
+   "dayanak": "GYK 1; 12.11 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden farklı bir fasılda yer alır?",
+   "secenekler": [
+    "Soya fasulyesi",
+    "Keten tohumu",
+    "Kolza tohumu",
+    "Kavrulmuş yer fıstığı",
+    "Ayçiçeği tohumu"
+   ],
+   "cevap": "D",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Kavrulmuş veya başka şekilde pişirilmiş yer fıstığı Fasıl 20’de (20.08) yer alır. Soya fasulyesi 12.01’de, keten tohumu 12.04’te, kolza tohumu 12.05’te, ayçiçeği tohumu 12.06’da, yani Fasıl 12’dedir. Kavrulmamış yer fıstığı ise 12.02’dedir; ayrımı yapan kavurmadır.",
+   "dayanak": "12.02 Açıklama Notu; 12.01, 12.04–12.06 pozisyon metinleri."
+  },
+  {
+   "soru": "Fasıl 12 Not 3’e göre “ekilmeye mahsus tohum” sayılan tohumlar arasında hangi tür için istisna getirilmiştir?",
+   "secenekler": [
+    "Acı bakla tohumları",
+    "Vicia faba türünden olan fiğ tohumları",
+    "Orman ağaçlarının tohumları",
+    "Süs çiçeklerinin tohumları",
+    "Pancar tohumları"
+   ],
+   "cevap": "B",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Not 3; pancar, ot ve çim, süs çiçeği, sebze, orman ve meyve ağacı, fiğ ve acı bakla tohumlarını ekilmeye mahsus tohum sayar; fiğ tohumları için “Vicia faba türünden olanlar hariç” kaydı vardır. 12.09 Açıklama Notu da iri bakla ve at baklası gibi Vicia faba türlerini hariç tutar.",
+   "dayanak": "Fasıl 12 Not 3; 12.09 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, şerbetçi otu kozalaklarının etrafında bulunan ve kurutulduktan sonra mekanik olarak ayrılan sarı renkli reçineli toz (lüpülin) hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "12.10",
+    "13.01",
+    "13.02",
+    "33.01",
+    "12.11"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "12.10 pozisyon metni şerbetçi otu kozalakları ile birlikte lüpülini de kapsar; reçineli yapısı onu 13.01’e götürmez. Şerbetçi otu hülasası 13.02’de, şerbetçi otunun uçucu yağı 33.01’de yer alır. Şerbetçi otu daha özel olarak 12.10’da tanımlandığından 12.11’e de girmez.",
+   "dayanak": "12.10 pozisyon metni ve Açıklama Notu; 12.11 Açıklama Notu."
+  },
+  {
+   "soru": "12.11 pozisyonu ile ilgili aşağıdaki ifadelerden hangileri doğrudur? I. Esas olarak parfümeri veya eczacılıkta kullanılan odunlar ancak yonga, talaş, ezilmiş, tane veya toz halinde ise 12.11’de yer alır.  II. Sabit yağ çıkarılmasında kullanılan türden tohumlar, eczacılıkta kullanılsalar bile 12.01–12.07’de kalır.  III. Alkol ile emdirilmiş 12.11 ürünleri bu pozisyon dışında kalır.  IV. Karışık olmayan, ancak tedavi amacıyla ölçülü dozlar halinde perakende satışa hazırlanmış 12.11 ürünleri duruma göre 30.03 veya 30.04’te yer alabilir.",
+   "secenekler": [
+    "I ve II",
+    "II ve III",
+    "I, II ve IV",
+    "I, III ve IV",
+    "II, III ve IV"
+   ],
+   "cevap": "C",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "Açıklama Notuna göre bu tür odunlar yalnız yonga, talaş, ezilmiş, tane veya toz halinde 12.11’dedir, aksi halde Fasıl 44’tedir (I). Sabit yağ çıkarılan tohumlar 12.11 amaçlarıyla kullanılsa da 12.01–12.07’de kalır (II). Tedavi veya koruma amaçlı ölçülü dozlarda perakende ambalajlananlar duruma göre 30.03 veya 30.04’e gider (IV). Alkolle emdirilmiş ürünler ise 12.11’de kalır (III yanlış).",
+   "dayanak": "12.11 Açıklama Notu; Fasıl 12 Not 4."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 12.12 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Keçiboynuzu",
+    "Şeker kamışı",
+    "Kavrulmamış hindiba kökü (Cichorium intybus sativum)",
+    "İnsanların yemesine elverişli kurutulmuş deniz otu",
+    "Agar-agar"
+   ],
+   "cevap": "E",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Agar-agar ve carrageenan 12.12’den hariç tutulmuş ve bitkisel kıvam verici maddeler olarak 13.02’ye gönderilmiştir. Keçiboynuzu, şeker kamışı, Cichorium intybus sativum çeşidinin kavrulmamış kökleri ve yenilebilir olsun olmasın deniz otları 12.12’dedir.",
+   "dayanak": "12.12 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "Ceratonia siliqua ağacının meyvesi olan, çok sayıda tohum içeren kahverengi baklalar kurutulmuş ve kırılmış halde ithal edilmektedir. Ürün daha çok damıtma maddesi ve hayvan yemi olarak kullanılacaktır. Eşya hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "08.13",
+    "12.14",
+    "23.08",
+    "12.12",
+    "13.02"
+   ],
+   "cevap": "D",
+   "tip": "Senaryo",
+   "gerekce": "Tanımlanan ürün keçiboynuzudur; 12.12 pozisyon metni keçiboynuzunu taze, soğutulmuş, dondurulmuş, kurutulmuş veya öğütülmüş olarak kapsar. Hayvan yemi olarak kullanılması onu 12.14’e veya 23.08’e götürmez. Yalnız keçiboynuzu endosperminden elde edilen ve yapıştırıcı veya koyulaştırıcı olarak kullanılan un 13.02’dedir.",
+   "dayanak": "12.12 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdaki ikililerden hangisinde yer alan ürünler aynı tarife pozisyonunda sınıflandırılır?",
+   "secenekler": [
+    "Şeker pancarı – Şeker kamışı",
+    "Hayvan pancarı – Şeker pancarı",
+    "Hububat sapı – Kuru ot",
+    "Hardal tohumu – Hardal unu",
+    "Keçiboynuzu – Keçiboynuzu endosperm unu"
+   ],
+   "cevap": "A",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Şeker pancarı ve şeker kamışı 12.12 pozisyon metninde birlikte sayılmıştır. Hayvan pancarı 12.14 / şeker pancarı 12.12; hububat sapı 12.13 / kuru ot 12.14; hardal tohumu 12.07 / hardal unu 21.03; keçiboynuzu 12.12 / kıvam verici olarak kullanılan endosperm unu 13.02.",
+   "dayanak": "12.12, 12.13, 12.14 pozisyon metinleri; 12.08 ve 12.12 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetveline göre, ekim amacıyla kullanılacak yonca tohumu hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "12.14",
+    "10.08",
+    "12.11",
+    "12.09",
+    "12.07"
+   ],
+   "cevap": "D",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Fasıl 12 Not 3’e göre ot ve diğer çim tohumları ekilmeye mahsus tohum sayılır; 12.09 Açıklama Notu yonca tohumunu açıkça sayar. Yonca bitkisinin kendisi (kuru ot, kaba un veya pellet) 12.14’te yer alır; tohumun ekim amacı onu 12.09’a götürür.",
+   "dayanak": "Fasıl 12 Not 3; 12.09 Açıklama Notu."
+  },
+  {
+   "soru": "Fasıl 12 Not 5’e ve 12.12 Açıklama Notuna göre aşağıdakilerden hangisi 12.12 pozisyonundaki “deniz otları ve diğer algler” tabirine <b>dahil değildir</b>?",
+   "secenekler": [
+    "İnsanların yemesine elverişli kurutulmuş deniz otları",
+    "Hayvan yemi olarak kullanılan deniz otları",
+    "Kozmetik imalinde kullanılan kurutulmuş algler",
+    "Başka çeşitlerle karıştırılmış deniz otu kaba unu",
+    "Tek hücreli ölü algler"
+   ],
+   "cevap": "E",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Not 5; 21.02’deki cansız tek hücreli mikroorganizmaları, 30.02’deki mikroorganizma kültürlerini ve 31.01 veya 31.05’teki gübreleri tabirin dışında bırakır; 12.12 Açıklama Notu da tek hücreli ölü algleri 21.02’ye gönderir. Deniz otları ise yenilebilir olsun olmasın, hangi amaçla kullanılırsa kullanılsın ve kaba un halinde de 12.12’dedir.",
+   "dayanak": "Fasıl 12 Not 5; 12.12 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdaki ürünleri sınıflandırıldıkları pozisyonlarla eşleştiriniz. I. Kopra  II. Lüpülin  III. Keçiboynuzu  IV. Acı bakla (yem bitkisi) — a. 12.12  b. 12.03  c. 12.14  d. 12.10",
+   "secenekler": [
+    "I-b, II-a, III-d, IV-c",
+    "I-a, II-d, III-b, IV-c",
+    "I-b, II-d, III-c, IV-a",
+    "I-c, II-d, III-a, IV-b",
+    "I-b, II-d, III-a, IV-c"
+   ],
+   "cevap": "E",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Kopra 12.03’te, şerbetçi otu kozalaklarından ayrılan lüpülin 12.10’da, keçiboynuzu 12.12’de, yem bitkisi olarak acı bakla 12.14’te yer alır. Acı bakla tohumu ekim amaçlı olduğunda ise Not 3 uyarınca 12.09’a girer.",
+   "dayanak": "12.03, 12.10, 12.12, 12.14 pozisyon metinleri; Fasıl 12 Not 3."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 12.14 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Hayvan pancarı",
+    "Kuru ot",
+    "Hayvan yemi olarak kullanılan mısır yaprakları",
+    "Yem bitkisi olarak yetiştirilen fiğ",
+    "Siloda işlenmiş yonca"
+   ],
+   "cevap": "C",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "12.14 Açıklama Notuna göre “benzeri yem ürünleri” özellikle hayvan yemi olarak yetiştirilen bitkilerdir; yem olarak kullanılsa da bu amaçla yetiştirilmeyen mısır yaprakları gibi bitkisel ürünler 23.08’dedir. Hayvan pancarı, kuru ot, fiğ ve siloda işlenmiş yonca 12.14’tedir.",
+   "dayanak": "12.14 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "Çim tohumlarının saf kimyasal gübre tanecikleriyle karıştırılarak kâğıt bir zemine yerleştirildiği ve üzerinin gözenekli, plastikle takviyeli ince bir katmanla örtüldüğü rulolar ithal edilmektedir. Bu eşyanın sınıflandırılmasıyla ilgili hangisi <b>doğrudur</b>?",
+   "secenekler": [
+    "31.05’te; gübre içerdiğinden GYK 3(b) ile asli karaktere göre sınıflandırılır.",
+    "Fasıl 48’de; kâğıt zemin baskın olduğundan GYK 3(b) ile sınıflandırılır.",
+    "12.09’da; açıklama notunda bu şekilde sunulan tohumlar pozisyon kapsamında sayıldığından GYK 1 ile sınıflandırılır.",
+    "12.14’te; çim bir yem bitkisi olduğundan GYK 4 ile sınıflandırılır.",
+    "Tohum, gübre ve kâğıt GYK 3(c) uyarınca ayrı ayrı sınıflandırılır."
+   ],
+   "cevap": "C",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "12.09 Açıklama Notu, bu pozisyondaki ürünlerin (özellikle çim tohumlarının) saf kimyasal gübre tanecikleriyle karıştırılmış halde kâğıt bir zemine yerleştirilmiş ve gözenekli bir katmanla örtülmüş olabileceğini açıkça belirtir. Bu nedenle eşya GYK 1 çerçevesinde 12.09’da kalır; asli karakter tartışmasına (GYK 3) gerek yoktur.",
+   "dayanak": "GYK 1; 12.09 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, esas itibariyle badem yerine kullanılan, kavrulmamış kayısı çekirdeği içi hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "08.02",
+    "12.12",
+    "12.07",
+    "20.08",
+    "21.01"
+   ],
+   "cevap": "B",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "12.12 Açıklama Notu şeftali, kayısı ve erik çekirdeklerinin içlerini bu pozisyonda sayar ve bunların yağ çıkarılması amacıyla kullanılsalar dahi 12.12’de kalacağını belirtir. Fasıl 12 Genel Açıklamaları da bu çekirdekleri 12.01–12.07 dışında bırakır. Kavrulmuş çekirdek içleri ise 21.01’dedir.",
+   "dayanak": "12.12 Açıklama Notu; Fasıl 12 Genel Açıklamalar."
+  },
+  {
+   "soru": "Fasıl 12 Genel Açıklamalarına göre 12.01–12.07 pozisyonlarıyla ilgili aşağıdaki ifadelerden hangileri doğrudur? I. Ekim için hazırlanmış olsalar bile yağ çıkarılan türden tohumlar bu pozisyonlarda kalır.  II. Acılığını gidermek veya muhafaza için ısıl işlem görmeleri, doğal özelliklerini değiştirmedikçe sınıflandırmayı etkilemez.  III. Yağ çıkarımından arta kalan küspeler de bu pozisyonlarda yer alır.  IV. Kayısı, şeftali ve erik çekirdekleri bu pozisyonlarda yer alır.",
+   "secenekler": [
+    "I ve II",
+    "I ve III",
+    "II ve IV",
+    "I, II ve III",
+    "I, II ve IV"
+   ],
+   "cevap": "A",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "Genel Açıklamalara göre 12.01–12.07 ekim veya diğer amaçlar için hazırlanmış olsalar da yağ çıkarılan tohumları kapsar (I) ve doğal özelliklerini değiştirmeyen ısıl işlemlere izin verir (II). Yağ çıkarımından kalan katı artıklar 23.04–23.06’da (III), kayısı, şeftali ve erik çekirdekleri 12.12’dedir (IV).",
+   "dayanak": "Fasıl 12 Genel Açıklamalar; Fasıl 12 Not 3."
+  },
+  {
+   "soru": "Bölüm II Notuna göre, 12.14 pozisyonundaki yonca pelletlerinin “pellet” sayılabilmesi için kullanılan bağlayıcı ağırlık itibariyle en fazla ne kadar olabilir?",
+   "secenekler": [
+    "%1",
+    "%2",
+    "%2,5",
+    "%3",
+    "%5"
+   ],
+   "cevap": "D",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Bölüm II Notuna göre “pellet”, doğrudan sıkıştırma suretiyle veya ağırlığının %3’ünü geçmeyecek oranda bir bağlayıcı ilavesiyle küçük topaklar halinde bir araya getirilen üründür. 12.14 Açıklama Notu yem ürünlerinin bu tanıma uygun pellet halinde olabileceğini belirtir; aynı tanım 12.10 ve 12.13 için de geçerlidir.",
+   "dayanak": "Bölüm II Notu; 12.14 Açıklama Notu."
+  },
+  {
+   "soru": "Ekim amacıyla ithal edilen aşağıdaki tohumlardan hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Çim tohumu",
+    "Sebze tohumu",
+    "Orman ağacı tohumu",
+    "Şeker pancarı tohumu",
+    "Soya fasulyesi"
+   ],
+   "cevap": "E",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Fasıl 12 Not 3’e göre 12.01–12.07 ürünleri ekilmeye mahsus olsalar bile 12.09’a girmez; tohumluk soya fasulyesi 12.01’dedir. Çim, sebze, orman ağacı ve şeker pancarı tohumları ekilmeye mahsus tohum olarak 12.09’dadır.",
+   "dayanak": "Fasıl 12 Not 3; 12.01 pozisyon metni."
+  },
+  {
+   "soru": "Kenevir (Cannabis sativa) bitkisinin kırılmamış tohumları, sabit yağ çıkarılmasında kullanılmak üzere dökme halde ithal edilmektedir; ekim amacı bulunmamaktadır. Eşya hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "12.11",
+    "12.07",
+    "12.09",
+    "13.01",
+    "13.02"
+   ],
+   "cevap": "B",
+   "tip": "Senaryo",
+   "gerekce": "Kenevir tohumları 12.07 Açıklama Notunda diğer yağlı tohumlar arasında sayılmıştır. Kendir (Cannabis sativa) otları 12.11’de, kenevir reçinesi 13.01’de, kenevir hülasası 13.02’dedir. Ekim amacı olmadığından 12.09 söz konusu değildir; olsaydı da Not 3 uyarınca 12.07’de kalırdı.",
+   "dayanak": "12.07 Açıklama Notu; 12.11 Açıklama Notu; Fasıl 12 Not 3; 13.01 ve 13.02 Açıklama Notları."
+  }
+ ]
+}

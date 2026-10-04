@@ -1,0 +1,358 @@
+#!/usr/bin/env python3
+"""Fasıl 64 modülü üreteci."""
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from yardim_64_69 import soru, yaz  # noqa: E402
+
+EP = "Eşya → 4’lü pozisyon"
+OT = "Olumsuz teşhis"
+FA = "Farklı/aynı pozisyon veya fasıl"
+TN = "Fasıl notu · Tanım/Eşik"
+GY = "Genel Yorum Kuralı"
+ES = "Eşleştirme / Boşluk doldurma"
+CC = "Çoktan-çoğa (I–IV)"
+SN = "Senaryo"
+
+obj = {
+    "tur": "fasil",
+    "fasil": 64,
+    "baslik": "Ayakkabılar, getrler, tozluklar ve benzeri eşya; bunların aksamı",
+    "bolum": "XII",
+    "oz": {
+        "vurgu": "Fasıl 64’te pozisyonu iki madde belirler: <b>dış taban</b> (yere temas eden en büyük yüzey) ve <b>yüz</b> (dış yüzeyin en büyük parçası). Önce eşyanın Not 1 hariç tutmalarına girip girmediğine, sonra taban–yüz bileşimine bakılır; ayakkabı karakteri kazanmamış parçalar, iç tabanlar ve getrler 64.06’dadır.",
+        "maddeler": [
+            "Ayakkabılar şekil, boyut, kullanım amacı, üretim tarzı ve maddesine bakılmaksızın (amyant hariç) 64.01–64.05’te yer alır; Fasıl 71 maddelerini de içerebilir.",
+            "Taban ve yüz kauçuk/plastik ise: su geçirmez ve yüz tabana dikiş, perçin, çivi, vida vb. ile tutturulmamışsa 64.01, diğerleri 64.02.",
+            "Taban kauçuk, plastik, deri veya terkip yoluyla elde edilen deri iken yüz deri ise 64.03, dokumaya elverişli madde ise 64.04; kalan bütün bileşimler (ağaç, mantar, ip, keçe taban vb.) 64.05.",
+            "Dış yüzeyi gözle görülür kauçuk/plastik kaplı mensucat “kauçuk/plastik” sayılır; astar, süs ve takviye parçaları dikkate alınmaz.",
+        ],
+    },
+    "karar_tablosu": {
+        "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+        "satirlar": [
+            ["1", "Not 1 hariç tutması mı? (tabansız kâğıt/plastik kullan-at örtü, dış tabanı tutturulmamış tekstil ayakkabı, balyalı kullanılmış ayakkabı, amyant, ortopedik, oyuncak, paten takılı bot)",
+             "Maddesine göre · Bölüm XI · <b>63.09</b> · <b>68.12</b> · <b>90.21</b> · Fasıl 95"],
+            ["2", "Ayakkabı karakteri kazanmamış aksam, çıkarılabilir iç taban, topuk rampası, getr, tozluk mu?",
+             "<b>64.06</b> (bağ, toka, kopça, düğme, fermuar hariç)"],
+            ["3", "Taban ve yüz kauçuk/plastik*, su geçirmez ve yüz tabana dikiş, perçin, çivi, vida vb. ile tutturulmamış mı?",
+             "<b>64.01</b>"],
+            ["4", "Taban ve yüz kauçuk/plastik* (diğer)?", "<b>64.02</b>"],
+            ["5", "Yüz deri; taban kauçuk, plastik, deri veya terkip yoluyla elde edilen deri mi?", "<b>64.03</b>"],
+            ["6", "Yüz dokumaya elverişli madde; taban kauçuk, plastik, deri veya terkip yoluyla elde edilen deri mi?", "<b>64.04</b>"],
+            ["7", "Hiçbiri değilse (ağaç, mantar, ip, keçe, mensucat taban; deri taban + plastik yüz; terkip deri yüz)", "<b>64.05</b>"],
+        ],
+        "dipnot": "* Maddeler Not 4’e göre belirlenir: yüzde dış yüzeyin en büyük parçası, tabanda yerle temas eden en büyük parça (topuk hariç); aksesuar ve takviyeler dikkate alınmaz. Dış yüzeyi çıplak gözle görülebilir kauçuk/plastik tabakalı mensucat kauçuk/plastik sayılır (Not 3(a)).",
+    },
+    "pozisyon_haritasi": [
+        ["64.01", "Su geçirmez ayakkabılar (taban ve yüz kauçuk/plastik)",
+         "Yüz tabana dikiş, perçin, çivi, vida vb. ile tutturulmamış; kalıplama, vulkanizasyon, yapıştırma",
+         "Lastik çizme, galoş, şoson, kalıplanmış kayak ayakkabısı"],
+        ["64.02", "Diğer ayakkabılar (taban ve yüz kauçuk/plastik)",
+         "64.01 şartlarını taşımayanlar (dikişli, perçinli, su geçirmez olmayan)",
+         "Perçinli kayak botu, plastik sandalet, tıkaçlı parmak arası terlik, banyo terliği"],
+        ["64.03", "Yüzü deriden ayakkabılar",
+         "Taban kauçuk, plastik, deri veya terkip yoluyla elde edilen deri",
+         "Kauçuk tabanlı deri bot, kösele tabanlı deri ayakkabı"],
+        ["64.04", "Yüzü dokumaya elverişli maddeden ayakkabılar",
+         "Taban kauçuk, plastik, deri veya terkip yoluyla elde edilen deri",
+         "Kauçuk tabanlı kumaş spor ayakkabı, tenis ayakkabısı"],
+        ["64.05", "Diğer ayakkabılar",
+         "Önceki pozisyonlara uymayan taban–yüz bileşimleri",
+         "Ağaç takunya, mantar tabanlı sandalet, ip tabanlı espadril, deri tabanlı plastik yüzlü ayakkabı"],
+        ["64.06", "Ayakkabı aksamı; çıkarılabilir iç taban, topuk rampası; getr, tozluk, dizlik",
+         "Ayakkabı karakteri kazanmamış parçalar; ayağı tamamen kaplamayan bacak örtüleri",
+         "İç tabana takılı yüz, topuk, iç taban, tozluk, ayaksız dağ çorabı, bacak ısıtıcı"],
+    ],
+    "notlar": [
+        ["Fasıl 64 Not 1",
+         "Fasıl dışı: (a) hafif veya az dayanıklı maddelerden (kâğıt, plastik yaprak vb.) tabansız, kullanılıp atılabilir ayak/ayakkabı örtüleri → yapıldıkları maddeye göre; (b) üstüne dış taban yapıştırılmamış, dikilmemiş veya başka suretle tutturulmamış dokumaya elverişli maddelerden ayakkabılar → Bölüm XI; (c) 63.09’daki kullanılmış ayakkabılar; (d) amyant mamulleri → 68.12; (e) ortopedik ayakkabılar, diğer ortopedik cihazlar ve aksamı → 90.21; (f) oyuncak ayakkabılar, buz veya tekerlekli paten takılmış botlar, bacak koruyucuları ve benzeri koruyucu spor eşyası → Fasıl 95."],
+        ["Fasıl 64 Not 2",
+         "64.06’daki “aksam”; ayakkabı çivileri, ayakkabı demirleri ve benzerlerini, bağ deliği kapsüllerini, kopçaları, tokaları, ayakkabı bağlarını, ponponları, düğmeleri, diğer süs eşyası ile şeritçi ve kaytancı eşyasını (kendi pozisyonlarında) ve 96.06’daki düğme veya diğer eşyayı kapsamaz."],
+        ["Fasıl 64 Not 3(a)",
+         "“Kauçuk” ve “plastik”: çıplak gözle görülebilen kauçuk veya plastik dış tabaka içeren dokunmuş mensucat ve diğer dokumaya elverişli ürünleri de kapsar; bu işlemlerden doğan renk değişiklikleri dikkate alınmaz."],
+        ["Fasıl 64 Not 3(b)",
+         "“Deri”: 41.07 ve 41.12 ila 41.14 pozisyonlarındaki ürünler. Terkip yoluyla elde edilen deri (41.15) bu tanıma girmez."],
+        ["Fasıl 64 Not 4(a)",
+         "Yüzün maddesi, ayakkabı dış yüzeyinin en büyük parçasını oluşturan maddedir; dil, kenar şeridi, süsler, kopçalar, kayışlar, tasmalar vb. aksesuar veya mesnetler dikkate alınmaz."],
+        ["Fasıl 64 Not 4(b)",
+         "Dış tabanın maddesi, yerle temas eden en büyük parçayı oluşturan maddedir; kabara çivileri, ökçe demirleri, çiviler, ayakkabı demirleri vb. aksesuar ve takviyeler dikkate alınmaz."],
+        ["Genel Açıklamalar (A)",
+         "Fasıl; sandaletten kalça çizmesine kadar her tür ayakkabıyı, dans ayakkabılarını, ev terliklerini, tek parça oyma veya kalıplanmış ayakkabıları, diğer ayakkabıların üzerine giyilenleri ve bir kez kullanılacak şekilde taban takılmış kullan-at ayakkabıları kapsar. Paten veya kayak takılı ayakkabılar ise 95.06’dadır."],
+        ["Genel Açıklamalar (B)",
+         "Ayakkabılar amyant hariç her maddeden olabilir ve Fasıl 71 maddelerini içerebilir; 64.01–64.05 arasında sınıflandırmayı dış taban ve yüzün maddesi tayin eder."],
+        ["Genel Açıklamalar (C)",
+         "Dış taban: topuk hariç, kullanılırken yere temas eden kısım. Tabanla birleştirilmiş fakat içine gömülmemiş çıkarılabilir tekstil tabaka dikkate alınmaz. Ayrı tabanı olmayan yekpare ayakkabılar (takunya gibi) alt yüzeylerinin maddesine göre sınıflandırılır."],
+        ["Genel Açıklamalar (D)",
+         "Yüz: tabanın üzerindeki kısım; taban–yüz sınırı belirsizse (makosen, kalıplanmış ayakkabı) ayağın üstünü ve yanlarını kaplayan kısım. Astarın sınıflandırmaya etkisi yoktur."],
+        ["Genel Açıklamalar (F)",
+         "“Dokumaya elverişli maddeler”: Fasıl 50–60’taki lifler, iplikler, mensucat, keçe, dokunmamış mensucat, sicim, kaytan, halat, kablo vb."],
+        ["Genel Açıklamalar (H)",
+         "Henüz tamamlanmamış yüze eklenmiş dış tabandan oluşan ve ayak bileğini örtmeyen “ayakkabı altları” aksam değil ayakkabıdır; üst kenarın bordürle düzeltilmesi ve bağlama aksamının eklenmesiyle kolayca tamamlanırlar."],
+        ["64.01 Açıklama Notu",
+         "Su geçirmezlik ile birlikte yüzün tabana dikiş, perçin, çivi, vida vb. ile tutturulmamış olması aranır. Presle, enjeksiyonla, yarı eriterek, dönüşlü döküm ve daldırarak kalıplama, vulkanizasyon, yüksek frekanslı kaynaklama ve yapıştırma ile elde edilenler dahildir; kar ayakkabıları, galoşlar, şosonlar ve kayak ayakkabıları örnek verilmiştir."],
+        ["64.02 Açıklama Notu",
+         "Perçinle bağlanmış kalıplanmış parçalardan kayak ayakkabıları, platforma perçinlenen takunyalar, yüzü tabana dikilen terlikler, sandaletler, tıkaçlı atkı tipi (sırımlı) sandaletler ve suya dayanıksız tek parça banyo terlikleri bu pozisyondadır."],
+        ["64.05 Açıklama Notu",
+         "Örnekler: kauçuk/plastik taban + kauçuk, plastik, deri ve tekstil dışı yüz; deri/terkip deri taban + deri ve tekstil dışı yüz; ağaç, mantar, sicim, karton, kürk, mensucat, keçe, linoleum, rafya, hasır taban (yüz herhangi bir madde)."],
+        ["64.06 Açıklama Notu",
+         "Getr, tozluk, dolak, ayaksız dağ çorabı ve bacak ısıtıcıları bacağı örter, çorap gibi ayağın tamamını kaplamaz. Hariç: vardelalar (42.05, Fasıl 40, Fasıl 39), elastik diz/bilek destekleri (maddesine göre), bebek taytları (Fasıl 61/62), amyant aksam (68.12), özel iç tabanlar (90.21), spor koruyucuları (95.06), düğmeler (96.06), fermuarlar (96.07)."],
+        ["Fasıl 90 Not 6",
+         "Ortopedik ayakkabılar ve özel iç tabanlar; ölçüye göre yapılmışsa veya seri üretilip çift halinde değil tek başına sunulan ve her iki ayağa eşit uyacak biçimde tasarlanmışsa 90.21’dedir. İç tabanı yalnızca kemerlendirilmiş komple ayakkabılar ortopedik sayılmaz (Fasıl 64)."],
+    ],
+    "sinir_komsulari": [
+        ["Kâğıt veya plastik yapraktan tabansız kullan-at ayak örtüsü", "Maddesine göre", "Not 1(a); taban takılmış olsaydı Fasıl 64"],
+        ["Dış tabanı tutturulmamış örme veya dokuma patik", "Bölüm XI", "Not 1(b); dış tabanı tutturulmuş örme ayakkabı ise Fasıl 64"],
+        ["Fazlaca kullanılmış, balya veya çuvalda eski ayakkabı", "63.09", "Not 1(c)"],
+        ["Amyanttan ayakkabı ve ayakkabı aksamı", "68.12", "Not 1(d)"],
+        ["Ortopedik ayakkabı, ölçüye göre özel iç taban", "90.21", "Not 1(e); Fasıl 90 Not 6"],
+        ["Buz veya tekerlekli paten takılı bot; kayak takılı kayak ayakkabısı", "95.06", "Not 1(f); Genel Açıklamalar (A)(4)"],
+        ["Oyuncak ayakkabı", "Fasıl 95", "Not 1(f)"],
+        ["Tekmelik, kriket yastığı, spor dizliği", "95.06", "Koruyucu spor eşyası; 64.06 değil"],
+        ["Ayakkabı bağı, toka, kopça, ponpon", "Kendi pozisyonları", "Not 2; aksam sayılmaz"],
+        ["Ayakkabı düğmesi; ayakkabı fermuarı", "96.06 / 96.07", "Not 2; 64.06 hariç tutmaları"],
+        ["Elastik mensucattan diz veya bilek destekleyicisi", "Maddesine göre", "Getr veya dizlik sayılmaz"],
+        ["Küçük çocuklar için bele kadar uzanan tek parça tayt", "Fasıl 61 / 62", "Giyim eşyası; tozluk değil"],
+        ["Ahşap ayakkabı kalıbı", "44.17", "Ayakkabı değil, ahşap alet"],
+        ["Ayakkabı boyası ve cilası", "34.05", "Ayakkabıda kullanılan müstahzar"],
+        ["Seyahat tipi ayakkabı temizleme takımı", "96.05", "Seyahat takımı pozisyonu"],
+    ],
+    "tuzaklar": [
+        "<b>Su geçirmez olmak 64.01 için yetmez.</b> Yüz tabana dikiş, perçin, çivi, vida vb. ile tutturulmuşsa ayakkabı su geçirmez olsa bile 64.02’dedir. Yapıştırma, vulkanizasyon ve yüksek frekanslı kaynak 64.01’i bozmaz.",
+        "<b>Plastik kaplı kumaş “plastik”tir.</b> Dış yüzündeki kauçuk/plastik tabaka çıplak gözle görülüyorsa yüz kauçuk/plastik sayılır (Not 3(a)); böyle bir ayakkabı 64.04’e değil 64.01 veya 64.02’ye gider.",
+        "<b>Süs ve astar sayılmaz.</b> Deri kenar şeritli kumaş ayakkabı 64.04’te, kürk astarlı deri bot 64.03’tedir. Yüzde ölçüt dış yüzeyin en büyük parçasıdır.",
+        "<b>Dış taban topuk değildir.</b> Topuk hariç yere temas eden en büyük yüzey esas alınır; kabara, çivi, ökçe demiri gibi takviyeler dikkate alınmaz.",
+        "<b>Deri taban + plastik yüz = 64.05.</b> 64.03 yüzü deri, 64.04 yüzü tekstil olanlar içindir. Yüzü terkip yoluyla elde edilen deri olan ayakkabı da “deri” sayılmadığından 64.05’tedir.",
+        "<b>Patenli bot Fasıl 95, patensiz paten ayakkabısı Fasıl 64.</b> Buz pateni ayakkabısı, kayak botu, kar sörfü botu Fasıl 64’tedir; paten veya kayak takılıysa 95.06’dadır.",
+        "<b>Bağ, toka, kopça, düğme, fermuar 64.06 değildir.</b> Not 2 ve hariç tutmalar gereği kendi pozisyonlarındadır; topuk, iç taban ve topuk rampası ise 64.06’dadır.",
+        "<b>Tamamlanmamış ayakkabı altı ≠ aksam.</b> Dış tabanı takılı, bileği örtmeyen bitmemiş ayakkabı ayakkabıdır (Genel Açıklamalar (H)); dış tabanı olmayan, iç tabana takılı yüz ise 64.06’dadır.",
+        "<b>Ortopedik görünüm yetmez.</b> İç tabanı yalnızca kemerlendirilmiş seri üretim ayakkabı Fasıl 64’te kalır; ortopedik ayakkabı 90.21’dedir.",
+        "<b>Ayakkabı Bölüm VIII’de değildir.</b> Deriden olsa bile ayakkabı Bölüm XII, Fasıl 64’tedir; ahşap takunya da Fasıl 44’e değil 64.05’e gider.",
+    ],
+    "hafiza": {
+        "kanca": "TERS ÇEVİR, SONRA ÜSTÜNE BAK: Su-Kau 01 · Kau 02 · Deri 03 · Kumaş 04 · Diğer 05 · Parça 06",
+        "aciklama": "Ayakkabıyı ters çevirip yere basan yüzeye (dış taban), sonra üstüne (yüz) bakın. İkisi de kauçuk/plastikse dikiş ve su testi 64.01 ile 64.02’yi ayırır; uygun tabanda yüz <b>deri</b> 64.03, <b>kumaş</b> 64.04; ağaç, mantar, ip tabanlar ve kalan bileşimler 64.05; bütün olmayan her şey, iç taban ve getrler 64.06.",
+    },
+    "sinav_odagi": [
+        "“Hangisi 64. fasılda yer almaz?” kalıbında spor ayakkabılarının (güreş, bisiklet, kar sörfü, koşu) ortopedik ayakkabıyla karıştırılması; ortopedik ayakkabının 90.21’e gittiği.",
+        "Spor ayakkabısı kavramı: güreş, kayak, bisiklet ayakkabısının spor ayakkabısı sayıldığı, deniz ayakkabısı gibi günlük ayakkabıların sayılmadığı.",
+        "Tekerlek veya paten takılı ayakkabıların Fasıl 95’e (95.06) gittiği; deri yüzlü 64.03 gibi pozisyonların çeldirici olarak kullanıldığı.",
+        "64.06’nın kapsamı: topuk rampasının aksam sayıldığı; ayakkabı çivisi, kopça, toka ve bağın Not 2 gereği kapsam dışı kaldığı.",
+        "Ayakkabıyla ilgili ürünlerin başka pozisyonlarda yer alması: ayakkabı boyası 34.05, ahşap ayakkabı kalıbı 44.17, amyant mamulleri 68.12, ayakkabı temizleme seyahat takımı 96.05.",
+        "Bölüm sorularında ayakkabıların Bölüm VIII’de (deri, kürk, saraciye) değil Bölüm XII’de yer aldığı.",
+    ],
+    "cikmis_ornekler": [
+        {
+            "soru": "Tarife Cetveline göre aşağıdakilerden hangisi 64.06 pozisyonunda sınıflandırılır?",
+            "secenekler": ["Ayakkabı çivisi", "Ayakkabı kopçası", "Ayakkabı tokası", "Ayakkabı topuk rampası", "Ayakkabı bağı"],
+            "cevap": "D",
+            "aciklama": "64.06 çıkarılabilir topuk rampalarını (topuk altı yastıkları) kapsar. Fasıl 64 Not 2 gereği ayakkabı çivileri, kopçalar, tokalar ve ayakkabı bağları “aksam” sayılmaz; kendi pozisyonlarında sınıflandırılır.",
+        },
+        {
+            "soru": "Dış tabanındaki boşluğa sökülemeyecek şekilde yerleştirilmiş iki adet tekerleği bulunan, üst kısmı deri, alt kısmı kauçuktan tekerlekli ayakkabı hangi tarife pozisyonunda yer alır?",
+            "secenekler": ["64.01", "64.03", "95.06", "95.03"],
+            "cevap": "C",
+            "aciklama": "Fasıl 64 Not 1(f) uyarınca paten takılmış botlar (buz için veya tekerlekli) Fasıl 64 dışındadır ve 95.06’da yer alır. Tekerlekler olmasaydı deri yüz ve kauçuk taban nedeniyle ayakkabı 64.03’te sınıflandırılırdı.",
+        },
+    ],
+    "ozet": [
+        "Pozisyon = dış taban maddesi + yüz maddesi; ikisi de Not 4’teki “en büyük yüzey” kuralıyla belirlenir, astar ve aksesuar dikkate alınmaz.",
+        "Kauçuk/plastik taban ve yüz: su geçirmez ve dikiş, perçin, çivi, vida yoksa 64.01; diğerleri 64.02.",
+        "Uygun tabanda yüz deri 64.03, yüz tekstil 64.04; kalan her şey (ağaç, mantar, ip taban, terkip deri yüz) 64.05.",
+        "Aksam, çıkarılabilir iç taban, topuk rampası, getr ve tozluk 64.06; bağ, toka, kopça, düğme, fermuar hariç.",
+        "Fasıl dışı: tabansız kullan-at (maddesine göre), dış tabanı tutturulmamış tekstil (Bölüm XI), balyalı kullanılmış (63.09), amyant (68.12), ortopedik (90.21), oyuncak ve paten takılı (Fasıl 95).",
+        "Plastik kaplı kumaş “plastik”tir; “deri” yalnız 41.07 ve 41.12 ila 41.14’tür.",
+    ],
+}
+
+S = []
+# 1 B
+S.append(soru(
+    "Tarife Cetveline göre, dış tabanı kauçuktan olan; yüzünün dış yüzey alanının büyük kısmı dokuma kumaştan oluşan ve yüzüne deri kenar şeridi ile deri kopçalar dikilmiş koşu ayakkabısı hangi pozisyonda sınıflandırılır?",
+    "64.04", ["64.02", "64.03", "64.05", "64.06"], "B", EP,
+    "Fasıl 64 Not 4(a) uyarınca yüzün maddesi, dış yüzeyin en büyük parçasını oluşturan maddedir; kenar şeridi, kopça gibi aksesuarlar dikkate alınmaz. Yüz dokumaya elverişli madde, taban kauçuk olduğundan ayakkabı 64.04’tedir. Deri parçalar nedeniyle 64.03’ü seçmek tipik tuzaktır; 64.02 ise yüzü de kauçuk/plastik olanlar içindir.",
+    "Fasıl 64 Not 4(a); 64.04 Açıklama Notu."))
+# 2 D
+S.append(soru(
+    "Aşağıdakilerden hangisi Tarife Cetvelinin 64. faslında <b>sınıflandırılmaz</b>?",
+    "Kâğıttan yapılmış, tabanı bulunmayan kullanılıp atılabilir ayakkabı örtüsü",
+    ["Bir kez kullanılacak şekilde taban takılmış kullanılıp atılabilir terlik",
+     "Diğer ayakkabıların üzerine giyilen topuksuz koruyucu ayakkabı",
+     "Dans ayakkabısı",
+     "Masif ağaç parçasının oyulmasıyla tek parça elde edilmiş ayakkabı"], "D", OT,
+    "Fasıl 64 Not 1(a) gereği hafif veya az dayanıklı maddelerden (kâğıt, plastik yaprak vb.) yapılmış tabansız kullanılıp atılabilir ayak/ayakkabı örtüleri yapıldıkları maddeye göre sınıflandırılır. Taban takılmış kullan-at ayakkabılar, diğer ayakkabıların üzerine giyilenler, dans ayakkabıları ve oyma yekpare ayakkabılar Genel Açıklamalar (A)’da fasıl kapsamında sayılmıştır. Tuzak, “kullan-at” ifadesini tek başına fasıl dışı sanmaktır; belirleyici olan taban takılı olup olmamasıdır.",
+    "Fasıl 64 Not 1(a); Fasıl 64 Genel Açıklamalar (A)."))
+# 3 A
+S.append(soru(
+    "Fasıl 64 notlarına göre, birden fazla maddeden yapılmış bir ayakkabının yüzünün hangi maddeden yapılmış sayılacağı konusunda aşağıdakilerden hangisi <b>doğrudur</b>?",
+    "Dış yüzeyin en büyük parçasını oluşturan madde esas alınır; dil, şerit, süs, kopça sayılmaz.",
+    ["Ağırlıkça en fazla bulunan madde esas alınır; astar ve iç tabanın ağırlığı da hesaba katılır.",
+     "Astar dahil iç ve dış yüzeylerin toplam alanında en fazla yer kaplayan madde esas alınır.",
+     "Ayakkabıya esas niteliğini veren madde GYK 3(b)’ye göre belirlenir; aksesuarlar da değerlendirilir.",
+     "Kıymeti en yüksek olan madde esas alınır; kopça ve tokalar da yüzün parçası sayılır."], "A", TN,
+    "Fasıl 64 Not 4(a)’ya göre ayakkabı yüzü, dış yüzeyin en büyük parçasını oluşturan maddeden yapılmış sayılır; dil, kenar şeridi, süs, kopça, kayış, tasma gibi aksesuar veya mesnetler dikkate alınmaz. Genel Açıklamalar (D) astarın sınıflandırmaya etkisi olmadığını belirtir. Ağırlık, kıymet veya esas nitelik ölçütü notta yoktur; konu notla çözüldüğü için GYK 3(b)’ye başvurulmaz.",
+    "Fasıl 64 Not 4(a); Fasıl 64 Genel Açıklamalar (D)."))
+# 4 E
+S.append(soru(
+    "Aşağıdakilerden hangisi Tarife Cetvelinde diğerlerinden farklı bir fasılda yer alır?",
+    "Ölçüye göre yapılmış ortopedik ayakkabı",
+    ["Kalçaya kadar uzanan balıkçı çizmesi",
+     "Üstü çadır bezinden, tabanı örülmüş hasırdan espadril",
+     "Bisiklet ayakkabısı",
+     "Yatak odası terliği"], "E", FA,
+    "Ortopedik ayakkabılar Fasıl 64 Not 1(e) gereği fasıl dışıdır ve 90.21’de (Fasıl 90) sınıflandırılır. Kalça çizmeleri, espadriller, bisiklet ayakkabıları ve ev içinde giyilen terlikler Genel Açıklamalar (A)’da açıkça sayılan Fasıl 64 eşyasıdır. Spor ayakkabılarıyla ortopedik ayakkabının karıştırılması bu konudaki klasik çeldiricidir.",
+    "Fasıl 64 Not 1(e); Fasıl 64 Genel Açıklamalar (A); Fasıl 90 Not 6."))
+# 5 C
+S.append(soru(
+    "Tarife Cetveline göre, kauçuk karışımın kalıba enjekte edilmesiyle tek parça halinde üretilen, yüzü tabana dikiş, perçin, çivi veya vida ile tutturulmamış su geçirmez kauçuk çizme hangi pozisyonda sınıflandırılır?",
+    "64.01", ["64.02", "40.16", "64.05", "64.06"], "C", EP,
+    "64.01, dış tabanı ve yüzü kauçuk veya plastik olan, yüzü tabana dikmek, perçinlemek, çivilemek, vidalamak ve benzeri işlemlerle tutturulmamış su geçirmez ayakkabıları kapsar; enjeksiyonla kalıplama Açıklama Notunda sayılan yöntemlerdendir. 64.02 bu şartları taşımayan kauçuk/plastik ayakkabılar içindir. Kauçuktan olsa da ayakkabı Fasıl 40’ta değil Fasıl 64’te yer alır.",
+    "64.01 pozisyon metni ve Açıklama Notu (2)."))
+# 6 A
+S.append(soru(
+    "Kauçuk tabanlı bir ayakkabının yüzü, dış yüzey alanının büyük kısmı deri, küçük kısmı dokuma kumaş olacak şekilde iki maddeden yapılmıştır. Bu ayakkabının 64.03 pozisyonunda sınıflandırılmasına esas olan Genel Yorum Kuralı aşağıdakilerden hangisidir?",
+    "GYK 1", ["GYK 2(b)", "GYK 3(a)", "GYK 3(b)", "GYK 3(c)"], "A", GY,
+    "Yüzün hangi maddeden sayılacağını Fasıl 64 Not 4(a) doğrudan belirler (dış yüzeyin en büyük parçası). Pozisyon metinleri ve fasıl notlarıyla yapılan sınıflandırma GYK 1’dir. GYK 2(b) ve 3 ancak pozisyon metinleri veya notlar aksini gerektirmediğinde uygulanır; burada not meseleyi çözdüğünden esas nitelik (3(b)) aranmaz.",
+    "GYK 1; Fasıl 64 Not 4(a)."))
+# 7 C
+S.append(soru(
+    "Fasıl 64 ile ilgili aşağıdaki ifadelerden hangileri <b>doğrudur</b>? I. Ayakkabılar 71. Fasılda yer alan maddeleri içerebilir. II. Astarı oluşturan madde, yüzün maddesi belirlenirken dikkate alınır. III. Tabanı olmayan, kâğıttan kullanılıp atılabilir ayak örtüleri yapıldıkları maddeye göre sınıflandırılır. IV. Amyanttan ayakkabılar 64.05 pozisyonunda sınıflandırılır.",
+    "I ve III", ["I ve II", "II ve IV", "I, III ve IV", "III ve IV"], "C", CC,
+    "Genel Açıklamalar (B), ayakkabıların Fasıl 71 maddelerini içerebileceğini belirtir (I doğru). Not 1(a) gereği tabansız kâğıt ayak örtüleri maddesine göre sınıflandırılır (III doğru). Astarın sınıflandırmada etkisi yoktur (II yanlış); amyanttan ayakkabılar Not 1(d) gereği 68.12’dedir (IV yanlış).",
+    "Fasıl 64 Not 1(a) ve 1(d); Genel Açıklamalar (B) ve (D)."))
+# 8 E
+S.append(soru(
+    "Tarife Cetveline göre, ayrı bir tabanı bulunmayan, masif ağacın oyulmasıyla tek parça olarak elde edilmiş ve üzerine deri kayış çakılmış takunya hangi pozisyonda sınıflandırılır?",
+    "64.05", ["64.03", "44.21", "64.06", "64.02"], "E", EP,
+    "Ayrı tabanı olmayan yekpare ayakkabılar alt yüzeylerini oluşturan maddeye göre sınıflandırılır; alt yüzey ağaç olduğundan bu, 64.05’te sayılan dış tabanı ağaç olan ayakkabıdır ve yüzün maddesi önemsizdir. Deri kayış nedeniyle 64.03 düşünülebilir; ancak 64.03 tabanı kauçuk, plastik, deri veya terkip yoluyla elde edilen deri olanlarla sınırlıdır. Ağaçtan olması eşyayı Fasıl 44’e götürmez.",
+    "Fasıl 64 Genel Açıklamalar (C); 64.05 Açıklama Notu."))
+# 9 B
+S.append(soru(
+    "Aşağıdakilerden hangisi 64.01 pozisyonunda <b>sınıflandırılmaz</b>?",
+    "Yüzü tabana dikilerek tutturulmuş su geçirmez kauçuk çizme",
+    ["Enjeksiyonla kalıplanmış su geçirmez poli(vinil klorür) çizme",
+     "Yüzü tabana yüksek frekanslı kaynakla birleştirilmiş su geçirmez plastik bot",
+     "Önceden kalıplanmış tabanı yüze yapıştırılmış su geçirmez kauçuk ayakkabı",
+     "Daldırarak kalıplama ile elde edilmiş su geçirmez kauçuk galoş"], "B", OT,
+    "64.01’in iki şartı vardır: su geçirmezlik ve yüzün tabana dikmek, perçinlemek, çivilemek, vidalamak ve benzeri işlemlerle tutturulmamış olması. Dikişle tutturulan çizme su geçirmez olsa bile 64.01’e giremez, 64.02’de sınıflandırılır. Enjeksiyon, yüksek frekanslı kaynak, yapıştırma ve daldırma Açıklama Notunda 64.01 kapsamında sayılan yöntemlerdir.",
+    "64.01 pozisyon metni ve Açıklama Notu; 64.02 Açıklama Notu."))
+# 10 D
+S.append(soru(
+    "Bir firma şu özelliklere sahip bir bot ithal etmektedir: dış tabanı kauçuktan; yüzü, dış yüzündeki poli(vinil klorür) tabakası çıplak gözle görülebilen dokuma kumaştan; yüz tabana dikilerek tutturulmuş; bot su geçirmez ve kaplama nedeniyle kumaşın rengi değişmiş. Tarife Cetveline göre bu bot hangi pozisyonda sınıflandırılır?",
+    "64.02", ["64.04", "64.01", "59.03", "64.05"], "D", SN,
+    "Fasıl 64 Not 3(a) uyarınca dış tabakası çıplak gözle görülebilen kauçuk veya plastik içeren mensucat “plastik” sayılır; renk değişikliği dikkate alınmaz. Böylece taban ve yüz kauçuk/plastiktir; ancak yüz tabana dikildiği için 64.01’in şartı bozulur ve bot 64.02’ye girer. Yüzü kumaş sayıp 64.04’ü, kaplı mensucat diye 59.03’ü seçmek bu sorunun tuzaklarıdır.",
+    "Fasıl 64 Not 3(a); 64.01 ve 64.02 pozisyon metinleri."))
+# 11 D
+S.append(soru(
+    "Fasıl 64 anlamında “kauçuk” ve “plastik” tabirleri ile ilgili aşağıdakilerden hangisi <b>doğrudur</b>?",
+    "Gözle görülebilir kauçuk/plastik dış tabakalı dokumaya elverişli ürünleri de kapsar; renk değişikliği önemsizdir.",
+    ["Yalnızca ağırlıkça %50’den fazla kauçuk veya plastik içeren dokunmuş mensucatı kapsar; görünüm önemsizdir.",
+     "Kaplaması çıplak gözle görülmese de kauçuk veya plastik emdirilmiş her mensucatı kapsar.",
+     "Kaplama nedeniyle rengi değişen mensucatı kapsamaz; bunlar dokumaya elverişli madde sayılır.",
+     "Yalnızca 39. ve 40. fasıllardaki levha ve tabakalardan kesilen parçaları kapsar; mensucat girmez."], "D", TN,
+    "Not 3(a)’ya göre kauçuk ve plastik tabirleri, çıplak gözle görülebilen kauçuk veya plastik dış tabaka içeren dokunmuş mensucat ve diğer dokumaya elverişli ürünleri de kapsar; renk değişiklikleri dikkate alınmaz. Notta ağırlık yüzdesi yoktur; ölçüt gözle görülebilir dış tabakadır. Renk değişikliğinin kapsamı daralttığını söyleyen seçenek notun tam tersidir.",
+    "Fasıl 64 Not 3(a); Fasıl 64 Genel Açıklamalar (E)."))
+# 12 A
+S.append(soru(
+    "Aşağıdakilerden hangisi diğerlerinden farklı bir pozisyonda yer alır?",
+    "Tabanı mantardan, yüzü kumaş şeritlerden sandalet",
+    ["Deriden yapılmış, bacağı örten getr", "Ayak kısmı olmayan, yünden dağ çorabı", "Takıp çıkarılabilir türden topuk rampası", "Ayakkabı içine konulan çıkarılabilir iç taban"], "A", FA,
+    "Dış tabanı mantar olan ayakkabılar, yüzünün maddesine bakılmaksızın 64.05’tedir. Getrler, ayak kısmı olmayan dağ çorapları, çıkarılabilir topuk rampaları ve iç tabanlar ise 64.06’da sınıflandırılır. Kumaş yüz nedeniyle 64.04 düşünülmemelidir; 64.04 tabanı kauçuk, plastik, deri veya terkip yoluyla elde edilen deri olanlarla sınırlıdır.",
+    "64.05 Açıklama Notu; 64.06 Açıklama Notu (I)(B) ve (II)."))
+# 13 B
+S.append(soru(
+    "Tarife Cetveline göre, dış tabanı ve yüzü kauçuk veya plastik maddeden olan su geçirmez ayakkabılardan yüzü tabana dikmek, perçinlemek, çivilemek, vidalamak ve benzeri işlemlerle tutturulmamış olanlar ..... pozisyonunda; bu işlemlerle tutturulmuş olanlar ise ..... pozisyonunda sınıflandırılır. Boşluklara sırasıyla hangisi gelmelidir?",
+    "64.01 – 64.02", ["64.02 – 64.01", "64.01 – 64.05", "64.02 – 64.05", "64.01 – 64.06"], "B", ES,
+    "64.01 yalnızca yüzü tabana dikiş, perçin, çivi, vida ve benzeri işlemlerle tutturulmamış su geçirmez kauçuk/plastik ayakkabıları kapsar. Bu şartı taşımayan kauçuk/plastik ayakkabılar 64.02’de “diğer ayakkabılar” olarak yer alır. 64.05 taban veya yüzü önceki pozisyonlarda belirtilmeyen maddelerden olanlar, 64.06 ise aksam içindir.",
+    "64.01 ve 64.02 pozisyon metinleri; 64.02 Açıklama Notu."))
+# 14 E
+S.append(soru(
+    "Tarife Cetveline göre, ayakkabı imalatında kullanılmak üzere iç tabana tutturulmuş, ancak dış tabanı bulunmayan ve ayakkabı karakteri kazanmamış deri ayakkabı yüzleri hangi pozisyonda sınıflandırılır?",
+    "64.06", ["64.03", "41.07", "42.05", "64.05"], "E", EP,
+    "64.06, dış tabanlar dışındaki tabanlara (ör. iç taban) tutturulmuş veya tutturulmamış ayakkabı yüzlerini kapsar; ayakkabı karakterini kazanmamış parçalar 64.05 Açıklama Notunda da 64.06’ya yönlendirilmiştir. Deriden olması eşyayı 41.07 veya 42.05’e götürmez. Dış tabanı eklenmiş ve bileği örtmeyen tamamlanmamış ayakkabı altları ise aksam değil ayakkabı sayılırdı.",
+    "64.06 pozisyon metni ve Açıklama Notu (I)(A)(7); 64.05 Açıklama Notu."))
+# 15 C
+S.append(soru(
+    "Aşağıdakilerden hangisi 64.06 pozisyonunda <b>sınıflandırılmaz</b>?",
+    "Uçları tutturulmuş ayakkabı bağı",
+    ["Takıp çıkarılabilir iç taban", "Kauçuktan ayakkabı topuğu",
+     "Ayakkabı yüzüne uygun şekilde kesilmiş deri parçası", "Ayak kısmı olmayan bacak ısıtıcısı"], "C", OT,
+    "Fasıl 64 Not 2 gereği ayakkabı bağları, tokalar, kopçalar, bağ deliği kapsülleri ve ponponlar “aksam” sayılmaz; kendi pozisyonlarında sınıflandırılır. Çıkarılabilir iç tabanlar, topuklar, yüzlere uygun kesilmiş deri parçaları ve ayak kısmı olmayan bacak ısıtıcıları 64.06 Açıklama Notunda açıkça sayılmıştır.",
+    "Fasıl 64 Not 2; 64.06 Açıklama Notu (I) ve (II)."))
+# 16 E
+S.append(soru(
+    "Spor faaliyetlerinde kullanılan aşağıdaki eşyadan hangisi Tarife Cetvelinde diğerlerinden farklı bir fasılda sınıflandırılır?",
+    "Paten takılmamış buz pateni ayakkabısı",
+    ["Tekerlekli paten takılmış deri bot", "Buz pateni takılmış deri bot", "Kriket oyununda kullanılan bacak yastığı", "Futbolda kullanılan plastik tekmelik"], "E", FA,
+    "Paten takılmamış buz pateni ayakkabıları Genel Açıklamalar (A)(4)’te Fasıl 64 eşyası olarak sayılmıştır. Buz veya tekerlekli paten takılmış botlar ile kriket yastığı, tekmelik gibi koruyucu spor eşyası Fasıl 64 Not 1(f) gereği Fasıl 95’tedir (95.06). Belirleyici olan patenin ayakkabıya takılı olup olmamasıdır.",
+    "Fasıl 64 Not 1(f); Genel Açıklamalar (A)(4); 64.06 Açıklama Notu, hariç tutmalar."))
+# 17 A
+S.append(soru(
+    "Fasıl 64 notlarına ve Genel Açıklamalarına göre “dış taban” ile ilgili aşağıdakilerden hangisi <b>doğrudur</b>?",
+    "Topuk hariç yere temas eden kısımdır; maddesi yerle temas eden en büyük parçaya göre belirlenir.",
+    ["Topuk dahil ayakkabının en kalın tabakasıdır; maddesi bu tabakanın ağırlığına göre belirlenir.",
+     "Kabara çivileri ve ökçe demirleri yere temas ettiğinden dış tabanın maddesi olarak esas alınır.",
+     "İç taban ile yüz arasında kalan ve ayağın altını destekleyen ara tabakadır.",
+     "Ayrı tabanı olmayan yekpare takunyalar dış tabanı olmadığından 64.06’da aksam sayılır."], "A", TN,
+    "Genel Açıklamalar (C)’ye göre dış taban, topuklar hariç kullanılırken yere temas eden kısımdır ve maddesi yerle temas eden en büyük parçaya göre tayin edilir. Not 4(b) gereği kabara çivileri, ökçe demirleri ve benzeri takviyeler dikkate alınmaz. Yekpare takunyalar alt yüzeylerinin maddesine göre ayakkabı olarak sınıflandırılır; aksam değildir.",
+    "Fasıl 64 Not 4(b); Genel Açıklamalar (C)."))
+# 18 C
+S.append(soru(
+    "Henüz tamamlanmamış bir yüze dış tabanı eklenmiş, ayak bileğini örtmeyen ve üst kenarının bordürle düzeltilmesi ile bağlama aksamının eklenmesi gibi kolay işlemlerle bitirilebilecek “ayakkabı altları” aksam olarak değil ayakkabı olarak sınıflandırılır. Bu sonuç hangi Genel Yorum Kuralının uygulanmasıdır?",
+    "GYK 2(a)", ["GYK 2(b)", "GYK 3(b)", "GYK 4", "GYK 5(a)"], "C", GY,
+    "GYK 2(a)’ya göre bir eşyaya yapılan atıf, gümrüğe sunulduğunda tamamlanmış eşyanın ayırt edici niteliğini taşıması şartıyla imali bitirilmemiş veya aksamı tamamlanmamış halini de kapsar. Genel Açıklamalar (H) bu ayakkabı altlarının ayakkabının parçası olarak değil ayakkabı olarak kabul edileceğini belirtir. GYK 2(b) madde karışımları, 3(b) esas nitelik, 4 en çok benzeyen eşya, 5(a) mahfazalar içindir.",
+    "GYK 2(a); Fasıl 64 Genel Açıklamalar (H)."))
+# 19 D
+S.append(soru(
+    "Tarife Cetveline göre, plastikten kalıplanmış birçok parçanın perçinle birbirine bağlanmasıyla elde edilen ve kayak takılmamış halde sunulan kayak ayakkabısı hangi pozisyonda sınıflandırılır?",
+    "64.02", ["64.01", "95.06", "64.06", "64.05"], "D", EP,
+    "64.02 Açıklama Notu, perçin çivisi üzerine bağlı birçok kalıplanmış parçadan oluşan kayak ayakkabılarını açıkça bu pozisyonda sayar. Perçinleme 64.01’in şartını bozar; perçinsiz kalıplanmış su geçirmez kayak ayakkabısı 64.01’de olurdu. Kayak takımı takılı olsaydı 95.06’ya giderdi.",
+    "64.02 Açıklama Notu; 64.01 Açıklama Notu; Fasıl 64 Genel Açıklamalar (A)(4)."))
+# 20 B
+S.append(soru(
+    "Aşağıdakilerden hangileri 64.06 pozisyonunda sınıflandırılır? I. Çıkarılabilir topuk altı yastığı II. Metal ayakkabı tokası III. Ayak kısmı olmayan dağ çorabı IV. Kauçuktan ayakkabı topuğu",
+    "I, III ve IV", ["I ve II", "II ve III", "I, II ve IV", "II, III ve IV"], "B", CC,
+    "Çıkarılabilir topuk rampaları (topuk altı yastıkları), ayak kısmı olmayan dağ çorapları ve kauçuktan topuklar 64.06 Açıklama Notunda sayılmıştır. Tokalar ise Fasıl 64 Not 2 gereği aksam sayılmaz ve kendi pozisyonunda sınıflandırılır. Bu nedenle II’yi içeren her seçenek yanlıştır.",
+    "Fasıl 64 Not 2; 64.06 Açıklama Notu (I)(A)(5), (I)(B) ve (II)."))
+# 21 C
+S.append(soru(
+    "Aşağıdakilerden hangisi Tarife Cetvelinin 64. faslında <b>yer almaz</b>?",
+    "Balya halinde sunulan, fazlaca kullanılmış eski ayakkabılar",
+    ["Kar sörfü için yapılmış bot", "Güreşçilerin kullandığı hafif deri ayakkabı", "Kayak takımı takılmamış kayak ayakkabısı",
+     "Yağa ve kimyasal maddelere karşı koruyucu ayakkabı"], "C", OT,
+    "Fazlaca kullanıldığını gösteren izler taşıyan ve dağınık halde veya balya, çuval vb. ambalajlarda sunulan eski ayakkabılar Not 1(c) gereği 63.09’dadır. Kar sörfü botları, güreş ayakkabıları, kayak takılmamış kayak ayakkabıları ve yağa, kimyasallara karşı koruyucu ayakkabılar Genel Açıklamalar (A)’da fasıl kapsamında sayılmıştır.",
+    "Fasıl 64 Not 1(c); Genel Açıklamalar (A)(4) ve (8)."))
+# 22 B
+S.append(soru(
+    "Aşağıdaki ayakkabılardan hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+    "Dış tabanı kauçuktan, yüzü terkip yoluyla elde edilen deriden ayakkabı",
+    ["Dış tabanı kauçuktan, yüzü sığır derisinden bot",
+     "Dış tabanı tabii köseleden, yüzü rugan deriden ayakkabı",
+     "Dış tabanı plastikten, yüzü keçi derisinden sandalet",
+     "Dış tabanı terkip yoluyla elde edilen deriden, yüzü güderiden ayakkabı"], "B", FA,
+    "Fasıl 64 Not 3(b)’ye göre “deri” 41.07 ve 41.12 ila 41.14 pozisyonlarındaki ürünlerdir; terkip yoluyla elde edilen deri (41.15) bu tanıma girmez. Yüzü terkip deriden olan ayakkabı 64.03’e giremez, 64.05’te sınıflandırılır. Diğerlerinin yüzü deridir ve tabanları 64.03’te sayılan maddelerdendir; terkip deri taban olarak 64.03’e engel değildir.",
+    "Fasıl 64 Not 3(b); Fasıl 41 Not 3; 64.03 ve 64.05 Açıklama Notları."))
+# 23 E
+S.append(soru(
+    "Bir botun özellikleri şöyledir: yüzünün dış yüzey alanının yaklaşık %60’ı sığır derisi, %40’ı dokuma kumaş; içi kürk astarlı; dış tabanının yere temas eden kısmı kauçuktan, takılı topuğu ise köseleden; tabanında kaymayı önleyen metal çiviler var. Tarife Cetveline göre bu bot hangi pozisyonda sınıflandırılır?",
+    "64.03", ["64.04", "43.03", "64.05", "64.02"], "E", SN,
+    "Yüz, dış yüzeyin en büyük parçası olan deriden sayılır (Not 4(a)); kürk astar sınıflandırmayı etkilemez. Dış taban, topuk hariç yere temas eden kısımdır ve kauçuktur; metal çiviler gibi takviyeler dikkate alınmaz (Not 4(b)). Deri yüz ve kauçuk taban 64.03’tür; kürk astar nedeniyle Fasıl 43’ü, kumaş kısım nedeniyle 64.04’ü seçmek tuzaktır.",
+    "Fasıl 64 Not 4(a) ve 4(b); Genel Açıklamalar (C) ve (D); 64.03 Açıklama Notu."))
+# 24 A
+S.append(soru(
+    "Aşağıdaki eşya – pozisyon eşleştirmelerinden hangisi <b>yanlıştır</b>?",
+    "Ayakkabıya dikilecek fermuar – 64.06",
+    ["Ölçüye göre yapılmış ortopedik ayakkabı – 90.21", "Amyanttan ayakkabı aksamı – 68.12",
+     "Ahşap ayakkabı kalıbı – 44.17", "Balya halinde sunulan kullanılmış ayakkabı – 63.09"], "A", ES,
+    "Fermuarlar 64.06 Açıklama Notunun hariç tutmalarında açıkça sayılmış olup 96.07’dedir; ayakkabıda kullanılacak olması onları aksam yapmaz. Ortopedik ayakkabı 90.21, amyant mamulleri 68.12, ahşap ayakkabı kalıpları 44.17, balya halindeki kullanılmış ayakkabılar 63.09 ile doğru eşleştirilmiştir.",
+    "Fasıl 64 Not 1 ve Not 2; 64.06 Açıklama Notu, hariç tutmalar; 44.17 pozisyon metni."))
+# 25 D
+S.append(soru(
+    "Fasıl 64 notlarına göre bu fasılda geçen “deri” tabiri hangi pozisyonlardaki ürünleri ifade eder?",
+    "41.07 ve 41.12 ila 41.14", ["41.01 ila 41.03", "41.04 ila 41.06 ve 41.15", "41.15", "43.01 ila 43.04"], "D", TN,
+    "Fasıl 64 Not 3(b) “deri” tabirini 41.07 ve 41.12 ila 41.14 pozisyonlarındaki (dabaklama veya ara kurutmadan sonra ileri derecede hazırlanmış deri, güderi, rugan, metalize deri) ürünlerle sınırlar. Ham deriler (41.01–41.03) ve yalnız dabaklanmış veya crust deriler (41.04–41.06) bu tanıma girmez; 41.15’teki terkip yoluyla elde edilen deri ayrı anılır, kürkler ise Fasıl 43’tedir.",
+    "Fasıl 64 Not 3(b); Fasıl 64 Genel Açıklamalar (G)."))
+
+obj["sorular"] = S
+yaz(obj)

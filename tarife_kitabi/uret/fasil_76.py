@@ -1,0 +1,341 @@
+"""Fasıl 76 – Alüminyum ve alüminyumdan eşya modülünü üretir."""
+from yardim_73_76 import (ESYA, OLUMSUZ, FARKLI, TANIM, GYK, ESLES, COKLU, SENARYO,
+                          soru, kaydet)
+
+obj = {
+ "tur": "fasil",
+ "fasil": 76,
+ "baslik": "Aluminyum ve aluminyumdan eşya",
+ "bolum": "XV",
+ "oz": {
+  "vurgu": "Fasıl 76, alüminyumun ağırlıkça üstün olduğu metal ve eşyayı on altı pozisyonda toplar; fasıl notu yoktur. Pozisyonlar önce bakır faslının sırasını (ham, hurda, toz, çubuk, tel, levha, yaprak, boru, rakor), sonra demir-çeliğin sırasını (inşaat, depo, kap, gaz kabı, kablo) izler. En çok sorulan ayrımlar: 0,2 mm sınırı, tüp-boru-profil ayrımı ve kapların hacme göre dağılımı.",
+  "maddeler": [
+   "Saç-levha (76.06) ile yaprak (76.07) arasındaki sınır mesnet hariç 0,2 mm’dir; esas niteliğini kağıt veya kartonun verdiği folyo kaplı kağıtlar 48.11’e gider.",
+   "Kaplar demir-çelikteki gibi ayrılır: 300 litreyi geçen depo 76.11, geçmeyen kap ve tüpler 76.12, gaz kapları 76.13; ev tipi kutular ise 76.15’te.",
+   "İnşaat için hazırlanmış profiller, pencere doğramaları ve iskeleler 76.10’da; ham çubuk ve profiller (içi boş olanlar dahil) 76.04’te.",
+   "Çivi, cıvata, perçin, zincir, tel mensucat ve genleştirilmiş metal için ayrı pozisyon yoktur; hepsi 76.16’dadır."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+  "satirlar": [
+   ["1", "Alüminyum ağırlıkça üstün adi metal mi? (Bölüm XV Not 5 ve 7; kaplama sayılmaz)", "Değilse üstün metalin faslı"],
+   ["2", "Cevher, oksit-hidroksit veya sinterlenmiş sermet mi?", "Boksit <b>26.06</b> · alumina <b>28.18</b> · sermet <b>81.13</b>"],
+   ["3", "Bölüm XV Not 1 kapsamında veya 82 / 83. fasılda adıyla sayılan eşya mı? (ölçme aleti, çatal, süs, menteşe)", "Fasıl <b>90</b>, <b>82</b>, <b>83</b> vb."],
+   ["4", "İşlenmemiş, hurda veya toz mu?", "<b>76.01</b> / <b>76.02</b> / <b>76.03</b>"],
+   ["5", "Çubuk-profil veya tel mi?", "<b>76.04</b> (içi boş profil dahil) / <b>76.05</b>"],
+   ["6", "Yassı ürün mü?", "0,2 mm’yi geçen <b>76.06</b> · geçmeyen <b>76.07</b>"],
+   ["7", "Boru veya boru bağlantı parçası mı?", "<b>76.08</b> / <b>76.09</b>"],
+   ["8", "İnşaat, inşaat aksamı veya inşaat için hazırlanmış ürün mü?", "<b>76.10</b> (prefabrik yapı <b>94.06</b>)"],
+   ["9", "Mekanik veya termik tertibatı olmayan kap mı?", "300 l’yi geçen <b>76.11</b> · geçmeyen ve tüpler <b>76.12</b> · gaz <b>76.13</b> · taşıma konteyneri <b>86.09</b>"],
+   ["10", "İzole edilmemiş demetlenmiş tel veya kablo mu?", "<b>76.14</b>"],
+   ["11", "Sofra, mutfak, ev veya sağlık eşyası mı?", "<b>76.15</b>"],
+   ["12", "Hiçbiri değilse", "<b>76.16</b>"]
+  ],
+  "dipnot": ""
+ },
+ "pozisyon_haritasi": [
+  ["76.01", "İşlenmemiş alüminyum", "Külçe, kütük, blok, pellet; sıvı alüminyum dahil", "Alüminyum külçe, deoksidan pellet"],
+  ["76.02", "Alüminyum döküntü ve hurdaları", "Bölüm XV Not 8(a); eritilmiş külçe 76.01", "Talaş, kullanılmaz alüminyum eşya"],
+  ["76.03", "Alüminyum tozları ve ince pulları", "Bölüm XV Not 8(b); pellet ve boya hariç", "Atomize toz, pul bünyeli toz"],
+  ["76.04", "Çubuklar ve profiller", "İçi boş profil dahil; inşaat için hazırlanmış hariç", "Ekstrüzyon profil, alüminyum çubuk"],
+  ["76.05", "Teller", "Rulo halinde içi dolu; izoleli tel hariç", "Alaşımlı alüminyum tel"],
+  ["76.06", "Saç, levha, şerit (0,2 mm’yi geçen)", "Bölüm XV Not 9(d); genleştirilmiş metal hariç", "Alüminyum levha, şerit"],
+  ["76.07", "Yaprak ve şerit (0,2 mm’yi geçmeyen)", "Baskılı, mesnetli olabilir; mesnet hariç ölçülür", "Ambalaj folyosu, kapsül folyosu"],
+  ["76.08", "İnce ve kalın borular", "Dikişli veya dikişsiz; soketli, flanşlı olabilir", "Alüminyum su ve petrol borusu"],
+  ["76.09", "Boru bağlantı parçaları", "73.07 ve 74.12 mantığı", "Dirsek, rakor, manşon"],
+  ["76.10", "İnşaat ve inşaat aksamı", "94.06 hariç; inşaat için hazırlanmış ürünler", "Pencere doğraması, iskele, köprü aksamı"],
+  ["76.11", "Depo, sarnıç, küv (300 l’yi geçen)", "Mekanik-termik tertibat yok; gaz hariç", "Süt veya bira sanayi tankı"],
+  ["76.12", "Fıçı, varil, kutu (300 l’yi geçmeyen); tüpler", "Sert ve esnek tüp kaplar dahil", "İçecek kutusu, diş macunu tüpü"],
+  ["76.13", "Sıkıştırılmış veya sıvılaştırılmış gaz kapları", "Hacim sınırı yok", "Alüminyum gaz tüpü"],
+  ["76.14", "Demetlenmiş teller, kablolar", "Elektrik için izolesiz; çelik özlü olabilir", "Havai hat iletken kablosu"],
+  ["76.15", "Sofra, mutfak, ev, sağlık eşyası; süngerler", "73.23 ve 73.24’ün tek pozisyonda karşılığı", "Tencere, tava, küvet, kamp ocağı"],
+  ["76.16", "Alüminyumdan diğer eşya", "Artık pozisyon; çivi-cıvata dahil", "Perçin, zincir, sigara tabakası, tel örgü"]
+ ],
+ "notlar": [
+  ["Fasıl 76 (not durumu)", "Fasıl 76’da fasıl notu yoktur; tanımlar yalnız alt pozisyon düzeyindedir (alaşımsız alüminyum: ağırlıkça en az %99 alüminyum, demir+silisyum en çok %1, diğer elementlerin her biri genel olarak en çok %0,1; alüminyum alaşımı: alüminyumun ağırlıkça üstün olduğu ve bu sınırları aşan madde). Sınıflandırma Bölüm XV notları ve Açıklama Notlarıyla yapılır."],
+  ["Bölüm XV Not 3 ve 4", "Alüminyum “adi metal”dir. “Sermet”: metal ve seramik terkiplerinin mikroskopik heterojen bileşimi; metalle sinterlenmiş metal karbürler de dahildir. Alüminyum veya alüminyum oksidin sinterlenmesiyle elde edilen ve sermet sayılan ürünler 76. fasıl dışında, 81.13’tedir."],
+  ["Bölüm XV Not 5", "Adi metal alaşımı ağırlıkça üstün metalin alaşımıdır; bölüm dışı elementlerle oluşan alaşımlarda adi metallerin toplam ağırlığı diğer elementlerinkine eşit veya fazla olmalıdır. Sinterlenmiş toz karışımları, ergitmeyle elde edilen heterojen karışımlar (sermetler hariç) ve intermetalik bileşimler de alaşımdır."],
+  ["Bölüm XV Not 7", "Birden çok adi metalden eşya, pozisyon metninde aksine hüküm yoksa ağırlıkça üstün metalden sayılır. Alüminyum kablolar çelik özlü olabilir; diğer metal özlü kablolarda alüminyum ağırlıkça üstün olmalıdır (76.14 Açıklama Notu)."],
+  ["Bölüm XV Not 8", "(a) Döküntü ve hurda: tamamen metal döküntüler ile kırılma, kesilme, eskime vb. nedenlerle kesinlikle kullanılmaz hale gelmiş metal eşya; onarılarak ilk amacında kullanılabilecek eşya hurda değildir. (b) Toz: göz açıklığı 1 mm olan elekten ağırlıkça %90 veya fazlası geçen ürün."],
+  ["Bölüm XV Not 9", "Çubuk: rulo halinde olmayan içi dolu ürün (dikdörtgen kesitte kalınlık genişliğin onda birini geçer). Tel: rulo halinde içi dolu ürün. Levha-sac-şerit-yaprak: dikdörtgen olanlarda kalınlığı genişliğinin onda birini geçmeyen yassı ürün. Boru: bütün uzunluğu boyunca tek kapalı boşluklu, kesiti ve et kalınlığı aynı içi boş ürün; parlatılmış, bükülmüş, diş açılmış, flanşlı olabilir. Bu tanımlara uymayan, kesiti boydan boya aynı ürün profildir."],
+  ["Genel Açıklamalar", "Alüminyum boksitten elde edilir (26.06); alüminyum oksit ve hidroksit Fasıl 28’dedir. Başlıca alaşımlar: alüminyum-bakır, alüminyum-silisyum (alpaks, silumin), alüminyum-magnezyum-silisyum (almelec, aldrey), alüminyum-bakır-magnezyum-manganez (duralumin), alüminyum-magnezyum (magnalium) vb. Anotlama gibi yüzey işlemleri sınıflandırmayı etkilemez."],
+  ["76.01–76.03 Açıklama Notları", "76.01: külçe, kütük, blok, sıvı alüminyum, metalurjide kullanılan pelletler, döküm veya sinter çubuklar. 76.02: hurdalar; demir-çelik imalinden kalan alüminyumlu cüruf 26.18 / 26.19, alüminyum imalinin külleri 26.20, yeniden eritilmiş külçeler 76.01. 76.03: tozlar ve pullar; boya olarak hazırlananlar Fasıl 32, pelletler 76.01, yapraktan kesilmiş pullar 83.08."],
+  ["76.06 ve 76.07 Açıklama Notları", "Sınır <b>0,2 mm</b>; 76.07’de mesnet (kağıt, karton, plastik) hariç ölçülür. Yapraklar baskılı, kabartmalı, kesilmiş olabilir. Hariç: ıstampacılık varakları 32.12, esas karakteri kağıt-karton olan folyo kaplı kağıtlar 48.11, Noel ağacı süsleri 95.05; genleştirilmiş metal 76.16."],
+  ["76.08–76.10 Açıklama Notları", "76.08: soket, flanş, halka, bilezik ile donatılmış olsun olmasın borular; içi boş profiller 76.04, bağlantı parçaları 76.09, esnek borular 83.07, inşaat için hazırlanmış borular 76.10. 76.09: inşaat parçalarını tutturan kelepçeler 76.10’a, boru askıları ve cıvata-somunlar 76.16’ya, musluklu teferruat 84.81’e gider. 76.10: 73.08 notu uygulanır; prefabrik yapılar 94.06."],
+  ["76.11–76.13 Açıklama Notları", "Sınır <b>300 litre</b>: geçen depo 76.11, geçmeyen fıçı, varil, kutu ve tüp şeklindeki sert veya esnek kaplar 76.12; gaz kapları her hacimde 76.13. Taşıma şekline göre özel donatılmış konteynerler 86.09; ev tipi bisküvi, çay, şeker kutuları 76.15; sigara tabakası, pudra kutusu, alet kutusu 76.16; termoslar 96.17."],
+  ["76.14 Açıklama Notu", "Alüminyum ve almelec, aldrey gibi alaşımlardan demetlenmiş teller ve kablolar; izole edilmiş elektrik tel ve kabloları (emayeli veya anodik olanlar dahil) 85.44’tedir."],
+  ["76.15 ve 76.16 Açıklama Notları", "76.15: 73.23 ve 73.24 notlarındaki türden eşya ile 74.18’deki küçük pişirme-ısıtma cihazları; hariç: alet niteliğindeki eşya (82), kaşık-çatal (82.11–82.15), süs (83.06), elektrikli cihazlar (85), mobilya (94), çakmak (96.13), termos (96.17). 76.16: çivi, vida, cıvata, somun, perçin, pim, rondela, zincirler, tel mensucat, genleştirilmiş metal ve 73.25 / 73.26 karşılığı eşya; hariç: 58.09 dokumaları, makine aksamı mensucat, el elekleri (96.04)."]
+ ],
+ "sinir_komsulari": [
+  ["Boksit (alüminyum cevheri)", "26.06", "Cevher Bölüm XV dışındadır"],
+  ["Alüminyum oksit (alumina), alüminyum hidroksit", "28.18", "Fasıl 76 Genel Açıklamalar"],
+  ["Demir-çelik imalinden kalan alüminyumlu cüruf", "26.18 / 26.19", "76.02 hariç tutması"],
+  ["Alüminyum imalinden kalan küller ve artıklar", "26.20", "76.02 hariç tutması"],
+  ["Boya olarak hazırlanmış alüminyum tozu; ıstampacılık varakları", "Fasıl 32 / 32.12", "76.03 ve 76.07 hariç tutmaları"],
+  ["Esas niteliğini kartonun verdiği folyo kaplı içecek kartonu", "48.11", "76.07 hariç tutması"],
+  ["Metalize iplik; alüminyum telle kuvvetlendirilmiş sicim", "56.05 / 56.07", "76.05 hariç tutması"],
+  ["Sinterlenmiş alüminyum-alumina sermeti", "81.13", "Bölüm XV Not 4; Fasıl 76 Genel Açıklamalar"],
+  ["Alüminyum yapraktan kesilmiş pullar", "83.08", "76.03 hariç tutması"],
+  ["Kaplanmış kaynak elektrodu", "83.11", "76.04 ve 76.05 hariç tutmaları"],
+  ["Emayeli veya anodik izoleli alüminyum tel ve kablo", "85.44", "76.05 ve 76.14 hariç tutmaları"],
+  ["Taşıma şekline göre özel donatılmış alüminyum konteyner", "86.09", "76.11 ve 76.12 hariç tutmaları"],
+  ["Alüminyum prefabrik yapı", "94.06", "76.10 pozisyon metni"],
+  ["Alüminyumdan su terazisi", "90.31", "Ölçme aleti; Bölüm XV Not 1"],
+  ["Noel ağacı süsü alüminyum yaprak", "95.05", "76.07 hariç tutması"]
+ ],
+ "tuzaklar": [
+  "<b>0,2 mm alüminyumun, 0,15 mm bakırın sınırıdır.</b> 76.06 / 76.07 ayrımında mesnet hariç tutulur; nikelde ise böyle bir sınır hiç yoktur.",
+  "<b>Folyo mu, kağıt mı?</b> Esas niteliği folyo veren mesnetli yaprak 76.07’de; esas niteliğini kağıt veya kartonun verdiği folyo kaplı ürün 48.11’de.",
+  "<b>Tüp boru değildir.</b> Diş macunu, krem ve hap tüpleri ambalaj kabı olarak 76.12’de; ince ve kalın borular 76.08’de.",
+  "<b>Üç kutu, üç pozisyon.</b> Ambalaj kutusu ve içecek kutusu 76.12; ev tipi çay-şeker-bisküvi kutusu 76.15; sigara tabakası, pudra ve alet kutusu 76.16.",
+  "<b>İçi boş profil boru değildir.</b> Tek kapalı boşluk ve boydan boya aynı kesit şartı yoksa ürün profildir (76.04).",
+  "<b>Profil inşaata hazırlanınca 76.10’a geçer.</b> Pencere doğraması, iskele ve inşaat parçalarını tutturan özel kelepçeler 76.10’dadır.",
+  "<b>Alüminyumda kaplar demir-çelikteki gibi üçe ayrılır.</b> 76.11 / 76.12 / 76.13; bakırda (74.19) ve nikelde (75.08) ise tek “diğer eşya” pozisyonundadır.",
+  "<b>Anotlama ve yapışmaz kaplama pozisyonu değiştirmez.</b> Yüzey işlemleri Fasıl 72 Genel Açıklamalarındaki türden işlemlerdir.",
+  "<b>Alumina Fasıl 28, sermet Fasıl 81.</b> Alüminyum oksit 28.18’de; alüminyum ve alüminanın sinterlenmesiyle elde edilen sermet 81.13’tedir.",
+  "<b>Alüminyum çivi ve cıvatanın ayrı pozisyonu yoktur.</b> Hepsi 76.16’dadır (bakırda 74.15, demir-çelikte 73.17 / 73.18 ayrıdır)."
+ ],
+ "hafiza": {
+  "kanca": "BAKIR SIRASI (01–09) + ÇELİK SIRASI (10–14) + EV (15) + DİĞER (16)",
+  "aciklama": "İlk dokuz pozisyon bakırın sırasıdır: ham <b>01</b>, hurda <b>02</b>, toz <b>03</b>, çubuk-profil <b>04</b>, tel <b>05</b>, levha <b>06</b>, yaprak <b>07</b>, boru <b>08</b>, rakor <b>09</b>. Sonraki beşi demir-çeliğin 73.08–73.12 sırasını kopyalar: inşaat <b>10</b>, büyük depo <b>11</b>, küçük kap <b>12</b>, gaz kabı <b>13</b>, kablo <b>14</b>. Sonra ev-banyo <b>15</b> ve geri kalan her şey <b>16</b>."
+ },
+ "sinav_odagi": [
+  "Bu fasıl çıkmış sorularda çok az yer almıştır; alüminyum daha çok çeldirici olarak ve Bölüm XV genel notları üzerinden sorulmuştur.",
+  "Alüminyumdan mamul su terazisi sorusunda alüminyum yaprak pozisyonu çeldirici olarak verilmiş; doğru yer ölçme ve kontrol aleti olarak Fasıl 90’dır (90.31). Bölüm XV Not 1, XVIII. Bölüm alet ve cihazlarını bölüm dışında tutar.",
+  "Bölüm XV Not 9 tanımları: “çubuk” ile “tel” arasındaki farkın rulo halinde olup olmamak olduğu sorulmuştur (alüminyumda 76.04 / 76.05).",
+  "Fasıl yapısı: alüminyum, bakır, nikel, kurşun, çinko ve kalay için ayrı fasıl açıldığı; magnezyum, titanyum ve krom gibi diğer adi metallerin Fasıl 81’de toplandığı sorulmuştur."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Türk Gümrük Tarife Cetveli’nin XV. Bölüm Notlarına göre “çubuk” ve “tel” arasındaki farklılık nedir?",
+   "secenekler": ["Enine kesitleri", "Üretim yöntemleri", "İçlerinin dolu-boş olması", "Rulo halde olup olmaması", "Mamul oldukları madde"],
+   "cevap": "D",
+   "aciklama": "Bölüm XV Not 9(a) ve 9(c) çubuğu ve teli aynı kesit şekillerine sahip içi dolu ürünler olarak tanımlar; tel rulo halinde, çubuk rulo halinde değildir. Alüminyumda bu ayrım 76.04 (çubuk ve profil) ile 76.05 (tel) arasındaki sınırı çizer."
+  },
+  {
+   "soru": "Aşağıdaki adi metallerden hangisi için Armonize Sistem Nomanklatüründe özel olarak açılmış bir fasıl bulunmaktadır?",
+   "secenekler": ["Magnezyum", "Titanyum", "Krom", "Kalay"],
+   "cevap": "D",
+   "aciklama": "Kalay için Fasıl 80 açılmıştır; alüminyum (76), bakır (74), nikel (75), kurşun (78) ve çinko (79) da ayrı fasıllardadır. Magnezyum (81.04), titanyum (81.08) ve krom (81.12) “diğer adi metaller” faslında (81) toplanmıştır."
+  }
+ ],
+ "ozet": [
+  "Alüminyum üstünse Fasıl 76; boksit 26.06, alumina 28.18, sinterlenmiş sermet 81.13.",
+  "Ham 76.01 · hurda 76.02 · toz 76.03 · çubuk-profil (içi boş dahil) 76.04 · tel 76.05.",
+  "Levha 76.06 / yaprak 76.07: sınır mesnet hariç 0,2 mm.",
+  "Boru 76.08 (flanşlı dahil) · rakor 76.09 · inşaat ve inşaat için hazırlanmış ürün 76.10.",
+  "Kaplar: 300 l’yi geçen 76.11 · geçmeyen ve tüpler 76.12 · gaz 76.13; izolesiz kablo 76.14.",
+  "Ev ve sağlık eşyası 76.15; çivi-cıvata, zincir, tel örgü, sigara tabakası dahil geri kalan her şey 76.16."
+ ],
+ "sorular": []
+}
+
+S = obj["sorular"]
+
+# 1
+S.append(soru(ESYA,
+ "Tarife Cetveline göre, alüminyum oksidin elektrolitik indirgenmesiyle elde edilip külçe halinde dökülmüş, ağırlıkça %99,7 alüminyum içeren ve başka bir işlem görmemiş alüminyum hangi pozisyonda sınıflandırılır?",
+ ["26.06", "28.18", "76.04", "76.02", "76.01"], "E", "76.01",
+ "Elektrolizle elde edilip külçe, blok, kütük gibi ilk şekillerde dökülen alüminyum işlenmemiş alüminyum olarak 76.01’dedir; alaşımsız veya alaşımlı olması yalnız alt pozisyonu etkiler. Boksit 26.06’da, alüminyum oksit ve hidroksit 28.18’de, hurdalar 76.02’de, haddelenmiş veya ekstrüde çubuk ve profiller 76.04’te yer alır.",
+ "76.01 Açıklama Notu; Fasıl 76 Genel Açıklamalar."))
+
+# 2
+S.append(soru(TANIM,
+ "Bölüm XV Not 9(e)’ye göre bir alüminyum ürünün “ince ve kalın boru” sayılması için aşağıdakilerden hangisi gereklidir?",
+ ["Enine kesitinin yalnızca daire şeklinde olması", "Rulo halinde bulunmaması",
+  "Bütün uzunluğu boyunca yalnızca bir kapalı boşluğu olması ve enine kesiti ile et kalınlığının boydan boya aynı olması",
+  "Flanş, bilezik veya halka ile donatılmamış olması", "Dikişsiz olarak üretilmiş olması"], "C",
+ "Bütün uzunluğu boyunca yalnızca bir kapalı boşluğu olması ve enine kesiti ile et kalınlığının boydan boya aynı olması",
+ "Bölüm XV Not 9(e) boruyu; bütün uzunluğu boyunca tek kapalı boşluğu olan, kesiti daire, oval, dikdörtgen, ikizkenar üçgen veya düzgün dışbükey çokgen olabilen, et kalınlığı ve kesiti boydan boya aynı, rulo halinde olan veya olmayan içi boş ürün olarak tanımlar. Borular parlatılmış, bükülmüş, diş açılmış, flanşlı olabilir; 76.08 Açıklama Notuna göre kaynakla da üretilebilir. Tanıma uymayan içi boş ürünler profildir (76.04).",
+ "Bölüm XV Not 9(e); 76.08 Açıklama Notu."))
+
+# 3
+S.append(soru(OLUMSUZ,
+ "Aşağıdakilerden hangisi Tarife Cetvelinin 76. faslında <b>sınıflandırılmaz</b>?",
+ ["Alüminyum pelleti", "Alüminyum oksit (alumina)", "Alüminyum döküntü ve hurdası", "Pul bünyeli alüminyum tozu",
+  "Mesnetsiz alüminyum yaprak"], "B", "Alüminyum oksit (alumina)",
+ "Fasıl 76 Genel Açıklamalarına göre alüminyum oksit (alumina) ve alüminyum hidroksit Fasıl 28’de (28.18) sınıflandırılır; boksit ise 26.06’dadır. Alüminyum pelletleri 76.01’de, hurdalar 76.02’de, tozlar 76.03’te, yapraklar 76.07’dedir.",
+ "Fasıl 76 Genel Açıklamalar; 76.01–76.03 ve 76.07 pozisyon metinleri."))
+
+# 4
+S.append(soru(FARKLI,
+ "Aşağıdaki alüminyum eşyadan hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+ ["Şerit kaynaklanarak üretilmiş alüminyum boru", "Kalıptan çekilerek üretilmiş dikişsiz alüminyum boru",
+  "Ucuna flanş takılmış alüminyum boru", "Alüminyum boru dirseği", "Soket (yuva) ile donatılmış alüminyum boru"], "D",
+ "Alüminyum boru dirseği",
+ "76.08, bitirme işlemi görmüş olsun olmasın; soket, flanş, halka, bilezik vb. ile donatılmış ince ve kalın boruları kapsar ve dikişli-dikişsiz ayrımı yapmaz. Dirsek, rakor, manşon gibi bağlantı parçaları ise 76.09’dadır; 76.08 Açıklama Notu bunları açıkça hariç tutar.",
+ "76.08 ve 76.09 Açıklama Notları."))
+
+# 5
+S.append(soru(ESYA,
+ "Tarife Cetveline göre, çikolata ambalajında kullanılmak üzere ince bir kağıt mesnet üzerine tespit edilmiş, baskılı, mesnet hariç kalınlığı 0,009 mm olan ve esas niteliğini alüminyum yaprağın verdiği rulo halindeki ambalaj malzemesi hangi pozisyonda sınıflandırılır?",
+ ["76.07", "76.06", "48.11", "76.12", "49.11"], "A", "76.07",
+ "Mesnet hariç kalınlığı 0,2 mm’yi geçmeyen alüminyum yapraklar; baskılı olsun olmasın, kağıt, karton veya plastik mesnet üzerine tespit edilmiş olsun olmasın 76.07’dedir ve gıda, sigara, tütün ambalajında kullanılır. Esas niteliğini kağıt veya kartonun verdiği folyo kaplı kağıtlar 48.11’e gider; 0,2 mm’yi geçenler 76.06’da, hazır kutu ve kaplar 76.12’dedir.",
+ "76.07 pozisyon metni ve Açıklama Notu."))
+
+# 6
+S.append(soru(ESLES,
+ "Aşağıdaki alüminyum ürünler ile tarife pozisyonlarının doğru eşleştirildiği seçenek hangisidir? I. Rulo halinde, kesiti daire şeklinde içi dolu alaşımlı ürün  II. Rulo halinde olmayan, dikdörtgen kesitli ve kalınlığı genişliğinin onda birini geçen içi dolu ürün  III. Kalınlığı 0,5 mm olan dikdörtgen levha  IV. Mesnetsiz, kalınlığı 0,05 mm olan yaprak — a) 76.04  b) 76.05  c) 76.06  d) 76.07",
+ ["I-a, II-b, III-c, IV-d", "I-b, II-a, III-d, IV-c", "I-b, II-a, III-c, IV-d", "I-b, II-c, III-a, IV-d",
+  "I-a, II-b, III-d, IV-c"], "C", "I-b, II-a, III-c, IV-d",
+ "Bölüm XV Not 9’a göre rulo halindeki içi dolu ürün teldir (76.05); rulo halinde olmayan, dikdörtgen kesitli ve kalınlığı genişliğinin onda birini geçen ürün çubuktur (76.04). Kalınlığı genişliğinin onda birini geçmeyen yassı ürünler levha, sac, şerit veya yapraktır: 0,2 mm’yi geçen 76.06’da, geçmeyen 76.07’dedir.",
+ "Bölüm XV Not 9(a), (c), (d); 76.06 ve 76.07 pozisyon metinleri."))
+
+# 7
+S.append(soru(GYK,
+ "Tüm parçaları aynı sevkiyatta birlikte sunulan, demonte (sökülmüş) haldeki alüminyum borulu inşaat iskelesi hangi pozisyonda ve hangi kurallarla sınıflandırılır?",
+ ["76.08 – GYK 1 ve 2(a)", "76.16 – GYK 3(b)", "94.06 – GYK 1", "76.10 – GYK 3(c)", "76.10 – GYK 1 ve 2(a)"], "E",
+ "76.10 – GYK 1 ve 2(a)",
+ "İnşaat iskeleleri 76.10 pozisyon metninde sayılmıştır; GYK 2(a) gereği bütün parçalarıyla demonte sunulan eşya tamamlanmış eşya gibi sınıflandırılır. Parçaların boru görünümü eşyayı 76.08’e götürmez; prefabrik yapı (94.06) değildir; bütün parçalar tek bir eşyaya ait olduğundan GYK 3’e başvurulmaz.",
+ "GYK 1 ve 2(a); 76.10 pozisyon metni; 73.08 Açıklama Notu."))
+
+# 8
+S.append(soru(OLUMSUZ,
+ "Aşağıdakilerden hangisi 76.12 pozisyonunda <b>sınıflandırılmaz</b>?",
+ ["Ev ve mutfakta kullanılan alüminyum çay ve şeker kutusu", "Gıda ambalajlamasında kullanılan boş alüminyum konserve kutusu",
+  "Hap ve tabletler için tüp şeklinde sert alüminyum kap", "Süt taşımaya mahsus 40 litrelik alüminyum güğüm",
+  "Bira taşımaya mahsus 50 litrelik alüminyum fıçı"], "A", "Ev ve mutfakta kullanılan alüminyum çay ve şeker kutusu",
+ "76.12, hacmi 300 litreyi geçmeyen alüminyum fıçı, varil, bidon, kutu ve benzeri kapları; ayrıca tüp şeklindeki sert ve esnek kapları kapsar. Bisküvi, çay ve şeker kutuları gibi ev veya mutfak kapları ise 76.12 Açıklama Notunda hariç tutulmuş olup 76.15’tedir.",
+ "76.12 pozisyon metni ve Açıklama Notu; 76.15 pozisyon metni."))
+
+# 9
+S.append(soru(TANIM,
+ "Tarife Cetveline göre bir alüminyum yaprağın 76.07 pozisyonunda sınıflandırılabilmesi için kalınlığı (mesnet hariç) en fazla ne olmalıdır?",
+ ["0,15 mm", "0,2 mm", "0,25 mm", "0,5 mm", "0,1 mm"], "B", "0,2 mm",
+ "76.07 pozisyon metni, mesnedi hariç kalınlığı 0,2 mm’yi geçmeyen alüminyum yaprak ve şeritleri kapsar; 0,2 mm’yi geçen saç, levha ve şeritler 76.06’dadır. 0,15 mm bakırdaki (74.09 / 74.10) sınırdır; iki faslın rakamları sıkça karıştırılır.",
+ "76.06 ve 76.07 pozisyon metinleri."))
+
+# 10
+S.append(soru(SENARYO,
+ "Bir elektrik dağıtım şirketi, havai iletim hatlarında kullanılmak üzere ortasında çelik tellerden bir öz bulunan, dış katmanları alüminyum-magnezyum-silisyum alaşımı (aldrey) tellerden oluşan, ağırlıkça %75’i alüminyum alaşımı ve %25’i çelik olan, izole edilmemiş demetlenmiş iletken kablo ithal etmektedir. Bu eşya hangi pozisyonda sınıflandırılır?",
+ ["73.12", "74.13", "76.05", "76.14", "85.44"], "D", "76.14",
+ "Alüminyum ağırlıkça üstün olduğundan eşya Bölüm XV Not 7 uyarınca alüminyumdan mamul sayılır; 76.14 Açıklama Notu da alüminyum kabloların çelik özlü olabileceğini belirtir. Demetlenmiş teller ve kablolar tek tel pozisyonuna (76.05) girmez; izole edilmediği için 85.44 söz konusu değildir; çelik halatlar 73.12’de, bakır kablolar 74.13’tedir.",
+ "Bölüm XV Not 7; 76.14 pozisyon metni ve Açıklama Notu."))
+
+# 11
+S.append(soru(FARKLI,
+ "Aşağıdaki alüminyum eşyadan hangisi diğerlerinden farklı bir fasılda sınıflandırılır?",
+ ["Alüminyum tencere", "Alüminyum lavabo", "Alüminyum çatal", "Alüminyumdan bulaşık süngeri",
+  "İspirtolu küçük alüminyum kamp ocağı"], "C", "Alüminyum çatal",
+ "76.15; 73.23 ve 73.24 Açıklama Notlarındaki türden alüminyum sofra, mutfak, ev ve sağlık eşyasını, süngerleri ve 74.18 Açıklama Notunda tarif edilen küçük pişirme-ısıtma cihazlarını kapsar. Kaşık, çatal, kepçe gibi eşya ise 82.11–82.15’tedir (çatal 82.15) ve 76.15 Açıklama Notunda hariç tutulmuştur.",
+ "76.15 Açıklama Notu ve hariç tutmalar."))
+
+# 12
+S.append(soru(ESYA,
+ "Tarife Cetveline göre, diş macunu ambalajlamasında kullanılmak üzere alüminyumdan yapılmış boş esnek tüpler hangi pozisyonda sınıflandırılır?",
+ ["76.08", "76.12", "76.15", "76.16", "83.09"], "B", "76.12",
+ "76.12 pozisyon metni tüp şeklindeki sert veya esnek kapları açıkça kapsar; Açıklama Notu krem, diş macunu vb. için esnek tüpleri örnek verir. “Tüp” kelimesi eşyayı ince ve kalın borular pozisyonuna (76.08) götürmez; bunlar ambalaj kabıdır. Ev ve mutfak eşyası (76.15) veya kapak ve tıpa (83.09) da değildir.",
+ "76.12 pozisyon metni ve Açıklama Notu."))
+
+# 13
+S.append(soru(COKLU,
+ "Aşağıdakilerden hangileri 76.16 pozisyonunda sınıflandırılır? I. Alüminyum sigara tabakası  II. Alüminyum zincir  III. Alüminyumdan genleştirilmiş metal  IV. Hacmi 500 litre olan, mekanik veya termik tertibatı bulunmayan alüminyum depo",
+ ["I ve II", "II ve III", "I, II ve IV", "III ve IV", "I, II ve III"], "E", "I, II ve III",
+ "76.12 Açıklama Notu sigara tabakalarını, pudra ve alet kutularını 76.16’ya gönderir; 76.16 Açıklama Notu da alüminyum zincirleri, tel mensucatı ve genleştirilmiş metali sayar. 300 litreyi geçen, mekanik-termik tertibatı olmayan alüminyum depolar ise 76.11’dedir; alüminyumda kaplar için 76.11–76.13 ayrı pozisyonlardır.",
+ "76.11, 76.12 ve 76.16 Açıklama Notları."))
+
+# 14
+S.append(soru(OLUMSUZ,
+ "Aşağıdakilerden hangisi 76.16 pozisyonunda <b>yer almaz</b>?",
+ ["Alüminyum tel mensucatından yapılmış el kalburu", "Alüminyum perçin çivisi", "Alüminyumdan cıvata ve somun",
+  "Alüminyumdan çivi", "Rulo halinde alüminyum genleştirilmiş metal"], "A",
+ "Alüminyum tel mensucatından yapılmış el kalburu",
+ "76.16; alüminyum çivi, vida, cıvata, somun, perçin, pim, rondela ile zincirleri, tel mensucatı ve genleştirilmiş metali kapsar. El elekleri veya kalburlarını oluşturan tel mensucat ise 76.16 Açıklama Notunda hariç tutulmuş olup 96.04’tedir. Giyim ve döşemecilikte kullanılan metal iplik dokumaları (58.09) ile makine aksamı haline getirilmiş mensucat (Fasıl 84 / 85) da hariçtir.",
+ "76.16 Açıklama Notu ve hariç tutmalar."))
+
+# 15
+S.append(soru(TANIM,
+ "Bölüm XV Not 4’e göre “sermet” tabiri aşağıdakilerden hangisini ifade eder?",
+ ["Alüminyum tozlarının preslenip sinterlenmesiyle elde edilen her türlü ürün",
+  "Ergitme yoluyla elde edilen heterojen metal karışımları",
+  "İki veya daha fazla adi metalden oluşan intermetalik bileşimler",
+  "Bir metal terkibi ile seramik terkibinin mikroskopik heterojen bileşimini içeren ürünler; metalle sinterlenmiş metal karbürler dahil",
+  "Yüzeyleri seramik veya emaye ile kaplanmış adi metal levhalar"], "D",
+ "Bir metal terkibi ile seramik terkibinin mikroskopik heterojen bileşimini içeren ürünler; metalle sinterlenmiş metal karbürler dahil",
+ "Bölüm XV Not 4 sermeti; metal ve seramik terkiplerin mikroskopik heterojen bileşimi olarak tanımlar ve metalle sinterlenmiş metal karbürleri de kapsar. Fasıl 76 Genel Açıklamalarına göre alüminyum veya alüminyum oksidin sinterlenmesiyle elde edilen ve sermet sayılan ürünler 81.13’tedir. Sinterlenmiş metal tozu karışımları, ergitmeyle elde edilen heterojen karışımlar ve intermetalik bileşimler ise Not 5 gereği alaşım sayılır.",
+ "Bölüm XV Not 4 ve Not 5; Fasıl 76 Genel Açıklamalar."))
+
+# 16
+S.append(soru(FARKLI,
+ "Aşağıdaki eşya çiftlerinden hangisinde her iki eşya da Tarife Cetvelinde aynı pozisyonda sınıflandırılır?",
+ ["Alüminyum tel – alüminyumdan demetlenmiş kablo", "Kalınlığı 0,3 mm alüminyum saç – kalınlığı 0,1 mm alüminyum yaprak",
+  "Alüminyum tozu – alüminyum pelleti", "500 litrelik alüminyum depo – 200 litrelik alüminyum varil",
+  "Alüminyum kızartma tavası – alüminyum küvet"], "E", "Alüminyum kızartma tavası – alüminyum küvet",
+ "76.15 hem sofra, mutfak ve ev eşyasını hem de sağlığı koruyucu eşyayı tek pozisyonda toplar. Diğer çiftler ayrı pozisyonlardadır: tel 76.05 – kablo 76.14; 0,2 mm’yi geçen saç 76.06 – geçmeyen yaprak 76.07; toz 76.03 – pellet 76.01 (76.03 pelletleri hariç tutar); 300 litreyi geçen depo 76.11 – geçmeyen varil 76.12.",
+ "76.15 pozisyon metni; 76.03, 76.06, 76.07, 76.11 ve 76.12 pozisyon metinleri."))
+
+# 17
+S.append(soru(ESYA,
+ "Tarife Cetveline göre, alüminyum alaşımından ekstrüzyonla elde edilmiş profillerin kesilip birleştirilmesiyle yapılmış, camı takılmamış pencere çerçevesi hangi pozisyonda sınıflandırılır?",
+ ["76.04", "76.10", "76.16", "83.02", "94.03"], "B", "76.10",
+ "76.10 pozisyon metni kapı, pencere ve bunların çerçevelerini alüminyum inşaat aksamı olarak sayar; 73.08 Açıklama Notu da gerekli değişikliklerle uygulanır. Ham ekstrüzyon profiller 76.04’te kalır, ancak inşaatta kullanılmak üzere hazırlanmış ve çerçeve halini almış ürün 76.10’a geçer. Menteşe, kol gibi donanım 83.02’de, mobilya 94.03’te yer alır.",
+ "76.10 pozisyon metni ve Açıklama Notu; 76.04 Açıklama Notu, hariç tutma."))
+
+# 18
+S.append(soru(ESLES,
+ "Tarife Cetveline göre; hacmi ...(1)... litreyi geçen, mekanik veya termik tertibatı olmayan alüminyum depolar 76.11’de, geçmeyenler 76.12’de; sıkıştırılmış veya sıvılaştırılmış gaz için alüminyum kaplar hacimlerine bakılmaksızın ...(2)... pozisyonunda; bir veya daha fazla taşıma şekline göre özel olarak yapılmış ve donatılmış konteynerler ise ...(3)... pozisyonunda sınıflandırılır. Boşluklara sırasıyla gelmesi gerekenler hangisidir?",
+ ["300 – 76.11 – 86.09", "500 – 76.13 – 86.09", "300 – 76.13 – 86.09", "300 – 76.13 – 76.11", "50 – 76.13 – 86.09"], "C",
+ "300 – 76.13 – 86.09",
+ "76.11 ile 76.12 arasındaki sınır, demir-çelikteki gibi 300 litredir. Gaz kapları her hacimde 76.13’te yer alır (73.11 notu uygulanır). Taşıma şekline göre özel yapılmış konteynerler 76.11 ve 76.12 Açıklama Notlarında hariç tutulmuş olup 86.09’dadır.",
+ "76.11, 76.12 ve 76.13 pozisyon metinleri ve Açıklama Notları."))
+
+# 19
+S.append(soru(FARKLI,
+ "Aşağıdaki alüminyum bağlantı ve tutturma eşyasından hangisi diğerlerinden farklı bir pozisyonda yer alır?",
+ ["Borulu iskele elemanlarını birbirine tutturmak için özel olarak yapılmış alüminyum kelepçe", "Alüminyum zincir",
+  "Alüminyumdan vida", "Alüminyum tellerden mensucat", "Alüminyumdan çivi"], "A",
+ "Borulu iskele elemanlarını birbirine tutturmak için özel olarak yapılmış alüminyum kelepçe",
+ "İnşaat parçalarını birbirine tutturmak için özel olarak yapılmış kelepçe ve diğer tertibat, 76.09 ve 73.08 Açıklama Notları uyarınca inşaat aksamı olarak 76.10’dadır. Alüminyum zincir, vida, çivi ve tel mensucat ise 76.16’da sayılan “alüminyumdan diğer eşya”dır.",
+ "76.09 ve 76.10 Açıklama Notları; 73.08 Açıklama Notu; 76.16 Açıklama Notu."))
+
+# 20
+S.append(soru(GYK,
+ "İçi bira ile doldurulmuş, tek kullanımlık alüminyum içecek kutuları ithal edilmektedir. Kutuların ayrıca 76.12’de sınıflandırılmayıp içindeki birayla birlikte sınıflandırılması hangi Genel Yorum Kuralına dayanır?",
+ ["GYK 5(a)", "GYK 3(b)", "GYK 2(a)", "GYK 5(b)", "GYK 4"], "D", "GYK 5(b)",
+ "GYK 5(b), içindeki eşyayla birlikte sunulan ve o eşyanın ambalajında normal olarak kullanılan ambalaj maddelerinin eşyayla birlikte sınıflandırılacağını öngörür; tek kullanımlık içecek kutusu bu türdendir. GYK 5(a) belli bir eşyaya göre şekillendirilmiş, uzun süre kullanılmaya elverişli mahfazalar içindir; açıkça tekrar kullanıma elverişli ambalajlar ise 5(b) kapsamı dışındadır. Boş kutular tek başına sunulsaydı 76.12’de yer alırdı.",
+ "GYK 5(b) ve Açıklama Notu; 76.12 Açıklama Notu."))
+
+# 21
+S.append(soru(OLUMSUZ,
+ "Aşağıdakilerden hangisi 76.07 pozisyonunda <b>sınıflandırılmaz</b>?",
+ ["Haddelenmiş fakat başka işlem görmemiş, mesnetsiz alüminyum yaprak", "Plastik mesnet üzerine tespit edilmiş alüminyum yaprak",
+  "Baskılı, kalınlığı 0,02 mm alüminyum şerit", "Isı yalıtımında kullanılan buruşuk alüminyum yaprak",
+  "Esas niteliğini kartonun verdiği, bir yüzü alüminyum folyoyla kaplanmış meyve suyu kutusu kartonu"], "E",
+ "Esas niteliğini kartonun verdiği, bir yüzü alüminyum folyoyla kaplanmış meyve suyu kutusu kartonu",
+ "76.07; mesnet hariç kalınlığı 0,2 mm’yi geçmeyen, baskılı olsun olmasın, mesnetli veya mesnetsiz alüminyum yaprak ve şeritleri kapsar; ısı yalıtımında kullanılan buruşuk levhalar da Açıklama Notunda sayılmıştır. Esas karakteri kağıt veya karton olan, alüminyum folyo kaplı ve sıvı gıda kapları imaline mahsus kağıt-kartonlar ise 48.11’dedir.",
+ "76.07 Açıklama Notu ve hariç tutmalar."))
+
+# 22
+S.append(soru(COKLU,
+ "Tarife Cetveline göre aşağıdaki ifadelerden hangileri doğrudur? I. Alüminyum oksit ve alüminyum hidroksit 28. fasılda sınıflandırılır.  II. Anotlama işlemine tabi tutulmuş alüminyum profiller, bu yüzey işlemi nedeniyle 76.16’da sınıflandırılır.  III. Alüminyum imalinden oluşan küller ve diğer artıklar 76.02’de sınıflandırılır.  IV. Alüminyum döküntü ve hurdalarının yeniden eritilmesiyle elde edilen külçeler 76.01’de sınıflandırılır.",
+ ["I ve II", "I ve IV", "II ve III", "I, III ve IV", "II, III ve IV"], "B", "I ve IV",
+ "Fasıl 76 Genel Açıklamalarına göre alüminyum oksit ve hidroksit Fasıl 28’dedir (I doğru). Anotlama gibi yüzey işlemleri eşyanın sınıflandırılmasını etkilemez; profiller 76.04’te kalır (II yanlış). Alüminyum imalinden oluşan küller ve artıklar 26.20’dedir (III yanlış). Hurdaların yeniden eritilmesiyle elde edilen külçeler 76.01’dedir (IV doğru).",
+ "Fasıl 76 Genel Açıklamalar; 76.01 ve 76.02 Açıklama Notları."))
+
+# 23
+S.append(soru(ESYA,
+ "Tarife Cetveline göre, alüminyum alaşımından ekstrüzyon yoluyla elde edilmiş, kesitinde birden fazla kapalı boşluk bulunan, inşaat için hazırlanmamış içi boş profil hangi pozisyonda sınıflandırılır?",
+ ["76.04", "76.08", "76.10", "76.16", "76.06"], "A", "76.04",
+ "Bölüm XV Not 9(e)’ye göre boru tek kapalı boşluklu olmalıdır; birden fazla boşluklu ürün boru değil profildir. 76.08 Açıklama Notu içi boş profilleri hariç tutarak 76.04’e bırakır. İnşaatta kullanılmak üzere hazırlanmış olsaydı 76.10’a giderdi.",
+ "Bölüm XV Not 9(b) ve 9(e); 76.04 ve 76.08 Açıklama Notları."))
+
+# 24
+S.append(soru(SENARYO,
+ "Bir firma, ev mutfaklarında kullanılmak üzere alüminyum gövdeli, iç yüzeyi yapışmaz malzemeyle kaplanmış, plastik saplı, ısıtıcı elemanı bulunmayan kızartma tavaları ithal etmektedir. Tavanın ağırlığının %85’i alüminyum gövde, %15’i plastik saptır. Bu eşya hangi pozisyonda sınıflandırılır?",
+ ["39.24", "73.23", "76.15", "82.15", "85.16"], "C", "76.15",
+ "76.15, 73.23 Açıklama Notundaki türden alüminyum mutfak eşyasını kapsar; bu not, metal eşya niteliğini korumak şartıyla başka maddelerden sap, kulp ve aksesuar takılmasına izin verir. Yapışmaz kaplama yüzey işlemidir ve sınıflandırmayı değiştirmez. Isıtıcı elemanı olmadığından 85.16, gövde alüminyum olduğundan 73.23 veya 39.24 söz konusu değildir; 82.15 kaşık, kepçe gibi eşya içindir.",
+ "76.15 Açıklama Notu; 73.23 Açıklama Notu (A); Fasıl 76 Genel Açıklamalar."))
+
+# 25
+S.append(soru(TANIM,
+ "Bölüm XV Not 8(a) ve ilgili Açıklama Notlarına göre aşağıdakilerden hangisi 76.02 anlamında “alüminyum döküntü ve hurdası” sayılır?",
+ ["Alüminyum hurdalarının yeniden eritilmesiyle elde edilen külçeler", "Alüminyum imalinden oluşan küller ve artıklar",
+  "Küçük bir onarımla ilk amacında yeniden kullanılabilecek eski alüminyum merdiven",
+  "Kırılma, kesilme veya eskime nedeniyle kesinlikle kullanılmaz hale gelmiş alüminyum eşya",
+  "Demir ve çelik imalinden arta kalan, alüminyum içeren cüruf"], "D",
+ "Kırılma, kesilme veya eskime nedeniyle kesinlikle kullanılmaz hale gelmiş alüminyum eşya",
+ "Bölüm XV Not 8(a) döküntü ve hurdayı; tamamen metal döküntüler ile kırılma, kesilme, eskime veya diğer nedenlerle kesinlikle kullanılmaz hale gelmiş metal eşya olarak tanımlar. 76.02’ye de uygulanan 72.04 Açıklama Notuna göre onarılarak ilk amacında kullanılabilecek eşya hurda değildir. Yeniden eritilmiş külçeler 76.01’de, küller 26.20’de, demir-çelik cürufları 26.18 veya 26.19’dadır.",
+ "Bölüm XV Not 8(a); 76.02 Açıklama Notu; 72.04 Açıklama Notu."))
+
+kaydet(obj, 76)

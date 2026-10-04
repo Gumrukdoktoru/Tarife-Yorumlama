@@ -1,0 +1,381 @@
+#!/usr/bin/env python3
+"""Fasıl 87 modülü üreteci."""
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from yardim_86_89 import EP, OT, FA, TN, GY, ES, CC, SN, soru, yaz  # noqa: E402
+
+obj = {
+    "tur": "fasil",
+    "fasil": 87,
+    "baslik": "Motorlu Kara taşıtları, traktörler, bisikletler, motosikletler ve diğer kara taşıtları; bunların aksam, parça ve aksesuarı",
+    "bolum": "XVII",
+    "oz": {
+        "vurgu": "Fasıl 87, raylar dışındaki kara taşıtlarını işlevine göre ayırır: çeken-iten traktör 87.01, sürücü dahil 10 veya daha fazla kişi taşıyan 87.02, esas itibarıyla insan taşıyan 87.03, eşya taşıyan 87.04, taşıma dışı hizmet gören 87.05. Bu grubun motorlu şasisi, karoseri ve aksamı 87.06–87.08’dedir; iki tekerlekliler, bisikletler ve engelli taşıtları 87.11–87.13, bunların aksamı 87.14’tür. Aksamda önce Bölüm XVII Not 2’ye bakılır.",
+        "maddeler": [
+            "Traktör (Not 2): esas itibarıyla diğer kara taşıtlarını, cihazları veya yükleri çekmek veya itmek için imal edilmiş motorlu kara taşıtı. Traktöre takılmak üzere dizayn edilmiş makine ve aletler, traktörle birlikte sunulsa ve monte edilmiş olsa bile kendi fasıllarında sınıflandırılır.",
+            "87.03 ile 87.04 arasında taşıtın insan mı eşya mı taşımak için tasarlandığına bakılır: emniyet kemerli koltuklar, arka yan camlar, bölme panelin yokluğu ve konfor donanımı 87.03’ü; bank tipi koltuk, penceresiz yan paneller, daimi bölme ve çıplak yük alanı 87.04’ü gösterir.",
+            "Şasi üçlüsü: motor ve sürücü mahalli varsa 87.02–87.04 (Not 3); motor var, sürücü mahalli yoksa 87.06; motor yoksa 87.08.",
+            "87.08 aksamı yalnız veya esas itibarıyla 87.01–87.05 taşıtlarına uygun olmalı ve Bölüm XVII Not 2 ile hariç tutulmamalıdır: motor Fasıl 84, buji 85.11, elektrikli far ve cam silici 85.12, lastik 40.11, dikiz aynası 70.09, koltuk 94.01 dışarıda kalır; radyatör ise 87.08’dedir.",
+            "Çocuklar için her türlü bisiklet 87.12’de; çocuklar için diğer tekerlekli araçlar (üç tekerlekli çocuk bisikleti, pedallı araba) 95.03’te (Not 4).",
+        ],
+    },
+    "karar_tablosu": {
+        "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+        "satirlar": [
+            ["1", "Yalnız raylar üzerinde hareket etmek üzere mi imal edilmiş?", "Fasıl 86 (Not 1)"],
+            ["2", "Oyuncak, eğlence parkı aracı, spor kızağı veya teşhir modeli mi?",
+             "<b>95.03</b> · <b>95.08</b> · <b>95.06</b> · <b>90.23</b>"],
+            ["3", "Tank veya motorlu zırhlı savaş taşıtı mı?", "<b>87.10</b> (silahla donatılmış olsun olmasın)"],
+            ["4", "Fabrika, ambar, liman, havalimanında kısa mesafe yük arabası veya istasyon platformu çekicisi mi?",
+             "<b>87.09</b> (kaldırma tertibatı varsa forklift <b>84.27</b>)"],
+            ["5", "Esas itibarıyla başka taşıt, cihaz veya yükü çekmek ya da itmek için mi?*", "<b>87.01</b>"],
+            ["6", "İnsan veya eşya taşımak yerine bir hizmet için donatılmış mı? (kurtarıcı, itfaiye, beton mikseri, vinçli kamyon)",
+             "<b>87.05</b>"],
+            ["7", "Sürücü dahil 10 veya daha fazla kişi taşımaya mahsus mu?", "<b>87.02</b>"],
+            ["8", "Esas itibarıyla insan taşımak için mi? (otomobil, motorlu karavan, ambulans, golf arabası, kar aracı)",
+             "<b>87.03</b>"],
+            ["9", "Eşya taşımak için mi? (kamyon, kamyonet, damper, pick-up, motor ve kabinli şasi)", "<b>87.04</b>"],
+            ["10", "Motorlu şasi, karoser veya aksam mı? (87.01–87.05 taşıtları için)",
+             "<b>87.06</b> / <b>87.07</b> / <b>87.08</b> (Not 2 eşyası kendi yerine)"],
+            ["11", "Motosiklet, mopet, yardımcı motorlu bisiklet, sepet · motorsuz bisiklet · engelli taşıyıcısı mı?",
+             "<b>87.11</b> · <b>87.12</b> · <b>87.13</b>; aksamı <b>87.14</b>"],
+            ["12", "Bebek arabası · hareket ettirici tertibatı olmayan römork, el veya hayvanla çekilen taşıt mı?",
+             "<b>87.15</b> · <b>87.16</b> (aksamı kendi pozisyonunda)"],
+        ],
+        "dipnot": "* Traktöre takılı pulluk, kültivatör, çayır biçme makinesi kendi pozisyonunda (84.32, 84.33), çekici birim 87.01’de sınıflandırılır. Traktör tipi özel kaideye daimi monte edilerek ayrılmaz bütün oluşturan motorlu pulluk, motorlu çapa, buldozer ise komple Fasıl 84’tedir.",
+    },
+    "pozisyon_haritasi": [
+        ["87.01", "Traktörler (87.09 hariç)", "Çekmek veya itmek; güç kaynağı önemsiz",
+         "Tarım traktörü, yarı römork çekicisi, paletli traktör, tek dingilli traktör"],
+        ["87.02", "10 veya daha fazla kişi taşıyan motorlu taşıtlar", "Sürücü dahil kişi sayısı",
+         "Otobüs, midibüs, troleybüs, gyrobüs"],
+        ["87.03", "Binek otomobilleri ve insan taşıtları", "Esas itibarıyla insan; 87.02 hariç",
+         "Otomobil, motorlu karavan, ambulans, cenaze arabası, golf arabası, kar aracı"],
+        ["87.04", "Eşya taşımaya mahsus motorlu taşıtlar", "Eşya için tasarım",
+         "Kamyon, kamyonet, pick-up, damper, çöp kamyonu, mekik arabası"],
+        ["87.05", "Özel amaçlı motorlu taşıtlar", "İnsan veya eşya taşımaz; hizmet donanımı",
+         "Kurtarıcı, itfaiye, beton mikseri, vinç kamyonu, seyyar derrick, seyyar klinik"],
+        ["87.06", "Motorlu şasiler (87.01–87.05 için)", "Motor, transmisyon, direksiyon; sürücü mahalli yok",
+         "Otobüs veya kamyon için motorlu şasi"],
+        ["87.07", "Karoserler (sürücü mahalleri dahil)", "87.01–87.05 için; tamamlanmamış olanlar dahil",
+         "Otomobil karoseri, kamyon ve traktör sürücü kabini"],
+        ["87.08", "87.01–87.05 taşıtlarının aksam, parça ve aksesuarı", "Yalnız veya esas itibarıyla bu taşıtlara; Not 2 dışı",
+         "Tampon, emniyet kemeri, fren, vites kutusu, radyatör, hava yastığı, jant"],
+        ["87.09", "Kısa mesafe yük arabaları; istasyon çekicileri; aksamı", "Kaldırma-elleçleme tertibatı yok",
+         "Fabrika veya havalimanı yük arabası, peron çekicisi"],
+        ["87.10", "Tanklar ve zırhlı savaş taşıtları; aksamı", "Motorlu, zırhlı; silahlı olsun olmasın",
+         "Tank, zırhlı personel taşıyıcı, döner taret, tank tırtılı"],
+        ["87.11", "Motosikletler, mopetler; sepetler", "İki tekerlekli motorlu; yardımcı motorlu bisiklet dahil",
+         "Motosiklet, mopet, kendinden dengeli elektrikli taşıt, yan sepet"],
+        ["87.12", "Motorsuz bisikletler ve diğer motorsuz tekerlekli taşıtlar", "Pedallı; üç tekerlekli dağıtım bisikleti dahil",
+         "Yarış bisikleti, tandem, iki tekerlekli çocuk bisikleti"],
+        ["87.13", "Engelliler için taşıyıcılar", "Motorlu olsun olmasın",
+         "Tekerlekli sandalye, motorlu engelli aracı"],
+        ["87.14", "87.11–87.13 taşıtlarının aksam, parça ve aksesuarı", "Yalnız veya esas itibarıyla bu taşıtlara",
+         "Bisiklet jantı, sele, pedal, gidon, motosiklet şanzımanı"],
+        ["87.15", "Bebek arabaları ve aksamı", "Elle itilen çocuk arabası",
+         "Puset, beşik olarak kullanılabilen takma karoser"],
+        ["87.16", "Römorklar, yarı römorklar; motorsuz diğer taşıtlar; aksamı", "Hareket ettirici tertibatı yok",
+         "Karavan römork, yarı römork, el arabası, at arabası, kütük kızağı"],
+    ],
+    "notlar": [
+        ["Fasıl 87 Not 1",
+         "Yalnız raylar üzerinde hareket etmek üzere imal edilmiş demiryolu veya tramvay taşıtları Fasıl 87 dışındadır."],
+        ["Fasıl 87 Not 2",
+         "“Traktör”: esas itibarıyla diğer kara taşıtlarını, cihazları veya yükleri çekmekte veya itmekte kullanılmak üzere imal olunan, asıl görevinin yanı sıra alet, gübre, tohum vb. taşımaya mahsus tertibatı bulunan veya bulunmayan motorlu kara taşıtı. 87.01 traktörlerine uygun olarak dizayn edilmiş, traktöre takılarak kullanılan makine ve çalışma aletleri <b>traktörle birlikte sunulsa ve monte edilmiş olsa bile</b> kendi fasıllarında sınıflandırılır."],
+        ["Fasıl 87 Not 3",
+         "Sürücü mahalli ile teçhiz edilmiş motorlu şasiler 87.06’da değil, 87.02–87.04’te sınıflandırılır."],
+        ["Fasıl 87 Not 4",
+         "Çocuklar için her türlü bisiklet 87.12’de, çocuklar için diğer tekerlekli araçlar 95.03’te sınıflandırılır."],
+        ["Fasıl 87 Genel Açıklamalar (eksik ve tamamlanmış taşıt)",
+         "Asli özelliğe sahip eksik taşıtlar tamamlanmış gibi sınıflandırılır (GYK 2(a)): tekerlekleri, lastikleri ve aküsü takılmamış taşıt; motoru veya iç donanımı takılmamış taşıt; lastiksiz ve selesiz bisiklet. Montajdan sonra yapılan işlemler (şasi numarası, fren sistemini doldurma ve hava alma, hidrolik direksiyon, soğutma ve iklimlendirme sistemlerini doldurma, far, rot-balans ve fren ayarı) sınıflandırmayı etkilemez."],
+        ["Fasıl 87 Genel Açıklamalar (kapsam ve hariçler)",
+         "Hem karada hem suda kullanılmak üzere özel imal edilmiş motorlu taşıtlar ve hem karada hem su sahasında seyahat eden hava yastıklı taşıtlar Fasıl 87’dedir; hem hava hem kara taşıtı olarak kullanılan uçaklar 88.02’dedir. Hariç: teşhir modelleri (90.23), çocukların binmesi için tekerlekli oyuncaklar ve üç tekerlekli çocuk bisikletleri (95.03), kış sporu levazımı (95.06), eğlence parkı araçları (95.08)."],
+        ["87.01 Açıklama Notu",
+         "Her tür traktör (tarım, orman, yol, inşaat, vinçli traktörler) buradadır; hareket ettiren kuvvetin kaynağı dikkate alınmaz. Hem demiryolunda hem karayolunda kullanılabilen traktörler ve tek dingilli küçük zirai traktörler dahildir. Traktörlerin karoseri yoktur, sürücü mahalli bulunabilir. Sökülüp takılabilen makine ve cihazlar ayrılarak kendi pozisyonlarına verilir. 84.25, 84.26, 84.29, 84.30 veya 84.32 makinelerinin traktör tipi özel kaideye daimi monte edilmesiyle oluşan ayrılmaz bütünler (motorlu pulluk, motorlu çapa, buldozer) komple kendi pozisyonundadır. Arızalı taşıtları kaldırmaya mahsus vinçli kamyonlar 87.05’tir."],
+        ["87.02 Açıklama Notu",
+         "Sürücü dahil on veya daha fazla kişi taşımak için düzenlenmiş tüm motorlu taşıtlar; otobüs, troleybüs ve gyrobüs dahil, motor tipi önemsizdir. Tekerlekleri ve dümeni değiştirilerek, motoru değişmeksizin demiryolu arabasına dönüştürülebilen motorlu taşıtlar da buradadır."],
+        ["87.03 Açıklama Notu (kapsam)",
+         "Kar üzerinde seyahat için özel tasarlanmış araçlar, golf arabaları, binek otomobilleri (yarış, spor, limuzin, taksi), ambulans, cenaze arabası, hapishane minibüsü, ikamet için düzenlenmiş motorlu karavanlar, otomobil tipi direksiyonlu boru şasili dört tekerlekli taşıtlar; tekerlekli veya paletli olabilir. Engelliler için uyarlanmış normal otomobiller de 87.03’tedir."],
+        ["87.03 / 87.04 Açıklama Notları (çok amaçlı taşıtlar)",
+         "Brüt ağırlığı 5 tondan az, tek iç alanlı “çok amaçlı” taşıtlarda <b>87.03 göstergeleri</b>: her kişi için emniyet kemeri veya bağlantı noktası bulunan sabit, katlanır veya sökülebilir koltuklar; iki yan panel boyunca arka camlar; pencereli yan veya arka kapılar; sürücü-ön yolcu alanı ile arka alan arasında daimi panel veya bariyer bulunmaması; halı, havalandırma, iç aydınlatma, küllük gibi konfor donanımı. <b>87.04 göstergeleri</b>: güvenlik donanımı olmayan bank tipi koltuklar; ayrı kabin ve yan panelli açık platform (pick-up); arka yan camların bulunmaması ve penceresiz yükleme kapıları; daimi bölme panel; kargo alanında konfor donanımı olmaması."],
+        ["Üç tekerlekli hafif taşıtlar (87.03, 87.04, 87.11)",
+         "Motosiklet motoru ve tekerlekleri olan ancak otomobil tipi direksiyon, ileri-geri vites ve diferansiyeli bulunan veya T şasili, tek kontrol çubuklu üç tekerlekliler insan taşımaya mahsussa 87.03’te, eşya taşımaya mahsussa 87.04’te; bu özellikleri taşımayan üç tekerlekliler (velespit gibi) 87.11’de sınıflandırılır."],
+        ["87.04 Açıklama Notu",
+         "Kamyon ve kamyonetler, damperli kamyonlar, tanker ve frigorifik kamyonlar, çöp toplayıcı kamyonlar, taze beton taşıyan kamyonlar (beton karıştırıcılı taşıtlar hariç), damperler, mekik arabaları, kendi yükünü kendi alan vinçli taşıtlar ve kara-demiryolu kamyonları; motor ve kabinle donatılmış şasiler de buradadır. Hariç: straddle taşıyıcılar (84.26), maden yükleme taşıyıcıları (84.29), üç tekerlekli taşıt özelliği olmayan yük motosikletleri (87.11)."],
+        ["87.05 Açıklama Notu",
+         "Başlıca özelliği insan veya eşya taşımamasıdır. Kaldırma, kazma, delme teçhizatlı araçların burada sınıflandırılması için en az yürütücü motor, şanzıman, vites kolu, direksiyon ve fren teçhizatı bulunan bir kamyon veya motorlu taşıt şasisi gerekir; şasi ile iş makinesi yekpare bir birim oluşturuyorsa (kendinden hareketli greyder, vinç, hafriyat makinesi) Fasıl 84’te kalır. Kendi yükünü kendi alan eşya taşıtları 87.04’tür. Hariç: kendi kendine çalışan yol silindirleri (84.29), tarımsal silindirler (84.32), yaya kontrollü küçük araçlar (84.79), ev olarak kullanılan motorlu karavanlar (87.03), sökülebilir kar küreme tertibatı (84.30); sabit küreme tertibatlı kendi kendine çalışan kar süpürücüler daima 87.05’tedir."],
+        ["87.06 – 87.07 Açıklama Notları",
+         "87.06: motor, transmisyon, direksiyon tertibatı ve dingilleri olan karosersiz şasiler (kaput, ön cam, çamurluk, alet tablosu, lastik, akü bulunabilir). Sürücü bölmeli şasiler 87.02–87.04’te, motorsuz şasiler 87.08’de. 87.07: şasiye monte edilecek veya şasisiz (tek parça) karoserler; ön camı, kapıları takılmamış veya döşeme ve boyası bitmemiş karoserler ile kamyon ve traktör sürücü kabinleri dahil."],
+        ["87.08 Açıklama Notu",
+         "Aksam iki şartı sağlar: (i) yalnız ve özellikle 87.01–87.05 taşıtlarıyla kullanılmaya uygun olduğu açıkça belli olmak; (ii) Bölüm XVII notlarıyla hariç tutulmamış olmak. Örnekler: motorsuz monte edilmiş şasiler, karoser aksamı, çerçeveli camlar ile ısıtma rezistanslı veya elektrikli konnektörlü camlar, emniyet kemerleri, tamponlar, debriyajlar (elektromanyetik olanlar 85.05 hariç), vites kutuları, diferansiyelli akslar, kardan milleri, direksiyon simidi ve aksamı, frenler, amortisörler, tekerlekler, radyatörler, susturucular, yakıt tankları, uzunluğuna kesilip donatılmış fren, gaz ve debriyaj kabloları, şişirme sistemli hava yastıkları. Hariç: motor iç parçaları (84.09), volan, kam mili, krank şaftı (84.83), hidrolik veya pnömatik silindirler (84.12), hava yastığı uzaktan kumanda sensörleri ve elektronik kumandaları, dokumaya elverişli maddeden veya sertleştirilmemiş vulkanize kauçuktan paspaslar."],
+        ["87.09 Açıklama Notu",
+         "Ortak özellikler: (1) yapıları itibarıyla karayolunda malzeme veya insan taşımaya elverişsiz; (2) yüklü iken hızları genellikle saatte <b>30–35 km</b>’yi geçmez; (3) dönüş yarıçapı yaklaşık kendi uzunluklarına eşittir. Yaya kontrollü olabilirler. Hariç: vinçli iş kamyonları ve hidrolik ayaklı taşıyıcılar (84.26), forkliftler ve kaldırma teçhizatlı yük kamyonları (84.27), damperler (87.04)."],
+        ["87.10 Açıklama Notu",
+         "Tanklar, zırhlı arabalar, vinçli kurtarma tankları, zırhlı destek araçları, uzaktan idareli küçük tanklar, zırhlı personel taşıyıcıları; hem karada hem suda giden tanklar dahil. Aksam: zırhlı şasi, döner taret, tank tırtılları, tanımlanabilir şekilde işlenmiş zırh levhaları. Hafif zırhlı veya sökülebilir zırhlı mutad araba ve kamyonlar 87.02–87.05’te; hareket edebilen ağır silahlar 93.01’de."],
+        ["87.11 – 87.13 Açıklama Notları",
+         "87.11: insan taşımak için iki tekerlekli motorlu taşıtlar, mopetler, yardımcı motorlu bisikletler, tek kişiyi taşıyan kendinden dengeli iki tekerlekli elektrikli taşıtlar, motosiklet ve bisiklet sepetleri (ayrı gelenler dahil); otomobil tipi direksiyonlu boru şasili dört tekerlekliler 87.03, bisiklet ve motosiklet römorkları 87.16. 87.12: iki tekerlekli çocuk bisikletleri, üç ve dört tekerlekli bisikletler, dağıtım bisikletleri, tandemler, yarış bisikletleri, tek pedallı zincirli scooterlar; yardımcı motorlu bisikletler 87.11, panayır bisikletleri 95.08. 87.13: engelliler için koltuk ve taşıyıcılar; tekerlekli sedyeler 94.02."],
+        ["87.16 Açıklama Notu",
+         "“Römork” ve “yarı römork”, özel bir birleştirici vasıtayla başka bir taşıta takılarak çekilen taşıtlardır (yan sepetler hariç). Elle veya ayakla hareket ettirilen taşıtlar (el arabası, seyyar satıcı arabası, çekçek, kütük taşıyan el kızağı, kicksled) ve hayvanla çekilen taşıtlar (fayton, at arabası, atlı kızak) dahildir. Hariç: hasat aletleri daimi monte edilmiş römorklar (84.33), basit tekerlekli şasiye monte pompa ve kompresörler (84.13, 84.14), römork tipi püskürtme takımları (84.24), beton karıştırıcılar (84.74), seyyar çöp kutuları (39.24, 73.23), yürüteçler, şasisiz market sepetleri, kış sporu kızakları (95.06)."],
+    ],
+    "sinir_komsulari": [
+        ["Traktöre monte halde çayır biçme makinesi", "84.33", "Fasıl 87 Not 2: takılan alet kendi faslında"],
+        ["Traktöre takılan pulluk, kültivatör, çapa", "84.32", "Fasıl 87 Not 2; 87.01 Açıklama Notu"],
+        ["Traktör tipi kaideye daimi monte buldozer; kendinden hareketli greyder", "84.29", "Ayrılmaz bütün; 87.01 ve 87.05 Açıklama Notları"],
+        ["Forklift; kaldırma teçhizatlı yük kamyonu", "84.27", "87.09 hariç tutması"],
+        ["Straddle taşıyıcı; vinçli iş kamyonu", "84.26", "87.04 ve 87.09 hariç tutmaları"],
+        ["Kendinden hareketli yol silindiri", "84.29", "87.05 hariç tutması"],
+        ["Sökülebilir kar küreme tertibatı", "84.30", "87.05 hariç tutması"],
+        ["Benzinli veya dizel motor; krank şaftı, volan", "84.07 / 84.08 / 84.83", "Bölüm XVII Not 2(e); 87.08 hariç tutması"],
+        ["Ateşleme bujisi; elektrikli far ve cam silici; elektromanyetik debriyaj", "85.11 / 85.12 / 85.05", "Bölüm XVII Not 2(f)"],
+        ["Dış lastik; çerçevesiz emniyet camı; dikiz aynası", "40.11 / 70.07 / 70.09", "Daha belirli pozisyon (Bölüm XVII Genel Açıklamalar (III)(C))"],
+        ["Oto koltuğu; dokumaya elverişli maddeden paspas", "94.01 / Fasıl 57", "Daha belirli pozisyon; 87.08 hariç tutması"],
+        ["Bisiklet zili", "83.06", "Bölüm XVII Not 2(d)"],
+        ["Üç tekerlekli çocuk bisikleti; pedallı oyuncak araba", "95.03", "Fasıl 87 Not 4; Genel Açıklamalar"],
+        ["Spor kızağı; eğlence parkı çarpışan arabası", "95.06 / 95.08", "Bölüm XVII Not 1"],
+        ["Tekerlekli sedye; hareket edebilen ağır silah", "94.02 / 93.01", "87.13 ve 87.10 hariç tutmaları"],
+    ],
+    "tuzaklar": [
+        "<b>Traktöre takılı alet traktör değildir.</b> Pulluk, kültivatör, çayır biçme makinesi traktöre monte halde gelse bile kendi pozisyonundadır (84.32, 84.33); traktör ayrıca 87.01’de. Traktör tipi özel kaideye daimi monte motorlu pulluk veya buldozer ise komple Fasıl 84’tedir.",
+        "<b>Kişi sayısına sürücü dahildir.</b> 9 yolcu ve 1 sürücü toplam 10 kişidir → 87.02.",
+        "<b>Ambulans 87.03, itfaiye 87.05.</b> Ambulans, cenaze arabası, hapishane minibüsü ve motorlu karavan insan taşır; itfaiye, kurtarıcı, beton mikseri ve seyyar klinik taşıma dışı hizmet görür.",
+        "<b>Vinç tek başına 87.05 yapmaz.</b> Kendi yükünü kendi alan, esas olarak eşya taşımak için yapılmış vinçli kamyon 87.04; eşya taşımayan dönen vinçli kamyon 87.05; şasisi vinçle yekpare kendinden hareketli vinç Fasıl 84.",
+        "<b>Taze beton kamyonu ≠ beton mikseri.</b> Yalnız taze beton taşıyan kamyon 87.04; betonu hem hazırlayıp hem taşıyan beton karıştırıcılı taşıt 87.05; çekme tertibatlı basit şasiye monte beton karıştırıcı 84.74.",
+        "<b>Şasi üçlüsü.</b> Motor ve sürücü mahalli = 87.02–87.04 (Not 3); motor var, sürücü mahalli yok = 87.06; motor yok = 87.08.",
+        "<b>87.08’e mahsus görünen ama girmeyenler.</b> Buji 85.11, elektrikli cam silici ve far 85.12, motor Fasıl 84, krank şaftı 84.83, lastik 40.11, çerçevesiz cam 70.07, dikiz aynası 70.09, koltuk 94.01, rulman 84.82. Radyatör ise Not 2(e) istisnasıyla 87.08’de kalır.",
+        "<b>Kaldırma tertibatı 87.09’u bozar.</b> Kısa mesafe yük arabası kaldırma veya elleçleme tertibatı yoksa 87.09; forklift 84.27, vinçli iş kamyonu 84.26.",
+        "<b>Çocuk bisikleti 87.12, çocuk üç tekerleklisi 95.03.</b> Not 4: çocuklar için her türlü bisiklet 87.12, diğer tekerlekli çocuk araçları 95.03. Büyükler için üç tekerlekli bisiklet 87.12’dedir.",
+        "<b>Kızak ikiye ayrılır; zırh da öyle.</b> Kütük taşıyan el kızağı ve atlı kızak 87.16, spor kızağı 95.06. Hafif zırhlı veya sökülebilir zırhlı mutad araç 87.02–87.05, tank ve zırhlı personel taşıyıcı 87.10.",
+    ],
+    "hafiza": {
+        "kanca": "ÇEK – ON – İNSAN – YÜK – HİZMET  /  ŞASİ – KASA – PARÇA  /  KISA – TANK  /  MOTO – PEDAL – ENGELLİ – PARÇA  /  BEBEK – RÖMORK",
+        "aciklama": "87.01 <b>ÇEK</b>er · 87.02 <b>ON</b> kişi · 87.03 <b>İNSAN</b> · 87.04 <b>YÜK</b> · 87.05 <b>HİZMET</b> · 87.06 <b>ŞASİ</b> · 87.07 <b>KASA</b> (karoser) · 87.08 <b>PARÇA</b> · 87.09 <b>KISA</b> mesafe · 87.10 <b>TANK</b> · 87.11 <b>MOTO</b> · 87.12 <b>PEDAL</b> · 87.13 <b>ENGELLİ</b> · 87.14 <b>PARÇA</b> · 87.15 <b>BEBEK</b> · 87.16 <b>RÖMORK</b>. İki ayrı aksam pozisyonu vardır: 87.01–87.05 grubu için 87.08, 87.11–87.13 grubu için 87.14; 87.09, 87.10, 87.15 ve 87.16 ise aksamını kendi içinde taşır.",
+    },
+    "sinav_odagi": [
+        "En çok sorulan konu 87.08’in kapsamıdır: “hangisi 87.08’de yer almaz?” kalıbında cam silici (85.12), ateşleme bujisi (85.11), dikiz aynası, motor gibi Not 2 veya daha belirli pozisyon eşyasının direksiyon simidi, rot, emniyet kemeri, radyatör, hava yastığı ile karıştırılması.",
+        "Aksamın taşıt grubuna göre ayrılması: kamyon tekerleği 87.08’de; bisiklet ve motosiklet tekerleği 87.14’te, at arabası tekerleği 87.16’da.",
+        "87.03 kapsamı ve hariçleri: ambulans, motorlu karavan, golf arabası 87.03’te; itfaiye aracı 87.05’te. 87.02’de kişi sayısı ve motor tipine dayalı alt ayrımlar da sorulmuştur.",
+        "Traktör ile tarım makinesi ayrımı: traktöre monte çayır biçme makinesinin 84.33’te, traktöre takılan kültivatörün 84.32’de sınıflandırıldığı; 87.01 çeldirici olarak verilmiştir.",
+        "Fasıl 87 dışında kalan taşıt benzeri eşya: üç tekerlekli (çocuk) bisikletler 95.03, elektromanyetik frenler 85.05, bisiklet zilleri 83.06, far ve stop camları, teleferikler 84.28, buz pisti düzeltme makinesi 84.79 (87.05 çeldirici).",
+        "GYK ile birleşik sorular: sele, pedal ve krank dişlisi olmayan, ayakla itilen iki tekerlekli aracın 87.16’da GYK 1 ve 6 ile; demonte bisikletin GYK 2(a) ile sınıflandırılması; dikiz aynası örneği.",
+        "Karşılaştırma soruları: hangi pozisyonda binek otomobiline ait ürün bulunmadığı (87.10 – tanklar) gibi pozisyon taraması gerektiren sorular.",
+    ],
+    "cikmis_ornekler": [
+        {
+            "soru": "Aşağıdaki kara nakil vasıtası aksam, parça ve aksesuar gruplarından hangisinde 87. Fasılda sınıflandırılmayan eşya <b>yoktur</b>?",
+            "secenekler": [
+                "Emniyet kemeri, amortisör, cam silici",
+                "Direksiyon simidi, jant, hava yastığı",
+                "Fren, vites kutusu, dikiz aynası",
+                "Debriyaj, radyatör, motor",
+            ],
+            "cevap": "B",
+            "aciklama": "Direksiyon simidi, jant ve hava yastığı 87.08 Açıklama Notunda sayılmıştır. Cam silici Fasıl 84 veya 85’e, dikiz aynası 70.09 veya Fasıl 90’a, motor Bölüm XVII Not 2(e) gereği Fasıl 84’e gider.",
+        },
+        {
+            "soru": "Aşağıdakilerden hangisi 87.03 tarife pozisyonunda (Binek otomobilleri ve esas itibariyle insan taşımak üzere imal edilmiş diğer motorlu taşıtlar) <b>sınıflandırılmaz</b>?",
+            "secenekler": ["Ambulans", "İtfaiye aracı", "Motorlu karavan", "Golf arabası"],
+            "cevap": "B",
+            "aciklama": "İtfaiye taşıtları insan veya eşya taşımak yerine özel bir hizmet gördüğünden 87.05’tedir. Ambulans, motorlu karavan ve golf arabası 87.03 Açıklama Notunda açıkça sayılmıştır.",
+        },
+    ],
+    "ozet": [
+        "Çeken-iten traktör 87.01; traktöre takılı tarım makinesi kendi pozisyonunda (Not 2).",
+        "Sürücü dahil 10+ kişi 87.02; insan 87.03; eşya 87.04; taşıma dışı hizmet 87.05.",
+        "Motor + sürücü mahalli olan şasi 87.02–87.04; sürücü mahalli yoksa 87.06; motorsuz şasi 87.08.",
+        "87.08 = 87.01–87.05 aksamı; Not 2 eşyası (motor, buji, elektrikli far-silici, rulman) ve daha belirli eşya (lastik, cam, ayna, koltuk) dışarıda.",
+        "Kaldırma tertibatsız kısa mesafe yük arabası 87.09; forklift 84.27. Tank ve zırhlı personel taşıyıcı 87.10.",
+        "İki tekerlekli motorlu 87.11, pedallı bisiklet 87.12, engelli taşıyıcısı 87.13, bunların aksamı 87.14; bebek arabası 87.15; motorsuz römork ve el-hayvan taşıtları 87.16.",
+        "Çocuk bisikleti 87.12, diğer çocuk taşıtları 95.03; spor kızağı 95.06, çarpışan araba 95.08.",
+    ],
+}
+
+S = []
+
+# --- Eşya → 4’lü pozisyon (5) ---
+S.append(soru(
+    "Tarife Cetveline göre, fabrikada kısa mesafede eşya taşımak için kullanılan, akümülatörlü elektrik motoruyla çalışan, kaldırma veya elleçleme tertibatı bulunmayan, sürücünün ayakta durduğu platformlu kendinden hareketli yük arabası hangi pozisyonda sınıflandırılır?",
+    "87.09", ["84.27", "87.04", "87.16", "84.28"], "D", EP,
+    "87.09, fabrika, ambar, liman veya havalimanlarında kısa mesafede eşya taşımaya mahsus, kaldırma veya elleçleme tertibatı bulunmayan kendinden hareketli yük arabalarını kapsar; sürücünün ayakta durduğu basit platform bu taşıtların tipik özelliğidir. Kaldırma teçhizatlı forkliftler 84.27’de, karayolu kamyonları 87.04’te, motorsuz taşıtlar 87.16’dadır.",
+    "87.09 pozisyon metni ve Açıklama Notu."))
+S.append(soru(
+    "Bir veya iki tekerlekli tek ana dingille donatılmış, oturma yeri bulunmayan, iki elle idare edilen ve takılıp sökülebilen çapa ve pulluk aletleriyle kullanılan küçük zirai traktör (aletsiz olarak) hangi pozisyonda yer alır?",
+    "87.01", ["84.32", "87.09", "84.33", "87.16"], "A", EP,
+    "87.01 Açıklama Notu tek dingilli traktörleri, yani bir veya iki tekerlekli tek ana dingili olan, genellikle iki elle idare edilen küçük zirai traktörleri açıkça kapsar. Aletler ayrı olduğundan ve traktöre daimi monte bir tarım makinesi söz konusu olmadığından 84.32 veya 84.33 uygulanmaz; 87.09 kısa mesafe yük arabaları içindir.",
+    "Fasıl 87 Not 2; 87.01 Açıklama Notu."))
+S.append(soru(
+    "Kaldırım ve bisiklet yolları gibi düşük hızlı alanlarda tek kişiyi taşımak üzere tasarlanmış, sıralı olmayan iki bağımsız tekerlek üzerinde denge sensörleri ve mikroişlemcilerle sürücünün dik durmasını sağlayan elektrikli taşıt hangi pozisyonda sınıflandırılır?",
+    "87.11", ["87.13", "87.12", "95.03", "87.03"], "E", EP,
+    "87.11 Açıklama Notu, düşük hızlı alanlarda tek kişiyi taşıyan, iki bağımsız tekerlek üzerinde dengeyi sağlayan iki tekerlekli elektrikli nakil vasıtalarını açıkça kapsar. 87.12 motorsuz bisikletler, 87.13 engelliler için özel tasarlanmış taşıyıcılar, 87.03 dört tekerlekli veya otomobil özelliğindeki taşıtlar içindir.",
+    "87.11 Açıklama Notu."))
+S.append(soru(
+    "Ameliyathane, anestezi cihazları ve diğer cerrahi aletlerle donatılmış seyyar klinik kamyonu hangi pozisyonda yer alır?",
+    "87.05", ["87.03", "87.04", "87.02", "90.18"], "C", EP,
+    "87.05 Açıklama Notu ameliyathane ve cerrahi aletlerle donatılmış seyyar klinikleri sayar; bu taşıtların başlıca özelliği insan veya eşya taşımamalarıdır. Hasta taşıyan ambulans ise 87.03’tedir; tuzak budur. Taşıt üzerindeki tıbbi cihazlar taşıtla birlikte bir bütün oluşturduğundan 90.18 uygulanmaz.",
+    "87.05 Açıklama Notu (13); 87.03 Açıklama Notu."))
+S.append(soru(
+    "Brüt ağırlığı 3,5 ton olan; sürücü ve yolcular için ayrı bir kabinin arkasında yan panelli ve açılır bagaj kapılı ayrı bir açık platformu bulunan, platformda koltuk ve emniyet kemeri bağlantısı olmayan pick-up tipi motorlu taşıt hangi pozisyonda sınıflandırılır?",
+    "87.04", ["87.03", "87.05", "87.06", "87.16"], "B", EP,
+    "87.04 Açıklama Notu, sürücü ve yolcular için ayrı kabin ile yan panelli ve açılan bagaj kapılı ayrı açık platformun bulunmasını eşya taşımaya mahsus tasarımın göstergesi sayar. Arka alanda emniyet kemeri bağlantılı koltuklar, arka yan camlar ve konfor donanımı olsaydı 87.03 düşünülebilirdi. 87.06 karosersiz motorlu şasi içindir.",
+    "87.03 ve 87.04 Açıklama Notları."))
+
+# --- Olumsuz teşhis (4) ---
+S.append(soru(
+    "Aşağıdakilerden hangisi 87.08 pozisyonunda <b>sınıflandırılmaz</b>?",
+    "Motorun krank şaftı",
+    ["Kardan mili", "Tork dönüştürücülü otomatik vites kutusu", "Uzunluğuna kesilmiş ve uçları donatılmış gaz kablosu", "Hidrolik fren yağ haznesi"],
+    "C", OT,
+    "87.08 Açıklama Notu volanların, kam millerinin ve krank şaftlarının 84.83’te olduğunu belirtir; Bölüm XVII Not 2(e) de motor bünyesine giren 84.83 eşyasını hariç tutar. Kardan mili, tork dönüştürücülü vites kutusu, donatılmış gaz kablosu ve hidrolik fren yağ haznesi 87.08’de açıkça sayılmıştır.",
+    "Bölüm XVII Not 2(e); 87.08 Açıklama Notu (D), (F), (H), (N)."))
+S.append(soru(
+    "Aşağıdakilerden hangisi Tarife Cetvelinin 87. faslında <b>yer almaz</b>?",
+    "Kendi kendine çalışan yol silindiri",
+    ["Golf arabası", "Motorlu karavan", "Beton karıştırıcı ile donatılmış kamyon", "Kar üzerinde hareket etmek için özel imal edilmiş taşıt"],
+    "E", OT,
+    "87.05 Açıklama Notu kendi kendine çalışan yol silindirlerini hariç tutar; bunlar 84.29’dadır. Golf arabası, motorlu karavan ve kar aracı 87.03’te, beton karıştırıcılı kamyon 87.05’tedir.",
+    "87.05 Açıklama Notu, hariç tutmalar; 87.03 Açıklama Notu."))
+S.append(soru(
+    "Aşağıdakilerden hangisi 87.16 pozisyonunda <b>sınıflandırılmaz</b>?",
+    "Basit tekerlekli şasiye monte seyyar kompresör",
+    ["Karavan tipi kamp römorku", "Bisiklet tarafından çekilen küçük römork", "Dağlık yerlerde kütük taşımaya mahsus elle çekilen kızak", "Seyyar satıcıların kullandığı el arabası"],
+    "A", OT,
+    "87.16 Açıklama Notu, çekme tertibatlı basit tekerlekli şasiye monte edilmiş pompa ve kompresörleri hariç tutar; bunlar esas karakterini makineden aldığından 84.13 veya 84.14’tedir. Karavan römorku, bisiklet römorku, kütük kızağı ve seyyar satıcı arabası 87.16’da açıkça sayılmıştır.",
+    "87.16 Açıklama Notu (A), (B) ve “Makinalarla donatılmış araçlar” bölümü."))
+S.append(soru(
+    "Aşağıdakilerden hangisi 87.05 pozisyonunda <b>sınıflandırılmaz</b>?",
+    "İkamet için düzenlenmiş motorlu karavan",
+    ["Sondaj işlerinde kullanılan seyyar derrick", "Taşıt motoruyla işleyen jeneratörden beslenen projektör kamyonu", "Gezici kütüphane kamyonu", "Seyyar radyoloji ünitesi"],
+    "D", OT,
+    "87.05 Açıklama Notu ev olarak kullanılan motorlu karavanları hariç tutar; bunlar insan taşıyan taşıt olarak 87.03’tedir. Seyyar derrick, projektör kamyonu, gezici kütüphane ve seyyar radyoloji ünitesi taşıma dışı hizmet gören taşıtlar olarak 87.05’te sayılmıştır.",
+    "87.05 pozisyon metni ve Açıklama Notu; 87.03 Açıklama Notu."))
+
+# --- Farklı/aynı pozisyon veya fasıl (4) ---
+S.append(soru(
+    "Aşağıdakilerden hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+    "Vinçli kurtarıcı araç",
+    ["Ambulans", "Cenaze arabası", "Spor tipi yarış arabası", "Golf arabası"],
+    "E", FA,
+    "Kurtarıcı araçlar insan veya eşya taşımadığından 87.05’tedir. Ambulans, cenaze arabası, yarış arabası ve golf arabası 87.03 Açıklama Notunda insan taşımaya mahsus taşıtlar arasında sayılmıştır. Ambulans ve cenaze arabasını “özel amaçlı” sanıp 87.05’e götürmek tipik hatadır.",
+    "87.03 ve 87.05 Açıklama Notları."))
+S.append(soru(
+    "Aşağıdakilerden hangisi diğerlerinden farklı bir pozisyonda yer alır?",
+    "Bebek arabası tekerleği",
+    ["Motosiklet selesi", "Bisiklet pedalı", "Engelli tekerlekli sandalyesinin jantı", "Motosiklet yakıt deposu"],
+    "B", FA,
+    "87.15 bebek arabalarını aksam ve parçalarıyla (tekerlekler dahil) birlikte kapsar. Motosiklet selesi, bisiklet pedalı, engelli taşıyıcısına ait jant ve motosiklet yakıt deposu 87.11–87.13 taşıtlarının aksamı olarak 87.14’tedir.",
+    "87.14 ve 87.15 pozisyon metinleri ve Açıklama Notları."))
+S.append(soru(
+    "Aşağıdaki eşya çiftlerinden hangisinde her iki eşya da aynı pozisyonda sınıflandırılır?",
+    "Tank – Zırhlı personel taşıyıcı",
+    ["Kamyon karoseri – Kamyon tamponu", "Mopet – Motorsuz yarış bisikleti", "Yarı römork çekicisi – Yarı römork", "Forklift – Kaldırma tertibatı olmayan fabrika yük arabası"],
+    "D", FA,
+    "87.10 tankları ve zırhlı personel taşıyıcılarını birlikte kapsar. Karoser 87.07, tampon 87.08; mopet 87.11, motorsuz bisiklet 87.12; çekici 87.01, yarı römork 87.16; forklift 84.27, kaldırma tertibatsız yük arabası 87.09’dur.",
+    "87.01, 87.07–87.12, 87.16 Açıklama Notları."))
+S.append(soru(
+    "Aşağıdakilerden hangisi diğerlerinden farklı bir fasılda sınıflandırılır?",
+    "Otomobil koltuğu",
+    ["Otomobil emniyet kemeri", "Otomobil tamponu", "Sürücü hava yastığı", "Otomobil amortisörü"],
+    "A", FA,
+    "Bölüm XVII Genel Açıklamaları nakil vasıtaları için koltukları daha belirli olarak yer aldıkları 94.01’e, yani Fasıl 94’e gönderir. Emniyet kemeri, tampon, hava yastığı ve amortisör 87.08’de açıkça sayılmıştır.",
+    "Bölüm XVII Genel Açıklamalar (III)(C); 87.08 Açıklama Notu."))
+
+# --- Fasıl notu · Tanım/Eşik (4) ---
+S.append(soru(
+    "Fasıl 87 Not 2’ye göre “traktör” tabiriyle ilgili aşağıdakilerden hangisi <b>doğrudur</b>?",
+    "Esas itibarıyla başka taşıt, cihaz veya yükleri çekmek ya da itmek için imal edilmiş motorlu kara taşıtıdır.",
+    ["Yalnız tarımda kullanılan tekerlekli taşıtlardır; paletli olanlar 84.29’da sınıflandırılır.",
+     "Traktöre takılmak üzere dizayn edilmiş makineler traktöre monte halde gelirse traktörle birlikte 87.01’de sınıflandırılır.",
+     "Motor gücü belirli bir sınırı aşmayan taşıtlar traktör sayılmaz.",
+     "Elektrik motoruyla çalışan traktörler 87.09’da sınıflandırılır."],
+    "B", TN,
+    "Not 2 traktörü işleviyle tanımlar: esas itibarıyla çekme veya itme; alet, gübre, tohum taşıma tertibatı bulunması bu niteliği bozmaz. Aynı not traktöre takılan makinelerin monte olsa bile kendi fasıllarında kaldığını söyler. 87.01 Açıklama Notuna göre paletli traktörler de buradadır ve güç kaynağı dikkate alınmaz.",
+    "Fasıl 87 Not 2; 87.01 Açıklama Notu."))
+S.append(soru(
+    "Fasıl 87 Not 3’e göre motorla ve sürücü mahalli ile teçhiz edilmiş şasiler hangi pozisyonlarda sınıflandırılır?",
+    "87.02 ila 87.04",
+    ["87.06", "87.07", "87.08", "87.05"], "E", TN,
+    "Not 3 açıkça sürücü mahalli ile teçhiz edilmiş motorlu şasilerin 87.06’da değil 87.02–87.04’te sınıflandırılacağını söyler; 87.04 Açıklama Notu da motor ve kabinli şasileri bu fasla dahil eder. Sürücü mahalli olmayan motorlu şasi 87.06’da, motorsuz şasi 87.08’de kalır.",
+    "Fasıl 87 Not 3; 87.06 Açıklama Notu."))
+S.append(soru(
+    "87.09 Açıklama Notuna göre bu pozisyondaki yük arabalarını 87.01, 87.03 ve 87.04 taşıtlarından ayıran ortak özelliklerden biri hangisidir?",
+    "Yüklü hızlarının genellikle 30–35 km/saati geçmemesi",
+    ["Brüt ağırlıklarının 5 tonu geçmemesi", "Dönüş yarıçaplarının kendi uzunluklarının iki katı olması", "Motor güçlerinin 18 kW’ı geçmemesi", "Daima kapalı bir sürücü kabinine sahip olmaları"],
+    "C", TN,
+    "87.09 Açıklama Notu üç ortak özellik sayar: karayolunda taşımaya elverişsiz yapı, yüklü iken genellikle 30–35 km/saati geçmeyen hız ve kendi uzunluğuna yaklaşık eşit dönüş yarıçapı. Bu taşıtlarda genellikle kapalı sürücü bölmesi bulunmaz. 5 ton ölçütü 87.03–87.04 çok amaçlı taşıt ayrımına aittir.",
+    "87.09 Açıklama Notu."))
+S.append(soru(
+    "Açıklama Notlarına göre brüt ağırlığı 5 tondan az, tek iç alanlı “çok amaçlı” bir taşıtın 87.03’te sınıflandırılmasını destekleyen özellik hangisidir?",
+    "Arka alanda emniyet kemeri bağlantılı katlanır koltuklar bulunması",
+    ["Sürücü alanı ile arka alan arasında daimi bir bölme panel bulunması", "Yan panellerde yükleme için penceresiz kayar kapılar bulunması", "Arka alanda halı, iç aydınlatma ve havalandırma bulunmaması", "Arka alanda güvenlik donanımı olmayan yan bank tipi koltuklar bulunması"],
+    "A", TN,
+    "87.03 Açıklama Notu, her kişi için emniyet kemeri veya bağlantı noktası bulunan sabit, katlanır veya sökülebilir koltukları insan taşımaya yönelik tasarımın göstergesi sayar. Daimi bölme panel, penceresiz yükleme kapıları, konfor donanımının olmaması ve güvenlik donanımsız bank tipi koltuklar 87.04 göstergeleridir.",
+    "87.03 ve 87.04 Açıklama Notları."))
+
+# --- Genel Yorum Kuralı (2) ---
+S.append(soru(
+    "Tekerlekleri, lastikleri ve aküsü henüz takılmamış, diğer bütün aksamı monte edilmiş benzinli binek otomobili hangi pozisyonda ve hangi Genel Yorum Kuralları uyarınca sınıflandırılır?",
+    "87.03 – GYK 1, 2(a) ve 6",
+    ["87.06 – GYK 1 ve 6", "87.07 – GYK 1 ve 6", "87.03 – GYK 3(b) ve 6", "87.08 – GYK 1 ve 6"],
+    "D", GY,
+    "Fasıl 87 Genel Açıklamaları tekerlekleri, lastikleri ve aküsü takılmamış kara taşıtını asli özelliğe sahip eksik taşıt örneği olarak verir; GYK 2(a) ile tamamlanmış otomobil gibi 87.03’te, alt pozisyonu da GYK 6 ile belirlenir. 87.06 karosersiz motorlu şasi, 87.07 karoser içindir; birden fazla pozisyona giren karışım olmadığından GYK 3(b) uygulanmaz.",
+    "GYK 1, 2(a) ve 6; Fasıl 87 Genel Açıklamalar."))
+S.append(soru(
+    "Bütün parçaları aynı kutuda monte edilmemiş halde sunulan, lastikleri ve selesi bulunmayan motorsuz yetişkin bisikleti hangi pozisyonda ve hangi Genel Yorum Kuralları uyarınca sınıflandırılır?",
+    "87.12 – GYK 1 ve 2(a)",
+    ["87.14 – GYK 1", "87.12 – GYK 3(b)", "95.03 – GYK 1", "87.14 – GYK 2(a)"],
+    "C", GY,
+    "GYK 2(a) hem asli özelliğe sahip eksik eşyayı hem de monte edilmemiş halde sunulan eşyayı tamamlanmış eşya gibi sınıflandırır; Fasıl 87 Genel Açıklamaları “lastiksiz ve selesiz bisikleti” bunun örneği olarak verir. Parçaların birlikte sunulması onları tek tek 87.14 aksamı yapmaz; yetişkin bisikleti olduğundan 95.03 de söz konusu değildir.",
+    "GYK 1 ve 2(a); Fasıl 87 Genel Açıklamalar."))
+
+# --- Eşleştirme / Boşluk doldurma (2) ---
+S.append(soru(
+    "Aşağıdaki taşıtlar ile pozisyonların doğru eşleştirmesi hangi seçenekte verilmiştir?<br/>I. Sondaj işlerinde kullanılan seyyar derrick<br/>II. Gyrobüs (sürücü dahil 40 kişilik)<br/>III. Maden ocağında kömürü taşıyıcı banda nakleden mekik arabası<br/>IV. Binicinin karlı zemine ayağıyla bastırarak ilerlettiği kicksled<br/>a) 87.04 · b) 87.16 · c) 87.05 · d) 87.02",
+    "I-c, II-d, III-a, IV-b",
+    ["I-a, II-d, III-c, IV-b", "I-c, II-d, III-b, IV-a", "I-c, II-a, III-d, IV-b", "I-d, II-c, III-a, IV-b"],
+    "B", ES,
+    "Seyyar derrick 87.05’te (pozisyon metninde sayılır), gyrobüs on veya daha fazla kişi taşıyan taşıt olarak 87.02’de, mekik arabası eşya taşıyan taşıt olarak 87.04’te, kicksled ayakla hareket ettirilen motorsuz taşıt olarak 87.16’dadır. Mekik arabasının madende çalışması onu Fasıl 84’e götürmez.",
+    "87.02, 87.04 (2), 87.05 (8), 87.16 (B)(9) Açıklama Notları."))
+S.append(soru(
+    "Fasıl 87 Not 4’e göre çocuklar için her türlü bisiklet ..... pozisyonunda, çocuklar için diğer tekerlekli araçlar ise ..... pozisyonunda sınıflandırılır. Boşluklara sırasıyla gelmesi gerekenler hangisidir?",
+    "87.12 – 95.03",
+    ["95.03 – 87.12", "87.12 – 87.15", "87.11 – 95.03", "87.15 – 95.03"],
+    "E", ES,
+    "Not 4 çocuk bisikletlerini 87.12’ye, çocuklar için diğer tekerlekli araçları 95.03’e gönderir; Fasıl 87 Genel Açıklamaları da üç tekerlekli çocuk bisikletlerini 95.03’te sayar. 87.15 bebek arabaları, 87.11 motorlu iki tekerlekliler içindir.",
+    "Fasıl 87 Not 4; Fasıl 87 Genel Açıklamalar (b)."))
+
+# --- Çoktan-çoğa (2) ---
+S.append(soru(
+    "Aşağıdakilerden hangileri 87.08 pozisyonunda sınıflandırılır?<br/>I. Isıtma rezistansı ve elektrikli konnektörlerle donatılmış otomobil arka camı<br/>II. Otomobil için elektrikli far<br/>III. Motorlu taşıtlara sabit olarak donatılacak şekilde dizayn edilmiş emniyet kemeri<br/>IV. Dokumaya elverişli maddeden otomobil paspası",
+    "I ve III",
+    ["I, II ve III", "II ve IV", "I, III ve IV", "III ve IV"],
+    "A", CC,
+    "87.08 Açıklama Notu ısıtma rezistanslı ve elektrikli konnektörlü camları ve sabit donatılacak emniyet kemerlerini sayar. Elektrikli farlar Bölüm XVII Not 2(f) gereği 85.12’de; dokumaya elverişli maddeden paspaslar 87.08 Açıklama Notunda hariç tutulmuş olup Fasıl 57’dedir.",
+    "87.08 Açıklama Notu (B); Bölüm XVII Not 2(f); Bölüm XVII Genel Açıklamalar (III)(C)."))
+S.append(soru(
+    "Aşağıdaki ifadelerden hangileri <b>doğrudur</b>?<br/>I. Hem karada hem suda kullanılmak üzere özel imal edilmiş motorlu taşıtlar Fasıl 87’de sınıflandırılır.<br/>II. Hem demiryolunda hem karayolunda kullanılmaya elverişli traktörler 87.01’de yer alır.<br/>III. Hafif olarak zırhlandırılmış mutad kamyonlar 87.10’da sınıflandırılır.<br/>IV. Hem hava hem kara taşıtı olarak kullanılmak üzere özel imal edilmiş uçaklar Fasıl 87’de yer alır.",
+    "I ve II",
+    ["I, II ve III", "II ve IV", "Yalnız I", "I, II ve IV"],
+    "C", CC,
+    "Fasıl 87 Genel Açıklamaları ve Bölüm XVII Not 4 amfibi motorlu taşıtları Fasıl 87’ye, 87.01 Açıklama Notu hem ray hem karayolu traktörlerini 87.01’e verir. Hafif zırhlı mutad kamyonlar 87.10’dan hariç tutulup 87.02–87.05’e gider; hem hava hem kara taşıtı olan uçaklar 88.02’dedir.",
+    "Bölüm XVII Not 4; Fasıl 87 Genel Açıklamalar; 87.01 ve 87.10 Açıklama Notları."))
+
+# --- Senaryo (2) ---
+S.append(soru(
+    "Bir nakliye firması; dizel motorlu, sürücü ve yolcular için uyku olanaklı kapalı kabini bulunan, kendisinin yük platformu olmayan, beşinci tekerlek bağlantısıyla farklı yarı römorkları uzun mesafelerde karayolunda çekmek üzere tasarlanmış bir taşıt ithal etmektedir. Taşıt hangi pozisyonda sınıflandırılır?",
+    "87.01",
+    ["87.04", "87.16", "87.05", "87.02"],
+    "D", SN,
+    "Taşıtın esas işlevi yük taşımak değil yarı römorku çekmektir; Not 2’deki traktör tanımına uyar ve 87.01 yarı römork çekicilerini açıkça kapsar. Kendi yük platformu olmadığından 87.04 değildir; çekilen yarı römork 87.16’dadır. Taşıma dışı bir hizmet donanımı bulunmadığından 87.05 de uygulanmaz.",
+    "Fasıl 87 Not 2; 87.01 pozisyon metni ve Açıklama Notu."))
+S.append(soru(
+    "Motor, şanzıman, vites kolu, direksiyon ve fren teçhizatı bulunan bir kamyon şasisine ve sürücü mahalline sabit olarak monte edilmiş beton karma tamburu olan, betonu hem hazırlayıp hem şantiyeye taşıyan araç hangi pozisyonda yer alır?",
+    "87.05",
+    ["84.74", "87.04", "87.06", "87.16"],
+    "B", SN,
+    "87.05 Açıklama Notu beton karma aleti monte edilmiş, sürücü mahalli ve taşıt şasisinden oluşan, hem beton yapmak hem taşımak için kullanılan beton karıştırıcı kamyonları sayar. Yalnız taze beton taşımaya yapılmış kamyonlar 87.04’te kalır; basit tekerlekli şasi üzerindeki beton karıştırıcılar 84.74’tedir.",
+    "87.05 pozisyon metni ve Açıklama Notu (10); 87.04 Açıklama Notu."))
+
+obj["sorular"] = S
+yaz(obj)

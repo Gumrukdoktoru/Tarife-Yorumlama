@@ -1,0 +1,728 @@
+{
+ "tur": "fasil",
+ "fasil": 74,
+ "baslik": "Bakır ve bakırdan eşya",
+ "bolum": "XV",
+ "oz": {
+  "vurgu": "Fasıl 74 bakırı madenden mamule kadar izler: metalurji ara ürünleri, ham bakır, hurda, ön alaşım ve toz (74.01–74.06); Bölüm XV Not 9’daki tanımlara göre yarı mamuller (74.07–74.13); birkaç adlandırılmış eşya ve artık pozisyon 74.19. Üç soru sorulur: Bakır ağırlıkça üstün mü? Rafine mi? Hangi yarı mamul tanımına uyuyor?",
+  "maddeler": [
+   "Rafine bakır: ağırlıkça en az %99,85 bakır ya da tablo sınırları içinde en az %97,5 bakır (Fasıl 74 Not 1(a)). Pirinç, bronz, nikel gümüşü ve kupro-nikel bakır alaşımı olarak bu fasıldadır.",
+   "Çubuk, profil, tel, levha ve boru tanımları Bölüm XV Not 9’dan gelir; tel rulo halinde, çubuk rulo halinde olmayan içi dolu üründür.",
+   "Saç-levha (74.09) ile ince yaprak (74.10) arasındaki sınır 0,15 mm’dir; kaplama dahil, mesnet hariç ölçülür.",
+   "Fasıl 73’te ayrı ayrı yer alan pek çok eşyanın bakır karşılığı birleşiktir: ev ve sağlık eşyası 74.18’de; kaplar, zincirler, yaylar ve tel mensucat 74.19’da."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+  "satirlar": [
+   [
+    "1",
+    "Bakır ağırlıkça diğer adi metallerden üstün mü? (Bölüm XV Not 5 ve 7)",
+    "Değilse üstün metalin faslı (ör. nikel üstünse Fasıl <b>75</b>)"
+   ],
+   [
+    "2",
+    "Bölüm XV Not 1 kapsamında veya 82 / 83. fasılda adıyla sayılan eşya mı?",
+    "İlgili fasıl (ör. menteşe <b>83.02</b>, kaşık <b>82.15</b>)"
+   ],
+   [
+    "3",
+    "Bakır matı veya çöktürülmüş (tersip) bakır mı?",
+    "<b>74.01</b>"
+   ],
+   [
+    "4",
+    "Rafine edilmemiş bakır mı? (siyah bakır, blister, elektrolitik rafine anodu)",
+    "<b>74.02</b>"
+   ],
+   [
+    "5",
+    "Döküntü veya hurda mı?",
+    "<b>74.04</b> (yeniden eritilmiş külçe <b>74.03</b>)"
+   ],
+   [
+    "6",
+    "İşlenmeye elverişli olmayan ön alaşım mı?",
+    "<b>74.05</b> (fosforu %15’ten fazla bakır fosfor <b>28.53</b>)"
+   ],
+   [
+    "7",
+    "İşlenmemiş rafine bakır veya bakır alaşımı mı? (katot, külçe, kütük, uçları sivriltilmiş tel çubuk)",
+    "<b>74.03</b>"
+   ],
+   [
+    "8",
+    "Toz veya ince pul mu?",
+    "<b>74.06</b>"
+   ],
+   [
+    "9",
+    "Yarı mamul mü?",
+    "Çubuk-profil <b>74.07</b> · tel <b>74.08</b> · levha (0,15 mm’yi geçen) <b>74.09</b> · yaprak <b>74.10</b> · boru <b>74.11</b>"
+   ],
+   [
+    "10",
+    "Boru bağlantı parçası, kablo veya çivi-cıvata mı?",
+    "<b>74.12</b> · <b>74.13</b> · <b>74.15</b>"
+   ],
+   [
+    "11",
+    "Sofra, mutfak, ev veya sağlık eşyası mı?",
+    "<b>74.18</b>"
+   ],
+   [
+    "12",
+    "Hiçbiri değilse",
+    "<b>74.19</b>"
+   ]
+  ],
+  "dipnot": "* 74.14, 74.16 ve 74.17 boş pozisyonlardır; tarifede metinleri yoktur."
+ },
+ "pozisyon_haritasi": [
+  [
+   "74.01",
+   "Bakır matları; çöktürülmüş (tersip) bakır",
+   "Metalurji ara ürünü; saflık bozucu içerir",
+   "Bakır matı granülü, siyah tersip tozu"
+  ],
+  [
+   "74.02",
+   "Rafine edilmemiş bakır; elektrolitik rafine anotları",
+   "Siyah bakır, blister bakır, rafine için döküm anot",
+   "Blister bakır, siyah bakır"
+  ],
+  [
+   "74.03",
+   "Rafine bakır ve bakır alaşımları (ham)",
+   "İşlenmemiş; döküm veya sinter çubuk dahil",
+   "Katot, pirinç külçe, uçları sivriltilmiş tel çubuk"
+  ],
+  [
+   "74.04",
+   "Bakır döküntü ve hurdaları",
+   "Bölüm XV Not 8(a); eritilmiş külçe hariç",
+   "Talaş, kırpıntı, kullanılmaz bakır eşya"
+  ],
+  [
+   "74.05",
+   "Bakırın ön alaşımları (kupro-alyajlar)",
+   "%10’dan fazla bakır; işlenmeye elverişsiz",
+   "Bakır-berilyum, bakır-krom ön alaşımı"
+  ],
+  [
+   "74.06",
+   "Bakır tozları ve ince pullar",
+   "Bölüm XV Not 8(b) tozu; pullar dahil",
+   "Atomize bakır tozu, bronz toz"
+  ],
+  [
+   "74.07",
+   "Çubuklar ve profiller",
+   "Rulo değil; ekstrüzyonla kanatlı boru dahil",
+   "Pirinç çubuk, bakır profil"
+  ],
+  [
+   "74.08",
+   "Teller",
+   "Rulo halinde içi dolu; izoleli tel hariç",
+   "Rafine bakır tel, pirinç tel"
+  ],
+  [
+   "74.09",
+   "Saç, levha, şerit (0,15 mm’yi geçen)",
+   "Bölüm XV Not 9(d); kaplama dahil",
+   "Bakır levha, pirinç şerit"
+  ],
+  [
+   "74.10",
+   "İnce yaprak ve şerit (0,15 mm’yi geçmeyen)",
+   "Mesnetli olabilir; mesnet hariç ölçülür",
+   "Kağıt mesnetli bakır yaprak"
+  ],
+  [
+   "74.11",
+   "İnce ve kalın borular",
+   "Bölüm XV Not 9(e); rulo olabilir",
+   "Bakır tesisat borusu, kondenser borusu"
+  ],
+  [
+   "74.12",
+   "Boru bağlantı parçaları",
+   "73.07 mantığı; cıvata-somun 74.15",
+   "Bakır rakor, dirsek, manşon"
+  ],
+  [
+   "74.13",
+   "Demetlenmiş tel, kablo, örme halat",
+   "Elektrik için izolesiz; çelik göbek olabilir",
+   "Çıplak bakır iletken kablo"
+  ],
+  [
+   "74.14",
+   "Boş pozisyon",
+   "Tarifede metni yok",
+   "—"
+  ],
+  [
+   "74.15",
+   "Çivi, pünez; cıvata, somun, perçin, rondela",
+   "Başı bakır, gövdesi çelik çivi dahil",
+   "Bakır süs çivisi, pirinç cıvata"
+  ],
+  [
+   "74.16",
+   "Boş pozisyon",
+   "Tarifede metni yok",
+   "—"
+  ],
+  [
+   "74.17",
+   "Boş pozisyon",
+   "Tarifede metni yok",
+   "—"
+  ],
+  [
+   "74.18",
+   "Sofra, mutfak, ev ve sağlık eşyası; süngerler",
+   "73.21, 73.23, 73.24’ün bakır karşılığı",
+   "Cezve, tencere, lavabo, ispirtolu kamp ocağı"
+  ],
+  [
+   "74.19",
+   "Bakırdan diğer eşya",
+   "Artık pozisyon",
+   "Bakır zincir, tel örgü, yay, kaplama anodu"
+  ]
+ ],
+ "notlar": [
+  [
+   "Fasıl 74 Not 1(a)",
+   "Rafine bakır: ağırlıkça en az <b>%99,85</b> bakır içeren metal; veya diğer her bir elementin tablodaki sınırı aşmaması kaydıyla en az <b>%97,5</b> bakır içeren metal (ör. gümüş %0,25, arsenik %0,5, kadmiyum %1,3, krom %1,4, kurşun %1,5, çinko %1, zirkonyum %0,3, diğer her biri %0,3)."
+  ],
+  [
+   "Fasıl 74 Not 1(b)",
+   "Bakır alaşımı: bakırın ağırlıkça diğer elementlerin her birinden fazla olduğu, rafine edilmemiş bakır dışındaki metalik madde; ayrıca diğer elementlerden en az biri tablo sınırını aşmalı veya diğer elementlerin toplamı ağırlıkça <b>%2,5</b>’i geçmelidir."
+  ],
+  [
+   "Fasıl 74 Not 1(c)",
+   "Ön alaşım (kupro-alyaj): ağırlıkça <b>%10’dan fazla</b> bakır içeren, işlenmeye elverişli olmayan, diğer alaşımların hazırlanmasında katkı maddesi veya demir dışı metal metalurjisinde deoksidan, desülfüran olarak kullanılan alaşım. Ağırlıkça <b>%15’ten fazla fosfor</b> içeren bakır fosfor 28.53’tedir."
+  ],
+  [
+   "Bölüm XV Not 5",
+   "Adi metal alaşımı, ağırlıkça üstün metalin alaşımıdır (ferro-alyajlar ve bakırın ön alaşımları hariç). Bölüm metali ile bölüm dışı elementlerden oluşan alaşım, adi metallerin toplam ağırlığı diğer elementlerinkine eşit veya fazlaysa bu bölümdedir. Sinterlenmiş karışımlar, ergitmeyle elde edilen heterojen karışımlar (sermetler hariç) ve intermetalik bileşimler de alaşım sayılır."
+  ],
+  [
+   "Bölüm XV Not 7",
+   "Birden çok adi metalden eşya, pozisyon metninde aksine hüküm yoksa ağırlıkça üstün metalden sayılır; alaşım, sınıflandırıldığı metal gibi hesaba katılır (pirinç parça tamamen bakır sayılır). Aksine hüküm örneği: başı bakır, gövdesi çelik çivi 74.15."
+  ],
+  [
+   "Bölüm XV Not 8",
+   "(a) Döküntü ve hurda: tamamen metal döküntüler ile kırılma, kesilme, eskime gibi nedenlerle kesinlikle kullanılmaz hale gelmiş metal eşya. (b) Toz: göz açıklığı <b>1 mm</b> olan elekten ağırlıkça <b>%90 veya daha fazlası</b> geçen ürün."
+  ],
+  [
+   "Bölüm XV Not 9(a)–(c)",
+   "Çubuk: kesiti boydan boya aynı, rulo halinde olmayan içi dolu ürün; dikdörtgen kesitte kalınlık genişliğin onda birini geçer. Uçları makineye giriş için sivriltilmiş tel çubuklar (wire-bar) ve kütükler 74.03’te işlenmemiş bakır sayılır. Profil: çubuk, tel, levha, boru tanımına uymayan, kesiti boydan boya aynı ürün. Tel: aynı kesit şekillerinde, <b>rulo halinde</b> içi dolu ürün."
+  ],
+  [
+   "Bölüm XV Not 9(d)–(e)",
+   "Levha, sac, şerit, yaprak: dikdörtgen kesitli, her yeri aynı kalınlıkta yassı ürün; dikdörtgen olanlarda kalınlık genişliğin onda birini geçmez; delinmiş, oluklanmış, parlatılmış, kaplanmış olabilir. Boru: bütün uzunluğu boyunca tek kapalı boşluğu olan, kesiti ve et kalınlığı aynı içi boş ürün; parlatılmış, bükülmüş, diş açılmış, flanşlı olabilir."
+  ],
+  [
+   "Genel Açıklamalar",
+   "Bakır-çinko (pirinç), bakır-kalay (bronz), bakır-nikel-çinko (nikel gümüşü), bakır-nikel (kupro-nikel), alüminyum bronzu, berilyum-bakır, bakır-silisyum ve krom-bakır, bakır ağırlıkça üstün oldukça bu fasıldadır. Yüzey işlemleri (72. Fasıl Genel Açıklamalarındaki türden) sınıflandırmayı etkilemez."
+  ],
+  [
+   "74.05 Açıklama Notu",
+   "Bakır-nikel alaşımları her oranda kolayca dövülebildiğinden, ön alaşım olarak kullanılmak üzere imal edilseler bile 74.05’e girmez. Bakır-manganez, bakır-silisyum gibi alaşımlardan yalnız dövülmeye elverişli olmayanlar buradadır."
+  ],
+  [
+   "74.09 ve 74.10 Açıklama Notları",
+   "Sınır <b>0,15 mm</b>: vernik gibi kaplama kalınlığa dahildir; kağıt, karton, plastik mesnet hariç tutulur. Yapraklar kabartmalı, kesilmiş, delinmiş, kaplanmış veya baskılı olabilir."
+  ],
+  [
+   "74.07, 74.11 ve 74.19 Açıklama Notları",
+   "Ekstrüzyonla elde edilen kanatlı borular dahil içi boş profiller 74.07’de; kanatları kaynak vb. ile tutturulmuş borular genellikle 74.19’da; döküm veya sinter çubuklar (basit düzeltme dışında işlem görmemiş) 74.03’te."
+  ],
+  [
+   "74.13 Açıklama Notu",
+   "Göbeği çelik veya başka maddeden olan kablolar, bakır kısmı ağırlıkça fazlaysa 74.13’te kalır (Bölüm XV Not 7). İzole edilmiş elektrik tel ve kabloları 85.44’tedir."
+  ],
+  [
+   "74.18 ve 74.19 Açıklama Notları",
+   "74.18: 73.21, 73.23 ve 73.24 notları uygulanır; kamp ve seyahat için petrol, parafin, ispirtolu küçük ocaklar da buradadır. 74.19: her hacimde depo ve kaplar, gaz kapları, zincirler, elektrokaplama anotları, tel mensucat ve depluvaye, saat yayı dışındaki yaylar."
+  ]
+ ],
+ "sinir_komsulari": [
+  [
+   "Bakır cevheri ve konsantresi",
+   "26.03",
+   "Cevher Bölüm XV dışındadır"
+  ],
+  [
+   "Bakırlı cüruf, kül ve kalıntılar",
+   "26.20",
+   "74.04 hariç tutması"
+  ],
+  [
+   "Ağırlıkça %15’ten fazla fosfor içeren bakır fosfor",
+   "28.53",
+   "Fasıl 74 Not 1(c)"
+  ],
+  [
+   "Boya olarak hazırlanmış bakır pulları; ıstampacılık varakları",
+   "Fasıl 32 / 32.12",
+   "74.06 ve 74.10 hariç tutmaları"
+  ],
+  [
+   "Steril cerrahi bronz tel",
+   "30.06",
+   "74.08 hariç tutması"
+  ],
+  [
+   "Baskılı bakır yaprak etiketler",
+   "49.11",
+   "74.10 hariç tutması"
+  ],
+  [
+   "Metalize iplik; metal tellerle mürettep sicim",
+   "56.05 / 56.07",
+   "74.08 hariç tutması"
+  ],
+  [
+   "Emaye kaplı veya izoleli bakır tel ve kablo",
+   "85.44",
+   "74.08 ve 74.13 hariç tutmaları"
+  ],
+  [
+   "Bakırdan eğilip bükülebilen boru",
+   "83.07",
+   "74.11 hariç tutması"
+  ],
+  [
+   "Bakır yapraktan kesilmiş pullar (spangle)",
+   "83.08",
+   "74.06 hariç tutması"
+  ],
+  [
+   "Kaplanmış kaynak elektrodu; tel örgüden sert lehim levhası",
+   "83.11",
+   "74.08 ve 74.19 hariç tutmaları"
+  ],
+  [
+   "Bakır heykelcik ve süs eşyası; bakır menteşe",
+   "83.06 / 83.02",
+   "Bölüm XV Not 2 son paragraf"
+  ],
+  [
+   "Bakırdan kaşık, çatal, kepçe",
+   "82.15",
+   "74.18 hariç tutması"
+  ],
+  [
+   "Noel ağacı süsü bakır yaprak",
+   "95.05",
+   "74.10 hariç tutması"
+  ],
+  [
+   "Nikeli ağırlıkça üstün nikel-bakır alaşımı",
+   "Fasıl 75",
+   "Bölüm XV Not 5"
+  ]
+ ],
+ "tuzaklar": [
+  "<b>%98 bakır, rafine bakır demek değildir.</b> Blister bakır (normal olarak yaklaşık %98 bakır) ve siyah bakır, Açıklama Notu gereği rafine edilmemiş bakır olarak 74.02’dedir; 74.03’teki rafine bakır Not 1(a) tanımına uyan, arıtılmış metaldir.",
+  "<b>İki anot, iki pozisyon.</b> Elektrolitik rafine için dökülen anot 74.02; askı kancalı veya kancaya hazırlanmış elektrokaplama anodu 74.19 (nikel olanı 75.08).",
+  "<b>Hurdadan dökülen külçe hurda değildir.</b> Yeniden eritilmiş bakır külçesi 74.03’te; cüruf, kül ve kalıntılar 26.20’dedir.",
+  "<b>Bakır-nikel alaşımı ön alaşım olamaz.</b> Her oranda dövülebildiği için 74.05 dışındadır. Fosforu %15’ten fazla bakır fosfor da 74.05 değil 28.53’tür.",
+  "<b>Wire-bar çubuk değil, ham bakırdır.</b> Yalnızca uçları sivriltilmiş tel çubuk ve kütükler Bölüm XV Not 9(a) gereği 74.03’te; haddelenmiş, çekilmiş çubuklar 74.07’de.",
+  "<b>Rulo halindeki boru tel değildir.</b> Tel içi dolu üründür (74.08); kangal halindeki bakır boru 74.11’de kalır.",
+  "<b>Kanat nasıl takıldı?</b> Ekstrüzyonla tek parça kanatlı boru 74.07; kanadı kaynakla sonradan eklenmiş boru genellikle 74.19.",
+  "<b>0,15 mm’de vernik sayılır, kağıt sayılmaz.</b> Kaplama kalınlığa dahil, mesnet hariçtir. Alüminyumda aynı sınır 0,2 mm’dir.",
+  "<b>Bakırda ev eşyası ile sağlık eşyası tek pozisyondur.</b> 74.18 (demirde 73.23 ve 73.24 ayrıdır); ispirtolu kamp ocağı da 74.18’de, 73.21’in bakır karşılığı ayrıca yoktur.",
+  "<b>Başı bakır çivi, gövdesi ağır olsa da 74.15’tir.</b> Pozisyon metnindeki aksine hüküm Bölüm XV Not 7’deki ağırlık kuralının önüne geçer."
+ ],
+ "hafiza": {
+  "kanca": "MAT – HAM – SAF – HURDA – ÖN – TOZ  /  ÇUBUK – TEL – LEVHA – YAPRAK – BORU – RAKOR – KABLO  /  ÇİVİ – EV – DİĞER",
+  "aciklama": "İlk altı pozisyon izabe fırınından çıkış sırasıdır: <b>mat</b> 74.01 → rafine edilmemiş <b>ham</b> 74.02 → <b>saf</b> (rafine) ve alaşım külçe 74.03 → <b>hurda</b> 74.04 → <b>ön</b> alaşım 74.05 → <b>toz</b> 74.06. Sonra hadde atölyesi: çubuk 07, tel 08, levha 09, yaprak 10, boru 11, rakor 12, kablo 13. 14, 16, 17 boş; çivi-cıvata 15, ev-banyo 18, geri kalan her şey 19."
+ },
+ "sinav_odagi": [
+  "Bu fasıl çıkmış sorularda doğrudan sorulmamıştır; bakır, Bölüm XV’in genel notları üzerinden ve seçeneklerde yer almıştır.",
+  "Bölüm XV Not 9 tanımları: “çubuk” ile “tel” arasındaki farkın rulo halinde olup olmamak olduğu sorulmuştur; bu tanımlar 74.07 / 74.08 ayrımını doğrudan belirler.",
+  "Bölüm yapısı: hangi adi metal için ayrı fasıl açıldığı (bakır 74, nikel 75, alüminyum 76, kurşun 78, çinko 79, kalay 80; magnezyum, titan, krom gibi diğerleri Fasıl 81).",
+  "Bölüm düzeyinde gruplama: adi metalden kapı kilidinin (83.01) Bölüm XV’te, valf ve jeneratörün XVI. Bölümde yer aldığı “aynı bölümdeki eşya” soruları."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Türk Gümrük Tarife Cetveli’nin XV. Bölüm Notlarına göre “çubuk” ve “tel” arasındaki farklılık nedir?",
+   "secenekler": [
+    "Enine kesitleri",
+    "Üretim yöntemleri",
+    "İçlerinin dolu-boş olması",
+    "Rulo halde olup olmaması",
+    "Mamul oldukları madde"
+   ],
+   "cevap": "D",
+   "aciklama": "Bölüm XV Not 9(a) ve 9(c) çubuğu ve teli aynı kesit şekillerine sahip içi dolu ürünler olarak tanımlar; temel fark telin rulo halinde, çubuğun rulo halinde olmamasıdır. Bakırda bu ayrım 74.07 (çubuk) ile 74.08 (tel) arasındaki sınırı çizer."
+  }
+ ],
+ "ozet": [
+  "Bakır ağırlıkça üstünse Fasıl 74; pirinç, bronz, nikel gümüşü ve kupro-nikel de buradadır.",
+  "Metalurji sırası: mat 74.01 → rafine edilmemiş 74.02 → işlenmemiş rafine bakır ve alaşım 74.03 → hurda 74.04 → ön alaşım 74.05 → toz 74.06.",
+  "Yarı mamuller Bölüm XV Not 9’a göre: çubuk-profil 74.07, tel 74.08, levha 74.09, yaprak 74.10, boru 74.11.",
+  "Levha-yaprak sınırı 0,15 mm: kaplama dahil, mesnet hariç.",
+  "Rakor 74.12, izolesiz kablo 74.13, çivi-cıvata 74.15 (başı bakır çelik çivi dahil).",
+  "Ev ve sağlık eşyası birlikte 74.18; kaplar, zincirler, yaylar, mensucat ve kaplama anotları 74.19."
+ ],
+ "sorular": [
+  {
+   "soru": "Tarife Cetveline göre, elektrolitik yöntemle rafine edilmiş, ağırlıkça %99,9 bakır içeren, haddeleme veya başka bir işleme tabi tutulmamış katot levhaları hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "74.02",
+    "74.03",
+    "74.04",
+    "74.09",
+    "74.19"
+   ],
+   "cevap": "B",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Ağırlıkça en az %99,85 bakır içeren metal Fasıl 74 Not 1(a)’ya göre rafine bakırdır; işlenmemiş rafine bakır ve bakır alaşımları 74.03’te yer alır ve Açıklama Notu katot biçimini açıkça sayar. 74.02 rafine edilmemiş bakırı, 74.09 haddelenmiş saç ve levhaları, 74.19 ise elektrokaplama anotları gibi diğer eşyayı kapsar. Tuzak, “levha” görünümü nedeniyle 74.09’u seçmektir.",
+   "dayanak": "Fasıl 74 Not 1(a); 74.03 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetvelinin 74. Fasıl notlarına göre “rafine bakır” aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Ağırlıkça en az %99 bakır içeren ve diğer elementlerin toplamı %1’i geçmeyen metal",
+    "Bakırın ağırlıkça diğer elementlerin her birinden fazla olduğu bütün metalik maddeler",
+    "Ağırlıkça en az %97,5 bakır içeren ve diğer elementlerin toplamı %2,5’i geçen metal",
+    "Ağırlıkça en az %99,85 bakır içeren metal veya diğer her bir element tablodaki sınırı aşmamak kaydıyla ağırlıkça en az %97,5 bakır içeren metal",
+    "Ağırlıkça %10’dan fazla bakır içeren ve işlenmeye elverişli olmayan alaşımlar"
+   ],
+   "cevap": "D",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 74 Not 1(a) iki yol tanır: ağırlıkça en az %99,85 bakır ya da her bir diğer elementin tablodaki sınırı (ör. gümüş %0,25, çinko %1, kurşun %1,5) aşmaması şartıyla en az %97,5 bakır. B şıkkı bakır alaşımı tanımının başlangıcı, C alaşıma geçiş şartı, E ön alaşım (kupro-alyaj) tanımıdır; A ise alaşımsız nikel ve alüminyum tanımlarını çağrıştırır.",
+   "dayanak": "Fasıl 74 Not 1(a), (b), (c)."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 74. faslında <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Ağırlıkça %15’ten fazla fosfor içeren bakır fosfor",
+    "Bakır matı",
+    "Çöktürülmüş (tersip) bakır",
+    "Dövülmeye elverişli olmayan bakır-berilyum ön alaşımı",
+    "Bakır döküntü ve hurdası"
+   ],
+   "cevap": "A",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Fasıl 74 Not 1(c), ağırlıkça %15’ten fazla fosfor içeren bakır fosforu ön alaşım tanımından çıkararak 28.53’e gönderir. Bakır matı ve çöktürülmüş bakır 74.01’de, dövülmeye elverişli olmayan bakır-berilyum ön alaşımı 74.05’te, döküntü ve hurdalar 74.04’tedir.",
+   "dayanak": "Fasıl 74 Not 1(c); 74.01, 74.04 ve 74.05 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdaki bakır eşyadan hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Bakırdan cıvata",
+    "Bakırdan yaylanmayı sağlayıcı rondela",
+    "Başı bakırdan, gövdesi çelikten döşemeci çivisi",
+    "Bakırdan perçin çivisi",
+    "Bakırdan dişli boru rakoru"
+   ],
+   "cevap": "E",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Bakırdan cıvata, rondela, perçin çivisi ve başı bakır gövdesi çelik çiviler 74.15’te; rakor, dirsek, manşon gibi boru bağlantı parçaları 74.12’dedir. 74.12 Açıklama Notu, boruları birleştirmekte kullanılan cıvata ve somunları da 74.15’e bırakır; bağlantı elemanı ile boru bağlantı parçası karıştırılmamalıdır.",
+   "dayanak": "74.12 ve 74.15 pozisyon metinleri ve Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetveline göre, erimiş bakır matının içinden hava geçirilerek üretilen, yüzeyi kabarcıklı, ağırlıkça yaklaşık %98 bakır içeren saf olmayan bakır (blister bakır) hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "26.03",
+    "74.01",
+    "74.02",
+    "74.03",
+    "74.05"
+   ],
+   "cevap": "C",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Blister bakır, siyah bakır ve elektrolitik rafine için dökülen bakır anotlar rafine edilmemiş bakır olarak 74.02’de yer alır. Bakır matı 74.01’de, Not 1(a)’yı karşılayan rafine bakır 74.03’te, ön alaşımlar 74.05’te, bakır cevherleri 26.03’tedir. Yüksek bakır oranı tek başına “rafine” anlamına gelmez; Açıklama Notu blister bakırı adıyla 74.02’ye koyar.",
+   "dayanak": "74.02 Açıklama Notu; Fasıl 74 Not 1(a)."
+  },
+  {
+   "soru": "Aşağıdaki ürünler ile tarife pozisyonlarının doğru eşleştirildiği seçenek hangisidir? I. Bakır matı  II. Elektrolitik rafine için dökülmüş bakır anot  III. Makineye girişi kolaylaştırmak için yalnızca uçları sivriltilmiş rafine bakır tel çubuğu (wire-bar)  IV. Dövülmeye elverişli olmayan bakır-krom ön alaşımı — a) 74.01  b) 74.02  c) 74.03  d) 74.05",
+   "secenekler": [
+    "I-a, II-c, III-b, IV-d",
+    "I-a, II-b, III-c, IV-d",
+    "I-b, II-a, III-c, IV-d",
+    "I-a, II-b, III-d, IV-c",
+    "I-d, II-b, III-c, IV-a"
+   ],
+   "cevap": "B",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Bakır matı 74.01’de; elektrolitik rafine için dökülen anotlar rafine edilmemiş bakır olarak 74.02’de; uçları sivriltilmiş tel çubuklar Bölüm XV Not 9(a) son paragrafı gereği işlenmemiş bakır sayılarak 74.03’te; dövülmeye elverişli olmayan bakır-krom ön alaşımı 74.05’tedir. Tuzak, tel çubuğu çubuk (74.07) veya tel (74.08) sanmaktır.",
+   "dayanak": "74.01, 74.02, 74.03 ve 74.05 Açıklama Notları; Bölüm XV Not 9(a)."
+  },
+  {
+   "soru": "Bir işletme, ısı değiştiricilerinin imalinde kullanmak üzere rafine bakırdan, dikişsiz, kesiti daire şeklinde, kangal (rulo) halinde sarılmış borular ithal etmektedir. Borular yalnızca parlatılmış ve uçlarına diş açılmış olup herhangi bir makinenin aksamı halini almamıştır. Bu eşya hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "74.07",
+    "74.08",
+    "74.10",
+    "74.11",
+    "74.12"
+   ],
+   "cevap": "D",
+   "tip": "Senaryo",
+   "gerekce": "Bölüm XV Not 9(e)’ye göre ince ve kalın borular rulo halinde olan veya olmayan, tek kapalı boşluklu içi boş ürünlerdir; parlatılmış, bükülmüş, diş açılmış olabilir. Bu nedenle kangal halindeki bakır boru 74.11’dedir. Rulo halinde olmak telin (74.08) özelliğidir ama tel içi doludur; 74.07 çubuk ve içi boş profilleri, 74.12 bağlantı parçalarını kapsar.",
+   "dayanak": "Bölüm XV Not 9(c) ve 9(e); 74.11 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 74.08 pozisyonunda <b>yer almaz</b>?",
+   "secenekler": [
+    "Emaye ile kaplanmış (izole edilmiş) bakır sargı teli",
+    "Rafine bakırdan, enine kesitinin en geniş yeri 8 mm olan rulo halinde tel",
+    "Pirinç tel",
+    "Kupro-nikel tel",
+    "Nikel gümüşü tel"
+   ],
+   "cevap": "A",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Rulo halindeki teller rafine bakırdan veya pirinç, kupro-nikel, nikel gümüşü gibi bakır alaşımlarından olsun 74.08’dedir. İzole edilmiş elektrik telleri, emaye kaplanmış teller dahil, 74.08 Açıklama Notunda hariç tutulmuş olup 85.44’te yer alır. Steril cerrahi bronz tel (30.06) ve müzik aleti telleri (92.09) de bu pozisyon dışındadır.",
+   "dayanak": "74.08 Açıklama Notu, hariç tutmalar; Bölüm XV Not 9(c)."
+  },
+  {
+   "soru": "Göbeği çelik tellerden oluşan, ağırlıkça %55’i bakır ve %45’i çelik olan, elektrik için izole edilmemiş demetlenmiş iletken kablo hangi pozisyonda ve hangi hükümle sınıflandırılır?",
+   "secenekler": [
+    "73.12 – GYK 3(b)",
+    "73.12 – GYK 3(c)",
+    "74.13 – GYK 1 ve Bölüm XV Not 7",
+    "74.13 – GYK 3(c)",
+    "85.44 – GYK 1"
+   ],
+   "cevap": "C",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "Bölüm XV Not 7’ye göre iki adi metalden eşya ağırlıkça üstün metalden mamul sayılır; 74.13 Açıklama Notu da göbeği çelik olan kabloların, bakır kısmı ağırlıkça fazlaysa bu pozisyonda kalacağını belirtir. Not hükmü uygulandığı için sınıflandırma GYK 1 ile yapılır; 3(b) veya 3(c)’ye gerek kalmaz. Kablo izole edilmediğinden 85.44 söz konusu değildir.",
+   "dayanak": "GYK 1; Bölüm XV Not 7; 74.13 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetvelinin 74. Fasıl notlarına göre “bakırın ön alaşımları (kupro-alyajlar)” için aşağıdakilerden hangisi <b>doğrudur</b>?",
+   "secenekler": [
+    "Ağırlıkça %4 veya daha fazla demir içeren ve demir metalurjisinde deoksidan olarak kullanılan alaşımlardır.",
+    "Herhangi bir oranda bakır ve nikelden oluşan alaşımlar, ön alaşım olarak kullanılmak üzere imal edilmişlerse bu gruptadır.",
+    "Ağırlıkça %15’ten fazla fosfor içeren bakır fosfor da ön alaşım olarak 74.05’te yer alır.",
+    "Kolayca dövülebilen, levha ve tel haline getirilmeye elverişli alaşımlardır.",
+    "Ağırlıkça %10’dan fazla bakır içeren, işlenmeye elverişli olmayan, katkı maddesi veya deoksidan, desülfüran olarak kullanılan alaşımlardır."
+   ],
+   "cevap": "E",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 74 Not 1(c) ön alaşımı; ağırlıkça %10’dan fazla bakır içeren, işlenmeye elverişli olmayan, diğer alaşımların hazırlanmasında katkı maddesi veya demir dışı metal metalurjisinde deoksidan, desülfüran olarak kullanılan alaşım diye tanımlar. %15’ten fazla fosforlu bakır fosfor 28.53’e gider (C); bakır-nikel alaşımları her oranda dövülebildiğinden ön alaşım sayılmaz (B); ön alaşımlar zaten işlenmeye elverişli değildir (D). A şıkkı Fasıl 72’deki ferro-alyaj tanımını çağrıştırır.",
+   "dayanak": "Fasıl 74 Not 1(c); 74.05 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdaki bakır eşyadan hangisi diğerlerinden farklı bir fasılda sınıflandırılır?",
+   "secenekler": [
+    "Bakır tellerden mensucat",
+    "Bakır zincir",
+    "Bakırdan helezoni yay",
+    "Bakırdan kapı menteşesi",
+    "Bakırdan sıkıştırılmış gaz kabı"
+   ],
+   "cevap": "D",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "74.19, 73. fasılda ayrı pozisyonları olan bazı eşyanın bakır karşılıklarını (her hacimde depo ve gaz kapları, zincirler, tel mensucat, saat yayı dışındaki yaylar) tek pozisyonda toplar. Kapı menteşesi ise adi metallerden donanım ve tertibat olarak 83.02’dedir; Bölüm XV Not 2 son paragrafı gereği 83. fasıl eşyası 74. fasla verilmez.",
+   "dayanak": "74.19 Açıklama Notu; 83.02 pozisyon metni; Bölüm XV Not 2."
+  },
+  {
+   "soru": "Tarife Cetveline göre, süs eşyası yapımında kullanılmak üzere kağıt mesnet üzerine tespit edilmiş, vernikli ve kabartmalı, mesnet hariç kalınlığı 0,08 mm olan bakır yaprak hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "74.09",
+    "74.10",
+    "74.19",
+    "32.12",
+    "83.08"
+   ],
+   "cevap": "B",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Kalınlığı (mesnet hariç) 0,15 mm’yi geçmeyen bakır yaprak ve şeritler, kağıt, karton veya plastik mesnet üzerine tespit edilmiş, kabartmalı, vernikli veya baskılı olsun olmasın 74.10’dadır; vernik kalınlığa dahil, mesnet hariç tutulur. 0,15 mm’yi geçenler 74.09’da; bakır tozunun yapıştırıcıyla aglomere edildiği ıstampacılık varakları 32.12’de; bakır yapraktan kesilmiş pullar 83.08’de yer alır.",
+   "dayanak": "74.10 pozisyon metni ve Açıklama Notu; 74.09 Açıklama Notu."
+  },
+  {
+   "soru": "Bölüm XV Not 5 ve 74. Fasıl hükümlerine göre aşağıdaki alaşımlardan hangileri bakır alaşımı olarak 74. fasılda sınıflandırılır? I. Pirinç (bakır-çinko alaşımı)  II. Bronz (bakır-kalay alaşımı)  III. Ağırlıkça %65 nikel ve %35 bakır içeren alaşım  IV. Bakırın ağırlıkça üstün olduğu bakır-nikel-çinko alaşımı (nikel gümüşü)",
+   "secenekler": [
+    "I, II ve IV",
+    "I ve II",
+    "I, II ve III",
+    "II, III ve IV",
+    "III ve IV"
+   ],
+   "cevap": "A",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "Bölüm XV Not 5’e göre adi metal alaşımları ağırlıkça üstün metalin alaşımı olarak sınıflandırılır. Pirinç, bronz ve nikel gümüşü Fasıl 74 Genel Açıklamalarında bakır esaslı alaşımlar olarak sayılmıştır. Nikelin ağırlıkça üstün olduğu nikel-bakır alaşımı ise nikel alaşımıdır ve Fasıl 75’te yer alır.",
+   "dayanak": "Bölüm XV Not 5; Fasıl 74 ve Fasıl 75 Genel Açıklamaları."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 74.06 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Atomizasyon yoluyla elde edilmiş bakır tozu",
+    "Bakır ve kalay tozlarının basit karışımından oluşan “bronz toz”",
+    "Bakır yapraktan kesilmiş pullar (spangle)",
+    "Pul bünyeli bakır tozu",
+    "Başka bir maddeyle karıştırılmamış, boya imalinde pigment olarak kullanılacak bakır pulları"
+   ],
+   "cevap": "C",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "74.06, Bölüm XV Not 8(b)’de tanımlanan bakır tozlarını ve ince pullarını kapsar; diğer adi metal tozlarıyla basit karışım halindeki bakır tozları (bronz toz) da buradadır. Bakır yapraktan kesilmiş pullar 83.08’e, boya olarak hazırlanmış (renk vericilerle karıştırılmış veya süspansiyon halindeki) toz ve pullar Fasıl 32’ye, çöktürülmüş bakır 74.01’e gider.",
+   "dayanak": "74.06 Açıklama Notu ve hariç tutmalar; Bölüm XV Not 8(b)."
+  },
+  {
+   "soru": "Bölüm XV notlarına göre 74.06 pozisyonu anlamında “toz” aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Göz açıklığı 1 mm olan elekten ağırlıkça %90’dan azı, göz açıklığı 5 mm olan elekten %90 veya daha fazlası geçen ürünler",
+    "Göz açıklığı 0,5 mm olan elekten ağırlıkça %50 veya daha fazlası geçen ürünler",
+    "Göz açıklığı 1 mm olan elekten ağırlıkça %10 veya daha azı geçen ürünler",
+    "Ancak mikroskopla görülebilecek incelikte olan ve pul yapısı taşımayan ürünler",
+    "Göz açıklığı 1 mm olan elekten ağırlıkça %90 veya daha fazlası geçen ürünler"
+   ],
+   "cevap": "E",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Bölüm XV Not 8(b) tozu, göz açıklığı 1 mm olan elekten ağırlıkça %90 veya daha fazlası geçen ürün olarak tanımlar; 74.06 Açıklama Notu bu tanıma atıf yapar. A şıkkı Fasıl 72’deki granül tanımıdır. Pul bünyeli tozlar ve ince pullar da 74.06’da yer aldığından pul yapısı tanımı dışlamaz.",
+   "dayanak": "Bölüm XV Not 8(b); 74.06 Açıklama Notu; Fasıl 72 Not 1(h)."
+  },
+  {
+   "soru": "Aşağıdaki eşya çiftlerinden hangisinde her iki eşya da Tarife Cetvelinde aynı pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Bakır tencere – bakır lavabo",
+    "Bakır tel – bakır tellerden örme halat",
+    "Kalınlığı 0,2 mm bakır şerit – kalınlığı 0,1 mm bakır şerit",
+    "Bakır tozu – çöktürülmüş bakır",
+    "Bakır hurdası – bakır hurdasının yeniden eritilmesiyle elde edilen külçe"
+   ],
+   "cevap": "A",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "74.18 hem sofra, mutfak ve ev eşyasını hem de sağlığı koruyucu eşyayı tek pozisyonda toplar; 73. fasılda bunlar 73.23 ve 73.24 olarak ayrıdır. Diğer çiftler ayrı pozisyonlardadır: tel 74.08 – halat 74.13; 0,15 mm’yi geçen şerit 74.09 – geçmeyen 74.10; toz 74.06 – çöktürülmüş bakır 74.01; hurda 74.04 – yeniden eritilmiş külçe 74.03.",
+   "dayanak": "74.18 pozisyon metni; 74.04, 74.06 ve 74.10 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetveline göre, ekstrüzyon yoluyla tek parça halinde elde edilmiş, dış yüzeyinde boyuna kanatları bulunan pirinç boru hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "74.11",
+    "74.12",
+    "74.19",
+    "74.07",
+    "84.19"
+   ],
+   "cevap": "D",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "74.07 Açıklama Notu, ekstrüzyon yöntemiyle elde edilen kanatlı ince ve kalın borular dahil içi boş profilleri bu pozisyona alır; 74.11 Açıklama Notu da bunları açıkça hariç tutar. Kanatları kaynak vb. yöntemle sonradan tutturulmuş borular ise genellikle 74.19’dadır. Ayrım, kanadın ekstrüzyonla tek parça mı yoksa sonradan eklenmiş mi olduğudur.",
+   "dayanak": "74.07 ve 74.11 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetveline göre bakırdan saç, levha, şerit ve yapraklarda 74.09 ile 74.10 pozisyonlarını ayıran kalınlık sınırı ...(1)... mm’dir. Bu sınır hesaplanırken vernik gibi kaplama maddesi kalınlığa ...(2)..., kağıt veya plastik mesnet ise ...(3).... Boşluklara sırasıyla gelmesi gerekenler hangisidir?",
+   "secenekler": [
+    "0,2 – dahil edilir – dahil edilir",
+    "0,15 – dahil edilir – hariç tutulur",
+    "0,15 – hariç tutulur – dahil edilir",
+    "0,2 – dahil edilir – hariç tutulur",
+    "0,15 – hariç tutulur – hariç tutulur"
+   ],
+   "cevap": "B",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "74.09 ve 74.10 Açıklama Notlarına göre sınır 0,15 mm’dir; kaplama maddesi (vernik vb.) kalınlığa dahil edilir, mesnetler (kağıt, karton, plastik) hariç tutulur. 0,2 mm sınırı alüminyum levha ve yapraklar (76.06 / 76.07) içindir; iki fasılın rakamlarını karıştırmak tipik tuzaktır.",
+   "dayanak": "74.09 ve 74.10 pozisyon metinleri ve Açıklama Notları."
+  },
+  {
+   "soru": "Bölüm XV notları dikkate alındığında aşağıdakilerden hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Haddelenmiş rafine bakır çubuk",
+    "Soğuk çekilmiş pirinç çubuk",
+    "Ekstrüzyonla elde edilmiş bronz profil",
+    "Dövülerek elde edilmiş bakır çubuk",
+    "Tel çekme makinesine girişi kolaylaştırmak için yalnızca uçları sivriltilmiş rafine bakır tel çubuğu (wire-bar)"
+   ],
+   "cevap": "E",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Bölüm XV Not 9(a) son paragrafına göre filmaşin, ince boru vb. haline getirilmek üzere yalnızca uçları sivriltilmiş ya da makineye girişi kolaylaştıracak şekilde basitçe işlenmiş tel çubuklar ve kütükler 74.03’te işlenmemiş bakır sayılır. Haddeleme, çekme, ekstrüzyon veya dövme ile elde edilen çubuk ve profiller 74.07’dedir.",
+   "dayanak": "Bölüm XV Not 9(a) ve 9(b); 74.03 ve 74.07 Açıklama Notları."
+  },
+  {
+   "soru": "Perakende satış için tek kutuda birlikte sunulan bakır cezve, bakır tepsi ve bakır şekerlikten oluşan sofra takımının 74.18 pozisyonunda sınıflandırılmasında esas alınan Genel Yorum Kuralı hangisidir?",
+   "secenekler": [
+    "GYK 3(b)",
+    "GYK 2(a)",
+    "GYK 1",
+    "GYK 3(c)",
+    "GYK 5(b)"
+   ],
+   "cevap": "C",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 3(b) anlamında takım, ilk bakışta farklı pozisyonlarda sınıflandırılabilen en az iki farklı eşyadan oluşmalıdır. Cezve, tepsi ve şekerliğin hepsi 74.18’deki bakır sofra ve mutfak eşyası olduğundan farklı pozisyon sorunu doğmaz; sınıflandırma doğrudan pozisyon metnine göre GYK 1 ile yapılır. GYK 5(b) ambalaj malzemeleri, 2(a) tamamlanmamış veya demonte eşya içindir.",
+   "dayanak": "GYK 1; GYK 3(b) Açıklama Notu (X); 74.18 pozisyon metni."
+  },
+  {
+   "soru": "Tarife Cetveline göre, elektrokaplama tanklarına asılmak üzere askı kancasıyla donatılmış, pirinçten mamul elektrokaplama anodu hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "74.19",
+    "74.02",
+    "74.03",
+    "74.07",
+    "75.08"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "74.19 Açıklama Notu, bakır veya bakır alaşımlarından (ör. pirinç) elektrokaplama anotlarını bu pozisyona alır. 74.02’deki anotlar ise kısmen arıtılmış bakırdan elektrolitik rafine için dökülen anotlardır ve karıştırılmamalıdır. 75.08 nikel elektrokaplama anotları içindir; çubuk görünümü eşyayı 74.07’ye de göndermez.",
+   "dayanak": "74.19 Açıklama Notu; 74.02 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre aşağıdaki ifadelerden hangileri doğrudur? I. Bakır döküntü ve hurdalarının yeniden eritilmesiyle elde edilen külçeler 74.04’te sınıflandırılır.  II. Bakırlı cüruf, kül ve kalıntılar 74.04’te değil 26.20’de sınıflandırılır.  III. Kanatları kaynakla sonradan tutturulmuş bakır borular genellikle 74.19’da sınıflandırılır.  IV. Bakırdan eğilip bükülebilen (esnek) borular 74.11’de sınıflandırılır.",
+   "secenekler": [
+    "I ve II",
+    "I ve IV",
+    "II, III ve IV",
+    "III ve IV",
+    "II ve III"
+   ],
+   "cevap": "E",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "Hurdanın yeniden eritilmesiyle elde edilen külçeler işlenmemiş bakır olarak 74.03’tedir (I yanlış). 74.04 Açıklama Notu 26.20’deki bakırlı cüruf, kül ve kalıntıları hariç tutar (II doğru). Kanadı kaynakla tutturulmuş borular genellikle 74.19’dadır (III doğru). Bakırdan eğilip bükülebilen borular 74.11’den hariç tutulmuş olup 83.07’dedir (IV yanlış).",
+   "dayanak": "74.04, 74.11 ve 74.19 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdaki bakır eşyadan hangisi 74.18 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Bakır güveç tenceresi",
+    "Bakır lavabo",
+    "Bakırdan bulaşık süngeri",
+    "Bakırdan çay kaşığı",
+    "Bakır sürahi"
+   ],
+   "cevap": "D",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "74.18, 73.23 ve 73.24 Açıklama Notlarındaki türden bakır sofra, mutfak, ev ve sağlık eşyasını ve bakır süngerleri kapsar. Kaşık, çatal, kepçe gibi eşya ise 82.11–82.15’te (çay kaşığı 82.15) yer alır ve 74.18 Açıklama Notunda hariç tutulmuştur.",
+   "dayanak": "74.18 Açıklama Notu ve hariç tutmalar."
+  },
+  {
+   "soru": "Kamp ve seyahatte kullanılmak üzere tasarlanmış, ispirto ile çalışan, ağırlıkça %80’i bakır ve %20’si çelik parçalardan oluşan, ısıtması elektrikli olmayan portatif küçük pişirme ocağı hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "73.21",
+    "74.18",
+    "74.19",
+    "84.19",
+    "85.16"
+   ],
+   "cevap": "B",
+   "tip": "Senaryo",
+   "gerekce": "Bölüm XV Not 7 uyarınca eşya ağırlıkça üstün metal olan bakırdan mamul sayılır. 74.18 Açıklama Notu, seyahat ve kamp için kullanılan petrol, parafin veya ispirtolu küçük ocaklar gibi ev tipi pişirme ve ısıtma cihazlarını bu pozisyona alır; bakırda 73.21’in ayrı bir karşılığı yoktur. Çelik ağırlıkça üstün olsaydı 73.21, ısıtma elektrikli olsaydı 85.16 söz konusu olurdu.",
+   "dayanak": "Bölüm XV Not 7; 74.18 Açıklama Notu."
+  },
+  {
+   "soru": "Fasıl 74 notlarına göre, bakırın ağırlıkça diğer elementlerin her birinden fazla olduğu ve rafine edilmemiş bakır olmayan bir metalik madde hangi durumda “bakır alaşımı” sayılır?",
+   "secenekler": [
+    "Yalnızca içerdiği çinko oranı ağırlıkça %5’i geçiyorsa",
+    "Bakır oranının ağırlıkça %99,85’in altına düştüğü her durumda",
+    "Diğer elementlerden en az biri rafine bakır tablosundaki oranı aşıyorsa veya diğer elementlerin toplamı ağırlıkça %2,5’i geçiyorsa",
+    "Diğer elementlerin toplamı ağırlıkça %10’u geçiyor ve madde dövülemiyorsa",
+    "Bakır oranı ağırlıkça %50’nin altındaysa"
+   ],
+   "cevap": "C",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 74 Not 1(b)’ye göre bakır alaşımı için bakırın diğer her elementten fazla olması yetmez; ayrıca bir elementin tablo sınırını aşması ya da diğer elementlerin toplamının %2,5’i geçmesi gerekir. %97,5 ile %99,85 arasında bakır içeren madde tablo sınırları aşılmıyorsa hâlâ rafine bakırdır (B yanlış). D şıkkı ön alaşım tanımını çağrıştırır.",
+   "dayanak": "Fasıl 74 Not 1(a) ve 1(b)."
+  }
+ ]
+}

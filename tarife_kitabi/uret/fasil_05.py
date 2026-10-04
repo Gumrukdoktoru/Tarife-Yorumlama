@@ -1,0 +1,358 @@
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from yardim_04_08 import q, yaz, harf_ata, T_E, T_O, T_F, T_N, T_G, T_B, T_C, T_S  # noqa: E402
+
+obj = {
+ "tur": "fasil",
+ "fasil": 5,
+ "baslik": "Tarifenin başka yerinde belirtilmeyen veya yer almayan hayvansal menşeli ürünler",
+ "bolum": "I",
+ "oz": {
+  "vurgu": "Fasıl 5, normal olarak gıda olarak kullanılmayan, işlenmemiş veya yalnızca basit bir hazırlama işlemi görmüş hayvansal maddelerin faslıdır. İki soru sorulur: Ürün yenilebilir mi (bağırsak, mesane, mide ve kan hariç)? Basit hazırlamanın ötesinde işlenmiş veya eşyaya dönüşmüş mü? İkisi de hayırsa ürün buradadır.",
+  "maddeler": [
+   "Yenilebilir ürünler fasıl dışıdır; ancak hayvan bağırsakları, mesaneleri, mideleri (05.04) ve sıvı veya kurutulmuş hayvan kanı (05.11) yenilebilir olsa da Fasıl 5’tedir.",
+   "Ham deri ve postlar Fasıl 41 veya 43’e, dokumaya elverişli hayvansal maddeler Bölüm XI’e gider; at kılı ise 05.11’de kalır.",
+   "Kemik, fildişi, boynuz, mercan ve kabuklar şekil verilerek kesilmedikçe buradadır; levha, çubuk veya kalıplanmış haller 96.01’e geçer.",
+   "Tarifenin her yerinde geçerli iki tanım bu fasıldadır: “fildişi” (Not 3) ve “at kılı” (Not 4).",
+   "05.11 artık pozisyondur: sperm, embriyo, kan, koşnil, yenmeyen balık ürünleri, at kılı, doğal sünger ve yenmeyen Fasıl 1 ve 3 hayvanları."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+  "satirlar": [
+   ["1", "İnsan tüketimine uygun (yenilebilir) bir ürün mü? (bağırsak, mesane, mide ve hayvan kanı hariç)", "Fasıl 5 dışı: Fasıl 2, 3 veya 4 (ör. yenilebilir böcek <b>04.10</b>)"],
+   ["2", "Ham deri, post veya kürk mü?", "Fasıl <b>41</b> / <b>43</b> (tüylü kuş derisi <b>05.05</b>; ham deri kırpıntısı <b>05.11</b>)"],
+   ["3", "Yün, ipek gibi dokumaya elverişli hayvansal madde mi?", "Bölüm <b>XI</b> (at kılı hariç → <b>05.11</b>)"],
+   ["4", "Fırça veya süpürge imali için hazırlanmış fırça başı mı?", "<b>96.03</b>"],
+   ["5", "Basit hazırlamanın ötesinde işlenmiş mi? (şekil verilerek kesilmiş, levha, çubuk, kalıplanmış; boyanmış saç veya tüy)", "<b>96.01</b> veya daha özel pozisyon (saç <b>67.03</b>, tüy <b>67.01</b>)"],
+   ["6", "İnsan saçı mı? Domuz, porsuk veya fırça yapımına uygun kıl mı?", "<b>05.01</b> · <b>05.02</b>"],
+   ["7", "Hayvan bağırsağı, mesanesi veya midesi mi?", "<b>05.04</b> (balıklara ait olanlar <b>05.11</b>)"],
+   ["8", "Kuş derisi, tüy, ince tüy veya tüy tozu mu?", "<b>05.05</b>"],
+   ["9", "Kemik; fildişi, boynuz, toynak, gaga; mercan, kabuk veya mürekkep balığı kemiği mi?", "<b>05.06</b> · <b>05.07</b> · <b>05.08</b>"],
+   ["10", "Ak amber, kastoreum, sivet, misk, kantarit, safra veya eczacılık için gudde mi?", "<b>05.10</b> (kurutulmuş veya öz halinde <b>30.01</b>)"],
+   ["11", "Hiçbiri değilse (sperm, embriyo, kan, koşnil, at kılı, sünger, yenmeyen ölü hayvan…)", "<b>05.11</b>"]
+  ],
+  "dipnot": "* 05.03 ve 05.09 numaraları boştur; bu numaralarda pozisyon yoktur. At kılı ve döküntüleri 05.11’in “diğerleri” kapsamındadır (Fasıl 5 Not 4)."
+ },
+ "pozisyon_haritasi": [
+  ["05.01", "İnsan saçı (işlenmemiş); saç döküntüleri", "Yıkanmış veya yağı alınmış olabilir; kök-uç düzenlenmemiş", "Boyuna göre ayrılmış ham saç, saç döküntüsü"],
+  ["05.02", "Domuz ve porsuk kılları, fırça imali için diğer kıllar", "Ağartılmış, boyanmış olabilir; fırça başı olmamalı", "Domuz kılı demeti, sincap ve kokarca kılı"],
+  ["05.04", "Bağırsak, mesane, mide (balıklara ait olanlar hariç)", "Yenilsin yenilmesin; taze, dondurulmuş, tuzlu, kurutulmuş, tütsülenmiş", "Sucuk kılıfı bağırsak, işkembe, şirden"],
+  ["05.05", "Kuş derileri, tüyler, ince tüyler; tüy tozu ve döküntüsü", "Yalnız temizleme, dezenfeksiyon veya koruma işlemi", "Kaz ve ördek ince tüyü, tüylü kuş derisi"],
+  ["05.06", "Kemikler ve boynuz içi kemikleri; toz ve döküntüleri", "Yağı alınmış, asitle işlenmiş, jelatini alınmış; şekil verilmemiş", "Kemik tozu, buhar kemik unu"],
+  ["05.07", "Fildişi, kaplumbağa kabuğu, balina dişi, boynuz, toynak, tırnak, gaga", "İşlenmemiş veya basit hazırlanmış; şekil verilerek kesilmemiş", "Ham fildişi, geyik boynuzu, gergedan boynuzu"],
+  ["05.08", "Mercan; yumuşakça ve kabuklu hayvan kabukları; mürekkep balığı kemiği", "Temizleme veya basit kesme ötesi işlem yok", "Ham mercan, yem için ezilmiş kabuk"],
+  ["05.10", "Ak amber, kastoreum, sivet, misk, kantarit, safra; eczacılık guddeleri", "Taze, dondurulmuş veya geçici korunmuş; kurutulmuş gudde 30.01", "Ak amber, misk, dondurulmuş pankreas"],
+  ["05.11", "Başka yerde yer almayan hayvansal ürünler; yenmeyen Fasıl 1 ve 3 hayvanları", "Artık pozisyon; yenmezlik", "Sığır spermi, embriyo, hayvan kanı, at kılı, doğal sünger, koşnil"]
+ ],
+ "notlar": [
+  ["Fasıl 5 Not 1", "Fasıl dışı: (a) yenilebilen ürünler (tam veya parça halinde hayvan bağırsakları, mesaneleri ve mideleri ile sıvı veya kurutulmuş hayvan kanı hariç); (b) deri veya postlar, kürkler dahil (05.05’e girenler ve 05.11’deki ham deri veya post kırpıntı ve benzeri döküntüleri hariç) (Fasıl 41 veya 43); (c) dokumaya elverişli hayvansal maddeler (at kılı ve döküntüleri hariç) (Bölüm XI); (d) fırça veya süpürge imalinde kullanılmak üzere hazırlanmış “fırça başları” (96.03)."],
+  ["Fasıl 5 Not 2", "05.01 anlamında boylarına göre tasnif edilmiş insan saçı, kök ve uç kısımları sırasıyla bir araya gelecek şekilde düzenlenmemişse “işlenmemiş” sayılır."],
+  ["Fasıl 5 Not 3", "Tarifenin neresinde geçerse geçsin fil, hipopotam, mors, deniz gergedanı ve yaban domuzu dişleri, gergedan boynuzları ile bütün hayvanların dişleri “fildişi” sayılır."],
+  ["Fasıl 5 Not 4", "Tarifenin neresinde geçerse geçsin “at kılı”, at veya sığır türü hayvanların yele veya kuyruk kıllarıdır. 05.11, “diğerleri” arasında, destekleyici bir madde içersin içermesin, tabaka haline getirilmiş olsun olmasın at kılı ve at kılı döküntülerini kapsar."],
+  ["Genel Açıklamalar", "Fasıl, normalde gıda olarak kullanılmayan (bazı hayvan kanları, bağırsakları, mesaneleri ve mideleri hariç) ve başka fasıllarda bahsedilmeyen, işlenmemiş veya basit bir hazırlama işlemi görmüş hayvansal maddeleri kapsar."],
+  ["Genel Açıklamalar", "Fasıl dışı: hayvansal yağlar (Fasıl 2 veya 15); hayvanların veya balıkların pişirilmemiş yenilebilen derileri (Fasıl 2 veya 3; pişmişse Fasıl 16); yenilebilir balık yüzgeci, başı, kuyruğu, yüzme kesesi ve sakatatı (Fasıl 3); kurutulmuş veya toz organik gudde (Fasıl 30); hayvansal gübreler (Fasıl 31); ham deri ve postlar (Fasıl 41); kürk (Fasıl 43); ipek, yün ve diğer dokumaya elverişli hayvansal maddeler (Bölüm XI); tabii veya kültür inciler (Fasıl 71)."],
+  ["05.01 Açıklama Notu", "İnceltilmiş, boyanmış, ağartılmış, kırılmış, peruk veya postiş için hazırlanmış ya da kök-uç düzenlenmiş saç 67.03’tedir. Bu istisna saç döküntülerine uygulanmaz: ağartılmış veya boyanmış saç döküntüsü 05.01’de kalır. İnsan saçından tasir torbası 59.11, saç filesi 65.05, diğer eşya 67.04."],
+  ["05.04 Açıklama Notu", "Yenilsin yenilmesin bağırsak, mesane ve mideler buradadır; renin bezleri (şirden), börkenek ve işkembe, işlenmemiş gold beater derisi dahildir. Balıklara ait olanlar 05.11’de; başka şekilde hazırlanmış ürünler (pişmiş işkembe) genellikle Fasıl 16’da. Deriden yapılan suni bağırsak 39.17, yarılmış tabii bağırsakların yapıştırılmasıyla yapılan suni bağırsak 42.06."],
+  ["05.05 Açıklama Notu", "Yalnız temizlenmiş, dezenfekte edilmiş veya koruma amacıyla işlenmiş tüyler; dolgu, süs veya başka kullanım amacı yeri değiştirmez. Perakende satış için bez torbalarda paketlenmiş tüyler de buradadır. Ağartılmış, boyanmış, kıvrılmış, dalga verilmiş veya birleştirilmiş tüyler ve tüyden eşya genellikle 67.01’dedir."],
+  ["05.06 / 05.07 / 05.08 Açıklama Notları", "Basit hazırlama: gereksiz kısımları atma, kesme, kabaca rendeleme, temizleme, düzeltme, yarma, doğrultma. Dikdörtgen (kare dahil) levhalar, çubuk, boru veya diğer yarı mamul şekiller, parlatılmış ürünler ve tozlarının kalıplanmasıyla elde edilen ürünler 96.01’e veya daha özel pozisyona gider. Hayvan yemi için ezilmiş veya toz haline getirilmiş kabuklar 05.08’de kalır."],
+  ["05.10 Açıklama Notu", "Eczacılık ürünlerinin hazırlanmasında kullanılan guddeler ve organlar taze, soğutulmuş, dondurulmuş veya gliserol, aseton ya da alkol içinde geçici korunmuşsa buradadır; kurutulmuş veya öz halinde 30.01’dedir. Safra özü ve kapalı ampullerdeki kuru yılan ve arı zehirleri 30.01; sarı amber (süksinit) 25.30; suni misk Fasıl 29."],
+  ["05.11 Açıklama Notu", "Tedavi, koruyucu veya teşhis amacıyla hazırlanmış hayvan kanı 30.02’dedir. Yenilen balık yumurtası Fasıl 3’tedir. Eğrilmiş veya uçları düğümlenmiş at kılı Fasıl 51’dedir. Su kabağı lifi (loofa) 14.04’tedir. Koşnil ekstraktı 32.03’tedir."]
+ ],
+ "sinir_komsulari": [
+  ["Yenilebilir böcek", "04.10", "Fasıl 5 Not 1(a): yenilebilir ürün"],
+  ["Yenilebilir balık yüzme kesesi, yüzgeç, baş, kuyruk", "Fasıl 3", "Genel Açıklamalar; 05.11 hariç tutması"],
+  ["Pişirilmiş işkembe", "Fasıl 16", "05.04 Açıklama Notu"],
+  ["Boyanmış, ağartılmış veya kök-uç düzenlenmiş insan saçı", "67.03", "05.01 Açıklama Notu"],
+  ["İnsan saçından peruk vb. eşya; saç filesi", "67.04 / 65.05", "05.01 hariç tutmaları"],
+  ["Hazırlanmış fırça başları", "96.03", "Fasıl 5 Not 1(d)"],
+  ["Boyanmış, kıvrılmış tüy; tüyden eşya", "67.01", "05.05 hariç tutması"],
+  ["Kemik, fildişi, mercan, kabuktan levha, çubuk veya kalıplanmış ürün", "96.01", "05.06–05.08 hariç tutmaları"],
+  ["Kurutulmuş veya toz gudde; safra özü; ampulde yılan zehiri", "30.01", "05.10 hariç tutmaları"],
+  ["Tedavi veya teşhis amacıyla hazırlanmış hayvan kanı", "30.02", "05.11 Açıklama Notu"],
+  ["Sarı amber (süksinit)", "25.30", "05.10 Açıklama Notu"],
+  ["Su kabağı lifi (loofa)", "14.04", "Bitkisel sünger; doğal hayvansal sünger 05.11"],
+  ["Ham deri ve post; kürk", "Fasıl 41 / 43", "Fasıl 5 Not 1(b)"],
+  ["Yün, ipek; eğrilmiş at kılı", "Bölüm XI", "Fasıl 5 Not 1(c); 05.11 Açıklama Notu"],
+  ["Tabii veya kültür incisi", "Fasıl 71", "Genel Açıklamalar"]
+ ],
+ "tuzaklar": [
+  "<b>Bağırsak, mesane, mide ve kan yenilebilir olsa da Fasıl 5’tedir.</b> Not 1(a) yenilebilir ürünleri dışlar ama bu dördünü istisna tutar: bağırsak, mesane, mide 05.04; kan 05.11.",
+  "<b>Balığın bağırsağı 05.04’e girmez.</b> 05.04 balıklara ait olanları kapsamaz; balık bağırsakları, yenmeyen yüzme keseleri ve balık döküntüleri 05.11’dedir.",
+  "<b>“Fildişi” geniş tanımlıdır.</b> Hipopotam, mors, deniz gergedanı ve yaban domuzu dişleri, gergedan boynuzu ve bütün hayvanların dişleri fildişi sayılır (Not 3); geyik boynuzu ise fildişi değil, boynuzdur.",
+  "<b>At kılı = at veya sığırın yele ve kuyruk kılı.</b> Yıkanmış, boyanmış, tabaka haline getirilmiş, mesnetlenmiş olsa da 05.11; eğrilmiş veya uçları düğümlenmişse Fasıl 51.",
+  "<b>Saçta ölçüt kök-uç düzenidir.</b> Boyuna göre ayrılmış saç, kök ve uçlar sırasıyla düzenlenmedikçe işlenmemiştir (05.01); düzenlenmiş, boyanmış veya ağartılmış saç 67.03. Saç döküntüleri ise boyanmış olsa bile 05.01’de kalır.",
+  "<b>Basit hazırlama sınırı.</b> Kemik, fildişi, boynuz, mercan ve kabuk; kesme, temizleme, kabaca rendeleme ile bu fasılda kalır; levha, çubuk, boru veya kalıplanmış şekiller 96.01’e gider.",
+  "<b>Gudde: taze veya dondurulmuş 05.10, kurutulmuş 30.01.</b> Safra kurutulmuş olsa da 05.10; safra özü 30.01.",
+  "<b>Ak amber sarı amber değildir.</b> İspermeçet balinasının salgısı ak amber 05.10; madeni reçine olan sarı amber 25.30.",
+  "<b>Tüyde amaç değil işlem önemlidir.</b> Yorgan dolgusu veya süs için olsa da yalnız temizlenmiş tüy 05.05; ağartılmış, boyanmış, kıvrılmış tüy 67.01.",
+  "<b>Şirden 05.10 değil 05.04’tür.</b> Peynir mayası için kullanılan renin bezleri (şirden), kurutulmuş olsa bile 05.04 Açıklama Notunda sayılmıştır."
+ ],
+ "hafiza": {
+  "kanca": "Saç – Kıl – (boş) – Bağırsak – Tüy – Kemik – Boynuz – Mercan – (boş) – Misk – Artık",
+  "aciklama": "Bir hayvanı baştan aşağı tarayın: <b>saç</b> 05.01, <b>kıl</b> 05.02, (05.03 boş), <b>bağırsak</b>-mide 05.04, <b>tüy</b> 05.05, <b>kemik</b> 05.06, <b>boynuz</b>-diş-tırnak 05.07; denize inip <b>mercan</b>-kabuk 05.08, (05.09 boş), koku dolabında <b>misk</b>-amber ve eczacılık guddeleri 05.10; sığmayan her şey <b>artık</b> pozisyon 05.11’e."
+ },
+ "sinav_odagi": [
+  "Bu fasıl çıkmış sorularda az sayıda doğrudan sorulmuş; daha çok 05.11 pozisyonu seçeneklerde doğru cevap veya çeldirici olarak yer almıştır.",
+  "Fasıl başlığı ile pozisyon metninin çatışması: yenilebilir hayvan bağırsağı, mesanesi ve midesinin Fasıl 2 yerine Fasıl 5’te yer alması ve bunun GYK 1’e (pozisyon metni ve notlar) dayandığı.",
+  "İnsan tüketimine uygun olmayan cansız böceklerin 05.11’de, yenilebilir böceklerin ise 04.10’da sınıflandırıldığı.",
+  "Mamul eşya sorularında (ör. jelatin kapsül) 05.11’in çeldirici olarak kullanılması; fırça sorularında hazırlanmış fırça başlarının 96.03’e gittiğinin (Not 1(d)) bilinmesi.",
+  "Ham deri ve kürk sorularında Fasıl 5 Not 1(b) ayrımının (Fasıl 41 veya 43) bilinmesi."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Gümrük Tarife Cetvelinde 2. Fasıl başlığı “Etler ve Yenilen Sakatat” olmasına karşın hayvan bağırsakları, mesaneleri veya midelerinin 5. Fasılda “Tarifenin başka yerinde belirtilmeyen veya yer almayan hayvansal menşeli ürünler” olarak sınıflandırılması hangi Genel Yorum Kuralının (GYK) gereğidir?",
+   "secenekler": ["GYK 1", "GYK 3", "GYK 4", "GYK 2", "GYK 6"],
+   "cevap": "A",
+   "aciklama": "GYK 1’e göre fasıl başlıkları yalnızca gösterici niteliktedir; sınıflandırma pozisyon metinleri ve notlara göre yapılır. 05.04 pozisyon metni ve Fasıl 5 Not 1(a), bağırsak, mesane ve mideleri yenilebilir olsalar da Fasıl 5’te tutar."
+  }
+ ],
+ "ozet": [
+  "Fasıl 5 = gıda olarak kullanılmayan, işlenmemiş veya basit hazırlanmış hayvansal maddeler; yenilebilirler dışarıda (bağırsak-mesane-mide 05.04 ve kan 05.11 hariç).",
+  "Saç 05.01, fırça kılları 05.02, bağırsak 05.04, tüy 05.05, kemik 05.06, fildişi-boynuz 05.07, mercan-kabuk 05.08, misk-amber-gudde 05.10, gerisi 05.11; 05.03 ve 05.09 boş.",
+  "“Fildişi” bütün hayvanların dişleri ve gergedan boynuzudur; “at kılı” at veya sığırın yele ve kuyruk kılıdır; ikisi de tarifenin her yerinde geçerlidir.",
+  "Şekil verilerek kesilmiş, levha, çubuk veya kalıplanmış hayvansal maddeler 96.01; fırça başları 96.03; işlenmiş saç 67.03; işlenmiş tüy 67.01.",
+  "Kurutulmuş veya öz gudde 30.01; tedavi amaçlı kan 30.02; ham deri ve kürk Fasıl 41 / 43; yün ve ipek Bölüm XI."
+ ],
+ "sorular": []
+}
+
+S = obj["sorular"]
+
+# 1 — B
+S.append(q(
+ "Tarife Cetveline göre, kırmızı boya elde edilmesinde hammadde olarak kullanılacak, kurutulmuş ve toz haline getirilmiş, insan tüketimine uygun olmayan kırmız böceği (koşnil) hangi tarife pozisyonunda sınıflandırılır?",
+ ["04.10", "*05.11", "05.10", "32.03", "13.01"],
+ T_E,
+ "05.11 Açıklama Notu insan tüketimine uygun olmayan kırmız böceği (koşnil) ve benzeri böcekleri, kurutulmuş, bütün veya toz halinde olsun, bu pozisyonda sayar. Koşnilden elde edilen boya ekstraktı 32.03’tedir; böceğin kendisi değil. Yenilebilir böcekler 04.10’da; 05.10’daki kantarit ise ayrıca adıyla sayılmış bir böcektir.",
+ "05.11 Açıklama Notu (4); Fasıl 4 Not 5(a)."
+))
+# 2 — D
+S.append(q(
+ "Tarife Cetveline göre, fırça yapımında kullanılmak üzere demetler halinde bağlanmış, ağartılmış kokarca ve sincap kılları hangi tarife pozisyonunda sınıflandırılır?",
+ ["05.11", "96.03", "05.01", "*05.02", "05.05"],
+ T_E,
+ "05.02 domuz ve porsuk kılları ile fırça imali için diğer kılları kapsar; Açıklama Notu kokarca, sincap ve zerdevan kıllarını sayar. Kıllar ham, temizlenmiş, ağartılmış, boyanmış veya demet halinde olabilir. Ancak birleştirmeye hazır fırça başı haline getirilmişse 96.03’e gider.",
+ "05.02 pozisyon metni ve Açıklama Notu; Fasıl 5 Not 1(d)."
+))
+# 3 — A
+S.append(q(
+ "Tarife Cetveline göre, yalnızca temizlenmiş ve dezenfekte edilmiş, yorgan doldurmada kullanılacak kaz ve ördek ince tüyleri hangi tarife pozisyonunda sınıflandırılır?",
+ ["*05.05", "67.01", "05.11", "05.02", "05.07"],
+ T_E,
+ "05.05, yalnızca temizlenmiş, dezenfekte edilmiş veya koruma amacıyla işlenmiş, başka bir işlem görmemiş tüy ve ince tüyleri kapsar; doldurmada kullanılmaları yerini değiştirmez. Ağartılmış, boyanmış, kıvrılmış veya birleştirilmiş tüyler 67.01’e gider. 05.02 fırça kılları, 05.07 boynuz ve tırnak gibi ürünler içindir.",
+ "05.05 pozisyon metni ve Açıklama Notu."
+))
+# 4 — E
+S.append(q(
+ "Tarife Cetveline göre, işlenmemiş gergedan boynuzu hangi tarife pozisyonunda sınıflandırılır?",
+ ["05.06", "05.11", "96.01", "05.08", "*05.07"],
+ T_E,
+ "05.07 fildişi, boynuzlar, toynaklar ve benzerlerini işlenmemiş veya basit hazırlanmış halde kapsar. Fasıl 5 Not 3’e göre gergedan boynuzları tarifenin her yerinde fildişi sayılır. 05.06 kemik ve boynuz içi kemikleri içindir; şekil verilerek işlenmiş haller 96.01’e gider.",
+ "Fasıl 5 Not 3; 05.07 Açıklama Notu."
+))
+# 5 — C
+S.append(q(
+ "Tarife Cetveline göre, ispermeçet balinası tarafından salgılanan, bal mumu kıvamında, ovalandığında tatlı koku veren ak (gri) amber hangi tarife pozisyonunda sınıflandırılır?",
+ ["25.30", "05.11", "*05.10", "30.01", "13.01"],
+ T_E,
+ "Ak amber 05.10 pozisyon metninde adıyla sayılmıştır. Açıklama Notu, ak amberin madeni bir reçine olan sarı amberle (süksinit) karıştırılmaması gerektiğini, sarı amberin 25.30’da yer aldığını belirtir. Tuzak, “amber” kelimesini mineral sanmaktır.",
+ "05.10 pozisyon metni ve Açıklama Notu."
+))
+# 6 — D
+S.append(q(
+ "Aşağıdakilerden hangisi Tarife Cetvelinin 5. faslında <b>sınıflandırılmaz</b>?",
+ ["Kuluçkada kullanılacak döllenmiş balık yumurtaları", "Sığır spermi", "Hayvansal menşeli doğal sünger", "*Kültür incisi", "İpekböceği yumurtaları"],
+ T_O,
+ "Fasıl 5 Genel Açıklamaları tabii veya kültür incilerini fasıl dışında bırakır (Fasıl 71). Kuluçkalık döllenmiş balık yumurtaları, sığır spermi, doğal hayvansal sünger ve ipekböceği yumurtaları 05.11 Açıklama Notunda sayılmıştır.",
+ "Fasıl 5 Genel Açıklamalar; 05.11 Açıklama Notu."
+))
+# 7 — E
+S.append(q(
+ "Aşağıdakilerden hangisi 05.04 pozisyonunda <b>sınıflandırılmaz</b>?",
+ ["Sucuk kılıfı olarak kullanılacak tuzlanmış koyun bağırsağı",
+  "Pişirilmemiş, dondurulmuş işkembe",
+  "Uzunlamasına şeritler halinde kesilmiş öküz bağırsağı",
+  "İşlenmemiş gold beater derisi",
+  "*Zamk imalinde kullanılacak balık bağırsakları"],
+ T_O,
+ "05.04 pozisyon metni balıklara ait bağırsak, mesane ve mideleri hariç tutar; Açıklama Notuna göre bunlar 05.11’dedir ve 05.11 de zamk imalinde kullanılan balık bağırsaklarını sayar. Tuzlanmış veya şerit halinde kesilmiş bağırsak, pişirilmemiş işkembe ve gold beater derisi 05.04’tedir.",
+ "05.04 pozisyon metni ve Açıklama Notu; 05.11 Açıklama Notu."
+))
+# 8 — A
+S.append(q(
+ "Aşağıdakilerden hangisi 05.11 pozisyonunda <b>yer almaz</b>?",
+ ["*Tedavi amacıyla hazırlanmış hayvan kanı",
+  "Dişi hayvana nakledilmek üzere dondurulmuş hayvan embriyosu",
+  "Yenilebilir nitelikteki sıvı hayvan kanı",
+  "Kürkçüler tarafından kullanılmaya uygun olmayan post döküntüleri",
+  "Karınca yumurtaları"],
+ T_O,
+ "05.11 hayvan kanını, yenilsin yenilmesin, kapsar; ancak tedavi, koruyucu veya teşhis amacıyla hazırlanmış hayvan kanları 30.02’dedir. Dondurulmuş embriyolar, kürkçülüğe uygun olmayan post döküntüleri ve karınca yumurtaları 05.11 Açıklama Notunda sayılmıştır.",
+ "05.11 Açıklama Notu (3)."
+))
+# 9 — C
+S.append(q(
+ "Aşağıdakilerden hangisi Fasıl 5 Not 1 uyarınca Fasıl 5 <b>dışında</b> kalır?",
+ ["Yenilebilir hayvan mesaneleri", "Kurutulmuş hayvan kanı", "*Koyun yünü", "At kılı döküntüleri", "Tüyleri ile birlikte kuş derileri"],
+ T_O,
+ "Not 1(c) dokumaya elverişli hayvansal maddeleri Bölüm XI’e gönderir; yün bu niteliktedir. Aynı hüküm at kılı ve döküntülerini istisna tutar (05.11). Yenilebilir mesaneler ve kurutulmuş kan Not 1(a)’nın istisnasıdır; tüylü kuş derileri Not 1(b) uyarınca 05.05’te kalır.",
+ "Fasıl 5 Not 1(a), (b), (c)."
+))
+# 10 — B
+S.append(q(
+ "Tarife Cetveline göre aşağıdakilerden hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+ ["Ham fildişi", "*Mürekkep balığı kemiği", "Mors dişi", "Kaplumbağa kabuğu", "Geyik boynuzu"],
+ T_F,
+ "Mürekkep balığı kemiği 05.08 pozisyon metninde kabuklar ve mercanla birlikte sayılmıştır. Ham fildişi, mors dişi (Not 3 gereği fildişi), kaplumbağa kabuğu ve geyik boynuzu 05.07’dedir. Tuzak, “kemik” kelimesi nedeniyle 05.06’yı veya kabuk benzerliği nedeniyle 05.07’yi düşünmektir.",
+ "05.07 ve 05.08 pozisyon metinleri; Fasıl 5 Not 3."
+))
+# 11 — E
+S.append(q(
+ "Aşağıdaki hayvansal ürünlerden hangisi Tarife Cetvelinde diğerlerinden farklı bir pozisyonda yer alır?",
+ ["Kunduz hayası (kastoreum)", "Kedi miski (sivet)", "Kurutulmuş safra", "Kantarit (kuduz böceği)", "*Hayvansal menşeli doğal sünger"],
+ T_F,
+ "Kastoreum, sivet, kantarit ve safra (kurutulmuş olsun olmasın) 05.10 pozisyon metninde adıyla sayılmıştır. Hayvansal menşeli doğal sünger ise 05.11 Açıklama Notunda yer alır. Tuzak, kantaritin bir böcek olması nedeniyle 05.11’de sanılmasıdır.",
+ "05.10 pozisyon metni; 05.11 Açıklama Notu (14)."
+))
+# 12 — A
+S.append(q(
+ "Tarife Cetveline göre aşağıdakilerden hangisi diğerlerinden farklı bir fasılda sınıflandırılır?",
+ ["*Peruk yapımı için kök ve uçları bir araya gelecek şekilde düzenlenmiş insan saçı",
+  "Boylarına göre ayrılmış, kök ve uçları düzenlenmemiş insan saçı",
+  "Ağartılmış insan saçı döküntüleri",
+  "Porsuk kılları",
+  "Yıkanmış at kılı"],
+ T_F,
+ "Not 2’ye göre boylarına göre ayrılmış saç, kök ve uçları sırasıyla düzenlenmemişse işlenmemiştir (05.01); düzenlenmiş saç ise 67.03’e gider. Saç döküntüleri ağartılmış olsa da 05.01’de kalır; porsuk kılları 05.02’de, yıkanmış at kılı 05.11’dedir. Böylece dört ürün Fasıl 5’te, düzenlenmiş saç Fasıl 67’dedir.",
+ "Fasıl 5 Not 2 ve Not 4; 05.01 Açıklama Notu."
+))
+# 13 — D
+S.append(q(
+ "Tarife Cetveline göre aşağıdaki eşya çiftlerinden hangisinde her iki eşya <b>aynı</b> pozisyonda sınıflandırılır?",
+ ["Balık zamkı imalinde kullanılacak yenmeyen balık yüzme kesesi – sığır bağırsağı",
+  "At kılı – domuz kılı",
+  "Kaplumbağa kabuğu – deniz kabuğu",
+  "*Asitle işlem görmüş kemik – kemik tozu",
+  "Mercan – fildişi"],
+ T_F,
+ "05.06 asitle işlem görmüş kemikleri ve kemik tozu ile döküntülerini birlikte kapsar. Yüzme kesesi 05.11, sığır bağırsağı 05.04; at kılı 05.11, domuz kılı 05.02; kaplumbağa kabuğu 05.07, deniz kabuğu 05.08; mercan 05.08, fildişi 05.07’dedir.",
+ "05.06 pozisyon metni ve Açıklama Notu."
+))
+# 14 — C
+S.append(q(
+ "Fasıl 5 Not 3’e göre, Tarifenin neresinde geçerse geçsin “fildişi” sayılan maddelerle ilgili aşağıdakilerden hangisi <b>yanlıştır</b>?",
+ ["Hipopotam dişleri fildişi sayılır.",
+  "Yaban domuzu dişleri fildişi sayılır.",
+  "*Geyik boynuzları fildişi sayılır.",
+  "Gergedan boynuzları fildişi sayılır.",
+  "Bütün hayvanların dişleri fildişi sayılır."],
+ T_N,
+ "Not 3 fil, hipopotam, mors, deniz gergedanı ve yaban domuzu dişlerini, gergedan boynuzlarını ve bütün hayvanların dişlerini fildişi sayar. Geyik boynuzları 05.07’de ayrıca sayılmış olsa da fildişi tanımına girmez. Tuzak, gergedan boynuzunun tanıma girmesinden hareketle bütün boynuzları fildişi sanmaktır.",
+ "Fasıl 5 Not 3; 05.07 Açıklama Notu."
+))
+# 15 — B
+S.append(q(
+ "Fasıl 5 Not 4’e göre Tarifede geçen “at kılı” tabiri aşağıdakilerden hangisini ifade eder?",
+ ["Yalnızca atların gövde ve yele kıllarını",
+  "*At veya sığır türü hayvanların yele veya kuyruk kıllarını",
+  "At, eşek ve katırların bütün kıllarını",
+  "At veya keçi türü hayvanların yele kıllarını",
+  "Eğrilmiş at ve sığır kuyruk kıllarını"],
+ T_N,
+ "Not 4’e göre “at kılı” tarifenin her yerinde at veya sığır türü hayvanların yele veya kuyruk kıllarını ifade eder. Eğrilmiş at kılı 05.11 Açıklama Notu gereği Fasıl 51’e gider; tanım eğrilmemiş kılı esas alır. Gövde kılları veya keçi kılları tanıma girmez.",
+ "Fasıl 5 Not 4; 05.11 Açıklama Notu (13)."
+))
+# 16 — E
+S.append(q(
+ "Fasıl 5 Not 1’e göre, yenilebilir olsalar dahi Fasıl 5’te kalan ürünler aşağıdakilerden hangisinde doğru olarak verilmiştir?",
+ ["Hayvan bağırsakları, karaciğerleri ve dilleri",
+  "Balık yüzgeçleri, başları ve kuyrukları",
+  "Hayvan kanı, kemikleri ve boynuz içi kemikleri",
+  "Kuş tüyleri, yumurta kabukları ve sinirler",
+  "*Hayvan bağırsakları, mesaneleri, mideleri ile sıvı veya kurutulmuş hayvan kanı"],
+ T_N,
+ "Not 1(a) yenilebilen ürünleri fasıl dışında bırakır; istisna olarak tam veya parça halinde hayvan bağırsakları, mesaneleri ve mideleri ile sıvı veya kurutulmuş hayvan kanını fasılda tutar. Yenilebilir balık yüzgeci, başı ve kuyruğu Genel Açıklamalara göre Fasıl 3’tedir.",
+ "Fasıl 5 Not 1(a); Fasıl 5 Genel Açıklamalar."
+))
+# 17 — A
+S.append(q(
+ "05.10 Açıklama Notuna göre eczacılık ürünlerinin hazırlanmasında kullanılan hayvan guddeleri ve organlarıyla ilgili aşağıdakilerden hangisi <b>doğrudur</b>?",
+ ["*Taze, soğutulmuş, dondurulmuş veya geçici korunmuş olanlar 05.10’da; kurutulmuş veya öz halinde olanlar 30.01’dedir.",
+  "Kurutulmuş veya toz haline getirilmiş olanlar 05.10’da; taze ve dondurulmuş olanlar 30.01’dedir.",
+  "İnsan gıdası olarak kullanılmaya elverişli olanlar da 05.10’da sınıflandırılır.",
+  "Gliserol, aseton veya alkol içinde geçici olarak korunmuş olanlar Fasıl 30’da yer alır.",
+  "Safra özü, kurutulmuş safra ile birlikte 05.10 pozisyonunda sınıflandırılır."],
+ T_N,
+ "05.10 Açıklama Notuna göre pankreas, tiroid, hipofiz gibi guddeler taze, soğutulmuş, dondurulmuş veya nakliye ya da depolama için gliserol, aseton veya alkol içinde geçici korunmuşsa 05.10’dadır; kurutulmuş veya öz halinde ise 30.01’e gider. İnsan gıdasına elverişsiz olmaları şarttır. Safra kurutulmuş olsa da 05.10’da kalır, ancak safra özü 30.01’dedir.",
+ "05.10 Açıklama Notu."
+))
+# 18 — D
+S.append(q(
+ "Mensucat veya kağıt tabakaları arasına konularak zımbalanmış at kılı tabakasının, destekleyici madde içermesine rağmen 05.11 pozisyonunda sınıflandırılması öncelikle hangi Genel Yorum Kuralına dayanır?",
+ ["GYK 2(b)", "GYK 3(b)", "GYK 3(c)", "*GYK 1", "GYK 4"],
+ T_G,
+ "Fasıl 5 Not 4, 05.11’in destekleyici bir madde içersin içermesin, tabaka haline getirilmiş olsun olmasın at kılını kapsadığını açıkça belirtir; 05.11 Açıklama Notu da mensucat veya kağıt tabakaları arasına konulmuş at kılını sayar. Sınıflandırma not ve pozisyon metniyle çözüldüğünden GYK 1 uygulanır; karışım ve esas nitelik kurallarına (2(b), 3(b)) gerek kalmaz.",
+ "GYK 1; Fasıl 5 Not 4; 05.11 Açıklama Notu (13)."
+))
+# 19 — C
+S.append(q(
+ "05.07 pozisyonu içinde fildişinin (fildişi tozu ve döküntüleri dahil) kaplumbağa kabuğu, boynuz ve diğer ürünlerden ayrı bir alt pozisyonda sınıflandırılmasında hangi Genel Yorum Kuralı uygulanır?",
+ ["GYK 1", "GYK 3(a)", "*GYK 6", "GYK 3(c)", "GYK 5(a)"],
+ T_G,
+ "Pozisyon düzeyinde 05.07, GYK 1 ile pozisyon metni ve Fasıl 5 Not 3 uyarınca belirlenir. Aynı pozisyon içinde alt pozisyonlar arasındaki seçim, yalnızca aynı seviyedeki alt pozisyonların karşılaştırılmasıyla GYK 6’ya göre yapılır. GYK 3 ve 5 bu ayrımla ilgili değildir.",
+ "GYK 6 ve Açıklama Notu; 05.07 pozisyon metni."
+))
+# 20 — B
+S.append(q(
+ "Tarife Cetveline göre; işlenmemiş kemikler ve boynuz içi kemikleri ……, boynuzlar, toynaklar, tırnaklar ve gagalar ……, mercan ve mürekkep balığı kemiği ise …… pozisyonunda sınıflandırılır. Boşluklara sırasıyla aşağıdakilerden hangisi gelmelidir?",
+ ["05.07 – 05.06 – 05.08", "*05.06 – 05.07 – 05.08", "05.06 – 05.08 – 05.07", "05.06 – 05.07 – 05.11", "96.01 – 05.07 – 05.08"],
+ T_B,
+ "05.06 kemikler ve boynuz içi kemiklerini, 05.07 fildişi, kaplumbağa kabuğu, boynuz, toynak, tırnak, pençe ve gagaları, 05.08 mercan, kabuklar ve mürekkep balığı kemiğini kapsar. 96.01 yalnızca şekil verilerek işlenmiş haller içindir; boynuz içi kemiği 05.07 değil 05.06’dadır.",
+ "05.06, 05.07 ve 05.08 pozisyon metinleri."
+))
+# 21 — E
+S.append(q(
+ "Tarife Cetveline göre aşağıdaki eşya–pozisyon eşleştirmelerinden hangisi <b>yanlıştır</b>?",
+ ["Sığır spermi – 05.11", "Domuz kılı – 05.02", "Kemik tozu – 05.06", "Kaplumbağa kabuğu – 05.07", "*Boyanmış ve kıvrılmış kuş tüyleri – 05.05"],
+ T_B,
+ "05.05 yalnız temizlenmiş, dezenfekte edilmiş veya koruma amacıyla işlenmiş tüyleri kapsar; ağartılmış, boyanmış, kıvrılmış veya dalga verilmiş tüyler genellikle 67.01’dedir. Sığır spermi 05.11, domuz kılı 05.02, kemik tozu 05.06, kaplumbağa kabuğu 05.07’dedir.",
+ "05.05 Açıklama Notu."
+))
+# 22 — C
+S.append(q(
+ "Tarife Cetveline göre aşağıdakilerden hangileri 05.11 pozisyonunda sınıflandırılır?  I. Ham deri veya postların soyulmuş kısımları ve döküntüleri  II. Tüyleri ile birlikte, yalnızca temizlenmiş kuş derileri  III. Zamk üretiminde hammadde olarak kullanılan kas kirişleri ve tendonlar  IV. İnsan tüketimine elverişli olmayan, Fasıl 1’de yer alan cansız hayvanlar",
+ ["I ve III", "II ve IV", "*I, III ve IV", "I, II ve III", "II, III ve IV"],
+ T_C,
+ "05.11 Açıklama Notu ham deri veya postların soyulmuş kısımlarını ve döküntülerini, kas kirişleri ve tendonları ve insan gıdasına elverişli olmayan Fasıl 1 veya 3 cansız hayvanlarını sayar. Tüyleri ile birlikte kuş derileri ise 05.05’tedir (Not 1(b) istisnası).",
+ "05.11 Açıklama Notu; 05.05 pozisyon metni; Fasıl 5 Not 1(b)."
+))
+# 23 — B
+S.append(q(
+ "05.08 Açıklama Notuna göre aşağıdaki işlemlerden hangileri yumuşakça veya kabuklu hayvan kabuklarının 05.08 pozisyonunda kalmasına engel <b>değildir</b>?  I. Temizleme  II. Basit kesme  III. Dikdörtgen levhalar halinde kesip parlatma  IV. Hayvan yemi yapımında kullanılmak üzere ezme veya toz haline getirme",
+ ["I ve II", "*I, II ve IV", "II ve III", "III ve IV", "I, II, III ve IV"],
+ T_C,
+ "05.08 kabukları işlenmemiş veya temizleme ya da basit kesme ötesine geçmeyen işlem görmüş halde kapsar; hayvan yemi yapımında kullanılan ezilmiş veya toz haline getirilmiş kabuklar da bu pozisyondadır. Dikdörtgen levha, çubuk gibi şekillerde olanlar parlatılmış olsun olmasın 96.01’e gider.",
+ "05.08 pozisyon metni ve Açıklama Notu."
+))
+# 24 — A
+S.append(q(
+ "Taze ve solüsyon içinde olmadan muhafazaya alınmış ringa balığı pulları, taklit incilerin kaplanmasında kullanılan inci özünün hazırlanması için ithal edilmektedir. Tarife Cetveline göre bu ürün hangi pozisyonda sınıflandırılır?",
+ ["*05.11", "05.08", "05.10", "05.06", "05.04"],
+ T_S,
+ "05.11 Açıklama Notu, balık döküntüleri arasında taze veya solüsyon içinde olmadan muhafazaya alınmış ringa vb. balık pullarını sayar ve bunların taklit incilerin kaplanması için inci özü hazırlamada kullanıldığını belirtir. 05.08 kabuklar ve mercan, 05.10 amber ve guddeler içindir.",
+ "05.11 Açıklama Notu (6)."
+))
+# 25 — D
+S.append(q(
+ "Buzağı midesinden elde edilen, peynir mayası ekstraksiyonu için kullanılacak, kesilmiş ve kurutulmuş renin bezleri (şirden) ithal edilmektedir. Tarife Cetveline göre bu ürün hangi pozisyonda sınıflandırılır?",
+ ["05.10", "05.11", "30.01", "*05.04", "04.10"],
+ T_S,
+ "05.04 Açıklama Notu, peynir mayası ekstraksiyonu için kullanılan renin bezlerini (şirden), kesilmiş veya kurutulmuş olsun olmasın, bu pozisyonda sayar. Kurutulmuş olması onu 05.10’daki eczacılık guddeleri veya 30.01’e götürmez. Tuzak, “bez” kelimesi nedeniyle 05.10’u seçmektir.",
+ "05.04 Açıklama Notu."
+))
+
+harf_ata(S, "BDAECDEACB CAEDBDBEAC ACEBD")
+yaz(5, obj)

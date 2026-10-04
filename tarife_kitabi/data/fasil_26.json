@@ -1,0 +1,719 @@
+{
+ "tur": "fasil",
+ "fasil": 26,
+ "baslik": "Metal cevherleri, cüruf ve kül",
+ "bolum": "V",
+ "oz": {
+  "vurgu": "Fasıl 26’nın iki yarısı vardır: 26.01–26.17 metal cevherleri ve zenginleştirilmiş cevherler, 26.18–26.21 cüruf, kül ve kalıntılar. Cevherde test şudur: Mineral, metalurji sanayiinde metal çıkarmak için fiilen kullanılan türden mi (Not 2) ve yalnızca mutat zenginleştirme işlemlerini mi görmüş? Cüruf ve külde ise kaynağa bakılır: demir-çelik imalatı (26.18, 26.19), metal veya arsenik kazanımına yönelik kalıntı (26.20), diğerleri (26.21).",
+  "maddeler": [
+   "Cevher pozisyonları metale göre sıralanır: demir, manganez, bakır, nikel, kobalt, alüminyum, kurşun, çinko, kalay, krom, tungsten, uranyum-toryum, molibden, titanyum, niobyum-tantal-vanadyum-zirkonyum, kıymetli metaller, diğerleri.",
+   "Kalsinasyon, kavurma, sinterleme ve peletleme cevheri fasıldan çıkarmaz; kimyasal yapıyı değiştiren başka işlemler veya fraksiyonel kristalizasyon gibi tekrarlanan fiziksel işlemlerle elde edilen saf ürünler genellikle Fasıl 28’e gider.",
+   "Bazı cevherler kullanım amacına göre hazırlanınca fasıldan çıkar: kuru pil için pirolüsit, yağlayıcı molibden ve mine için mikronize zirkon kumu 25.30; boyayıcı olarak ince öğütülmüş magnetit ve titan cevheri Fasıl 32.",
+   "Fasıl dışı cüruflar: makadam 25.17, cüruf çimentosu 25.23, bazik (Thomas) cüruf Fasıl 31, cüruf yünü ve köpüklü cüruf 68.06; bakır, nikel ve kobalt matları Bölüm XV."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+  "satirlar": [
+   [
+    "1",
+    "Kıymetli metal döküntüsü veya esas olarak kıymetli metal kazanımına yönelik atık mı?",
+    "<b>71.12</b> / <b>85.49</b>"
+   ],
+   [
+    "2",
+    "Cevherlerin eritilmesiyle elde edilen bakır, nikel veya kobalt matı mı?",
+    "Bölüm <b>XV</b>"
+   ],
+   [
+    "3",
+    "Başka pozisyonda sayılmış veya ticari olarak metal elde edilmeyen mineral mi? (kavrulmamış pirit, kriyolit, barit, magnezit, dolomit, karnalit, toprak boyaları)",
+    "Fasıl <b>25</b> / <b>31.04</b>"
+   ],
+   [
+    "4",
+    "Metalurjide mutat olmayan işlemle elde edilmiş saf ürün mü? (uranyum konsantresi, zenginleştirilmiş germanyum, eritilmiş vanadyum oksit)",
+    "Fasıl <b>28</b> (ör. <b>28.44</b>, <b>28.25</b>)"
+   ],
+   [
+    "5",
+    "Metal cevheri veya mutat işlemlerle zenginleştirilmiş cevher mi? (Not 2)",
+    "<b>26.01</b>–<b>26.17</b> (metale göre)"
+   ],
+   [
+    "6",
+    "Demir veya çelik imalatından granüle cüruf (cüruf kumu) mu?",
+    "<b>26.18</b>"
+   ],
+   [
+    "7",
+    "Demir veya çelik imalatından diğer cüruf, moloz, tufal, toz veya döküntü mü?",
+    "<b>26.19</b> (makadam <b>25.17</b>, bazik cüruf Fasıl <b>31</b>)"
+   ],
+   [
+    "8",
+    "Arsenik, metal veya bileşik içeren ve bunların kazanımında kullanılan türden cüruf, kül, kalıntı mı?",
+    "<b>26.20</b>"
+   ],
+   [
+    "9",
+    "Diğer cüruf ve kül mü? (uçucu kül, kazan cürufu, deniz yosunu külü, kemik külü, şehir atığı külü)",
+    "<b>26.21</b>"
+   ]
+  ],
+  "dipnot": "* Mekanik işlemden doğan metal talaşı ve kırpıntıları hurdadır: demir-çelik 72.04, diğer adi metaller Bölüm XV. Esasen oksitten oluşan kırıntılar ise 26.20’de kalır."
+ },
+ "pozisyon_haritasi": [
+  [
+   "26.01",
+   "Demir cevherleri (kavrulmuş demir piritleri dahil)",
+   "Kuru ağırlıkta Mn %20’den az; aglomere olabilir",
+   "Hematit, manyetit, limonit, siderit, pirit külü"
+  ],
+  [
+   "26.02",
+   "Manganez cevherleri",
+   "Kuru ağırlıkta Mn %20 veya daha fazla",
+   "Pirolüsit, manganit, rodokrozit"
+  ],
+  [
+   "26.03",
+   "Bakır cevherleri",
+   "Bakır elde etmeye yönelik",
+   "Kalkopirit, malakit, azurit, kuprit"
+  ],
+  [
+   "26.04",
+   "Nikel cevherleri",
+   "Nikel elde etmeye yönelik",
+   "Garnierit, pentlandit"
+  ],
+  [
+   "26.05",
+   "Kobalt cevherleri",
+   "Kobalt elde etmeye yönelik",
+   "Kobaltit, smaltit"
+  ],
+  [
+   "26.06",
+   "Alüminyum cevherleri",
+   "Isıl işlem görmüş boksit dahil",
+   "Boksit"
+  ],
+  [
+   "26.07",
+   "Kurşun cevherleri",
+   "Kurşun elde etmeye yönelik",
+   "Galena, seruzit, anglezit"
+  ],
+  [
+   "26.08",
+   "Çinko cevherleri",
+   "Çinko elde etmeye yönelik",
+   "Sfalerit (blend), smitzonit"
+  ],
+  [
+   "26.09",
+   "Kalay cevherleri",
+   "Kalay elde etmeye yönelik",
+   "Kasiterit, stannit"
+  ],
+  [
+   "26.10",
+   "Krom cevherleri",
+   "Krom ve demir oksitler",
+   "Kromit"
+  ],
+  [
+   "26.11",
+   "Tungsten cevherleri",
+   "Tungstatlar",
+   "Volframit, şelit"
+  ],
+  [
+   "26.12",
+   "Uranyum veya toryum cevherleri",
+   "Mutat dışı işlemle elde edilen konsantre 28.44",
+   "Pitchblend, uraninit, monazit"
+  ],
+  [
+   "26.13",
+   "Molibden cevherleri",
+   "Kavrulmuş konsantre dahil; yağlayıcı olarak hazırlanan 25.30",
+   "Molibdenit, vulfenit"
+  ],
+  [
+   "26.14",
+   "Titanyum cevherleri",
+   "Boyayıcı olarak ince öğütülen Fasıl 32",
+   "İlmenit, rutil"
+  ],
+  [
+   "26.15",
+   "Niobyum, tantal, vanadyum, zirkonyum cevherleri",
+   "Kıymetli taş halinde zirkon 71.03; mikronize zirkon kumu 25.30",
+   "Zirkon kumu, tantalit, vanadinit"
+  ],
+  [
+   "26.16",
+   "Kıymetli metal cevherleri",
+   "Gümüş, altın, platin cevherleri ve kumları",
+   "Arjantit, altınlı ve platinli kumlar"
+  ],
+  [
+   "26.17",
+   "Diğer metal cevherleri",
+   "Antimon, berilyum, bizmut, germanyum, civa",
+   "Stibnit, beril, sinnabar"
+  ],
+  [
+   "26.18",
+   "Demir-çelik imalatından granüle cüruf",
+   "Erimiş cürufun suya dökülmesi; cüruf yünü 68.06",
+   "Cüruf kumu"
+  ],
+  [
+   "26.19",
+   "Demir-çelik imalatından cüruf, moloz, tufal, döküntü",
+   "Demir içeriği önemsiz; makadam 25.17, Thomas cürufu Fasıl 31",
+   "Yüksek fırın cürufu, tufal, yüksek fırın tozu"
+  ],
+  [
+   "26.20",
+   "Arsenik, metal veya bileşik içeren cüruf, kül, kalıntı",
+   "Metal veya bileşik kazanımına yönelik; demir-çelik hariç",
+   "Galvanizli mat, akümülatör çamuru, kurşunlu benzin tortusu"
+  ],
+  [
+   "26.21",
+   "Diğer cüruf ve küller; şehir atığı külü",
+   "Gübre olarak kullanılsa da burada (bazik cüruf hariç)",
+   "Uçucu kül, kazan cürufu, deniz yosunu külü, kemik külü"
+  ]
+ ],
+ "notlar": [
+  [
+   "Fasıl 26 Not 1",
+   "Fasıl dışı: makadam şeklinde hazırlanmış cüruf ve sanayi artıkları (25.17); tabii magnezyum karbonat (25.19); esasen petrol yağlarının depolandığı tankların dibinde kalan tortular (27.10); Fasıl 31’deki bazik cüruf; cüruf yünü, kaya yünü ve benzeri mineral yünler (68.06); kıymetli metal ve kıymetli metal kaplamalı metal döküntü ve artıkları ile esas olarak kıymetli metal kazanımına yönelik atıklar (71.12 veya 85.49); cevherlerin eritilmesiyle elde edilen <b>bakır, nikel ve kobalt matları</b> (Bölüm XV)."
+  ],
+  [
+   "Fasıl 26 Not 2",
+   "26.01–26.17 anlamında “metal cevheri”: metalurji amacıyla kullanılmasalar dahi, Bölüm XIV ve XV metalleri, 28.44 metalleri ve civanın çıkarılması için <b>metalurji sanayiinde fiilen kullanılan</b> mineralojik türdeki mineraller. Metalurji sanayiinde mutat olmayan işlemlere tabi tutulmuş mineraller bu pozisyonların dışında kalır."
+  ],
+  [
+   "Fasıl 26 Not 3",
+   "26.20 yalnızca şunları kapsar: (a) metallerin çıkarılması veya metallerin kimyasal bileşiklerinin üretiminde baz olarak sanayide kullanılan türden cüruf, kül ve kalıntılar (şehir atıklarının yakılmasından elde edilenler hariç → 26.21); (b) metal içersin içermesin, arsenik veya metallerin çıkarılmasında ya da bunların bileşiklerinin üretiminde kullanılan, arsenik içeren cüruf, kül ve kalıntılar."
+  ],
+  [
+   "Genel Açıklamalar",
+   "“Zenginleştirilmiş cevher”: yabancı maddeleri özel işlemlerle kısmen veya tamamen giderilmiş cevher. İzin verilen işlemler: ezme, öğütme, manyetik veya gravimetrik ayırma, eleme, flotasyon, derecelendirme, aglomerasyon (sinterleme, peletleme, briketleme; az miktarda bağlayıcı olabilir), kurutma, kalsine etme, oksitleştirme, indirgeme, manyetik kavurma (sülfatlama veya klorürleme amaçlı kavurma hariç) ve istenmeyen maddeyi çözerek ayırma gibi kimyasal işlemler. Kalsinasyon ve kavurma dışında kimyasal veya kristal yapıyı değiştiren işlemlerle ya da fraksiyonel kristalizasyon, süblimasyon gibi tekrarlanan fiziksel işlemlerle elde edilen saf ürünler fasıl dışıdır (genellikle Fasıl 28). Birden fazla mineral türü içeren cevherler GYK 3(b), bu mümkün değilse GYK 3(c) ile 26.01–26.17 arasında sınıflandırılır."
+  ],
+  [
+   "Genel Açıklamalar (hariç tutmalar)",
+   "26.01–26.17 dışında: başka pozisyonda belirtilen mineraller (kavrulmamış demir piritleri 25.02; tabii kriyolit ve şiolit 25.30); ticari olarak metal çıkarılmayan mineraller (toprak boyaları, alunit 25.30; kıymetli taşlar Fasıl 71); magnezyum elde edilen mineraller (dolomit 25.18, magnezit 25.19, karnalit 31.04); alkali ve alkali-toprak metal mineralleri (tuz 25.01, barit ve witherit 25.11, stronsiyanit, selestit, aragonit 25.30); yatağından ayrılmış tabii metaller (Bölüm XIV veya XV); nadir toprak metal cevherleri (25.30)."
+  ],
+  [
+   "26.01 / 26.02 Açıklama Notları",
+   "Manganezli demir cevherlerinde ölçüt, 105–110 °C’de ısıtılmış ürünün <b>kuru ağırlığı üzerinden manganez oranıdır</b>: %20’den az ise 26.01, <b>%20 veya daha fazla</b> ise 26.02. Kuru pil için hazırlanmış pirolüsit 25.30’a; boyayıcı olarak ince öğütülmüş magnetit Fasıl 32’ye gider."
+  ],
+  [
+   "26.06 / 26.12 / 26.13 Açıklama Notları",
+   "Alüminyum imalatı veya aşındırıcı yapımı için 1200–1400 °C’de ısıl işlem görmüş boksit 26.06’dadır. Mutat olmayan işlemlerle elde edilen uranyum “konsantresi” 28.44’e gider. Zenginleştirilmiş molibdenin kavrulmasıyla elde edilen teknik molibdik oksit 26.13’te kalır; yağlayıcı olarak hazırlanan molibden 25.30’dadır."
+  ],
+  [
+   "26.18 / 26.19 Açıklama Notları",
+   "26.18: yüksek fırın cürufunun suya dökülmesiyle elde edilen granüle cüruf; cüruf yünü ve köpüklü cüruf 68.06, cüruf çimentosu 25.23. 26.19: demir-çelik imalatından cüruflar (metal elde etmeye yetecek demir içerse bile), moloz, dövme demir kırıntıları (tufal), yüksek fırın tozları; bazik (Thomas) cüruf Fasıl 31, makadam olarak derecelendirilmiş cüruf 25.17, mekanik işlemden doğan talaş ve kırpıntılar 72.04."
+  ],
+  [
+   "26.20 Açıklama Notu",
+   "Kapsam: matlar (bakır, nikel, kobalt matları hariç), metalce zengin cüruflar, galvanizli matlar, elektrolitik banyo çamurları, akümülatör çamuru, bakır sülfat imalatı artıkları, yalnızca metal kazanımı veya kimyasal madde imalatı için kullanılabilen kullanılmış katalizörler, kurşunlu benzin tortuları, çinko-kurşun-bakır eritme baca kurumu. Hariç: şehir atığı külleri (26.21), petrol tank çamurları (27.10), Fasıl 28 bileşikleri, kıymetli metal döküntüleri (71.12, 85.49), mekanik metal kırpıntıları (Bölüm XV), çinko tozu (79.03)."
+  ],
+  [
+   "26.21 Açıklama Notu",
+   "Kömür, linyit, turba veya petrol yakılan kazanlardan uçucu kül, taban külü, kazan cürufu ve akışkan yatak (FBC) külü; deniz yosunu ve diğer bitkisel küller; pirinç kavuzu külü; açık havada kalsine edilmiş kemik külü; şeker pancarı melası artıklarından ham potasyum tuzları; şehir atıklarının yakılmasından elde edilen kül ve kalıntılar. Gübre olarak kullanılsalar da Fasıl 31’e girmezler (bazik cüruf hariç). Hariç: kapalı kapta kalsine edilen hayvan karası (38.02), silis dumanı (28.11)."
+  ]
+ ],
+ "sinir_komsulari": [
+  [
+   "Kavrulmamış demir piritleri",
+   "25.02",
+   "Başka pozisyonda belirtilmiş; kavrulmuşu 26.01"
+  ],
+  [
+   "Tabii kriyolit; nadir toprak metal cevherleri",
+   "25.30",
+   "26.01–26.17 hariç tutması"
+  ],
+  [
+   "Magnezit; dolomit",
+   "25.19 / 25.18",
+   "Magnezyum mineralleri; Fasıl 26 Not 1"
+  ],
+  [
+   "Karnalit",
+   "31.04",
+   "26.01–26.17 hariç tutması"
+  ],
+  [
+   "Barit, witherit",
+   "25.11",
+   "Alkali-toprak metal minerali"
+  ],
+  [
+   "Kuru pil için pirolüsit; yağlayıcı molibden; mikronize zirkon kumu",
+   "25.30",
+   "Kullanım amacına göre hazırlanmış"
+  ],
+  [
+   "Boyayıcı olarak ince öğütülmüş magnetit veya titan cevheri",
+   "Fasıl 32",
+   "26.01 ve 26.14 hariç tutması"
+  ],
+  [
+   "Mutat dışı işlemle elde edilen uranyum konsantresi",
+   "28.44",
+   "26.12 hariç tutması"
+  ],
+  [
+   "Kıymetli taş halinde zirkon veya beril",
+   "71.03",
+   "26.15 ve 26.17 hariç tutması"
+  ],
+  [
+   "Makadam olarak hazırlanmış cüruf",
+   "25.17",
+   "Fasıl 26 Not 1"
+  ],
+  [
+   "Cüruf yünü, köpüklü cüruf",
+   "68.06",
+   "Fasıl 26 Not 1; 26.18 hariç tutması"
+  ],
+  [
+   "Bazik (Thomas) cüruf",
+   "Fasıl 31",
+   "Fasıl 26 Not 1"
+  ],
+  [
+   "Demir-çelik işleme talaşı ve kırpıntıları",
+   "72.04",
+   "26.19 hariç tutması"
+  ],
+  [
+   "Bakır, nikel, kobalt matları",
+   "Bölüm XV",
+   "Fasıl 26 Not 1"
+  ],
+  [
+   "Petrol tankı dip tortuları (esasen yağ içeren)",
+   "27.10",
+   "Fasıl 26 Not 1"
+  ]
+ ],
+ "tuzaklar": [
+  "<b>Kavrulmamış pirit 25.02, kavrulmuş pirit 26.01.</b> Bakır ve demir sülfürü olan kalkopirit ise 26.03’tedir.",
+  "<b>Metal içeren her mineral “metal cevheri” değildir.</b> Başka pozisyonda sayılanlar (kriyolit, barit, tuz), ticari olarak metal çıkarılmayanlar (toprak boyaları, alunit) ve magnezyum mineralleri (dolomit, magnezit, karnalit) Fasıl 25 veya 31’dedir.",
+  "<b>Kalsinasyon ve kavurma cevheri bozmaz; fraksiyonel kristalizasyon bozar.</b> Sinterlenmiş veya peletlenmiş demir cevheri 26.01’de kalır; tekrarlanan fiziksel işlemlerle elde edilen saf ürün Fasıl 28’e gider.",
+  "<b>Kullanım amacına göre hazırlık cevheri fasıldan çıkarır.</b> Kuru pil için pirolüsit, yağlayıcı molibden, mine için mikronize zirkon kumu 25.30; boyayıcı olarak öğütülmüş magnetit ve titan cevheri Fasıl 32.",
+  "<b>Mn %20 eşiği kuru ağırlığa göredir.</b> %20’den az manganezli demir cevheri 26.01, %20 veya fazlası 26.02.",
+  "<b>Cüruf dörde ayrılır.</b> Granüle cüruf 26.18, diğer demir-çelik cürufu 26.19, makadam 25.17, cüruf yünü 68.06; cüruf çimentosu 25.23.",
+  "<b>Demir içeriği cürufu cevher yapmaz.</b> Metal elde etmeye yetecek demir içerse bile demir-çelik cürufu 26.19’dadır.",
+  "<b>Gübre olarak kullanılan kül Fasıl 31 değildir.</b> Küllerin çoğu 26.21’de kalır; yalnız bazik (Thomas) cüruf Fasıl 31’dedir.",
+  "<b>Mat ayrımı.</b> Bakır, nikel ve kobalt matları Bölüm XV’te; galvanizli matlar ve diğer matlar 26.20’de.",
+  "<b>Şehir atığı külü 26.20 değil 26.21.</b> Metal içeriği metal kazanımına imkân vermez; Not 3 bunu 26.20’den açıkça hariç tutar."
+ ],
+ "hafiza": {
+  "kanca": "Demirci Mahmut Bakırı Nikelleyip Kobaltla Alüminyumu Kurşun Çinko Kalayla Kromladı; Tungsten Uranyum Molibden Titanyumu Zirkona Kıymetli Diye sattı.",
+  "aciklama": "Baş harfler 26.01’den 26.17’ye cevher sırasını verir: <b>De</b>mir, <b>Ma</b>nganez, <b>Ba</b>kır, <b>Ni</b>kel, <b>Ko</b>balt, <b>Al</b>üminyum, <b>Ku</b>rşun, <b>Çi</b>nko, <b>Ka</b>lay, <b>Kr</b>om, <b>Tu</b>ngsten, <b>Ur</b>anyum-toryum, <b>Mo</b>libden, <b>Ti</b>tanyum, <b>Zi</b>rkonyum-niobyum-tantal-vanadyum, <b>Kı</b>ymetli metaller, <b>Di</b>ğerleri. Sonra fırının arkası: cüruf kumu 26.18, demir-çelik cürufu 26.19, metal artığı 26.20, kül 26.21."
+ },
+ "sinav_odagi": [
+  "Bu fasıl çıkmış sorularda daha çok seçeneklerde ve çeldirici olarak yer almıştır; doğrudan Fasıl 26’yı soran soru çok azdır.",
+  "“Hangisi farklı fasılda yer alır?” kalıbında cürufun (Fasıl 26), tuz, zımpara taşı ve amyant (Fasıl 25) gibi mineral maddeler arasından ayrılması.",
+  "Bölüm yapısı: Fasıl 25–27’nin Bölüm V (Mineral maddeler) başlığı altında toplandığı; bölüm başlığı soruları.",
+  "Atık ve kalıntıların yeri: sıralama sorularında kullanılmış elektrik pilinin 85.49’da yer alması; Fasıl 26 Not 1’in kıymetli metal döküntülerini 71.12 veya 85.49’a göndermesi bu tür sorularda ayırt edicidir."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Tarife Cetveline göre aşağıdakilerden hangisi farklı fasılda yer alır?",
+   "secenekler": [
+    "Cüruf",
+    "Tuz",
+    "Zımpara taşı",
+    "Amyant"
+   ],
+   "cevap": "A",
+   "aciklama": "Cüruf, kül ve kalıntılar Fasıl 26’dadır (26.18–26.21). Tuz 25.01, zımpara taşı 25.13, amyant 25.24 ile Fasıl 25’te yer alır."
+  },
+  {
+   "soru": "Tarife Cetveli’nin 5. Bölümünde aşağıda verilen hangi ürün grupları yer alır?",
+   "secenekler": [
+    "Mineral maddeler",
+    "Taş, alçı, çimento",
+    "Ağaç ve ahşap eşya",
+    "Deriler ve köseleler"
+   ],
+   "cevap": "A",
+   "aciklama": "Bölüm V “Mineral maddeler” başlığını taşır ve Fasıl 25, 26 ve 27’yi kapsar. Taş, alçı ve çimentodan eşya Bölüm XIII’te, ağaç ve ahşap eşya Bölüm IX’da, deriler ve köseleler Bölüm VIII’dedir."
+  }
+ ],
+ "ozet": [
+  "26.01–26.17: metal cevherleri, metale göre; 26.18–26.21: cüruf, kül ve kalıntılar.",
+  "Metal cevheri = metalurji sanayiinde fiilen kullanılan mineral (Not 2); kalsinasyon, kavurma, sinterleme ve peletleme serbest.",
+  "Başka yerde sayılan veya ticari olarak metal çıkarılmayan mineraller Fasıl 25’te; magnezyum ve alkali-toprak metal mineralleri de Fasıl 25 veya 31’de.",
+  "Mn %20 eşiği (kuru ağırlık): altı 26.01, üstü 26.02.",
+  "Demir-çelik cürufu: granül 26.18, diğer 26.19; makadam 25.17, cüruf yünü 68.06, Thomas cürufu Fasıl 31.",
+  "Metal kazanımına yönelik kalıntılar 26.20; şehir atığı külü ve diğer küller 26.21; kıymetli metal döküntüleri 71.12 veya 85.49."
+ ],
+ "sorular": [
+  {
+   "soru": "Tarife Cetveline göre, aşındırıcı madde imalatında kullanılmak üzere 1200–1400 °C’de ısıl işleme tabi tutulmuş boksit hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "28.18",
+    "25.13",
+    "26.06",
+    "26.20",
+    "68.05"
+   ],
+   "cevap": "C",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "26.06 Açıklama Notu, alüminyum imalatı veya diğer amaçlar (özellikle aşındırıcı imalatı) için 1200–1400 °C’de ısıl işleme tabi tutulmuş boksiti de bu pozisyona dahil eder. 28.18 yapay korindon ve alüminyum oksit, 25.13 tabii aşındırıcılar, 68.05 bir mesnede tutturulmuş aşındırıcılar içindir. Tuzak, ısıl işlemin cevheri fasıl dışına çıkardığını düşünmektir.",
+   "dayanak": "26.06 Açıklama Notu; Fasıl 26 Genel Açıklamalar."
+  },
+  {
+   "soru": "Tarife Cetveline göre, aglomere edilmiş kavrulmuş demir piritleri (pirit külleri) hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "26.01",
+    "25.02",
+    "26.21",
+    "26.19",
+    "28.21"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "26.01 pozisyon metni kavrulmuş demir piritlerini açıkça kapsar; Açıklama Notu pirit küllerinin aglomere edilmiş olsun olmasın bu pozisyonda yer aldığını belirtir. 25.02 yalnızca kavrulmamış demir piritlerini kapsar ve kavrulmuş olanları 26.01’e gönderir. Kül adı yanıltıcıdır; 26.21 bu ürünü kapsamaz.",
+   "dayanak": "26.01 pozisyon metni ve Açıklama Notu; 25.02 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, flotasyon yoluyla zenginleştirilmiş kalkopirit (bakır ve demir sülfürü) konsantresi hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "25.02",
+    "26.01",
+    "26.17",
+    "71.03",
+    "26.03"
+   ],
+   "cevap": "E",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Kalkopirit 26.03 Açıklama Notunda başlıca bakır cevherleri arasında sayılmıştır; flotasyon, mutat bir zenginleştirme işlemidir. 25.02 Açıklama Notu kalkopiritleri açıkça 26.03’e gönderir; adında “pirit” bulunması onu demir piriti yapmaz. 71.03’teki markasit ile de karıştırılmamalıdır.",
+   "dayanak": "26.03 Açıklama Notu; 25.02 Açıklama Notu, hariç tutmalar; Fasıl 26 Genel Açıklamalar."
+  },
+  {
+   "soru": "Tarife Cetveline göre, zirkonyum silikattan oluşan ve zirkonyum elde edilmesinde kullanılan zirkon kumu hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "25.05",
+    "26.15",
+    "71.03",
+    "25.30",
+    "26.14"
+   ],
+   "cevap": "B",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "26.15 Açıklama Notu, zirkon ve zirkon kumlarını başlıca zirkonyum cevherleri arasında sayar; 25.05 de zirkonlu kumları tabii kumlardan hariç tutar. Kıymetli taş halindeki zirkon 71.03’e, mine imalatında matlaştırıcı olarak mikronize edilmiş zirkon kumu 25.30’a gider. 26.14 titanyum cevherleri içindir.",
+   "dayanak": "26.15 Açıklama Notu; 25.05 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, erimiş çinko banyosuna daldırma yoluyla yapılan galvanizlemeden kalan ve çinko kazanımında kullanılan artık (galvanizli mat) hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "79.02",
+    "26.08",
+    "26.19",
+    "26.20",
+    "79.03"
+   ],
+   "cevap": "D",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "26.20 Açıklama Notu, galvanizli matları, yani erimiş çinko içine daldırarak galvanizlemeden kalan artığı açıkça sayar. 26.08 çinko cevherleri, 26.19 demir-çelik imalatı cürufları içindir. Çinko tozu 79.03’te, mekanik işlemden doğan çinko kırpıntıları Bölüm XV’tedir; galvanizli mat ise metal işleme değil, kimyasal bir süreç artığıdır.",
+   "dayanak": "26.20 Açıklama Notu; Fasıl 26 Not 3."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 26. Faslında <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Yüksek fırın cürufunun suya dökülmesiyle elde edilen granüle cüruf",
+    "Eritilmiş cürufa basınçlı hava verilerek elde edilen cüruf yünü",
+    "Akümülatör çamuru",
+    "Deniz yosunu külü",
+    "Demir ve çeliğin dövülmesi sırasında oluşan demir oksit kırıntıları"
+   ],
+   "cevap": "B",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Fasıl 26 Not 1, cüruf yünü, kaya yünü ve benzeri mineral yünleri 68.06’ya gönderir; 26.18 Açıklama Notu da cüruf yününü hariç tutar. Granüle cüruf 26.18’de, dövme demir kırıntıları 26.19’da, akümülatör çamuru 26.20’de, deniz yosunu külü 26.21’dedir.",
+   "dayanak": "Fasıl 26 Not 1; 26.18, 26.19, 26.20 ve 26.21 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdaki minerallerden hangisi 26.01 ila 26.17 pozisyonlarında (metal cevherleri) <b>yer almaz</b>?",
+   "secenekler": [
+    "Kasiterit",
+    "Galena",
+    "Sinnabar",
+    "Monazit",
+    "Karnalit"
+   ],
+   "cevap": "E",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Fasıl 26 Genel Açıklamaları; dolomit, magnezit ve karnalit gibi magnezyum elde edilmesinde kullanılan mineralleri 26.01–26.17 dışında bırakır ve karnaliti 31.04’e gönderir. Kasiterit kalay (26.09), galena kurşun (26.07), sinnabar civa (26.17), monazit toryum (26.12) cevheridir.",
+   "dayanak": "Fasıl 26 Genel Açıklamalar, hariç tutmalar (b); 26.07, 26.09, 26.12, 26.17 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 26.20 pozisyonunda <b>yer almaz</b>?",
+   "secenekler": [
+    "Bakır sülfat imalatından kalan artıklar",
+    "Metalin elektrolitik rafinasyonundan kalan çamurlar",
+    "Şehir atıklarının yakılmasından elde edilen küller",
+    "Kurşunlu benzin depolama tanklarından elde edilen, esas olarak kurşun bileşikleri içeren tortular",
+    "Yalnızca adi metal kazanımında kullanılabilen kullanılmış katalizörler"
+   ],
+   "cevap": "C",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Fasıl 26 Not 3, şehir atıklarının yakılmasından elde edilen kül ve kalıntıları 26.20’den açıkça hariç tutar; bunlar 26.21’dedir. Bakır sülfat imalatı artıkları, elektrolitik çamurlar, kurşunlu benzin tortuları ve yalnızca metal kazanımında kullanılabilen kullanılmış katalizörler 26.20 Açıklama Notunda sayılmıştır.",
+   "dayanak": "Fasıl 26 Not 3; 26.20 ve 26.21 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdaki ürünlerden hangisi Tarife Cetvelinin 26. Faslı kapsamında <b>yer almaz</b>?",
+   "secenekler": [
+    "Petrol tanklarının dibinde kalan, esasen petrol yağı içeren tortular",
+    "Ses yalıtıcı tuğla imalinde kullanılan, silisyum dioksitten oluşan pirinç kavuzu külü",
+    "Kemiklerin açık havada kalsine edilmesiyle elde edilen kemik külü",
+    "Demir veya çelik imalatında ortaya çıkan yüksek fırın tozları",
+    "Zirkon kumu"
+   ],
+   "cevap": "A",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Fasıl 26 Not 1, esasen petrol yağlarının depolandığı tankların dibinde kalan tortuları 27.10’a gönderir. Pirinç kavuzu külü ve açık havada kalsine edilmiş kemik külü 26.21’de, yüksek fırın tozları 26.19’da, zirkon kumu 26.15’tedir. Kemiklerin kapalı kapta kalsine edilmesiyle elde edilen hayvan karası ise 38.02’dir.",
+   "dayanak": "Fasıl 26 Not 1; 26.15, 26.19 ve 26.21 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdaki minerallerden hangisi diğerlerinden farklı bir fasılda sınıflandırılır?",
+   "secenekler": [
+    "Rutil (titan oksit)",
+    "İlmenit (demir titanatı)",
+    "Volframit (demir ve manganez tungstat)",
+    "Kıymetli taş halindeki zirkon",
+    "Tantalit (tantalo-niobat)"
+   ],
+   "cevap": "D",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "26.15 Açıklama Notu, kıymetli taş şeklindeki zirkonu 71.03’e (Fasıl 71) gönderir. Rutil ve ilmenit titanyum cevheri olarak 26.14’te, volframit tungsten cevheri olarak 26.11’de, tantalit 26.15’te, yani Fasıl 26’dadır.",
+   "dayanak": "26.11, 26.14 ve 26.15 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdaki cüruf ve küllerden hangisi diğerlerinden farklı bir fasılda yer alır?",
+   "secenekler": [
+    "Fosfatik bazik cüruf (Thomas cürufu)",
+    "Kömür yakılan kazanlardan elde edilen uçucu kül",
+    "Kazan cürufu",
+    "Deniz yosunu külü",
+    "Şeker pancarı melası artıklarından elde edilen ham potasyum tuzları"
+   ],
+   "cevap": "A",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Fasıl 26 Not 1 ve 26.19 Açıklama Notu, fosfatik bazik cürufu (Thomas cürufu) gübre olarak Fasıl 31’e gönderir. Uçucu kül, kazan cürufu, deniz yosunu külü ve melas artıklarından ham potasyum tuzları 26.21’dedir; 26.21 Açıklama Notu, gübre olarak kullanılsalar bile bunların Fasıl 31’e girmediğini belirtir.",
+   "dayanak": "Fasıl 26 Not 1; 26.19 ve 26.21 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdaki eşya çiftlerinden hangisinde her iki eşya da <b>aynı</b> pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Granüle cüruf – cüruf makadamı",
+    "Yüksek fırın cürufu – cüruf çimentosu",
+    "Dövme demir kırıntıları – yüksek fırın tozu",
+    "Tornalama sırasında oluşan demir talaşı – dövme demir kırıntıları",
+    "Bakır matı – bakırca zengin cüruf"
+   ],
+   "cevap": "C",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "26.19 Açıklama Notu hem dövme demir kırıntılarını hem de yüksek fırın tozlarını bu pozisyona dahil eder. Granüle cüruf 26.18, cüruf makadamı 25.17; yüksek fırın cürufu 26.19, cüruf çimentosu 25.23; tornalama talaşı 72.04; bakır matı Bölüm XV, bakırca zengin cüruf 26.20’dedir.",
+   "dayanak": "26.18, 26.19 ve 26.20 Açıklama Notları; Fasıl 26 Not 1."
+  },
+  {
+   "soru": "Aşağıdaki cevherlerden hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Stibnit",
+    "Kıymetli taş niteliğinde olmayan beril",
+    "Bizmutinit",
+    "Sinnabar",
+    "Molibdenit"
+   ],
+   "cevap": "E",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Molibdenit (molibden sülfür) 26.13’te başlıca molibden cevheri olarak sayılmıştır. Stibnit (antimon), beril (berilyum), bizmutinit (bizmut) ve sinnabar (civa) 26.17 “diğer metal cevherleri” pozisyonundadır.",
+   "dayanak": "26.13 ve 26.17 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetveline göre, manganezli demir cevherlerinin 26.01 ile 26.02 pozisyonları arasında ayrılmasında esas alınan ölçüt aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Demir içeriğinin kuru ağırlık üzerinden %50’yi geçmesi",
+    "Kuru ağırlık üzerinden manganez oranının %20 veya daha fazla olması",
+    "Manganez oksit oranının %79’dan az olmaması",
+    "Islak ağırlık üzerinden manganez oranının %20 veya daha fazla olması",
+    "Manganez oranının %10 veya daha fazla olması"
+   ],
+   "cevap": "B",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "26.02 pozisyon metni ve Açıklama Notu, kuru ağırlık üzerinden (105–110 °C’de ısıtılmış ürün) manganez miktarı %20 veya daha fazla olan demirli manganez cevherlerini 26.02’ye, %20’den az olanları 26.01’e verir. Islak ağırlık esas alınmaz; %79 manganez oksit oranı 25.30’daki nsutite ilişkindir.",
+   "dayanak": "26.01 ve 26.02 pozisyon metinleri ve Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetvelinin 26. Fasıl notlarına göre, 26.01 ila 26.17 pozisyonları anlamında “metal cevheri” tabirinden ne anlaşılır?",
+   "secenekler": [
+    "Yalnızca fiilen metalurji amacıyla kullanılacağı belgelenen ve metal içeren mineraller",
+    "Ağırlıkça en az %20 metal içeren ve madenden çıkarıldığı haliyle sunulan her türlü mineral",
+    "Metalurji sanayiinde mutat olmayan işlemlerle saflaştırılmış veya kimyasal yapısı değiştirilmiş mineraller",
+    "Metal çıkarmak için metalurji sanayiinde fiilen kullanılan türden mineraller (bu amaçla kullanılmasalar dahi)",
+    "Tabiatta serbest halde bulunan ve yatağından veya gangından ayrılmış tabii metal külçe ve daneleri"
+   ],
+   "cevap": "D",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 26 Not 2’ye göre ölçüt, mineralin metalurji sanayiinde fiilen kullanılan mineralojik türden olmasıdır; somut eşyanın metalurji amacıyla kullanılması şart değildir (A yanlış). Mutat olmayan işlemlere tabi tutulmuş mineraller bu pozisyonların dışında kalır (C). Yatağından ayrılmış tabii metaller Bölüm XIV veya XV’tedir (E).",
+   "dayanak": "Fasıl 26 Not 2; Fasıl 26 Genel Açıklamalar."
+  },
+  {
+   "soru": "Tarife Cetvelinin 26. Fasıl notlarına göre, 26.20 pozisyonunun kapsamı ile ilgili aşağıdakilerden hangisi <b>doğrudur</b>?",
+   "secenekler": [
+    "Demir veya çelik imalatından elde edilen cüruf ve kalıntılar da bu pozisyonda sınıflandırılır.",
+    "Şehir atıklarının yakılmasından elde edilen ve metal içeren küller de bu pozisyona girer.",
+    "Esas olarak kıymetli metal kazanımında kullanılan döküntü ve kırpıntılar bu pozisyona girer.",
+    "Arsenik içeren kalıntılar ancak bunlara ek olarak metal de içeriyorlarsa bu pozisyona girer.",
+    "Metal çıkarmada veya metal bileşiği üretiminde baz olarak sanayide kullanılan türden olanlar girer."
+   ],
+   "cevap": "E",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 26 Not 3’e göre 26.20, metallerin çıkarılması veya kimyasal bileşiklerinin üretiminde baz olarak kullanılan cüruf, kül ve kalıntıları ve metal içersin içermesin arsenik içeren kalıntıları kapsar (D yanlış). Demir-çelik cürufları pozisyon metniyle hariçtir (26.18, 26.19); şehir atığı külleri 26.21’e, kıymetli metal döküntüleri 71.12 veya 85.49’a gider.",
+   "dayanak": "Fasıl 26 Not 3; Fasıl 26 Not 1; 26.20 pozisyon metni."
+  },
+  {
+   "soru": "Fasıl 26 Genel Açıklamalarına göre aşağıdaki işlemlerden hangisi, bir metal cevherini 26.01 ila 26.17 pozisyonlarının kapsamı <b>dışına çıkarır</b>?",
+   "secenekler": [
+    "Fraksiyonel kristalizasyon gibi tekrarlanan fiziksel işlemlerle az çok saf ürün elde edilmesi",
+    "Sinterleme veya peletleme yoluyla az miktarda bağlayıcı ile aglomerasyon",
+    "Manyetik ayırma veya gravimetrik ayırma yoluyla yabancı maddelerin kısmen veya tamamen giderilmesi",
+    "Metalin çıkarılmasını kolaylaştırmak için kalsine etme",
+    "Flotasyon ve derecelendirme yoluyla konsantre elde edilmesi"
+   ],
+   "cevap": "A",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Genel Açıklamalar, esas cevherin kimyasal bileşimi değişmemiş olsa bile fraksiyonel kristalizasyon veya süblimasyon gibi tekrarlanan fiziksel işlemlerle elde edilen az çok saf ürünleri fasıl dışında bırakır. Sinterleme, peletleme, manyetik ayırma, kalsine etme ve flotasyon ise izin verilen mutat zenginleştirme işlemleri arasında sayılmıştır.",
+   "dayanak": "Fasıl 26 Genel Açıklamalar; Fasıl 26 Not 2."
+  },
+  {
+   "soru": "Esas olarak kurşun minerali galena ile daha az miktarda çinko minerali sfalerit içeren karışık bir konsantrenin esas niteliğini galenanın verdiği tespit edilmiştir. Bu konsantrenin 26.07’de sınıflandırılmasında belirleyici olan kural hangisidir?",
+   "secenekler": [
+    "GYK 3(a)",
+    "GYK 4",
+    "GYK 3(b)",
+    "GYK 3(c)",
+    "GYK 5(b)"
+   ],
+   "cevap": "C",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "Birden fazla mineral türü içeren cevherler 26.01–26.17 arasında GYK 3(b) ile, yani esas niteliği veren mineral esas alınarak sınıflandırılır; esas nitelik belirlenemeseydi GYK 3(c) uygulanırdı. 26.07 ve 26.08 karışımın yalnızca bir kısmına atıfta bulunduğundan eşit derecede özel sayılır ve GYK 3(a) sonuç vermez. GYK 4 hiçbir pozisyona girmeyen eşya içindir.",
+   "dayanak": "GYK 3(a), 3(b) ve 3(c); Fasıl 26 Genel Açıklamalar."
+  },
+  {
+   "soru": "Bakır cevherinin eritilmesiyle elde edilen bakır matı, “matlar”ı sayan 26.20 Açıklama Notuna rağmen Bölüm XV’te sınıflandırılır. Bu sonucu doğuran dayanak aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "GYK 3(a) – en özel tanım",
+    "GYK 1 – Fasıl 26 Not 1 hükmü",
+    "GYK 3(c) – numara sırasına göre sonuncu pozisyon",
+    "GYK 2(a) – tamamlanmamış eşya",
+    "GYK 3(b) – esas nitelik"
+   ],
+   "cevap": "B",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 1’e göre sınıflandırma pozisyon metinleri ile bölüm ve fasıl notlarına göre yapılır. Fasıl 26 Not 1, metal cevherlerinin eritilmesiyle elde edilen bakır, nikel ve kobalt matlarını fasıl dışında bırakıp Bölüm XV’e gönderir; 26.20 Açıklama Notu da bu matları parantez içinde hariç tutar. GYK 3’e başvurulmaz; GYK 2(a) ise Bölüm V eşyasına normal olarak uygulanmaz.",
+   "dayanak": "GYK 1; Fasıl 26 Not 1; 26.20 Açıklama Notu."
+  },
+  {
+   "soru": "Kuru pillerde kullanılmak üzere hazırlanmış pirolüsit ………, yağlayıcı olarak kullanılmak üzere hazırlanmış molibden ………, boyayıcı olarak kullanılmak üzere ince öğütülmüş ilmenit ………, mine imalatında matlaştırıcı olarak kullanılmak üzere mikronize edilmiş zirkon kumu ise ……… yer alır. Boşlukları sırasıyla doğru tamamlayan seçenek hangisidir?",
+   "secenekler": [
+    "26.02 / 26.13 / 26.14 / 26.15",
+    "25.30 / 26.13 / Fasıl 32 / 26.15",
+    "26.02 / 25.30 / 26.14 / 25.30",
+    "25.30 / 25.30 / Fasıl 32 / 25.30",
+    "25.30 / 27.10 / Fasıl 32 / 26.15"
+   ],
+   "cevap": "D",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Kuru pil için pirolüsit 26.02 Açıklama Notu ile, yağlayıcı molibden 26.13 Açıklama Notu ile, mikronize zirkon kumu 26.15 Açıklama Notu ile 25.30’a gider; boyayıcı olarak ince öğütülmüş titan cevherleri 26.14 Açıklama Notu ile Fasıl 32’dedir. Ortak tuzak, cevherin kullanım amacına göre hazırlandığında Fasıl 26’da kaldığını sanmaktır.",
+   "dayanak": "26.02, 26.13, 26.14 ve 26.15 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdaki cevherler ile pozisyonlar eşleştirildiğinde hangi seçenek doğrudur? I. Boksit · II. Kromit · III. Kasiterit · IV. Sfalerit (blend) — a) 26.06 · b) 26.08 · c) 26.09 · d) 26.10",
+   "secenekler": [
+    "I-a, II-c, III-d, IV-b",
+    "I-d, II-a, III-c, IV-b",
+    "I-a, II-b, III-c, IV-d",
+    "I-c, II-d, III-a, IV-b",
+    "I-a, II-d, III-c, IV-b"
+   ],
+   "cevap": "E",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Boksit alüminyum cevheri olarak 26.06’da, kromit krom cevheri olarak 26.10’da, kasiterit (kalay taşı) kalay cevheri olarak 26.09’da, sfalerit (blend) çinko cevheri olarak 26.08’dedir. Tuzak, kasiterit ile kromitin ve çinko ile kalayın karıştırılmasıdır.",
+   "dayanak": "26.06, 26.08, 26.09 ve 26.10 Açıklama Notları."
+  },
+  {
+   "soru": "Aşağıdaki ifadelerden hangileri <b>doğrudur</b>? I. Zenginleştirilmiş molibdenin kavrulmasıyla elde edilen teknik molibdik oksit 26.13’te kalır. II. Metalurji sanayiinde mutat olmayan işlemlerle elde edilen uranyum konsantresi 26.12’de kalır. III. Isıl işlem görmüş boksit 26.06’da kalır. IV. Mutat olmayan işlemlerle elde edilen, ticarette “zenginleştirilmiş germanyum” olarak bilinen ürünler 26.17’de kalır.",
+   "secenekler": [
+    "I ve II",
+    "I ve III",
+    "II ve IV",
+    "I, III ve IV",
+    "II, III ve IV"
+   ],
+   "cevap": "B",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "I doğrudur: 26.13 Açıklama Notu kavrulmuş zenginleştirilmiş molibden cevherlerini kapsar. III doğrudur: 26.06 Açıklama Notu ısıl işlem görmüş boksiti sayar. II yanlıştır: bu tür uranyum konsantresi 28.44’e gider. IV yanlıştır: zenginleştirilmiş germanyum genellikle 28.25’tedir.",
+   "dayanak": "26.06, 26.12, 26.13 ve 26.17 Açıklama Notları; Fasıl 26 Not 2."
+  },
+  {
+   "soru": "26.19 pozisyonu ile ilgili aşağıdaki ifadelerden hangileri <b>doğrudur</b>? I. Yüksek fırın cürufu, tekrar metal elde etmeye yetecek oranda demir içerse de bu pozisyonda kalır. II. Fosfatik bazik cüruf (Thomas cürufu) bu pozisyonda yer alır. III. Demirin kesilmesi veya şekillendirilmesi sırasında oluşan talaş ve kırpıntılar bu pozisyonda yer alır. IV. Demir ve çeliğin dövülmesi veya sıcak haddelenmesi sırasında oluşan demir oksit kırıntıları bu pozisyonda yer alır.",
+   "secenekler": [
+    "I ve II",
+    "II ve III",
+    "III ve IV",
+    "I ve IV",
+    "I, II ve IV"
+   ],
+   "cevap": "D",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "I ve IV doğrudur: 26.19 Açıklama Notu, cürufları demir içeriğine bakılmaksızın ve dövme demir kırıntılarını bu pozisyona dahil eder. II yanlıştır: Thomas cürufu gübre olarak Fasıl 31’dedir. III yanlıştır: kesme ve şekil verme gibi metal işleme faaliyetlerinden doğan parça ve kırpıntılar 72.04’tedir.",
+   "dayanak": "26.19 Açıklama Notu; Fasıl 26 Not 1."
+  },
+  {
+   "soru": "Bir termik santralde kömürün akışkan hale getirilmiş kireç taşı yatağında yakılması sonucu oluşan inorganik kalıntılar (FBC külü) ithal edilmektedir. Ürün yol yapımında ve çimento imalatında hammadde olarak kullanılacaktır; metal içeriği metal kazanımına elverişli değildir. Bu ürün hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "26.21",
+    "26.20",
+    "25.17",
+    "26.19",
+    "25.23"
+   ],
+   "cevap": "A",
+   "tip": "Senaryo",
+   "gerekce": "26.21 Açıklama Notu, kömür veya petrolün akışkan kireç taşı ya da dolomit yatağında yakılmasıyla oluşan FBC külünü, uçucu kül ve kazan cürufuyla birlikte açıkça sayar. Metal kazanımına yönelik olmadığı için 26.20’ye (Not 3) girmez; demir-çelik imalatı artığı olmadığı için 26.19’a da girmez. Çimento imalatında kullanılması onu 25.23 yapmaz.",
+   "dayanak": "26.21 Açıklama Notu; Fasıl 26 Not 3."
+  },
+  {
+   "soru": "Bir çelik tesisinde yüksek fırından çıkan erimiş cüruf suya dökülerek granül hale getirilmiştir. Ürün öğütülmemiş, içine hiçbir madde katılmamış, köpüklendirilmemiş ve lif haline getirilmemiştir. Bu ürün hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "25.23",
+    "26.19",
+    "26.18",
+    "25.17",
+    "68.06"
+   ],
+   "cevap": "C",
+   "tip": "Senaryo",
+   "gerekce": "26.18 pozisyonu demir veya çelik imalatından elde edilen granüle cürufu (cüruf kumu) kapsar; Açıklama Notu yüksek fırın cürufunun suya dökülmesiyle elde edilen granülü örnek verir. Granüle cüruf 26.19’dan açıkça hariç tutulur. Cüruf yünü ve köpüklü cüruf 68.06’da, cüruf çimentosu 25.23’te, makadam 25.17’dedir.",
+   "dayanak": "26.18 ve 26.19 Açıklama Notları; Fasıl 26 Not 1."
+  }
+ ]
+}

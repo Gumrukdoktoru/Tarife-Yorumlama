@@ -1,0 +1,629 @@
+{
+ "tur": "fasil",
+ "fasil": 21,
+ "baslik": "Yenilen çeşitli gıda müstahzarları",
+ "bolum": "IV",
+ "oz": {
+  "vurgu": "Fasıl 21, başka fasıllarda daha özel olarak yer almayan çeşitli gıda müstahzarlarını toplar: kahve ve çay hülasaları ile kahve yerine geçenler, mayalar, soslar ve çeşniler, çorbalar, dondurma ve en sonda tamamlayıcı 21.06. Her soruda önce eşyanın Fasıl 9, 16, 30 veya 35’te daha özel olarak sayılıp sayılmadığına bakılır.",
+  "maddeler": [
+   "Kahve, çay, Paraguay çayı hülasaları ve bunlara dayalı müstahzarlar, kavrulmuş hindiba ve kahve yerine geçen kavrulmuş maddeler 21.01; kahve içeren ikameler 09.01.",
+   "Canlı veya cansız mayalar, cansız tek hücreli mikroorganizmalar ve hazır kabartma tozları 21.02; otolize maya 21.06, enzimler 35.07.",
+   "Soslar, çeşni karışımları, hardal unu ve hazır hardal 21.03; çorbalar, et suları ve homojenize bileşik gıdalar 21.04; dondurma ve yenilen buzlar 21.05.",
+   "21.06 tamamlayıcı pozisyondur: protein konsantreleri, tekstüre protein, içecek yapımında kullanılan müstahzarlar, gıda takviyeleri, şeker yerine tatlandırıcı içeren tatlılar ve sakızlar."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı pozisyonu verir.",
+  "satirlar": [
+   [
+    "1",
+    "Ağırlıkça %20’den fazla sosis, et, sakatat, kan, balık veya su omurgasızı içeren ve sos (21.03) veya çorba (21.04) olmayan bir müstahzar mı?",
+    "<b>Fasıl 16</b>"
+   ],
+   [
+    "2",
+    "Kahve içeren kahve ikamesi, aromalandırılmış çay, 09.04–09.10 baharatı veya 07.12 kuru sebze karışımı mı?",
+    "<b>09.01</b> / <b>09.02</b> / <b>Fasıl 9</b> / <b>07.12</b>"
+   ],
+   [
+    "3",
+    "İlaç olarak hazırlanmış maya veya ürün mü? Hazır enzim mi?",
+    "<b>30.03 / 30.04</b> · <b>35.07</b>"
+   ],
+   [
+    "4",
+    "Kahve, çay, Paraguay çayı hülasası; bunlara dayalı müstahzar; kavrulmuş hindiba veya kahve ikamesi mi?",
+    "<b>21.01</b>"
+   ],
+   [
+    "5",
+    "Maya (canlı veya cansız), cansız tek hücreli mikroorganizma veya hazır kabartma tozu mu?",
+    "<b>21.02</b>"
+   ],
+   [
+    "6",
+    "Sos, çeşni ve lezzet verici karışım, hardal unu veya hazır hardal mı?",
+    "<b>21.03</b>"
+   ],
+   [
+    "7",
+    "Çorba, et suyu veya bebek/diyet amaçlı, 250 gr’ı geçmeyen kapta homojenize bileşik gıda mı?",
+    "<b>21.04</b>"
+   ],
+   [
+    "8",
+    "Dondurma veya yenilen buz mu? (kakao oranı önemsiz)",
+    "<b>21.05</b>"
+   ],
+   [
+    "9",
+    "Başka yerde yer almayan bir gıda müstahzarı mı?",
+    "<b>21.06</b>"
+   ]
+  ],
+  "dipnot": "21.06 son duraktır: tedavi edici veya koruyucu dozda aktif madde içerenler 30.03 / 30.04’e, esası koku verici madde olan içecek müstahzarları 33.02’ye gider."
+ },
+ "pozisyon_haritasi": [
+  [
+   "21.01",
+   "Kahve, çay, mate hülasaları ve müstahzarları; kavrulmuş hindiba ve kahve ikameleri",
+   "Kahve içeren ikame 09.01; aromalı çay 09.02",
+   "Hazır (instant) kahve, kahve hamuru, sütlü çay karışımı, arpa kahvesi"
+  ],
+  [
+   "21.02",
+   "Mayalar; cansız tek hücreli mikroorganizmalar; hazır kabartma tozları",
+   "Aşılar 30.02; otolize maya 21.06",
+   "Ekmek mayası, bira mayası, kabartma tozu"
+  ],
+  [
+   "21.03",
+   "Soslar; çeşni karışımları; hardal unu ve hazır hardal",
+   "Tek başına yenmez, yemeğe tat verir",
+   "Mayonez, ketçap, soya sosu, hardal, kereviz tuzu"
+  ],
+  [
+   "21.04",
+   "Çorbalar, et suları; homojenize bileşik gıdalar",
+   "Homojenize: 2+ temel bileşen, bebek/diyet, en çok 250 gr",
+   "Bulyon tableti, hazır çorba, bebek için sebzeli etli püre"
+  ],
+  [
+   "21.05",
+   "Dondurma ve yenilen diğer buzlar",
+   "Kakao içersin içermesin; karışımlar hariç",
+   "Sütlü dondurma, şerbet, buzlu şekerleme"
+  ],
+  [
+   "21.06",
+   "Başka yerde yer almayan gıda müstahzarları",
+   "Tamamlayıcı pozisyon",
+   "Tekstüre soya proteini, şurup bazları, gıda takviyesi, şekersiz sakız"
+  ]
+ ],
+ "notlar": [
+  [
+   "Fasıl 21 Not 1",
+   "Fasıl 21 dışı: (a) 07.12’deki sebze karışımları; (b) herhangi bir oranda kahve içeren kavrulmuş kahve ikameleri (09.01); (c) aromalandırılmış çay (09.02); (d) 09.04–09.10’daki baharat ve diğer ürünler; (e) 21.03 veya 21.04 ürünleri dışında kalan, ağırlıkça %20’den fazla sosis, et, sakatat, kan, balık, kabuklu hayvan, yumuşakça veya diğer su omurgasızı içeren gıda müstahzarları (Fasıl 16); (f) 30.03 veya 30.04’te ilaç olarak hazırlanmış mayalar ve diğer ürünler; (g) 35.07’deki hazır enzimler."
+  ],
+  [
+   "Fasıl 21 Not 2",
+   "Not 1(b)’de belirtilen (kahve içeren) kahve ikamelerinin <b>hülasaları</b> 21.01’de yer alır."
+  ],
+  [
+   "Fasıl 21 Not 3",
+   "21.04 anlamında “homojenize edilmiş bileşik gıda müstahzarları”: et, balık, sebze, meyve veya kabuklu yemiş gibi <b>iki veya daha fazla</b> temel bileşenin iyice homojenize edilmiş karışımı; bebek ve küçük çocuklar için veya diyetetik amaçlı olarak net ağırlığı <b>250 gr’ı geçmeyen</b> kaplarda perakende satış için hazırlanmış. Lezzet, dayanıklılık vb. için katılan az miktardaki unsurlar dikkate alınmaz; gözle görülebilir küçük parçalar bulunabilir."
+  ],
+  [
+   "Fasıl 16 Not 2",
+   "%20 kuralı 21.03 ve 21.04 müstahzarlarına uygulanmaz: etli sos (bolonez) veya etli çorba bu pozisyonlarda kalır."
+  ],
+  [
+   "21.01 Açıklama Notu",
+   "Hazır (instant) kahve, nişasta vb. katılmış hülasa müstahzarları, kavrulmuş öğütülmüş kahve ve bitkisel yağdan kahve hamuru, çay + süt tozu + şeker karışımı dahildir. Kavrulmuş hindiba 12.12’deki köklerden elde edilir; kahve ikameleri şeker pancarı, havuç, incir, hububat (arpa, buğday, çavdar), acı bakla, palamut, soya, hurma çekirdeği, kestane vb.den yapılır; kahve ikamesi olacağı belli kavrulmuş malt da buradadır. Hariç: karamel (17.02), Fasıl 22 ürünleri."
+  ],
+  [
+   "21.02 Açıklama Notu",
+   "Canlı mayalar: bira, destilasyon, ekmek, kültür mayası, maya anası. Cansız mayalar kurutma ile elde edilir; Candida türlerinden kuru mayalar (petroproteinler) ve bakteri, alg gibi cansız tek hücreli mikroorganizmalar da buradadır. Kabartma tozu: sodyum bikarbonat, amonyum karbonat, tartarik asit veya fosfat karışımı (nişastalı olabilir). Hariç: kendi kendine kabaran unlar (11.01 / 11.02), otolize maya (21.06), maya dışı mikroorganizma kültürleri ve aşılar (30.02), enzimler (35.07)."
+  ],
+  [
+   "21.03 Açıklama Notu",
+   "Soslar sıvı, sos müstahzarları genellikle tozdur; 20. Fasıldaki ürünlerden tek başlarına yenmemeleriyle, 9. Fasıl baharatlarından da baharat karakteri taşımamalarıyla ayrılır. Örnekler: mayonez, salata sosu, bolonez, soya sosu, Worcester sosu, ketçap, kereviz tuzu ve yemek pişirmek için hazırlanmış, içilmeye elverişsiz Fasıl 22 ürünleri (22.09 hariç). Hardal unu kullanım yeri ne olursa olsun ve yağı alınmış olsa da buradadır."
+  ],
+  [
+   "21.03 Açıklama Notu",
+   "Hariç: et ve balık suları ve hülasaları (16.03); çorbalar (21.04); amino asit ve sodyum klorürden protein hidrolizatları ve otolize maya (21.06); hardal tohumu (12.07), sabit hardal yağı (15.14), hardal küspesi (23.06), hardal uçucu yağı (33.01)."
+  ],
+  [
+   "21.04 Açıklama Notu",
+   "Yalnız su, süt vb. katılmasını gerektiren veya sadece ısıtılarak içilmeye hazır çorba ve et suları; sıvı, tablet, kalıp, küp veya toz halinde. Hariç: kuru sebze karışımları (07.12), kuru baklagil unları (11.06), et ve balık hülasaları (16.03), kakao içeren gıda müstahzarları (18.06 veya 19.01), çorbalık olsa da konserve sebze karışımları (20.04 / 20.05), otolize maya (21.06). Tek temel bileşenli homojenize ürünler genellikle Fasıl 16 veya 20."
+  ],
+  [
+   "21.05 Açıklama Notu",
+   "Esası süt veya krema olan dondurma ile şerbet ve buzlu şekerleme gibi yenilen buzlar, kakao içersin içermesin buradadır. Dondurmanın esasını oluşturan madde ve karışımlar esas maddelerine göre (18.06, 19.01 veya 21.06) sınıflandırılır."
+  ],
+  [
+   "21.06 Açıklama Notu",
+   "Dahil: un, nişasta, malt veya süt esaslı olmayan krema, dondurma, jöle tozları; tereyağı esaslı fırıncılık müstahzarları; şeker esaslı yağlı dolgu hamurları; arı sütüyle zenginleştirilmiş bal; protein hidrolizatları ve konsantreleri, tekstüre protein; vanilin esaslı yenilebilir tabletler; sorbitollü tatlı ve sakızlar; sakarin + laktoz tabletleri; otolize maya; aromalı şuruplar; ginseng karışımları; bitki çayı karışımları; gıda takviyeleri."
+  ],
+  [
+   "21.06 Açıklama Notu",
+   "Hariç: gıda maddesi içeren enzimatik müstahzarlar (et yumuşatıcı) 35.07; tekstüre edilmemiş yağsız soya unu 23.04; protein izolatları 35.04; esası koku verici madde olan içecek müstahzarları 33.02; tedavi edici dozda aktif madde içerenler 30.03 / 30.04; esas karakteri 9. Fasıl türlerinden gelen bitki karışımları Fasıl 9; kakao içeren takviyeler 18.06; nikotinli sakız 24.04."
+  ]
+ ],
+ "sinir_komsulari": [
+  [
+   "Herhangi bir oranda kahve içeren kavrulmuş kahve ikamesi",
+   "09.01",
+   "Not 1(b)"
+  ],
+  [
+   "Aromalandırılmış çay",
+   "09.02",
+   "Not 1(c)"
+  ],
+  [
+   "Kurutulmuş sebze karışımı (julienne)",
+   "07.12",
+   "Not 1(a)"
+  ],
+  [
+   "Karamel (karamelize şeker ve melas)",
+   "17.02",
+   "21.01 hariç tutması"
+  ],
+  [
+   "Et ve balık hülasaları ve suları",
+   "16.03",
+   "21.03 ve 21.04 hariç tutmaları"
+  ],
+  [
+   "Kendi kendine kabaran un",
+   "11.01 / 11.02",
+   "21.02 hariç tutması"
+  ],
+  [
+   "Mikroorganizma kültürleri (maya hariç) ve aşılar",
+   "30.02",
+   "21.02 hariç tutması"
+  ],
+  [
+   "İlaç olarak hazırlanmış maya; tedavi dozunda aktif madde içeren bitki çayı",
+   "30.03 / 30.04",
+   "Not 1(f); 21.06 hariç tutması"
+  ],
+  [
+   "Enzimler; proteolitik enzimli et yumuşatıcı",
+   "35.07",
+   "Not 1(g); 21.06 hariç tutması"
+  ],
+  [
+   "Hardal tohumu, sabit hardal yağı, hardal küspesi",
+   "12.07 / 15.14 / 23.06",
+   "21.03 hariç tutması"
+  ],
+  [
+   "Tekstüre edilmemiş yağsız soya unu; protein izolatları",
+   "23.04 / 35.04",
+   "21.06 hariç tutması"
+  ],
+  [
+   "Esası koku verici madde olan içecek müstahzarı",
+   "33.02",
+   "21.06 hariç tutması"
+  ],
+  [
+   "Çorbalık konserve sebze karışımı",
+   "20.04 / 20.05",
+   "21.04 hariç tutması"
+  ],
+  [
+   "Kakao içeren gıda takviyesi; nikotinli sakız",
+   "18.06 / 24.04",
+   "21.06 hariç tutması"
+  ],
+  [
+   "Hazır içecek (doğrudan içilebilir)",
+   "Fasıl 22",
+   "21.01 ve 21.06 hariç tutmaları"
+  ]
+ ],
+ "tuzaklar": [
+  "<b>Kahve ikamesinde az miktar kahve bile faslı değiştirir.</b> Herhangi bir oranda kahve içeren kavrulmuş ikame 09.01; kahvesiz arpa kahvesi, malt kahvesi ve kavrulmuş hindiba 21.01. Kahveli ikamenin hülasası ise yine 21.01 (Not 2).",
+  "<b>Aromalı çay Fasıl 9’da, çay hülasası Fasıl 21’de.</b> Çay, süt tozu ve şekerden oluşan çay müstahzarı da 21.01’dedir.",
+  "<b>Maya ile otolize maya ayrıdır.</b> Canlı veya cansız maya 21.02; fermentasyonu başlatamayan otolize maya ve maya hülasaları 21.06.",
+  "<b>Kabartma tozu 21.02, kabartma tozlu un 11.01 / 11.02.</b> Az miktarda kabartma tozu katılmış un değirmencilik ürünü olarak kalır.",
+  "<b>Homojenize bileşik gıdada üç şart vardır.</b> İki veya daha fazla temel bileşen, bebek/küçük çocuk veya diyet amaçlı perakende sunum ve net ağırlığı 250 gr’ı geçmeyen kap. Tek bileşenli homojenize ürünler genellikle Fasıl 16 veya 20.",
+  "<b>%20 kuralı sos ve çorbaya işlemez.</b> Küçük et parçalı bolonez sosu 21.03’te, etli çorba 21.04’te kalır (Fasıl 21 Not 1(e), Fasıl 16 Not 2).",
+  "<b>Dondurma kakaoya bakmaz, karışımı ise esasına bakar.</b> Dondurma kakao oranı ne olursa olsun 21.05; dondurma tozu ve karışımları esasına göre 18.06, 19.01 veya 21.06.",
+  "<b>Yemeklik şarap içki değildir.</b> Yemek pişirmek için hazırlanıp içilmeye elverişsiz hale getirilen şarap veya konyak 21.03; sirke ise daima 22.09.",
+  "<b>Koku esaslı baz 33.02, gıda esaslı baz 21.06.</b> Bitkisel hülasa ve asitlerle hazırlanan, suyla seyreltilerek içecek yapılan bileşik müstahzarlar 21.06; esası koku verici madde olanlar 33.02.",
+  "<b>Soya üçe ayrılır.</b> Tekstüre edilmemiş yağsız soya unu 23.04, tekstüre soya proteini ve protein konsantresi 21.06, protein izolatı 35.04."
+ ],
+ "hafiza": {
+  "kanca": "KA – MA – SO – ÇO – DO – Dİ",
+  "aciklama": "<b>KA</b>hve-çay 21.01 · <b>MA</b>ya 21.02 · <b>SO</b>s 21.03 · <b>ÇO</b>rba 21.04 · <b>DO</b>ndurma 21.05 · <b>Dİ</b>ğer 21.06. Görsel: bir sofra kurun; kahveyle başlayın, mayalı ekmeği sosla yiyin, çorbayı için, dondurmayla bitirin; sofrada kalan her şey “diğer”dir."
+ },
+ "sinav_odagi": [
+  "Fasıl 21 ürünleri çıkmış sorularda daha çok “aynı fasıl / farklı fasıl” ve bölüm kapsamı sorularında seçenek olarak yer almıştır.",
+  "Dondurma (21.05), ketçap (21.03), canlı maya (21.02) ve çay hülasasının (21.01) aynı fasılda toplandığı; bu dörtlünün karışık fasıllı gruplarla karıştırılması.",
+  "Bira mayası (21.02) ile kavrulmuş hindibanın (21.01) aynı fasılda yer aldığının “aynı fasılda sınıflandırılmaz” kalıbında sorulması.",
+  "Fasıl başlığının bölüm kapsamıyla eşleştirilmesi: “Yenilen çeşitli gıda müstahzarları” Bölüm II’de değil, Bölüm IV’tedir.",
+  "Et suyunun 21.04 ile doğru eşleştirme olarak kullanılması; karidesli mantı setinde çorba tozunun setin esas niteliğini belirlememesi.",
+  "GYK 3(b) set örneklerinde hazır kahve (21.01) ile fincanın set sayılmaması; spagetti setinde domates sosunun (21.03) asli niteliği belirlememesi."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Aşağıdaki seçeneklerden hangisinde aynı fasılda yer almayan eşya bulunmaktadır?",
+   "secenekler": [
+    "Kontakt lens, sinema kamerası, kalp pili, takometre",
+    "Dondurma, ketçap, canlı maya, çay hülasası",
+    "Nükleer reaktör, bilyalı yatak, gemi pervanesi, yürüyen merdiven",
+    "Mikrofon, boş CD, LED ampul, buhar türbini",
+    "Kopra, pamuk tohumu, şeker kamışı, ginseng kökü"
+   ],
+   "cevap": "D",
+   "aciklama": "B şıkkındaki dört eşyanın tamamı Fasıl 21’dedir: dondurma 21.05, ketçap 21.03, canlı maya 21.02, çay hülasası 21.01. D şıkkında buhar türbini makine faslında (84.06), mikrofon, boş CD ve ampul ise elektrikli eşya faslında (Fasıl 85) yer aldığından aynı fasılda olmayan eşya bu gruptadır."
+  }
+ ],
+ "ozet": [
+  "Kahve içeren ikame 09.01; kahvesiz ikame, kavrulmuş hindiba, kahve ve çay hülasaları ile müstahzarları 21.01.",
+  "Maya ve hazır kabartma tozu 21.02; otolize maya 21.06; enzimler 35.07.",
+  "Sos, çeşni, hardal 21.03; çorba ve et suyu 21.04; %20 et kuralı bunlara uygulanmaz.",
+  "Homojenize bileşik gıda: 2+ temel bileşen, bebek/diyet amaçlı, en çok 250 gr’lık kap → 21.04.",
+  "Dondurma kakao oranına bakılmaksızın 21.05; dondurma karışımları esas maddelerine göre.",
+  "21.06 son durak: başka hiçbir pozisyona girmeyen gıda müstahzarları; tedavi dozu varsa Fasıl 30, koku esaslıysa 33.02."
+ ],
+ "sorular": [
+  {
+   "soru": "Tarife Cetveline göre, kahve içermeyen, kavrulmuş arpadan elde edilen ve sıcak suyla demlenerek kahve yerine kullanılan “arpa kahvesi” hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "09.01",
+    "11.07",
+    "10.03",
+    "21.01",
+    "19.04"
+   ],
+   "cevap": "D",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "21.01 Açıklama Notu, sıcak suyla demlendiğinde kahve yerine kullanılabilen kavrulmuş ürünleri (arpa kahvesi, malt kahvesi gibi) bu pozisyona alır; Fasıl 19 Genel Açıklamaları da kavrulmuş arpa gibi kahve ikamelerini 21.01’e gönderir. Ürün kahve içerseydi 09.01’e girerdi; kavrulmuş olması onu 19.04’ün kahvaltılık gevreklerine dönüştürmez.",
+   "dayanak": "Fasıl 21 Not 1(b); 21.01 Açıklama Notu; Fasıl 19 Genel Açıklamalar."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 21.01 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Kafeini alınmış kahveden elde edilen instant kahve",
+    "Aromalandırılmış siyah çay",
+    "Kavrulmuş ve öğütülmüş kahve ile bitkisel katı yağdan yapılmış kahve hamuru",
+    "Çay, süt tozu ve şeker karışımından oluşan çay müstahzarı",
+    "Kahve ikamesi olacağı açıkça belli şekilde hazırlanmış kavrulmuş malt"
+   ],
+   "cevap": "B",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Fasıl 21 Not 1(c) ve 21.01 Açıklama Notu, aromalandırılmış çayı fasıl dışında bırakır (09.02). Instant kahve, kahve hamuru, çay + süt tozu + şeker karışımı ve kahve ikamesi olarak hazırlanmış kavrulmuş malt 21.01’de sayılmıştır.",
+   "dayanak": "Fasıl 21 Not 1(c); 21.01 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden farklı bir tarife pozisyonunda sınıflandırılır?",
+   "secenekler": [
+    "Mayonez",
+    "Worcester sosu",
+    "Öğütülmüş kereviz tohumu ile sofra tuzundan kereviz tuzu",
+    "Yemek pişirmek için hazırlanmış, içilmeye elverişsiz şarap",
+    "Esası amino asit ve sodyum klorür olan protein hidrolizatı"
+   ],
+   "cevap": "E",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Mayonez, Worcester sosu, kereviz tuzu ve yemeklik olarak hazırlanmış içilmeye elverişsiz şarap 21.03 Açıklama Notunda örnek olarak sayılmıştır. Gıda müstahzarlarında katkı olarak kullanılan, amino asit ve sodyum klorürden oluşan protein hidrolizatları ise 21.03’ten hariç tutulup 21.06’ya gönderilmiştir.",
+   "dayanak": "21.03 ve 21.06 Açıklama Notları; Fasıl 22 Not 1(a)."
+  },
+  {
+   "soru": "Tarife Cetvelinin 21. Fasıl notlarına göre, 21.04 pozisyonu anlamında “homojenize edilmiş bileşik gıda müstahzarları” için aşağıdakilerden hangisi <b>doğrudur</b>?",
+   "secenekler": [
+    "En az iki temel bileşen içerir; bebek veya diyet amaçlı, en çok 250 gr’lık kaplarda sunulur.",
+    "Tek bir temel bileşenden oluşur ve net ağırlığı 500 gr’ı geçmeyen kaplarda perakende satılır.",
+    "Temel bileşenlerin gözle görülebilir parçalarını hiçbir miktarda içeremez.",
+    "Ağırlıkça %20’den fazla et içeriyorsa her durumda Fasıl 16’da sınıflandırılır.",
+    "Kap ağırlığına bakılmaksızın bebekler için hazırlanan tüm homojenize gıdaları kapsar."
+   ],
+   "cevap": "A",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 21 Not 3’e göre bu ürünler et, balık, sebze, meyve gibi iki veya daha fazla temel bileşenin homojenize karışımıdır ve bebek, küçük çocuk veya diyet amaçlı olarak net ağırlığı 250 gr’ı geçmeyen kaplarda perakende satılır; gözle görülebilir küçük parçalar bulunabilir. %20 et kuralı Not 1(e) gereği 21.04 ürünlerine uygulanmaz.",
+   "dayanak": "Fasıl 21 Not 1(e) ve Not 3; 21.04 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, şeker hastaları için şeker yerine sorbitol ile tatlandırılmış sakız hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "17.04",
+    "29.05",
+    "21.06",
+    "24.04",
+    "30.04"
+   ],
+   "cevap": "C",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "21.06 Açıklama Notu, şeker yerine suni tatlandırıcı (sorbitol gibi) içeren tatlıları, sakızları ve benzerlerini (özellikle şeker hastaları için) bu pozisyonda sayar. Şeker içeren sakız 17.04’e, nikotinli sakız 24.04’e gider; sorbitolün kendisi kimyasal üründür.",
+   "dayanak": "21.06 Açıklama Notu."
+  },
+  {
+   "soru": "Bir ürün; esası vitaminler, mineraller ve amino asitler olan, tatlandırıcı ve aroma maddesi içeren tabletlerden oluşmakta ve “normal diyete ek gıda takviyesi” ibaresiyle perakende ambalajlarda sunulmaktadır. Ürün, beslenme eksiklikleri dışındaki hastalıklara karşı tedavi edici veya koruyucu etki sağlayacak miktarda aktif bileşen içermemektedir. Bu ürün hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "30.04",
+    "21.06",
+    "29.36",
+    "23.09",
+    "22.02"
+   ],
+   "cevap": "B",
+   "tip": "Senaryo",
+   "gerekce": "21.06 Açıklama Notu, esası vitamin, mineral, amino asit vb. olan ve normal diyete ek olarak gıda takviyesi diye adlandırılan müstahzarları kapsar; tatlandırıcı ve aroma içerebilirler. Belirli bir hastalığa karşı tedavi edici veya önleyici etki için yeterli aktif bileşen içerselerdi 30.03 / 30.04’e giderlerdi; tek başına vitamin 29.36’dadır.",
+   "dayanak": "21.06 Açıklama Notu (gıda takviyeleri)."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 21.02 pozisyonunda <b>yer almaz</b>?",
+   "secenekler": [
+    "Mayanın hidrolizi ile elde edilen, fermentasyonu başlatamayan otolize maya",
+    "Bira üretimi sırasında fermentasyon kaplarında oluşan bira mayası",
+    "Hayvan beslemede kullanılan, Candida türlerinden elde edilmiş kuru maya",
+    "Sodyum bikarbonat, tartarik asit ve nişastadan oluşan kabartma tozu",
+    "Kurutulmuş, artık yeterince aktif olmayan cansız ekmek mayası"
+   ],
+   "cevap": "A",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "21.02 Açıklama Notu otolize mayayı hariç tutar; 21.06 Açıklama Notu bunu, fermentasyonu başlatamayan ve yüksek protein değerine sahip maya hidrolizi ürünü olarak 21.06’da sayar. Bira mayası, Candida kökenli kuru mayalar, cansız mayalar ve hazır kabartma tozları 21.02’dedir.",
+   "dayanak": "21.02 ve 21.06 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetvelinin 21. Fasıl notlarına göre, herhangi bir oranda kahve içeren kavrulmuş kahve ikamelerinin hülasaları hangi pozisyonda yer alır?",
+   "secenekler": [
+    "09.01",
+    "21.06",
+    "13.02",
+    "22.02",
+    "21.01"
+   ],
+   "cevap": "E",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 21 Not 1(b) kahve içeren kavrulmuş kahve ikamelerini 09.01’e gönderir; ancak Not 2, bu ikamelerin hülasalarının 21.01’de yer aldığını hükme bağlar. Tuzak, ikamenin kendisiyle hülasasını aynı pozisyonda sanmaktır.",
+   "dayanak": "Fasıl 21 Not 1(b) ve Not 2."
+  },
+  {
+   "soru": "Aşağıdaki seçeneklerin hangisinde sayılan eşyanın <b>tamamı</b> Tarife Cetvelinin 21. Faslında yer alır?",
+   "secenekler": [
+    "Kabartma tozu – aromalandırılmış çay – mayonez",
+    "Hazır hardal – hardal tohumu – soya sosu",
+    "Bulyon tableti – şerbet – kavrulmuş hindiba",
+    "Kuru sebze karışımı (julienne) – domates ketçabı – dondurma",
+    "Kendi kendine kabaran un – canlı maya – instant kahve"
+   ],
+   "cevap": "C",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Et suyu tableti 21.04, şerbet 21.05, kavrulmuş hindiba 21.01’dedir. Diğer gruplarda fasıl dışı birer eşya vardır: aromalı çay 09.02, hardal tohumu 12.07, kuru sebze karışımı 07.12, kendi kendine kabaran un 11.01 / 11.02.",
+   "dayanak": "Fasıl 21 Not 1(a) ve 1(c); 21.01–21.05 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetveline göre, esası süt ve krema olan, kakao içeren çikolatalı dondurma hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "18.06",
+    "04.03",
+    "19.01",
+    "21.05",
+    "04.02"
+   ],
+   "cevap": "D",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "21.05, içinde herhangi bir oranda kakao bulunsun bulunmasın esası süt veya krema olan dondurmayı kapsar; Fasıl 18 Genel Açıklamaları da kakao içeren dondurmayı 18.06’dan hariç tutar. Dondurma karışımları ve tozları ise esas maddelerine göre 18.06, 19.01 veya 21.06’ya gider.",
+   "dayanak": "21.05 Açıklama Notu; Fasıl 18 Genel Açıklamalar."
+  },
+  {
+   "soru": "Tarife Cetveline göre hardal ile ilgili aşağıdaki ifadelerden hangileri <b>doğrudur</b>? I. Hardal unu, kullanım yeri ne olursa olsun 21.03 pozisyonunda yer alır. II. Hardal tohumlarından sabit yağın çıkarılmasından sonra kalan küspe 21.03 pozisyonunda yer alır. III. Hardal ununun sirke veya şarapla karıştırılmasıyla hazırlanan hazır hardal 21.03 pozisyonunda yer alır. IV. Yağı alınmış hardal tohumlarından elde edilen hardal unu da 21.03 pozisyonunda yer alır.",
+   "secenekler": [
+    "I ve II",
+    "II ve III",
+    "I ve IV",
+    "II, III ve IV",
+    "I, III ve IV"
+   ],
+   "cevap": "E",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "21.03 Açıklama Notuna göre hardal unu kullanım yeri ne olursa olsun buradadır ve tohumların yağının alınmış olup olmaması bunu etkilemez (I, IV doğru); hardal ununun sirke, üzüm suyu veya şarapla hazırlanmış hamuru da buradadır (III doğru). Sabit yağın çıkarılmasından kalan küspe ise 23.06’dadır (II yanlış).",
+   "dayanak": "21.03 Açıklama Notu (Hardal unu ve hazır hardal)."
+  },
+  {
+   "soru": "Genel Yorum Kurallarının açıklama notlarına göre, cam kavanoz içindeki hazır kahvenin (21.01) seramik fincan ve tabakla (69.12) birlikte karton kutu içinde perakende satışa sunulması halinde aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Takım oluşturmaz; her eşya kendi uygun pozisyonunda sınıflandırılır.",
+    "GYK 3(b) uyarınca takımın tamamı 21.01’de sınıflandırılır.",
+    "GYK 3(b) uyarınca takımın tamamı 69.12’de sınıflandırılır.",
+    "GYK 3(c) uyarınca takımın tamamı 69.12’de sınıflandırılır.",
+    "GYK 5(b) uyarınca fincan ve tabak ambalaj sayılır, eşya 21.01’dedir."
+   ],
+   "cevap": "A",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 3(b) Açıklama Notu, hazır kahve ile seramik fincan ve tabağın birlikte sunulmasını perakende takım oluşturmayan durumlara örnek verir; bu durumda her ürün tek başına uygun pozisyonunda sınıflandırılır. Fincan ve tabak kahvenin normal ambalajı olmadığından GYK 5(b) de uygulanmaz.",
+   "dayanak": "GYK 3(b) Açıklama Notu (X); GYK 5(b)."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 21. Faslında <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Arı sütü ile zenginleştirilmiş tabii bal",
+    "Esası vanilin olan yenilebilir tabletler",
+    "Sakarin ve laktozdan oluşan tatlandırıcı tabletler",
+    "İçinde az miktarda kahve bulunan, kavrulmuş hindiba esaslı kahve ikamesi",
+    "Yağı alınmış soya ununun bazı bileşenlerinin elimine edilmesiyle elde edilen protein konsantresi"
+   ],
+   "cevap": "D",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Herhangi bir oranda kahve içeren kavrulmuş kahve ikameleri Fasıl 21 Not 1(b) uyarınca 09.01’dedir; kahve oranının düşük olması sonucu değiştirmez. Arı sütlü bal, vanilin tabletleri, sakarin-laktoz tabletleri ve soya protein konsantresi 21.06 Açıklama Notunda sayılmıştır.",
+   "dayanak": "Fasıl 21 Not 1(b); 21.06 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre aşağıdaki eşya – pozisyon eşleştirmelerinden hangisi <b>yanlıştır</b>?",
+   "secenekler": [
+    "Soya sosu – 21.03",
+    "Otolize maya – 21.02",
+    "Şerbet – 21.05",
+    "Kahve hamuru – 21.01",
+    "Et suyu tableti – 21.04"
+   ],
+   "cevap": "B",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Otolize maya fermentasyonu başlatamayan bir maya hidrolizi ürünüdür; 21.02’den hariç tutulup 21.06’da sayılmıştır. Soya sosu 21.03, şerbet 21.05, kahve hamuru 21.01, et suyu tableti 21.04’tedir.",
+   "dayanak": "21.02 ve 21.06 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetvelinin 21. Fasıl notlarına göre, ağırlıkça %20’den fazla et, sosis, sakatat, kan, balık vb. içeren gıda müstahzarlarının Fasıl 16’ya gönderilmesi kuralı hangi pozisyonlardaki ürünlere uygulanmaz?",
+   "secenekler": [
+    "21.01 ve 21.02",
+    "21.05 ve 21.06",
+    "21.03 ve 21.04",
+    "21.04 ve 21.06",
+    "21.02 ve 21.03"
+   ],
+   "cevap": "C",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 21 Not 1(e), %20 kuralını 21.03 veya 21.04’te belirtilen ürünler dışında kalan müstahzarlara uygular; Fasıl 16 Not 2 de aynı istisnayı tekrarlar. Bu nedenle etli soslar 21.03’te, etli çorbalar ve homojenize bileşik gıdalar 21.04’te kalır; %20’yi aşan etli bir 21.06 müstahzarı ise Fasıl 16’ya gider.",
+   "dayanak": "Fasıl 21 Not 1(e); Fasıl 16 Not 2."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden farklı bir fasılda yer alır?",
+   "secenekler": [
+    "Hardal tohumu",
+    "Sirke ve tuzla hazırlanmış hazır hardal",
+    "Küçük et parçaları, domates püresi ve baharattan bolonez sosu",
+    "Kahve yerine kullanılan kavrulmuş incir",
+    "Ginseng hülasası ve glukoz karışımından ginseng çayı müstahzarı"
+   ],
+   "cevap": "A",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Hardal tohumu 21.03 Açıklama Notunda hariç tutulmuş ve 12.07’ye (Fasıl 12) gönderilmiştir. Hazır hardal ve bolonez sosu 21.03’te, kavrulmuş incirden kahve ikamesi 21.01’de, ginseng hülasası karışımları 21.06’da, yani hepsi Fasıl 21’dedir.",
+   "dayanak": "21.01, 21.03, 21.06 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetveline göre, kurutulmuş sebzeler, et hülasası, tuz ve baharattan oluşan, yalnızca su ilave edilip kaynatılarak tüketilen toz çorba hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "07.12",
+    "16.03",
+    "21.03",
+    "21.04",
+    "20.05"
+   ],
+   "cevap": "D",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "21.04 Açıklama Notu, yalnızca su, süt vb. katılmasını gerektiren çorba müstahzarlarını kapsar; esasları sebze, et hülasası vb. olabilir ve toz halinde sunulabilir. Kuru sebze karışımı (07.12) veya et hülasası (16.03) tek başına sunulsaydı kendi pozisyonlarına girerdi; soslar ise 21.03’tür.",
+   "dayanak": "21.04 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 21.06 pozisyonunda <b>yer almaz</b>?",
+   "secenekler": [
+    "Esası un, nişasta veya süt olmayan, sofralık jöle yapımına mahsus toz",
+    "Ahududu aromalı, renklendirilmiş şeker şurubu (limonata yapımına mahsus)",
+    "Esası şeker olan, yağ ve fındık içeren, pasta dolgusu olarak kullanılan hamur",
+    "Esası tereyağı olan, fırıncılık kaplarında kullanılan müstahzar",
+    "Dekstroz ilave edilmiş proteolitik enzimden oluşan et yumuşatıcı"
+   ],
+   "cevap": "E",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "21.06 Açıklama Notu, gıda maddesi içeren enzimatik müstahzarları (dekstroz vb. katılmış proteolitik enzimden et yumuşatıcılar) kapsamadığını ve bunların 35.07’de yer aldığını belirtir. Jöle tozu, aromalı şurup, şeker esaslı dolgu hamuru ve tereyağı esaslı fırıncılık müstahzarı 21.06’da sayılmıştır.",
+   "dayanak": "Fasıl 21 Not 1(g); 21.06 Açıklama Notu."
+  },
+  {
+   "soru": "Küçük et parçaları içeren ve ağırlıkça %25 et bulunan bolonez sosu, Fasıl 16 yerine 21.03 pozisyonunda sınıflandırılmaktadır. Bu sınıflandırmanın dayandığı Genel Yorum Kuralı hangisidir?",
+   "secenekler": [
+    "GYK 3(a): sosu en özel tanımlayan pozisyonun seçilmesi",
+    "GYK 1: pozisyon metni ile Fasıl 16 ve 21 notlarının hükmü",
+    "GYK 3(b): sosa asli niteliği domatesin vermesi",
+    "GYK 3(c): numara sırasına göre son pozisyonun seçilmesi",
+    "GYK 2(b): karışımdaki maddelerin ayrı ayrı sınıflandırılması"
+   ],
+   "cevap": "B",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "21.03 metni sosları açıkça sayar; Fasıl 21 Not 1(e) ve Fasıl 16 Not 2, %20 kuralını 21.03 ürünlerine uygulamaz. Sınıflandırma doğrudan pozisyon metni ve fasıl notlarından çıktığı için GYK 1 esastır; 3. kural ancak notlar ve metinler yetmediğinde devreye girer.",
+   "dayanak": "GYK 1; Fasıl 21 Not 1(e); Fasıl 16 Not 2; 21.03 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Hazır (instant) kahve",
+    "Kavrulmuş hindiba",
+    "Kola esanslı, karamelle renklendirilmiş şurup",
+    "Çay, süt tozu ve şeker karışımından çay müstahzarı",
+    "Kavrulmuş acı bakladan elde edilen kahve ikamesi"
+   ],
+   "cevap": "C",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Aromalandırılmış ve renklendirilmiş şuruplar (kola şurubu dahil) limonata ve diğer içeceklerin imalatında kullanılan müstahzarlar olarak 21.06’dadır. Instant kahve, kavrulmuş hindiba, çaylı müstahzar ve kavrulmuş acı bakla ikamesi 21.01’dedir.",
+   "dayanak": "21.01 ve 21.06 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetvelinin 21.06 Açıklama Notuna göre, içecek imalinde kullanılan müstahzarlarla ilgili aşağıdakilerden hangisi <b>doğrudur</b>?",
+   "secenekler": [
+    "Sunulduğu haliyle doğrudan içilebilen alkolsüz içecekler 21.06’dadır.",
+    "Esası bir veya daha fazla koku verici madde olan içecek müstahzarları 21.06’dadır.",
+    "Alkol içeren içecek müstahzarları 21.06’ya giremez, her durumda Fasıl 22’dedir.",
+    "Meyve suyu katılmış her türlü şurup 20.09’da meyve suyu olarak sınıflandırılır.",
+    "Seyreltilerek içecek yapılan, olduğu gibi içilmeyen müstahzarlar 21.06’dadır."
+   ],
+   "cevap": "E",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Açıklama Notuna göre alkol içersin içermesin, su, şarap veya alkolle basitçe seyreltilerek belirli bir içeceğin elde edildiği ve sunulduğu haliyle içilmeye elverişli olmayan müstahzarlar 21.06’dadır. Esası koku verici madde olanlar 33.02’ye, doğrudan içilebilenler Fasıl 22’ye gider.",
+   "dayanak": "21.06 Açıklama Notu (içecek müstahzarları)."
+  },
+  {
+   "soru": "Tarife Cetveline göre aşağıdakilerden hangileri 21.04 pozisyonunda <b>yer almaz</b>? I. Çorba yapımında kullanılsa da konserve edilmiş jülyen sebze karışımı II. Yalnızca ısıtılarak içilmeye hazır et suyu III. Kurutulmuş baklagil unları IV. Kakao içeren gıda müstahzarları",
+   "secenekler": [
+    "I ve II",
+    "II ve IV",
+    "I, III ve IV",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "cevap": "C",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "21.04 Açıklama Notu, çorba yapımında kullanılsalar bile 20.04 veya 20.05’teki konserve sebze karışımlarını (I), kurutulmuş baklagil unlarını (11.06) (III) ve kakao içeren gıda müstahzarlarını (genellikle 18.06 veya 19.01) (IV) hariç tutar. Sadece ısıtılarak içilmeye hazır et suları ise 21.04’tedir (II).",
+   "dayanak": "21.04 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre; canlı ekmek mayası (I), otolize maya (II), maya dışındaki mikroorganizma kültürleri (III), amilaz ve rennet gibi enzimler ise (IV) pozisyonunda sınıflandırılır. Boşlukları sırasıyla dolduran seçenek hangisidir?",
+   "secenekler": [
+    "21.02 / 21.06 / 30.02 / 35.07",
+    "21.02 / 21.02 / 30.02 / 35.07",
+    "21.06 / 21.02 / 35.07 / 30.02",
+    "21.02 / 21.06 / 21.02 / 35.07",
+    "21.02 / 21.06 / 30.02 / 21.06"
+   ],
+   "cevap": "A",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Canlı mayalar 21.02’de, otolize maya 21.06’dadır. 21.02 Açıklama Notu, maya dışındaki mikroorganizma kültürlerini ve aşıları 30.02’ye, amilaz, pepsin, rennet gibi enzimleri 35.07’ye gönderir.",
+   "dayanak": "21.02 ve 21.06 Açıklama Notları; Fasıl 21 Not 1(g)."
+  },
+  {
+   "soru": "Bir firma; kurutulmuş ve kesilmiş ıhlamur, adaçayı ve nane yapraklarının karışımından oluşan, bu haliyle tüketilmeyip sıcak suda demlenerek bitki çayı hazırlanmasında kullanılan bir ürün ithal etmektedir. Ürün, belirli bir hastalığa karşı tedavi edici dozda aktif madde içermemekte ve esas karakterini 9. Fasıl türleri vermemektedir. Bu ürün hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "12.11",
+    "09.02",
+    "30.04",
+    "21.06",
+    "13.02"
+   ],
+   "cevap": "D",
+   "tip": "Senaryo",
+   "gerekce": "21.06 Açıklama Notu, farklı türdeki bitki veya bitki parçalarının bu haliyle tüketilmeyen, bitki çayı yapımında kullanılan karışımlarını kapsar. Tedavi edici dozda aktif bileşen içerselerdi 30.03 / 30.04’e, esas karakterlerini 9. Fasıl türleri verseydi Fasıl 9’a giderlerdi; tek tür bitki 12.11’de kalırdı.",
+   "dayanak": "21.06 Açıklama Notu (bitki çayı karışımları)."
+  },
+  {
+   "soru": "Tarife Cetveline göre, yağı alınmış soya fasulyesi unundan elde edilen ve lifli bir yapı kazandırılmış (tekstüre edilmiş) soya proteini hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "23.04",
+    "21.06",
+    "35.04",
+    "12.08",
+    "19.04"
+   ],
+   "cevap": "B",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "21.06 Açıklama Notu, soya fasulyesi unundan protein konsantratlarını ve tekstüre edilmiş protein maddelerini bu pozisyonda sayar. Tekstüre edilmemiş yağsız soya unu 23.04’te, protein izolatları 35.04’te kalır; 23.04 Açıklama Notu da tekstüre soya ununu 21.06’ya gönderir.",
+   "dayanak": "21.06 ve 23.04 Açıklama Notları."
+  }
+ ]
+}

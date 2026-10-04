@@ -1,0 +1,973 @@
+{
+ "tur": "fasil",
+ "fasil": 28,
+ "baslik": "Anorganik kimyasallar; kıymetli metallerin, radyoaktif elementlerin, nadir toprak metallerinin ve izotoplarının organik veya anorganik bileşikleri",
+ "bolum": "VI",
+ "oz": {
+  "vurgu": "Fasıl 28’in temel testi: Eşya izole bir kimyasal element veya kimyasal olarak belirli bir yapıda izole bir inorganik bileşik mi (Fasıl 28 Not 1)? Değilse kural olarak fasıl dışındadır; metnin açıkça saydığı istisnalar (karbon karası, oleum, ticari kalsiyum hipoklorit, kıymetli metal ve nadir toprak bileşikleri, radyoaktif ürünler vb.) hariç. Kimyaca saf olsa bile sodyum klorür, magnezyum oksit, gübre tuzları ve metaller Fasıl 28’e girmez.",
+  "maddeler": [
+   "Safsızlık, sudaki çözelti, yalnız emniyet veya nakliye gereği yapılmış başka çözücüde çözelti, stabilizan, topaklanmayı ve tozlanmayı önleyici madde ile tanıtıcı renklendirici faslı değiştirmez (Not 1).",
+   "Karbon bileşiklerinden yalnız Not 2’de sayılanlar (karbon oksitleri, siyanürler, karbonatlar, karbürler, karbon disülfür, fosgen vb.) Fasıl 28’dedir; diğerleri Fasıl 29’a gider.",
+   "Bölüm VI Not 1: 28.44 ve 28.45 bütün tarifeye; 28.43, 28.46 ve 28.52 yalnız Bölüm VI’nın diğer pozisyonlarına karşı önceliklidir.",
+   "Ölçülü dozda veya perakende satış için hazırlanan ürünler Bölüm VI Not 2’deki pozisyonlara (30.04, 33.03–33.07, 35.06, 37.07, 38.08 vb.) gider; 28.43–28.46 ve 28.52 ürünleri hariç.",
+   "28.26–28.42 yalnız metal, amonyum ve peroksi tuzlarına uygulanır; aksi belirtilmedikçe çift veya kompleks tuzlar 28.42’dedir (Not 5)."
+  ]
+ },
+ "karar_tablosu": {
+  "aciklama": "Soruları yukarıdan aşağıya sırayla sorun; ilk “evet” cevabı sonucu verir. İlk dört satır Bölüm VI’nın öncelik notlarıdır.",
+  "satirlar": [
+   [
+    "1",
+    "Radyoaktif element, radyoaktif izotop veya bunların bileşiği mi? (radyoaktif cevher hariç)",
+    "<b>28.44</b> (bütün tarifeye karşı öncelik)"
+   ],
+   [
+    "2",
+    "Radyoaktif olmayan izotop veya bileşiği mi? (döteryum, ağır su, karbon 13)",
+    "<b>28.45</b>"
+   ],
+   [
+    "3",
+    "Kıymetli metal (kolloidal, bileşik, amalgam), nadir toprak metali, itriyum, skandiyum bileşiği veya civa bileşiği mi?",
+    "<b>28.43</b> / <b>28.46</b> / <b>28.52</b> (Bölüm VI içinde öncelik)"
+   ],
+   [
+    "4",
+    "Ölçülü dozda veya perakende satış için hazırlanmış mı? (ilaç, kozmetik, tutkal, fotoğrafçılık, haşarat ilacı)",
+    "Bölüm VI Not 2: 30.04, 30.05, 30.06, 32.12, 33.03–33.07, 35.06, 37.07, 38.08"
+   ],
+   [
+    "5",
+    "Bölüm V ürünü, Fasıl 31 gübre tuzu, Bölüm XV veya Fasıl 71 metali ya da Not 3’te sayılan diğer bir ürün mü?",
+    "Saf olsa bile Fasıl 28 dışı · ancak alkali, toprak alkali, nadir toprak metalleri ve civa <b>28.05</b>"
+   ],
+   [
+    "6",
+    "Kimyasal olarak belirli bir yapıda değil mi? (karışım, su dışı çözücüde çözelti, kolloidal dispersiyon)",
+    "Metinde sayılan istisnalar* dışında Fasıl 28 dışı (çoğunlukla <b>38.24</b>)"
+   ],
+   [
+    "7",
+    "Karbon içeriyor mu?",
+    "Not 2 listesindeyse Fasıl 28; değilse <b>Fasıl 29</b>"
+   ],
+   [
+    "8",
+    "İzole element mi?",
+    "Halojen <b>28.01</b> · kükürt <b>28.02</b> · karbon <b>28.03</b> · diğer ametaller ve asal gazlar <b>28.04</b> · alkali, toprak alkali, nadir toprak metalleri, civa <b>28.05</b>"
+   ],
+   [
+    "9",
+    "İnorganik asit, ametal oksidi ya da ametalin halojenli veya kükürtlü bileşiği mi?",
+    "<b>28.06</b>–<b>28.11</b> · halojenli <b>28.12</b> · kükürtlü <b>28.13</b>"
+   ],
+   [
+    "10",
+    "İnorganik baz veya metal oksidi, hidroksidi, peroksidi mi?",
+    "<b>28.14</b>–<b>28.24</b>; özel pozisyonu yoksa <b>28.25</b>"
+   ],
+   [
+    "11",
+    "Metal, amonyum veya peroksi tuzu mu?",
+    "Anyona göre <b>28.26</b>–<b>28.41</b> · diğer tuzlar ve çift/kompleks tuzlar <b>28.42</b>"
+   ],
+   [
+    "12",
+    "Hiçbiri değilse",
+    "Hidrojen peroksit <b>28.47</b> · karbür <b>28.49</b> · hidrür, nitrür, azotür, silisür, borür <b>28.50</b> · fosfür, damıtık su, sıvı veya sıkıştırılmış hava, adi metal amalgamı, diğerleri <b>28.53</b>"
+   ]
+  ],
+  "dipnot": "* Kimyasal olarak belirli bir yapıda olmadığı halde Fasıl 28’de kalanlar: kolloidal kükürt (28.02), karbon karası (28.03), oleum (28.07), sülfonitrik asitler (28.08), polifosforik asitler (28.09), ticari fosfor trisülfür (28.13), suni korendon (28.18), toprak boyalar (28.21), ticari kobalt oksitler (28.22), minyum ve minoranj (28.24), ticari kalsiyum hipoklorit (28.28), polisülfürler (28.30), organik maddelerle stabilize ditiyonit ve sülfoksilatlar (28.31), polifosfatlar (28.35), ticari amonyum karbonat (28.36), ticari alkali metal silikatlar (28.39), alüminosilikatlar (28.42), 28.43–28.46, karbürler (28.49), 28.50, civa bileşikleri (28.52), fosfürler, sıvı ve sıkıştırılmış hava, amalgamlar (28.53)."
+ },
+ "pozisyon_haritasi": [
+  [
+   "28.01",
+   "Flor, klor, brom, iyot",
+   "Halojenler; astatin 28.44",
+   "Sıvı klor, kristal iyot"
+  ],
+  [
+   "28.02",
+   "Süblime, çöktürülmüş, kolloidal kükürt",
+   "Ham ve Frasch kükürdü 25.03",
+   "Kükürt çiçeği"
+  ],
+  [
+   "28.03",
+   "Karbon (karbon karası vb.)",
+   "Grafit, aktif karbon, elmas hariç",
+   "Karbon karası, asetilen karası"
+  ],
+  [
+   "28.04",
+   "Hidrojen, asal gazlar, diğer ametaller",
+   "Radon 28.44; döteryum 28.45",
+   "Argon, azot, oksijen, silisyum, fosfor"
+  ],
+  [
+   "28.05",
+   "Alkali, toprak alkali, nadir toprak metalleri; civa",
+   "Magnezyum, berilyum Fasıl 81",
+   "Sodyum, kalsiyum, mischmetal, civa"
+  ],
+  [
+   "28.06",
+   "Hidrojen klorür; klorosülfürik asit",
+   "Sülfüril klorür 28.12",
+   "Hidroklorik asit (tuz ruhu)"
+  ],
+  [
+   "28.07",
+   "Sülfürik asit; oleum",
+   "Kükürt trioksit 28.11",
+   "Sülfürik asit, dumanlı sülfürik asit"
+  ],
+  [
+   "28.08",
+   "Nitrik asit; sülfonitrik asitler",
+   "Sülfamik asit 28.11",
+   "Nitrik asit"
+  ],
+  [
+   "28.09",
+   "Difosfor pentaoksit; fosforik, polifosforik asitler",
+   "Fosfonik, fosfinik asit 28.11",
+   "Ortofosforik asit"
+  ],
+  [
+   "28.10",
+   "Bor oksitleri; borik asitler",
+   "Doğal ham borik asit ≤%85 → 25.28",
+   "Borik asit"
+  ],
+  [
+   "28.11",
+   "Diğer inorganik asitler; ametal oksitleri",
+   "Kompleks asitler (Not 4)",
+   "Karbon dioksit, kuru buz, sentetik silika"
+  ],
+  [
+   "28.12",
+   "Ametal halojenürleri ve oksihalojenürleri",
+   "Karbon tetraklorür 29.03",
+   "Fosgen, fosfor triklorür, tiyonil klorür"
+  ],
+  [
+   "28.13",
+   "Ametal sülfürleri; ticari fosfor trisülfür",
+   "Doğal arsenik sülfürleri 25.30",
+   "Karbon disülfür"
+  ],
+  [
+   "28.14",
+   "Amonyak (susuz veya sulu çözelti)",
+   "Alkollü çözelti 38.24",
+   "Sıvı amonyak, amonyaklı su"
+  ],
+  [
+   "28.15",
+   "Sodyum, potasyum hidroksit; peroksitleri",
+   "Soda (28.36) ile karıştırmayın",
+   "Kostik soda, kostik potas"
+  ],
+  [
+   "28.16",
+   "Mg hidroksit ve peroksiti; Sr, Ba oksitleri",
+   "Magnezyum oksit 25.19",
+   "Magnezyum hidroksit, baryum peroksit"
+  ],
+  [
+   "28.17",
+   "Çinko oksit; çinko peroksit",
+   "Çinko hidroksit 28.25",
+   "Çinko beyazı"
+  ],
+  [
+   "28.18",
+   "Suni korendon; alüminyum oksit ve hidroksit",
+   "Doğal korendon, zımpara 25.13",
+   "Alümina, aktif alümin"
+  ],
+  [
+   "28.19",
+   "Krom oksitleri ve hidroksitleri",
+   "Kromit cevheri 26.10",
+   "Krom trioksit"
+  ],
+  [
+   "28.20",
+   "Manganez oksitleri",
+   "Hidroksitler 28.25; piroluzit 26.02",
+   "Manganez dioksit"
+  ],
+  [
+   "28.21",
+   "Demir oksitleri, hidroksitleri; toprak boyalar",
+   "Fe2O3 olarak ≥%70 kombine demir",
+   "Kırmızı demir oksit pigmenti"
+  ],
+  [
+   "28.22",
+   "Kobalt oksitleri ve hidroksitleri",
+   "Ticari kobalt oksitler dahil",
+   "Kobalt oksit"
+  ],
+  [
+   "28.23",
+   "Titan oksitleri",
+   "Pigment için işlenmişi 32.06",
+   "Titan dioksit"
+  ],
+  [
+   "28.24",
+   "Kurşun oksitleri; minyum, minoranj",
+   "Kimyaca belirli olmasa da",
+   "Litarj, minyum (kırmızı kurşun)"
+  ],
+  [
+   "28.25",
+   "Hidrazin, hidroksilamin; diğer baz ve metal oksitleri",
+   "Önceki pozisyonlarda yer almayanlar",
+   "Lityum hidroksit, bakır oksit, zirkonya"
+  ],
+  [
+   "28.26",
+   "Florürler; kompleks flor tuzları",
+   "Ametal florürleri 28.12",
+   "Sentetik kriyolit, sodyum florür"
+  ],
+  [
+   "28.27",
+   "Klorürler, bromürler, iyodürler (oksi dahil)",
+   "NaCl 25.01; KCl Fasıl 31",
+   "Kalsiyum klorür, nişadır"
+  ],
+  [
+   "28.28",
+   "Hipokloritler; kloritler; hipobromitler",
+   "Ticari kalsiyum hipoklorit dahil",
+   "Javel suyu, ağartma tozu"
+  ],
+  [
+   "28.29",
+   "Kloratlar, perkloratlar, bromatlar, iyodatlar",
+   "Metal tuzları; asitleri 28.11",
+   "Sodyum klorat, amonyum perklorat"
+  ],
+  [
+   "28.30",
+   "Sülfürler; polisülfürler",
+   "Ametal sülfürleri 28.13",
+   "Sodyum sülfür"
+  ],
+  [
+   "28.31",
+   "Ditiyonitler ve sülfoksilatlar",
+   "Organik stabilize olanlar dahil",
+   "Sodyum ditiyonit (hidrosülfit)"
+  ],
+  [
+   "28.32",
+   "Sülfitler; tiyosülfatlar",
+   "Ditiyonitler 28.31",
+   "Sodyum metabisülfit, sodyum tiyosülfat"
+  ],
+  [
+   "28.33",
+   "Sülfatlar; şaplar; persülfatlar",
+   "Amonyum ve potasyum sülfat Fasıl 31",
+   "Bakır sülfat, şap, Glauber tuzu"
+  ],
+  [
+   "28.34",
+   "Nitritler; nitratlar",
+   "Sodyum ve amonyum nitrat Fasıl 31",
+   "Potasyum nitrat (güherçile)"
+  ],
+  [
+   "28.35",
+   "Fosfinatlar, fosfonatlar, fosfatlar, polifosfatlar",
+   "MAP, DAP 31.05; doğal fosfat 25.10",
+   "Sodyum tripolifosfat, dikalsiyum fosfat"
+  ],
+  [
+   "28.36",
+   "Karbonatlar; peroksikarbonatlar",
+   "Doğal karbonatlar Fasıl 25–26",
+   "Soda, sodyum bikarbonat"
+  ],
+  [
+   "28.37",
+   "Siyanürler, oksisiyanürler, kompleks siyanürler",
+   "Prusya mavisi 32.06",
+   "Sodyum siyanür, ferrosiyanürler"
+  ],
+  [
+   "28.39",
+   "Silikatlar; ticari alkali metal silikatlar",
+   "Doğal silikatlar 25.30",
+   "Sodyum silikat (su camı)"
+  ],
+  [
+   "28.40",
+   "Boratlar; perboratlar",
+   "Doğal sodyum boratlar 25.28",
+   "Rafine boraks, sodyum perborat"
+  ],
+  [
+   "28.41",
+   "Oksometalik ve peroksometalik asit tuzları",
+   "Kompleks flor tuzları 28.26",
+   "Potasyum permanganat, sodyum dikromat"
+  ],
+  [
+   "28.42",
+   "İnorganik asitlerin diğer tuzları",
+   "Çift ve kompleks tuzlar; azotürler hariç",
+   "Sentetik zeolit, tiyosiyanatlar, arsenatlar"
+  ],
+  [
+   "28.43",
+   "Kıymetli metaller: kolloidal, bileşik, amalgam",
+   "Bölüm VI içinde öncelik",
+   "Gümüş nitrat, kolloidal gümüş"
+  ],
+  [
+   "28.44",
+   "Radyoaktif element, izotop ve bileşikleri",
+   "Tüm tarifeye öncelik; 74 Bq/g",
+   "Uranyum, plütonyum, kobalt 60"
+  ],
+  [
+   "28.45",
+   "Diğer (kararlı) izotoplar ve bileşikleri",
+   "Radyoaktif olmayanlar",
+   "Ağır su, döteryum"
+  ],
+  [
+   "28.46",
+   "Nadir toprak, itriyum, skandiyum bileşikleri",
+   "Doğal mineraller Fasıl 25–26",
+   "Seryum oksit, seryum nitrat"
+  ],
+  [
+   "28.47",
+   "Hidrojen peroksit",
+   "Üre ile katılaştırılmış dahil",
+   "Stabilize hidrojen peroksit çözeltisi"
+  ],
+  [
+   "28.49",
+   "Karbürler",
+   "Aglomere alet uçları 82.09",
+   "Kalsiyum karbür, silisyum karbür"
+  ],
+  [
+   "28.50",
+   "Hidrürler, nitrürler, azotürler, silisürler, borürler",
+   "28.49 karbürleri hariç",
+   "Kalsiyum hidrür, sodyum azotür"
+  ],
+  [
+   "28.52",
+   "Civa bileşikleri (amalgam hariç)",
+   "Belirli yapıda olsun olmasın",
+   "Kalomel, civa oksit"
+  ],
+  [
+   "28.53",
+   "Fosfürler; damıtık su; sıvı hava; amalgamlar",
+   "Ferro fosfor 72.02; kıymetli amalgam 28.43",
+   "Damıtılmış su, bakır fosfür"
+  ]
+ ],
+ "notlar": [
+  [
+   "Bölüm VI Not 1",
+   "(A) 28.44 veya 28.45 tanımına uyan bütün ürünler (radyoaktif cevherler hariç) bu pozisyonlarda yer alır, tarifenin başka bir pozisyonuna girmez (radyoaktif sodyum klorür, radyoaktif altın → 28.44; karbon izotopu 28.03 değil 28.45). (B) (A) saklı kalmak kaydıyla 28.43, 28.46 veya 28.52 tanımına uyan ürünler bu pozisyonlarda yer alır ve <b>Bölüm VI’nın</b> başka pozisyonuna girmez (gümüş kazeinat 35.01 değil 28.43; perakende fotoğrafçılık gümüş nitratı 37.07 değil 28.43). Diğer bölümlerle çatışmada notlar ve GYK uygulanır: gadolinit 28.46 değil 25.30."
+  ],
+  [
+   "Bölüm VI Not 2",
+   "Not 1 saklı kalmak kaydıyla, ölçülü dozda veya perakende satış için hazırlanmış olmaları nedeniyle 30.04, 30.05, 30.06, 32.12, 33.03, 33.04, 33.05, 33.06, 33.07, 35.06, 37.07 veya 38.08’e giren ürünler bu pozisyonlarda kalır (tedavi için perakende kükürt 30.04; tutkal olarak perakende dekstrin 35.06)."
+  ],
+  [
+   "Bölüm VI Not 3",
+   "Tamamı veya bir kısmı Bölüm VI’da yer alan ve Bölüm VI veya VII ürünü elde etmek için birbirine karıştırılacak iki veya daha fazla maddeden oluşan set; maddeler (a) yeniden bir araya getirilmeden birlikte kullanılacağı açıkça belli, (b) birlikte sunulmuş ve (c) niteliği veya nispi miktarları itibarıyla birbirini tamamlayıcı ise elde edilecek ürünün pozisyonunda sınıflandırılır. Ön karıştırma olmadan birbirini izleyerek kullanılacak setlere bu not uygulanmaz: perakende ise genellikle GYK 3(b), değilse her madde ayrı sınıflandırılır."
+  ],
+  [
+   "Bölüm VI Not 4",
+   "Eşya ismen veya işlevi itibarıyla Bölüm VI’daki bir veya daha fazla pozisyona ve aynı zamanda 38.27’ye uyuyorsa ismine veya işlevine uygun pozisyonda sınıflandırılır, 38.27’de sınıflandırılmaz."
+  ],
+  [
+   "Fasıl 28 Not 1",
+   "Metinde aksi belirtilmedikçe fasıl yalnız şunları kapsar: (a) izole kimyasal elementler ve belirli kimyasal yapıda izole bileşikler (safsızlık içersin içermesin); (b) bunların sudaki çözeltileri; (c) diğer çözücülerdeki çözeltileri, ancak yalnız emniyet veya nakliye gereği mutat ve kaçınılmaz şekilde yapılmış ve çözücü ürünü özel kullanıma elverişli kılmamışsa; (d) koruma ve nakil için gerekli stabilizan (topaklanmayı önleyici dahil) katılmış olanlar; (e) tanımayı kolaylaştırmak veya emniyet için tozlanmayı önleyici ya da renklendirici madde katılmış olanlar (özel kullanıma elverişli kılmamak şartıyla)."
+  ],
+  [
+   "Fasıl 28 Not 2",
+   "28.31 (organik maddelerle stabilize ditiyonit ve sülfoksilatlar), 28.36 (inorganik bazların karbonat ve peroksikarbonatları), 28.37 (siyanürler, kompleks siyanürler), 28.42 (fülminat, siyanat, tiyosiyanatlar), 28.43–28.46 ve 28.52’deki organik ürünler ve 28.49 karbürleri dışında yalnız şu karbon bileşikleri fasıldadır: karbon oksitleri ve siyan asitleri (28.11); karbonun halojen oksitleri (28.12); karbon disülfür (28.13); tiyokarbonatlar, selenokarbonatlar, reinekatlar vb. (28.42); üre ile katılaştırılmış hidrojen peroksit (28.47); karbon oksisülfür, tiyokarbonil halojenürleri, siyanojen ve halojenürleri, siyanamit ve metal türevleri (28.53; kalsiyum siyanamit hariç → Fasıl 31)."
+  ],
+  [
+   "Fasıl 28 Not 3",
+   "Bölüm VI Not 1 saklı kalmak üzere hariç: (a) sodyum klorür, magnezyum oksit (kimyaca saf olsun olmasın) ve Bölüm V’in diğer ürünleri; (b) Not 2 dışındaki organo-inorganik bileşikler; (c) Fasıl 31 Not 2, 3, 4 veya 5’teki ürünler; (d) 32.06’daki luminofor inorganik ürünler, 32.07’deki cam hamuru ve toz, granül veya pul cam; (e) suni grafit (38.01), yangın söndürücü dolgular ve bombalar (38.13), perakende mürekkep çıkarıcılar (38.24), alkali veya toprak alkali metal halojenürlerinden her biri <b>2,5 g veya daha ağır</b> kültür kristalleri (optik elemanlar hariç, 38.24); (f) kıymetli ve yarı kıymetli taşlar ve tozları (71.02–71.05), kıymetli metaller ve alaşımları (Fasıl 71); (g) Bölüm XV metalleri, alaşımları, sermetler ve sinterlenmiş metal karbürler; (h) optik elemanlar (90.01)."
+  ],
+  [
+   "Fasıl 28 Not 4",
+   "Tali Fasıl II’deki ametal asitlerden ve Tali Fasıl IV’teki bir metal asitten oluşan, belirli kimyasal yapıdaki kompleks asitler 28.11’dedir (örn. silikotungstik, borotungstik asit)."
+  ],
+  [
+   "Fasıl 28 Not 5",
+   "28.26–28.42 yalnız metal tuzlarına, amonyum tuzlarına veya peroksi tuzlara uygulanır. Pozisyon metninde aksi belirtilmedikçe çift veya kompleks tuzlar 28.42’dedir (kompleks flor tuzları 28.26, şaplar 28.33, kompleks siyanürler 28.37 gibi istisnalar metinde belirtilmiştir)."
+  ],
+  [
+   "Fasıl 28 Not 6",
+   "28.44 yalnız şunları kapsar: (a) teknesyum (43), prometyum (61), polonyum (84) ve atom numarası 84’ten büyük bütün elementler; (b) doğal ve suni radyoaktif izotoplar (kıymetli ve adi metallerinkiler dahil); (c) bunların inorganik veya organik bileşikleri; (d) bunları içeren ve özel radyoaktivitesi <b>74 Bq/g (0,002 mikroküri/g)</b> değerini geçen alaşımlar, dispersiyonlar (sermetler dahil), seramik ürünler ve karışımlar; (e) nükleer reaktörlerin kullanılmış (ışınlanmış) yakıt elementleri; (f) radyoaktif artıklar. “İzotop”: doğada monoizotopik bulunanlar hariç çekirdekler ile doğal izotopik bileşimi suni olarak değiştirilmiş (zenginleştirilmiş) aynı elementin izotop karışımları."
+  ],
+  [
+   "Fasıl 28 Not 7",
+   "Ağırlık itibariyle <b>%15’ten fazla</b> fosfor içeren bakır fosfürler (fosforlu bakır) 28.53’e girer. 28.53 Açıklama Notuna göre bu sınırın altındakiler genellikle Fasıl 74’tedir."
+  ],
+  [
+   "Fasıl 28 Not 8",
+   "Elektronikte kullanılmak üzere dope edilmiş kimyasal elementler (silisyum, selenyum gibi) çekildiği gibi işlenmemiş halde veya silindir ya da çubuk şeklinde ise Fasıl 28’de; disk, plaket veya benzeri şekillerde kesilmişse 38.18’dedir."
+  ],
+  [
+   "Genel Açıklamalar",
+   "“Safsızlık”: yalnız imalat (saflaştırma dahil) sonucu ortaya çıkan maddeler: dönüşmemiş başlangıç maddeleri, başlangıç maddesindeki safsızlıklar, reaktifler, yan ürünler. Ürünü özel kullanıma elverişli kılmak için kasten bırakılan maddeler safsızlık sayılmaz."
+  ],
+  [
+   "Genel Açıklamalar",
+   "Su dışındaki çözücülerde çözelti fasıl dışıdır: benzende eritilmiş karbonil klorür, amonyağın alkollü çözeltisi, kolloidal alüminyum hidroksit → 38.24. Daha özel pozisyonda yer almayan kolloidal dispersiyonlar genellikle 38.24’tedir."
+  ],
+  [
+   "Genel Açıklamalar",
+   "Borik asitle stabilize hidrojen peroksit 28.47’de kalır; katalizörle karıştırılmış sodyum peroksit 38.24’e gider. Topaklanmayı önleyici kabul edilir, suyu uzaklaştıran madde ilavesi ürünün özelliğini değiştirdiğinden kabul edilmez. Uyarı için renklendirilmiş kurşun arsenat 28.42’de kalır; nem indikatörü olarak kobalt tuzu katılmış silika jel 38.24’tedir."
+  ],
+  [
+   "Genel Açıklamalar",
+   "Hazırlanış şekli fasıl dışına çıkarır: luminofor olarak ışıldayan hale getirilmiş ürünler (32.06), perakende kozmetik (örn. şap, 33.03–33.07), net ağırlığı <b>1 kg veya daha az</b> perakende tutkal (örn. suda çözülmüş sodyum silikat, 35.06), fotoğrafçılık için dozlu veya perakende (sodyum tiyosülfat, 37.07), 38.08’deki şekilde hazırlanmış (sodyum tetraborat), yangın söndürücü dolgusu (sülfürik asit, 38.13)."
+  ],
+  [
+   "Genel Açıklamalar",
+   "Element tablosu (Tali Fasıl I): arsenik, bor, silisyum, selenyum, tellür, fosfor ametal olarak 28.04’te; antimon 81.10, berilyum ve germanyum 81.12, magnezyum 81.04; civa 28.05; teknesyum, prometyum, polonyum, radon, radyum, toryum, uranyum vb. 28.44; altın 71.08, gümüş 71.06, platin grubu 71.10."
+  ],
+  [
+   "28.10 Açıklama Notu",
+   "Kuru ağırlık üzerinden H3BO3 oranı <b>%85’i geçmeyen</b> doğal ham borik asit 25.28’de; bu orandan fazla olanlar 28.10’dadır."
+  ],
+  [
+   "28.21 Açıklama Notu",
+   "Fe2O3 olarak hesaplanan kombine demiri ağırlıkça <b>%70 veya daha fazla</b> olan doğal toprak boyalar 28.21’de; %70’ten az olanlar 25.30’dadır."
+  ],
+  [
+   "28.05 Açıklama Notu",
+   "Mischmetal (%45–55 seryum, %22–27 lantan, %5’e kadar demir) 28.05’tedir; %5’ten fazla demir, magnezyum veya diğer metallerle alaşımlı olanlar girmez (piroforik alaşım ise 36.06). Nadir toprak metallerinin tuz ve bileşikleri 28.46’dadır."
+  ],
+  [
+   "28.35 Açıklama Notu",
+   "Kuru susuz ürün üzerinden ağırlıkça <b>%0,2 veya daha fazla</b> flor içeren kalsiyum hidrojenortofosfat (dikalsiyum fosfat) 31.03 veya 31.05’e gider. Monoamonyum ve diamonyum fosfat saf olsa da 31.05’tedir."
+  ],
+  [
+   "28.44 Açıklama Notu",
+   "Radyoaktif element ve izotopların bileşikleri ve çözeltileri 74 Bq/g’ın altında olsa bile 28.44’tedir; radyoaktif madde içeren alaşım, dispersiyon, seramik ürün ve karışımlar ise ancak 74 Bq/g’ı geçerse. Reaktöre konmaya hazır nötron kaynakları ve taşıma için bağlantı takılıp kılıflanmış yakıt çubukları 84.01’dedir."
+  ],
+  [
+   "28.42 Açıklama Notu",
+   "Sentetik zeolitler dahil alüminosilikatlar kompleks veya çift silikat olarak 28.42’dedir; bağlayıcı içerenler (örn. kil içeren zeolitler, parçacıkları çoğunlukla 5 mikronun üzerinde) 38.24’tedir."
+  ],
+  [
+   "28.46 Açıklama Notu",
+   "Nadir toprak elementlerinin karışımlarından doğrudan türeyen oksit veya hidroksit karışımları ya da aynı anyonlu tuz karışımları 28.46’dadır; farklı anyonlu tuz karışımları (örn. seryum klorür ile seryum sülfat) 28.46’ya girmez."
+  ],
+  [
+   "28.53 Açıklama Notu",
+   "Damıtılmış, yeniden damıtılmış, iletkenlik suyu ve iyon değiştiriciden geçirilmiş su 28.53’tedir; filtre veya sterilize edilmiş, sertliği giderilmiş doğal su 22.01’de, ilaç olarak dozlu veya perakende su 30.04’tedir."
+  ]
+ ],
+ "sinir_komsulari": [
+  [
+   "Sodyum klorür (kimyaca saf olsa da)",
+   "25.01",
+   "Fasıl 28 Not 3(a); 28.27 kapsamaz"
+  ],
+  [
+   "Magnezyum oksit (saf olsa da)",
+   "25.19",
+   "Not 3(a); hidroksit ve peroksidi ise 28.16"
+  ],
+  [
+   "Ham kükürt; Frasch yöntemiyle elde edilen veya rafine kükürt",
+   "25.03",
+   "28.02 yalnız süblime, çöktürülmüş ve kolloidal kükürdü kapsar"
+  ],
+  [
+   "Doğal ham borik asit (en çok %85 H3BO3); kernit, tinkal",
+   "25.28",
+   "28.10 ve 28.40 Açıklama Notları"
+  ],
+  [
+   "Sodyum nitrat, amonyum nitrat, amonyum sülfat, potasyum klorür, kalsiyum siyanamit",
+   "Fasıl 31",
+   "Fasıl 28 Not 2(e) ve Not 3(c); saf olsa da"
+  ],
+  [
+   "Doğal grafit / suni grafit / aktif karbon",
+   "25.04 / 38.01 / 38.02",
+   "28.03 hariç tutmaları; Not 3(e)"
+  ],
+  [
+   "Disk veya plaket şeklinde kesilmiş dope silisyum veya selenyum",
+   "38.18",
+   "Fasıl 28 Not 8"
+  ],
+  [
+   "Amonyağın alkollü çözeltisi; benzende çözülmüş fosgen; kolloidal alüminyum hidroksit",
+   "38.24",
+   "Su dışı çözücüde çözelti veya kolloidal dispersiyon"
+  ],
+  [
+   "Kobalt tuzu katılmış silika jel (nem indikatörü)",
+   "38.24",
+   "Renklendirici özel amaçla katılmış"
+  ],
+  [
+   "Karbon tetraklorür; karbon ile hidrojenin ikili bileşikleri",
+   "29.03 / 29.01",
+   "Not 2 listesinde olmayan karbon bileşikleri"
+  ],
+  [
+   "Alkali halojenür kültür kristali (her biri 2,5 g veya daha ağır) / optik eleman",
+   "38.24 / 90.01",
+   "Fasıl 28 Not 3(e) ve (h)"
+  ],
+  [
+   "Doğal su (filtre, sterilize edilmiş, sertliği giderilmiş)",
+   "22.01",
+   "28.53 yalnız damıtık, iletkenlik ve iyon değiştirilmiş suyu kapsar"
+  ],
+  [
+   "Aglomere metal karbür alet uçları; demir-karbon alaşımları",
+   "82.09 / Fasıl 72",
+   "28.49 hariç tutmaları"
+  ],
+  [
+   "Hidrojen gazı; sıkıştırılmış hava",
+   "28.04 / 28.53",
+   "Element ve inorganik ürün; Fasıl 27’ye girmez"
+  ],
+  [
+   "Radyoaktif sodyum klorür; perakende fotoğrafçılık gümüş nitratı",
+   "28.44 / 28.43",
+   "Bölüm VI Not 1(A) ve 1(B)"
+  ]
+ ],
+ "tuzaklar": [
+  "<b>Saflık faslı değiştirmez.</b> Sodyum klorür ve magnezyum oksit kimyaca saf olsa da Bölüm V’te (25.01, 25.19); sodyum nitrat, amonyum nitrat, amonyum sülfat ve potasyum klorür saf olsa da Fasıl 31’dedir.",
+  "<b>Soda ≠ kostik soda.</b> Sodyum karbonat (ticari soda) 28.36, sodyum hidroksit (kostik soda) 28.15; potasyum karbonat (potas) 28.36, potasyum hidroksit (kostik potas) 28.15.",
+  "<b>Karbon içeren her şey Fasıl 29 değildir.</b> Karbon dioksit 28.11, fosgen 28.12, karbon disülfür 28.13, sodyum siyanür 28.37, kalsiyum karbür 28.49, karbonatlar 28.36’dadır. Karbon tetraklorür ise 29.03’e gider.",
+  "<b>Not 1(B)’nin sınırı Bölüm VI’dır.</b> Kıymetli metal, nadir toprak ve civa bileşikleri yalnız Bölüm VI içinde önceliklidir; gadolinit gibi Bölüm V minerali 25.30’da kalır. 28.44 ve 28.45 ise bütün tarifeye karşı önceliklidir.",
+  "<b>Civa üçe ayrılır.</b> Metalik civa 28.05; civa bileşikleri 28.52; kıymetli metal içeren amalgam 28.43, yalnız adi metal amalgamı 28.53.",
+  "<b>Su dört pozisyona dağılır.</b> Doğal su 22.01; damıtık, iletkenlik veya iyon değiştirilmiş su 28.53; ağır su 28.45; hidrojen peroksit 28.47.",
+  "<b>Hidrojenin izotopları ayrılır.</b> Hidrojen 28.04, döteryum ve ağır su 28.45 (kararlı izotop), trityum 28.44 (radyoaktif).",
+  "<b>Dope silisyumda şekle bakın.</b> Çekildiği gibi işlenmemiş halde, çubuk veya silindir ise 28.04; disk veya plaket olarak kesilmişse 38.18.",
+  "<b>Çözücü tuzağı.</b> Sudaki çözelti Fasıl 28’de kalır; amonyağın alkoldeki ve bromun asetik asitteki çözeltisi 38.24’e gider.",
+  "<b>Aynı metal, farklı pozisyon.</b> Çinko oksit 28.17 ama çinko hidroksit 28.25; manganez dioksit 28.20 ama manganez hidroksit 28.25; sodyum alüminat 28.41 ama sodyum hekzafloroalüminat 28.26."
+ ],
+ "hafiza": {
+  "kanca": "Elma Ağacı Her Bahar Tatlı Meyve  (E – A – H – B – T – M)",
+  "aciklama": "<b>E</b>lementler 28.01–28.05 · <b>A</b>sitler ve ametal oksitleri 28.06–28.11 · <b>H</b>alojenli ve kükürtlü ametal bileşikleri 28.12–28.13 · <b>B</b>azlar ve metal oksitleri 28.14–28.25 · <b>T</b>uzlar 28.26–28.42 · <b>M</b>uhtelif (kıymetli, radyoaktif, izotop, nadir toprak, hidrojen peroksit, karbür, hidrür, civa, fosfür) 28.43–28.53. Bu altı grup faslın altı tali faslıdır; tuzlarda sıra anyona göredir: halojen → kükürt → azot → fosfor → karbon → silisyum → bor → oksometal → diğer."
+ },
+ "sinav_odagi": [
+  "Bu fasıl çıkmış sorularda daha çok seçeneklerde ve çeldirici olarak yer almıştır; doğrudan Fasıl 28 pozisyonunu soran soru azdır.",
+  "“Hangisi 27. fasılda sınıflandırılamaz?” kalıbında hidrojen gazı (28.04), havagazı, turba, elektrik ve vazelin gibi Fasıl 27 ürünlerinin arasına konmuştur: element olan gaz Fasıl 28’dedir.",
+  "“Hangisi farklı bir bölümde?” kalıbında Bölüm VI (kimya sanayii: boya, şampuan, haşarat öldürücü) ile Bölüm V (mineral maddeler: klinker) ayrımı sorulmuştur; Bölüm VI’nın Fasıl 28 ile başladığı bilinmelidir.",
+  "Kıymetli metal kavramı sorulmuş; platin, iridyum, osmiyum, paladyum, rodyum gibi kıymetli metallerin yanına berilyum ve kadmiyum gibi adi metaller çeldirici olarak konmuştur. Aynı ayrım 28.43 ile adi metal bileşikleri arasındaki sınırı belirler.",
+  "Adi metallerin tarifedeki yeri (kendine ait faslı olan kalay; magnezyum, titanyum, krom gibi Fasıl 81 metalleri) sorulmuştur; Tali Fasıl I’deki element tablosu bu soruların anahtarıdır. Alkali, toprak alkali, nadir toprak metalleri ve civa ise 28.05’tedir.",
+  "Tuz (Fasıl 25) ve gübre (Fasıl 31) gibi kimyasal görünümlü ürünlerin fasılları sorulmuştur; saf olsa bile sodyum klorür ve gübre tuzlarının Fasıl 28 dışında kalması (Not 3) bu soruların arka planıdır."
+ ],
+ "cikmis_ornekler": [
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetveli’nin 27. Faslı altında sınıflandırılamaz?",
+   "secenekler": [
+    "Havagazı",
+    "Tarımda kullanılan turba",
+    "Elektrik",
+    "Hidrojen gazı",
+    "Vazelin"
+   ],
+   "cevap": "D",
+   "aciklama": "Hidrojen, Tali Fasıl I’deki element tablosunda ametal olarak 28.04’te yer alır. Havagazı (27.05), toprak ıslahında kullanılanlar dahil turba (27.03), elektrik enerjisi (27.16) ve vazelin (27.12) Fasıl 27’dedir."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Türk Gümrük Tarife Cetveli’nde diğerlerinden farklı bir bölümde sınıflandırılır?",
+   "secenekler": [
+    "Klinker",
+    "Yağlı boya",
+    "Şampuan",
+    "Haşarat öldürücü"
+   ],
+   "cevap": "A",
+   "aciklama": "Çimento klinkeri mineral madde olarak Bölüm V’te (25.23) yer alır. Boyalar (Fasıl 32), şampuan (Fasıl 33) ve haşarat öldürücüler (38.08) Fasıl 28 ile başlayan Bölüm VI’dadır."
+  }
+ ],
+ "ozet": [
+  "Fasıl 28 = izole element veya kimyasal olarak belirli yapıda izole inorganik bileşik; sudaki çözelti, safsızlık ve stabilizan faslı değiştirmez, karışımlar ve su dışı çözeltiler genellikle 38.24’e gider.",
+  "Saf olsa da dışarıda: sodyum klorür, magnezyum oksit (Bölüm V), gübre tuzları (Fasıl 31), metaller (Bölüm XV, Fasıl 71); ama alkali, toprak alkali, nadir toprak metalleri ve civa 28.05’te.",
+  "Karbon bileşiklerinden yalnız Not 2’de sayılanlar Fasıl 28’de (oksitler, siyanürler, karbonatlar, karbürler, karbon disülfür, fosgen); gerisi Fasıl 29.",
+  "Öncelik sırası: 28.44 / 28.45 (bütün tarife) → 28.43, 28.46, 28.52 (Bölüm VI içi) → Bölüm VI Not 2’deki doz ve perakende pozisyonları → diğerleri.",
+  "Sıra: elementler → asitler → ametal halojen ve kükürt bileşikleri → bazlar ve metal oksitleri → tuzlar (anyona göre) → muhtelif.",
+  "Tuz pozisyonları yalnız metal, amonyum ve peroksi tuzlar içindir; çift ve kompleks tuzlar 28.42, kompleks flor tuzları 28.26, şaplar 28.33, kompleks siyanürler 28.37.",
+  "Eşikler: 74 Bq/g (28.44), %15 fosfor (bakır fosfür), %70 Fe2O3 (toprak boya), %85 H3BO3 (borik asit), 2,5 g (kültür kristali), %0,2 flor (dikalsiyum fosfat)."
+ ],
+ "sorular": [
+  {
+   "soru": "Tarife Cetveline göre, sodyum klorür ile amonyak çözeltisinin karbon dioksitle işlenmesi yoluyla elde edilen ve çamaşır sodası olarak da bilinen hidrate disodyum karbonat kristalleri hangi tarife pozisyonunda sınıflandırılır?",
+   "secenekler": [
+    "28.15",
+    "25.30",
+    "28.36",
+    "28.33",
+    "34.02"
+   ],
+   "cevap": "C",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Disodyum karbonat (ticari soda, soda kristalleri) kimyasal olarak belirli yapıda bir karbonat olarak 28.36’dadır. Adı benzediği için 28.15’teki sodyum hidroksitle (kostik soda) karıştırılmamalıdır. Doğal sodyum karbonat (natron) 25.30’dadır; 28.33 ise sülfatların pozisyonudur. Tuzak, “çamaşır” kelimesinden yıkama müstahzarı sonucuna gitmektir.",
+   "dayanak": "Fasıl 28 Not 1(a); 28.36 Açıklama Notu (A)(2)."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 28. faslında <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Kimyaca saf magnezyum oksit",
+    "Magnezyum peroksit",
+    "Çöktürülmüş baryum sülfat",
+    "Sentetik kriyolit",
+    "Kalsiyum peroksit"
+   ],
+   "cevap": "A",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Fasıl 28 Not 3(a) gereği magnezyum oksit kimyaca saf olsa bile fasıl dışıdır (25.19). Magnezyum peroksit 28.16’da, çöktürülmüş baryum sülfat 28.33’te, sentetik kriyolit 28.26’da, kalsiyum peroksit 28.25’tedir. Tuzak, aynı metalin peroksit ve hidroksidi Fasıl 28’de iken oksidinin Bölüm V’e gitmesidir.",
+   "dayanak": "Fasıl 28 Not 3(a); 28.16, 28.25, 28.26, 28.33 Açıklama Notları."
+  },
+  {
+   "soru": "Fasıl 28 Not 6’ya göre radyoaktif elementleri veya izotopları ya da bunların bileşiklerini içeren alaşım, dispersiyon (sermetler dahil), seramik ürün ve karışımların 28.44 pozisyonunda yer alması için özel radyoaktivitelerinin hangi değeri geçmesi gerekir?",
+   "secenekler": [
+    "7,4 Bq/g",
+    "74 Bq/g",
+    "740 Bq/g",
+    "0,74 Bq/g",
+    "7.400 Bq/g"
+   ],
+   "cevap": "B",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Not 6(d)’deki eşik gramda 74 Bq’dir (0,002 mikroküri/g). Bu eşik yalnız alaşım, dispersiyon, seramik ürün ve karışımlar için aranır; radyoaktif element ve izotopların kendi bileşikleri ve çözeltileri bu değerin altında kalsa bile 28.44’tedir. Diğer değerler notta yer almaz.",
+   "dayanak": "Fasıl 28 Not 6(d); 28.44 Açıklama Notu (III)(C)."
+  },
+  {
+   "soru": "Tarife Cetveline göre aşağıdakilerden hangisi diğerlerinden farklı bir tarife pozisyonunda yer alır?",
+   "secenekler": [
+    "Potasyum permanganat",
+    "Sodyum dikromat",
+    "Amonyum molibdat",
+    "Sodyum alüminat",
+    "Sodyum hekzafloroalüminat"
+   ],
+   "cevap": "E",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Permanganat, dikromat, molibdat ve alüminat oksometalik asit tuzları olarak 28.41’dedir. Sodyum hekzafloroalüminat (sentetik kriyolit) ise kompleks flor tuzu olarak 28.26’da yer alır. Tuzak “alüminat” kelimesinin ortak olmasıdır; 28.41 Açıklama Notu kompleks flor tuzlarını açıkça 28.26’ya gönderir.",
+   "dayanak": "28.26 Açıklama Notu (C)(1); 28.41 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, kristal çekme yoluyla elde edilmiş, elektronikte kullanılmak üzere bor ile dope edilmiş, çekildiği gibi işlenmemiş silindir şeklindeki çok saf silisyum hangi tarife pozisyonunda sınıflandırılır?",
+   "secenekler": [
+    "28.04",
+    "38.18",
+    "81.12",
+    "28.49",
+    "28.11"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Fasıl 28 Not 8’e göre elektronikte kullanılmak üzere dope edilmiş elementler (silisyum, selenyum gibi) çekildiği gibi işlenmemiş halde veya silindir ya da çubuk şeklinde ise Fasıl 28’de kalır; silisyum ametal olarak 28.04’tedir. Disk veya plaket şeklinde kesilmiş olsaydı 38.18’e girerdi. 81.12 germanyum gibi adi metallerin, 28.49 silisyum karbürün, 28.11 silisyum dioksitin pozisyonudur.",
+   "dayanak": "Fasıl 28 Not 8; 28.04 Açıklama Notu (C)(5)."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 28.04 pozisyonunda <b>yer almaz</b>?",
+   "secenekler": [
+    "Argon",
+    "Ozon",
+    "Tellür",
+    "Radon",
+    "Kırmızı fosfor"
+   ],
+   "cevap": "D",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Radon radyoaktif bir asal gazdır; atom numarası 84’ten büyük olduğundan Fasıl 28 Not 6(a) gereği 28.44’te yer alır. Argon asal gaz, ozon oksijenin allotropik bir şekli, tellür ve fosfor ametal olarak 28.04’tedir. Tuzak, radonun da asal gaz olmasıdır.",
+   "dayanak": "Fasıl 28 Not 6(a); 28.04 Açıklama Notu (B) ve (C)."
+  },
+  {
+   "soru": "Fasıl 28 Not 7’ye göre bakır fosfürlerin (fosforlu bakır) 28.53 pozisyonunda sınıflandırılabilmesi için ağırlık itibariyle fosfor oranı ne olmalıdır?",
+   "secenekler": [
+    "%5’ten fazla",
+    "%10’dan fazla",
+    "%15’ten fazla",
+    "%20’den fazla",
+    "%25’ten fazla"
+   ],
+   "cevap": "C",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Not 7 uyarınca ağırlık itibariyle %15’ten fazla fosfor içeren bakır fosfürler 28.53’e girer. 28.53 Açıklama Notuna göre bu sınırın altındaki bakır ön alaşımları genellikle Fasıl 74’te yer alır. Demir fosfür (ferro fosfor) ise 28.53 metninde hariç tutulmuştur ve 72.02’dedir.",
+   "dayanak": "Fasıl 28 Not 7; 28.53 Açıklama Notu (A)(1)."
+  },
+  {
+   "soru": "Tarife Cetveline göre aşağıdakilerden hangisi diğerlerinden farklı bir fasılda yer alır?",
+   "secenekler": [
+    "Potasyum nitrat",
+    "Sodyum nitrat",
+    "Baryum nitrat",
+    "Stronsiyum nitrat",
+    "Kurşun nitrat"
+   ],
+   "cevap": "B",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Sodyum nitrat saf olsun olmasın Fasıl 31’dedir (Fasıl 28 Not 3(c)). Potasyum nitrat (güherçile), baryum, stronsiyum ve kurşun nitratlar 28.34’te kalır. Tuzak, potasyum nitratın sodyum nitratın kullanıldığı yerlerde kullanılmasıdır; 28.34 Açıklama Notu saf olsun olmasın sodyum ve amonyum nitratı Fasıl 31’e bırakır, potasyum nitratı ise ismen sayar.",
+   "dayanak": "Fasıl 28 Not 3(c); 28.34 Açıklama Notu (B)."
+  },
+  {
+   "soru": "Fotoğrafçılıkta kullanılmak üzere perakende satış için ambalajlanmış gümüş nitratın sınıflandırılmasıyla ilgili aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Bölüm VI Not 2 ve GYK 1 uyarınca 37.07’de sınıflandırılır.",
+    "Bölüm VI Not 1(B) ve GYK 1 uyarınca 28.43’te sınıflandırılır.",
+    "GYK 3(a) uyarınca en özel tanım olan 28.34’te sınıflandırılır.",
+    "GYK 3(b) uyarınca esas niteliğine göre 37.07’de sınıflandırılır.",
+    "GYK 2(b) uyarınca gümüş içerdiğinden 71.06’da sınıflandırılır."
+   ],
+   "cevap": "B",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "Bölüm VI Not 1(B), 28.43 tanımına uyan ürünlerin Bölüm VI’nın başka pozisyonlarına girmeyeceğini hükme bağlar; Not 2’deki perakende kuralı Not 1 saklı kalmak kaydıyla uygulanır. Notlara göre sınıflandırma GYK 1’in konusudur. Açıklama Notu bu örneği açıkça verir: perakende fotoğrafçılık ambalajında olsa da gümüş nitrat 37.07’ye değil 28.43’e girer. Bileşik metal olmadığından 71.06 da söz konusu değildir.",
+   "dayanak": "Bölüm VI Not 1(B) ve Not 2; Bölüm VI Genel Açıklamalar; GYK 1."
+  },
+  {
+   "soru": "Tarife Cetveline göre, nükleer reaktörlerde nötronları yavaşlatmak için kullanılan ağır su (döteryum oksit) hangi tarife pozisyonunda sınıflandırılır?",
+   "secenekler": [
+    "22.01",
+    "28.44",
+    "28.53",
+    "28.47",
+    "28.45"
+   ],
+   "cevap": "E",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Ağır su kararlı (radyoaktif olmayan) hidrojen izotopu döteryumun oksididir ve Bölüm VI Not 1(A) uyarınca 28.45’te yer alır. Reaktörde ışınlanarak trityum içerir hale gelip radyoaktifleşen ağır su ise radyoaktif artık olarak 28.44’e girer. 22.01 doğal suyun, 28.53 damıtık ve iletkenlik suyunun, 28.47 hidrojen peroksidin pozisyonudur.",
+   "dayanak": "Bölüm VI Not 1(A); 28.45 Açıklama Notu; 28.44 Açıklama Notu (radyoaktif artıklar)."
+  },
+  {
+   "soru": "Bir ithalatçı şu ürünü beyan etmiştir: ağırlıkça %35 hidrojen peroksit içeren sulu çözelti; ayrışmaya karşı az miktarda borik asitle stabilize edilmiş; tekstil ve kâğıt hamurunun ağartılmasında kullanılacak; dökme tanklarda sunulmuş; ölçülü dozda veya perakende satış için hazırlanmamış. Tarife Cetveline göre bu ürün hangi tarife pozisyonunda sınıflandırılır?",
+   "secenekler": [
+    "28.47",
+    "30.04",
+    "38.24",
+    "28.45",
+    "28.11"
+   ],
+   "cevap": "A",
+   "tip": "Senaryo",
+   "gerekce": "Hidrojen peroksit, sudaki çözeltisi ve korunması için katılan küçük miktardaki stabilizanlarla (borik veya sitrik asit) birlikte 28.47’de kalır (Not 1(b) ve (d)). İlaç olarak dozlu veya perakende sunulsaydı 30.04’e girerdi. Katalizörle karıştırılmış sodyum peroksit gibi müstahzarlar 38.24’e gider; 28.45 ağır suyun, 28.11 ametal oksitlerinin pozisyonudur.",
+   "dayanak": "Fasıl 28 Not 1(b) ve (d); Fasıl 28 Genel Açıklamalar (A); 28.47 Açıklama Notu."
+  },
+  {
+   "soru": "Aşağıdaki karbon içeren ürünlerden hangisi Tarife Cetvelinin 28. faslında <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Karbon disülfür",
+    "Sodyum siyanür",
+    "Karbon tetraklorür",
+    "Kalsiyum karbür",
+    "Karbonil diklorür (fosgen)"
+   ],
+   "cevap": "C",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Fasıl 28 Not 2 karbon bileşiklerini sınırlı olarak sayar: karbon disülfür 28.13, siyanürler 28.37, karbürler 28.49, karbonun halojen oksitleri (fosgen) 28.12’dedir. Karbon tetraklorür hidrokarbonların klorlu türevi olarak 29.03’te yer alır. Tuzak, oksihalojenür olan fosgen Fasıl 28’de kalırken halojenür olan karbon tetraklorürün Fasıl 29’a gitmesidir.",
+   "dayanak": "Fasıl 28 Not 2; 28.12 Açıklama Notu (A) hariç tutma."
+  },
+  {
+   "soru": "Tarife Cetveline göre; kostik soda ........., ticari soda (disodyum karbonat) ........., Javel suyu (sodyum hipoklorit çözeltisi) ......... ve kimyaca saf sodyum klorür ......... pozisyonunda sınıflandırılır. Boşlukları sırasıyla dolduran seçenek hangisidir?",
+   "secenekler": [
+    "28.36 / 28.15 / 28.28 / 28.27",
+    "28.15 / 28.36 / 28.29 / 28.27",
+    "28.15 / 28.33 / 28.28 / 25.01",
+    "28.15 / 28.36 / 28.28 / 25.01",
+    "28.36 / 28.15 / 28.27 / 25.01"
+   ],
+   "cevap": "D",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Sodyum hidroksit (kostik soda) 28.15’te, disodyum karbonat 28.36’da, hipokloritler (Javel suyu) 28.28’de yer alır. Sodyum klorür kimyaca saf olsa bile Fasıl 28 Not 3(a) ve 28.27 Açıklama Notu gereği 25.01’dedir. 28.29 kloratları, 28.33 sülfatları kapsar.",
+   "dayanak": "Fasıl 28 Not 3(a); 28.15, 28.27, 28.28, 28.36 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetveline göre aşağıdaki civa ürünlerinden hangisi diğerlerinden farklı bir tarife pozisyonunda yer alır?",
+   "secenekler": [
+    "Civa (II) klorür",
+    "Civalı klorür (kalomel)",
+    "Civa fülminat",
+    "Suni civa sülfür",
+    "Metalik civa"
+   ],
+   "cevap": "E",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Metalik civa 28.05’te alkali ve toprak alkali metallerle birlikte yer alır. Civanın organik veya inorganik bileşikleri (klorürler, fülminat, suni sülfür) belirli kimyasal yapıda olsun olmasın 28.52’dedir. Doğal civa sülfür ise cevher olarak 26.17’de kalır.",
+   "dayanak": "28.05 Açıklama Notu (D); 28.52 pozisyon metni ve Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre aşağıdaki ifadelerden hangileri doğrudur?  I. Kimyasal olarak belirli bir yapıdaki izole inorganik bir bileşiğin sudaki çözeltisi Fasıl 28’de kalır.  II. Amonyağın alkoldeki çözeltisi 28.14 pozisyonunda yer alır.  III. Alkali metal halojenürlerinden elde edilen, her biri 2,5 g veya daha ağır kültür kristalleri (optik elemanlar hariç) 38.24 pozisyonundadır.  IV. Elektronikte kullanılmak üzere dope edilip disk şeklinde kesilmiş selenyum 28.04 pozisyonundadır.",
+   "secenekler": [
+    "I ve II",
+    "I ve III",
+    "II ve IV",
+    "I, III ve IV",
+    "I, II ve III"
+   ],
+   "cevap": "B",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "I doğrudur (Not 1(b)). II yanlıştır: amonyağın alkollü çözeltisi su dışı çözücüde çözelti olduğundan 38.24’e gider. III doğrudur (Not 3(e)). IV yanlıştır: disk, plaket veya benzeri şekilde kesilmiş dope elementler 38.18’dedir (Not 8).",
+   "dayanak": "Fasıl 28 Not 1(b), 3(e) ve 8; 28.14 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre, kalsiyum hidroksitin klor gazı ile doyurulmasıyla elde edilen, saf olmayan kalsiyum hipoklorit ile kalsiyum klorürden oluşan ve ticarette “ağartma tozu” olarak anılan ürün hangi tarife pozisyonunda sınıflandırılır?",
+   "secenekler": [
+    "28.27",
+    "25.22",
+    "28.29",
+    "28.28",
+    "38.08"
+   ],
+   "cevap": "D",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "28.28 pozisyon metni ticari kalsiyum hipokloriti ismen sayar; ürün kimyasal olarak belirli bir yapıda olmasa da Genel Açıklamalarda sayılan istisnalardandır. 28.27 Açıklama Notu, hatalı olarak kireç kaymağı denilen bu ürünü açıkça 28.28’e gönderir. 28.29 kloratları, 25.22 sönmüş ve sönmemiş kireci kapsar; 38.08 ise ancak o pozisyondaki şekilde hazırlanmış dezenfektanlar içindir.",
+   "dayanak": "28.28 pozisyon metni ve Açıklama Notu (B); Fasıl 28 Genel Açıklamalar (C); 28.27 Açıklama Notu."
+  },
+  {
+   "soru": "Tarife Cetveline göre doğal demir oksit esaslı toprak boyaların 28.21 pozisyonunda sınıflandırılabilmesi için Fe2O3 olarak hesaplanan kombine demir oranı ağırlık itibariyle ne olmalıdır?",
+   "secenekler": [
+    "%70 veya daha fazla",
+    "%58,8 veya daha fazla",
+    "%84 veya daha fazla",
+    "%50’den fazla",
+    "%85’ten fazla"
+   ],
+   "cevap": "A",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "28.21 pozisyon metni ve Açıklama Notuna göre Fe2O3 olarak hesaplanan kombine demiri ağırlıkça %70 veya daha fazla olan toprak boyalar bu pozisyondadır; %70’ten az olanlar 25.30’a gider. %84 ferrik oksit ve %58,8 saf demir Açıklama Notundaki örnek değerlerdir, sınır değildir. %85 ise borik asidin eşiğidir.",
+   "dayanak": "28.21 pozisyon metni ve Açıklama Notu, hariç tutma (a)."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 28.33 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Kuprik sülfat",
+    "Alüminyum potasyum sülfat (şap)",
+    "Diamonyum peroksodisülfat",
+    "Çöktürülmüş baryum sülfat",
+    "Amonyum sülfat"
+   ],
+   "cevap": "E",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "28.33 sülfatları, şapları ve persülfatları kapsar; ancak Açıklama Notu amonyum sülfatı (saf olsa dahi) ve potasyum sülfatı Fasıl 31’e bırakır (Not 3(c)). Kuprik sülfat, şap, diamonyum peroksodisülfat ve suni baryum sülfat 28.33’tedir. Tuzak, amonyum tuzu olan peroksodisülfatın 28.33’te kalmasıdır.",
+   "dayanak": "Fasıl 28 Not 3(c); 28.33 Açıklama Notu."
+  },
+  {
+   "soru": "Tarifenin Yorumuna İlişkin Genel Kurallar ile Bölüm VI notları açısından aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Bölüm ve fasıl başlıkları, Fasıl 28 ürünlerinin sınıflandırılmasında yasal dayanak oluşturur.",
+    "Ön karıştırma yapılmadan birbirini izleyerek kullanılacak perakende kimyasal takımlar Bölüm VI Not 3’e göre sınıflandırılır.",
+    "GYK 2(a), I ila VI. Bölümlere giren eşyaya normal olarak uygulanmaz.",
+    "Bölüm VI Not 3 kapsamındaki karıştırılacak setler GYK 3(c) uyarınca numara sırasında sonuncu pozisyona girer.",
+    "Kimyasal bir ürünün aynı pozisyondaki alt pozisyonlar arasındaki yeri GYK 3(a) ile belirlenir."
+   ],
+   "cevap": "C",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 2(a) Açıklama Notuna göre kuralın her iki kısmı da (bitirilmemiş ve monte edilmemiş eşya) I–VI. Bölümlere giren eşyaya normal olarak uygulanmaz. Başlıklar yalnız gösterici niteliktedir (GYK 1). Birbirini izleyerek kullanılacak takımlara Not 3 uygulanmaz, perakende ise genellikle GYK 3(b) uygulanır. Not 3’teki setler karışımdan elde edilecek ürünün pozisyonuna girer; alt pozisyon tespiti GYK 6’nın konusudur.",
+   "dayanak": "GYK 1, 2(a) ve 6 Açıklama Notları; Bölüm VI Not 3 ve Genel Açıklamalar."
+  },
+  {
+   "soru": "Bir ürünün özellikleri şöyledir: alüminyum oksidin elektrik fırınında eritilmesiyle elde edilmiştir; rengini değiştirmek için az miktarda krom oksit katılmıştır; ezilerek taneler haline getirilmiştir; kâğıt veya başka bir maddeye tespit edilmemiş, bileyi taşı şeklinde aglomere edilmemiştir; aşındırıcı olarak kullanılacaktır. Tarife Cetveline göre bu ürün hangi tarife pozisyonunda sınıflandırılır?",
+   "secenekler": [
+    "25.13",
+    "68.05",
+    "71.04",
+    "28.18",
+    "68.04"
+   ],
+   "cevap": "D",
+   "tip": "Senaryo",
+   "gerekce": "Suni korendon, eritme sırasında rengini veya sertliğini değiştirmek için katılan az miktarda diğer oksitleri (krom, titanyum oksit) içerebilir ve kimyasal olarak belirli bir yapıda olsun olmasın 28.18’dedir. Doğal korendon ve zımpara 25.13’te; kâğıda tespit edilmiş suni korendon 68.05’te, bileyi taşı şeklinde aglomere edilmişi 68.04’te; sentetik yakut gibi taşlar 71.04’tedir. Zirkonyum dioksit gibi maddelerle mekanik karışımı ise 38.24’e girerdi.",
+   "dayanak": "28.18 pozisyon metni ve Açıklama Notu (A), hariç tutmalar (a), (e), (g)."
+  },
+  {
+   "soru": "Tarife Cetveline göre aşağıdaki çiftlerden hangisinde iki ürün <b>aynı</b> tarife pozisyonunda yer alır?",
+   "secenekler": [
+    "Sodyum hidroksit – sodyum karbonat",
+    "Hidrojen – döteryum",
+    "Sodyum ditiyonit – formaldehitle stabilize sodyum ditiyonit",
+    "Çinko oksit – çinko hidroksit",
+    "Manganez dioksit – manganez hidroksit"
+   ],
+   "cevap": "C",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "28.31, organik maddelerle (formaldehit, aseton vb.) stabilize edilmiş olanlar dahil bütün ditiyonitleri kapsar; Fasıl 28 Not 2 bunları özellikle sayar. Diğer çiftler ayrışır: 28.15 / 28.36; 28.04 / 28.45; 28.17 / 28.25; 28.20 / 28.25.",
+   "dayanak": "Fasıl 28 Not 2; 28.31, 28.17 ve 28.20 Açıklama Notları."
+  },
+  {
+   "soru": "Tarife Cetveline göre aşağıdaki ürün – pozisyon eşleştirmelerinden hangisi <b>yanlıştır</b>?",
+   "secenekler": [
+    "Sodyum tiyosülfat – 28.32",
+    "Potasyum nitrat – 28.34",
+    "Sodyum tripolifosfat – 28.35",
+    "Rafine boraks – 28.40",
+    "Sentetik zeolit – 28.39"
+   ],
+   "cevap": "E",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Sentetik zeolitler dahil alüminosilikatlar kompleks veya çift silikat olarak 28.42’dedir; 28.39 silikatları ve ticari alkali metal silikatları kapsar. Bağlayıcı içeren zeolitler ise 38.24’e gider. Diğer eşleştirmeler doğrudur.",
+   "dayanak": "Fasıl 28 Not 5; 28.42 Açıklama Notu (II)(L); 28.39 Açıklama Notu."
+  },
+  {
+   "soru": "Fasıl 28 Not 1 ve Genel Açıklamalarına göre, kimyasal olarak belirli bir yapıdaki izole bir bileşiğe yapılan aşağıdaki ilavelerden hangisi ürünü Fasıl 28 dışına çıkarır?",
+   "secenekler": [
+    "Koruma ve nakil için gerekli stabilizan",
+    "Topaklanmayı önleyici madde",
+    "Toz çıkmasını önleyen mineral yağ",
+    "Suyu uzaklaştıran (kurutucu) madde",
+    "Emniyet için uyarıcı renklendirici"
+   ],
+   "cevap": "D",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Not 1(d) ve (e); koruma ve nakil için stabilizan (topaklanmayı önleyici dahil), tozlanmayı önleyici ve tanıtıcı veya uyarıcı renklendirici ilavelerine, ürünü özel kullanıma elverişli kılmamak şartıyla izin verir. Genel Açıklamalara göre suyu uzaklaştıran maddeler ürünün orijinal özelliğini değiştirdiğinden kapsam dışında kalır.",
+   "dayanak": "Fasıl 28 Not 1(d) ve (e); Fasıl 28 Genel Açıklamalar (A)."
+  },
+  {
+   "soru": "Tarife Cetveline göre, karbon ve silisyumun elektrik fırınında işlenmesiyle elde edilen, kırılmış taneler halindeki silisyum karbür (karborandum) hangi tarife pozisyonunda sınıflandırılır?",
+   "secenekler": [
+    "28.49",
+    "28.50",
+    "28.04",
+    "68.04",
+    "38.24"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Silisyum karbür ikili bir karbür olarak 28.49’dadır. 28.50 silisürleri kapsar, ancak metni aynı zamanda 28.49 karbürü olan bileşikleri hariç tutar; Açıklama Notu da silisyum karbürü 28.49’a gönderir. Bir mesnede tespit edilmiş olsaydı 68.05’e, bileyi veya değirmen taşı şeklinde olsaydı 68.04’e girerdi.",
+   "dayanak": "28.49 Açıklama Notu (A)(2); 28.50 pozisyon metni ve Açıklama Notu (D)."
+  },
+  {
+   "soru": "Bölüm VI Not 1 ile ilgili aşağıdaki ifadelerden hangileri doğrudur?  I. Radyoaktif sodyum klorür 25.01’de değil 28.44’te sınıflandırılır.  II. Radyoaktif olmayan bir karbon izotopu 28.03’te değil 28.45’te sınıflandırılır.  III. Gümüş kazeinat 35.01’de değil 28.43’te sınıflandırılır.  IV. Gadolinit, nadir toprak metali bileşiği olduğundan 25.30’da değil 28.46’da sınıflandırılır.",
+   "secenekler": [
+    "I ve II",
+    "I, II ve III",
+    "III ve IV",
+    "I, II ve IV",
+    "II, III ve IV"
+   ],
+   "cevap": "B",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "Not 1(A) gereği radyoaktif ürünler (I) ve radyoaktif olmayan izotoplar (II) bütün tarifeye karşı 28.44 ve 28.45’te yer alır. Not 1(B) gereği kıymetli metal bileşikleri Bölüm VI’nın diğer pozisyonlarına göre öncelikli olduğundan gümüş kazeinat 28.43’e girer (III). Bu öncelik yalnız Bölüm VI içindir; gadolinit Fasıl 28 Not 3(a) gereği Bölüm V’te, 25.30’da kalır (IV yanlış).",
+   "dayanak": "Bölüm VI Not 1(A) ve 1(B); Bölüm VI Genel Açıklamalar; Fasıl 28 Not 3(a)."
+  }
+ ]
+}
