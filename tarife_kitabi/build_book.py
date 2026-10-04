@@ -13,7 +13,7 @@ from reportlab.lib.enums import TA_CENTER, TA_LEFT
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import mm
-from reportlab.lib.utils import simpleSplit
+from reportlab.lib.utils import ImageReader, simpleSplit
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import (BaseDocTemplate, Flowable, Frame, KeepTogether, ListFlowable,
@@ -140,21 +140,50 @@ class TocMark(Paragraph):
 
 
 # ---------------------------------------------------------------- sayfa şablonları
+LOGO_FILIGRAN = os.path.join(os.path.dirname(os.path.abspath(__file__)), "kaynak", "gorsel", "logo_filigran.png")
+UST_SOL = "Gümrük Koçu"
+ALT_SOL = "Ufuk Çetintaş"
+
+
+_LOGO_BOYUT = []
+
+
+def _logo_boyut():
+    if not _LOGO_BOYUT:
+        _LOGO_BOYUT.extend(ImageReader(LOGO_FILIGRAN).getSize())
+    return _LOGO_BOYUT
+
+
 def draw_header_footer(c, doc):
     c.saveState()
-    left, right = getattr(c, "_hdr", ("", ""))
+    # ortada %10 opak logo filigranı
+    if os.path.exists(LOGO_FILIGRAN):
+        lw = 150 * mm
+        iw, ih = _logo_boyut()
+        lh = lw * ih / iw
+        c.drawImage(LOGO_FILIGRAN, (PAGE_W - lw) / 2, (PAGE_H - lh) / 2, lw, lh, mask="auto")
+    konu, bolum = getattr(c, "_hdr", ("", ""))
+    sag = " · ".join(x for x in (bolum, konu) if x)
+    y = PAGE_H - 11 * mm
+    c.setFont("LS-B", 8)
+    c.setFillColor(NAVY)
+    c.drawString(LM, y, UST_SOL)
     c.setFont("LS", 7.6)
     c.setFillColor(MUTED)
-    if left:
-        if len(left) > 105:
-            left = left[:105].rsplit(" ", 1)[0].rstrip(";,") + "…"
-        c.drawString(LM, PAGE_H - 11 * mm, left)
-    if right:
-        c.drawRightString(PAGE_W - RM, PAGE_H - 11 * mm, right)
+    if sag:
+        maxw = W - pdfmetrics.stringWidth(UST_SOL, "LS-B", 8) - 12 * mm
+        if pdfmetrics.stringWidth(sag, "LS", 7.6) > maxw:
+            while sag and pdfmetrics.stringWidth(sag + "…", "LS", 7.6) > maxw:
+                sag = sag.rsplit(" ", 1)[0]
+            sag = sag.rstrip(";,·– ") + "…"
+        c.drawRightString(PAGE_W - RM, y, sag)
     c.setStrokeColor(RULE)
     c.setLineWidth(0.5)
     c.line(LM, PAGE_H - 12.5 * mm, PAGE_W - RM, PAGE_H - 12.5 * mm)
     c.line(LM, 12.5 * mm, PAGE_W - RM, 12.5 * mm)
+    c.setFont("LS", 7.6)
+    c.setFillColor(MUTED)
+    c.drawString(LM, 8 * mm, ALT_SOL)
     c.setFont("LS-B", 8)
     c.setFillColor(NAVY)
     c.drawCentredString(PAGE_W / 2, 8 * mm, str(doc.page))
@@ -268,7 +297,7 @@ class Book(BaseDocTemplate):
                     rightPadding=0)
         self.addPageTemplates([
             PageTemplate(id="cover", frames=[full], onPage=draw_cover),
-            PageTemplate(id="plain", frames=[normal]),
+            PageTemplate(id="plain", frames=[normal], onPageEnd=draw_header_footer),
             PageTemplate(id="normal", frames=[normal], onPageEnd=draw_header_footer),
             PageTemplate(id="divider", frames=[div], onPage=draw_divider),
             PageTemplate(id="back", frames=[full], onPage=draw_back),
@@ -510,7 +539,7 @@ def main():
     # İçindekiler
     toc = TableOfContents(dotsMinLevel=1)
     toc.levelStyles = [toc0, toc1]
-    story += [P("İÇİNDEKİLER", ParagraphStyle("tt", parent=title, fontSize=20, spaceAfter=10)), Spacer(1, 6), toc]
+    story += [Marker("İçindekiler", ""), P("İÇİNDEKİLER", ParagraphStyle("tt", parent=title, fontSize=20, spaceAfter=10)), Spacer(1, 6), toc]
     if 0 in mods:
         story += module_story(mods[0])
     for b_i, b in enumerate(BOLUMLER):
