@@ -258,19 +258,19 @@
    "fasil": 59
   },
   {
-   "soru": "Bir kutu içinde perakende satışa sunulan; tırnak makası, tırnak törpüsü, tırnak temizleyici ve kıl çekme cımbızından oluşan manikür takımının sınıflandırılmasıyla ilgili aşağıdakilerden hangisi doğrudur?",
+   "soru": "Tarife Cetveline göre, hekimlerin hastanın kan basıncını ölçmekte kullandığı, göstergesi madeni manometre tipinde olan tansiyon aleti (sfigmomanometre) hangi tarife pozisyonunda sınıflandırılır?",
    "secenekler": [
-    "Manikür takımları 82.14 metninde ismen sayıldığından GYK 1 uyarınca 82.14’te sınıflandırılır.",
-    "GYK 3(b) uyarınca takıma esas niteliğini veren tırnak makasının pozisyonunda (82.13) sınıflandırılır.",
-    "Perakende takım sayılmadığından her alet kendi pozisyonunda ayrı ayrı sınıflandırılır.",
-    "GYK 3(c) uyarınca geçerli pozisyonların numara sırasına göre sonuncusunda sınıflandırılır.",
-    "GYK 4 uyarınca kendisine en çok benzeyen eşyanın pozisyonunda sınıflandırılır."
+    "90.18",
+    "90.26",
+    "90.25",
+    "90.31",
+    "90.19"
    ],
    "cevap": "A",
-   "tip": "Genel Yorum Kuralı",
-   "gerekce": "82.14 metni “manikür veya pedikür takımları”nı ismen kapsar; açıklama notu bu takımların makas ve cımbız içerebileceğini belirtir. Eşya pozisyon metniyle (GYK 1) sınıflandırılır; GYK 3(b)’ye geçilmez.",
-   "dayanak": "GYK 1; 82.14 pozisyon metni ve Açıklama Notu.",
-   "fasil": "GYK"
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "90.18 Açıklama Notu, özel teşhis aletleri arasında kan basıncını ölçen sfigmomanometre, tansiyometre ve osilometreleri sayar; manometreli göstergesi eşyayı 90.26’ya götürmez. Tıpta kullanılan termometrelerin 90.25’e gitmesi tansiyon aletine uygulanmaz.",
+   "dayanak": "90.18 Açıklama Notu (B)(3); 90.26 pozisyon metni.",
+   "fasil": 90
   },
   {
    "soru": "Fasıl 84 Not 7’ye göre itibari çapı 4 mm olan, en büyük ve en küçük çapları aşağıda verilen kalibrelenmiş çelik bilyalardan hangisi 84.82 pozisyonunda sınıflandırılır?",

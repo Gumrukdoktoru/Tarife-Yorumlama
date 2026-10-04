@@ -273,34 +273,34 @@
    "fasil": 40
   },
   {
-   "soru": "Elektrik motoru henüz takılmamış, bunun dışında tamamlanmış aletin asli niteliklerini taşıyan, elle kullanılan elektromekanik matkap hangi pozisyonda ve hangi Genel Yorum Kuralı uyarınca sınıflandırılır?",
+   "soru": "Fasıl 84’te yer alan aşağıdaki makine ve cihazların Tarife Cetvelindeki sıraya göre (pozisyon numarası küçükten büyüğe) doğru dizilişi hangisidir?<br/>I. Şarap imalinde kullanılan hidrolik üzüm presi<br/>II. Tütün kıyma makinesi<br/>III. Akaryakıtlı ocak brülörü<br/>IV. Elle çevrilen kollu, mekanik kurşun kalem açma cihazı<br/>V. Otomobiller için portatif hidrolik kriko",
    "secenekler": [
-    "84.67 – GYK 2(b)",
-    "84.67 – GYK 2(a)",
-    "84.66 – GYK 1",
-    "82.05 – GYK 4",
-    "85.01 – GYK 3(b)"
+    "V – III – I – IV – II",
+    "III – V – I – IV – II",
+    "III – V – IV – I – II",
+    "III – I – V – IV – II",
+    "III – V – I – II – IV"
    ],
    "cevap": "B",
-   "tip": "Genel Yorum Kuralı",
-   "gerekce": "Bölüm XVI Genel Açıklamaları, normalde elektrik motorlu olan 84.67 aletlerinin motorsuz sunulsa da motorlu olanlarla aynı pozisyonda kalacağını belirtir; bu, eksik eşyaya ilişkin GYK 2(a)’dır. 2(b) maddelerin karışımıyla ilgilidir; aksam pozisyonları uygulanmaz.",
-   "dayanak": "GYK 2(a); Bölüm XVI Genel Açıklamalar (IV).",
-   "fasil": "GYK"
+   "tip": "Sıralama",
+   "gerekce": "Ocak brülörü 84.16, portatif kriko 84.25, üzüm presi 84.35, mekanik kurşun kalem açma cihazı 84.72, tütün kıyma makinesi 84.78’dedir. Tuzak, tütün makinesini içecek preslerinin hemen ardında sanmaktır.",
+   "dayanak": "84.16, 84.25, 84.35, 84.72 ve 84.78 pozisyon metinleri ve Açıklama Notları.",
+   "fasil": 84
   },
   {
-   "soru": "Aşağıdaki sınıflandırma örneklerinden hangisinde dayanılan Genel Yorum Kuralı <b>yanlış</b> gösterilmiştir?",
+   "soru": "Tarife Cetvelinde bazı bölümlerin başında, o bölümün fasıllarına uygulanan bölüm notları yer alırken bazı bölümler doğrudan ilk fasılla başlar. Aşağıdaki bölümlerden hangisinin başında bölüm notu <b>bulunur</b>?",
    "secenekler": [
-    "Tüm parçaları birlikte sunulan, yalnızca cıvatalarla monte edilecek çocuk bahçesi kaydırağı → 95.06: GYK 2(a)",
-    "Kendine göre yapılmış, uzun süre kullanılabilen kutusuyla birlikte sunulan altın kolye → 71.13: GYK 5(a)",
-    "Ağırlıkça eşit oranda karabiber ve kimyon tohumundan oluşan karışım → 09.10: GYK 3(c)",
-    "Kendinden elektrik motorlu saç ve sakal tıraş makinesi → 85.10: GYK 3(a)",
-    "Kahve yerine kullanılan kavrulmuş malt → 21.01: GYK 1"
+    "Bölüm V",
+    "Bölüm IX",
+    "Bölüm II",
+    "Bölüm XIII",
+    "Bölüm XVIII"
    ],
    "cevap": "C",
-   "tip": "Genel Yorum Kuralı",
-   "gerekce": "Farklı pozisyonlara giren baharatların karışımı Fasıl 9 Not 1(b) hükmüyle 09.10’dadır; dayanak GYK 1’dir. 09.10’un numara sırasında son olması 3(c)’yi gerektirmez; notta hüküm varken GYK 3 uygulanmaz.",
-   "dayanak": "Fasıl 9 Not 1(b); GYK 1; GYK 3 Açıklama Notu (II).",
-   "fasil": "GYK"
+   "tip": "Tarife yapısı",
+   "gerekce": "Bölüm II’nin başında “pellet” tabirini tanımlayan bir bölüm notu vardır. Bölüm V, IX, XIII ve XVIII ise doğrudan ilk fasıllarının (25, 44, 68 ve 90) notlarıyla başlar; her bölümün bir bölüm notu olduğunu sanmak tuzaktır.",
+   "dayanak": "Bölüm II Notu; Fasıl 25, 44, 68 ve 90 başlangıç metinleri.",
+   "fasil": "Genel"
   }
  ]
 }

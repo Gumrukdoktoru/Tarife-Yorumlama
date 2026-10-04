@@ -273,18 +273,18 @@
    "fasil": 5
   },
   {
-   "soru": "Tarife Cetveline göre, esası patates unu olan ve dondurulmuş halde sunulan “knödel” (hamur köftesi) hangi pozisyonda sınıflandırılır?",
+   "soru": "Tarife Cetveline göre, havuç ve kereviz sularının karıştırılmasıyla hazırlanmış; fermente edilmemiş, alkol ve ilave su katılmamış, yalnızca tuz ve baharat eklenmiş sebze suyu hangi pozisyonda sınıflandırılır?",
    "secenekler": [
-    "19.01",
-    "19.02",
-    "20.04",
     "20.05",
-    "11.05"
+    "22.02",
+    "20.09",
+    "21.06",
+    "20.02"
    ],
    "cevap": "C",
    "tip": "Eşya → 4’lü pozisyon",
-   "gerekce": "19.01 Açıklama Notu irmik, hububat unu, ekmek kırıntısı vb. esaslı knödel, klösse ve nockerln’i 19.01’de sayar; ancak esası patates unu olanların 20. Fasılda yer aldığını belirtir. Fasıl 20 Not 3’e göre 11.05 ürünlerinden başka şekilde hazırlananlar 20.04 veya 20.05’e girer; 20.04 Açıklama Notu da patates unundan yapılmış dondurulmuş knödeli örnek olarak sayar. Dondurulmamış olsaydı 20.05 gündeme gelirdi.",
-   "dayanak": "Fasıl 20 Not 3; 19.01 ve 20.04 Açıklama Notları.",
+   "gerekce": "20.09 pozisyonu fermente edilmemiş ve alkol katılmamış sebze sularını kapsar; Açıklama Notu bu sebze sularının ilave tuz, baharat veya aroma maddesi içerebileceğini ve farklı tipteki sebze suları karışımlarının da bu pozisyonda yer aldığını belirtir. 20.05 Açıklama Notu sebze sularını açıkça bu pozisyon dışında bırakarak 20.09’a gönderir. Ürüne normal oranı aşan su katılmadığından 22.02’deki seyreltilmiş içecek karakterini taşımaz; domates suyu içermediğinden kuru madde oranına bağlı 20.02 kuralı da söz konusu olmaz.",
+   "dayanak": "Fasıl 20 Not 6; 20.05 ve 20.09 Açıklama Notları.",
    "fasil": 20
   },
   {

@@ -170,7 +170,35 @@ def karma_overlap(esik=0.5, esik_kok=0.30):
     print("işaretlenen karma sorusu:", flagged)
 
 
+def deneme_siki(esik_kok=0.30):
+    """Deneme sorularında aynı doğru cevap + benzer kök (farklı ifadeyle aynı eşya) arar."""
+    pool = []
+    for f in sorted(glob.glob(os.path.join(DATA, "fasil_*.json"))):
+        d = json.load(open(f, encoding="utf-8"))
+        for i, q in enumerate(d.get("sorular", []), 1):
+            pool.append(_kayit(f"Fasıl {d['fasil']} s{i}", q["soru"], _dogru(q)))
+    ek = os.path.join(ROOT, "kaynak", "onceki_ek_sorular.json")
+    if os.path.exists(ek):
+        for i, q in enumerate(json.load(open(ek, encoding="utf-8")), 1):
+            pool.append(_kayit(f"{q['kaynak']} s{i}", q["soru"], _dogru(q)))
+    seen, n = [], 0
+    for f in sorted(glob.glob(os.path.join(DATA, "deneme_*.json"))):
+        d = json.load(open(f, encoding="utf-8"))
+        for i, q in enumerate(d["sorular"], 1):
+            k = _kayit(f"Deneme {d['no']} s{i}", q["soru"], _dogru(q))
+            for lab, t, kok, dn, dt in pool + seen:
+                ayni = dn and (k[3] == dn or (len(k[4]) >= 2 and jacc(k[4], dt) >= 0.7))
+                if ayni and jacc(k[2], kok) >= esik_kok:
+                    n += 1
+                    print(f"deneme {d['no']} soru {i}: aynı doğru cevap + benzer kök {jacc(k[2], kok):.2f} ({lab}) → {q['soru'][:80]}")
+                    break
+            seen.append(k)
+    print("sıkı denetimde işaretlenen deneme sorusu:", n)
+
+
 if __name__ == "__main__":
+    if "--deneme-siki" in sys.argv:
+        deneme_siki()
     if "--karma" in sys.argv:
         karma_overlap()
     if "--ornek" in sys.argv:

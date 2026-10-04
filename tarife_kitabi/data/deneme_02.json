@@ -3,18 +3,18 @@
  "no": 2,
  "sorular": [
   {
-   "soru": "Tarife Cetveline göre, Taurotragus cinsine giren sarmal boynuzlu canlı antilop hangi pozisyonda sınıflandırılır?",
+   "soru": "Tarife Cetveline göre, yumurtadan yeni çıkmış canlı evcil ördek yavruları (palazlar) hangi pozisyonda sınıflandırılır?",
    "secenekler": [
     "01.06",
-    "01.02",
-    "01.04",
-    "95.08",
-    "01.01"
+    "01.05",
+    "04.07",
+    "02.07",
+    "05.11"
    ],
    "cevap": "B",
    "tip": "Eşya → 4’lü pozisyon",
-   "gerekce": "01.02 Açıklama Notu, büyükbaş hayvanlar içindeki “diğerleri” grubunda 4 boynuzlu antilop ile Taurotragus ve Tragelaphus cinsi sarmal boynuzlu antilopları saymaktadır. 01.06 Açıklama Notu ise antilopları ancak “Bovinae altfamilyasından olanlar hariç” kapsar; bu nedenle “her antilop 01.06’dadır” kestirmesi tuzaktır. 01.04 koyun ve keçileri, 95.08 gezici gösterilerdeki hayvanları kapsar.",
-   "dayanak": "01.02 Açıklama Notu; 01.06 Açıklama Notu.",
+   "gerekce": "Bölüm I Not 1’e göre bu bölümde bir hayvan cins veya türüne yapılan atıf, metinde aksi belirtilmedikçe o türün yavrusunu da kapsar; 01.05 pozisyon metni evcil ördekleri ismen saydığından palazlar da bu pozisyondadır ve pozisyon içinde ağırlığı 185 gramı geçmeyen kanatlılar ayrıca gösterilmiştir. 01.06 ise yabani ördekler gibi 01.05’te ismen geçmeyen kuşları kapsar. Döllenmiş kuluçkalık yumurtalar 04.07’de yer alsa da yumurtadan çıkmış yavrular canlı hayvandır; 02.07 kümes hayvanlarının etlerini, 05.11 ise insan tüketimine uygun olmayan ölü hayvanları kapsar.",
+   "dayanak": "Bölüm I Not 1; 01.05 pozisyon metni ve Açıklama Notu; 04.07 Açıklama Notu.",
    "fasil": 1
   },
   {

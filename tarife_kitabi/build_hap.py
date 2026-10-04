@@ -289,6 +289,9 @@ def analiz_story(S):
     s += [Spacer(1, 6), TocMark(1, "Soru tipi yoğunluğu", "an_tip"), P("1.1 Soru tipi yoğunluğu", c_h1)]
     rows = sorted(S["tip"].items(), key=lambda kv: -kv[1])
     s.append(HBar([(k, v) for k, v in rows], label_w=58 * mm, toplam=S["n_tar"]))
+    s.append(Spacer(1, 3))
+    s.append(P("Karma testlerde tipler bu oranlarla dağıtıldı; yalnız Genel Yorum Kuralı soruları %5 ile sınırlandı "
+               "ve kalan pay diğer tiplere aktarıldı.", c_small))
     s.append(Spacer(1, 6))
     # 1.2 soru kalıpları
     s += [CondPageBreak(60 * mm), TocMark(1, "Nasıl soruluyor: soru kalıpları", "an_kalip"),
@@ -440,7 +443,7 @@ def karma_story(tests):
          TocMark(0, "Bölüm 3 — Karma Testler", "karma"),
          P("BÖLÜM 3", kicker), Spacer(1, 2), P("Karma Testler", title), Spacer(1, 3),
          P(f"{len(tests)} test × 20 soru. Soru tipleri ve fasıl ağırlıkları son beş sınavın yoğunluğuna göre "
-           "dağıtıldı; sorular kitabın ana bölümündeki ve deneme sınavlarındaki sorulardan ve çıkmış sorulardan "
+           "dağıtıldı; Genel Yorum Kuralı soruları her testte 1 soru (%5) ile sınırlandı. Sorular kitabın ana bölümündeki ve deneme sınavlarındaki sorulardan ve çıkmış sorulardan "
            "bağımsızdır. Cevap anahtarı ve kısa gerekçeler kitabın sonundadır.", c_base), Spacer(1, 8)]
     for i, d in enumerate(tests):
         if i:

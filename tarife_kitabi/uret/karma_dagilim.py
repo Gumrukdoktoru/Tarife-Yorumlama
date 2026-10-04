@@ -16,11 +16,24 @@ kademe[77] = 'C'
 # --- tip kotaları (200 soru, son 5 sınav tarife sorularına orantılı)
 N = 200
 tip = dict(S['tip'])
+GYK_PAY = 0.05  # kullanıcı kuralı: GYK soruları toplamın %3–5'i
 top = sum(tip.values())
 raw = {t: N * c / top for t, c in tip.items()}
 kota = {t: math.floor(v) for t, v in raw.items()}
 for t in sorted(raw, key=lambda t: -(raw[t] - kota[t]))[:N - sum(kota.values())]:
     kota[t] += 1
+
+# GYK kotasını %5'e indir, artanı diğer tiplere oranla dağıt
+hedef = round(N * GYK_PAY)
+fazla = kota['Genel Yorum Kuralı'] - hedef
+if fazla > 0:
+    kota['Genel Yorum Kuralı'] = hedef
+    diger_raw = {t: fazla * c / (top - tip['Genel Yorum Kuralı']) for t, c in tip.items() if t != 'Genel Yorum Kuralı'}
+    ek = {t: math.floor(v) for t, v in diger_raw.items()}
+    for t in sorted(diger_raw, key=lambda t: -(diger_raw[t] - ek[t]))[:fazla - sum(ek.values())]:
+        ek[t] += 1
+    for t, v in ek.items():
+        kota[t] += v
 
 # --- fasıl yuvaları (GYK ve Tarife yapısı dışındaki tipler)
 n_gyk = kota['Genel Yorum Kuralı']; n_yapi = kota['Tarife yapısı']

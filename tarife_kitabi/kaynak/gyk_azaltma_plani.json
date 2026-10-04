@@ -1,0 +1,107 @@
+{
+ "1": [
+  [
+   17,
+   33,
+   "Fasıl notu · Tanım/Eşik"
+  ],
+  [
+   20,
+   48,
+   "Fasıl/Bölüm bulma"
+  ]
+ ],
+ "2": [
+  [
+   18,
+   90,
+   "Eşya → 4’lü pozisyon"
+  ]
+ ],
+ "3": [
+  [
+   7,
+   95,
+   "Fasıl notu · Tanım/Eşik"
+  ],
+  [
+   17,
+   87,
+   "Fasıl/Bölüm bulma"
+  ]
+ ],
+ "4": [
+  [
+   16,
+   44,
+   "Olumsuz teşhis"
+  ],
+  [
+   20,
+   30,
+   "Eşya → 4’lü pozisyon"
+  ]
+ ],
+ "5": [
+  [
+   19,
+   85,
+   "Olumsuz teşhis"
+  ]
+ ],
+ "6": [
+  [
+   13,
+   39,
+   "Pozisyon → eşya"
+  ],
+  [
+   16,
+   85,
+   "Eşya → 4’lü pozisyon"
+  ]
+ ],
+ "7": [
+  [
+   15,
+   85,
+   "Olumsuz teşhis"
+  ],
+  [
+   20,
+   84,
+   "Eşya → 4’lü pozisyon"
+  ]
+ ],
+ "8": [
+  [
+   20,
+   96,
+   "Farklı/aynı pozisyon veya fasıl"
+  ]
+ ],
+ "9": [
+  [
+   7,
+   42,
+   "Farklı/aynı pozisyon veya fasıl"
+  ],
+  [
+   19,
+   84,
+   "Olumsuz teşhis"
+  ]
+ ],
+ "10": [
+  [
+   19,
+   84,
+   "Sıralama"
+  ],
+  [
+   20,
+   "Genel",
+   "Tarife yapısı"
+  ]
+ ]
+}

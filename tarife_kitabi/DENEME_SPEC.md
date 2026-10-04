@@ -21,7 +21,7 @@ only, no years, accuracy first, markup, no letters inside options) apply here un
   answered mainly by that chapter's notes; cross-chapter questions ("hangisi farklı fasılda yer alır")
   are welcome — tag them with the slot's chapter.
 - Type mix across the 50 (±2): 11 "Eşya → 4’lü pozisyon", 8 "Olumsuz teşhis", 8 "Farklı/aynı pozisyon
-  veya fasıl", 7 "Fasıl notu · Tanım/Eşik", 6 "Genel Yorum Kuralı" (the 5 GYK slots + 1), 3 "Eşleştirme /
+  veya fasıl", 7 "Fasıl notu · Tanım/Eşik", 2 "Genel Yorum Kuralı" (user rule: GYK must be 3–5 % of the questions, i.e. 2 of 50; the remaining GYK slots become other types), 3 "Eşleştirme /
   Boşluk doldurma", 3 "Çoktan-çoğa (I–IV)", 4 "Senaryo".
 - Order: mix sections (do not group by chapter); keep a rough easy→hard flow.
 - **Answer distribution: exactly 10 × A, 10 × B, 10 × C, 10 × D, 10 × E**, irregular sequence.

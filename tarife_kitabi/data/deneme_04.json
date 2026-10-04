@@ -93,18 +93,18 @@
    "fasil": "GYK"
   },
   {
-   "soru": "Tarife Cetveline göre, şeker ve kakao katılmış, yoğurt karakterini koruyan meyveli yoğurt hangi pozisyonda sınıflandırılır?",
+   "soru": "Tarife Cetveline göre, durum buğdayı irmiğinden yapılan hamuruna renk ve aroma vermek amacıyla kakao tozu katılmış; pişirilmemiş, doldurulmamış ve kurutulmuş erişte (tagliatelle) hangi pozisyonda sınıflandırılır?",
    "secenekler": [
     "18.06",
     "19.01",
-    "04.03",
-    "21.06",
-    "04.04"
+    "19.02",
+    "19.05",
+    "21.06"
    ],
    "cevap": "C",
    "tip": "Eşya → 4’lü pozisyon",
-   "gerekce": "04.03 pozisyon metni, ilave şeker, aroma, meyve, sert kabuklu meyve veya kakao içersin içermesin yoğurdu kapsar; Fasıl 18 Not 1(b) de 04.03’teki müstahzarları bu fasıl dışında bırakır. Bu nedenle kakao içermesi ürünü 18.06’ya götürmez. 19.01 ve 21.06 genel gıda müstahzarı pozisyonlarıdır ve 04.03’te ismen sayılan ürüne uygulanmaz; 04.04 ise peynir altı suyu ve tabii süt bileşenlerinden ibaret ürünleri kapsar.",
-   "dayanak": "Fasıl 18 Not 1(b); 04.03 pozisyon metni ve Açıklama Notu.",
+   "gerekce": "Fasıl 18 Not 1(b), 19.02 pozisyonunda yer alan müstahzarları kakao içerseler bile bu fasıl dışında bırakır; bu nedenle kakao içeren gıda müstahzarlarını 18.06’ya veren hüküm bu makarnaya uygulanmaz. 19.02 Açıklama Notuna göre makarna hamuru renk ve aroma verici maddelerle karıştırılabilir ve kurutulmuş erişte (tagliatelle) bu pozisyonda sayılır. 19.01 tarifenin başka yerinde belirtilmeyen un esaslı müstahzarları kapsadığından ismen yer alan makarnaya uygulanmaz; ürün fırınlanmış bir ekmekçilik ürünü olmadığından 19.05’e, genel nitelikli 21.06’ya da gidilmez.",
+   "dayanak": "Fasıl 18 Not 1(b); 19.02 pozisyon metni ve Açıklama Notu.",
    "fasil": 18
   },
   {
@@ -393,18 +393,18 @@
    "fasil": 84
   },
   {
-   "soru": "Tarife Cetveline göre, sakkaroz şurubu ve invert şeker şurubundan hazırlanan, yağ içermeyen, çikolata ve şekerlemelerde dolgu maddesi olarak kullanılan fondan ezmesi hangi pozisyonda sınıflandırılır?",
+   "soru": "Tarife Cetveline göre, şeker, glikoz şurubu, tereyağı ve yoğunlaştırılmış sütün birlikte pişirilmesiyle elde edilen; kakao içermeyen, tek tek ambalajlanmış ve olduğu gibi yenmeye hazır sütlü karamel şekerlemeler hangi pozisyonda sınıflandırılır?",
    "secenekler": [
     "17.02",
+    "19.01",
     "21.06",
     "18.06",
-    "17.01",
     "17.04"
    ],
    "cevap": "E",
    "tip": "Eşya → 4’lü pozisyon",
-   "gerekce": "17.04 açıklama notu, çok az veya hiç yağ içermeyen, esası şeker olan ve doğrudan şekerlemeye dönüştürülmeye elverişli ezmeleri (fondan, nugat ve badem ezmeleri) bu pozisyonda sayar; bunların başka ürünlerde dolgu maddesi olarak kullanılması sonucu değiştirmez. Ürün kakao içermediğinden 18.06’ya girmez; 17.02 ise katı şekerleri ve aroma veya renk verici katılmamış şeker şuruplarını kapsar.",
-   "dayanak": "17.04 Açıklama Notu; Fasıl 17 Notu (a).",
+   "gerekce": "17.04 Açıklama Notu, olduğu gibi yenilmeye elverişli şekercilik mamulleri arasında karamelleri ismen sayar; ürün kakao içermediğinden 18.06’ya gitmez. 17.02’deki “karamel” ise şekerlerin veya melasın 120–180 °C’de uzun süre ısıtılmasıyla elde edilen, aroma veya renk verici olarak kullanılan esmer maddedir ve şekerleme değildir. Esasında süt ürünleri bulunsa da 19.01 Açıklama Notu şeker mamulleri karakterine sahip ürünleri bu pozisyon dışında bırakarak 17.04’e gönderir; 21.06 ise doğrudan şekerlemeye dönüştürülmeye uygun olmayan yağlı ezmeler gibi ürünler içindir.",
+   "dayanak": "17.02 ve 17.04 Açıklama Notları; 19.01 Açıklama Notu.",
    "fasil": 17
   },
   {
@@ -603,18 +603,18 @@
    "fasil": 19
   },
   {
-   "soru": "Fırıncılıkta kalıpların kolay ayrılmasını sağlamak amacıyla kullanılan, bitkisel sıvı yağların yenilebilir karışımından oluşan kalıp gevşetici müstahzar Tarife Cetvelinde hangi pozisyonda sınıflandırılır?",
+   "soru": "Tarife Cetveline göre, arı mumu ile parafin mumu karışımının terebentin esansı içinde eritilmesiyle hazırlanmış, ahşap mobilya ve parkelerin parlatılması ve korunmasında kullanılan macun kıvamındaki cila hangi pozisyonda sınıflandırılır?",
    "secenekler": [
-    "34.03",
     "34.04",
-    "38.24",
-    "15.17",
-    "15.18"
+    "15.21",
+    "38.09",
+    "34.05",
+    "27.12"
    ],
    "cevap": "D",
    "tip": "Eşya → 4’lü pozisyon",
-   "gerekce": "34.03 döküm kalıplarını ayırmaya mahsus yağlama müstahzarlarını kapsasa da Fasıl 34 Not 1(a), döküm kalıbı müstahzarı olarak kullanılan hayvansal, bitkisel veya mikrobiyal katı ve sıvı yağların yenilebilen karışımlarını bu fasıl dışında bırakır; 34.03 açıklama notu da ekmekçilikte kalıp gevşetici yağları örnek vererek 15.17’ye gönderir. Tuzak, kullanım amacına bakarak 34.03’ü seçmektir.",
-   "dayanak": "Fasıl 34 Not 1(a); 34.03 Açıklama Notu (F).",
+   "gerekce": "Farklı mumların karışımları Fasıl 34 Not 5(b) uyarınca 34.04’teki müstahzar mumlar arasında yer alsa da aynı Notun istisna hükmü, sıvı bir ortamda karıştırılmış, dağıtılmış veya eritilmiş mumları 34.04 dışında bırakır. 34.05 Açıklama Notu, terebentin esansı emdirilmiş mumlardan oluşan cilaları mobilya ve döşeme cilaları arasında örnek olarak sayar. 15.21 karıştırılmamış bitkisel ve hayvansal mumları, 27.12 parafin gibi mineral mumları kapsar; 38.09 ise mensucat, kâğıt ve deri sanayiinde kullanılan apre ve finisaj müstahzarları içindir.",
+   "dayanak": "Fasıl 34 Not 5; 34.04 ve 34.05 Açıklama Notları.",
    "fasil": 34
   },
   {

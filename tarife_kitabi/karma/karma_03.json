@@ -93,19 +93,19 @@
    "fasil": 73
   },
   {
-   "soru": "Kakao yağının, başlığında katı ve sıvı yağlara yer verilen Fasıl 15 yerine 18.04 pozisyonunda sınıflandırılması aşağıdakilerden hangisinin gereğidir?",
+   "soru": "Fasıl 95 Not 1 ve Not 3 hükümlerine göre, yalnızca uzaktan kumandalı model gemilerde kullanılmak üzere tasarlanmış ve ayrı olarak sunulan aşağıdaki aksam ve parçalardan hangisi Fasıl 95’te, ait olduğu eşyanın pozisyonunda sınıflandırılır?",
    "secenekler": [
-    "GYK 2(b) – kakao yağı karışım halinde bir yağ sayıldığından",
-    "GYK 1 – başlıklar gösterici olup Fasıl 15 notu onu dışarıda bıraktığından",
-    "GYK 3(a) – 18.04 eşyayı daha özel bir şekilde tanımladığından",
-    "GYK 3(b) – eşyaya esas niteliğini kakao maddesi verdiğinden",
-    "GYK 4 – kakao yağı en çok kakao ürünlerine benzediğinden"
+    "Model gemiyi yürüten elektrik motoru",
+    "Model gemiye mahsus minyatür içten yanmalı pistonlu motor",
+    "Model gemiyi uzaktan yönlendiren elektromanyetik kumanda aleti",
+    "Model geminin yakıt sistemine mahsus küçük sıvı pompası",
+    "Model gemi gövdesine takılan adi metalden vida ve somunlar"
    ],
    "cevap": "B",
-   "tip": "Genel Yorum Kuralı",
-   "gerekce": "GYK 1’e göre bölüm ve fasıl başlıkları yalnızca gösterici niteliktedir; sınıflandırma pozisyon metinleri ve notlarla yapılır. Fasıl 15 Not 1(b) kakao yağını 18.04’e gönderdiğinden GYK 3 veya 4’e başvurulmaz.",
-   "dayanak": "GYK 1; Fasıl 15 Not 1(b); 18.04 pozisyon metni.",
-   "fasil": "GYK"
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Not 3 fasıl eşyasına mahsus aksamı ait olduğu eşyayla sınıflandırır; 95.03 Açıklama Notu model gemilere mahsus minyatür içten yanmalı motorları bu aksamdan sayar. Not 1(m) ve 1(k) ise elektrik motorlarını (85.01), uzaktan kumandaları (85.26), sıvı pompalarını (84.13) ve genel kullanıma mahsus metal parçaları hariç tutar.",
+   "dayanak": "Fasıl 95 Not 1(k), 1(m) ve Not 3; 95.03 Açıklama Notu (aksam, parça ve aksesuarlar).",
+   "fasil": 95
   },
   {
    "soru": "Tarife Cetveline göre, sodyum bikarbonat ile tartarik asit karışımına nişasta katılarak hazırlanan ve pasta ile bisküvi hamurlarının kabartılmasında kullanılan kabartma tozu hangi pozisyonda sınıflandırılır?",
@@ -243,19 +243,19 @@
    "fasil": 53
   },
   {
-   "soru": "Tüm parçaları aynı kolide birlikte sunulan, montajı yalnızca cıvata ve somunlarla yapılacak demonte haldeki tek tekerlekli el arabası hangi pozisyonda ve hangi Genel Yorum Kuralları uyarınca sınıflandırılır?",
+   "soru": "Tarife Cetveline göre; motoru veya mekanik itme tertibatı bulunmayan, tekerlekleri kullanıcı tarafından doğrudan elle itilerek hareket ettirilen ve engellilerin ulaşımı için özel olarak tasarlanmış tekerlekli sandalye hangi fasılda yer alır?",
    "secenekler": [
-    "87.16 – GYK 1 ve 2(a)",
-    "87.16 – GYK 1 ve 3(b)",
-    "87.16 – GYK 2(b)",
-    "Her parça kendi pozisyonunda – GYK 1",
-    "73.26 – GYK 3(c)"
+    "Fasıl 87",
+    "Fasıl 90",
+    "Fasıl 94",
+    "Fasıl 73",
+    "Fasıl 84"
    ],
    "cevap": "A",
-   "tip": "Genel Yorum Kuralı",
-   "gerekce": "El arabaları 87.16 Açıklama Notunda elle hareket ettirilen taşıtlar arasında sayılır. GYK 2(a), parçaları yalnızca bağlantı elemanlarıyla birleştirilecek demonte eşyayı monte edilmiş eşyayla aynı pozisyona alır; takım veya karışım olmadığından 3(b) ve 2(b) uygulanmaz.",
-   "dayanak": "GYK 1; GYK 2(a) Açıklama Notu (VII); 87.16 Açıklama Notu.",
-   "fasil": "GYK"
+   "tip": "Fasıl/Bölüm bulma",
+   "gerekce": "87.13, engellilerin ulaşımı için tasarlanmış koltuk ve taşıyıcıları itici tertibatlı olsun olmasın kapsar; 90.18 Açıklama Notu da engelliler için tekerlekli koltukları 87.13’e gönderir. Hastane içi tekerlekli sedyeler 94.02’de kalır; çelik iskelet sınıflandırmayı değiştirmez.",
+   "dayanak": "87.13 pozisyon metni ve Açıklama Notu; 90.18 Açıklama Notu; 94.02 Açıklama Notu.",
+   "fasil": 87
   },
   {
    "soru": "Aşağıdakilerden hangisi 84.38 pozisyonunda <b>sınıflandırılmaz</b>?",

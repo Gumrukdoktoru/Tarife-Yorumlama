@@ -18,6 +18,9 @@ no letters inside options). They apply unchanged.
   question on chapter N, skim the module and deneme stems for chapter N and choose different goods / a
   different angle. Concepts may repeat; goods + wording must not.
 
+## GYK share (user rule)
+- Genel Yorum Kuralı questions must be **3–5 %** of all questions: in a 20-question karma test exactly **1** GYK question.
+
 ## Content
 - 20 questions, one per slot given in your prompt (slot = chapter + question type). Order: mixed sections,
   rough easy→hard.

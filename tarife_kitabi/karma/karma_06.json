@@ -183,19 +183,19 @@
    "fasil": 87
   },
   {
-   "soru": "Burun kısmı henüz kapatılmamış olmakla birlikte bitmiş çorabın esas karakterini taşıyan, sentetik iplikten örülmüş uzun konçlu kadın çorapları Tarife Cetvelinde hangi pozisyonda ve hangi Genel Yorum Kuralına göre sınıflandırılır?",
+   "soru": "Tarife Cetveline göre aşağıdakilerden hangisi 39.12 pozisyonunda sınıflandırılır?",
    "secenekler": [
-    "61.15 – GYK 3(b)",
-    "60.06 – GYK 1",
-    "61.15 – GYK 1 ve 2(a)",
-    "61.17 – GYK 4",
-    "63.07 – GYK 3(c)"
+    "Karboksimetilselüloz doldurulmuş, buz kabı olarak kullanılan plastik kap",
+    "Kâfurla plastikleştirilmiş selüloz nitrattan (selüloit) çubuklar",
+    "Kalınlaştırıcı olarak kullanılan, toz halindeki karboksimetilselüloz",
+    "Rejenere selülozdan elde edilmiş, dokumaya elverişli suni lifler",
+    "Selüloz asetattan yapılmış ince şeffaf film"
    ],
    "cevap": "C",
-   "tip": "Genel Yorum Kuralı",
-   "gerekce": "GYK 2(a), bitmiş eşyanın esas karakterini taşıyan bitirilmemiş eşyayı bitmiş eşyanın pozisyonuna alır; 61.15 Açıklama Notu da imali bitirilmemiş çorapları bu pozisyona dahil eder. Örme mensucat (60.06) veya diğer hazır eşya (63.07) sayılmaz.",
-   "dayanak": "GYK 1 ve 2(a); Fasıl 61 Genel Açıklamalar; 61.15 Açıklama Notu.",
-   "fasil": "GYK"
+   "tip": "Pozisyon → eşya",
+   "gerekce": "39.12 selüloz ve kimyasal türevlerini yalnız ilk şekillerde kapsar; toz halindeki karboksimetilselüloz bir selüloz eteridir. Selüloit çubuk ve selüloz asetat film 39.16/39.20–39.21’e, rejenere selüloz lifleri Fasıl 54–55’e, CMC dolu plastik buz kabı 39.26’ya gider.",
+   "dayanak": "Fasıl 39 Not 6; 39.12 ve 39.26 Açıklama Notları.",
+   "fasil": 39
   },
   {
    "soru": "Parça halinde (top veya rulo) sunulan aşağıdaki eşyadan hangisi Tarife Cetvelinin 60. faslında <b>sınıflandırılmaz</b>?",
@@ -228,19 +228,19 @@
    "fasil": 90
   },
   {
-   "soru": "Rafine edilmiş prina yağı ile saf zeytinyağının karışımından oluşan, kimyasal olarak değiştirilmemiş yemeklik sıvı yağ hangi pozisyonda ve hangi Genel Yorum Kuralına göre sınıflandırılır?",
+   "soru": "Tarife Cetveline göre; farklı elektronik cihazları beslemek üzere tasarlanmış, bir regülatörle kombine haldeki redresörlerden oluşan kesintisiz güç kaynağı ünitesi hangi tarife pozisyonunda sınıflandırılır?",
    "secenekler": [
-    "15.10 – GYK 1",
-    "15.09 – GYK 3(b)",
-    "15.10 – GYK 3(c)",
-    "15.09 – GYK 2(b)",
-    "15.15 – GYK 4"
+    "85.04",
+    "85.07",
+    "90.32",
+    "85.02",
+    "85.43"
    ],
    "cevap": "A",
-   "tip": "Genel Yorum Kuralı",
-   "gerekce": "15.10 metni, prina yağının 15.09’daki zeytinyağlarıyla karışımlarını ismen kapsar; GYK 2(b) Açıklama Notuna göre pozisyon metninde belirtilen karışımlar 1 No.lu Kurala göre sınıflandırılır. Esas nitelik (3(b)) veya numara sırası (3(c)) araştırılmaz.",
-   "dayanak": "GYK 1; GYK 2(b) Açıklama Notu (X); 15.10 pozisyon metni ve Açıklama Notu.",
-   "fasil": "GYK"
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "85.04 Açıklama Notu stabilize güç kaynaklarını, örneğin elektronik cihazlar için kesintisiz güç kaynağı ünitelerini statik konvertör sayar. Otomatik voltaj regülatörleri 90.32’de, elektrojen grupları 85.02’de, akümülatörler 85.07’dedir; “güç kaynağı” adı jeneratöre götürmez.",
+   "dayanak": "85.04 Açıklama Notu (II) Statik konvertörler; 90.32 ve 85.02 pozisyon metinleri.",
+   "fasil": 85
   },
   {
    "soru": "Fasıl 92 notları ve açıklamalarına göre, ayrı olarak sunulan aşağıdaki eşyadan hangisi bir müzik aletiyle kullanılsa bile 92. Fasılda <b>yer almaz</b>?",

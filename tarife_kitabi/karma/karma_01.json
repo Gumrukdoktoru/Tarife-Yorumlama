@@ -243,19 +243,19 @@
    "fasil": 55
   },
   {
-   "soru": "Perakende satış için karton bir kutuda sunulan; tüpler içinde ressam yağlı boyaları, iki adet fırça, bir palet ve bir palet spatülünden oluşan resim takımı hangi tarife pozisyonunda ve hangi Genel Yorum Kuralına göre sınıflandırılır?",
+   "soru": "Tarife Cetvelinin 33.01 pozisyonu Açıklama Notuna göre, uçucu yağların, rezinoitlerin ve ekstraksiyonla elde edilen yağ reçinelerinin bu pozisyonda kalma şartlarıyla ilgili aşağıdaki ifadelerden hangisi <b>yanlıştır</b>?",
    "secenekler": [
-    "32.13 – GYK 1",
-    "96.03 – GYK 3(c)",
-    "32.13 – GYK 2(b)",
-    "Takım sayılmaz; her eşya kendi pozisyonunda ayrı ayrı – GYK 1",
-    "96.03 – GYK 3(b)"
+    "Çıkarılmaları sırasında kullanılan çözücüden (etil alkol gibi) az bir miktar kalmışsa pozisyon dışında kalırlar.",
+    "Temel maddelerinin bir kısmı giderilerek veya eklenerek standardize edilenler, bileşimleri tabii hâlin normal sınırları içindeyse pozisyonda kalır.",
+    "Fraksiyonlarına ayrılarak bileşimi orijinal üründen önemli derecede farklı hâle getirilenler pozisyon dışında kalır.",
+    "Terpenlerinin alınmasıyla kokuları değişikliğe uğratılmış uçucu yağlar pozisyonda kalır.",
+    "Uçucu yağlardan izole edilen, kimyaca belirli yapıdaki bileşikler pozisyon dışında kalır."
    ],
    "cevap": "A",
-   "tip": "Genel Yorum Kuralı",
-   "gerekce": "32.13 Açıklama Notu, resim boyalarının fırça, palet, palet spatülü gibi teferruatlı takımlarını da bu pozisyona dahil eder; sınıflandırma GYK 1 ile yapılır. Takım (3(b)) veya numara sırası (3(c)) kurallarına başvurulmaz; 2(b) madde karışımlarına ilişkindir.",
-   "dayanak": "GYK 1; 32.13 pozisyon metni ve Açıklama Notu.",
-   "fasil": "GYK"
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "33.01 Açıklama Notu, çıkarmada kullanılan çözücünün az miktarda kalmasının ürünü pozisyon dışına çıkarmadığını açıkça belirtir. Normal sınırlarda standardize edilenler ve terpeni alınanlar 33.01’de kalır; önemli derecede tadil edilenler 33.02’ye, izole kimyasal bileşikler Fasıl 29’a gider.",
+   "dayanak": "33.01 pozisyon metni ve Açıklama Notu.",
+   "fasil": 33
   },
   {
    "soru": "Tarife Cetveline göre, Fasıl 72 Not 1(p)’deki tanıma uyan, alaşımsız çelikten, dış kesitinin en geniş boyutu 32 mm olan ve maden aramalarında kullanılan altıgen kesitli içi boş sondaj çubuğu hangi tarife pozisyonunda sınıflandırılır?",
@@ -288,19 +288,19 @@
    "fasil": 85
   },
   {
-   "soru": "Otomatik takım değiştirme tertibatı bulunmayan; metalleri talaş kaldırarak delen ve ayrıca taşlama yoluyla tamamlayabilen, esas fonksiyonu belirlenemeyen takım tezgâhı hangi tarife pozisyonunda ve hangi Genel Yorum Kuralına göre sınıflandırılır?",
+   "soru": "Kapı ve pencere camlarına yapıştırılmaya hazır ebatta kesilmiş; camı taklit etmek üzere renklendirilmiş ve üzerine süs mahiyetinde desenler basılmış, ince, sert ve çok parlak yarı saydam kâğıttan “cam kâğıdı” Tarife Cetvelinin hangi faslında yer almaktadır?",
    "secenekler": [
-    "84.59 – GYK 1 ve 3(c)",
-    "84.57 – GYK 1 ve 3(a)",
-    "84.60 – GYK 1 ve 3(b)",
-    "84.60 – GYK 1 ve 3(c)",
-    "84.59 – GYK 1 ve 4"
+    "Fasıl 70",
+    "Fasıl 49",
+    "Fasıl 39",
+    "Fasıl 48",
+    "Fasıl 59"
    ],
    "cevap": "D",
-   "tip": "Genel Yorum Kuralı",
-   "gerekce": "Bölüm XVI Not 3 ve Genel Açıklamalarına göre esas fonksiyonu belirlenemeyen çok işlevli makinada GYK 3(c) uygulanır; delme 84.59’a, taşlama 84.60’a girdiğinden numara sırasında sonuncusu olan 84.60 seçilir. Otomatik takım değiştirme olmadığından 84.57 uygulanmaz.",
-   "dayanak": "Bölüm XVI Not 3 ve Genel Açıklamalar; 84.57 Açıklama Notu; GYK 3(c).",
-   "fasil": "GYK"
+   "tip": "Fasıl/Bölüm bulma",
+   "gerekce": "48.14 metni duvar kâğıtlarıyla birlikte cam kâğıtlarını sayar; Fasıl 48 Not 12 gereği desen basılı olmaları onları Fasıl 49’a götürmez. Benzeyen çıkartmalar 49.08’e, yalnız plastikten kaplamalar Fasıl 39’a, kâğıt mesnetli dokuma kaplamalar 59.05’e girer; “cam” adı Fasıl 70 tuzağıdır.",
+   "dayanak": "48.14 pozisyon metni ve Açıklama Notu (B); Fasıl 48 Not 12.",
+   "fasil": 48
   }
  ]
 }

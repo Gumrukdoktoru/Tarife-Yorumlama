@@ -510,7 +510,7 @@
   "pozisyonlar": [
    "90.31"
   ],
-  "konu": "alüminyum su terazisi → 9031.80, malzemeye göre değil",
+  "konu": "alüminyum su terazisi → 90.31, malzemeye göre değil",
   "kalip": "X eşyasının tarife alt pozisyonu nedir? (6'lı seçenekler, 4'lü düzeyde ayırt edilir)",
   "cevap_gecerli": true,
   "not": "seçenekler 6'lı ama farklı fasıllarda; 4'lü bilgiyle çözülür"
@@ -710,7 +710,7 @@
    "84.73",
    "85.24"
   ],
-  "konu": "dizüstü LCD ekran modülü: eskiden 84.73, 2022'den beri 85.24",
+  "konu": "dizüstü LCD ekran modülü: resmi cevap 84.73; güncel Fasıl 85 Not 7 ile 85.24",
   "kalip": "X eşyası hangi tarife pozisyonunda sınıflandırılır?",
   "cevap_gecerli": false,
   "not": "85 notu 7 (2022): düz panel gösterge modülleri 85.24'te öncelikli; resmi cevap 84.73 güncel değil, doğru şık seçeneklerde yok"
@@ -797,7 +797,7 @@
   "pozisyonlar": [
    "16.05"
   ],
-  "konu": "IV. Bölüm, 16. Fasıl, 5. pozisyon → 16.05 → 1605.21",
+  "konu": "IV. Bölüm, 16. Fasıl, 5. pozisyon → 16.05",
   "kalip": "N. Bölüm, M. Fasıl, K. pozisyondaki eşyanın alt pozisyonu hangisi olabilir?",
   "cevap_gecerli": true,
   "not": ""
@@ -988,7 +988,7 @@
   "pozisyonlar": [
    "19.02"
   ],
-  "konu": "karidesli wonton+çorba tozu seti → 1902.20, GYK 2(b), 3(b)",
+  "konu": "karidesli wonton + çorba tozu seti → 19.02, GYK 3(b)",
   "kalip": "Yukarıda tanımlanan eşyanın sınıflandırılmasında aşağıdakilerden hangisi doğrudur? (GYK + alt pozisyon)",
   "cevap_gecerli": true,
   "not": ""
@@ -1470,7 +1470,7 @@
   "pozisyonlar": [
    "87.02"
   ],
-  "konu": "kullanılmış dizel midibüs 2500 cm3 (geçmeyen) → 8702.10.99.12.00",
+  "konu": "kullanılmış dizel midibüs → 87.02 (alt pozisyon motor hacmine göre)",
   "kalip": "Verilen pozisyon açılımına göre 'X' hangi GTİP'te sınıflandırılır?",
   "cevap_gecerli": true,
   "not": ""

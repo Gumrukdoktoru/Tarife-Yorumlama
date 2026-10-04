@@ -273,19 +273,19 @@
    "fasil": 90
   },
   {
-   "soru": "Genel Yorum Kuralları ve açıklama notlarıyla ilgili aşağıdaki ifadelerden hangisi <b>doğrudur</b>?",
+   "soru": "Tarife Cetveline göre aşağıdaki makine ve cihazlardan hangisi 85.15 pozisyonunda <b>sınıflandırılmaz</b>?",
    "secenekler": [
-    "Bölüm ve fasıl başlıkları ile pozisyon metni çeliştiğinde sınıflandırmada başlıklar esas alınır.",
-    "3(c) kuralına göre eşya, geçerli olabilecek pozisyonlardan numara sırasına göre ilkinde sınıflandırılır.",
-    "3(b) anlamında bileşik eşya, birbirini tamamlayan ve ayrı satışa sunulmayan ayrılabilir parçalı eşyayı da kapsar.",
-    "5(a) kuralı, bir bütün olarak esas niteliği mahfaza olan eşyaya da uygulanır.",
-    "3(b) kuralı, imalatta kullanılmak üzere belirli miktarlarda ayrı ayrı paketlenip ortak ambalajda sunulan eşyaya da uygulanır."
+    "Plastik filmleri ultrasonik dalgalarla birbirine kaynaştıran makine",
+    "Termoplastikleri elektrikle ısıtılmış havayla birleştiren sıcak gaz kaynak cihazı",
+    "Parçaları birbirine sürterek oluşan ısıyla birleştiren sürtünmeli kaynak makinesi",
+    "Kaynak yapmak üzere özel olarak düzenlenmiş sanayi robotu",
+    "Metalleri elektrik arkıyla eritip sıkıştırılmış havayla püskürten cihaz"
    ],
    "cevap": "C",
-   "tip": "Genel Yorum Kuralı",
-   "gerekce": "Açıklama notu, birbirini tamamlayan ve ayrı satılmayan ayrılabilir parçalı eşyayı (kaideli kül tablası gibi) 3(b) bileşik eşyası sayar. Başlıklar yasal değildir; 3(c) sonuncuyu seçer; 5(a) esas niteliği mahfaza olana, 3(b) üretim için ayrı paketlenen eşyaya uygulanmaz.",
-   "dayanak": "GYK 1, 3(b), 3(c), 5(a) ve Açıklama Notları.",
-   "fasil": "GYK"
+   "tip": "Olumsuz teşhis",
+   "gerekce": "85.15 Açıklama Notu sürtünmeli (friction) kaynak makinalarını pozisyon dışında bırakıp 84.68’e gönderir; ısı elektrikle değil sürtünmeyle elde edilir. Ultrasonik ve sıcak gaz kaynak cihazları, kaynak robotları ve elektrik arklı metal püskürtme cihazları 85.15’te açıkça sayılır.",
+   "dayanak": "85.15 Açıklama Notu (I), (II) ve hariç tutulanlar; 84.68.",
+   "fasil": 85
   },
   {
    "soru": "Bir firma; viskoz (rejenere selüloz) çözeltisinin dar yarıklardan geçirilmesiyle elde edilen, “suni saman” olarak bilinen yassı şeritleri, uzunlamasına katlanmış ve hafifçe bükülmüş halde bobinlere sarılı olarak ithal etmektedir. Şeritlerin açık genişliği 9 mm, katlı ve bükülü haldeki görünen genişliği 4 mm’dir. Şapka ve çanta örücülüğünde kullanılacak bu eşya Tarife Cetvelinde hangi tarife pozisyonunda sınıflandırılır?",

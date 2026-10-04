@@ -228,19 +228,19 @@
    "fasil": 48
   },
   {
-   "soru": "Perakende satış için hazırlanmış bir hediye kutusunda bir şişe parfüm (33.03), bir kalıp tuvalet sabunu (34.01) ve bir tüp vücut losyonu (33.04) birlikte sunulmaktadır. Takımın değerinin büyük kısmını parfüm oluşturmaktadır. Bu eşya hangi pozisyonda ve hangi yorum kuralına göre sınıflandırılır?",
+   "soru": "Aşağıdaki ahşap eşyadan hangisi “ahşap mutfak ve sofra eşyası”nın yer aldığı 44.19 pozisyonunda <b>sınıflandırılmaz</b>?",
    "secenekler": [
-    "Her biri kendi pozisyonunda ayrı ayrı – GYK 1",
-    "33.03 – GYK 3(b)",
-    "34.01 – GYK 3(c)",
-    "33.04 – GYK 3(a)",
-    "33.03 – GYK 5(b)"
+    "Ahşaptan salata servis kaşığı ve çatalı",
+    "Ahşap gövdeli bulaşık fırçası",
+    "Tornalanmış ahşap tas",
+    "Mutfakta kullanılan ahşap ölçek",
+    "Mutfakta kullanılan alelade ahşap baharat kutusu"
    ],
    "cevap": "B",
-   "tip": "Genel Yorum Kuralı",
-   "gerekce": "Farklı pozisyonlara giren, kişisel bakım için bir araya getirilip son kullanıcıya doğrudan satılacak biçimde kutulanan ürünler perakende takımdır; pozisyonlar eşit derecede özel sayılır ve esas niteliği veren parfüme göre 33.03’te sınıflandırılır. 3(c) ancak esas nitelik saptanamazsa uygulanır.",
-   "dayanak": "GYK 3(a) ikinci cümlesi; GYK 3(b) ve Açıklama Notu (X).",
-   "fasil": "GYK"
+   "tip": "Olumsuz teşhis",
+   "gerekce": "44.19 Açıklama Notu fırça ve süpürgeleri pozisyon dışında bırakır; bulaşık fırçası 96.03’te yer alır, yalnız ahşap gövdesi 44.17’ye girerdi. Servis kaşık-çatalı, tas, mutfak ölçeği ve alelade baharat kutusu aynı notta 44.19 eşyası olarak sayılır.",
+   "dayanak": "44.19 Açıklama Notu; 44.17 pozisyon metni; Fasıl 44 Not 1; 96.03 Açıklama Notu.",
+   "fasil": 44
   },
   {
    "soru": "Tarife Cetveline göre, bahçelerde duvar dipleri ve çalılık kenarlarındaki çimleri kesmeye mahsus, içten yanmalı kendinden motorlu, kesici tertibatı naylon tellerden oluşan ve elde taşınarak kullanılan portatif cihaz hangi pozisyonda sınıflandırılır?",
@@ -288,19 +288,19 @@
    "fasil": 71
   },
   {
-   "soru": "Hava yastıklı taşıtların Bölüm XVII’de “en çok benzedikleri taşıtlar ile birlikte” sınıflandırılması Genel Yorum Kuralları bakımından hangi kurala dayanır?",
+   "soru": "Tarife Cetveline göre, tedavide kullanılmak üzere hazırlanmış; hastalığın adı, kullanma şekli ve dozu etiketinde belirtilmiş perakende satış ambalajındaki kolloidal kükürt hangi pozisyonda sınıflandırılır?",
    "secenekler": [
-    "GYK 4 – eşya, en çok benzediği eşyanın pozisyonunda sınıflandırıldığı için",
-    "GYK 1 – sınıflandırma bir bölüm notu hükmüne göre yapıldığı için",
-    "GYK 3(a) – ilgili fasıl eşyayı daha özel tanımladığı için",
-    "GYK 3(c) – geçerli pozisyonlardan numara sırasına göre sonuncusu esas alındığı için",
-    "GYK 2(a) – hava yastıklı taşıt tamamlanmamış taşıt sayıldığı için"
+    "28.02",
+    "30.04",
+    "30.03",
+    "28.43",
+    "38.08"
    ],
    "cevap": "B",
-   "tip": "Genel Yorum Kuralı",
-   "gerekce": "Not metnindeki “en çok benzedikleri” ifadesi GYK 4’ü çağrıştırsa da sınıflandırma Bölüm XVII Not 5 hükmüyle yapıldığından GYK 1’e dayanır. GYK 4 yalnız 1–3 numaralı kurallarla sınıflandırılamayan eşyaya uygulanır; hava treni böylece Fasıl 86’ya, suda işleyenler Fasıl 89’a girer.",
-   "dayanak": "GYK 1 ve GYK 4 Açıklama Notları; Bölüm XVII Not 5.",
-   "fasil": "GYK"
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Not 3 gereği Fasıl 28 ürünleri karışım sayılmaz; kolloidal kükürt dozlandırılmış veya perakende ambalajlıysa 30.04’e, diğer hallerde 28.02’ye girer. 30.03 onu açıkça dışarıda bırakır; 28.43 ise yalnız kolloidal kıymetli metallere aittir.",
+   "dayanak": "Fasıl 30 Not 3; 30.03 ve 30.04 Açıklama Notları; 28.02 Açıklama Notu.",
+   "fasil": 30
   }
  ]
 }

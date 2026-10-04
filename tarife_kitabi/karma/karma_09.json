@@ -93,19 +93,19 @@
    "fasil": 39
   },
   {
-   "soru": "Fasıl 96 dolma kalemleri ve kurşun kalemleri kapsamasına rağmen, teknik çizim kalemlerinin bu fasılda değil 90.17 pozisyonunda sınıflandırılması hangi Genel Yorum Kuralının gereğidir?",
+   "soru": "Makinelerde veya diğer teknik işlerde kullanılan ve ayrı olarak sunulan aşağıdaki deri eşyadan hangisi Tarife Cetvelinde diğerlerinden farklı bir fasılda sınıflandırılır?",
    "secenekler": [
-    "GYK 1",
-    "GYK 3(a)",
-    "GYK 3(b)",
-    "GYK 3(c)",
-    "GYK 4"
+    "Deri esaslı, üzerine iğneleri takılmış kard garnitürü",
+    "Dokuma tezgâhlarına mahsus deri toplayıcı",
+    "Matbaa makinelerine ait deri silindir manşonu",
+    "Deriden yapılmış hortum",
+    "Tulumba ve preslere ait deri rondela"
    ],
    "cevap": "A",
-   "tip": "Genel Yorum Kuralı",
-   "gerekce": "Fasıl 96 Not 1(f), teknik çizim kalemlerini 90. Fasıldaki eşya olarak bu fasıl dışında bırakır; sınıflandırma not hükmü ve 90.17 pozisyon metniyle, yani GYK 1 ile yapılır. Not hükmü varken eşya iki pozisyona girmiş sayılmadığından GYK 3(a)’ya başvurulmaz.",
-   "dayanak": "GYK 1; Fasıl 96 Not 1(f).",
-   "fasil": "GYK"
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Bölüm XVI Not 1(b), makinelerde kullanılan deri eşyayı 42.05’e bırakır; toplayıcı, silindir manşonu, hortum ve rondela bu nedenle Fasıl 42’dedir. Üzerine iğneleri takılmış kard garnitürü ise 42.05 Açıklama Notu gereği 84.48’de yer alır.",
+   "dayanak": "Bölüm XVI Not 1(b); 42.05 Açıklama Notu; 84.48 pozisyon metni.",
+   "fasil": 42
   },
   {
    "soru": "Tatlı sorgum bitkisinin gövdesinden sıkılan özsuyun koyulaştırılmasıyla hazırlanan, içine başka hiçbir madde katılmamış sorgum şurubu Tarife Cetvelinde hangi pozisyonda yer alır?",
@@ -273,19 +273,19 @@
    "fasil": 96
   },
   {
-   "soru": "Tropikal bir ağaçtan oyularak yapılmış küçük bir süs heykelciğinin 44.20 pozisyonunda yer aldığı belirlenmiştir. Bu pozisyonun “ahşap küçük heykelcikler ve diğer süs eşyası” tek tireli alt pozisyonu altındaki “tropikal ağaçlardan olanlar” ve “diğerleri” iki tireli alt pozisyonlarından hangisine gireceğinin belirlenmesiyle ilgili aşağıdakilerden hangisi doğrudur?",
+   "soru": "Borular, kazanlar, tanklar ve benzeri kaplar için musluk, valf ve benzeri cihazları kapsayan 84.81 pozisyonu dikkate alındığında aşağıdakilerden hangisi bu pozisyonda <b>sınıflandırılmaz</b>?",
    "secenekler": [
-    "GYK 3(a) uyarınca eşyayı en özel niteleyen alt pozisyon, farklı seviyedeki alt pozisyonlar da birbiriyle karşılaştırılarak seçilir.",
-    "GYK 1 uyarınca yalnız dört rakamlı pozisyon metni dikkate alınır; alt pozisyonlar arasında kurala dayalı seçim yapılmaz.",
-    "GYK 3(c) uyarınca geçerli olabilecek alt pozisyonlardan numara sırasına göre sonuncusu, yani “diğerleri” seçilir.",
-    "GYK 6 uyarınca yalnız aynı seviyedeki iki tireli alt pozisyonlar, ait oldukları tek tireli alt pozisyonun kapsamı içinde karşılaştırılır.",
-    "GYK 4 uyarınca eşyaya en çok benzeyen süs eşyasının yer aldığı alt pozisyon esas alınır."
+    "İç lastik valfi",
+    "Soda-su şişelerine mahsus valf",
+    "Karbondioksit basıncıyla beslenen, elle çalıştırılan musluklu, bar tezgâhlarına mahsus bira dağıtıcısı",
+    "İçten yanmalı motorlara mahsus emme (alma) veya egzoz (salıverme) valfi",
+    "Termostatik kontrollü karıştırma valfi"
    ],
    "cevap": "D",
-   "tip": "Genel Yorum Kuralı",
-   "gerekce": "GYK 6’ya göre alt pozisyonlarda sınıflandırma yalnız aynı seviyedeki alt pozisyonlar karşılaştırılarak yapılır: önce eşyayı en özel niteleyen tek tireli alt pozisyon seçilir, iki tireli alt pozisyonlara ancak bundan sonra bakılır ve bunların kapsamı tek tireli alt pozisyonu aşamaz.",
-   "dayanak": "GYK 6 ve Açıklama Notu; 44.20 pozisyon metni.",
-   "fasil": "GYK"
+   "tip": "Olumsuz teşhis",
+   "gerekce": "84.81 Açıklama Notuna göre asıl manada musluk olmayan, benzer işlev gören mekanik parçalar ait oldukları makinenin aksamıdır; motorların emme ve egzoz valfleri 84.09’dadır. İç lastik ve soda şişesi valfleri, bira dağıtıcısı ve termostatik karıştırma valfi 84.81’dedir.",
+   "dayanak": "84.81 Açıklama Notu; 84.09 pozisyon metni.",
+   "fasil": 84
   },
   {
    "soru": "56.02 ve 56.03 pozisyonlarının Açıklama Notlarına göre iğneleme yöntemiyle elde edilen mensucatla ilgili aşağıdakilerden hangisi doğrudur?",

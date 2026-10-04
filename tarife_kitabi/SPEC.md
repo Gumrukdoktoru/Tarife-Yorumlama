@@ -91,11 +91,11 @@ Each item: `{"soru": str, "secenekler": [5 strings], "cevap": "A".."E", "tip": s
 - Style: modelled on recent exam questions ("Tarife Cetveline göre …", 5 options A–E). Negations in bold:
   `<b>sınıflandırılmaz</b>`, `<b>yer almaz</b>`, `<b>yanlıştır</b>`, `<b>değildir</b>`.
 - Type mix (±1 where the chapter has no material for a type):
-  - 5 × "Eşya → 4’lü pozisyon" (options are 5 headings, e.g. "03.06")
+  - 6 × "Eşya → 4’lü pozisyon" (options are 5 headings, e.g. "03.06")
   - 4 × "Olumsuz teşhis" ("hangisi … faslında/pozisyonunda <b>sınıflandırılmaz</b>?")
   - 4 × "Farklı/aynı pozisyon veya fasıl" ("hangisi diğerlerinden farklı bir pozisyonda/fasılda yer alır?")
   - 4 × "Fasıl notu · Tanım/Eşik" (definitions, percentages, dimensions, criteria from the notes)
-  - 2 × "Genel Yorum Kuralı" (which GYK classifies a goods of this chapter; sets, unfinished/unassembled, mixtures)
+  - 1 × "Genel Yorum Kuralı" (user rule: GYK questions are 3–5 % of all questions, so 1 of 25; which GYK classifies a goods of this chapter; sets, unfinished/unassembled, mixtures)
   - 2 × "Eşleştirme / Boşluk doldurma"
   - 2 × "Çoktan-çoğa (I–IV)" (statements I–IV in the stem; options like "I ve II", "I, II ve IV")
   - 2 × "Senaryo" (a described product with several features; one heading)

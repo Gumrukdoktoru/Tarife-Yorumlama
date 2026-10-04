@@ -243,18 +243,18 @@
    "fasil": 6
   },
   {
-   "soru": "Tarife Cetveline göre, sertleştirilmemiş vulkanize kauçuktan yapılmış, dalgıçlıkta kullanılmaya mahsus koruyucu eldivenler hangi pozisyonda sınıflandırılır?",
+   "soru": "Tarife Cetveline göre, iç lastiklerin onarımında kullanılmak üzere hazırlanmış, vulkanize kauçuk bir mesnet üzerinde kendi kendine vulkanize olan bir kauçuk tabakasından ibaret, kenarları şevlenmiş dikdörtgen yamalar hangi pozisyonda sınıflandırılır?",
    "secenekler": [
-    "40.15",
-    "95.06",
     "40.16",
-    "61.16",
-    "39.26"
+    "40.08",
+    "40.13",
+    "40.12",
+    "35.06"
    ],
    "cevap": "A",
    "tip": "Eşya → 4’lü pozisyon",
-   "gerekce": "40.15 sertleştirilmemiş vulkanize kauçuktan giyim eşyası ve aksesuarını kapsar; açıklama notu dalgıçlıkta kullanılmaya mahsus koruyucu eldivenleri açıkça sayar. Fasıl 40 Not 2, 95. fasıldaki eşyayı bu fasıl dışında bıraksa da spor eldivenlerini, tek parmak eldivenleri ve koruma eldivenlerini bu istisnanın dışında tutar; bu nedenle 95.06’ya gidilmez. 40.16 diğer kauçuk eşya, 61.16 örme eldivenler, 39.26 plastik eşya içindir.",
-   "dayanak": "Fasıl 40 Not 2; 40.15 Açıklama Notu.",
+   "gerekce": "40.16 Açıklama Notu, iç lastik onarımı için kenarları şevlenmiş dikdörtgen veya kalıplanarak ya da kesilerek elde edilmiş yamaları, genellikle vulkanize kauçuk mesnet üzerinde kendi kendine vulkanize olan bir kauçuk tabakasından ibaret oldukları belirtilerek bu pozisyonda sayar. Kenarları şevlenerek basit dikdörtgen kesimin ötesinde işlem gördüğünden Fasıl 40 Not 9’daki levha ve şerit tanımına uymaz ve 40.08’e girmez. İç lastikte kullanılması onu 40.13’e, lastikle ilgili olması da 40.12’deki sırt ve kolanlara götürmez; ürün 35.06’daki hazır yapıştırıcılardan biri değil, bitmiş bir kauçuk eşyadır.",
+   "dayanak": "Fasıl 40 Not 9; 40.16 Açıklama Notu.",
    "fasil": 40
   },
   {

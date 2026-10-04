@@ -288,19 +288,19 @@
    "fasil": 30
   },
   {
-   "soru": "Başları bakırdan, gövdeleri çelikten olan ve ağırlıkça çelik kısmı bakır kısmından fazla olan küçük çiviler hangi pozisyonda ve hangi Genel Yorum Kuralına göre sınıflandırılır?",
+   "soru": "Tarife Cetveline göre aşağıdaki eşyadan hangisi, elle kullanılan numaratör ile aynı tarife pozisyonunda sınıflandırılır?",
    "secenekler": [
-    "73.17 – GYK 1 (Bölüm XV Not 7 uyarınca ağırlıkça üstün metal)",
-    "74.15 – GYK 3(c)",
-    "74.15 – GYK 1 (pozisyon metni)",
-    "73.17 – GYK 3(b)",
-    "74.15 – GYK 2(b)"
+    "Koyun kulağını ve diğer hayvanları markalamaya mahsus pens",
+    "Masaya sabitlenmeye mahsus kaidesi bulunan tarih damgası",
+    "Oyuncak niteliğinde olmayan; kumpas, harf, cımbız ve ıstampa içeren kutulu el baskı takımı",
+    "Ayrı olarak sunulan, mürekkep emdirilmiş kutulu ıstampa",
+    "Çekiçle vurularak kullanılan, metal eşyaya işaret basmaya mahsus zımba"
    ],
    "cevap": "C",
-   "tip": "Genel Yorum Kuralı",
-   "gerekce": "Bölüm XV Not 7 ağırlıkça üstün metali esas alır, ancak pozisyon metinlerinde aksine hüküm yoksa uygulanır. 74.15 başları bakır, gövdeleri demir-çelik çivileri açıkça sayar, 73.17 de bunları hariç tutar; sonuç GYK 1 ile bulunur.",
-   "dayanak": "GYK 1; Bölüm XV Not 7 ve Genel Açıklamalar (B); 73.17 ve 74.15 pozisyon metinleri.",
-   "fasil": "GYK"
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "96.11 Açıklama Notu, elle kullanılan numaratörlerle birlikte kutu içinde kumpas, değiştirilebilir karakter, cımbız ve ıstampadan oluşan küçük el baskı takımlarını da (oyuncaklar hariç) kapsar. Markalama pensi 82.03’te, işaretleme zımbası 82.05’te, kaideli damga 84.72’de, ayrı ıstampa 96.12’dedir.",
+   "dayanak": "96.11 ve 96.12 pozisyon metinleri ve Açıklama Notları; 84.72 Açıklama Notu.",
+   "fasil": 96
   }
  ]
 }

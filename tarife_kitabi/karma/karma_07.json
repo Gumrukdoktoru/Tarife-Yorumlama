@@ -213,19 +213,19 @@
    "fasil": 84
   },
   {
-   "soru": "Yağ çıkarılmasında kullanılacak taze zeytinler, yağlı meyve olmalarına rağmen 12.07 pozisyonunda değil 7. Fasılda sınıflandırılır. Bu sonuç hangi Genel Yorum Kuralının gereğidir?",
+   "soru": "Aşağıdakilerden hangisi 85.14 tarife pozisyonunda <b>sınıflandırılmaz</b>?",
    "secenekler": [
-    "GYK 2(b)",
-    "GYK 3(a)",
-    "GYK 3(c)",
-    "GYK 4",
-    "GYK 1"
+    "Bisküvi imalatında kullanılan, kızılötesi ve yüksek frekanslı ısıtmayı birlikte kullanan elektrikli fırın",
+    "Krank millerinin ve dişli çarkların yüzeyini endüksiyon yoluyla sertleştiren makine",
+    "Atıkların yakılarak yok edilmesinde kullanılan elektrikli ocak",
+    "Ağacı yüksek frekanslı güçle dielektrik kaybı yoluyla ısıtarak kurutan makine",
+    "Yalnızca yarı iletken disk (wafer) imalatında kullanılan türden elektrikli difüzyon fırını"
    ],
    "cevap": "E",
-   "tip": "Genel Yorum Kuralı",
-   "gerekce": "Fasıl 12 Not 1, 12.07 pozisyonunun zeytinlere uygulanmayacağını açıkça hükme bağlar. Sınıflandırma pozisyon metinleri ve fasıl notlarına göre yapıldığından dayanak GYK 1’dir; not yeterli olduğundan 2–4 numaralı kurallara başvurulmaz.",
-   "dayanak": "GYK 1; Fasıl 12 Not 1.",
-   "fasil": "GYK"
+   "tip": "Olumsuz teşhis",
+   "gerekce": "85.14 Açıklama Notu yarı iletken disk veya düz panel ekran imalatına mahsus elektrikli fırınları hariç tutar; bunlar Fasıl 84 Not 11(D) gereği 84.86’dadır. Bisküvi fırını, atık yakma ocağı, endüksiyonla sertleştirme ve dielektrik kayıpla ağaç kurutma makineleri 85.14’te sayılır; kurutma işlevi 84.19’a götürmez.",
+   "dayanak": "85.14 Açıklama Notu (I), (II) ve hariç tutulanlar; Fasıl 84 Not 11(D); 84.86 Açıklama Notu.",
+   "fasil": 85
   },
   {
    "soru": "Tarife Cetveline göre aşağıdakilerden hangileri 91.05 pozisyonunda sınıflandırılır?<br/>I. Rasathanelerde kullanılan astronomi saati<br/>II. Güverte saati<br/>III. Mutat saat kadranlı stadyum saati<br/>IV. Gemilerin kontrol panellerine monte edilmek üzere özel olarak imal edilmiş saat",
@@ -288,19 +288,19 @@
    "fasil": "GYK"
   },
   {
-   "soru": "Metal işlemeye mahsus bir torna tezgâhının, yalnızca alet tutucusu bulunmayan ancak tamamlanmış tezgâhın asli niteliklerine sahip olan bütün parçaları aynı sevkiyatta demonte halde gümrüğe sunulmuştur. Bu eşya hangi yorum kurallarına göre hangi pozisyonda sınıflandırılır?",
+   "soru": "Tarife Cetveline göre, plastik şişe kapağı üretiminde kullanılan bir enjeksiyon makinesine takılmak üzere tasarlanmış, ayrı olarak sunulan çok gözlü çelik enjeksiyon kalıbı hangi tarife pozisyonunda sınıflandırılır?",
    "secenekler": [
-    "84.66 – GYK 1 ve 6",
-    "84.58 – GYK 1, 3(b) ve 6",
-    "84.59 – GYK 1, 2(a) ve 6",
-    "84.58 – GYK 1, 2(a) ve 6",
-    "84.66 – GYK 1, 2(b) ve 6"
+    "84.77",
+    "82.07",
+    "84.54",
+    "84.80",
+    "84.87"
    ],
    "cevap": "D",
-   "tip": "Genel Yorum Kuralı",
-   "gerekce": "GYK 2(a), asli niteliği taşıyan eksik eşyayı ve bunun demonte halini tamamlanmış eşya gibi sınıflandırır; Bölüm XVI Genel Açıklamaları da alet tutacağı noksan makineyi tam makineyle aynı pozisyona koyar. Parçalar 84.66’ya gitmez; torna tezgâhları 84.58’dedir.",
-   "dayanak": "GYK 1, 2(a), 6; Bölüm XVI Genel Açıklamalar (IV), (V).",
-   "fasil": "GYK"
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "84.80 pozisyon metni kauçuk ve plastik maddeler için kalıpları açıkça sayar; 84.77 Açıklama Notu da makinenin aksam-parçaları arasından 84.80’deki kalıpları hariç tutar. Stampaj kalıpları 82.07’de, külçe kalıpları 84.54’te yer alır; tuzak, kalıbı makine parçası sayıp 84.77’ye götürmektir.",
+   "dayanak": "84.80 pozisyon metni ve Açıklama Notu; 84.77 Açıklama Notu (aksam ve parçalar).",
+   "fasil": 84
   }
  ]
 }

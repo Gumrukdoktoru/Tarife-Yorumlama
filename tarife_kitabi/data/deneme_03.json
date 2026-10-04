@@ -738,18 +738,18 @@
    "fasil": 87
   },
   {
-   "soru": "Bir firma; bünyesinde, onu programlayan ve kontrol eden bir otomatik bilgi işlem makinası bulunan, metal levhaları yalnızca lazer ışını ile keserek şekillendiren bir makine ithal etmektedir. Makinenin bilgi işleme dışındaki kendine has işlevi metal kesmedir. Tarife Cetveline göre bu makine hangi pozisyonda sınıflandırılır?",
+   "soru": "Bir otomotiv yan sanayi firması; kaide üzerine monte edilmiş, insan koluna benzer mafsallı yapıda, elektrik motorlarıyla hareket eden ve programlanabilen bir sanayi robotu ithal etmektedir. Robot, kıskaçlı tutucusuyla ağır döküm parçalarını bir taşıyıcı banttan kaldırıp diğerine yüklemek ve boşaltmak üzere özel olarak imal edilmiştir; farklı aletler takılarak başka işlerde kullanılamamaktadır. Tarife Cetveline göre bu robot hangi pozisyonda sınıflandırılır?",
    "secenekler": [
-    "84.71",
-    "84.62",
-    "84.56",
     "84.79",
-    "84.57"
+    "85.15",
+    "84.28",
+    "84.24",
+    "84.26"
    ],
    "cevap": "C",
    "tip": "Senaryo",
-   "gerekce": "Fasıl 84 Not 6(E), bilgi işleme dışında kendine has bir fonksiyonu olan ve otomatik bilgi işlem makinası bulunan veya onunla bağlantılı çalışan makinaların fonksiyonlarına uyan pozisyonda sınıflandırılacağını belirtir; bu nedenle bilgisayar içermesi makineyi 84.71’e götürmez. Herhangi bir maddeyi lazerle işleyen makineler 84.56’nın konusudur ve Fasıl 84 Not 3 uyarınca 84.56’ya giren makine 84.57 gibi diğer takım tezgahı pozisyonlarında sınıflandırılmaz. İşlevi belirli bir pozisyonda tanımlandığından 84.79’a da gidilmez.",
-   "dayanak": "Fasıl 84 Not 3 ve Not 6(E); 84.56 pozisyon metni.",
+   "gerekce": "84.79 Açıklama Notu bu pozisyona yalnızca farklı aletler kullanılarak çeşitli basit işlevleri yerine getirebilen sanayi robotlarını alır; belirli bir işlevi yerine getirmek üzere özel olarak imal edilmiş robotlar gördükleri işleve göre sınıflandırılır. 84.28 Açıklama Notu da kaldırma, yükleme, boşaltma vb. işleri yapmak üzere özel olarak imal edilmiş sanayi robotlarını bu pozisyonda sayar. 85.15 kaynak yapan, 84.24 toz veya sıvı püskürten robotlar içindir; 84.26 ise vinçler ve hareketli kaldırma çerçeveleri gibi makineleri kapsar ve robotları saymaz.",
+   "dayanak": "84.24, 84.28 ve 84.79 Açıklama Notları; 85.15 Açıklama Notu.",
    "fasil": 84
   }
  ]
