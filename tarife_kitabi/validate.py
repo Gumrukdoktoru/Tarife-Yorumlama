@@ -151,6 +151,32 @@ def validate(path):
         for i, q in enumerate(d.get("sorular", []), 1):
             if "fasil" not in q:
                 errs.append(f"deneme soru {i}: 'fasil' alanı eksik")
+    elif tur == "karma":
+        check_questions(d.get("sorular", []), 20, 4, f"karma {d.get('no')}", errs, warns)
+        for i, q in enumerate(d.get("sorular", []), 1):
+            if "fasil" not in q:
+                errs.append(f"karma soru {i}: 'fasil' alanı eksik")
+            if len(q.get("gerekce", "")) > 420:
+                warns.append(f"karma soru {i}: gerekçe uzun ({len(q['gerekce'])} karakter, ≤ 420 olmalı)")
+    elif tur == "hap":
+        for k in ("fasil", "sinavda", "pozisyonlar", "hap", "karistirilan"):
+            if k not in d:
+                errs.append(f"'{k}' alanı eksik")
+        if errs:
+            return errs, warns
+        for r in d["pozisyonlar"]:
+            if len(r) != 2:
+                errs.append(f"pozisyonlar satırı 2 hücre olmalı: {r}")
+        for r in d["karistirilan"]:
+            if len(r) != 3:
+                errs.append(f"karistirilan satırı 3 hücre olmalı: {r}")
+        for b in d["hap"]:
+            if len(b.split()) > 40:
+                warns.append(f"hap maddesi uzun ({len(b.split())} kelime): {b[:60]!r}")
+        for s in texts(d):
+            m = SIX_DIGIT.search(s)
+            if m:
+                errs.append(f"4 haneden uzun kod: {m.group(0)} → {s[:60]!r}")
     else:
         errs.append(f"bilinmeyen tur: {tur!r}")
     return errs, warns

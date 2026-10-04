@@ -1,0 +1,56 @@
+{
+ "tur": "hap",
+ "fasil": 21,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı, 5 kez seçenekte: “aynı fasıl” sorularında dondurma, ketçap, canlı maya, çay hülasası ve bira mayası, kavrulmuş hindiba Fasıl 21 grubuydu; mantı setinde çorba (21.04) çeldirici, et suyu 21.04 doğru eşleştirmeydi.",
+ "pozisyonlar": [
+  [
+   "21.01",
+   "Kahve-çay hülasası, instant kahve; kavrulmuş hindiba"
+  ],
+  [
+   "21.02",
+   "Mayalar (canlı, cansız); hazır kabartma tozları"
+  ],
+  [
+   "21.03",
+   "Soslar, ketçap, mayonez; hardal unu, hazır hardal"
+  ],
+  [
+   "21.04",
+   "Çorbalar, et suları; homojenize bileşik müstahzarlar"
+  ],
+  [
+   "21.05",
+   "Dondurma ve yenilen buzlar (kakaolu olsa da)"
+  ],
+  [
+   "21.06",
+   "Başka yerde yer almayan gıda müstahzarları"
+  ]
+ ],
+ "hap": [
+  "<b>Not 1 fasıl dışı:</b> 07.12 sebze karışımları; kahve içeren kavrulmuş ikame (09.01); aromalı çay (09.02); 09.04–09.10 baharatları; ilaç olarak hazırlanmış maya (Fasıl 30); hazır enzimler (35.07).",
+  "<b>%20 kuralı sos ve çorbaya işlemez:</b> etli bolonez sosu 21.03’te, etli çorba 21.04’te kalır; diğer %20’den fazla etli-balıklı müstahzarlar Fasıl 16.",
+  "<b>Not 3 – homojenize bileşik:</b> iki veya daha fazla temel bileşen (et, balık, sebze, meyve vb.); bebek, küçük çocuk veya diyet amaçlı, net en çok 250 gr’lık perakende kapta → 21.04.",
+  "<b>Kahve ikamesi:</b> kahvesiz kavrulmuş ikame (hindiba, arpa) 21.01; kahve içeren ikame 09.01, ama onun hülasası 21.01 (Not 2).",
+  "<b>Maya:</b> canlı veya cansız maya 21.02, otolize maya 21.06; mikroorganizma kültürü 30.02. İçilmez yemeklik şarap 21.03; sorbitollü sakız 21.06."
+ ],
+ "karistirilan": [
+  [
+   "Aromalı (bergamutlu) çay",
+   "09.02",
+   "Not 1(c); çay hülasası ise 21.01"
+  ],
+  [
+   "Hazır enzim, et yumuşatıcı",
+   "35.07",
+   "Not 1(g); maya değil"
+  ],
+  [
+   "Süt esaslı dondurma tozu",
+   "19.01",
+   "Dondurmanın kendisi 21.05"
+  ]
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 26,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı, seçeneklerde de yer almadı; önceki sınavlarda “farklı fasıl” kalıbında cüruf (Fasıl 26) tuz, zımpara taşı ve amyanttan (Fasıl 25) ayrıldı.",
+ "pozisyonlar": [
+  [
+   "26.01",
+   "Demir cevheri; kavrulmuş demir piriti dahil"
+  ],
+  [
+   "26.18",
+   "Demir-çelik imalatından granüle cüruf"
+  ],
+  [
+   "26.19",
+   "Diğer demir-çelik cürufu, tufal, moloz"
+  ],
+  [
+   "26.21",
+   "Diğer cüruf ve küller; şehir atığı külü"
+  ]
+ ],
+ "hap": [
+  "<b>Metal cevheri (Not 2):</b> metalurji sanayiinde metal çıkarmak için fiilen kullanılan mineral; kavurma, kalsinasyon, sinterleme, peletleme fasıldan çıkarmaz. Kuru ağırlıkta Mn %20’den az 26.01, ≥ %20 26.02.",
+  "<b>Not 1 – fasıl dışı:</b> makadam halindeki cüruf 25.17, cüruf yünü 68.06, bazik (Thomas) cüruf Fasıl 31; bakır, nikel, kobalt matları Bölüm XV; kıymetli metal döküntüsü 71.12 veya 85.49.",
+  "<b>Başka yerde sayılan mineraller:</b> kavrulmamış pirit 25.02, barit 25.11, dolomit 25.18, magnezit 25.19, karnalit 31.04; kuru pil için hazırlanmış pirolüsit 25.30."
+ ],
+ "karistirilan": [
+  [
+   "Kavrulmamış demir piriti",
+   "25.02",
+   "İsmen Fasıl 25’te; kavrulmuşu 26.01"
+  ],
+  [
+   "Bazik (Thomas) cürufu",
+   "31.03",
+   "Not 1; diğer küller gübre olsa da 26.21"
+  ]
+ ]
+}

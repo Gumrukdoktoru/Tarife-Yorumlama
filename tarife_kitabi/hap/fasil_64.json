@@ -1,0 +1,56 @@
+{
+ "tur": "hap",
+ "fasil": 64,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 3 kez ana konu: ortopedik ayakkabının 90.21’e gitmesi (güreş, bisiklet, kar sörfü, koşu ayakkabısı 64’te), ayakkabının VIII. değil XII. Bölümde olması ve 64.06’da topuk rampası varken çivi, kopça, toka, bağın yer almaması. Ayakkabıyla ilgili ürünlerin 34.05, 44.17, 68.12, 96.05’te olduğu da seçeneklerde kullanıldı.",
+ "pozisyonlar": [
+  [
+   "64.01",
+   "Su geçirmez, kauçuk/plastik; yüz dikişsiz, perçinsiz, vidasız"
+  ],
+  [
+   "64.02",
+   "Diğer kauçuk/plastik taban ve yüzlü ayakkabılar"
+  ],
+  [
+   "64.03",
+   "Yüzü deri; taban kauçuk, plastik, deri"
+  ],
+  [
+   "64.04",
+   "Yüzü dokumaya elverişli madde; aynı tabanlar"
+  ],
+  [
+   "64.05",
+   "Diğer: ağaç, mantar, ip, keçe taban"
+  ],
+  [
+   "64.06",
+   "Aksam, iç taban, topuk rampası, getr, tozluk"
+  ]
+ ],
+ "hap": [
+  "<b>Belirleyici iki madde:</b> dış taban (topuk hariç yere temas eden en büyük yüzey) ve yüz (dış yüzeyin en büyük parçası); astar, süs, aksesuar ve takviyeler dikkate alınmaz (Not 4).",
+  "<b>Not 1 – fasıl dışı:</b> tabansız kullan-at örtü (maddesine göre), dış tabanı tutturulmamış tekstil (XI. Bölüm), balyalı kullanılmış (63.09), amyant (68.12), ortopedik (90.21), oyuncak ve paten takılı bot (Fasıl 95).",
+  "<b>Not 2 – 64.06 aksamı değil:</b> ayakkabı çivisi ve demiri, kopça, toka, bağ, bağ deliği kapsülü, ponpon, düğme (96.06), fermuar (96.07); topuk, iç taban ve topuk rampası ise 64.06.",
+  "<b>Spor ayakkabısı 64’te kalır:</b> güreş, koşu, bisiklet, kayak, kar sörfü ayakkabısı 64; buz veya tekerlekli paten takılı olanlar 95.06; ortopedik ayakkabı 90.21.",
+  "<b>Tanımlar (Not 3):</b> dış yüzü gözle görülür kauçuk/plastik kaplı mensucat “kauçuk/plastik” sayılır; “deri” yalnız 41.07 ve 41.12–41.14, terkip deri (41.15) deri sayılmaz."
+ ],
+ "karistirilan": [
+  [
+   "Ortopedik ayakkabı",
+   "90.21",
+   "Not 1(e); spor ayakkabıları ise 64’te"
+  ],
+  [
+   "Deri yüzlü ayakkabı (bölüm sorusu)",
+   "64.03",
+   "XII. Bölüm; kürk, kösele, çanta VIII. Bölüm"
+  ],
+  [
+   "Amyanttan ayakkabı",
+   "68.12",
+   "Not 1(d); ayakkabı boyası 34.05, ahşap kalıp 44.17"
+  ]
+ ]
+}

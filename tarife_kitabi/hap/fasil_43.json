@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 43,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı; 2 soruda seçenekte geçti: Bölüm VIII kapsamı (kürk bölümde, ayakkabı değil) ve pozisyon sıralamasında taklit kürk (43.04).",
+ "pozisyonlar": [
+  [
+   "43.01",
+   "Ham kürk; Fasıl 41 hayvanları hariç"
+  ],
+  [
+   "43.02",
+   "Dabaklanmış kürk; başka madde katmadan birleştirilmiş"
+  ],
+  [
+   "43.03",
+   "Kürkten giysi, aksesuar, eşya; kürk astarlı giysi"
+  ],
+  [
+   "43.04",
+   "Taklit kürk (lif yapıştırılmış, dikilmiş) ve eşyası"
+  ]
+ ],
+ "hap": [
+  "<b>Kürk (Not 1):</b> 43.01 ham kürkleri hariç, tüyü veya yünü alınmamış dabaklanmış ya da aprelenmiş deri; hayvan türü önemsiz (kılıyla dabaklanmış buzağı derisi de kürk).",
+  "<b>Kürklü giysi (Not 4):</b> içi kürk-taklit kürk kaplı veya dışında basit süsü aşan kürklü giysi 43.03 / 43.04; yaka, kol, cep, etek kenarı kürkü basit süstür.",
+  "<b>Taklit kürk (Not 5):</b> yün, kıl, lifin mesnede yapıştırılması veya dikilmesi; dokuma veya örme tüylü kumaş 58.01 / 60.01. Kürk şapka 65, kürk bot 64, oyuncak 95."
+ ],
+ "karistirilan": [
+  [
+   "Deri ve kürkten eldiven",
+   "42.03",
+   "Not 2(c); tamamen kürkten eldiven 43.03"
+  ],
+  [
+   "Kürk kaplı bavul, valiz",
+   "42.02",
+   "42.02 ilk kısmı her maddeden; 43.03 değil"
+  ]
+ ]
+}

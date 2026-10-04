@@ -1,0 +1,98 @@
+{
+ "tur": "hap",
+ "fasil": 85,
+ "kademe": "A",
+ "sinavda": "Son 5 sınavda 13 soruda konu, 7’sinde seçenek: “hangisi yer almaz” (85.28’de katot ışınlı tüp, 85.09’da fırın), not tanımları (85.24 modülü video dönüştürücü içermez; notlarda radar yok), sıralama (trafo – el feneri – baskılı devre – atık pil; MP3 çalar – cep radyosu), eşya → pozisyon (cam silici 85.12, e-sigara 85.43 / kartuş 24.04), farklı pozisyon (izolatör 85.46) ve 84.68’in elektriklisi 85.15.",
+ "pozisyonlar": [
+  [
+   "85.04",
+   "Trafo, statik konvertör: şarj cihazı, UPS"
+  ],
+  [
+   "85.09",
+   "Motorlu ev cihazı; ≤ 20 kg (Not 4)"
+  ],
+  [
+   "85.12",
+   "Taşıt aydınlatma-işaret, cam silici, korna"
+  ],
+  [
+   "85.15",
+   "Elektrikli lehim-kaynak; 84.68’in elektriklisi"
+  ],
+  [
+   "85.16",
+   "Elektrotermik ev cihazı, ısıtıcı, ev fırını"
+  ],
+  [
+   "85.24",
+   "Düz panel modülü; Not 7, öncelikli"
+  ],
+  [
+   "85.28",
+   "Monitör, projektör, TV alıcısı (tuner varsa)"
+  ],
+  [
+   "85.34",
+   "Baskılı devre (Not 8); yarı iletken içermez"
+  ],
+  [
+   "85.40",
+   "Katotlu tüp-valf: katot ışınlı tüp, magnetron"
+  ],
+  [
+   "85.43",
+   "Artık: e-sigara, IR kumanda, yükselteç, dedektör"
+  ],
+  [
+   "85.46",
+   "Her maddeden izolatör (cam, porselen)"
+  ],
+  [
+   "85.49",
+   "E-atık, hurda pil-akü (Bölüm XVI Not 6)"
+  ]
+ ],
+ "hap": [
+  "<b>Önce Fasıl 84:</b> 84’te tanımlı makina elektrikli de olsa 84’te (bulaşık, çamaşır, buzdolabı, klima, bilgisayar, faks). Not 1 dışı: elektrikle ısıtılan battaniye-giysi, 70.11 cam zarf, tıbbi vakum 90.18, ısıtmalı mobilya.",
+  "<b>Parça (Bölüm XVI Not 2):</b> kendi pozisyonu olan parça orada (kömür fırça 85.45, kondansatör 85.32, elektromıknatıs 85.05); cihaza özgü olan 85.03, 85.22, 85.29, 85.38’de; kalan elektrikli parça 85.48.",
+  "<b>85.09 ve fırın:</b> motoru bünyesinde ev cihazı; yer cilalama, öğütücü-karıştırıcı, meyve presi ağırlıksız, diğerleri ≤ 20 kg. Fırın 85.09’da yok: 73.21 elektriksiz ev, 84.17 elektriksiz sanayi, 85.14 elektrikli sanayi, 85.16 ev.",
+  "<b>85.24 (Not 7):</b> en az bir ekranlı, başka eşyaya monte edilmek üzere tasarlanmış modül; düz, kavisli, esnek olabilir; video sinyali dönüştüren bileşen (ölçekleyici, kod çözücü IC) içermez; diğer pozisyonlara önceliklidir.",
+  "<b>Not 12 önceliği:</b> yarı iletken ve LED 85.41, entegre devre (monolitik, hibrit, çoklu çip, MCO) 85.42 diğer pozisyonlara önceliklidir; istisna: akıllı kart ve flash bellek 85.23’te (Not 6).",
+  "<b>Notlarda tanımlı:</b> akıllı telefon (5), flash bellek ve akıllı kart (6), düz panel modülü (7), baskılı devre (8), optik lif konnektörü (9), LED modül-ampul (11), yarı iletken, entegre devre (12); radar yok.",
+  "<b>Eşikler:</b> anahtar-sigorta-fiş 1000 V’a kadar 85.36, üstü 85.35; iki veya daha fazla cihazlı pano 85.37. Şarjsız pil 85.06, akü 85.07. Tabanlı LED ampul 85.39, tek LED 85.41.",
+  "<b>Sıra iskeleti:</b> 85.04 trafo, 85.07 akü, 85.13 el feneri, 85.16 ısıtıcı, 85.17 telefon, 85.19 ses-MP3, 85.21 video-DVD, 85.27 radyo, 85.28 monitör-TV, 85.34 baskılı devre, 85.39 ampul, 85.49 e-atık."
+ ],
+ "karistirilan": [
+  [
+   "Otomobil elektrik motorlu cam silicisi",
+   "85.12",
+   "87.08 değil; Fasıl 85 eşyası taşıt parçası sayılmaz"
+  ],
+  [
+   "Katot ışınlı TV görüntü tüpü",
+   "85.40",
+   "85.28 değil; monitör ve TV alıcısı 85.28"
+  ],
+  [
+   "Dizüstü bilgisayar LCD ekran modülü",
+   "85.24",
+   "Not 7 önceliği; 84.73 parça pozisyonuna gitmez"
+  ],
+  [
+   "E-sigara kartuşu; tek kullanımlık e-sigara",
+   "24.04",
+   "Şarjlı-doldurulabilir e-sigara 85.43; sigara 24.02"
+  ],
+  [
+   "Kameralı uzaktan kumandalı drone",
+   "88.06",
+   "85.25 değil; insansız hava taşıtı"
+  ],
+  [
+   "Kızılötesi TV kumandası",
+   "85.43",
+   "Telsiz kumanda 85.26; 85.37 değil (Not 10)"
+  ]
+ ]
+}

@@ -1,0 +1,306 @@
+{
+ "tur": "karma",
+ "no": 9,
+ "sorular": [
+  {
+   "soru": "Türk Gümrük Tarife Cetvelinin bölüm ve fasıl yapısına ilişkin aşağıdaki ifadelerden hangisi <b>yanlıştır</b>?",
+   "secenekler": [
+    "Bir pozisyonun dört rakamlı numarasının ilk iki rakamı, pozisyonun yer aldığı faslı gösterir.",
+    "Fasıl 77, Armonize Sistem Nomanklatüründe ileride kullanılmak üzere saklı tutulmuştur.",
+    "Bölüm III ve Bölüm XIX, yalnızca birer fasıldan oluşur.",
+    "Mobilyalar, oyuncaklar ve sanat eserleri aynı bölümde, Bölüm XX’de yer alır.",
+    "Müzik aletleri; optik aletler ve saatlerle aynı bölümde, Bölüm XVIII’de yer alır."
+   ],
+   "cevap": "D",
+   "tip": "Tarife yapısı",
+   "gerekce": "İçindekiler listesine göre Bölüm XX (Muhtelif mamul eşya) Fasıl 94–96’dan oluşur; sanat eserleri, koleksiyon eşyası ve antikalar (Fasıl 97) ayrı bir bölüm olan Bölüm XXI’dedir. Diğer ifadeler doğrudur: Bölüm III yalnız Fasıl 15’i, Bölüm XIX yalnız Fasıl 93’ü kapsar.",
+   "dayanak": "Tarife Cetveli İçindekiler (bölüm ve fasıl listesi).",
+   "fasil": "Genel"
+  },
+  {
+   "soru": "Tarife Cetveline göre, bir çiftlikte tavuk ve hindilerle birlikte yetiştirilen canlı tavus kuşları hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "01.05",
+    "01.06",
+    "02.07",
+    "95.08",
+    "05.05"
+   ],
+   "cevap": "B",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "01.05 yalnızca pozisyonda ismen sayılan evcil kanatlıları (Gallus domesticus türü tavuklar, ördekler, kazlar, hindiler, beç tavukları) kapsar; açıklama notu tavus kuşlarını 01.06’daki diğer kuşlar arasında sayar. Tuzak, kümeste yetiştirildiği için 01.05’i seçmektir.",
+   "dayanak": "01.05 ve 01.06 pozisyon metinleri ve Açıklama Notları.",
+   "fasil": 1
+  },
+  {
+   "soru": "Yere konularak kullanılmak üzere imal edilmiş, adi metalden çekmeceli dosya dolabı Tarife Cetvelinin hangi fasılında yer alır?",
+   "secenekler": [
+    "Fasıl 73",
+    "Fasıl 83",
+    "Fasıl 76",
+    "Fasıl 84",
+    "Fasıl 94"
+   ],
+   "cevap": "E",
+   "tip": "Fasıl/Bölüm bulma",
+   "gerekce": "83.04 adi metallerden dosya ve tasnif kutuları gibi büro eşyasını kapsar, ancak 94.03’teki büro mobilyalarını hariç tutar; yere konularak kullanılan dosya dolabı mobilya olarak Fasıl 94’tedir. Tuzak, “adi metalden büro eşyası” düşüncesiyle Fasıl 83’ü seçmektir.",
+   "dayanak": "83.04 pozisyon metni ve Açıklama Notu; Fasıl 94 Not 2; 94.03 Açıklama Notu.",
+   "fasil": 94
+  },
+  {
+   "soru": "Tarife Cetvelinin 20. faslı sebzeler, meyveler, sert kabuklu meyveler ve bitkilerin diğer kısımlarından elde edilen müstahzarları kapsar. Aşağıdakilerden hangisi bu fasılda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Sirke ile konserve edilmiş enginar içleri",
+    "Teneke kutularda sunulan domates salçası",
+    "Domates esaslı, hazırlanmış domates çorbası",
+    "Dilimlenmiş halde konserve edilmiş domalan",
+    "Şurup içinde konserve edilmiş kayısı yarımları"
+   ],
+   "cevap": "C",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "20.02 açıklama notu domates püresi, salçası ve konsantresini bu pozisyona alırken domates çorbası ve benzeri müstahzarları 21.04’e gönderir; Fasıl 20 Genel Açıklamaları da 21.04’teki çorbaları fasıl dışında bırakır. Diğerleri sırasıyla 20.01, 20.02, 20.03 ve 20.08’dedir.",
+   "dayanak": "Fasıl 20 Genel Açıklamalar; 20.01, 20.02, 20.03 ve 20.08 Açıklama Notları.",
+   "fasil": 20
+  },
+  {
+   "soru": "Tarife Cetveline göre, bir geyik türü tarafından salgılanan, koyu kahverengi ve kuvvetli kokulu, normal olarak şeklini aldığı torbalar içinde bulunan tabii misk hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "05.10",
+    "05.07",
+    "33.01",
+    "05.11",
+    "30.01"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "05.10 pozisyon metni ak amber, kunduz hayası ve kedi miskiyle birlikte miski ismen sayar; açıklama notu bunun bir geyik tarafından salgılanıp torbalarda bulunduğunu, Fasıl 29’daki suni misklerle karıştırılmaması gerektiğini belirtir. 05.07 geyik boynuzları, 05.11 başka yerde yer almayan hayvansal ürünler içindir.",
+   "dayanak": "05.10 pozisyon metni ve Açıklama Notu.",
+   "fasil": 5
+  },
+  {
+   "soru": "Aşağıdaki plastik eşyadan hangisi 39.24 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Plastikten yatak lazımlığı",
+    "Plastikten tükürük kabı",
+    "Bina duvarına daimi olarak tespit edilmek üzere hazırlanmamış plastik havlu askısı",
+    "Plastikten bebek banyo küveti",
+    "Plastikten ekmek kutusu"
+   ],
+   "cevap": "D",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "39.22 açıklama notu, sabit hijyenik tesisatın yanında bebek banyo küvetleri, taşınabilir klozetler ve kamp tuvaletleri gibi benzer boyut ve kullanımdaki eşyayı da kapsar. Yatak lazımlığı gibi küçük taşınabilir hijyenik eşya, tükürük kabı, ekmeklik ve duvara daimi tespit edilmeyen havlu askısı 39.24’tedir.",
+   "dayanak": "39.22 ve 39.24 Açıklama Notları.",
+   "fasil": 39
+  },
+  {
+   "soru": "Fasıl 96 dolma kalemleri ve kurşun kalemleri kapsamasına rağmen, teknik çizim kalemlerinin bu fasılda değil 90.17 pozisyonunda sınıflandırılması hangi Genel Yorum Kuralının gereğidir?",
+   "secenekler": [
+    "GYK 1",
+    "GYK 3(a)",
+    "GYK 3(b)",
+    "GYK 3(c)",
+    "GYK 4"
+   ],
+   "cevap": "A",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "Fasıl 96 Not 1(f), teknik çizim kalemlerini 90. Fasıldaki eşya olarak bu fasıl dışında bırakır; sınıflandırma not hükmü ve 90.17 pozisyon metniyle, yani GYK 1 ile yapılır. Not hükmü varken eşya iki pozisyona girmiş sayılmadığından GYK 3(a)’ya başvurulmaz.",
+   "dayanak": "GYK 1; Fasıl 96 Not 1(f).",
+   "fasil": "GYK"
+  },
+  {
+   "soru": "Tatlı sorgum bitkisinin gövdesinden sıkılan özsuyun koyulaştırılmasıyla hazırlanan, içine başka hiçbir madde katılmamış sorgum şurubu Tarife Cetvelinde hangi pozisyonda yer alır?",
+   "secenekler": [
+    "17.01",
+    "17.03",
+    "21.06",
+    "12.12",
+    "17.02"
+   ],
+   "cevap": "E",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "17.02 açıklama notu, şeker pancarı ve kamışı dışındaki bitkilerden elde edilen sakkaroz şuruplarını bu pozisyona alır ve tatlı sorgumdan elde edilenleri ismen sayar. 17.01 yalnız kamış veya pancar şekerini ve katı haldeki kimyaca saf sakkarozu, 21.06 ise aromalı şurupları kapsar.",
+   "dayanak": "17.01 ve 17.02 Açıklama Notları.",
+   "fasil": 17
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 23.01 pozisyonunda sınıflandırılır?",
+   "secenekler": [
+    "İnsan tüketimine uygun, ısıl işlem görmüş karides unu",
+    "Memeli deniz hayvanlarının işlenmesiyle elde edilen, insan gıdası olarak kullanılmaya elverişli olmayan kaba un",
+    "Yağı alınmış kemiklerin öğütülmesiyle elde edilen kemik tozu",
+    "Hayvan yemi yapımında kullanılan, toz haline getirilmiş istiridye kabukları",
+    "İnsan tüketimine uygun olmayan cansız çekirgelerden elde edilen un"
+   ],
+   "cevap": "B",
+   "tip": "Pozisyon → eşya",
+   "gerekce": "23.01 açıklama notu, kemik, boynuz ve kabuk gibi uzuvlar hariç olmak üzere memeli deniz hayvanları dahil bütün hayvanların işlenmesiyle elde edilen ve insan gıdasına elverişli olmayan unları kapsar. Böcek unları 05.11’e, kemik tozu 05.06’ya, kabuk tozu 05.08’e, yenilebilir karides unu 03.09’a gider.",
+   "dayanak": "23.01 Açıklama Notu; 03.09, 05.06 ve 05.08 Açıklama Notları.",
+   "fasil": 23
+  },
+  {
+   "soru": "Aşağıdaki eşyanın Tarife Cetvelindeki pozisyon numaralarına göre küçükten büyüğe doğru dizilişi hangisidir?<br/>I. Kauçuktan banyo bonesi<br/>II. Şapka imaline mahsus, kalıplanarak şekil verilmemiş keçeden üstüvane<br/>III. Doğrudan örülüp keçeleştirilmiş fes<br/>IV. Başlıklara takılmaya hazır, deriden çene altı kayışı<br/>V. Rafya şeritlerinden örülmüş, kalıpta preslenerek şekil verilmiş şapka",
+   "secenekler": [
+    "II – III – V – I – IV",
+    "V – II – III – IV – I",
+    "II – V – III – I – IV",
+    "II – V – I – III – IV",
+    "V – II – I – III – IV"
+   ],
+   "cevap": "C",
+   "tip": "Sıralama",
+   "gerekce": "Keçe üstüvane 65.01, şeritlerden örülüp şekil verilmiş şapka 65.04, örülüp keçeleştirilmiş fes 65.05, kauçuktan banyo bonesi 65.06, çene altı kayışı 65.07’dedir. Tuzak, keçeleştirilmiş fesi keçe taslağı sanıp 65.01’e yakın düşünmek veya banyo bonesini 65.05’teki başlıklarla karıştırmaktır.",
+   "dayanak": "65.01, 65.04, 65.05, 65.06 ve 65.07 Açıklama Notları.",
+   "fasil": 65
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 22.06 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Armut suyunun fermentasyonuyla elde edilen armut şarabı (perry)",
+    "Bazı palmiyelerin özsularından elde edilen hurma (palmiye) şarabı",
+    "Alkol derecesi hacimce %0,5’i geçen bira ve şarap karışımı",
+    "İncir suyunun fermentasyonuyla elde edilen, alkol derecesi hacimce %0,5’i geçen incir şarabı",
+    "Pirinç veya palmiye şarabından damıtma yoluyla elde edilen arak"
+   ],
+   "cevap": "E",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "22.06, armut ve hurma şarabı, incir şarabı ile %0,5’i aşan bira-şarap karışımları gibi fermente içecekleri kapsar. Pirinç veya palmiye şarabından elde edilen arak ise damıtma yoluyla elde edilmiş alkollü içki olarak 22.08’de ismen sayılır. Tuzak, hammaddesinin fermente bir içecek olmasıdır.",
+   "dayanak": "22.06 ve 22.08 Açıklama Notları.",
+   "fasil": 22
+  },
+  {
+   "soru": "Aşağıdaki seçeneklerin hangisinde aynı 4’lü pozisyonda yer almayan eşya bulunmaktadır?",
+   "secenekler": [
+    "Elektrikli perma yapma cihazı – Kendinden elektrik motorlu saç kesme makinesi",
+    "Elektrikli saç kurutucu – Elektrikli el kurutma cihazı",
+    "Kendinden elektrik motorlu tıraş makinesi – Kendinden elektrik motorlu epilasyon cihazı",
+    "Ev tipi elektrikli krep yapıcı – Ev tipi elektrikli gofret (waffle) ütüsü",
+    "Ev tipi elektrikli yoğurt yapma cihazı – Ev tipi elektrikli patlamış mısır cihazı"
+   ],
+   "cevap": "A",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "85.16, saç kurutucu ve perma cihazı gibi berber işlerine mahsus elektrotermik cihazları, el kurutma cihazlarını ve krep, gofret, yoğurt, patlamış mısır cihazı gibi ev tipi elektrotermik cihazları kapsar. Kendinden motorlu saç kesme makinesi ise tıraş ve epilasyon cihazlarıyla birlikte 85.10’dadır.",
+   "dayanak": "85.10 ve 85.16 pozisyon metinleri ve Açıklama Notları.",
+   "fasil": 85
+  },
+  {
+   "soru": "Tarife Cetveline göre, tedavide kullanılmak üzere hazırlanmış, gliserin içinde muhafaza edilen, dozlandırılmamış ve perakende satış için ambalajlanmamış (dökme) kırmızı kemik iliği hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "05.10",
+    "30.02",
+    "30.04",
+    "30.01",
+    "02.06"
+   ],
+   "cevap": "D",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "30.01 açıklama notu, tedavide veya korunmada kullanılmak üzere hazırlanmış insan veya hayvan menşeli diğer maddeler arasında gliserinde muhafaza edilen kırmızı kemik iliğini sayar; ölçülü dozlarda veya perakende ambalajda olsaydı 30.04’e girerdi. Tuzak, gliserolde geçici korunan guddeler nedeniyle 05.10’u seçmektir.",
+   "dayanak": "30.01 ve 05.10 Açıklama Notları.",
+   "fasil": 30
+  },
+  {
+   "soru": "Bira doldurulmuş; boşaltıldıktan sonra iade edilip yeniden doldurulmak üzere kullanılan, sürekli kullanıma elverişli olduğu açıkça belli 50 litrelik paslanmaz çelik fıçılar gümrüğe sunulmuştur. Bu eşyanın sınıflandırılmasıyla ilgili aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Fıçılar GYK 5(b) uyarınca ambalaj sayılarak bira ile birlikte 22.03 pozisyonunda sınıflandırılır.",
+    "GYK 5(b) uygulanmaz; fıçılar 73.10, bira 22.03 pozisyonunda ayrı ayrı sınıflandırılır.",
+    "Fıçılar GYK 5(a) uyarınca belli bir eşyaya göre yapılmış mahfaza sayılarak bira ile birlikte 22.03 pozisyonunda sınıflandırılır.",
+    "GYK 3(b) uyarınca esas niteliği veren çelik fıçının pozisyonunda, 73.10’da birlikte sınıflandırılır.",
+    "Fıçılar sıkıştırılmış gaz kabı sayılarak 73.11, bira 22.03 pozisyonunda sınıflandırılır."
+   ],
+   "cevap": "B",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 5(b) ambalajı içindeki eşyayla birlikte sınıflandırır; ancak sürekli kullanıma elverişli olduğu açıkça belli ambalajlara uygulanmaz. Bu nedenle çelik fıçı, hacmi 300 litreyi geçmeyen çelik kaplar arasında 73.10’da, bira 22.03’te ayrı sınıflandırılır; ortada bir takım bulunmadığından 3(b) de uygulanmaz.",
+   "dayanak": "GYK 5(b) ve Açıklama Notu (IV); 73.10 pozisyon metni.",
+   "fasil": "GYK"
+  },
+  {
+   "soru": "Tarife Cetveline göre, bir ülkenin turistik faaliyetlerini ve demiryolu hatlarını uygun resim ve çizgilerle gösteren, basılı şematik harita hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "49.05",
+    "49.06",
+    "49.11",
+    "90.23",
+    "49.01"
+   ],
+   "cevap": "C",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "49.05 her türlü basılı haritayı kapsasa da açıklama notu, bir ülkenin turistik veya endüstriyel faaliyetlerini ya da demiryolu hatlarını resim ve çizgilerle gösteren şematik haritaları bu pozisyon dışında bırakarak 49.11’e gönderir. 49.06 elle çizilmiş planlar, 90.23 kabartma haritalar içindir.",
+   "dayanak": "49.05 Açıklama Notu, istisna (d); 49.11.",
+   "fasil": 49
+  },
+  {
+   "soru": "Eczacılık, gıda ve tutkal sanayiinde kullanılan aşağıdaki protein esaslı maddelerden hangisi Tarife Cetvelinde diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Buğday veya çavdardan çıkartılan gliadin",
+    "Temel soya proteini olan glisinin",
+    "Bira mayasından izole edilmiş nükleoproteidler",
+    "Demir peptonat",
+    "Kazein tannat"
+   ],
+   "cevap": "E",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Gliadin gibi tahıl proteinleri, glisinin, nükleoproteidler ve peptonların türevi olan demir peptonat 35.04’tedir. Kazein tannat ise 35.01 açıklama notunda klorinatlı ve iyotlu kazeinle birlikte kazein türevi olarak sayılır. Tuzak, “tannat” ifadesi nedeniyle onu da diğer protein türevleriyle aynı pozisyonda sanmaktır.",
+   "dayanak": "35.01 ve 35.04 Açıklama Notları.",
+   "fasil": 35
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 44.04 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Boylamasına yarılmış ve fıçıya takıldığında uçları birbirine geçecek şekilde iki başından kertik açılmış çember odunu",
+    "Fıçı çemberi yapımında kullanılan, demetler halindeki yarılmış söğüt çubukları",
+    "Uçları sivriltilmiş fakat uzunlamasına biçilmemiş çit kazıkları",
+    "Baston imaline elverişli, kabaca yontulmuş fakat torna edilmemiş ağaç çubuklar",
+    "Elek ve kibrit kutusu yapımında kullanılan, eğilip bükülebilen ince kasnak tahtaları"
+   ],
+   "cevap": "A",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "44.04 açıklama notu ağaç çemberleri, uçları sivriltilmiş kazıkları, kabaca yontulmuş baston çubuklarını ve kasnak tahtalarını kapsar; ancak fıçıya takılmak üzere iki başından kertik açılmış çember odununu fıçıcı eşyası olarak 44.16’ya gönderir. Tuzak, hepsinin yarılmış veya yontulmuş ağaç olmasıdır.",
+   "dayanak": "44.04 Açıklama Notu; 44.16 pozisyon metni.",
+   "fasil": 44
+  },
+  {
+   "soru": "Fasıl 96 Not 3’e göre, 96.03 pozisyonu anlamında “hazırlanmış süpürge ve fırça başları” tabirinden aşağıdakilerden hangisi anlaşılır?",
+   "secenekler": [
+    "Bir sapa veya gövdeye monte edilerek kullanıma hazır hale getirilmiş süpürge ve fırçalar",
+    "Bir ayırıma gerek duyulmaksızın kullanılmaya hazır olan ya da yalnızca baş kısmını keserek şekil verme gibi önemsiz bir işçilik gerektiren, monte edilmemiş başlar",
+    "Yalnızca temizlenmiş, ağartılmış veya boyanmış, demetler halindeki domuz ve porsuk kılları",
+    "Kök uçları hizalanıp boylarına göre ayrıldıktan sonra kullanılabilecek, gevşekçe sarılmış kıl yığınları",
+    "Yalnızca bitkisel liflerden oluşan ve fırça imalinde kullanılmadan önce demetlere ayrılması gereken lif kütleleri"
+   ],
+   "cevap": "B",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Not 3, hayvan kılı, bitkisel lif veya diğer maddelerden; ayırıma gerek olmadan kullanılmaya hazır ya da yalnızca baş kısmının kesilerek şekillendirilmesi gibi önemsiz işçilik gerektiren monte edilmemiş başları tanımlar. Yalnızca temizlenmiş, ağartılmış veya demetlenmiş kıllar 05.02’de kalır; monte edilmiş fırçalar bitmiş eşyadır.",
+   "dayanak": "Fasıl 96 Not 3; 05.02 Açıklama Notu.",
+   "fasil": 96
+  },
+  {
+   "soru": "Tropikal bir ağaçtan oyularak yapılmış küçük bir süs heykelciğinin 44.20 pozisyonunda yer aldığı belirlenmiştir. Bu pozisyonun “ahşap küçük heykelcikler ve diğer süs eşyası” tek tireli alt pozisyonu altındaki “tropikal ağaçlardan olanlar” ve “diğerleri” iki tireli alt pozisyonlarından hangisine gireceğinin belirlenmesiyle ilgili aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "GYK 3(a) uyarınca eşyayı en özel niteleyen alt pozisyon, farklı seviyedeki alt pozisyonlar da birbiriyle karşılaştırılarak seçilir.",
+    "GYK 1 uyarınca yalnız dört rakamlı pozisyon metni dikkate alınır; alt pozisyonlar arasında kurala dayalı seçim yapılmaz.",
+    "GYK 3(c) uyarınca geçerli olabilecek alt pozisyonlardan numara sırasına göre sonuncusu, yani “diğerleri” seçilir.",
+    "GYK 6 uyarınca yalnız aynı seviyedeki iki tireli alt pozisyonlar, ait oldukları tek tireli alt pozisyonun kapsamı içinde karşılaştırılır.",
+    "GYK 4 uyarınca eşyaya en çok benzeyen süs eşyasının yer aldığı alt pozisyon esas alınır."
+   ],
+   "cevap": "D",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 6’ya göre alt pozisyonlarda sınıflandırma yalnız aynı seviyedeki alt pozisyonlar karşılaştırılarak yapılır: önce eşyayı en özel niteleyen tek tireli alt pozisyon seçilir, iki tireli alt pozisyonlara ancak bundan sonra bakılır ve bunların kapsamı tek tireli alt pozisyonu aşamaz.",
+   "dayanak": "GYK 6 ve Açıklama Notu; 44.20 pozisyon metni.",
+   "fasil": "GYK"
+  },
+  {
+   "soru": "56.02 ve 56.03 pozisyonlarının Açıklama Notlarına göre iğneleme yöntemiyle elde edilen mensucatla ilgili aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "İğneleme yöntemiyle elde edilen her türlü mensucat, lif türüne bakılmaksızın keçe olarak 56.02’de yer alır.",
+    "Keçeleşme özelliği olmayan jüt gibi bitkisel liflerden iğneleme yöntemiyle keçe elde edilemez.",
+    "Filament esaslı tülbentlerin iğnelenmesiyle elde edilen kumaşlar dokunmamış mensucat olarak 56.03’te yer alır.",
+    "Devamsız liflerden, iğnelemenin başka bir tutturma yöntemine yalnızca tamamlayıcı olduğu kumaşlar keçe olarak 56.02’de yer alır.",
+    "Dikiş-trikotaj usulü, dokunmamış mensucatta liflerin mekanik olarak tutturulmasında kullanılan yöntemlerden biridir."
+   ],
+   "cevap": "C",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "56.02 açıklama notu, filament esaslı iğnelenmiş kumaşları ve iğnelemenin başka bir tutturmaya tamamlayıcı olduğu devamsız lif kumaşlarını dokunmamış mensucat (56.03) sayar. İğne işi tekniği jüt gibi keçeleşmeyen liflerden de keçe elde edilmesini sağlar; dikiş-trikotaj usulü dokunmamış mensucatın mekanik tutturma yöntemi değildir.",
+   "dayanak": "56.02 ve 56.03 Açıklama Notları; Fasıl 56 Not 2.",
+   "fasil": 56
+  }
+ ]
+}

@@ -1,0 +1,98 @@
+{
+ "tur": "hap",
+ "fasil": 48,
+ "kademe": "A",
+ "sinavda": "Son 5 sınavda 4 soruda konu, 2 soruda seçenek: sigara kağıdı 48.13 (e-sigara 85.43, kartuş 24.04, sigara 24.02 ile boşluk doldurma), gazete kağıdı 48.01 sıralaması, fotokopi kağıdının bölümü (Bölüm X), not defteri + parfüm (set değil, ayrı ayrı). Not defteri 48.20 sıralama seçeneklerinde geçti.",
+ "pozisyonlar": [
+  [
+   "48.01",
+   "Gazete kağıdı (Not 4), rulo veya tabaka"
+  ],
+  [
+   "48.02",
+   "Yazı-baskı, fotokopi kağıdı; her ebatta"
+  ],
+  [
+   "48.03",
+   "Tuvalet, havlu kağıdı; eni 36 cm’yi geçen rulo"
+  ],
+  [
+   "48.04",
+   "Kraft kağıt ve karton (Not 6)"
+  ],
+  [
+   "48.11",
+   "Plastik, mum, yapışkanla kaplı-emdirilmiş kağıt"
+  ],
+  [
+   "48.13",
+   "Sigara kağıdı; her ebatta, defter, boru"
+  ],
+  [
+   "48.14",
+   "Duvar kağıdı; rulo eni 45–160 cm"
+  ],
+  [
+   "48.18",
+   "Tuvalet kağıdı, mendil, peçete, havlu; küçük rulo"
+  ],
+  [
+   "48.19",
+   "Kutu, koli, torba, kese kağıdı"
+  ],
+  [
+   "48.20",
+   "Defter, ajanda, klasör, form, albüm"
+  ],
+  [
+   "48.21",
+   "Kağıt etiketler, baskılı olsun olmasın"
+  ],
+  [
+   "48.23",
+   "Diğer: kağıt tabak-bardak, kesilmiş kağıt"
+  ]
+ ],
+ "hap": [
+  "<b>Bölüm X = Fasıl 47–49:</b> hamur (47) → kağıt ve kağıt eşya (48) → basılı ürün (49); fotokopi kağıdı 48.02 ile Bölüm X’dadır.",
+  "<b>Gazete kağıdı (Not 4):</b> lifin en az %50’si mekanik veya kimyasal-mekanik odun lifi, 40–65 g/m2; rulo eni 28 cm’yi geçer (tabakada bir kenar 28, diğeri 15 cm’yi).",
+  "<b>36 cm kuralı (Not 8):</b> 48.03–48.09 yalnız eni 36 cm’yi geçen rulo veya bir kenarı 36, diğeri 15 cm’yi geçen tabaka; 48.02, 48.10, 48.11 her ebatta.",
+  "<b>Not 6–7:</b> kraft = lifin en az %80’i sülfat-soda kimyasal lifi. 48.01–48.11’den birden fazlasına uyan kağıt, metin aksini demedikçe numara sırasına göre en sondakine.",
+  "<b>Plastikli kağıt:</b> plastik tabaka toplam kalınlığın yarısından fazlaysa Fasıl 39, değilse 48.11; duvar kaplaması her durumda 48.14 (Not 9: eni 45–160 cm rulo).",
+  "<b>Not 2 hariçleri:</b> parfümlü-kozmetikli kağıt 33, sabunlu 34.01, fotoğraf kağıdı 37.01–37.04, reaktifli kağıt 38.22, zımpara 68.05, oyuncak 95, bebek bezi-ped-tampon 96.19, 42.02 eşyası.",
+  "<b>Baskı (Not 12):</b> motif veya resim eşyanın esas unsuruysa Fasıl 49; duvar kağıdı 48.14 ve etiket 48.21 yine Fasıl 48. Baskısı tali ajanda-form 48.20.",
+  "<b>Ebat pozisyon değiştirir:</b> tuvalet kağıdı eni 36 cm’yi geçen rulo 48.03, küçük rulo 48.18; karbon kağıdı geniş rulo 48.09, küçük ebat 48.16. Sigara kağıdı her ebatta 48.13."
+ ],
+ "karistirilan": [
+  [
+   "Kağıttan bebek bezi, hijyenik ped",
+   "96.19",
+   "Not 2(q): Fasıl 96 eşyası; 48.18 değil"
+  ],
+  [
+   "Not defteri + parfüm birlikte",
+   "48.20",
+   "Set değil (GYK 3(b)); parfüm ayrıca 33.03"
+  ],
+  [
+   "Elektronik sigara",
+   "85.43",
+   "Sigara kağıdı 48.13, sigara 24.02, kartuş 24.04"
+  ],
+  [
+   "Takvim",
+   "49.10",
+   "Baskı esas; ajanda, takvimli hatıra defteri 48.20"
+  ],
+  [
+   "Günün gazetesi",
+   "49.02",
+   "Gazete kağıdı 48.01; satılmamış eski gazete 47.07"
+  ],
+  [
+   "Turnusol kağıdı, teşhis şeridi",
+   "38.22",
+   "Not 2(f): reaktif emdirilmiş kağıt"
+  ]
+ ]
+}

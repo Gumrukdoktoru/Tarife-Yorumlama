@@ -1,0 +1,56 @@
+{
+ "tur": "hap",
+ "fasil": 38,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 1 kez doğrudan: sınai yağ alkolleri 38.23 (15.18, 15.20, 29.34, 38.24 çeldirici). Seçeneklerde 38.25 (miadı dolmuş ilaç 30.06), 38.24 (lens solüsyonu 33.07) ve sıralamada biyodizel 38.26.",
+ "pozisyonlar": [
+  [
+   "38.08",
+   "Haşarat, ot öldürücü, dezenfektan (perakende veya müstahzar)"
+  ],
+  [
+   "38.22",
+   "Laboratuvar teşhis reaktifleri; sertifikalı referans maddeler"
+  ],
+  [
+   "38.23",
+   "Sınai yağ asitleri ve yağ alkolleri"
+  ],
+  [
+   "38.24",
+   "Başka yerde yer almayan kimyasal ürünler"
+  ],
+  [
+   "38.25",
+   "Şehir atığı, kanalizasyon çamuru, klinik atık"
+  ],
+  [
+   "38.26",
+   "Biyodizel (petrol yağı %70’ten az)"
+  ]
+ ],
+ "hap": [
+  "<b>Not 1(a):</b> kimyaca belirli izole bileşik Fasıl 28–29’dadır; istisnalar suni grafit 38.01, 38.08 şekilli ürünler, söndürücü dolgular 38.13, sertifikalı referans maddeler, Not 3(a)/(c) ürünleri.",
+  "<b>38.23 saflık sınırı:</b> yağ alkolü ve yağ asidi %90’dan (oleik asit %85’ten) az saflıktaysa 38.23; daha safı 29.05, 29.15, 29.16; ham gliserol 15.20.",
+  "<b>%70 petrol yağı:</b> fren sıvısı 38.19 ve biyodizel 38.26 için petrol yağı %70’ten az olmalı (fazlası 27.10); karma çözücü ve tinerde (38.14) oran önemsiz.",
+  "<b>Atıklar (Not 4–6):</b> şehir atığı, kanalizasyon çamuru, klinik atık, atık çözücü 38.25; petrol yağı esaslı atık 27.10, miadı dolmuş ilaç 30.06, stabilize gübre çamuru Fasıl 31.",
+  "<b>Bölüm VI Not 4:</b> ismen veya işleviyle başka bir Bölüm VI pozisyonuna uyan halojenli karışım 38.27’de değil o pozisyonda sınıflandırılır; 38.27 son duraktır."
+ ],
+ "karistirilan": [
+  [
+   "Kullanım süresi geçmiş hazır ilaç",
+   "30.06",
+   "Fasıl 30 Not 4(k); 38.25 atık değil"
+  ],
+  [
+   "Hastaya uygulanan teşhis reaktifi",
+   "30.06",
+   "38.22 yalnız laboratuvarda kullanılan reaktifler"
+  ],
+  [
+   "Doldurulmuş yangın söndürme cihazı",
+   "84.24",
+   "Yalnız dolgu ve söndürücü bombalar 38.13"
+  ]
+ ]
+}

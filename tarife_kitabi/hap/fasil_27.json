@@ -1,0 +1,56 @@
+{
+ "tur": "hap",
+ "fasil": 27,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 2 kez: “27. fasılda sınıflandırılamaz” kalıbında hidrojen gazı (28.04) havagazı, turba, elektrik ve vazelinden ayrıldı; “aynı fasıl” sorusunda elektrik enerjisi–vazelin–turb üçlüsü Fasıl 27 olarak verildi.",
+ "pozisyonlar": [
+  [
+   "27.03",
+   "Turb; tarımda kullanılsa da burada"
+  ],
+  [
+   "27.05",
+   "Havagazı, su gazı, fakir gaz"
+  ],
+  [
+   "27.10",
+   "Petrol yağları, ≥ %70’lik müstahzarlar, atık yağlar"
+  ],
+  [
+   "27.11",
+   "Doğal gaz, LPG; saf metan ve propan"
+  ],
+  [
+   "27.12",
+   "Vazelin, parafin, mineral mumlar"
+  ],
+  [
+   "27.16",
+   "Elektrik enerjisi"
+  ]
+ ],
+ "hap": [
+  "<b>Not 1:</b> kimyaca belirli izole organik bileşikler Fasıl 29’dadır; <b>saf metan ve propan</b> istisnadır, 27.11’de kalır. Hidrojen ise element olarak 28.04’tedir.",
+  "<b>27.10 için %70 + esas unsur:</b> ağırlıkça ≥ %70 petrol yağı içeren ve bu yağın esas unsur olduğu müstahzarlar 27.10; %70’in altı 34.03, 38.19, 38.26 gibi pozisyonlara gider.",
+  "<b>Not 2:</b> aromatik olmayan unsurlar ağırlıkça baskınsa 27.10; aromatik unsurlar baskınsa 27.07 (benzol, toluol, kreozot yağı).",
+  "<b>Not 3 – atık yağlar 27.10’dadır:</b> kullanılmış motor, hidrolik, transformatör yağı, tank tortusu yağları, suyla karışık kesme yağları; 38.25’e gitmez.",
+  "<b>Vazelin ve turb:</b> ham vazelin 27.12, perakende cilt bakımı vazelini 33.04; esas karakteri turb olan saksı toprağı 27.03, bahçe toprağı 25.30."
+ ],
+ "karistirilan": [
+  [
+   "Hidrojen gazı",
+   "28.04",
+   "Element; Fasıl 27 değil (havagazı ise 27.05)"
+  ],
+  [
+   "Biyodizel (petrol yağı %70’ten az)",
+   "38.26",
+   "≥ %70 petrol yağı içeren karışımı 27.10"
+  ],
+  [
+   "Çakmak doldurma bütanı (≤ 300 cm3 kap)",
+   "36.06",
+   "Çakmağın gaz haznesi 96.13; dökme LPG 27.11"
+  ]
+ ]
+}

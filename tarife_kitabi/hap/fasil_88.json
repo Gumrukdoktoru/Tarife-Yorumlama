@@ -1,0 +1,50 @@
+{
+ "tur": "hap",
+ "fasil": 88,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 1 kez konu: dijital kameralı, uzaktan kumandalı drone 88.06 (85.25, 88.04, 88.05, 88.07 çeldirici). Seçeneklerde 2 kez: deniz taşıtı dizel motoru (84.08) ve römorkör (89.04) sorularında 88.02 ve 88.04 çeldirici.",
+ "pozisyonlar": [
+  [
+   "88.01",
+   "Balon, hava gemisi, planör, delta kanat, uçurtma"
+  ],
+  [
+   "88.02",
+   "Motorlu uçak, helikopter; uydu, uzay fırlatıcısı"
+  ],
+  [
+   "88.04",
+   "Paraşüt, yamaç paraşütü, rotoşüt ve aksamı"
+  ],
+  [
+   "88.05",
+   "Fırlatma-iniş tertibatı; yerde uçuş simülatörü"
+  ],
+  [
+   "88.06",
+   "İnsansız hava taşıtı (drone)"
+  ],
+  [
+   "88.07",
+   "88.01, 88.02, 88.06 aksamı: pervane, kanat, iniş takımı"
+  ]
+ ],
+ "hap": [
+  "<b>Not 1 (insansız hava taşıtı):</b> 88.01 dışında, içinde pilot olmadan uçmak üzere tasarlanmış her hava aracı; yük veya kalıcı entegre kamera taşıyabilir → 88.06. Yalnız eğlence amaçlı uçan oyuncak 95.03.",
+  "<b>Motor ölçütü:</b> balon ve hava gemisi motorlu olsa da 88.01; planör motorlu veya motor takılacak tasarımdaysa 88.02. Meteorolojik balon ve uçurtma 88.01, oyuncak olanlar 95.03.",
+  "<b>7000 m/s:</b> yüküne 7000 m/s’den fazla son hız veren uzay fırlatıcısı 88.02; bu hızı aşmayan balistik füze ve askeri fırlatma aracı 93.06.",
+  "<b>Aksam sayılmaz (Bölüm XVII Not 2):</b> uçak motoru 84.07–84.12, elektrik teçhizatı Fasıl 85, göstergeler Fasıl 90, saat Fasıl 91, ön lamba 94.05; koltuk 94.01. 88.03 numarası boştur."
+ ],
+ "karistirilan": [
+  [
+   "Dijital kameralı drone",
+   "88.06",
+   "Kamera taşısa da 85.25 değil; oyuncak ise 95.03"
+  ],
+  [
+   "Roket fırlatma rampası",
+   "84.79",
+   "Uçak fırlatma tertibatı 88.05; planör vinci 84.25"
+  ]
+ ]
+}

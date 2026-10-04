@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 6,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı, seçeneklerde de yer almadı; bilgi Bölüm II kapsamı (Fasıl 6–14 bitkisel ürünler) ve 12.11 ile sınır sorularında arka plan olarak gerekir.",
+ "pozisyonlar": [
+  [
+   "06.01",
+   "Çiçek soğanı, yumru, rizom; hindiba bitkisi-kökü"
+  ],
+  [
+   "06.02",
+   "Diğer canlı bitkiler, fide, çelik, mantar miseli"
+  ],
+  [
+   "06.03",
+   "Kesme çiçek ve tomurcuk; çiçekli buket, çelenk"
+  ],
+  [
+   "06.04",
+   "Çiçeksiz süs yaprağı, dal, ot, yosun, liken"
+  ]
+ ],
+ "hap": [
+  "<b>Bölüm II notu (pellet):</b> doğrudan sıkıştırılarak veya ağırlığın en çok %3’ü kadar bağlayıcıyla topak haline getirilmiş ürün. Bölüm II = Fasıl 6–14 (bitkisel ürünler).",
+  "<b>Not 1:</b> fasıl yalnız dikim veya süs amaçlı canlı bitkileri kapsar; patates, soğan, şalot, sarımsak dikimlik olsa da Fasıl 7’dedir.",
+  "<b>Not 2:</b> buket, çelenk, çiçek sepetinde diğer maddeden aksesuar dikkate alınmaz; tek çiçek varsa 06.03. Kolaj ve dekoratif plaket 97.01; buket veya süse uygun olmayan çiçek 12.11."
+ ],
+ "karistirilan": [
+  [
+   "Dikimlik soğan, sarımsak, şalot",
+   "07.03",
+   "Not 1: dikim amacı Fasıl 7’den çıkarmaz"
+  ],
+  [
+   "Parfümeri veya eczacılık için çiçek",
+   "12.11",
+   "Sunuluş şekliyle buket veya süse uygun değil"
+  ]
+ ]
+}

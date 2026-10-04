@@ -1,0 +1,2165 @@
+[
+ {
+  "no": 114,
+  "kapsam": "tarife",
+  "tip": "Fasıl notu · Tanım/Eşik",
+  "fasil_ana": [
+   62
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "62.13",
+   "62.14"
+  ],
+  "konu": "kenarı ≤60 cm kare fular → 62.13 mendil sayılır (62 notu 8)",
+  "kalip": "X eşyası hangi tarife pozisyonunda sınıflandırılır? (aynı fasıldan ardışık pozisyonlar)",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 115,
+  "kapsam": "tarife",
+  "tip": "Farklı/aynı pozisyon veya fasıl",
+  "fasil_ana": [
+   90
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "90.17",
+   "90.25",
+   "90.26",
+   "90.27",
+   "90.29"
+  ],
+  "konu": "ölçü aletleri: mikrometre 90.17, termometre/barometre 90.25",
+  "kalip": "Aşağıdaki seçeneklerin hangisinde aynı 4’lü pozisyonda yer almayan eşya bulunmaktadır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 116,
+  "kapsam": "tarife",
+  "tip": "Genel Yorum Kuralı",
+  "fasil_ana": [
+   "GYK",
+   94
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "94.01",
+   "94.03"
+  ],
+  "konu": "demonte masa+2 sandalye perakende seti → 94.03, GYK 2(a), 3(c)",
+  "kalip": "X eşyası hangi yorum kuralına göre hangi pozisyonda sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": "3(b) özsel nitelik belirlenemedi varsayımıyla 3(c); yoruma açık"
+ },
+ {
+  "no": 117,
+  "kapsam": "tarife",
+  "tip": "Olumsuz teşhis",
+  "fasil_ana": [
+   84
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "84.77"
+  ],
+  "konu": "aksam-parça pozisyonu olmayan makine: plastik enjeksiyon (84.77); 84.09/84.31/84.48/84.66 var",
+  "kalip": "Aşağıdaki eşyaların hangisinin aksam-parçaları için 4’lü bazda özel bir pozisyon yoktur?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 118,
+  "kapsam": "tarife",
+  "tip": "Olumsuz teşhis",
+  "fasil_ana": [
+   82
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "82.06",
+   "82.01"
+  ],
+  "konu": "82.06 takımı yalnız 82.02–82.05 aletleri; çit makası 82.01",
+  "kalip": "N pozisyonu şöyle tanımlanır... Buna göre aşağıdakilerden hangisi N pozisyonunda sınıflandırılmaz?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 119,
+  "kapsam": "tarife",
+  "tip": "Olumsuz teşhis",
+  "fasil_ana": [
+   73,
+   83
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "83.05"
+  ],
+  "konu": "şerit halinde zımba teli 83.05; yay, çapa, somun, tığ 73'te",
+  "kalip": "Aşağıdaki X maddesinden mamul eşyalardan hangisi N. fasılda yer almaz?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 120,
+  "kapsam": "tarife",
+  "tip": "Genel Yorum Kuralı",
+  "fasil_ana": [
+   "GYK",
+   87
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "87.16"
+  ],
+  "konu": "pedalsız ayakla itilen yetişkin scooter → 87.16, 87.12 değil",
+  "kalip": "X eşyası hangi yorum kuralına göre hangi pozisyonda sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 121,
+  "kapsam": "tarife",
+  "tip": "Sıralama",
+  "fasil_ana": [
+   85
+  ],
+  "fasil_secenek": [
+   42,
+   48,
+   65,
+   58,
+   84,
+   38,
+   39,
+   43,
+   33
+  ],
+  "pozisyonlar": [
+   "85.04",
+   "85.13",
+   "85.34",
+   "85.49"
+  ],
+  "konu": "trafo 85.04 < el feneri 85.13 < baskılı devre 85.34 < atık pil 85.49",
+  "kalip": "Aşağıdakilerden hangisinde eşyalar TGTC’deki pozisyon numaralarına göre küçükten büyüğe doğru sıralanmıştır?",
+  "cevap_gecerli": true,
+  "not": "atık pil 2022'den beri 85.49 (önce 85.48); sıra değişmiyor"
+ },
+ {
+  "no": 122,
+  "kapsam": "alt_pozisyon",
+  "tip": "Alt pozisyon / GTİP",
+  "fasil_ana": [
+   72
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "72.08"
+  ],
+  "konu": "72.08 sıcak haddelenmiş yassı çelik: kalınlık/rulo/delinmiş → 12'li GTİP",
+  "kalip": "TGTC'nin N pozisyonunda sınıflandırılan yukarıdaki (I–IV) eşyaların GTİP'leri hangi seçenekte doğrudur? (tablo verili)",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 123,
+  "kapsam": "mevzuat",
+  "tip": "Mevzuat",
+  "fasil_ana": [],
+  "fasil_secenek": [],
+  "pozisyonlar": [],
+  "konu": "474 s. Kanun: yatırım maddesi vasıtalı vergileri 5 yılda ödeme",
+  "kalip": "474 Sayılı Kanuna göre ... Cumhurbaşkanı kaç yıl/ne kadar sürede ... yetkilidir?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 124,
+  "kapsam": "mevzuat",
+  "tip": "Mevzuat",
+  "fasil_ana": [],
+  "fasil_secenek": [],
+  "pozisyonlar": [],
+  "konu": "474 s. Kanun: hazırlık komisyonu en geç 15 günde bir toplanır",
+  "kalip": "474 Sayılı Kanunda yer alan ... komisyon en geç ne kadar zamanda bir toplanır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 125,
+  "kapsam": "mevzuat",
+  "tip": "Mevzuat",
+  "fasil_ana": [],
+  "fasil_secenek": [],
+  "pozisyonlar": [],
+  "konu": "474 s. Kanun: yatırım maddesi vergilerinin en fazla 5 yılda tahsili",
+  "kalip": "474 Sayılı Kanuna göre Cumhurbaşkanı ... en fazla kaç yıl içinde tahsiline müsaade eder?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 126,
+  "kapsam": "tarife",
+  "tip": "Eşya → 4’lü pozisyon",
+  "fasil_ana": [
+   94
+  ],
+  "fasil_secenek": [
+   95,
+   85,
+   84
+  ],
+  "pozisyonlar": [
+   "94.05"
+  ],
+  "konu": "elektrikli çelenk → 94.05 (95 notu 1(u) hariç tutar)",
+  "kalip": "X eşyası Tarife Cetvelinde hangi tarife pozisyonunda sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 127,
+  "kapsam": "tarife",
+  "tip": "Olumsuz teşhis",
+  "fasil_ana": [
+   39,
+   42
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "42.02"
+  ],
+  "konu": "plastik okul çantası 42.02; küvet, şişe, ilaç kaşığı 39'da",
+  "kalip": "Aşağıdaki ürünlerin hangisi Tarife Cetvelinin N. fasılında yer almaz?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 128,
+  "kapsam": "tarife",
+  "tip": "Eşya → 4’lü pozisyon",
+  "fasil_ana": [
+   25
+  ],
+  "fasil_secenek": [
+   68,
+   90,
+   30
+  ],
+  "pozisyonlar": [
+   "25.20"
+  ],
+  "konu": "dişçilikte kullanılan alçı → 25.20; alçı esaslı müstahzar 34.07",
+  "kalip": "X eşyası Tarife Cetvelinde hangi tarife pozisyonunda sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 129,
+  "kapsam": "tarife",
+  "tip": "Fasıl/Bölüm bulma",
+  "fasil_ana": [
+   63
+  ],
+  "fasil_secenek": [
+   62,
+   61,
+   60
+  ],
+  "pozisyonlar": [
+   "63.09"
+  ],
+  "konu": "kullanılmış giyim eşyası → 63. fasıl (63.09)",
+  "kalip": "X eşyası Tarife Cetvelinin hangi fasılında yer almaktadır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 130,
+  "kapsam": "tarife",
+  "tip": "Olumsuz teşhis",
+  "fasil_ana": [
+   87,
+   70
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "70.14"
+  ],
+  "konu": "taşıt far/stop camı 70.14; traktör, bebek arabası, tank 87",
+  "kalip": "Aşağıdaki ürünlerden hangisi (başlığı verilen) N. fasılda sınıflandırılmaz?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 131,
+  "kapsam": "tarife",
+  "tip": "Olumsuz teşhis",
+  "fasil_ana": [
+   30,
+   35
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "35.02"
+  ],
+  "konu": "tedavi amaçlı olmayan kan albümini 35.02; aşı, serum, alçılı sargı 30",
+  "kalip": "Aşağıdaki ürünlerden hangisi (başlığı verilen) N. fasılda sınıflandırılmaz?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 132,
+  "kapsam": "tarife",
+  "tip": "Eşya → 4’lü pozisyon",
+  "fasil_ana": [
+   59
+  ],
+  "fasil_secenek": [
+   58,
+   39,
+   63
+  ],
+  "pozisyonlar": [
+   "59.09"
+  ],
+  "konu": "dokumaya elverişli maddeden yangın hortumu → 59.09",
+  "kalip": "X eşyası Tarife Cetvelinde hangi tarife pozisyonunda sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 133,
+  "kapsam": "tarife",
+  "tip": "Eşya → 4’lü pozisyon",
+  "fasil_ana": [
+   95
+  ],
+  "fasil_secenek": [
+   84,
+   87
+  ],
+  "pozisyonlar": [
+   "95.03"
+  ],
+  "konu": "üç tekerlekli bisiklet → 95.03, 87.12 değil",
+  "kalip": "X eşyası TGTC'de hangi tarife pozisyonunda sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 134,
+  "kapsam": "tarife",
+  "tip": "Eşya → 4’lü pozisyon",
+  "fasil_ana": [
+   84
+  ],
+  "fasil_secenek": [
+   89,
+   88,
+   85
+  ],
+  "pozisyonlar": [
+   "84.08"
+  ],
+  "konu": "deniz taşıtı dizel motoru → 84.08, 89. fasıl değil",
+  "kalip": "X eşyası Tarife Cetvelinde hangi tarife pozisyonunda sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 135,
+  "kapsam": "tarife_yapisi",
+  "tip": "Tarife yapısı",
+  "fasil_ana": [],
+  "fasil_secenek": [],
+  "pozisyonlar": [],
+  "konu": "tarife ölçü birimleri: TJ, hücre adedi, GT var; metretül yok",
+  "kalip": "Aşağıdakilerden hangisi Tarife Cetvelinde kullanılan ölçü birimlerinden değildir?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 136,
+  "kapsam": "tarife",
+  "tip": "Genel Yorum Kuralı",
+  "fasil_ana": [
+   "GYK",
+   33,
+   48
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "33.03",
+   "48.20"
+  ],
+  "konu": "not defteri+parfüm birlikte: set değil (3(b)), ayrı ayrı sınıflandırılır",
+  "kalip": "Birlikte paketlenmiş X ve Y'nin tarife pozisyonu nedir? (set kavramı)",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 137,
+  "kapsam": "tarife",
+  "tip": "Genel Yorum Kuralı",
+  "fasil_ana": [
+   "GYK",
+   93
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "93.03"
+  ],
+  "konu": "av tüfeği + şekline uygun mahfaza → GYK 5(a), tüfekle birlikte",
+  "kalip": "Birlikte sunulan X ve özel mahfazası ne şekilde sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 138,
+  "kapsam": "tarife",
+  "tip": "Genel Yorum Kuralı",
+  "fasil_ana": [
+   "GYK"
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [],
+  "konu": "birden çok pozisyona girebilen eşya → sırasıyla GYK 3(a),(b),(c)",
+  "kalip": "Eşya iki veya daha fazla pozisyona girebildiğinde hangi yorum kuralı uygulanır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 139,
+  "kapsam": "tarife",
+  "tip": "Fasıl notu · Tanım/Eşik",
+  "fasil_ana": [
+   71
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [],
+  "konu": "71 notu 4(B): platin grubu (Pt,Ir,Os,Pd,Rh,Ru); berilyum değil",
+  "kalip": "Aşağıdakilerden hangisi (fasıl notundaki) X tabirine girmez?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 140,
+  "kapsam": "tarife_yapisi",
+  "tip": "Tarife yapısı",
+  "fasil_ana": [],
+  "fasil_secenek": [],
+  "pozisyonlar": [],
+  "konu": "alt açılımı olmayan pozisyon '00' ile gösterilir",
+  "kalip": "Tarife tekniğine göre ... nasıl gösterilir?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 141,
+  "kapsam": "tarife",
+  "tip": "Genel Yorum Kuralı",
+  "fasil_ana": [
+   "GYK",
+   85
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "85.01"
+  ],
+  "konu": "aynı seviyeli (çift tireli) alt pozisyonlar arası seçim → GYK 6",
+  "kalip": "X ile Y alt pozisyonu arasında seçimi söyleyen yorum kuralı hangisidir?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 142,
+  "kapsam": "tarife",
+  "tip": "Olumsuz teşhis",
+  "fasil_ana": [
+   42,
+   44
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "42.02",
+   "44.20"
+  ],
+  "konu": "ahşap mücevher kutusu 44.20; plastik okul çantası yine 42.02",
+  "kalip": "Aşağıdakilerden hangisi NN.NN tarife pozisyonunda sınıflandırılmaz?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 143,
+  "kapsam": "tarife",
+  "tip": "Eşya → 4’lü pozisyon",
+  "fasil_ana": [
+   90
+  ],
+  "fasil_secenek": [
+   22,
+   76,
+   93
+  ],
+  "pozisyonlar": [
+   "90.31"
+  ],
+  "konu": "alüminyum su terazisi → 9031.80, malzemeye göre değil",
+  "kalip": "X eşyasının tarife alt pozisyonu nedir? (6'lı seçenekler, 4'lü düzeyde ayırt edilir)",
+  "cevap_gecerli": true,
+  "not": "seçenekler 6'lı ama farklı fasıllarda; 4'lü bilgiyle çözülür"
+ },
+ {
+  "no": 144,
+  "kapsam": "tarife",
+  "tip": "Eşya → 4’lü pozisyon",
+  "fasil_ana": [
+   33
+  ],
+  "fasil_secenek": [
+   38,
+   34
+  ],
+  "pozisyonlar": [
+   "33.07"
+  ],
+  "konu": "perakende kontak lens solüsyonu → 33.07",
+  "kalip": "X eşyası hangi tarife pozisyonundadır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 145,
+  "kapsam": "tarife",
+  "tip": "Eşya → 4’lü pozisyon",
+  "fasil_ana": [
+   84
+  ],
+  "fasil_secenek": [
+   87
+  ],
+  "pozisyonlar": [
+   "84.32"
+  ],
+  "konu": "traktöre takılan kültivatör → 84.32, 87.01 değil",
+  "kalip": "X eşyası ne şekilde/hangi pozisyonda sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 146,
+  "kapsam": "tarife",
+  "tip": "Fasıl notu · Tanım/Eşik",
+  "fasil_ana": [
+   71
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [],
+  "konu": "71 notu: platin grubu; berilyum dahil değil (tekrar soru)",
+  "kalip": "Aşağıdakilerden hangisi (fasıl notundaki) X tabirine girmez?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 147,
+  "kapsam": "tarife",
+  "tip": "Genel Yorum Kuralı",
+  "fasil_ana": [
+   "GYK"
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [],
+  "konu": "GYK hiyerarşisi: 1–4 sıralı, 5 bağımsız, 6 alt pozisyon",
+  "kalip": "Genel Yorum Kuralları hakkında aşağıdakilerden hangisi yanlıştır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 148,
+  "kapsam": "tarife",
+  "tip": "Eşya → 4’lü pozisyon",
+  "fasil_ana": [
+   12
+  ],
+  "fasil_secenek": [
+   9,
+   7
+  ],
+  "pozisyonlar": [
+   "12.11"
+  ],
+  "konu": "bitki çayı için adaçayı → 12.11, 09 değil",
+  "kalip": "X eşyası aşağıdaki tarife pozisyonlarının hangisinde sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 149,
+  "kapsam": "tarife",
+  "tip": "Farklı/aynı pozisyon veya fasıl",
+  "fasil_ana": [
+   35,
+   39
+  ],
+  "fasil_secenek": [
+   21,
+   9,
+   30,
+   27
+  ],
+  "pozisyonlar": [
+   "39.13",
+   "35.03",
+   "35.07"
+  ],
+  "konu": "sertleştirilmiş protein 39.13; jelatin, enzim 35. fasıl",
+  "kalip": "Aşağıdakilerden hangisinde sayılan eşyalar aynı fasılda sınıflandırılmaz?",
+  "cevap_gecerli": true,
+  "not": "A'daki 'çemen' tohum ise 09.10 olur (çemen ezmesi 21.03 kastedilmiş); ifade belirsiz"
+ },
+ {
+  "no": 150,
+  "kapsam": "tarife",
+  "tip": "Eşya → 4’lü pozisyon",
+  "fasil_ana": [
+   84
+  ],
+  "fasil_secenek": [
+   73,
+   83
+  ],
+  "pozisyonlar": [
+   "84.24"
+  ],
+  "konu": "boş çelik yangın söndürme cihazı → 84.24 (dolu/boş fark etmez)",
+  "kalip": "X eşyası Tarife Cetvelinde hangi tarife pozisyonunda sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 151,
+  "kapsam": "tarife",
+  "tip": "Olumsuz teşhis",
+  "fasil_ana": [
+   85
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "85.28",
+   "85.40"
+  ],
+  "konu": "katot ışınlı TV tüpü 85.40; monitör ve TV alıcısı 85.28",
+  "kalip": "Aşağıdakilerden hangisi NN.NN tarife pozisyonunda sınıflandırılmaz?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 152,
+  "kapsam": "tarife",
+  "tip": "Eşya → 4’lü pozisyon",
+  "fasil_ana": [
+   85
+  ],
+  "fasil_secenek": [
+   87,
+   40,
+   39
+  ],
+  "pozisyonlar": [
+   "85.12"
+  ],
+  "konu": "elektrik motorlu cam silecekleri → 85.12, 87.08 değil",
+  "kalip": "X eşyası hangi tarife pozisyonunda sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 153,
+  "kapsam": "tarife",
+  "tip": "Eşya → 4’lü pozisyon",
+  "fasil_ana": [
+   90,
+   49
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "90.23",
+   "49.05"
+  ],
+  "konu": "basılı rölyef dünya haritası → 90.23, 49.05 değil",
+  "kalip": "X eşyası hangi tarife alt pozisyonundadır? (6'lı seçenekler, 4'lü düzeyde ayırt edilir)",
+  "cevap_gecerli": true,
+  "not": "49 notu: rölyef haritalar 90.23"
+ },
+ {
+  "no": 154,
+  "kapsam": "tarife",
+  "tip": "Eşya → 4’lü pozisyon",
+  "fasil_ana": [
+   84,
+   85
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "84.73",
+   "85.24"
+  ],
+  "konu": "dizüstü LCD ekran modülü: eskiden 84.73, 2022'den beri 85.24",
+  "kalip": "X eşyası hangi tarife pozisyonunda sınıflandırılır?",
+  "cevap_gecerli": false,
+  "not": "85 notu 7 (2022): düz panel gösterge modülleri 85.24'te öncelikli; resmi cevap 84.73 güncel değil, doğru şık seçeneklerde yok"
+ },
+ {
+  "no": 155,
+  "kapsam": "tarife",
+  "tip": "Sıralama",
+  "fasil_ana": [
+   85
+  ],
+  "fasil_secenek": [
+   44,
+   40,
+   48,
+   82,
+   90,
+   22,
+   24,
+   42,
+   96
+  ],
+  "pozisyonlar": [
+   "85.27",
+   "85.19",
+   "85.21",
+   "85.28"
+  ],
+  "konu": "sıralama hatası: cep radyosu 85.27 > MP3 çalar 85.19",
+  "kalip": "Aşağıdakilerden hangisinde tarife cetvelindeki sıralamaya uygun olmayan bir diziliş vardır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 156,
+  "kapsam": "tarife",
+  "tip": "Genel Yorum Kuralı",
+  "fasil_ana": [
+   "GYK",
+   84
+  ],
+  "fasil_secenek": [
+   82,
+   90
+  ],
+  "pozisyonlar": [
+   "84.57"
+  ],
+  "konu": "demonte işleme merkezi + montaj el aleti → 84.57'de beyan",
+  "kalip": "X ile birlikte gelen Y'nin beyan edilmesi gereken tarife pozisyonu hangisidir?",
+  "cevap_gecerli": true,
+  "not": "yoruma açık: tork anahtarı tek başına 82.04; resmi cevap makineyle birlikte 84.57"
+ },
+ {
+  "no": 157,
+  "kapsam": "tarife",
+  "tip": "Pozisyon → eşya",
+  "fasil_ana": [
+   45
+  ],
+  "fasil_secenek": [
+   64,
+   65,
+   95
+  ],
+  "pozisyonlar": [
+   "45.03"
+  ],
+  "konu": "mantardan şişe tıpası 45.03; ayakkabı topuğu, dart tablası hariç",
+  "kalip": "Aşağıdaki X maddesinden eşyadan hangisi N. fasılda sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 158,
+  "kapsam": "tarife_yapisi",
+  "tip": "Tarife yapısı",
+  "fasil_ana": [
+   16
+  ],
+  "fasil_secenek": [
+   4
+  ],
+  "pozisyonlar": [
+   "16.05"
+  ],
+  "konu": "IV. Bölüm, 16. Fasıl, 5. pozisyon → 16.05 → 1605.21",
+  "kalip": "N. Bölüm, M. Fasıl, K. pozisyondaki eşyanın alt pozisyonu hangisi olabilir?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 159,
+  "kapsam": "tarife_yapisi",
+  "tip": "Tarife yapısı",
+  "fasil_ana": [],
+  "fasil_secenek": [],
+  "pozisyonlar": [],
+  "konu": "sınıflandırmada vergi/kıymet dikkate alınmaz",
+  "kalip": "Aşağıdakilerden hangisi doğrudur? (tarife ilkeleri)",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 160,
+  "kapsam": "tarife",
+  "tip": "Fasıl notu · Tanım/Eşik",
+  "fasil_ana": [
+   71
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [],
+  "konu": "71 notu: platin grubu; kadmiyum dahil değil",
+  "kalip": "Aşağıdakilerden hangisi N. Faslı anlamında X kapsamına girmez?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 161,
+  "kapsam": "tarife",
+  "tip": "Olumsuz teşhis",
+  "fasil_ana": [
+   27,
+   28
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "28.04"
+  ],
+  "konu": "hidrojen gazı 28.04; havagazı, turba, elektrik, vazelin 27",
+  "kalip": "Aşağıdakilerden hangisi N. Faslı altında sınıflandırılamaz?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 162,
+  "kapsam": "tarife",
+  "tip": "Olumsuz teşhis",
+  "fasil_ana": [
+   93,
+   95
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "95.06"
+  ],
+  "konu": "ok ve yay 95.06; av tüfeği, mızrak, süngü, kın 93",
+  "kalip": "Aşağıdakilerden hangisi N. Faslında sınıflandırılmaz?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 163,
+  "kapsam": "tarife",
+  "tip": "Olumsuz teşhis",
+  "fasil_ana": [
+   63,
+   96
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "63.07",
+   "96.19"
+  ],
+  "konu": "tek kullanımlık bebek bezi 96.19; maske, toz bezi, can yeleği 63.07",
+  "kalip": "Aşağıdakilerden hangisi NN.NN tarife pozisyonunda sınıflandırılamaz?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 164,
+  "kapsam": "tarife",
+  "tip": "Genel Yorum Kuralı",
+  "fasil_ana": [
+   "GYK"
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [],
+  "konu": "3(b) perakende takım örneği: makarna+peynir+sos porsiyonluk set",
+  "kalip": "GYK 3(b) anlamında 'perakende takım' için aşağıdakilerden hangisi uygun bir örnektir?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 165,
+  "kapsam": "tarife",
+  "tip": "Olumsuz teşhis",
+  "fasil_ana": [
+   96,
+   90
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "96.03",
+   "90.18"
+  ],
+  "konu": "dişçilik tornası fırçası 90.18; saç, elbise, resim fırçası 96.03",
+  "kalip": "Aşağıdakilerden hangisi NN.NN tarife pozisyonunda sınıflandırılamaz?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 166,
+  "kapsam": "tarife",
+  "tip": "Pozisyon → eşya",
+  "fasil_ana": [
+   12
+  ],
+  "fasil_secenek": [
+   9
+  ],
+  "pozisyonlar": [
+   "12.11"
+  ],
+  "konu": "12.11: tonka, ginseng, nane; vanilya/tarçın/kimyon 09",
+  "kalip": "Aşağıdakilerden hangisinde sayılanların tümü NN.NN pozisyonunda sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 167,
+  "kapsam": "tarife",
+  "tip": "Genel Yorum Kuralı",
+  "fasil_ana": [
+   "GYK",
+   96
+  ],
+  "fasil_secenek": [
+   87,
+   85,
+   70,
+   84
+  ],
+  "pozisyonlar": [
+   "96.05"
+  ],
+  "konu": "seyahat dikiş takımı 96.05 GYK 1 ve 6 ile; 3(b) değil",
+  "kalip": "Aşağıdaki sınıflandırma örneklerinden hangisinde GYK yanlış gösterilmiştir?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 168,
+  "kapsam": "tarife",
+  "tip": "Pozisyon → eşya",
+  "fasil_ana": [
+   30
+  ],
+  "fasil_secenek": [
+   34,
+   29,
+   33,
+   24
+  ],
+  "pozisyonlar": [
+   "30.06"
+  ],
+  "konu": "ilk yardım kutusu 30.06; nikotin bandı 24.04, B12 29.36",
+  "kalip": "Aşağıdakilerden hangisi N. Faslında sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 169,
+  "kapsam": "tarife",
+  "tip": "Senaryo",
+  "fasil_ana": [
+   "GYK",
+   19
+  ],
+  "fasil_secenek": [
+   16,
+   21
+  ],
+  "pozisyonlar": [
+   "19.02"
+  ],
+  "konu": "karidesli wonton+çorba tozu seti → 1902.20, GYK 2(b), 3(b)",
+  "kalip": "Yukarıda tanımlanan eşyanın sınıflandırılmasında aşağıdakilerden hangisi doğrudur? (GYK + alt pozisyon)",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 170,
+  "kapsam": "tarife_yapisi",
+  "tip": "Tarife yapısı",
+  "fasil_ana": [
+   46
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "46.02"
+  ],
+  "konu": "GTİP basamakları: 46. fasıl IX. Bölüm; KN/milli/istatistik açılım",
+  "kalip": "NNNN.NN.NN.NN.NN GTİP’li bir eşya için aşağıdakilerden hangisi söylenemez?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 171,
+  "kapsam": "tarife",
+  "tip": "Çoktan-çoğa / Eşleştirme",
+  "fasil_ana": [
+   85,
+   24,
+   48
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "85.43",
+   "24.04",
+   "24.02",
+   "48.13"
+  ],
+  "konu": "e-sigara 85.43, kartuş 24.04, sigara 24.02, sigara kağıdı 48.13",
+  "kalip": "X ...., Y ...., Z .... pozisyonlarında sınıflandırılır. Boşlukları tamamlayan seçenek hangisidir?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 172,
+  "kapsam": "tarife",
+  "tip": "Eşya → 4’lü pozisyon",
+  "fasil_ana": [
+   88
+  ],
+  "fasil_secenek": [
+   85
+  ],
+  "pozisyonlar": [
+   "88.06"
+  ],
+  "konu": "kameralı drone/quadcopter → 88.06 (insansız hava taşıtı)",
+  "kalip": "X eşyası hangi tarife pozisyonunda sınıflandırılabilir?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 173,
+  "kapsam": "tarife",
+  "tip": "Olumsuz teşhis",
+  "fasil_ana": [
+   3,
+   1
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "01.06"
+  ],
+  "konu": "balina memeli → 01.06; deniz kulağı, deniz hıyarı 03",
+  "kalip": "Aşağıdaki canlılardan hangisi N. faslında sınıflandırılmaz?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 174,
+  "kapsam": "tarife",
+  "tip": "Pozisyon → eşya",
+  "fasil_ana": [
+   52
+  ],
+  "fasil_secenek": [
+   54,
+   55,
+   53
+  ],
+  "pozisyonlar": [],
+  "konu": "52 pamuk: pamuk ipliği; viskoz/sentetik 54-55, keten 53",
+  "kalip": "N. faslında yer alan bir eşya için aşağıdakilerden hangisi söylenebilir?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 175,
+  "kapsam": "tarife",
+  "tip": "Olumsuz teşhis",
+  "fasil_ana": [
+   64,
+   90
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "90.21"
+  ],
+  "konu": "ortopedik ayakkabı 90.21; spor ayakkabıları 64'te",
+  "kalip": "Aşağıdakilerden hangisi N. faslında yer alan eşyalardan değildir?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 176,
+  "kapsam": "tarife_yapisi",
+  "tip": "Tarife yapısı",
+  "fasil_ana": [],
+  "fasil_secenek": [
+   66,
+   96,
+   97
+  ],
+  "pozisyonlar": [],
+  "konu": "malzemeye göre sınıflanan eşya: tabak; baston/şemsiye/fırça fonksiyona göre",
+  "kalip": "Aşağıdakilerden hangisi mamul olduğu maddeye göre sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 177,
+  "kapsam": "tarife",
+  "tip": "Fasıl/Bölüm bulma",
+  "fasil_ana": [
+   52
+  ],
+  "fasil_secenek": [
+   10,
+   31,
+   53,
+   70,
+   91
+  ],
+  "pozisyonlar": [],
+  "konu": "pamuk 52. fasıl, 53 değil; hububat 10, gübre 31, cam 70",
+  "kalip": "Tarife Cetveline göre aşağıdaki (eşya–fasıl) ifadelerden hangisi yanlıştır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 178,
+  "kapsam": "tarife",
+  "tip": "Eşya → 4’lü pozisyon",
+  "fasil_ana": [
+   5
+  ],
+  "fasil_secenek": [
+   4
+  ],
+  "pozisyonlar": [
+   "05.11"
+  ],
+  "konu": "insan tüketimine uygun olmayan cansız böcekler → 05.11 (yenilen 04.10)",
+  "kalip": "X eşyası aşağıdaki tarife pozisyonlarının hangisinde sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 179,
+  "kapsam": "tarife",
+  "tip": "Olumsuz teşhis",
+  "fasil_ana": [
+   39
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "39.26",
+   "39.24"
+  ],
+  "konu": "plastik biberon 39.24; emzik, diş kaşıyıcı, süs, büro eşyası 39.26",
+  "kalip": "Aşağıdaki X'ten mamul eşyalardan hangisi NN.NN pozisyonunda yer almaz?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 180,
+  "kapsam": "tarife",
+  "tip": "Genel Yorum Kuralı",
+  "fasil_ana": [
+   "GYK",
+   30
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "30.06"
+  ],
+  "konu": "ilk yardım kutusu 30 notu 4 → 30.06: GYK 1+6, set değil",
+  "kalip": "Yukarıdaki sınıflandırma ile ilgili GYK çerçevesinde hangisi doğrudur?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 181,
+  "kapsam": "mevzuat",
+  "tip": "Mevzuat",
+  "fasil_ana": [],
+  "fasil_secenek": [],
+  "pozisyonlar": [],
+  "konu": "474 s. Kanun: Cumhurbaşkanı vergi had/nispetini 50'ye kadar yükseltebilir",
+  "kalip": "474 Sayılı Kanuna göre Cumhurbaşkanının ... yükseltebileceği en yüksek düzey hangisidir?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 182,
+  "kapsam": "tarife",
+  "tip": "Genel Yorum Kuralı",
+  "fasil_ana": [
+   "GYK"
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [],
+  "konu": "GYK 3 ile belirlenince GYK 4 uygulanmaz; başlıklar yasal değil",
+  "kalip": "Genel Yorum Kuralları hakkında aşağıdakilerden hangisi doğrudur?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 183,
+  "kapsam": "mevzuat",
+  "tip": "Mevzuat",
+  "fasil_ana": [],
+  "fasil_secenek": [],
+  "pozisyonlar": [],
+  "konu": "474 s. Kanun: vergi oranı değiştirme yetkisi Cumhurbaşkanında",
+  "kalip": "474 Sayılı Kanuna göre ... yetkisi aşağıdakilerden hangisindedir?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 184,
+  "kapsam": "tarife",
+  "tip": "Genel Yorum Kuralı",
+  "fasil_ana": [
+   "GYK",
+   5,
+   2
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "05.04"
+  ],
+  "konu": "fasıl başlığı bağlayıcı değil: bağırsak/mide 05.04 → GYK 1",
+  "kalip": "X'in N. fasıl yerine M. fasılda sınıflandırılması hangi GYK'nın gereğidir?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 185,
+  "kapsam": "tarife",
+  "tip": "Eşya → 4’lü pozisyon",
+  "fasil_ana": [
+   30
+  ],
+  "fasil_secenek": [
+   38,
+   39
+  ],
+  "pozisyonlar": [
+   "30.06"
+  ],
+  "konu": "kullanım süresi geçmiş ilaçlar (ilaç atıkları) → 30.06",
+  "kalip": "X eşyasının sınıflandırıldığı tarife pozisyonu nedir?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 186,
+  "kapsam": "tarife",
+  "tip": "Sıralama",
+  "fasil_ana": [
+   47,
+   48,
+   49
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "47.06",
+   "47.07",
+   "48.01",
+   "49.02"
+  ],
+  "konu": "hamur 47.06 < satılmamış gazete 47.07 < gazete kâğıdı 48.01 < 49.02",
+  "kalip": "Aşağıdaki eşyanın (I–IV) tarife cetvelindeki sıraya göre doğru dizilişi hangisidir?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 187,
+  "kapsam": "mevzuat",
+  "tip": "Mevzuat",
+  "fasil_ana": [],
+  "fasil_secenek": [],
+  "pozisyonlar": [],
+  "konu": "Meursing tablosu/tarım payı: 17, 18, 19'da var, 16'da yok",
+  "kalip": "Aşağıdaki fasılların hangisinde Fona ödenecek Tarım Payında Meursing tablosu gerektiren ürün yoktur?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 188,
+  "kapsam": "tarife_yapisi",
+  "tip": "Tarife yapısı",
+  "fasil_ana": [
+   99,
+   27
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [],
+  "konu": "99. fasıl (gemi kumanyası): pizza, içki, sigara var; deniz motorini yok",
+  "kalip": "Yurt dışı sefer yapan gemilere verilen eşyadan hangisi 99. fasılda sınıflandırılmaz?",
+  "cevap_gecerli": true,
+  "not": "99. fasıl metni kaynakta yok, doğrulanamadı"
+ },
+ {
+  "no": 189,
+  "kapsam": "tarife",
+  "tip": "Eşya → 4’lü pozisyon",
+  "fasil_ana": [
+   41
+  ],
+  "fasil_secenek": [
+   39,
+   56,
+   59
+  ],
+  "pozisyonlar": [
+   "41.15"
+  ],
+  "konu": "terkip yoluyla elde edilen deri levha/yapraklar → 41.15",
+  "kalip": "Tarifedeki 'X' tabirine uyan eşya hangi tarife pozisyonunda sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 190,
+  "kapsam": "tarife",
+  "tip": "Fasıl/Bölüm bulma",
+  "fasil_ana": [
+   19
+  ],
+  "fasil_secenek": [
+   16,
+   20,
+   21
+  ],
+  "pozisyonlar": [
+   "19.02"
+  ],
+  "konu": "dondurulmuş şehriye (makarna) → 19. fasıl",
+  "kalip": "X eşyası hangi fasıldadır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 191,
+  "kapsam": "tarife",
+  "tip": "Fasıl notu · Tanım/Eşik",
+  "fasil_ana": [
+   51
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [],
+  "konu": "51 notu: ince hayvan kılı listesi; katır yok",
+  "kalip": "Tarife mevzuatına göre 'X' aşağıdaki hayvanlardan hangisinden elde edilemez?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 192,
+  "kapsam": "tarife",
+  "tip": "Olumsuz teşhis",
+  "fasil_ana": [
+   84
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "84.18",
+   "84.19"
+  ],
+  "konu": "ısı değiştiriciler 84.19; ısı pompaları ve dondurucular 84.18",
+  "kalip": "Aşağıdaki eşyadan hangisi NN.NN tarife pozisyonunda sınıflandırılmamaktadır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 193,
+  "kapsam": "tarife",
+  "tip": "Farklı/aynı pozisyon veya fasıl",
+  "fasil_ana": [
+   95
+  ],
+  "fasil_secenek": [
+   63,
+   97,
+   59
+  ],
+  "pozisyonlar": [
+   "95.08",
+   "95.03"
+  ],
+  "konu": "gezici hayvan sergisi 95.08 ile aynı fasıl: üç tekerlekli bisiklet 95.03",
+  "kalip": "Aşağıdaki eşyalardan hangisi 'X' ile aynı fasılda sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 194,
+  "kapsam": "tarife",
+  "tip": "Eşya → 4’lü pozisyon",
+  "fasil_ana": [
+   84
+  ],
+  "fasil_secenek": [
+   87
+  ],
+  "pozisyonlar": [
+   "84.32"
+  ],
+  "konu": "kültivatör → 84.32 (tekrar soru)",
+  "kalip": "X ne şekilde sınıflandırılır? (pozisyon seçenekleri)",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 195,
+  "kapsam": "tarife",
+  "tip": "Farklı/aynı pozisyon veya fasıl",
+  "fasil_ana": [
+   84,
+   85
+  ],
+  "fasil_secenek": [
+   90,
+   21,
+   12
+  ],
+  "pozisyonlar": [
+   "84.06"
+  ],
+  "konu": "buhar türbini 84.06, mikrofon/CD/LED ampul 85",
+  "kalip": "Aşağıdaki seçeneklerden hangisinde aynı fasılda yer almayan eşya bulunmaktadır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 196,
+  "kapsam": "tarife",
+  "tip": "Farklı/aynı pozisyon veya fasıl",
+  "fasil_ana": [
+   66
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "66.01",
+   "66.02"
+  ],
+  "konu": "şemsiye 66.01; baston, kamçı, kırbaç, iskemle baston 66.02",
+  "kalip": "Aşağıdakilerden hangisi diğerlerinden farklı bir tarife pozisyonunda yer alır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 197,
+  "kapsam": "alt_pozisyon",
+  "tip": "Alt pozisyon / GTİP",
+  "fasil_ana": [
+   87
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "87.02"
+  ],
+  "konu": "kullanılmış dizel midibüs 2500 cm3 (geçmeyen) → 8702.10.99.12.00",
+  "kalip": "Verilen pozisyon açılımına göre 'X' hangi GTİP'te sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 198,
+  "kapsam": "tarife",
+  "tip": "Eşya → 4’lü pozisyon",
+  "fasil_ana": [
+   85,
+   84
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "85.15",
+   "84.68"
+  ],
+  "konu": "84.68 kaynak makinesi elektrikli ise → 85.15",
+  "kalip": "NN.NN'de sınıflanan makine elektrikli olursa hangi pozisyonda sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 199,
+  "kapsam": "tarife",
+  "tip": "Fasıl notu · Tanım/Eşik",
+  "fasil_ana": [
+   74,
+   72
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [],
+  "konu": "XV. Bölüm metal notları: tel rulo halinde, çubuk değil",
+  "kalip": "XV. Bölüm Notlarına göre 'X' ve 'Y' arasındaki farklılık nedir?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 200,
+  "kapsam": "tarife",
+  "tip": "Eşya → 4’lü pozisyon",
+  "fasil_ana": [
+   84
+  ],
+  "fasil_secenek": [
+   39,
+   40,
+   73
+  ],
+  "pozisyonlar": [
+   "84.84"
+  ],
+  "konu": "farklı malzemeden conta takımı poşette → 84.84",
+  "kalip": "X eşyası hangi tarife pozisyonunda sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 201,
+  "kapsam": "tarife",
+  "tip": "Genel Yorum Kuralı",
+  "fasil_ana": [
+   "GYK"
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [],
+  "konu": "GYK 2(a) demonte kısmı I–VI. Bölümlere normalde uygulanmaz",
+  "kalip": "İzahname GYK açıklamalarına göre GYK 2(a) hangi bölüme giren eşyaya uygulanmaz?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 202,
+  "kapsam": "tarife",
+  "tip": "Olumsuz teşhis",
+  "fasil_ana": [
+   42
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "42.02"
+  ],
+  "konu": "42.02 ikinci grup malzeme sınırlı: metal sigara kutusu giremez",
+  "kalip": "Verilen pozisyon metnine göre aşağıdakilerden hangisi NN.NN pozisyonunda yer alamaz?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 203,
+  "kapsam": "alt_pozisyon",
+  "tip": "Alt pozisyon / GTİP",
+  "fasil_ana": [
+   20
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "20.08"
+  ],
+  "konu": "20.08 GTİP ölçütleri: ağırlık, alkol, şeker; Brix değil (20.09)",
+  "kalip": "NN.NN pozisyonundaki eşyanın GTİP'inin belirlenmesinde kullanılan bilgilerden hangisi değildir?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 204,
+  "kapsam": "mevzuat",
+  "tip": "Mevzuat",
+  "fasil_ana": [],
+  "fasil_secenek": [],
+  "pozisyonlar": [],
+  "konu": "32 sayılı Karar: kıymetli taşlar; ametist değil",
+  "kalip": "32 sayılı Karar'a göre aşağıdakilerden hangisi kıymetli taş değildir?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 205,
+  "kapsam": "tarife",
+  "tip": "Farklı/aynı pozisyon veya fasıl",
+  "fasil_ana": [
+   42,
+   44
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "42.02"
+  ],
+  "konu": "ahşap bavul 42.02; odun kömürü, yonga levha, merdiven, kontrplak 44",
+  "kalip": "Aşağıdakilerden hangisi farklı fasılda yer alır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 206,
+  "kapsam": "tarife",
+  "tip": "Olumsuz teşhis",
+  "fasil_ana": [
+   70,
+   86
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "86.07"
+  ],
+  "konu": "70 notu 1(e): taşıtların ısıtmalı ön camları 70 dışında",
+  "kalip": "Aşağıdaki X eşyalardan hangisi N. Fasılda sınıflandırılmaz?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 207,
+  "kapsam": "tarife",
+  "tip": "Olumsuz teşhis",
+  "fasil_ana": [
+   87
+  ],
+  "fasil_secenek": [
+   68,
+   84,
+   85
+  ],
+  "pozisyonlar": [
+   "87.10"
+  ],
+  "konu": "87.10 tanklarda otomobil ürünü yok; balata, motor, akü, silecek var",
+  "kalip": "Aşağıdaki tarife pozisyonlarından hangisinde X ile ilgili bir ürün sınıflandırılmamaktadır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 208,
+  "kapsam": "tarife",
+  "tip": "Fasıl notu · Tanım/Eşik",
+  "fasil_ana": [
+   84
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "84.70"
+  ],
+  "konu": "84 notu: cep tipi hesap makinesi ≤170×100×45 mm",
+  "kalip": "N. Fasıl notuna göre ölçüleri verilen X'lerden hangisi cep tipidir?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 209,
+  "kapsam": "tarife",
+  "tip": "Olumsuz teşhis",
+  "fasil_ana": [
+   22,
+   25
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "25.01"
+  ],
+  "konu": "deniz suyu 25.01; sirke, kar, bal şarabı, alkolsüz bira 22",
+  "kalip": "Aşağıda sayılan eşyadan hangisi N. faslında sınıflandırılmamaktadır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 210,
+  "kapsam": "tarife",
+  "tip": "Fasıl/Bölüm bulma",
+  "fasil_ana": [
+   48
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [],
+  "konu": "fotokopi kâğıdı 48. fasıl → X. Bölüm",
+  "kalip": "X eşyası tarifenin hangi bölümünde yer alır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 211,
+  "kapsam": "tarife",
+  "tip": "Eşya → 4’lü pozisyon",
+  "fasil_ana": [
+   17
+  ],
+  "fasil_secenek": [
+   9,
+   4,
+   19
+  ],
+  "pozisyonlar": [
+   "17.02"
+  ],
+  "konu": "diyabetik suni bal (tabii balla karışık olsa da) → 17.02",
+  "kalip": "X'in GTİP'i aşağıdakilerden hangisidir? (seçenekler farklı fasıllarda)",
+  "cevap_gecerli": true,
+  "not": "seçenekler GTİP ama 4'lü düzeyde ayırt edilir"
+ },
+ {
+  "no": 212,
+  "kapsam": "tarife",
+  "tip": "Eşya → 4’lü pozisyon",
+  "fasil_ana": [
+   15
+  ],
+  "fasil_secenek": [
+   13,
+   33,
+   34
+  ],
+  "pozisyonlar": [
+   "15.20"
+  ],
+  "konu": "ham gliserin, gliserinli su/lesiv → 15.20",
+  "kalip": "X hangi tarifede yer alır? (GTİP seçenekleri farklı fasıllarda)",
+  "cevap_gecerli": true,
+  "not": "seçenekler GTİP ama 4'lü düzeyde ayırt edilir"
+ },
+ {
+  "no": 213,
+  "kapsam": "tarife",
+  "tip": "Fasıl/Bölüm bulma",
+  "fasil_ana": [
+   9
+  ],
+  "fasil_secenek": [
+   22,
+   18,
+   17
+  ],
+  "pozisyonlar": [],
+  "konu": "kahve 09 → II. Bölüm; sirke, kakao, şeker, meşrubat IV",
+  "kalip": "Aşağıdakilerden hangisi N. Bölüm kapsamında değildir?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 214,
+  "kapsam": "tarife",
+  "tip": "Fasıl/Bölüm bulma",
+  "fasil_ana": [
+   64
+  ],
+  "fasil_secenek": [
+   43,
+   41,
+   42
+  ],
+  "pozisyonlar": [],
+  "konu": "ayakkabı 64 → XII. Bölüm; kürk, kösele, çanta, hayvan elbisesi VIII",
+  "kalip": "Aşağıdakilerden hangisi N. Bölümde yer alan eşyalardan değildir?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 215,
+  "kapsam": "tarife",
+  "tip": "Olumsuz teşhis",
+  "fasil_ana": [
+   4,
+   3
+  ],
+  "fasil_secenek": [
+   5
+  ],
+  "pozisyonlar": [
+   "04.07",
+   "04.10"
+  ],
+  "konu": "alabalık yumurtası 03; kaplumbağa yumurtası, böcek 04.10",
+  "kalip": "Aşağıdakilerden hangisi N. fasılda yer almaz?",
+  "cevap_gecerli": true,
+  "not": "E (salyangoz kabuğu unu) da 05.08'de; iki şık 4. fasıl dışında görünüyor"
+ },
+ {
+  "no": 216,
+  "kapsam": "tarife",
+  "tip": "Fasıl notu · Tanım/Eşik",
+  "fasil_ana": [
+   61
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [],
+  "konu": "61 notu: cinsiyeti belirlenemeyen giysi kadın/kız pozisyonunda",
+  "kalip": "Verilen fasıl notuna göre ... belirlenemeyen eşya için hangi kural uygulanır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 217,
+  "kapsam": "tarife",
+  "tip": "Fasıl/Bölüm bulma",
+  "fasil_ana": [
+   94
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "94.02"
+  ],
+  "konu": "dişçi koltuğu 94.02 → XX. Bölüm",
+  "kalip": "X eşyası tarifenin hangi bölümünde yer alır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 218,
+  "kapsam": "tarife",
+  "tip": "Farklı/aynı pozisyon veya fasıl",
+  "fasil_ana": [
+   34,
+   33
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "34.01"
+  ],
+  "konu": "el sabunu 34.01; diş macunu, diş ipi, saç boyası, lens solüsyonu 33",
+  "kalip": "Aşağıdakilerden hangisi diğerlerinden farklı bir fasılda sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 219,
+  "kapsam": "tarife",
+  "tip": "Eşya → 4’lü pozisyon",
+  "fasil_ana": [
+   4
+  ],
+  "fasil_secenek": [
+   5,
+   16
+  ],
+  "pozisyonlar": [
+   "04.10"
+  ],
+  "konu": "insan tüketimine uygun kurutulmuş tuzlu çekirge → 04.10",
+  "kalip": "X eşyası hangi tarife pozisyonundadır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 220,
+  "kapsam": "tarife",
+  "tip": "Farklı/aynı pozisyon veya fasıl",
+  "fasil_ana": [
+   39,
+   40
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "39.10"
+  ],
+  "konu": "silikon 39.10; tabii/sentetik/rejenere kauçuk ve çıkıl 40",
+  "kalip": "Aşağıdakilerden hangisi farklı fasılda yer alır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 221,
+  "kapsam": "tarife",
+  "tip": "Olumsuz teşhis",
+  "fasil_ana": [
+   85
+  ],
+  "fasil_secenek": [
+   73,
+   84
+  ],
+  "pozisyonlar": [
+   "85.09"
+  ],
+  "konu": "85.09 ev aletlerinde fırın yok; 73.21, 84.17, 85.14, 85.16 fırın",
+  "kalip": "Aşağıdaki tarife pozisyonlarından hangisinde 'X' sınıflandırılmaz?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 222,
+  "kapsam": "tarife",
+  "tip": "Farklı/aynı pozisyon veya fasıl",
+  "fasil_ana": [
+   9,
+   17,
+   23,
+   24
+  ],
+  "fasil_secenek": [
+   90,
+   91,
+   92,
+   93,
+   94,
+   96,
+   70,
+   85,
+   84,
+   83,
+   52,
+   62,
+   63
+  ],
+  "pozisyonlar": [],
+  "konu": "aynı Bölüm: ciklet, şarap tortusu, tütün IV; kahve 09 II. Bölüm",
+  "kalip": "Aşağıdakilerden hangisinde aynı bölümde yer alan eşyalar sayılmıştır?",
+  "cevap_gecerli": false,
+  "not": "kahve 09.01 II. Bölüm; E'de IV. Bölüm dışı eşya var, hiçbir şık tam doğru değil (hazır kahve 21.01 kastedilmişse E)"
+ },
+ {
+  "no": 223,
+  "kapsam": "tarife",
+  "tip": "Farklı/aynı pozisyon veya fasıl",
+  "fasil_ana": [
+   85
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "85.43",
+   "85.46"
+  ],
+  "konu": "elektrik izolatörü 85.46; güneş yatağı, e-kitap okuyucu, uzaktan kumanda 85.43",
+  "kalip": "Aşağıdakilerden hangisi diğerlerinden farklı bir tarife pozisyonunda yer alır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 224,
+  "kapsam": "tarife",
+  "tip": "Pozisyon → eşya",
+  "fasil_ana": [
+   64
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "64.06"
+  ],
+  "konu": "64 notu: çivi, kopça, toka, bağ 64.06 aksamı değil; topuk rampası evet",
+  "kalip": "Aşağıdakilerden hangisi NN.NN pozisyonunda sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 225,
+  "kapsam": "tarife",
+  "tip": "Eşya → 4’lü pozisyon",
+  "fasil_ana": [
+   92
+  ],
+  "fasil_secenek": [
+   85
+  ],
+  "pozisyonlar": [
+   "92.09"
+  ],
+  "konu": "piyano ile gelen hafıza kartı → 92.09 (92 notu 2)",
+  "kalip": "X ile birlikte getirilen Y hangi tarife pozisyonunda sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": "92 notu 2 mekanik çalgı kartlarına dayanır; dijital hafıza kartı 85.23 olarak tartışılabilir"
+ },
+ {
+  "no": 226,
+  "kapsam": "tarife",
+  "tip": "Genel Yorum Kuralı",
+  "fasil_ana": [
+   "GYK",
+   97
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "97.03",
+   "97.06"
+  ],
+  "konu": "100 yıllık orijinal heykel: 97 notu ile 97.03, GYK 1",
+  "kalip": "X hangi gerekçe (GYK) ile hangi tarife pozisyonunda sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 227,
+  "kapsam": "tarife",
+  "tip": "Çoktan-çoğa / Eşleştirme",
+  "fasil_ana": [
+   20
+  ],
+  "fasil_secenek": [
+   4,
+   11,
+   19,
+   21
+  ],
+  "pozisyonlar": [
+   "20.07"
+  ],
+  "konu": "reçel 20.07 (20.08 değil); kuskus 19.02, et suyu 21.04",
+  "kalip": "Ürün–pozisyon eşleştirmelerinden hangisi yanlıştır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 228,
+  "kapsam": "tarife",
+  "tip": "Eşya → 4’lü pozisyon",
+  "fasil_ana": [
+   38
+  ],
+  "fasil_secenek": [
+   15,
+   29
+  ],
+  "pozisyonlar": [
+   "38.23"
+  ],
+  "konu": "sınai yağ alkolleri → 38.23",
+  "kalip": "X aşağıdaki tarife pozisyonlarından hangisinde yer alır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 229,
+  "kapsam": "tarife",
+  "tip": "Fasıl notu · Tanım/Eşik",
+  "fasil_ana": [
+   11
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [],
+  "konu": "11 notu ölçütleri: nişasta, kül, elekten geçme, hububat cinsi; şeker değil",
+  "kalip": "Aşağıdakilerden hangisi N. fasılda sınıflandırma için kullanılan bilgilerden değildir?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 230,
+  "kapsam": "tarife",
+  "tip": "Farklı/aynı pozisyon veya fasıl",
+  "fasil_ana": [
+   8
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "08.01",
+   "08.02"
+  ],
+  "konu": "kaju cevizi 08.01; fındık, kestane, pekan, kola cevizi 08.02",
+  "kalip": "Aşağıdakilerden hangisi N. fasılda diğerlerinden farklı bir pozisyonda sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 231,
+  "kapsam": "tarife",
+  "tip": "Farklı/aynı pozisyon veya fasıl",
+  "fasil_ana": [
+   44
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "44.12",
+   "44.18"
+  ],
+  "konu": "kontrplak 44.12; kapı, padavra, merdiven, panjur 44.18",
+  "kalip": "Aşağıdakilerden hangisi diğerlerinden farklı bir tarife pozisyonunda yer alır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 232,
+  "kapsam": "tarife",
+  "tip": "Fasıl notu · Tanım/Eşik",
+  "fasil_ana": [
+   85
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [
+   "85.24"
+  ],
+  "konu": "85 notu 7: düz panel modülü video sinyal dönüştürücü içermez",
+  "kalip": "NN.NN pozisyonunda yer alan eşya için aşağıdaki ifadelerden hangisi yanlıştır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 233,
+  "kapsam": "tarife",
+  "tip": "Eşya → 4’lü pozisyon",
+  "fasil_ana": [
+   89
+  ],
+  "fasil_secenek": [
+   84,
+   87,
+   88
+  ],
+  "pozisyonlar": [
+   "89.04"
+  ],
+  "konu": "römorkörler → 89.04",
+  "kalip": "X Tarife Cetvelinde hangi pozisyonda sınıflandırılır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 234,
+  "kapsam": "tarife",
+  "tip": "Olumsuz teşhis",
+  "fasil_ana": [
+   84
+  ],
+  "fasil_secenek": [
+   34,
+   44,
+   68,
+   96
+  ],
+  "pozisyonlar": [
+   "84.54"
+  ],
+  "konu": "84.54 konvertörlerde ayakkabı ürünü yok; boya 34.05, kalıp 44.17",
+  "kalip": "Aşağıdaki tarife pozisyonlarından hangisinde X veya X ile ilgili ürün sınıflandırılmamaktadır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 235,
+  "kapsam": "tarife",
+  "tip": "Fasıl notu · Tanım/Eşik",
+  "fasil_ana": [
+   85
+  ],
+  "fasil_secenek": [],
+  "pozisyonlar": [],
+  "konu": "85 notlarında radar yok; akıllı kart, baskılı devre, LED, hibrit IC var",
+  "kalip": "Aşağıdaki eşyalardan hangisi ile ilgili N. Fasıl notlarında açıklama bulunmamaktadır?",
+  "cevap_gecerli": true,
+  "not": ""
+ },
+ {
+  "no": 236,
+  "kapsam": "tarife",
+  "tip": "Senaryo",
+  "fasil_ana": [
+   84
+  ],
+  "fasil_secenek": [
+   87
+  ],
+  "pozisyonlar": [
+   "84.79"
+  ],
+  "konu": "kendinden hareketli buz yüzeyi düzeltme makinesi → 84.79",
+  "kalip": "Görseli/özellikleri verilen X Tarife Cetvelinde hangi tarife pozisyonunda yer alır?",
+  "cevap_gecerli": true,
+  "not": ""
+ }
+]

@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 32,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı, seçeneklerde de yer almadı; önceki sınavlarda Not 4 (%50 çözücü → 32.08; 27.10, 34.03, 38.14 çeldirici) ve “ayakkabı boyası” (34.05; 32.05 çeldirici) soruldu.",
+ "pozisyonlar": [
+  [
+   "32.08",
+   "Sentetik polimer esaslı boya, vernik; susuz ortam"
+  ],
+  [
+   "32.09",
+   "Sentetik polimer esaslı boya, vernik; sulu ortam"
+  ],
+  [
+   "32.12",
+   "Perakende ev boyaları; ıstampacılık varakları"
+  ],
+  [
+   "32.13",
+   "Ressam, eğitim, afiş boyaları (tüp, tablet)"
+  ]
+ ],
+ "hap": [
+  "<b>Not 4:</b> 39.01–39.13 polimerlerinin uçucu organik çözücüdeki çözeltisi, çözücü ağırlığı çözeltinin %50’sinden fazlaysa 32.08; değilse Fasıl 39. Kollodyon her durumda 39.12.",
+  "<b>Boya adlı ama Fasıl 32 değil:</b> ayakkabı boyası ve cilası 34.05, saç boyası 33.05, makyaj boyası ve tırnak cilası 33.04, boya kalemi ve pastel 96.09.",
+  "<b>Bölüm VI Not 3:</b> birbirine karıştırılmak üzere birlikte sunulan, birbirini tamamlayan bileşenler (iki bileşenli boya, vernik, macun) elde edilecek ürünün pozisyonunda sınıflandırılır."
+ ],
+ "karistirilan": [
+  [
+   "Ayakkabı boyası",
+   "34.05",
+   "34.05 metninde ismen; boyayıcı lak 32.05 değil"
+  ],
+  [
+   "Karışmamış, yüzey işlem görmemiş titan dioksit",
+   "28.23",
+   "Pigment olarak hazırlanmışı 32.06"
+  ]
+ ]
+}

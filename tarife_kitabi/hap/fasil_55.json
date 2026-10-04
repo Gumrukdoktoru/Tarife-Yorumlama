@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 55,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı; yalnız 52. fasıl kapsam sorusunda sentetik-suni lif çeldiricileri arasında dolaylı yer aldı.",
+ "pozisyonlar": [
+  [
+   "55.03",
+   "Sentetik devamsız lif (karde edilmemiş)"
+  ],
+  [
+   "55.09",
+   "Sentetik devamsız lif ipliği (perakende değil)"
+  ],
+  [
+   "55.13",
+   "Sentetik %85’ten az, pamuklu, ≤170 g/m²"
+  ],
+  [
+   "55.16",
+   "Suni devamsız lif mensucatı (oran alt pozisyonda)"
+  ]
+ ],
+ "hap": [
+  "<b>Demet (Fasıl 55 Not 1):</b> 2 m’den uzun, metrede 5 turdan az bükümlü, filamenti 67 desiteksten ince, toplam 20.000 desiteksi aşan demet 55.01/55.02; 2 m’ye kadar 55.03/55.04.",
+  "<b>Kumaş eşikleri:</b> sentetik devamsız ≥%85 → 55.12; daha azı ve esasen pamuklu ≤170 g/m² 55.13, ağırı 55.14; diğer karışım 55.15; suni devamsız 55.16 (pamukta eşik 200 g).",
+  "<b>Kısa lif:</b> 5 mm’yi geçmeyen lif kırpıntısı (flok), toz, vatka 56.01; dokunmamış 56.03; sentetik paçavra Fasıl 63."
+ ],
+ "karistirilan": [
+  [
+   "%55 pamuk, %45 poliester, 180 g/m² kumaş",
+   "52.10",
+   "Pamuk üstün → Fasıl 52; ≤200 g/m² → 52.10"
+  ],
+  [
+   "Poliester filament ipliğinden kumaş",
+   "54.07",
+   "Filament Fasıl 54; Fasıl 55 yalnız devamsız lif"
+  ]
+ ]
+}

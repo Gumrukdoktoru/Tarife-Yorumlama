@@ -1,0 +1,1230 @@
+{
+ "kapsam": "son 5 sınav = soru no 114–236 (123 soru)",
+ "soru_sayisi": 123,
+ "kapsam_dagilimi": {
+  "tarife": 106,
+  "mevzuat": 7,
+  "tarife_yapisi": 7,
+  "alt_pozisyon": 3
+ },
+ "tip_dagilimi_tarife_ve_yapi": {
+  "Eşya → 4’lü pozisyon": 26,
+  "Olumsuz teşhis": 23,
+  "Genel Yorum Kuralı": 15,
+  "Farklı/aynı pozisyon veya fasıl": 12,
+  "Fasıl notu · Tanım/Eşik": 11,
+  "Fasıl/Bölüm bulma": 7,
+  "Tarife yapısı": 7,
+  "Pozisyon → eşya": 5,
+  "Sıralama": 3,
+  "Senaryo": 2,
+  "Çoktan-çoğa / Eşleştirme": 2
+ },
+ "tip_dagilimi_tum": {
+  "Eşya → 4’lü pozisyon": 26,
+  "Olumsuz teşhis": 23,
+  "Genel Yorum Kuralı": 15,
+  "Farklı/aynı pozisyon veya fasıl": 12,
+  "Fasıl notu · Tanım/Eşik": 11,
+  "Mevzuat": 7,
+  "Fasıl/Bölüm bulma": 7,
+  "Tarife yapısı": 7,
+  "Pozisyon → eşya": 5,
+  "Sıralama": 3,
+  "Alt pozisyon / GTİP": 3,
+  "Senaryo": 2,
+  "Çoktan-çoğa / Eşleştirme": 2
+ },
+ "gyk_soru_sayisi": 16,
+ "fasil_ana": {
+  "1": 1,
+  "2": 1,
+  "3": 2,
+  "4": 2,
+  "5": 2,
+  "8": 1,
+  "9": 2,
+  "11": 1,
+  "12": 2,
+  "15": 1,
+  "16": 1,
+  "17": 2,
+  "19": 2,
+  "20": 2,
+  "22": 1,
+  "23": 1,
+  "24": 2,
+  "25": 2,
+  "27": 2,
+  "28": 1,
+  "30": 4,
+  "33": 3,
+  "34": 1,
+  "35": 2,
+  "38": 1,
+  "39": 4,
+  "40": 1,
+  "41": 1,
+  "42": 4,
+  "44": 3,
+  "45": 1,
+  "46": 1,
+  "47": 1,
+  "48": 4,
+  "49": 2,
+  "51": 1,
+  "52": 2,
+  "59": 1,
+  "61": 1,
+  "62": 1,
+  "63": 2,
+  "64": 3,
+  "66": 1,
+  "70": 2,
+  "71": 3,
+  "72": 2,
+  "73": 1,
+  "74": 1,
+  "82": 1,
+  "83": 1,
+  "84": 14,
+  "85": 13,
+  "86": 1,
+  "87": 4,
+  "88": 1,
+  "89": 1,
+  "90": 5,
+  "92": 1,
+  "93": 2,
+  "94": 3,
+  "95": 3,
+  "96": 3,
+  "97": 1,
+  "99": 1
+ },
+ "fasil_secenek": {
+  "4": 4,
+  "5": 2,
+  "7": 1,
+  "9": 4,
+  "10": 1,
+  "11": 1,
+  "12": 1,
+  "13": 1,
+  "15": 1,
+  "16": 3,
+  "17": 1,
+  "18": 1,
+  "19": 2,
+  "20": 1,
+  "21": 5,
+  "22": 3,
+  "24": 2,
+  "27": 1,
+  "29": 2,
+  "30": 2,
+  "31": 1,
+  "33": 3,
+  "34": 4,
+  "38": 3,
+  "39": 6,
+  "40": 3,
+  "41": 1,
+  "42": 3,
+  "43": 2,
+  "44": 2,
+  "48": 2,
+  "52": 1,
+  "53": 2,
+  "54": 1,
+  "55": 1,
+  "56": 1,
+  "58": 2,
+  "59": 2,
+  "60": 1,
+  "61": 1,
+  "62": 2,
+  "63": 3,
+  "64": 1,
+  "65": 2,
+  "66": 1,
+  "68": 3,
+  "70": 3,
+  "73": 3,
+  "76": 1,
+  "82": 2,
+  "83": 2,
+  "84": 8,
+  "85": 7,
+  "87": 7,
+  "88": 2,
+  "89": 1,
+  "90": 5,
+  "91": 2,
+  "92": 1,
+  "93": 2,
+  "94": 1,
+  "95": 2,
+  "96": 4,
+  "97": 2
+ },
+ "fasil_agirlik_aciklama": "agirlik = 2×ana + 1×secenek",
+ "fasil_agirlik": [
+  {
+   "fasil": 84,
+   "baslik": "",
+   "ana": 14,
+   "secenek": 8,
+   "agirlik": 36
+  },
+  {
+   "fasil": 85,
+   "baslik": "ELEKTRİKLİ MAKİNA VE CİHAZLAR VE BUNLARIN AKSAM VE PARÇALARI; SES KAYDETMEYE VE KAYDEDİLEN SESİ TEKRAR VERMEYE MAHSUS CİHAZLAR, TELEVİZYON GÖRÜNTÜ VE SESLERİNİN KAYDEDİLMESİNE VE KAYDEDİLEN GÖRÜNTÜ VE SESİN TEKRAR VERİLMESİNE MAHSUS CİHAZLAR VE BUNLARIN AKSAM, PARÇA VE AKSESUARI",
+   "ana": 13,
+   "secenek": 7,
+   "agirlik": 33
+  },
+  {
+   "fasil": 87,
+   "baslik": "KARA NAKİL VASITALARI (DEMİRYOLU VEYA TRAMVAY TAŞITLARI HARİÇ) VE BUNLARIN AKSAM, PARÇA VE AKSESUARLARI",
+   "ana": 4,
+   "secenek": 7,
+   "agirlik": 15
+  },
+  {
+   "fasil": 90,
+   "baslik": "OPTİK ALET VE CİHAZLAR, FOTOĞRAF, SİNEMA, ÖLÇÜ, KONTROL, AYAR ALET VE CİHAZLARI, TIBBİ VEYA CERRAHİ ALET VE CİHAZLAR; BUNLARIN AKSAM, PARÇA VE AKSESUARI",
+   "ana": 5,
+   "secenek": 5,
+   "agirlik": 15
+  },
+  {
+   "fasil": 39,
+   "baslik": "PLASTİKLER VE MAMULLERİ",
+   "ana": 4,
+   "secenek": 6,
+   "agirlik": 14
+  },
+  {
+   "fasil": 42,
+   "baslik": "DERİ EŞYA; SARACİYE EŞYASI VE EYER VE KOŞUM TAKIMLARI; SEYAHAT EŞYASI, EL ÇANTALARI VE BENZERİ MAHFAZALAR; HAYVAN BAĞIRSAĞINDAN MAMUL EŞYA (İPEK BÖCEĞİ GUDDESİ HARİÇ)",
+   "ana": 4,
+   "secenek": 3,
+   "agirlik": 11
+  },
+  {
+   "fasil": 30,
+   "baslik": "ECZACILIK ÜRÜNLERİ",
+   "ana": 4,
+   "secenek": 2,
+   "agirlik": 10
+  },
+  {
+   "fasil": 48,
+   "baslik": "KAĞIT VE KARTON; KAĞIT HAMURUNDAN, KAĞITTAN VEYA KARTONDAN EŞYA",
+   "ana": 4,
+   "secenek": 2,
+   "agirlik": 10
+  },
+  {
+   "fasil": 96,
+   "baslik": "ÇEŞİTLİ MAMUL EŞYA",
+   "ana": 3,
+   "secenek": 4,
+   "agirlik": 10
+  },
+  {
+   "fasil": 33,
+   "baslik": "UÇUCU YAĞLAR VE REZİNOİTLER; PARFÜMERİ, KOZMETİK VEYA TUVALET MÜSTAHZARLARI",
+   "ana": 3,
+   "secenek": 3,
+   "agirlik": 9
+  },
+  {
+   "fasil": 4,
+   "baslik": "SÜT ÜRÜNLERİ; KUŞ VE KÜMES HAYVANLARININ YUMURTALARI; TABİİ BAL; TARİFENİN BAŞKA YERİNDE BELİRTİLMEYEN VEYA YER ALMAYAN YENİLEBİLİR HAYVANSAL MENŞELİ ÜRÜNLER",
+   "ana": 2,
+   "secenek": 4,
+   "agirlik": 8
+  },
+  {
+   "fasil": 9,
+   "baslik": "KAHVE, ÇAY, PARAGUAY ÇAYI VE BAHARAT",
+   "ana": 2,
+   "secenek": 4,
+   "agirlik": 8
+  },
+  {
+   "fasil": 44,
+   "baslik": "AĞAÇ VE AHŞAP EŞYA; ODUN KÖMÜRÜ",
+   "ana": 3,
+   "secenek": 2,
+   "agirlik": 8
+  },
+  {
+   "fasil": 95,
+   "baslik": "OYUNCAKLAR, OYUN VE SPOR MALZEMELERİ; BUNLARIN AKSAM, PARÇA VE AKSESUARI",
+   "ana": 3,
+   "secenek": 2,
+   "agirlik": 8
+  },
+  {
+   "fasil": 63,
+   "baslik": "DOKUMAYA ELVERİŞLİ MADDELERDEN DİĞER HAZIR EŞYA; TAKIMLAR; KULLANILMIŞ GİYİM EŞYASI VE DOKUMAYA ELVERİŞLİ MADDELERDEN KULLANILMIŞ EŞYA; PAÇAVRALAR",
+   "ana": 2,
+   "secenek": 3,
+   "agirlik": 7
+  },
+  {
+   "fasil": 64,
+   "baslik": "AYAKKABILAR, GETRLER, TOZLUKLAR VE BENZERİ EŞYA; BUNLARIN AKSAMI",
+   "ana": 3,
+   "secenek": 1,
+   "agirlik": 7
+  },
+  {
+   "fasil": 70,
+   "baslik": "CAM VE CAM EŞYA",
+   "ana": 2,
+   "secenek": 3,
+   "agirlik": 7
+  },
+  {
+   "fasil": 94,
+   "baslik": "MOBİLYALAR, YATAK TAKIMLARI, ŞİLTELER, ŞİLTE DESTEKLERİ, YASTIKLAR VE BENZERİ DOLDURULMUŞ MEFRUŞAT; TARİFENİN BAŞKA YERİNDE BELİRTİLMEYEN VEYA YER ALMAYAN LAMBALAR VE AYDINLATMA CİHAZLARI; IŞIKLI PANOLAR, IŞIKLI İSİM TABELALARI VE BENZERLERİ; PREFABRİK YAPILAR",
+   "ana": 3,
+   "secenek": 1,
+   "agirlik": 7
+  },
+  {
+   "fasil": 5,
+   "baslik": "TARİFENİN BAŞKA YERİNDE BELİRTİLMEYEN VEYA YER ALMAYAN HAYVANSAL MENŞELİ ÜRÜNLER",
+   "ana": 2,
+   "secenek": 2,
+   "agirlik": 6
+  },
+  {
+   "fasil": 19,
+   "baslik": "HUBUBAT, UN, NİŞASTA VEYA SÜT MÜSTAHZARLARI; PASTACILIK ÜRÜNLERİ",
+   "ana": 2,
+   "secenek": 2,
+   "agirlik": 6
+  },
+  {
+   "fasil": 24,
+   "baslik": "TÜTÜN VE TÜTÜN YERİNE GEÇEN İŞLENMİŞ MADDELER; NİKOTİN İÇERSİN İÇERMESİN YANMA OLMADAN SOLUNAN ÜRÜNLER; İNSAN VÜCUDUNA NİKOTİN ALMAK İÇİN KULLANILAN NİKOTİN İÇEREN DİĞER ÜRÜNLER",
+   "ana": 2,
+   "secenek": 2,
+   "agirlik": 6
+  },
+  {
+   "fasil": 34,
+   "baslik": "SABUNLAR, YÜZEY-AKTİF ORGANİK MADDELER, YIKAMA MÜSTAHZARLARI, YAĞLAMA MÜSTAHZARLARI, SUNİ MUMLAR, MÜSTAHZAR MUMLAR, TEMİZLEME VEYA BAKIM MÜSTAHZARLARI, IŞIK TEMİNİ İÇİN KULLANILAN HER TÜRLÜ MUMLAR VE BENZERLERİ, MODEL YAPMAYA MAHSUS HER TÜRLÜ PATLAR, \"DİŞÇİ MUMLARI\" VE ALÇI ESASLI DİŞÇİLİK MÜSTAHZARLARI",
+   "ana": 1,
+   "secenek": 4,
+   "agirlik": 6
+  },
+  {
+   "fasil": 71,
+   "baslik": "TABİİ VEYA KÜLTÜR İNCİLERİ, KIYMETLİ VEYA YARI KIYMETLİ TAŞLAR, KIYMETLİ METALLER, KIYMETLİ METALLERLE KAPLAMA METALLER VE BUNLARDAN MAMUL EŞYA; TAKLİT MÜCEVHERCİ EŞYASI; METAL PARALAR",
+   "ana": 3,
+   "secenek": 0,
+   "agirlik": 6
+  },
+  {
+   "fasil": 93,
+   "baslik": "SİLAHLAR VE MÜHİMMAT; BUNLARIN AKSAM, PARÇA VE AKSESUARI",
+   "ana": 2,
+   "secenek": 2,
+   "agirlik": 6
+  },
+  {
+   "fasil": 12,
+   "baslik": "YAĞLI TOHUM VE MEYVELER; MUHTELİF TANE, TOHUM VE MEYVELER; SANAYİDE VEYA TIPTA KULLANILAN BİTKİLER; SAMAN VE KABA YEM",
+   "ana": 2,
+   "secenek": 1,
+   "agirlik": 5
+  },
+  {
+   "fasil": 16,
+   "baslik": "ET, BALIK, KABUKLU HAYVANLAR, YUMUŞAKÇALAR VEYA DİĞER SU OMURGASIZLARININ VEYA BÖCEKLERİN MÜSTAHZARLARI",
+   "ana": 1,
+   "secenek": 3,
+   "agirlik": 5
+  },
+  {
+   "fasil": 17,
+   "baslik": "ŞEKER VE ŞEKER MAMULLERİ",
+   "ana": 2,
+   "secenek": 1,
+   "agirlik": 5
+  },
+  {
+   "fasil": 20,
+   "baslik": "SEBZELER, MEYVELER, SERT KABUKLU MEYVELER VE BİTKİLERİN DİĞER KISIMLARINDAN ELDE EDİLEN MÜSTAHZARLAR",
+   "ana": 2,
+   "secenek": 1,
+   "agirlik": 5
+  },
+  {
+   "fasil": 21,
+   "baslik": "YENİLEN ÇEŞİTLİ GIDA MÜSTAHZARLARI",
+   "ana": 0,
+   "secenek": 5,
+   "agirlik": 5
+  },
+  {
+   "fasil": 22,
+   "baslik": "MEŞRUBAT, ALKOLLÜ İÇKİLER VE SİRKE",
+   "ana": 1,
+   "secenek": 3,
+   "agirlik": 5
+  },
+  {
+   "fasil": 27,
+   "baslik": "MİNERAL YAKITLAR, MİNERAL YAĞLAR VE BUNLARIN DAMITILMASINDAN ELDE EDİLEN ÜRÜNLER; BİTÜMENLİ MADDELER; MİNERAL MUMLAR",
+   "ana": 2,
+   "secenek": 1,
+   "agirlik": 5
+  },
+  {
+   "fasil": 38,
+   "baslik": "MUHTELİF KİMYASAL ÜRÜNLER",
+   "ana": 1,
+   "secenek": 3,
+   "agirlik": 5
+  },
+  {
+   "fasil": 40,
+   "baslik": "KAUÇUK VE KAUÇUKTAN EŞYA",
+   "ana": 1,
+   "secenek": 3,
+   "agirlik": 5
+  },
+  {
+   "fasil": 52,
+   "baslik": "PAMUK",
+   "ana": 2,
+   "secenek": 1,
+   "agirlik": 5
+  },
+  {
+   "fasil": 73,
+   "baslik": "DEMİR VEYA ÇELİKTEN EŞYA",
+   "ana": 1,
+   "secenek": 3,
+   "agirlik": 5
+  },
+  {
+   "fasil": 3,
+   "baslik": "BALIKLAR, KABUKLU HAYVANLAR, YUMUŞAKÇALAR VE SUDA YAŞAYAN DİĞER OMURGASIZ HAYVANLAR",
+   "ana": 2,
+   "secenek": 0,
+   "agirlik": 4
+  },
+  {
+   "fasil": 25,
+   "baslik": "TUZ; KÜKÜRT, TOPRAKLAR VE TAŞLAR; ALÇILAR, KİREÇLER VE ÇİMENTO",
+   "ana": 2,
+   "secenek": 0,
+   "agirlik": 4
+  },
+  {
+   "fasil": 35,
+   "baslik": "ALBÜMİNOİD MADDELER; DEĞİŞİKLİĞE UĞRAMIŞ NİŞASTA ESASLI ÜRÜNLER; TUTKALLAR; ENZİMLER",
+   "ana": 2,
+   "secenek": 0,
+   "agirlik": 4
+  },
+  {
+   "fasil": 49,
+   "baslik": "BASILI KİTAPLAR, GAZETELER, RESİMLER VE BASKI SANAYİNİN DİĞER MAMULLERİ; EL VE MAKİNA YAZISI METİNLER VE PLANLAR",
+   "ana": 2,
+   "secenek": 0,
+   "agirlik": 4
+  },
+  {
+   "fasil": 59,
+   "baslik": "EMDİRİLMİŞ, SIVANMIŞ, KAPLANMIŞ VEYA LAMİNE EDİLMİŞ DOKUMAYA ELVERİŞLİ MADDELERDEN MENSUCAT; DOKUMAYA ELVERİŞLİ MADDELERDEN TEKNİK EŞYA",
+   "ana": 1,
+   "secenek": 2,
+   "agirlik": 4
+  },
+  {
+   "fasil": 62,
+   "baslik": "ÖRÜLMEMİŞ GİYİM EŞYASI VE AKSESUARI",
+   "ana": 1,
+   "secenek": 2,
+   "agirlik": 4
+  },
+  {
+   "fasil": 72,
+   "baslik": "",
+   "ana": 2,
+   "secenek": 0,
+   "agirlik": 4
+  },
+  {
+   "fasil": 82,
+   "baslik": "ADİ METALLERDEN ALETLER, BIÇAKÇI EŞYASI VE SOFRA TAKIMLARI; ADİ METALLERDEN BUNLARIN AKSAM VE PARÇALARI",
+   "ana": 1,
+   "secenek": 2,
+   "agirlik": 4
+  },
+  {
+   "fasil": 83,
+   "baslik": "ADİ METALLERDEN ÇEŞİTLİ EŞYA",
+   "ana": 1,
+   "secenek": 2,
+   "agirlik": 4
+  },
+  {
+   "fasil": 88,
+   "baslik": "HAVA TAŞITLARI, UZAY TAŞITLARI VE BUNLARIN AKSAM VE PARÇALARI",
+   "ana": 1,
+   "secenek": 2,
+   "agirlik": 4
+  },
+  {
+   "fasil": 97,
+   "baslik": "SANAT ESERLERİ, KOLLEKSİYON EŞYASI VE ANTİKALAR",
+   "ana": 1,
+   "secenek": 2,
+   "agirlik": 4
+  },
+  {
+   "fasil": 11,
+   "baslik": "DEĞİRMENCİLİK ÜRÜNLERİ; MALT; NİŞASTA; İNULİN; BUĞDAY GLUTENİ",
+   "ana": 1,
+   "secenek": 1,
+   "agirlik": 3
+  },
+  {
+   "fasil": 15,
+   "baslik": "HAYVANSAL, BİTKİSEL VEYA MİKROBİYAL KATI VE SIVI YAĞLAR VE BUNLARIN PARÇALANMA ÜRÜNLERİ; HAZIR YEMEKLİK KATI YAĞLAR; HAYVANSAL VEYA BİTKİSEL MUMLAR",
+   "ana": 1,
+   "secenek": 1,
+   "agirlik": 3
+  },
+  {
+   "fasil": 41,
+   "baslik": "HAM POSTLAR, DERİLER (KÜRKLER HARİÇ) VE KÖSELELER",
+   "ana": 1,
+   "secenek": 1,
+   "agirlik": 3
+  },
+  {
+   "fasil": 61,
+   "baslik": "ÖRME VEYA KROŞE GİYİM EŞYASI VE AKSESUARI",
+   "ana": 1,
+   "secenek": 1,
+   "agirlik": 3
+  },
+  {
+   "fasil": 66,
+   "baslik": "ŞEMSİYELER, GÜNEŞ ŞEMSİYELERİ, BASTONLAR, İSKEMLE BASTONLAR, KAMÇILAR, KIRBAÇLAR VE BUNLARIN AKSAMI",
+   "ana": 1,
+   "secenek": 1,
+   "agirlik": 3
+  },
+  {
+   "fasil": 68,
+   "baslik": "TAŞ, ALÇI, ÇİMENTO, AMYANT, MİKA VEYA BENZERİ MADDELERDEN EŞYA",
+   "ana": 0,
+   "secenek": 3,
+   "agirlik": 3
+  },
+  {
+   "fasil": 89,
+   "baslik": "GEMİLER VE SUDA YÜZEN TAŞIT VE ARAÇLAR",
+   "ana": 1,
+   "secenek": 1,
+   "agirlik": 3
+  },
+  {
+   "fasil": 92,
+   "baslik": "MÜZİK ALETLERİ; BUNLARIN AKSAM, PARÇA VE AKSESUARI",
+   "ana": 1,
+   "secenek": 1,
+   "agirlik": 3
+  },
+  {
+   "fasil": 1,
+   "baslik": "CANLI HAYVANLAR",
+   "ana": 1,
+   "secenek": 0,
+   "agirlik": 2
+  },
+  {
+   "fasil": 2,
+   "baslik": "ETLER VE YENİLEN SAKATAT",
+   "ana": 1,
+   "secenek": 0,
+   "agirlik": 2
+  },
+  {
+   "fasil": 8,
+   "baslik": "YENİLEN MEYVELER VE YENİLEN SERT KABUKLU MEYVELER; TURUNÇGİLLERİN VEYA KAVUN VE KARPUZLARIN KABUKLARI",
+   "ana": 1,
+   "secenek": 0,
+   "agirlik": 2
+  },
+  {
+   "fasil": 23,
+   "baslik": "GIDA SANAYİİNİN KALINTI VE DÖKÜNTÜLERİ; HAYVANLAR İÇİN HAZIRLANMIŞ KABA YEMLER",
+   "ana": 1,
+   "secenek": 0,
+   "agirlik": 2
+  },
+  {
+   "fasil": 28,
+   "baslik": "İNORGANİK KİMYASALLAR; KIYMETLİ METALLERİN, RADYOAKTİF ELEMENTLERİN, NADİR TOPRAK METALLERİNİN VE İZOTOPLARININ ORGANİK VEYA İNORGANİK BİLEŞİKLERİ",
+   "ana": 1,
+   "secenek": 0,
+   "agirlik": 2
+  },
+  {
+   "fasil": 29,
+   "baslik": "ORGANİK KİMYASALLAR",
+   "ana": 0,
+   "secenek": 2,
+   "agirlik": 2
+  },
+  {
+   "fasil": 43,
+   "baslik": "KÜRKLER VE TAKLİT KÜRKLER; BUNLARIN MAMULLERİ",
+   "ana": 0,
+   "secenek": 2,
+   "agirlik": 2
+  },
+  {
+   "fasil": 45,
+   "baslik": "MANTAR VE MANTARDAN EŞYA",
+   "ana": 1,
+   "secenek": 0,
+   "agirlik": 2
+  },
+  {
+   "fasil": 46,
+   "baslik": "HASIRDAN, SAZDAN VEYA ÖRÜLMEYE ELVERİŞLİ DİĞER MADDELERDEN MAMULLER; SEPETÇİ VE HASIRCI EŞYASI",
+   "ana": 1,
+   "secenek": 0,
+   "agirlik": 2
+  },
+  {
+   "fasil": 47,
+   "baslik": "ODUN VEYA DİĞER SELÜLOZİK MADDELERİN HAMURLARI; GERİ KAZANILMIŞ KAĞIT VEYA KARTON DÖKÜNTÜ, KIRPINTI VE HURDALAR",
+   "ana": 1,
+   "secenek": 0,
+   "agirlik": 2
+  },
+  {
+   "fasil": 51,
+   "baslik": "YAPAĞI VE YÜN, İNCE VEYA KABA HAYVAN KILI; AT KILINDAN İPLİK VE DOKUNMUŞ MENSUCAT",
+   "ana": 1,
+   "secenek": 0,
+   "agirlik": 2
+  },
+  {
+   "fasil": 53,
+   "baslik": "DOKUMAYA ELVERİŞLİ DİĞER BİTKİSEL LİFLER; KAĞIT İPLİĞİ VE KAĞIT İPLİĞİNDEN DOKUNMUŞ MENSUCAT",
+   "ana": 0,
+   "secenek": 2,
+   "agirlik": 2
+  },
+  {
+   "fasil": 58,
+   "baslik": "ÖZEL DOKUNMUŞ MENSUCAT; TUFTE EDİLMİŞ DOKUMAYA ELVERİŞLİ MENSUCAT; DANTELA, DUVAR HALILARI; ŞERİTÇİ VE KAYTANCI EŞYASI; İŞLEMELER",
+   "ana": 0,
+   "secenek": 2,
+   "agirlik": 2
+  },
+  {
+   "fasil": 65,
+   "baslik": "BAŞLIKLAR VE AKSAMI",
+   "ana": 0,
+   "secenek": 2,
+   "agirlik": 2
+  },
+  {
+   "fasil": 74,
+   "baslik": "BAKIR VE BAKIRDAN EŞYA",
+   "ana": 1,
+   "secenek": 0,
+   "agirlik": 2
+  },
+  {
+   "fasil": 86,
+   "baslik": "",
+   "ana": 1,
+   "secenek": 0,
+   "agirlik": 2
+  },
+  {
+   "fasil": 91,
+   "baslik": "SAATLER VE BUNLARIN AKSAM VE PARÇALARI",
+   "ana": 0,
+   "secenek": 2,
+   "agirlik": 2
+  },
+  {
+   "fasil": 99,
+   "baslik": "",
+   "ana": 1,
+   "secenek": 0,
+   "agirlik": 2
+  },
+  {
+   "fasil": 7,
+   "baslik": "YENİLEN SEBZELER VE BAZI KÖK VE YUMRULAR",
+   "ana": 0,
+   "secenek": 1,
+   "agirlik": 1
+  },
+  {
+   "fasil": 10,
+   "baslik": "HUBUBAT",
+   "ana": 0,
+   "secenek": 1,
+   "agirlik": 1
+  },
+  {
+   "fasil": 13,
+   "baslik": "LAK; SAKIZ, REÇİNE VE DİĞER BİTKİSEL ÖZSU VE HÜLASALAR",
+   "ana": 0,
+   "secenek": 1,
+   "agirlik": 1
+  },
+  {
+   "fasil": 18,
+   "baslik": "KAKAO VE KAKAO MÜSTAHZARLARI",
+   "ana": 0,
+   "secenek": 1,
+   "agirlik": 1
+  },
+  {
+   "fasil": 31,
+   "baslik": "GÜBRELER",
+   "ana": 0,
+   "secenek": 1,
+   "agirlik": 1
+  },
+  {
+   "fasil": 54,
+   "baslik": "SENTETİK VE SUNİ FİLAMENTLER, ŞERİTLER VE BENZERİ SENTETİK VE SUNİ DOKUMAYA ELVERİŞLİ MADDELER",
+   "ana": 0,
+   "secenek": 1,
+   "agirlik": 1
+  },
+  {
+   "fasil": 55,
+   "baslik": "SENTETİK VE SUNİ DEVAMSIZ LİFLER",
+   "ana": 0,
+   "secenek": 1,
+   "agirlik": 1
+  },
+  {
+   "fasil": 56,
+   "baslik": "VATKA, KEÇE VE DOKUNMAMIŞ MENSUCAT; ÖZEL İPLİKLER; SİCİM, KORDON, İP, HALAT VE BUNLARDAN MAMUL EŞYA",
+   "ana": 0,
+   "secenek": 1,
+   "agirlik": 1
+  },
+  {
+   "fasil": 60,
+   "baslik": "ÖRME VEYA KROŞE EŞYA",
+   "ana": 0,
+   "secenek": 1,
+   "agirlik": 1
+  },
+  {
+   "fasil": 76,
+   "baslik": "ALUMİNYUM VE ALUMİNYUMDAN EŞYA",
+   "ana": 0,
+   "secenek": 1,
+   "agirlik": 1
+  }
+ ],
+ "bolum": [
+  {
+   "bolum": "I",
+   "baslik": "CANLI HAYVANLAR; HAYVANSAL ÜRÜNLER",
+   "fasillar": "1-5",
+   "ana_soru": 5,
+   "secenek": 6,
+   "agirlik": 22
+  },
+  {
+   "bolum": "II",
+   "baslik": "BİTKİSEL ÜRÜNLER",
+   "fasillar": "6-14",
+   "ana_soru": 6,
+   "secenek": 9,
+   "agirlik": 21
+  },
+  {
+   "bolum": "III",
+   "baslik": "HAYVANSAL, BİTKİSEL VEYA MİKROBİYAL KATI VE SIVI YAĞLAR VE BUNLARIN PARÇALANMA ÜRÜNLERİ; HAZIR YEMEKLİK KATI YAĞLAR; HAYVANSAL VEYA BİTKİSEL MUMLAR",
+   "fasillar": "15-15",
+   "ana_soru": 1,
+   "secenek": 1,
+   "agirlik": 3
+  },
+  {
+   "bolum": "IV",
+   "baslik": "GIDA SANAYİİ MÜSTAHZARLARI; MEŞRUBAT, ALKOLLÜ İÇKİLER VE SİRKE; TÜTÜN VEYA TÜTÜN YERİNE GEÇEN İŞLENMİŞ MADDELER; NİKOTİN İÇERSİN İÇERMESİN YANMA OLMADAN SOLUNAN ÜRÜNLER; İNSAN VÜCUDUNA NİKOTİN ALMAK İÇİN KULLANILAN NİKOTİN İÇEREN DİĞER ÜRÜNLER",
+   "fasillar": "16-24",
+   "ana_soru": 9,
+   "secenek": 18,
+   "agirlik": 40
+  },
+  {
+   "bolum": "V",
+   "baslik": "MİNERAL MADDELER",
+   "fasillar": "25-27",
+   "ana_soru": 4,
+   "secenek": 1,
+   "agirlik": 9
+  },
+  {
+   "bolum": "VI",
+   "baslik": "KİMYA SANAYİİ VE BUNA BAĞLI SANAYİİ ÜRÜNLERİ",
+   "fasillar": "28-38",
+   "ana_soru": 10,
+   "secenek": 15,
+   "agirlik": 39
+  },
+  {
+   "bolum": "VII",
+   "baslik": "PLASTİKLER VE MAMULLERİ; KAUÇUK VE MAMULLERİ",
+   "fasillar": "39-40",
+   "ana_soru": 4,
+   "secenek": 9,
+   "agirlik": 19
+  },
+  {
+   "bolum": "VIII",
+   "baslik": "HAM POSTLAR VE DERİLER, KÖSELELER,  KÜRKLER VE BU MADDELERDEN MAMUL EŞYA; SARACİYE EŞYASI VE EYER VE KOŞUM TAKIMLARI; SEYAHAT EŞYASI, EL ÇANTALARI VE BENZERİ MAHFAZALAR; HAYVAN BAĞIRSAĞINDAN MAMUL EŞYA (İPEK BÖCEĞİ BAĞIRSAĞI HARİÇ)",
+   "fasillar": "41-43",
+   "ana_soru": 5,
+   "secenek": 6,
+   "agirlik": 16
+  },
+  {
+   "bolum": "IX",
+   "baslik": "AĞAÇ VE AHŞAP EŞYA; ODUN KÖMÜRÜ; MANTAR VE MANTARDAN MAMUL EŞYA; HASIRDAN, SAZDAN VEYA ÖRÜLMEYE ELVERİŞLİ DİĞER MADDELERDEN MAMULLER; SEPETÇİ VE HASIRCI EŞYASI",
+   "fasillar": "44-46",
+   "ana_soru": 5,
+   "secenek": 2,
+   "agirlik": 12
+  },
+  {
+   "bolum": "X",
+   "baslik": "ODUN VEYA DİĞER LİFLİ SELÜLOZİK MADDELERİN HAMURLARI VE GERİ KAZANILMIŞ KAĞIT VEYA KAĞIT VE KARTON (DÖKÜNTÜ, KIRPINTI VE HURDALAR); KAĞIT, KARTON VE MAMULLERİ",
+   "fasillar": "47-49",
+   "ana_soru": 5,
+   "secenek": 2,
+   "agirlik": 16
+  },
+  {
+   "bolum": "XI",
+   "baslik": "DOKUMAYA ELVERİŞLİ MADDELER VE BUNLARDAN MAMUL EŞYA",
+   "fasillar": "50-63",
+   "ana_soru": 8,
+   "secenek": 17,
+   "agirlik": 33
+  },
+  {
+   "bolum": "XII",
+   "baslik": "AYAKKABILAR, BAŞLIKLAR, ŞEMSİYELER, GÜNEŞ ŞEMSİYELERİ, BASTONLAR, İSKEMLE BASTONLAR, KEMERLER, KAMÇILAR, KIRBAÇLAR VE BUNLARIN AKSAMI; HAZIRLANMIŞ TÜYLER VE BUNLARDAN MAMUL EŞYA; YAPMA ÇİÇEKLER; İNSAN SAÇINDAN MAMUL EŞYA",
+   "fasillar": "64-67",
+   "ana_soru": 4,
+   "secenek": 4,
+   "agirlik": 12
+  },
+  {
+   "bolum": "XIII",
+   "baslik": "TAŞ, ALÇI, ÇİMENTO, AMYANT, MİKA VEYA BENZERİ MADDELERDEN EŞYA; SERAMİK MAMULLERİ; CAM VE CAM EŞYA",
+   "fasillar": "68-70",
+   "ana_soru": 2,
+   "secenek": 6,
+   "agirlik": 10
+  },
+  {
+   "bolum": "XIV",
+   "baslik": "TABİİ İNCİLER VEYA KÜLTÜR İNCİLERİ, KIYMETLİ VEYA YARI KIYMETLİ TAŞLAR,KIYMETLİ METALLER, KIYMETLİ METALLERLE KAPLAMA METALLER VE BUNLARDAN MAMUL EŞYA; TAKLİT MÜCEVHERCİ EŞYASI; METAL PARALAR",
+   "fasillar": "71-71",
+   "ana_soru": 3,
+   "secenek": 0,
+   "agirlik": 6
+  },
+  {
+   "bolum": "XV",
+   "baslik": "ADİ METALLER VE ADİ METALLERDEN EŞYA",
+   "fasillar": "72-83",
+   "ana_soru": 4,
+   "secenek": 8,
+   "agirlik": 20
+  },
+  {
+   "bolum": "XVI",
+   "baslik": "MAKİNALAR VE MEKANİK CİHAZLAR; ELEKTRİK MALZEMELERİ: BUNLARIN AKSAM VE PARÇALARI; SES KAYDEDİCİLER VE KAYDEDİLEN SESİ TEKRAR VERMEYE MAHSUS CİHAZLAR, TELEVİZYON GÖRÜNTÜ VE SES KAYDEDİCİLERİ VE KAYDEDİLEN GÖRÜNTÜ VE SESİ TEKRAR VERMEYE MAHSUS CİHAZLAR; BUNLARIN AKSAM, PARÇA VE TEFERRUATI",
+   "fasillar": "84-85",
+   "ana_soru": 24,
+   "secenek": 15,
+   "agirlik": 69
+  },
+  {
+   "bolum": "XVII",
+   "baslik": "NAKİL VASITALARI",
+   "fasillar": "86-89",
+   "ana_soru": 7,
+   "secenek": 10,
+   "agirlik": 24
+  },
+  {
+   "bolum": "XVIII",
+   "baslik": "OPTİK ALET VE CİHAZLAR, FOTOĞRAF, SİNEMA, ÖLÇÜ, KONTROL, AYAR ALET VE CİHAZLARI, TIBBİ VEYA CERRAHİ ALET VE CİHAZLAR; SAATÇİ EŞYASI; MÜZİK ALETLERİ; BUNLARIN AKSAM, PARÇA VE AKSESUARI",
+   "fasillar": "90-92",
+   "ana_soru": 6,
+   "secenek": 8,
+   "agirlik": 20
+  },
+  {
+   "bolum": "XIX",
+   "baslik": "SİLAHLAR VE MÜHİMMAT; BUNLARIN AKSAM, PARÇA VE AKSESUARI",
+   "fasillar": "93-93",
+   "ana_soru": 2,
+   "secenek": 2,
+   "agirlik": 6
+  },
+  {
+   "bolum": "XX",
+   "baslik": "MUHTELİF MAMUL EŞYA",
+   "fasillar": "94-96",
+   "ana_soru": 9,
+   "secenek": 7,
+   "agirlik": 25
+  },
+  {
+   "bolum": "XXI",
+   "baslik": "SANAT ESERLERİ, KOLLEKSİYON EŞYASI VE ANTİKALAR",
+   "fasillar": "97-97",
+   "ana_soru": 1,
+   "secenek": 2,
+   "agirlik": 4
+  }
+ ],
+ "bolum_aciklama": "ana_soru = fasil_ana'sı o bölümde olan soru sayısı; agirlik = bölümdeki fasılların 2×ana+1×secenek toplamı (99. fasıl hariç)",
+ "top25_pozisyon": [
+  {
+   "pozisyon": "42.02",
+   "adet": 4,
+   "sorular": [
+    127,
+    142,
+    202,
+    205
+   ]
+  },
+  {
+   "pozisyon": "30.06",
+   "adet": 3,
+   "sorular": [
+    168,
+    180,
+    185
+   ]
+  },
+  {
+   "pozisyon": "04.10",
+   "adet": 2,
+   "sorular": [
+    215,
+    219
+   ]
+  },
+  {
+   "pozisyon": "12.11",
+   "adet": 2,
+   "sorular": [
+    148,
+    166
+   ]
+  },
+  {
+   "pozisyon": "19.02",
+   "adet": 2,
+   "sorular": [
+    169,
+    190
+   ]
+  },
+  {
+   "pozisyon": "84.32",
+   "adet": 2,
+   "sorular": [
+    145,
+    194
+   ]
+  },
+  {
+   "pozisyon": "85.24",
+   "adet": 2,
+   "sorular": [
+    154,
+    232
+   ]
+  },
+  {
+   "pozisyon": "85.28",
+   "adet": 2,
+   "sorular": [
+    151,
+    155
+   ]
+  },
+  {
+   "pozisyon": "85.43",
+   "adet": 2,
+   "sorular": [
+    171,
+    223
+   ]
+  },
+  {
+   "pozisyon": "95.03",
+   "adet": 2,
+   "sorular": [
+    133,
+    193
+   ]
+  },
+  {
+   "pozisyon": "01.06",
+   "adet": 1,
+   "sorular": [
+    173
+   ]
+  },
+  {
+   "pozisyon": "04.07",
+   "adet": 1,
+   "sorular": [
+    215
+   ]
+  },
+  {
+   "pozisyon": "05.04",
+   "adet": 1,
+   "sorular": [
+    184
+   ]
+  },
+  {
+   "pozisyon": "05.11",
+   "adet": 1,
+   "sorular": [
+    178
+   ]
+  },
+  {
+   "pozisyon": "08.01",
+   "adet": 1,
+   "sorular": [
+    230
+   ]
+  },
+  {
+   "pozisyon": "08.02",
+   "adet": 1,
+   "sorular": [
+    230
+   ]
+  },
+  {
+   "pozisyon": "15.20",
+   "adet": 1,
+   "sorular": [
+    212
+   ]
+  },
+  {
+   "pozisyon": "16.05",
+   "adet": 1,
+   "sorular": [
+    158
+   ]
+  },
+  {
+   "pozisyon": "17.02",
+   "adet": 1,
+   "sorular": [
+    211
+   ]
+  },
+  {
+   "pozisyon": "20.07",
+   "adet": 1,
+   "sorular": [
+    227
+   ]
+  },
+  {
+   "pozisyon": "20.08",
+   "adet": 1,
+   "sorular": [
+    203
+   ]
+  },
+  {
+   "pozisyon": "24.02",
+   "adet": 1,
+   "sorular": [
+    171
+   ]
+  },
+  {
+   "pozisyon": "24.04",
+   "adet": 1,
+   "sorular": [
+    171
+   ]
+  },
+  {
+   "pozisyon": "25.01",
+   "adet": 1,
+   "sorular": [
+    209
+   ]
+  },
+  {
+   "pozisyon": "25.20",
+   "adet": 1,
+   "sorular": [
+    128
+   ]
+  }
+ ],
+ "tip_kaliplari": {
+  "Fasıl notu · Tanım/Eşik": [
+   "Aşağıdakilerden hangisi (fasıl notundaki) X tabirine girmez?",
+   "X eşyası hangi tarife pozisyonunda sınıflandırılır? (aynı fasıldan ardışık pozisyonlar)",
+   "Aşağıdakilerden hangisi N. Faslı anlamında X kapsamına girmez?"
+  ],
+  "Farklı/aynı pozisyon veya fasıl": [
+   "Aşağıdakilerden hangisi diğerlerinden farklı bir tarife pozisyonunda yer alır?",
+   "Aşağıdakilerden hangisi farklı fasılda yer alır?",
+   "Aşağıdaki seçeneklerin hangisinde aynı 4’lü pozisyonda yer almayan eşya bulunmaktadır?"
+  ],
+  "Genel Yorum Kuralı": [
+   "X eşyası hangi yorum kuralına göre hangi pozisyonda sınıflandırılır?",
+   "Birlikte paketlenmiş X ve Y'nin tarife pozisyonu nedir? (set kavramı)",
+   "Birlikte sunulan X ve özel mahfazası ne şekilde sınıflandırılır?"
+  ],
+  "Olumsuz teşhis": [
+   "Aşağıdaki ürünlerden hangisi (başlığı verilen) N. fasılda sınıflandırılmaz?",
+   "Aşağıdakilerden hangisi NN.NN tarife pozisyonunda sınıflandırılmaz?",
+   "Aşağıdaki eşyaların hangisinin aksam-parçaları için 4’lü bazda özel bir pozisyon yoktur?"
+  ],
+  "Sıralama": [
+   "Aşağıdakilerden hangisinde eşyalar TGTC’deki pozisyon numaralarına göre küçükten büyüğe doğru sıralanmıştır?",
+   "Aşağıdaki eşyanın (I–IV) tarife cetvelindeki sıraya göre doğru dizilişi hangisidir?",
+   "Aşağıdakilerden hangisinde tarife cetvelindeki sıralamaya uygun olmayan bir diziliş vardır?"
+  ],
+  "Alt pozisyon / GTİP": [
+   "TGTC'nin N pozisyonunda sınıflandırılan yukarıdaki (I–IV) eşyaların GTİP'leri hangi seçenekte doğrudur? (tablo verili)",
+   "Verilen pozisyon açılımına göre 'X' hangi GTİP'te sınıflandırılır?",
+   "NN.NN pozisyonundaki eşyanın GTİP'inin belirlenmesinde kullanılan bilgilerden hangisi değildir?"
+  ],
+  "Mevzuat": [
+   "474 Sayılı Kanuna göre ... Cumhurbaşkanı kaç yıl/ne kadar sürede ... yetkilidir?",
+   "474 Sayılı Kanunda yer alan ... komisyon en geç ne kadar zamanda bir toplanır?",
+   "474 Sayılı Kanuna göre Cumhurbaşkanı ... en fazla kaç yıl içinde tahsiline müsaade eder?"
+  ],
+  "Eşya → 4’lü pozisyon": [
+   "X eşyası Tarife Cetvelinde hangi tarife pozisyonunda sınıflandırılır?",
+   "X eşyası hangi tarife pozisyonunda sınıflandırılır?",
+   "X eşyası aşağıdaki tarife pozisyonlarının hangisinde sınıflandırılır?"
+  ],
+  "Fasıl/Bölüm bulma": [
+   "X eşyası tarifenin hangi bölümünde yer alır?",
+   "X eşyası Tarife Cetvelinin hangi fasılında yer almaktadır?",
+   "Tarife Cetveline göre aşağıdaki (eşya–fasıl) ifadelerden hangisi yanlıştır?"
+  ],
+  "Tarife yapısı": [
+   "Aşağıdakilerden hangisi Tarife Cetvelinde kullanılan ölçü birimlerinden değildir?",
+   "Tarife tekniğine göre ... nasıl gösterilir?",
+   "N. Bölüm, M. Fasıl, K. pozisyondaki eşyanın alt pozisyonu hangisi olabilir?"
+  ],
+  "Pozisyon → eşya": [
+   "Aşağıdaki X maddesinden eşyadan hangisi N. fasılda sınıflandırılır?",
+   "Aşağıdakilerden hangisinde sayılanların tümü NN.NN pozisyonunda sınıflandırılır?",
+   "Aşağıdakilerden hangisi N. Faslında sınıflandırılır?"
+  ],
+  "Senaryo": [
+   "Yukarıda tanımlanan eşyanın sınıflandırılmasında aşağıdakilerden hangisi doğrudur? (GYK + alt pozisyon)",
+   "Görseli/özellikleri verilen X Tarife Cetvelinde hangi tarife pozisyonunda yer alır?"
+  ],
+  "Çoktan-çoğa / Eşleştirme": [
+   "X ...., Y ...., Z .... pozisyonlarında sınıflandırılır. Boşlukları tamamlayan seçenek hangisidir?",
+   "Ürün–pozisyon eşleştirmelerinden hangisi yanlıştır?"
+  ]
+ },
+ "cevap_gecersiz": [
+  {
+   "no": 154,
+   "not": "85 notu 7 (2022): düz panel gösterge modülleri 85.24'te öncelikli; resmi cevap 84.73 güncel değil, doğru şık seçeneklerde yok"
+  },
+  {
+   "no": 222,
+   "not": "kahve 09.01 II. Bölüm; E'de IV. Bölüm dışı eşya var, hiçbir şık tam doğru değil (hazır kahve 21.01 kastedilmişse E)"
+  }
+ ],
+ "notlu_sorular": [
+  {
+   "no": 116,
+   "not": "3(b) özsel nitelik belirlenemedi varsayımıyla 3(c); yoruma açık"
+  },
+  {
+   "no": 121,
+   "not": "atık pil 2022'den beri 85.49 (önce 85.48); sıra değişmiyor"
+  },
+  {
+   "no": 143,
+   "not": "seçenekler 6'lı ama farklı fasıllarda; 4'lü bilgiyle çözülür"
+  },
+  {
+   "no": 149,
+   "not": "A'daki 'çemen' tohum ise 09.10 olur (çemen ezmesi 21.03 kastedilmiş); ifade belirsiz"
+  },
+  {
+   "no": 153,
+   "not": "49 notu: rölyef haritalar 90.23"
+  },
+  {
+   "no": 156,
+   "not": "yoruma açık: tork anahtarı tek başına 82.04; resmi cevap makineyle birlikte 84.57"
+  },
+  {
+   "no": 188,
+   "not": "99. fasıl metni kaynakta yok, doğrulanamadı"
+  },
+  {
+   "no": 211,
+   "not": "seçenekler GTİP ama 4'lü düzeyde ayırt edilir"
+  },
+  {
+   "no": 212,
+   "not": "seçenekler GTİP ama 4'lü düzeyde ayırt edilir"
+  },
+  {
+   "no": 215,
+   "not": "E (salyangoz kabuğu unu) da 05.08'de; iki şık 4. fasıl dışında görünüyor"
+  },
+  {
+   "no": 225,
+   "not": "92 notu 2 mekanik çalgı kartlarına dayanır; dijital hafıza kartı 85.23 olarak tartışılabilir"
+  }
+ ]
+}

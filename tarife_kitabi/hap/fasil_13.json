@@ -1,0 +1,33 @@
+{
+ "tur": "hap",
+ "fasil": 13,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı; ham gliserin sorusunda 13.01 çeldirici seçenekti (doğrusu 15.20).",
+ "pozisyonlar": [
+  [
+   "13.01",
+   "Lak; tabii sakız, reçine, sakız-reçine, yağ reçine"
+  ],
+  [
+   "13.02",
+   "Bitkisel özsu, hülasa; pektin; agar-agar, kıvam vericiler"
+  ]
+ ],
+ "hap": [
+  "<b>Not 1 – 13.02’de:</b> meyan kökü, pire otu, şerbetçi otu, aloe ve afyon hülasaları. Hariç: kahve-çay-maté hülasası 21.01, malt hülasası 19.01, uçucu yağ ve rezinoit Fasıl 33.",
+  "<b>Eşikler:</b> %10’dan fazla sakkarozlu veya şekerleme halindeki meyan kökü hülasası 17.04; en az %50 alkaloidli haşhaş samanı konsantresi 29.39.",
+  "<b>“Sakız” sanılanlar:</b> tabii kauçuk, balata, güta-perka, çıkıl 40.01 (Not 1); amber 25.30; kolofan 38.06."
+ ],
+ "karistirilan": [
+  [
+   "Çıkıl, tabii kauçuk",
+   "40.01",
+   "“Sakız” adına rağmen Fasıl 13 Not 1 ile hariç"
+  ],
+  [
+   "Çay hülasası",
+   "21.01",
+   "Not 1: kahve, çay, maté hülasaları 21.01"
+  ]
+ ]
+}

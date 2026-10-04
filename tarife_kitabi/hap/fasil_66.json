@@ -1,0 +1,37 @@
+{
+ "tur": "hap",
+ "fasil": 66,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda 1 kez: “hangisi farklı pozisyonda” kalıbıyla şemsiyenin (66.01) baston, iskemle baston, kamçı ve kırbaçtan (66.02) ayrılması; ayrıca baston ve şemsiyenin maddesine göre sınıflandırılmadığı (tabak ise maddesine göre) soruldu.",
+ "pozisyonlar": [
+  [
+   "66.01",
+   "Her tür şemsiye; baston şemsiye, bahçe şemsiyesi"
+  ],
+  [
+   "66.02",
+   "Baston, iskemle baston, kamçı, kırbaç (her maddeden)"
+  ],
+  [
+   "66.03",
+   "Aksam: kulp, çerçeve, mil; tekstil, kılıf hariç"
+  ]
+ ],
+ "hap": [
+  "<b>Madde önemsiz:</b> altın kulplu baston, fildişi saplı şemsiye, deri kamçı da Fasıl 66’dadır; baston görünüşlü kın içindeki baston şemsiye 66.01’dir.",
+  "<b>Not 1 – fasıl dışı:</b> ölçü gösteren baston 90.17, kılıçlı, tüfekli, kurşunlu baston Fasıl 93, oyuncak şemsiye Fasıl 95.",
+  "<b>Not 2:</b> tekstil aksam ile her maddeden kın, kılıf, püskül 66.03’e girmez; şemsiyeyle birlikte gelse de takılı değilse ayrı sınıflandırılır."
+ ],
+ "karistirilan": [
+  [
+   "Koltuk değneği, ortopedik baston",
+   "90.21",
+   "Yaşlı ve sakatlar için mutat baston ise 66.02"
+  ],
+  [
+   "Golf sopası, kayak değneği",
+   "95.06",
+   "Spor eşyası; baston değil"
+  ]
+ ]
+}

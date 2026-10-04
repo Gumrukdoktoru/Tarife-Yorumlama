@@ -1,0 +1,56 @@
+{
+ "tur": "hap",
+ "fasil": 70,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 2 kez ana konu: ısıtma tertibatlı taşıt camının çerçevesiz olsa da 70 dışı kalması (Not 1(e); tertibatsız ön cam, ayna, far camı, cam tülü 70’te) ve taşıt far-stop camının 87 değil 70.14 olduğu. Cam (70), dikiz aynası (70.09) ve cam bardak başka sorularda seçenekti.",
+ "pozisyonlar": [
+  [
+   "70.07",
+   "Emniyet camı: yalnız temperli veya lamine"
+  ],
+  [
+   "70.09",
+   "Cam aynalar; taşıt dikiz aynası dahil"
+  ],
+  [
+   "70.10",
+   "Ticari taşıma-ambalaj şişe, kavanoz, damacana"
+  ],
+  [
+   "70.13",
+   "Sofra, mutfak, tuvalet, büro, süs cam eşyası"
+  ],
+  [
+   "70.14",
+   "Optik işlenmemiş sinyal camı; far, stop camı"
+  ],
+  [
+   "70.19",
+   "Cam lifi, cam yünü, cam tülü"
+  ]
+ ],
+ "hap": [
+  "<b>Not 1(d)–(e):</b> 86–88. fasıl taşıtlarının çerçeveli camları ile ısıtma tertibatlı veya elektrikli/elektronik cihaz içeren camları (çerçevesiz olsa da) 70 dışıdır; tertibatsız çerçevesiz cam 70’te kalır.",
+  "<b>Diğer dışlamalar (Not 1):</b> cam tozu-firit 32.07, taklit mücevher Fasıl 71, optik işlenmiş eleman ve termometre Fasıl 90, lamba ve parçaları 94.05, oyuncak 95, düğme, termos, parfüm spreyi 96.",
+  "<b>Düz cam:</b> dökme-haddeleme 70.03, çekme-üfleme 70.04, float veya parlatılmış 70.05; bombeli, kenarı işlenmiş, delinmiş, emayeli 70.06. Kesme ve tavlama öncesi işlem işleme sayılmaz (Not 2).",
+  "<b>Eşikler:</b> eritilmiş kuvars her yerde camdır (Not 5). Cam yünü (Not 4): silis ≥ %60; ya da daha az silisle alkali oksit %5’ten veya borik oksit %2’den fazla; değilse 68.06.",
+  "<b>Kapta amaç:</b> ticari ambalaj 70.10, sofra-mutfak-süs 70.13, laboratuvar-eczane 70.17, teşhir kavanozu 70.20; boncuk, taklit inci, oyuncak bebek gözü, 1 mm’den küçük kürecik 70.18."
+ ],
+ "karistirilan": [
+  [
+   "Isıtmalı lokomotif ön camı (çerçevesiz)",
+   "86.07",
+   "Not 1(e): tertibat varsa çerçevesiz de 70 dışı"
+  ],
+  [
+   "Motorlu taşıt far ve stop camı",
+   "70.14",
+   "87 değil; optik işlenmemiş sinyal camı"
+  ],
+  [
+   "Abajur ve avize camı",
+   "94.05",
+   "Not 1(g): lamba parçası"
+  ]
+ ]
+}

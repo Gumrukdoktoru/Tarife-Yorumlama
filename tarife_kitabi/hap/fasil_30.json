@@ -1,0 +1,74 @@
+{
+ "tur": "hap",
+ "fasil": 30,
+ "kademe": "A",
+ "sinavda": "Son 5 sınavda 4 kez: ilk yardım kutusu 30.06 (biri GYK sorusu: 1 ve 6, set değil), miadı dolmuş ilaç 30.06 (30.04, 38.25 çeldirici), “30’da sınıflandırılmaz” kalıbında tedavi amaçlı olmayan kan albümini (35.02). Nikotin bandı, tıbbi sabun, akne kremi ve B12 çeldirici olarak kullanıldı.",
+ "pozisyonlar": [
+  [
+   "30.01",
+   "Kurutulmuş organ, organ hülasası, heparin"
+  ],
+  [
+   "30.02",
+   "Kan, aşı, serum, antikor, toksin, kültür"
+  ],
+  [
+   "30.03",
+   "Karışık ilaç; dozlandırılmamış, dökme"
+  ],
+  [
+   "30.04",
+   "İlaç; dozlandırılmış veya perakende (transdermal dahil)"
+  ],
+  [
+   "30.05",
+   "İlaçlı veya tıbbi perakende pamuk, gazlı bez, bandaj"
+  ],
+  [
+   "30.06",
+   "Yalnız Not 4 listesi (ilk yardım, miadı dolmuş)"
+  ]
+ ],
+ "hap": [
+  "<b>Not 1 – tedavi edici olsa da fasıl dışı:</b> nikotinli sigara bırakma bandı ve cikleti 24.04, 33.03–33.07 kozmetikleri (akne kremi 33.04), tıbbi madde içeren sabun 34.01.",
+  "<b>Not 1 – diğer hariçler:</b> gıda takviyesi ve maden suyu (Bölüm IV; damardan beslenme hariç), dişçilik alçısı 25.20, alçı esaslı dişçilik müstahzarı 34.07, tedavi için hazırlanmamış kan albümini 35.02.",
+  "<b>Not 4 – 30.06 kapalı listesi:</b> steril katgüt ve dikiş malzemesi, kontrast madde, dişçi/kemik çimentosu, ilk yardım kutusu, kimyasal gebelik önleyici, tıbbi jel, miadı dolmuş ilaç, ostomi torbası, plasebo.",
+  "<b>30.02 sunumdan bağımsızdır:</b> kan, antiserum, aşı, toksin, mikroorganizma kültürü her sunumda 30.02; 30.03’teki karışık ilaç ise dozlandırılınca veya perakende ambalajlanınca 30.04 olur.",
+  "<b>Not 3 – karışım olmayan dökme madde:</b> Fasıl 28–29 ürünleri ve standardize 13.02 hülasaları dökme halde kendi fasıllarında (dökme B12 29.36); dozlandırılmış veya perakende ise 30.04.",
+  "<b>İlk yardım kutusu:</b> Not 4(g) ile ismen 30.06’dadır; sınıflandırma GYK 1 ve 6 ile yapılır, GYK 3(b) set kuralına gerek yoktur.",
+  "<b>Teşhis reaktifi:</b> hastaya uygulanan reaktif ve X ışını kontrast müstahzarı 30.06; laboratuvarda numune üzerinde kullanılan reaktif 38.22. Steril olmayan katgüt 42.06.",
+  "<b>Bölüm VI Not 2:</b> dozlandırıldığı veya perakende hazırlandığı için 30.04–30.06’ya giren ürün orada kalır; ancak kolloidal gümüş gibi 28.43 ürünleri önceliklidir (Not 1)."
+ ],
+ "karistirilan": [
+  [
+   "Tedavi amaçlı olmayan kan albümini",
+   "35.02",
+   "Not 1(h); tedavi veya korunma için hazırlanmışsa 30.02"
+  ],
+  [
+   "Nikotinli sigara bırakma bandı",
+   "24.04",
+   "Not 1(b); diğer transdermal ilaç bantları 30.04"
+  ],
+  [
+   "Akne azaltan yüz bakım müstahzarı",
+   "33.04",
+   "Not 1(e): 33.03–33.07 ürünü tedavi edici olsa da kozmetiktir"
+  ],
+  [
+   "Kullanım süresi geçmiş hazır ilaç",
+   "30.06",
+   "Not 4(k); 30.04 veya atık 38.25 değil"
+  ],
+  [
+   "Dişçilikte kullanılan alçı",
+   "25.20",
+   "Not 1(c); dişçi çimentosu ve diş dolgusu 30.06"
+  ],
+  [
+   "Dökme (dozlandırılmamış) B12 vitamini",
+   "29.36",
+   "Not 3: karışım olmayan Fasıl 29 ürünü; dozlanırsa 30.04"
+  ]
+ ]
+}

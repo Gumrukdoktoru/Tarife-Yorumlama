@@ -111,7 +111,68 @@ def deneme_overlap():
     print("işaretlenen deneme sorusu:", flagged)
 
 
+def _dogru(q):
+    return q["secenekler"]["ABCDE".index(q["cevap"])]
+
+
+KOK_STOP = {"tari", "cetv", "pozi", "sını", "aşağ", "hang", "yer", "alır", "fası", "bölü", "göre", "olan", "olar",
+            "eşya", "dığı", "mama", "edil", "ilgi", "hükü", "nota"}
+
+
+def koks(t):
+    """Türkçe ekleri kabaca atmak için kelimelerin ilk 4 harfini alır."""
+    return {w[:4] for w in norm(t).split() if len(w) > 2 and w not in STOP} - KOK_STOP
+
+
+def _kayit(lab, soru, dogru):
+    return (lab, toks(soru + " " + dogru), koks(soru), norm(dogru), toks(dogru))
+
+
+def karma_overlap(esik=0.5, esik_kok=0.30):
+    """Karma test sorularını önceki TÜM sorularla karşılaştırır.
+
+    Havuz: 2.425 modül sorusu, 500 deneme sorusu, pilot/örnek sorular, 236 çıkmış soru ve diğer karma testler.
+    Ölçüt 1: soru kökü + doğru şık kelime benzerliği ≥ esik.
+    Ölçüt 2: doğru şık aynı (ya da çok benzer) VE soru kökü benzerliği ≥ esik_kok (aynı eşya, farklı ifade).
+    """
+    pool = []
+    for f in glob.glob(os.path.join(DATA, "fasil_*.json")) + glob.glob(os.path.join(DATA, "deneme_*.json")):
+        d = json.load(open(f, encoding="utf-8"))
+        lab = (f"Fasıl {d['fasil']}" if d.get("tur") in ("fasil", "giris") else f"Deneme {d.get('no')}")
+        for i, q in enumerate(d.get("sorular", []), 1):
+            pool.append(_kayit(f"{lab} s{i}", q["soru"], _dogru(q)))
+    ek = os.path.join(ROOT, "kaynak", "onceki_ek_sorular.json")
+    if os.path.exists(ek):
+        for i, q in enumerate(json.load(open(ek, encoding="utf-8")), 1):
+            pool.append(_kayit(f"{q['kaynak']} s{i}", q["soru"], _dogru(q)))
+    for q in json.load(open(os.path.join(ROOT, "kaynak", "cikmis_sorular.json"), encoding="utf-8")):
+        pool.append((f"çıkmış {q['no']}", toks(q["metin"]), toks(q["metin"]), "", set()))
+    flagged = 0
+    seen = []
+    for f in sorted(glob.glob(os.path.join(ROOT, "karma", "karma_*.json"))):
+        d = json.load(open(f, encoding="utf-8"))
+        for i, q in enumerate(d["sorular"], 1):
+            k = _kayit(f"Karma {d['no']} s{i}", q["soru"], _dogru(q))
+            sebep = None
+            for lab, t, kok, dn, dt in pool + seen:
+                j = jacc(k[1], t)
+                if j >= esik:
+                    sebep = (j, lab, "metin")
+                    break
+                ayni = dn and (k[3] == dn or (len(k[4]) >= 2 and jacc(k[4], dt) >= 0.7))
+                if ayni and jacc(k[2], kok) >= esik_kok:
+                    sebep = (jacc(k[2], kok), lab, "aynı doğru cevap + benzer kök")
+                    break
+            if sebep:
+                flagged += 1
+                print(f"karma {d['no']} soru {i}: {sebep[2]} {sebep[0]:.2f} ({sebep[1]}) → {q['soru'][:90]}")
+            seen.append(k)
+    print("işaretlenen karma sorusu:", flagged)
+
+
 if __name__ == "__main__":
+    if "--karma" in sys.argv:
+        karma_overlap()
     if "--ornek" in sys.argv:
         dedup_examples("--uygula" in sys.argv)
     if "--deneme" in sys.argv:

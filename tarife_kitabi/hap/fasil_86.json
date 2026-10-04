@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 86,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda 1 kez, Fasıl 70 sorusu içinde: lokomotifin ısıtma tertibatlı ön camı Fasıl 70’e girmez (70 Not 1(e)), taşıt aksamıdır; ısıtmasız çerçevesiz ön cam Fasıl 70’te kalır.",
+ "pozisyonlar": [
+  [
+   "86.01",
+   "Elektrikli lokomotif: dış kaynak veya akümülatör"
+  ],
+  [
+   "86.07",
+   "Aksam: boji, dingil, tekerlek, fren, tampon"
+  ],
+  [
+   "86.08",
+   "Birleştirilmiş hat; mekanik-elektromekanik sinyal (karayolu dahil)"
+  ],
+  [
+   "86.09",
+   "Bir veya daha fazla taşıma şekline özel konteyner"
+  ]
+ ],
+ "hap": [
+  "<b>Bölüm XVII Not 4–5:</b> karayolu-ray için özel taşıt ve amfibi motorlu taşıt 87; kara taşıtı da olan uçak 88. Hava yastıklı: kılavuz hatlı 86, karada veya kara-suda 87, suda 89.",
+  "<b>Fasıl 86 Not 1:</b> ahşap travers 44.06, beton travers 68.10, demir-çelik ray ve hat malzemesi 73.02, elektrikli sinyalizasyon 85.30 fasıl dışı; traverslerle birleştirilmiş hat ise 86.08.",
+  "<b>Lokomotif:</b> elektriği dışarıdan veya akümülatörden alan 86.01; dizel, buharlı ve tender 86.02; bakım-servis taşıtı kendinden hareketli olsun olmasın 86.04."
+ ],
+ "karistirilan": [
+  [
+   "Lokomotifin ısıtma tertibatlı ön camı",
+   "86.07",
+   "70 Not 1(e): ısıtmalı taşıt camı Fasıl 70 dışı, aksamdır"
+  ],
+  [
+   "Elektrikli trafik sinyal cihazı",
+   "85.30",
+   "86 Not 1(c); mekanik veya elektromekanik olan 86.08"
+  ]
+ ]
+}

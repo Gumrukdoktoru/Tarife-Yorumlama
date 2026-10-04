@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 89,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda 1 kez konu: römorkörler 89.04 (84.08, 87.01, 87.16, 88.04 çeldirici). Seçenekte: deniz taşıtı dizel motoru gemiye mahsus olsa da 84.08’dedir, 89.03 değil.",
+ "pozisyonlar": [
+  [
+   "89.01",
+   "Yolcu, feribot, yük gemisi, tanker, mavna"
+  ],
+  [
+   "89.03",
+   "Yat, eğlence-spor teknesi, kürekli kayık, kano"
+  ],
+  [
+   "89.04",
+   "Römorkör ve itici gemi"
+  ],
+  [
+   "89.05",
+   "Fener, yangın, tarak gemisi; yüzer vinç, havuz"
+  ]
+ ],
+ "hap": [
+  "<b>Gemi aksamı Fasıl 89’da yoktur</b> (tekne hariç): motor 84.08, pervane 84.87, dümen-sevk teçhizatı 84.79, çapa 73.16, yelken 63.06, halat 56.07, ahşap kürek 44.21.",
+  "<b>Not 1:</b> tamamlanmamış gemi veya tekne belirli gemi türünün temel özelliğine sahipse o pozisyonda, değilse 89.06. Sökülmek için getirilen gemi 89.08.",
+  "<b>Ortam ölçütü:</b> amfibi motorlu taşıt Fasıl 87, deniz uçağı 88.02; suda işleyen hava yastıklı taşıt 89; yüzer vasıtaya monte hareketli makine (yüzer vinç, tarama) 89."
+ ],
+ "karistirilan": [
+  [
+   "Gemi pervanesi",
+   "84.87",
+   "Fasıl 89’da aksam hükmü yok; uçak pervanesi 88.07"
+  ],
+  [
+   "Yangın söndürme donanımlı römorkör",
+   "89.04",
+   "Yalnız yangın söndürme gemisi ise 89.05"
+  ]
+ ]
+}

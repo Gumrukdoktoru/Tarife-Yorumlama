@@ -1,0 +1,56 @@
+{
+ "tur": "hap",
+ "fasil": 73,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 1 kez ana konu: “hangisi 73’te yer almaz?” – şerit halinde zımba teli 83.05; yay, filika demiri, somun, tığ 73’te. 73.26, 73.18 ve 73.21 başka sorularda çeldirici veya “fırın geçen pozisyon” olarak kullanıldı.",
+ "pozisyonlar": [
+  [
+   "73.16",
+   "Çapalar, filika demirleri ve aksamı"
+  ],
+  [
+   "73.18",
+   "Vida, cıvata, somun, perçin, pim, rondela"
+  ],
+  [
+   "73.19",
+   "Elle kullanılan dikiş iğnesi, şiş, tığ, çengelli iğne"
+  ],
+  [
+   "73.20",
+   "Yaylar, yay yaprakları; saat zembereği hariç"
+  ],
+  [
+   "73.21",
+   "Elektriksiz soba, ocak, fırın, mangal (ev, kamp)"
+  ],
+  [
+   "73.26",
+   "Diğer demir-çelik eşya (artık pozisyon)"
+  ]
+ ],
+ "hap": [
+  "<b>Boru ailesi:</b> dökme demir 73.03, dikişsiz 73.04, iç-dış kesiti daire ve dış çapı 406,4 mm’yi geçen dikişli 73.05, diğer dikişli 73.06, bağlantı parçası (flanş, dirsek, manşon) 73.07.",
+  "<b>Kaplar:</b> 300 litreyi geçen depo 73.09, geçmeyen 73.10, sıkıştırılmış veya sıvılaştırılmış gaz kabı her hacimde 73.11; karıştırıcı, ısıtıcı, soğutucu tertibat varsa Fasıl 84/85.",
+  "<b>Fasıl 83’e gidenler:</b> şerit halinde zımba teli ve ataş 83.05, kilit 83.01, kapı-mobilya donanımı 83.02, zil ve süs eşyası 83.06; demir-çelikten olsalar da 73’e verilmez.",
+  "<b>Tanımlar:</b> tel = çapı 16 mm’yi geçmeyen, sıcak veya soğuk şekil verilmiş ürün, rulo şartı yok (Not 2); dökme demir = çelik bileşimine uymayan döküm ürünü (Not 1).",
+  "<b>Isıtma:</b> 73.21–73.22 ısıtmada elektrik kullanmayan cihazlar; elektrikli ve gazlı-elektrikli birleşik ocaklar 85.16. Kalibreli çelik bilya 84.82, diğer çelik bilyalar 73.26."
+ ],
+ "karistirilan": [
+  [
+   "Boş çelik yangın söndürme cihazı",
+   "84.24",
+   "Dolu-boş fark etmez; 73.26 veya 83.07 değil"
+  ],
+  [
+   "Plastik, kauçuk, çelik conta takımı (poşette)",
+   "84.84",
+   "Bileşimi değişik conta takımı; 73.18 değil"
+  ],
+  [
+   "Taşıma türüne göre donatılmış çelik konteyner",
+   "86.09",
+   "73.09 / 73.10 depo değil"
+  ]
+ ]
+}

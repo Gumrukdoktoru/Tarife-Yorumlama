@@ -1,0 +1,56 @@
+{
+ "tur": "hap",
+ "fasil": 94,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 3 kez doğrudan: demonte masa ve 2 sandalyeden oluşan perakende setin GYK 1, 2(a), 3(c) ve 6 ile 94.03’te; elektrikli çelengin 94.05’te (95.04, 85.39 çeldirici); dişçi koltuğunun Bölüm XX’de olduğu. Ameliyat masası ve avize “aynı bölüm” sorusunda seçenekti.",
+ "pozisyonlar": [
+  [
+   "94.01",
+   "Oturma mobilyası; yatağa dönüşen çekyat dahil"
+  ],
+  [
+   "94.02",
+   "Tıbbi, dişçi, veteriner mobilyası; döner-yükselir-yatar berber koltuğu"
+  ],
+  [
+   "94.03",
+   "Diğer mobilya: masa, dolap, karyola, beşik, okul sırası"
+  ],
+  [
+   "94.04",
+   "Somya; yaylı, doldurulmuş, gözenekli yatak, yorgan, uyku tulumu"
+  ],
+  [
+   "94.05",
+   "Lamba, avize, projektör, elektrikli çelenk; sabit ışıklı tabela"
+  ],
+  [
+   "94.06",
+   "Prefabrik yapılar; çelik modüler yapı birimleri"
+  ]
+ ],
+ "hap": [
+  "<b>Mobilya testi (Not 2):</b> eşya zemine konularak kullanılmalıdır. Asılsa veya duvara tutturulsa da mobilya sayılanlar: dolap, raflı ve ünite mobilya, yatak, oturma mobilyası. Duvar askılığı mobilya değildir.",
+  "<b>Demonte ve takım (GYK 2(a), 3(c)):</b> bütün parçalarıyla gelen demonte mobilya monte edilmiş gibi; masa ve sandalyelerden oluşan perakende sette özsel nitelik belirlenemezse numara sırasına göre son pozisyon 94.03.",
+  "<b>Parça sayılmaz (Not 3):</b> diğer parçalarla birleşmemiş cam, ayna, mermer levha kendi faslında; ayrı gelen yaylı veya doldurulmuş koltuk minderi 94.04. Hava-su ile şişirilen yatak Fasıl 39, 40, 63.",
+  "<b>94.05 her madde, her ışık kaynağı:</b> mum, gaz, petrol, elektrikli lamba ve avize. Ampul ve LED kaynağı 85.39, taşıt-bisiklet lambası 85.12, pilli el feneri 85.13, mum 34.06.",
+  "<b>Fasıl dışı (Not 1):</b> yere konan boy aynası 70.09, kasa 83.03, buzdolabı 84.18, dikiş makinesi mobilyası 84.52, bilardo masası 95.04, oyuncak mobilya 95.03, tripod 96.20, saat Fasıl 91."
+ ],
+ "karistirilan": [
+  [
+   "Dişçilik cihazlarıyla birleşik dişçi koltuğu",
+   "90.18",
+   "Not 1; cihazsız dişçi koltuğu 94.02"
+  ],
+  [
+   "Elektrikli çelenk (Noel ağacı ışıkları)",
+   "94.05",
+   "Fasıl 95 Not 1(u); 95.04 / 95.05 değil"
+  ],
+  [
+   "Radyoloji masası",
+   "90.22",
+   "94.02 hariç tutar; ameliyat masası 94.02"
+  ]
+ ]
+}

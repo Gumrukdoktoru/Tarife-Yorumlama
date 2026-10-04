@@ -1,0 +1,98 @@
+{
+ "tur": "hap",
+ "fasil": 90,
+ "kademe": "A",
+ "sinavda": "Son 5 sınavda 5 kez konu, 5 kez seçenek: “aynı 4’lü pozisyonda olmayan” taraması (termometre-barometre 90.25 ≠ mikrometre 90.17), su terazisi 90.31, kabartma dünya haritası 90.23, dişçi tornası fırçası 90.18, ortopedik ayakkabı 90.21. Seçeneklerde: kontakt lens, sinema kamerası, kalp pili, takometre aynı fasıl; dişçilikte kullanılan alçı 25.20.",
+ "pozisyonlar": [
+  [
+   "90.01",
+   "Monte edilmemiş işlenmiş optik eleman; kontakt lens"
+  ],
+  [
+   "90.04",
+   "Gözlükler: düzeltici, güneş, koruyucu"
+  ],
+  [
+   "90.17",
+   "Çizim-hesap aleti; elde uzunluk ölçüsü (mikrometre)"
+  ],
+  [
+   "90.18",
+   "Tıp, dişçilik, veteriner aletleri; dişçi tornası fırçası"
+  ],
+  [
+   "90.21",
+   "Ortopedi, protez, işitme cihazı, kalp pili"
+  ],
+  [
+   "90.23",
+   "Yalnız teşhir modeli; kabartma harita ve küre"
+  ],
+  [
+   "90.25",
+   "Termometre, barometre, higrometre, hidrometre"
+  ],
+  [
+   "90.26",
+   "Akış, seviye, basınç: debimetre, manometre, kalorimetre"
+  ],
+  [
+   "90.27",
+   "Analiz, ışık-ses ölçümü: spektrometre, pozometre, mikrotom"
+  ],
+  [
+   "90.29",
+   "Devir-hız: taksimetre, pedometre, takometre, stroboskop"
+  ],
+  [
+   "90.31",
+   "Başka yerde olmayan ölçü aleti; su terazisi"
+  ],
+  [
+   "90.32",
+   "Otomatik ayar-kontrol: termostat, manostat"
+  ]
+ ],
+ "hap": [
+  "<b>Not 1 hariçleri:</b> dijital kamera 85.25; radar, GPS, telsiz uzaktan kumanda 85.26; optik işlenmemiş ayna 70.09; cam laboratuvar eşyası 70.17; elastik bandaj Bölüm XI; tripod 96.20; oyuncak Fasıl 95.",
+  "<b>Not 2 (parça):</b> kendisi Fasıl 84, 85, 90 veya 91’de pozisyonu olan parça orada; belirli alete özgü parça o aletin pozisyonunda; diğer bütün parçalar 90.33.",
+  "<b>Optik eleman zinciri:</b> optik tarzda işlenmemiş cam Fasıl 70 → işlenmiş, monte edilmemiş 90.01 → alete monte 90.02 → kendi başına alet (büyüteç, kapı gözü) 90.13.",
+  "<b>Not 4–5:</b> silah nişan dürbünü, tank ve denizaltı periskobu 90.05 değil 90.13; hem 90.13 hem 90.31’e uyan optik ölçü-kontrol aleti 90.31.",
+  "<b>Not 6 (ortopedik ayakkabı):</b> ölçüye göre yapılmış ya da seri üretilip çift değil tek sunulan ve iki ayağa eşit uyan ayakkabı veya iç taban 90.21; değilse Fasıl 64.",
+  "<b>Not 7 (90.32):</b> ölçtüğü değeri istenen değerle karşılaştırıp otomatik düzelten ve orada tutan alet (termostat, manostat). Yalnız ölçen termometre 90.25, manometre 90.26.",
+  "<b>Eşikler:</b> hassasiyeti 5 cg veya daha iyi terazi 90.16, daha az hassası 84.23; lazer 1 nm–1 mm dalga boyu; elde kullanılan uzunluk ölçüsü 90.17, ayağa sabitlenmişse 90.31.",
+  "<b>Tıpta kullanılan her alet 90.18 değil:</b> klinik termometre 90.25, tahlil aleti 90.27, X-ışını cihazı 90.22, gözlük 90.04, tekerlekli sandalye 87.13, hastane mobilyası 94.02."
+ ],
+ "karistirilan": [
+  [
+   "Dijital fotoğraf makinası, video kamera",
+   "85.25",
+   "Not 1(h); film esaslı fotoğraf makinası 90.06"
+  ],
+  [
+   "Telsiz uzaktan kumanda; GPS alıcısı",
+   "85.26",
+   "Not 1(h); 90.14 veya 90.15 değil"
+  ],
+  [
+   "Dişçilikte kullanılan alçı",
+   "25.20",
+   "Alçı esaslı dişçilik müstahzarı 34.07; 90.21 değil"
+  ],
+  [
+   "Dişçi tornasına mahsus fırça",
+   "90.18",
+   "Tıbbi-dişçilik fırçası 96.03’e girmez"
+  ],
+  [
+   "Basılı kabartma (rölyef) dünya haritası",
+   "90.23",
+   "Basılı olsa da 49.05 değil; teşhir modeli"
+  ],
+  [
+   "Tek kullanımlık cerrah veya toz maskesi",
+   "63.07",
+   "Mekanik parçası, değiştirilebilir filtresi yok; 90.20 değil"
+  ]
+ ]
+}

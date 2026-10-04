@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 60,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı; yalnız “kullanılmış giyim eşyası hangi fasılda” sorusunda Fasıl 60 yanlış seçenekti (doğrusu 63).",
+ "pozisyonlar": [
+  [
+   "60.01",
+   "Tüylü örme (kadife, peluş, taklit havlu)"
+  ],
+  [
+   "60.02",
+   "Eni ≤30 cm, elastomer/kauçuk iplik ≥%5"
+  ],
+  [
+   "60.04",
+   "Eni 30 cm’yi aşan, elastomer ≥%5"
+  ],
+  [
+   "60.06",
+   "Diğer örme veya kroşe mensucat (artık)"
+  ]
+ ],
+ "hap": [
+  "<b>Yalnız parça mensucat:</b> örme kumaş top veya basitçe kare-dikdörtgen kesilmiş halde 60’ta; kenarı bastırılmış, şekilli örülmüş eşya hazır eşyadır → 61–63 (Bölüm XI Not 7–8).",
+  "<b>Fasıl 60 Not 1–3:</b> tığ işi dantel 58.04, örme etiket 58.07, kaplanmış örme Fasıl 59 (tüylü ise 60.01’de kalır); dikiş-trikotaj eşyası “örme” sayılır.",
+  "<b>Elastomerik iplik (Bölüm XI Not 13):</b> üç katına gerilince kopmayan, iki katına gerilip bırakılınca 5 dakikada en çok 1,5 katına dönen sentetik filament; tekstüre iplik hariç."
+ ],
+ "karistirilan": [
+  [
+   "Kullanıma hazır örme seyahat battaniyesi",
+   "63.01",
+   "Hazır eşya; 60.05 parça mensucat değil"
+  ],
+  [
+   "Dokunmuş kadife, peluş",
+   "58.01",
+   "Dokuma; örme tüylü mensucat 60.01"
+  ]
+ ]
+}

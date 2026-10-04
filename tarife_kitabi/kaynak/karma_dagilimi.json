@@ -1,0 +1,1037 @@
+{
+ "kademe": {
+  "0": "A",
+  "1": "C",
+  "2": "C",
+  "3": "B",
+  "4": "A",
+  "5": "B",
+  "6": "C",
+  "7": "C",
+  "8": "C",
+  "9": "A",
+  "10": "C",
+  "11": "C",
+  "12": "B",
+  "13": "C",
+  "14": "C",
+  "15": "C",
+  "16": "B",
+  "17": "B",
+  "18": "C",
+  "19": "B",
+  "20": "C",
+  "21": "B",
+  "22": "B",
+  "23": "C",
+  "24": "B",
+  "25": "B",
+  "26": "C",
+  "27": "B",
+  "28": "C",
+  "29": "C",
+  "30": "A",
+  "31": "C",
+  "32": "C",
+  "33": "A",
+  "34": "B",
+  "35": "B",
+  "36": "C",
+  "37": "C",
+  "38": "B",
+  "39": "A",
+  "40": "B",
+  "41": "C",
+  "42": "A",
+  "43": "C",
+  "44": "A",
+  "45": "C",
+  "46": "C",
+  "47": "C",
+  "48": "A",
+  "49": "B",
+  "50": "C",
+  "51": "C",
+  "52": "B",
+  "53": "C",
+  "54": "C",
+  "55": "C",
+  "56": "C",
+  "57": "C",
+  "58": "C",
+  "59": "B",
+  "60": "C",
+  "61": "C",
+  "62": "B",
+  "63": "B",
+  "64": "B",
+  "65": "C",
+  "66": "C",
+  "67": "C",
+  "68": "C",
+  "69": "C",
+  "70": "B",
+  "71": "B",
+  "72": "C",
+  "73": "B",
+  "74": "C",
+  "75": "C",
+  "76": "C",
+  "77": "C",
+  "78": "C",
+  "79": "C",
+  "80": "C",
+  "81": "C",
+  "82": "B",
+  "83": "B",
+  "84": "A",
+  "85": "A",
+  "86": "C",
+  "87": "A",
+  "88": "B",
+  "89": "C",
+  "90": "A",
+  "91": "C",
+  "92": "C",
+  "93": "B",
+  "94": "B",
+  "95": "A",
+  "96": "A",
+  "97": "B"
+ },
+ "agirlik": {
+  "0": 32,
+  "1": 2,
+  "2": 2,
+  "3": 4,
+  "4": 8,
+  "5": 6,
+  "6": 0,
+  "7": 1,
+  "8": 2,
+  "9": 8,
+  "10": 1,
+  "11": 3,
+  "12": 5,
+  "13": 1,
+  "14": 0,
+  "15": 3,
+  "16": 5,
+  "17": 5,
+  "18": 1,
+  "19": 6,
+  "20": 3,
+  "21": 5,
+  "22": 5,
+  "23": 2,
+  "24": 6,
+  "25": 4,
+  "26": 0,
+  "27": 5,
+  "28": 2,
+  "29": 2,
+  "30": 10,
+  "31": 1,
+  "32": 0,
+  "33": 9,
+  "34": 6,
+  "35": 4,
+  "36": 0,
+  "37": 0,
+  "38": 5,
+  "39": 14,
+  "40": 5,
+  "41": 3,
+  "42": 11,
+  "43": 2,
+  "44": 8,
+  "45": 2,
+  "46": 2,
+  "47": 2,
+  "48": 10,
+  "49": 4,
+  "50": 0,
+  "51": 2,
+  "52": 5,
+  "53": 2,
+  "54": 1,
+  "55": 1,
+  "56": 1,
+  "57": 0,
+  "58": 2,
+  "59": 4,
+  "60": 1,
+  "61": 3,
+  "62": 4,
+  "63": 7,
+  "64": 7,
+  "65": 2,
+  "66": 3,
+  "67": 0,
+  "68": 3,
+  "69": 0,
+  "70": 7,
+  "71": 6,
+  "72": 2,
+  "73": 5,
+  "74": 2,
+  "75": 0,
+  "76": 1,
+  "77": 0,
+  "78": 0,
+  "79": 0,
+  "80": 0,
+  "81": 0,
+  "82": 4,
+  "83": 4,
+  "84": 36,
+  "85": 33,
+  "86": 2,
+  "87": 13,
+  "88": 4,
+  "89": 3,
+  "90": 15,
+  "91": 2,
+  "92": 3,
+  "93": 6,
+  "94": 7,
+  "95": 8,
+  "96": 10,
+  "97": 4
+ },
+ "tip_kota": {
+  "Fasıl notu · Tanım/Eşik": 19,
+  "Farklı/aynı pozisyon veya fasıl": 21,
+  "Genel Yorum Kuralı": 27,
+  "Olumsuz teşhis": 41,
+  "Sıralama": 5,
+  "Eşya → 4’lü pozisyon": 46,
+  "Fasıl/Bölüm bulma": 12,
+  "Tarife yapısı": 12,
+  "Pozisyon → eşya": 9,
+  "Senaryo": 4,
+  "Çoktan-çoğa / Eşleştirme": 4
+ },
+ "testler": {
+  "1": [
+   [
+    4,
+    "Farklı/aynı pozisyon veya fasıl"
+   ],
+   [
+    9,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    19,
+    "Olumsuz teşhis"
+   ],
+   [
+    25,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    39,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    40,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    55,
+    "Çoktan-çoğa / Eşleştirme"
+   ],
+   [
+    68,
+    "Olumsuz teşhis"
+   ],
+   [
+    71,
+    "Pozisyon → eşya"
+   ],
+   [
+    72,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    73,
+    "Farklı/aynı pozisyon veya fasıl"
+   ],
+   [
+    84,
+    "Sıralama"
+   ],
+   [
+    85,
+    "Fasıl notu · Tanım/Eşik"
+   ],
+   [
+    88,
+    "Olumsuz teşhis"
+   ],
+   [
+    89,
+    "Fasıl/Bölüm bulma"
+   ],
+   [
+    96,
+    "Olumsuz teşhis"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "Genel",
+    "Tarife yapısı"
+   ]
+  ],
+  "2": [
+   [
+    3,
+    "Olumsuz teşhis"
+   ],
+   [
+    7,
+    "Farklı/aynı pozisyon veya fasıl"
+   ],
+   [
+    9,
+    "Olumsuz teşhis"
+   ],
+   [
+    16,
+    "Olumsuz teşhis"
+   ],
+   [
+    33,
+    "Farklı/aynı pozisyon veya fasıl"
+   ],
+   [
+    38,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    44,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    51,
+    "Fasıl/Bölüm bulma"
+   ],
+   [
+    59,
+    "Fasıl notu · Tanım/Eşik"
+   ],
+   [
+    62,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    74,
+    "Fasıl/Bölüm bulma"
+   ],
+   [
+    84,
+    "Fasıl notu · Tanım/Eşik"
+   ],
+   [
+    85,
+    "Olumsuz teşhis"
+   ],
+   [
+    87,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    92,
+    "Pozisyon → eşya"
+   ],
+   [
+    93,
+    "Farklı/aynı pozisyon veya fasıl"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "Genel",
+    "Tarife yapısı"
+   ],
+   [
+    "Genel",
+    "Tarife yapısı"
+   ]
+  ],
+  "3": [
+   [
+    3,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    9,
+    "Farklı/aynı pozisyon veya fasıl"
+   ],
+   [
+    15,
+    "Olumsuz teşhis"
+   ],
+   [
+    21,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    29,
+    "Çoktan-çoğa / Eşleştirme"
+   ],
+   [
+    34,
+    "Olumsuz teşhis"
+   ],
+   [
+    39,
+    "Fasıl notu · Tanım/Eşik"
+   ],
+   [
+    53,
+    "Pozisyon → eşya"
+   ],
+   [
+    62,
+    "Fasıl/Bölüm bulma"
+   ],
+   [
+    63,
+    "Farklı/aynı pozisyon veya fasıl"
+   ],
+   [
+    64,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    73,
+    "Olumsuz teşhis"
+   ],
+   [
+    84,
+    "Olumsuz teşhis"
+   ],
+   [
+    85,
+    "Sıralama"
+   ],
+   [
+    86,
+    "Senaryo"
+   ],
+   [
+    96,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "Genel",
+    "Tarife yapısı"
+   ]
+  ],
+  "4": [
+   [
+    27,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    33,
+    "Olumsuz teşhis"
+   ],
+   [
+    38,
+    "Olumsuz teşhis"
+   ],
+   [
+    41,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    46,
+    "Sıralama"
+   ],
+   [
+    48,
+    "Fasıl notu · Tanım/Eşik"
+   ],
+   [
+    59,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    61,
+    "Olumsuz teşhis"
+   ],
+   [
+    68,
+    "Farklı/aynı pozisyon veya fasıl"
+   ],
+   [
+    71,
+    "Fasıl notu · Tanım/Eşik"
+   ],
+   [
+    76,
+    "Pozisyon → eşya"
+   ],
+   [
+    84,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    85,
+    "Fasıl/Bölüm bulma"
+   ],
+   [
+    87,
+    "Farklı/aynı pozisyon veya fasıl"
+   ],
+   [
+    93,
+    "Olumsuz teşhis"
+   ],
+   [
+    94,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "Genel",
+    "Tarife yapısı"
+   ]
+  ],
+  "5": [
+   [
+    1,
+    "Olumsuz teşhis"
+   ],
+   [
+    4,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    21,
+    "Olumsuz teşhis"
+   ],
+   [
+    24,
+    "Olumsuz teşhis"
+   ],
+   [
+    47,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    48,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    52,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    54,
+    "Senaryo"
+   ],
+   [
+    61,
+    "Farklı/aynı pozisyon veya fasıl"
+   ],
+   [
+    66,
+    "Fasıl notu · Tanım/Eşik"
+   ],
+   [
+    70,
+    "Fasıl/Bölüm bulma"
+   ],
+   [
+    82,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    83,
+    "Pozisyon → eşya"
+   ],
+   [
+    84,
+    "Farklı/aynı pozisyon veya fasıl"
+   ],
+   [
+    87,
+    "Olumsuz teşhis"
+   ],
+   [
+    90,
+    "Fasıl notu · Tanım/Eşik"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "Genel",
+    "Tarife yapısı"
+   ],
+   [
+    "Genel",
+    "Tarife yapısı"
+   ]
+  ],
+  "6": [
+   [
+    5,
+    "Olumsuz teşhis"
+   ],
+   [
+    15,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    16,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    25,
+    "Olumsuz teşhis"
+   ],
+   [
+    33,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    43,
+    "Farklı/aynı pozisyon veya fasıl"
+   ],
+   [
+    45,
+    "Olumsuz teşhis"
+   ],
+   [
+    48,
+    "Olumsuz teşhis"
+   ],
+   [
+    52,
+    "Fasıl/Bölüm bulma"
+   ],
+   [
+    60,
+    "Olumsuz teşhis"
+   ],
+   [
+    70,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    84,
+    "Senaryo"
+   ],
+   [
+    87,
+    "Fasıl notu · Tanım/Eşik"
+   ],
+   [
+    90,
+    "Farklı/aynı pozisyon veya fasıl"
+   ],
+   [
+    92,
+    "Fasıl notu · Tanım/Eşik"
+   ],
+   [
+    97,
+    "Çoktan-çoğa / Eşleştirme"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "Genel",
+    "Tarife yapısı"
+   ]
+  ],
+  "7": [
+   [
+    8,
+    "Olumsuz teşhis"
+   ],
+   [
+    12,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    17,
+    "Olumsuz teşhis"
+   ],
+   [
+    19,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    20,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    30,
+    "Olumsuz teşhis"
+   ],
+   [
+    31,
+    "Fasıl notu · Tanım/Eşik"
+   ],
+   [
+    42,
+    "Fasıl notu · Tanım/Eşik"
+   ],
+   [
+    64,
+    "Olumsuz teşhis"
+   ],
+   [
+    66,
+    "Fasıl/Bölüm bulma"
+   ],
+   [
+    83,
+    "Fasıl notu · Tanım/Eşik"
+   ],
+   [
+    84,
+    "Pozisyon → eşya"
+   ],
+   [
+    88,
+    "Farklı/aynı pozisyon veya fasıl"
+   ],
+   [
+    90,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    91,
+    "Çoktan-çoğa / Eşleştirme"
+   ],
+   [
+    95,
+    "Farklı/aynı pozisyon veya fasıl"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "Genel",
+    "Tarife yapısı"
+   ]
+  ],
+  "8": [
+   [
+    2,
+    "Fasıl notu · Tanım/Eşik"
+   ],
+   [
+    10,
+    "Sıralama"
+   ],
+   [
+    11,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    22,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    27,
+    "Olumsuz teşhis"
+   ],
+   [
+    28,
+    "Senaryo"
+   ],
+   [
+    30,
+    "Fasıl notu · Tanım/Eşik"
+   ],
+   [
+    34,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    35,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    41,
+    "Farklı/aynı pozisyon veya fasıl"
+   ],
+   [
+    42,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    44,
+    "Farklı/aynı pozisyon veya fasıl"
+   ],
+   [
+    49,
+    "Olumsuz teşhis"
+   ],
+   [
+    84,
+    "Fasıl/Bölüm bulma"
+   ],
+   [
+    85,
+    "Pozisyon → eşya"
+   ],
+   [
+    90,
+    "Olumsuz teşhis"
+   ],
+   [
+    95,
+    "Olumsuz teşhis"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "Genel",
+    "Tarife yapısı"
+   ]
+  ],
+  "9": [
+   [
+    1,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    5,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    17,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    20,
+    "Olumsuz teşhis"
+   ],
+   [
+    22,
+    "Olumsuz teşhis"
+   ],
+   [
+    23,
+    "Pozisyon → eşya"
+   ],
+   [
+    30,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    35,
+    "Farklı/aynı pozisyon veya fasıl"
+   ],
+   [
+    39,
+    "Olumsuz teşhis"
+   ],
+   [
+    44,
+    "Olumsuz teşhis"
+   ],
+   [
+    49,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    56,
+    "Fasıl notu · Tanım/Eşik"
+   ],
+   [
+    65,
+    "Sıralama"
+   ],
+   [
+    85,
+    "Farklı/aynı pozisyon veya fasıl"
+   ],
+   [
+    94,
+    "Fasıl/Bölüm bulma"
+   ],
+   [
+    96,
+    "Fasıl notu · Tanım/Eşik"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "Genel",
+    "Tarife yapısı"
+   ]
+  ],
+  "10": [
+   [
+    4,
+    "Olumsuz teşhis"
+   ],
+   [
+    11,
+    "Olumsuz teşhis"
+   ],
+   [
+    12,
+    "Olumsuz teşhis"
+   ],
+   [
+    13,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    18,
+    "Fasıl/Bölüm bulma"
+   ],
+   [
+    24,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    39,
+    "Farklı/aynı pozisyon veya fasıl"
+   ],
+   [
+    40,
+    "Fasıl notu · Tanım/Eşik"
+   ],
+   [
+    42,
+    "Olumsuz teşhis"
+   ],
+   [
+    58,
+    "Farklı/aynı pozisyon veya fasıl"
+   ],
+   [
+    63,
+    "Fasıl notu · Tanım/Eşik"
+   ],
+   [
+    82,
+    "Fasıl/Bölüm bulma"
+   ],
+   [
+    85,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    89,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    95,
+    "Eşya → 4’lü pozisyon"
+   ],
+   [
+    97,
+    "Pozisyon → eşya"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "GYK",
+    "Genel Yorum Kuralı"
+   ],
+   [
+    "Genel",
+    "Tarife yapısı"
+   ]
+  ]
+ }
+}

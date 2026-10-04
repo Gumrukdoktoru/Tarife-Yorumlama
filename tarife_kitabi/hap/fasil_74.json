@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 74,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda 1 kez, Bölüm XV Not 9 üzerinden: çubuk (rulo halinde olmayan) ile tel (rulo halinde) arasındaki fark; bakırda bu ayrım 74.07 / 74.08’i belirler.",
+ "pozisyonlar": [
+  [
+   "74.03",
+   "Rafine bakır ve bakır alaşımları (işlenmemiş)"
+  ],
+  [
+   "74.07",
+   "Çubuk ve profiller (rulo halinde değil)"
+  ],
+  [
+   "74.08",
+   "Teller (rulo halinde içi dolu)"
+  ],
+  [
+   "74.15",
+   "Çivi, cıvata, somun; başı bakır çelik çivi"
+  ]
+ ],
+ "hap": [
+  "<b>Bakır ağırlıkça üstünse 74:</b> pirinç, bronz, nikel gümüşü, kupro-nikel bakır alaşımıdır. Rafine bakır: en az %99,85 bakır ya da tablo sınırları içinde en az %97,5 bakır (Not 1(a)).",
+  "<b>Levha–yaprak sınırı 0,15 mm:</b> kalını 74.09, incesi 74.10 (kaplama dahil, mesnet hariç ölçülür); alüminyumda sınır 0,2 mm.",
+  "<b>Birleşik pozisyonlar:</b> ev ve sağlık eşyası 74.18; depo, kap, zincir, yay, tel mensucat 74.19; izoleli bakır tel ve kablo 85.44."
+ ],
+ "karistirilan": [
+  [
+   "Başı bakır, gövdesi çelik çivi",
+   "74.15",
+   "Pozisyon metni ağırlık kuralından önce gelir; 73.17 değil"
+  ],
+  [
+   "Bakırdan eğilip bükülebilir boru",
+   "83.07",
+   "74.11 değil; Fasıl 83 eşyası metale bakmaz"
+  ]
+ ]
+}

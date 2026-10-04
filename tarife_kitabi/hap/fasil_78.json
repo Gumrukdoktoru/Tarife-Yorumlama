@@ -1,0 +1,31 @@
+{
+ "tur": "hap",
+ "fasil": 78,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı, seçeneklerde de yer almadı; Bölüm XV ortak kuralları (alaşım, karma eşya, Not 9 tanımları) burada da geçerlidir.",
+ "pozisyonlar": [
+  [
+   "78.01",
+   "İşlenmemiş kurşun; hurdadan eritilmiş külçe dahil"
+  ],
+  [
+   "78.04",
+   "Levha, sac, yaprak, şerit; toz ve pul"
+  ],
+  [
+   "78.06",
+   "Diğer: çubuk, tel, boru, bağlantı parçası"
+  ]
+ ],
+ "hap": [
+  "<b>Dört pozisyon:</b> işlenmemiş 78.01, hurda 78.02, yassı ürün ile toz-pul 78.04, geri kalan her şey 78.06; 78.03 ve 78.05 boş olduğundan çubuk, tel, boru 78.06’dadır.",
+  "<b>Fasıl dışı:</b> mühimmat saçması 93.06, kurşun mühür ve kapsül 83.09, eritici kaplı lehim çubuğu 83.11, kurşun cürufu ve külü 26.20; kalayı üstün lehim Fasıl 80."
+ ],
+ "karistirilan": [
+  [
+   "Kurşun levhadan asit tankı",
+   "78.06",
+   "Levhadan yapılmış eşya levha sayılmaz; 78.04 değil"
+  ]
+ ]
+}

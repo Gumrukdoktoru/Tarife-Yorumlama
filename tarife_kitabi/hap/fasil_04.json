@@ -1,0 +1,90 @@
+{
+ "tur": "hap",
+ "fasil": 4,
+ "kademe": "A",
+ "sinavda": "Son 5 sınavda 2 kez doğrudan, 4 kez seçeneklerde: yenilebilir kurutulmuş-tuzlu çekirge 04.10 (yenmeyen böcek 05.11); “hangisi 4. fasılda yer almaz” kalıbında alabalık yumurtası (Fasıl 3) ve kaplumbağa yumurtası (04.10); eşleştirmelerde suni bal 17.02, yumurta sarısı 04.08.",
+ "pozisyonlar": [
+  [
+   "04.01",
+   "Süt ve krema; konsantre edilmemiş, tatlandırılmamış"
+  ],
+  [
+   "04.02",
+   "Konsantre veya tatlandırılmış süt, krema; süt tozu"
+  ],
+  [
+   "04.03",
+   "Yoğurt, kefir, yayıkaltı; şekerli, meyveli olabilir"
+  ],
+  [
+   "04.04",
+   "Peyniraltı suyu; tabii süt bileşenlerinden ürünler"
+  ],
+  [
+   "04.05",
+   "Tereyağı, diğer süt yağları, sürülerek yenilen süt ürünü"
+  ],
+  [
+   "04.06",
+   "Peynir ve lor; kaplanmış peynir dahil"
+  ],
+  [
+   "04.07",
+   "Kabuklu kuş yumurtası; pişmiş, kuluçkalık dahil"
+  ],
+  [
+   "04.08",
+   "Kabuksuz yumurta ve yumurta sarısı"
+  ],
+  [
+   "04.09",
+   "Tabii bal; şeker veya başka madde katılmamış"
+  ],
+  [
+   "04.10",
+   "Yenilebilir böcek, kaplumbağa yumurtası, salangan yuvası"
+  ]
+ ],
+ "hap": [
+  "<b>Tereyağı (Not 3(a)):</b> yalnız sütten; süt yağı %80 veya fazla, %95’i geçmeyen; yağsız katı madde en fazla %2, su en fazla %16; ilave emülsifiye edici içermez.",
+  "<b>Sürülerek yenilen süt ürünü (Not 3(b)):</b> tek katı yağı süt yağı; süt yağı %39 veya fazla fakat %80’den az; yağ içinde su emülsiyonu → 04.05.",
+  "<b>Peyniraltı suyu peyniri (Not 4) → 04.06:</b> kuru maddede süt yağı %5 veya fazla; kuru madde %70–85; kalıplanmış veya kalıba getirilmeye müsait.",
+  "<b>Fasıl dışı (Not 5):</b> yenmeyen cansız böcek 05.11; kuru maddede %95’ten fazla laktozlu peyniraltı suyu ürünü 17.02; tabii bileşeni değiştirilmiş süt ürünü 19.01/21.06; albüminler 35.02.",
+  "<b>Yoğurt (Not 2):</b> şeker, meyve, kakao, çikolata, kahve, hububat içerebilir; katkı süt içeriğini ikame etmemeli ve yoğurt karakteri korunmalı → 04.03.",
+  "<b>Böcek (Not 6) → 04.10:</b> insan tüketimine uygun cansız böcek; taze, dondurulmuş, kurutulmuş, tütsülenmiş, tuzlanmış, salamura ya da unu. Başka şekilde hazırlanmışı genellikle Bölüm IV.",
+  "<b>Yumurtada ölçüt kabuk:</b> kabuklu (pişmiş olsa da) 04.07; kabuksuz ve sarısı 04.08; baharatlı yumurta ürünü 21.06. Balık yumurtası Fasıl 3, kaplumbağa yumurtası 04.10.",
+  "<b>Bal:</b> şeker veya başka madde katılmamış tabii bal 04.09; suni bal ve tabii balla karışımı 17.02."
+ ],
+ "karistirilan": [
+  [
+   "Diyabetik suni bal (tabii balla karışık)",
+   "17.02",
+   "Suni bal ve karışımı 04.09’a girmez"
+  ],
+  [
+   "Alabalık yumurtası",
+   "Fasıl 3",
+   "Fasıl 4 yalnız kuş ve kümes hayvanı yumurtası"
+  ],
+  [
+   "Yenmeyen cansız böcek",
+   "05.11",
+   "Not 5(a); insan tüketimine uygunsa 04.10"
+  ],
+  [
+   "Süt yağı yerine bitkisel yağlı süt ürünü",
+   "19.01",
+   "Not 5(c): tabii bileşen değiştirilmiş; ya da 21.06"
+  ],
+  [
+   "Kakao ile aromalandırılmış sütten içecek",
+   "22.02",
+   "04.02 dışı (açıklama notu); dondurma ise 21.05"
+  ],
+  [
+   "Yumurta beyazı (albümin)",
+   "35.02",
+   "04.08 yalnız kabuksuz yumurta ve sarısını kapsar"
+  ]
+ ]
+}

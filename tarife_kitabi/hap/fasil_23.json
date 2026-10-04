@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 23,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda 1 kez: “aynı bölüm” sorusunda şarap tortusu (23.07) ciklet ve tütünle birlikte Bölüm IV eşyası olarak geçti; başka seçenekte yer almadı.",
+ "pozisyonlar": [
+  [
+   "23.01",
+   "İnsana elverişsiz et-balık unları, pelletleri; kıkırdak"
+  ],
+  [
+   "23.02",
+   "Hububat kepeği ve değirmencilik kalıntıları"
+  ],
+  [
+   "23.07",
+   "Şarap tortusu; ham tartar"
+  ],
+  [
+   "23.09",
+   "Hayvan yemi müstahzarları: kedi-köpek maması, premiks"
+  ]
+ ],
+ "hap": [
+  "<b>Not 1:</b> ana maddenin esas özelliklerini kaybettirecek derecede işlenmiş, başka yerde yer almayan hayvan gıdası ürünleri 23.09’dadır.",
+  "<b>Kalıntının kaynağı:</b> nişasta-şeker-bira-damıtma artıkları 23.03 (melas 17.03); küspe: soya 23.04, yer fıstığı 23.05, diğer bitkisel yağlar 23.06.",
+  "<b>Kepek ve unlar:</b> Fasıl 11 Not 2(A) nişasta-kül şartını sağlamayan öğütme ürünü 23.02; insana uygun et unu 02.10, balık unu 03.09."
+ ],
+ "karistirilan": [
+  [
+   "Etli kedi-köpek maması, köpek bisküvisi",
+   "23.09",
+   "Hayvan için hazırlanmış; Fasıl 16 veya 19 değil"
+  ],
+  [
+   "Krem tartar",
+   "29.18",
+   "Ham tartar 23.07; krem tartar hariç"
+  ]
+ ]
+}

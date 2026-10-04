@@ -1,0 +1,33 @@
+{
+ "tur": "hap",
+ "fasil": 46,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda 1 kez, tarife yapısı sorusunda: sepetçi-hasırcı eşyası (46.02) Bölüm IX’dadır, Bölüm X değil (Bölüm IX = Fasıl 44–46).",
+ "pozisyonlar": [
+  [
+   "46.01",
+   "Örgüler; levha halinde hasır, paspas, paravan"
+  ],
+  [
+   "46.02",
+   "Sepetçi eşyası (sepet, örgü çanta); lufadan eşya"
+  ]
+ ],
+ "hap": [
+  "<b>Örülmeye elverişli madde (Not 1):</b> hasır, söğüt, bambu, hint kamışı, saz, ağaç ve bitkisel şeritler, eğrilmemiş tabii lif, plastik monofil-şerit, kağıt şerit. Deri, keçe, insan saçı, at kılı, iplik değil.",
+  "<b>Not 2 hariçleri:</b> duvar kaplaması 48.14, sicim-halat 56.07 (örülmüş olsa da), ayakkabı 64, başlık 65, sepetçi eşyasından taşıt gövdesi 87, mobilya-lamba 94.",
+  "<b>Ham ve ince madde:</b> işlenmemiş bambu, rattan, söğüt 14.01; kesiti 1 mm’yi geçmeyen monofil ve görünür eni 5 mm’yi aşmayan plastik şerit dokuma maddesidir (Fasıl 54)."
+ ],
+ "karistirilan": [
+  [
+   "Rattan koltuk, hasır sandalye",
+   "94.01",
+   "Not 2: mobilya her maddeden Fasıl 94"
+  ],
+  [
+   "Bambu kontrplak",
+   "44.12",
+   "Fasıl 44 Not 6: “ağaç” bambuyu da kapsar"
+  ]
+ ]
+}

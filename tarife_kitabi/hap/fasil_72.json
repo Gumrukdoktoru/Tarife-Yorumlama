@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 72,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda 2 kez: Bölüm XV Not 9’a göre çubuk ile tel arasındaki farkın rulo halinde olup olmama olduğu ve 72.08 yassı ürünlerinin genişlik, kalınlık, rulo, karbon ölçütleriyle alt pozisyon tablosundan ayrıştırılması.",
+ "pozisyonlar": [
+  [
+   "72.01",
+   "Pik demir: %2’den fazla karbon, dövülemez"
+  ],
+  [
+   "72.08",
+   "Alaşımsız yassı, ≥ 600 mm, sıcak haddeli, kaplamasız"
+  ],
+  [
+   "72.13",
+   "Filmaşin: sıcak haddelenmiş, düzensiz kangal"
+  ],
+  [
+   "72.17",
+   "Tel: soğuk elde edilmiş, kangal halinde"
+  ]
+ ],
+ "hap": [
+  "<b>Bölüm XV Not 9 (74–76, 78–81):</b> çubuk: rulo olmayan içi dolu ürün; tel: rulo halinde içi dolu ürün; levhada kalınlık ≤ genişliğin onda biri; profil: diğer sabit kesitli ürün.",
+  "<b>Genel kullanıma mahsus aksam (Bölüm XV Not 2):</b> 73.07, 73.12, 73.15, 73.17, 73.18 eşyası, yaylar (saat zembereği hariç), 83.01, 83.02, 83.08, 83.10 ve 83.06 çerçeve-aynaları; makine-taşıt parçası sayılmaz.",
+  "<b>Alaşım ve karma eşya (Not 5, 7):</b> ağırlıkça üstün metal belirler; demir-çelik tek metal, alaşım kendi metali sayılır (pirinç = bakır). <b>Paslanmaz çelik:</b> krom ≥ %10,5 ve karbon ≤ %1,2."
+ ],
+ "karistirilan": [
+  [
+   "Kaynaklı profil, palplanş",
+   "73.01",
+   "Fasıl 72 Not 1(n): profil değil, Fasıl 73"
+  ],
+  [
+   "Otomobil için çelik yay",
+   "73.20",
+   "Genel kullanıma mahsus aksam; 87.08 değil"
+  ]
+ ]
+}

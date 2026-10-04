@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 31,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda yalnız fasıl eşleştirmesinde: “Gübre 31. fasılda yer alır” doğru ifade olarak verildi; tarımda kullanılan turbun Fasıl 27’de olduğu ayrıca soruldu.",
+ "pozisyonlar": [
+  [
+   "31.02",
+   "Azotlu: üre, amonyum nitrat (Not 2 listesi)"
+  ],
+  [
+   "31.03",
+   "Fosfatlı: süperfosfat, Thomas cürufu, kalsine fosfat"
+  ],
+  [
+   "31.04",
+   "Potaslı: potasyum klorür ve sülfat, karnalit"
+  ],
+  [
+   "31.05",
+   "NPK, MAP, DAP; tablet, ≤ 10 kg ambalaj"
+  ]
+ ],
+ "hap": [
+  "<b>Kapalı listeler (Not 2–4):</b> 31.02–31.04 yalnız sayılan ürünleri kapsar ve bunlar gübre olarak kullanılmasa da buradadır. Listede olmayan bileşik gübre olsa da Fasıl 28’dedir (potasyum nitrat 28.34).",
+  "<b>31.05:</b> N, P, K’dan ikisini veya üçünü içerenler, MAP ve DAP (saf olsa da), organik + kimyasal karışımlar; tablet halinde veya brüt ağırlığı 10 kg’ı geçmeyen ambalajdaki her fasıl ürünü.",
+  "<b>Islah maddeleri fasıl dışı:</b> kireç 25.22, bahçe ve bitkisel toprak 25.30, turb 27.03 (tarımda kullanılsa da); kalsine edilmemiş tabii fosfat 25.10, hayvan kanı 05.11."
+ ],
+ "karistirilan": [
+  [
+   "Tarımda kullanılan turb",
+   "27.03",
+   "Islah maddesi; gübre değil, Fasıl 31 dışı"
+  ],
+  [
+   "Tek başına amonyum klorür",
+   "28.27",
+   "Not 2 listesinde yok; gübre karışımı ise 31.02"
+  ]
+ ]
+}

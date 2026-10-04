@@ -1,0 +1,56 @@
+{
+ "tur": "hap",
+ "fasil": 40,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 1 soruda konu, 3 soruda seçenek: “hangisi farklı fasılda” kalıbında tabii, bütadien, rejenere kauçuk ve çıkıl (Fasıl 40) ≠ silikon (39.10). 40.16, cam silici (85.12) ve conta takımı (84.84) sorularında çeldirici; silgi (40.16) sıralama sorusunda geçti.",
+ "pozisyonlar": [
+  [
+   "40.01",
+   "Tabii kauçuk, balata, güta-perka, çıkıl"
+  ],
+  [
+   "40.02",
+   "Sentetik kauçuk (Not 4 testi); taklit kauçuk"
+  ],
+  [
+   "40.11",
+   "Kauçuktan yeni dış lastikler"
+  ],
+  [
+   "40.15",
+   "Giyim eşyası; cerrahi dahil her tür eldiven"
+  ],
+  [
+   "40.16",
+   "Diğer: conta, silgi, paspas, şişirilebilir eşya"
+  ],
+  [
+   "40.17",
+   "Sert kauçuk (ebonit) her şekliyle, döküntüsü dahil"
+  ]
+ ],
+ "hap": [
+  "<b>Kauçuk (Not 1):</b> tabii kauçuk, balata, güta-perka, guayül, çıkıl ve benzeri tabii sakızlar, sentetik kauçuk, yağlardan taklit kauçuk ve rejenereleri; vulkanize veya sert olsun olmasın.",
+  "<b>Sentetik kauçuk testi (Not 4):</b> 18–29 °C’de kopmadan 3 kat uzar, 2 kat uzatılınca 5 dakikada 1,5 kata döner. Geçemeyen elastomer Fasıl 39’dadır; tiyoplastlar testsiz kauçuktur.",
+  "<b>Not 2 hariçleri:</b> Bölüm XI, ayakkabı 64, başlık 65, sert kauçuktan makine aksamı XVI, Fasıl 90, 92, 94, 96 ve Fasıl 95 (spor eldiveni ile 40.11–40.13 eşyası hariç).",
+  "<b>Eşikler:</b> kesiti 5 mm’yi geçen vulkanize iplik 40.08, geçmeyen 40.07 (Not 7). Sert kauçuk: 100 birim kauçuğa 15 birimden fazla birleşik kükürt → 40.17.",
+  "<b>Lastikler:</b> yeni dış lastik 40.11; sırt geçirilmiş-kullanılmış lastik, dolgu lastiği, sırt ve kolan 40.12; iç lastik 40.13. Kesinlikle kullanılamaz lastik döküntüsü 40.04."
+ ],
+ "karistirilan": [
+  [
+   "Silikon elastomeri",
+   "39.10",
+   "Not 4 testine uymaz; kauçuklardan farklı fasıl"
+  ],
+  [
+   "Elektrik motorlu cam silici",
+   "85.12",
+   "Pozisyon metninde adıyla geçer; 40.16 ve 87.08 değil"
+  ],
+  [
+   "Kauçuk, plastik, çelik contalar poşette",
+   "84.84",
+   "Farklı maddeden conta takımı; 40.16 değil"
+  ]
+ ]
+}

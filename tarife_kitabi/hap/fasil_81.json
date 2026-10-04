@@ -1,0 +1,35 @@
+{
+ "tur": "hap",
+ "fasil": 81,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı; ancak “platin tabirine girmeyen” sorularının doğru cevabı olan berilyum ve kadmiyum bu fasılda (81.12) yer alan adi metallerdir.",
+ "pozisyonlar": [
+  [
+   "81.04",
+   "Magnezyum ve eşyası (hurda, toz dahil)"
+  ],
+  [
+   "81.08",
+   "Titanyum ve eşyası"
+  ],
+  [
+   "81.12",
+   "Berilyum, krom, kadmiyum, vanadyum vb. ve eşyası"
+  ],
+  [
+   "81.13",
+   "Sermetler ve eşyası"
+  ]
+ ],
+ "hap": [
+  "<b>Her metale tek pozisyon:</b> tungsten 81.01, molibden 81.02, tantal 81.03, magnezyum 81.04, kobalt 81.05, bizmut 81.06, titanyum 81.08, zirkonyum 81.09, antimon 81.10, manganez 81.11; 81.07 boş.",
+  "<b>Fasıl dışı:</b> ferro-alyajlar (ferro-tungsten, ferro-titan) 72.02; listede olmayan metaller (cıva, sodyum) Fasıl 28; monte edilmemiş sermet uç 82.09."
+ ],
+ "karistirilan": [
+  [
+   "Toz halinde tungsten karbür",
+   "28.49",
+   "Karbür metal değil; sinterlenmiş uç 82.09"
+  ]
+ ]
+}

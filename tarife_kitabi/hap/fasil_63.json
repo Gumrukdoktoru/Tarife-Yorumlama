@@ -1,0 +1,56 @@
+{
+ "tur": "hap",
+ "fasil": 63,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 2 kez: kullanılmış giyim eşyası Fasıl 63 (63.09; çeldirici 60–62) ve “63.07’de sınıflandırılamaz” kalıbında bebek bezi (96.19); maske, toz-yer bezi, cankurtaran yeleği 63.07’dir. Kamp çadırı (63.06) “aynı fasıl” sorusunda çeldiriciydi.",
+ "pozisyonlar": [
+  [
+   "63.01",
+   "Battaniye ve diz (seyahat) battaniyesi"
+  ],
+  [
+   "63.02",
+   "Yatak çarşafı, masa örtüsü, havlu, mutfak bezi"
+  ],
+  [
+   "63.05",
+   "Ambalaj torba ve çuvalları (dökme yük torbası dahil)"
+  ],
+  [
+   "63.06",
+   "Çadır, tente, dış stor, yelken, kamp eşyası"
+  ],
+  [
+   "63.07",
+   "Diğer hazır eşya: yer-toz bezi, maske, cankurtaran yeleği"
+  ],
+  [
+   "63.09",
+   "Kullanılmış giyim: kullanım izi + dökme/balya"
+  ]
+ ],
+ "hap": [
+  "<b>63.09 (Not 3):</b> fazla kullanım izi ve dökme ya da balya-çuval ambalaj birlikte aranır; liste kapalı: giysi-aksesuar, battaniye, ev tekstili, ayakkabı, başlık. Halı, kilim, 94.04 eşyası hariç.",
+  "<b>I. tali fasıl (Not 1–2):</b> 63.01–63.07 her mensucattan (örme, keçe, dokunmamış dahil) hazır eşyadır; 56–62. fasıl eşyası ve 63.09 eşyası buraya girmez.",
+  "<b>Fasıl 94’e kaçanlar:</b> yorgan, kapitone örtü, uyku torbası, içi doldurulmuş yastık-minder 94.04; abajur 94.05. Battaniye 63.01, minder kılıfı 63.04.",
+  "<b>Bezler:</b> havlu, tabak kurulama ve cam bezi 63.02; kaba yer, toz, bulaşık bezi 63.07; deterjan veya cila emdirilmişse 34.01 / 34.05.",
+  "<b>63.08 takımı:</b> en az bir parça dokunmuş mensucat + iplik, perakende; halı, kilim, işleme yapımı için. Kullanıma hazır masa örtüsü veya giysi yapım takımı girmez."
+ ],
+ "karistirilan": [
+  [
+   "Tek kullanımlık bebek bezi",
+   "96.19",
+   "Bölüm XI Not 1(u); 63.07 değil"
+  ],
+  [
+   "Tekstil yüzlü tekerlekli valiz, sırt çantası",
+   "42.02",
+   "Bölüm XI Not 1(l); 63.05–63.07 değil"
+  ],
+  [
+   "Çocuk oyun çadırı",
+   "95.03",
+   "Oyuncak; kamp çadırı 63.06"
+  ]
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 53,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı; çeldirici olarak çıktı: “pamuk 53. fasılda yer alır” yanlış ifadesi ve 52. fasıl sorusunda “keten döküntüleri” seçeneği (53.01).",
+ "pozisyonlar": [
+  [
+   "53.01",
+   "Keten lifi, kıtık ve döküntüleri (iplik değil)"
+  ],
+  [
+   "53.02",
+   "Kendir: yalnız Cannabis sativa L."
+  ],
+  [
+   "53.03",
+   "Jüt, kenaf ve diğer iç kabuk lifleri"
+  ],
+  [
+   "53.05",
+   "Koko, abaka, rami, sisal ve diğer bitkisel lifler"
+  ]
+ ],
+ "hap": [
+  "<b>Zincir:</b> lif 53.01–53.05 → iplik (keten 53.06, jüt 53.07, kendir-koko-kağıt 53.08) → kumaş (keten 53.09, jüt 53.10, diğer-kağıt 53.11). Fasıl notu yoktur.",
+  "<b>Adına aldanma:</b> Manila kendiri (abaka) 53.05, Hint/Sunn kendiri 53.03; Yeni Zelanda keteni 53.05; rami çift çenekli olsa da 53.05.",
+  "<b>Sicim eşiği (Not 3):</b> cilalı keten-kendir ≥1.429 desiteks, cilasız 20.000’i aşan; üç ve fazla katlı koko → 56.07. Kağıt ipliği (örülmemiş, metal takviyesiz) 53.08’de kalır."
+ ],
+ "karistirilan": [
+  [
+   "%40 pamuk, %35 keten, %25 jüt kumaş",
+   "53.09",
+   "Keten ve jüt aynı fasılda toplanır; 52.12 değil"
+  ],
+  [
+   "Pamuk lifi (çırçırlanmış)",
+   "52.01",
+   "Fasıl 52; Fasıl 53 pamuk dışı bitkisel liflerdir"
+  ]
+ ]
+}

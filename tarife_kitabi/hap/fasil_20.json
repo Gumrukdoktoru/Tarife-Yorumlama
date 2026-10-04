@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 20,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda 2 kez doğrudan, 1 kez seçenek: “hangi eşleştirme yanlış” kalıbında reçel 20.08 verildi (doğrusu 20.07); 20.08’in alt ayrım ölçütleri soruldu (ağırlık, şeker oranı, ilave alkol; Brix değeri 20.09 meyve sularının ölçütü).",
+ "pozisyonlar": [
+  [
+   "20.01",
+   "Sirke veya asetik asitle hazırlanmış sebze-meyve (turşu)"
+  ],
+  [
+   "20.07",
+   "Pişirilerek yapılmış reçel, jöle, marmelat, püre"
+  ],
+  [
+   "20.08",
+   "Diğer meyve hazırlıkları: kavrulmuş fındık, fıstık ezmesi"
+  ],
+  [
+   "20.09",
+   "Fermente edilmemiş meyve-sebze suları (alkol ≤ %0,5)"
+  ]
+ ],
+ "hap": [
+  "<b>Not 1 fasıl dışı:</b> Fasıl 7, 8, 11 işlemlerini görmüş ürünler, bitkisel yağlar, %20’den fazla etli-balıklı müstahzarlar (Fasıl 16), ekmekçilik ürünleri (19.05), homojenize bileşik müstahzarlar (21.04).",
+  "<b>Eşikler:</b> kuru maddesi %7 ve üzeri domates suyu 20.02 (Not 4); 20.09’da alkol hacimce %0,5’i geçmez (Not 6), 20 °C’de ölçülür.",
+  "<b>Not 2:</b> şekerleme (17.04) veya çikolata (18.06) haline getirilmiş meyve jölesi, ezmesi ve bademli şekerler 20.07–20.08 dışıdır. Şurupta meyve 20.08, şekerlenmiş meyve 20.06."
+ ],
+ "karistirilan": [
+  [
+   "Reçel",
+   "20.07",
+   "Pişirilerek hazırlanmış; 20.08 değil"
+  ],
+  [
+   "Domates ketçabı",
+   "21.03",
+   "Sos; domates salçası ise 20.02"
+  ]
+ ]
+}

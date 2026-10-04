@@ -1,0 +1,40 @@
+{
+ "tur": "hap",
+ "fasil": 65,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı; seçeneklerde plastik madenci başlığı (65.06, sıralama sorusu) ve mantardan şapka siperliği (başlık aksamı, Fasıl 45 değil) çeldirici olarak yer aldı.",
+ "pozisyonlar": [
+  [
+   "65.01",
+   "Keçe şapka taslakları, diskler, üstüvaneler (şekilsiz)"
+  ],
+  [
+   "65.05",
+   "Örme veya mensucattan şapkalar; her maddeden saç filesi"
+  ],
+  [
+   "65.06",
+   "Koruyucu başlıklar; kauçuk, plastik, deri, kürk, metal"
+  ],
+  [
+   "65.07",
+   "İç şerit, astar, kasnak, siperlik, çene kayışı"
+  ]
+ ],
+ "hap": [
+  "<b>Madde ve amaç önemsiz:</b> şerit/örgü şapka 65.04, örme-keçe-mensucat 65.05; diğerleri ve tüm koruyucu başlıklar (spor kaskı, mikrofonlu veya kulaklıklı olanlar dahil) 65.06; 65.03 boştur.",
+  "<b>Not 1 – fasıl dışı:</b> balyalı kullanılmış başlık 63.09, amyant başlık 68.12, oyuncak bebek ve karnaval şapkası Fasıl 95; ayrıca hayvan başlığı 42.01, peruk 67.04."
+ ],
+ "karistirilan": [
+  [
+   "Mantardan şapka siperliği",
+   "65.07",
+   "Başlık aksamı; Fasıl 45 başlıkları hariç tutar"
+  ],
+  [
+   "Bisiklet veya motosiklet kaskı",
+   "65.06",
+   "Koruyucu başlık; Fasıl 95 spor eşyası değil"
+  ]
+ ]
+}

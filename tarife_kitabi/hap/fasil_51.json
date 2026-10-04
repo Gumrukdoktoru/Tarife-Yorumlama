@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 51,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda 1 kez: Not 1(b) ince hayvan kılı listesi, “hangi hayvandan elde edilemez” kalıbıyla; cevap katır (lama, yak, alpaka, Tibet keçisi listede).",
+ "pozisyonlar": [
+  [
+   "51.01",
+   "Yün (karde-taranmamış): yalnız koyun-kuzu lifi"
+  ],
+  [
+   "51.02",
+   "İnce veya kaba hayvan kılı (karde-taranmamış)"
+  ],
+  [
+   "51.09",
+   "Perakende yün ve ince kıl ipliği"
+  ],
+  [
+   "51.10",
+   "Kaba kıl ve at kılı ipliği (perakende dahil)"
+  ]
+ ],
+ "hap": [
+  "<b>İnce hayvan kılı (Not 1(b)):</b> alpaka, lama, vikuna, deve, yak; Ankara, Tibet, Kaşmir vb. keçi (adi keçi hariç); tavşan, yabani tavşan, kunduz, Güney Amerika kunduzu, misk faresi. Katır, at yok.",
+  "<b>Yün = yalnız koyun-kuzu lifi.</b> Kaba kıl listede olmayan hayvanlarınkidir (adi keçi); fırça kılı 05.02, at kılı (yele-kuyruk) 05.11 fasıl dışı; at kılı ipliği 51.10, kumaşı 51.13.",
+  "<b>Perakende:</b> yün ve ince kıl ipliği 51.09; kaba kıl ve at kılı ipliği perakende olsa da 51.10. Yün ipliği hiçbir kalınlıkta sicim (56.07) sayılmaz."
+ ],
+ "karistirilan": [
+  [
+   "%40 sentetik, %35 taranmış yün, %25 ince kıl",
+   "51.12",
+   "Yün ve ince kıl toplanır (%60); 55.15 değil"
+  ],
+  [
+   "Ham at kılı (yele, kuyruk)",
+   "05.11",
+   "Bölüm XI dışı; at kılı ipliği 51.10"
+  ]
+ ]
+}

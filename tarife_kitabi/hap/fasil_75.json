@@ -1,0 +1,35 @@
+{
+ "tur": "hap",
+ "fasil": 75,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı, seçeneklerde de yer almadı; Bölüm XV ortak kuralları (alaşım, Not 9 tanımları) nikele de uygulanır.",
+ "pozisyonlar": [
+  [
+   "75.02",
+   "İşlenmemiş nikel: külçe, katot, pellet"
+  ],
+  [
+   "75.05",
+   "Çubuk, profil ve teller birlikte"
+  ],
+  [
+   "75.06",
+   "Levha, şerit, yaprak (kalınlık sınırı yok)"
+  ],
+  [
+   "75.08",
+   "Diğer eşya; kancalı elektrokaplama anotları"
+  ]
+ ],
+ "hap": [
+  "<b>Birleşik yapı:</b> çubuk-profil-tel 75.05, levha-yaprak 75.06 (0,15 mm sınırı yok), boru ve bağlantı parçası birlikte 75.07; çivi, depo, yay, tel mensucat 75.08.",
+  "<b>Sınırlar:</b> rafine ferro-nikel ferro-alyaj (72.02); bakırı üstün kupro-nikel Fasıl 74; nikel kaplama faslı değiştirmez; kancalı kaplama anodu 75.08, kancasız katot 75.02."
+ ],
+ "karistirilan": [
+  [
+   "Nikel kaplı çelik vida",
+   "73.18",
+   "Kaplama yüzey işlemidir; esas metal çelik"
+  ]
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 37,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı, seçeneklerde de yer almadı; boş → dolu → develope sırası, kağıt/film ayrımı ve 37.07’nin sunum şartı yeterlidir.",
+ "pozisyonlar": [
+  [
+   "37.01",
+   "Boş hassas düz levha ve film"
+  ],
+  [
+   "37.04",
+   "Dolu fakat develope edilmemiş her malzeme"
+  ],
+  [
+   "37.05",
+   "Develope levha ve film; slayt, mikrofilm"
+  ],
+  [
+   "37.07",
+   "Fotoğraf kimyasalları, flaş maddeleri"
+  ]
+ ],
+ "hap": [
+  "<b>Sıra:</b> boş düz levha ve film 37.01, boş rulo film 37.02, boş kağıt-karton-mensucat 37.03, dolu develope edilmemiş 37.04, develope levha ve film 37.05, develope sinema filmi 37.06.",
+  "<b>Develope kağıt fasıl dışı:</b> hassas kağıt, karton, mensucat yalnız develope edilmemiş halde Fasıl 37’de; basılı fotoğraf Fasıl 49. Döküntüler fasıl dışı (Not 1); kıymetli metalli olanlar 71.12.",
+  "<b>37.07:</b> karışımlar her sunumda, karışmamış maddeler yalnız ölçülü veya perakende kullanıma hazır halde; gümüş nitrat perakende olsa da 28.43 (Bölüm VI Not 1)."
+ ],
+ "karistirilan": [
+  [
+   "Yalnız manyetik ses izli sinema filmi",
+   "85.23",
+   "37.06 için ses izi fotoelektrik olmalı"
+  ],
+  [
+   "Fotoğraf makinesi, flaş lambası",
+   "90.06",
+   "Fasıl 37 yalnız hassas malzeme ve kimyasalları kapsar"
+  ]
+ ]
+}

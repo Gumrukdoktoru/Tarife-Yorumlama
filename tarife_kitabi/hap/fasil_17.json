@@ -1,0 +1,47 @@
+{
+ "tur": "hap",
+ "fasil": 17,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 2 kez doğrudan, 1 kez seçenek: tabii balla karışık olsun olmasın diyabetik suni bal 17.02 soruldu (04.09, 09.05, 19.05 çeldirici); ciklet ve şeker, Bölüm IV kapsamı sorularında geçti.",
+ "pozisyonlar": [
+  [
+   "17.01",
+   "Katı kamış-pancar şekeri; kimyaca saf sakkaroz"
+  ],
+  [
+   "17.02",
+   "Laktoz, glikoz, fruktoz; aromasız şurup; suni bal, karamel"
+  ],
+  [
+   "17.03",
+   "Melaslar (şeker ekstraksiyonu-rafinajı yan ürünü)"
+  ],
+  [
+   "17.04",
+   "Kakaosuz şeker mamulleri: ciklet, lokum, beyaz çikolata"
+  ]
+ ],
+ "hap": [
+  "<b>Not 1:</b> kakao içeren şeker mamulü 18.06; sakkaroz, laktoz, maltoz, glikoz ve fruktoz dışındaki kimyaca saf şekerler 29.40; ilaçlar Fasıl 30.",
+  "<b>Bal:</b> yalnız katkısız tabii bal 04.09; suni bal, tabii balla karışık olsa da 17.02.",
+  "<b>Beyaz çikolata 17.04:</b> kakao yağı kakao sayılmaz; çok az kakao bile şekerlemeyi 18.06’ya götürür.",
+  "<b>Katı ↔ şurup:</b> aroma veya renk katılmış katı şeker 17.01’de kalır; aromalı veya renkli şeker şurubu 21.06. Sorbitollü (şekersiz) sakız ve şekerleme 21.06."
+ ],
+ "karistirilan": [
+  [
+   "Diyabetik suni bal (tabii balla karışık)",
+   "17.02",
+   "04.09 yalnız katkısız tabii bal"
+  ],
+  [
+   "Çikolata kaplı badem şekeri",
+   "18.06",
+   "Kakao oranı ne olursa olsun 18.06"
+  ],
+  [
+   "Reçel, marmelat",
+   "20.07",
+   "Şeker mamulü değil; şekerlenmiş meyve 20.06"
+  ]
+ ]
+}

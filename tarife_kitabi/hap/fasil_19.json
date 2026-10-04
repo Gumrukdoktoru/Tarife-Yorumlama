@@ -1,0 +1,52 @@
+{
+ "tur": "hap",
+ "fasil": 19,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 2 kez doğrudan, 2 kez seçenek: dondurulmuş şehriye Fasıl 19; karidesli mantı ve çorba tozu seti doldurulmuş makarna olarak 19.02 (GYK 1, 2(b), 3(b), 6). Eşleştirmede kuskus 19.02 doğru verildi.",
+ "pozisyonlar": [
+  [
+   "19.01",
+   "Malt hülasası; un, nişasta, süt esaslı müstahzarlar"
+  ],
+  [
+   "19.02",
+   "Makarna (pişmiş, doldurulmuş, hazırlanmış olabilir); kuskus"
+  ],
+  [
+   "19.03",
+   "Tapyoka ve nişastadan benzerleri"
+  ],
+  [
+   "19.04",
+   "Gevrek, patlamış tane, müsli, bulgur, ön pişmiş pirinç"
+  ],
+  [
+   "19.05",
+   "Ekmek, bisküvi, kek, gofret, pişmiş pizza, hosti"
+  ]
+ ],
+ "hap": [
+  "<b>Doldurulmuş makarna istisnası:</b> etli veya karidesli mantı, ravioli, dolgu oranı %20’yi aşsa da 19.02’dedir (Fasıl 16 Not 2, Fasıl 19 Not 1(a)).",
+  "<b>Kakao eşikleri (yağsız baz):</b> 19.01’de un-malt esaslıda %40’tan, süt esaslıda %5’ten az; 19.04’te en çok %6 ve tamamen çikolata kaplı olmayan; 19.05’te sınır yok.",
+  "<b>Not 2 – 19.01’de “un”:</b> Fasıl 11 hububat unları ve her fasıldan bitkisel un; kurutulmuş sebze (07.12), patates (11.05) ve kuru baklagil (11.06) unları hariç.",
+  "<b>Not 4:</b> 19.04’te “başka şekilde hazırlanmış” = Fasıl 10–11’deki işlemlerin ötesi; bulgur ve ön pişmiş pirinç 19.04. Hayvanlar için bisküvi 23.09 (Not 1(b)).",
+  "<b>Pizza ve dondurma:</b> pişmemiş pizza 19.01, ön pişmiş veya pişmiş 19.05. Süt esaslı dondurma tozu 19.01, dondurmanın kendisi 21.05."
+ ],
+ "karistirilan": [
+  [
+   "Ağırlıkça %20’den fazla etli makarna yemeği",
+   "16.02",
+   "İstisna yalnız doldurulmuş makarnaya"
+  ],
+  [
+   "Tamamen çikolata kaplı mısır gevreği",
+   "18.06",
+   "Fasıl 19 Not 3; 19.04 değil"
+  ],
+  [
+   "Köpek bisküvisi",
+   "23.09",
+   "Fasıl 19 Not 1(b); hayvan için hazırlanmış"
+  ]
+ ]
+}

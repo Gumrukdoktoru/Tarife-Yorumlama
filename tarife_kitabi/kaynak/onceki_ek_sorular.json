@@ -1,0 +1,158 @@
+[
+ {
+  "kaynak": "Fasıl 3 pilot",
+  "soru": "Tarife Cetveline göre, kabuğu ile birlikte buharda pişirilmiş ve dondurulmuş karides hangi tarife pozisyonunda sınıflandırılır?",
+  "secenekler": [
+   "03.06",
+   "03.03",
+   "03.07",
+   "16.04",
+   "16.05"
+  ],
+  "cevap": "A"
+ },
+ {
+  "kaynak": "Fasıl 3 pilot",
+  "soru": "Tarife Cetveline göre, insan tüketimine uygun olan ve pişirilmiş karidesten elde edilen pelletler hangi tarife pozisyonunda sınıflandırılır?",
+  "secenekler": [
+   "03.06",
+   "03.09",
+   "05.11",
+   "16.05",
+   "23.01"
+  ],
+  "cevap": "B"
+ },
+ {
+  "kaynak": "Fasıl 3 pilot",
+  "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 3. faslında <b>sınıflandırılmaz</b>?",
+  "secenekler": [
+   "Akvaryumda süs amacıyla kullanılacak canlı balık",
+   "Konserve kutusuna konulmuş tütsülenmiş somon balığı",
+   "Kabuğu çıkarılarak suda kaynatılmış karides",
+   "Dondurulmuş deniz kestanesi",
+   "Kabuğunu açmak için ısı şokuna tabi tutulmuş midye"
+  ],
+  "cevap": "C"
+ },
+ {
+  "kaynak": "Fasıl 3 pilot",
+  "soru": "Aşağıdakilerden hangisi 03.05 tarife pozisyonunda <b>sınıflandırılmaz</b>?",
+  "secenekler": [
+   "Tuzlanmış ringa balığı",
+   "Tütsüleme sırasında kısmen pişmiş uskumru",
+   "Kurutulmuş morina balığı",
+   "İnsan tüketimine uygun, yalnızca salamura edilmiş morina yumurtası",
+   "Zeytinyağı içinde muhafaza edilmiş sardalya"
+  ],
+  "cevap": "E"
+ },
+ {
+  "kaynak": "Fasıl 3 pilot",
+  "soru": "Tarife Cetveline göre aşağıdakilerden hangisi diğerlerinden <b>farklı</b> bir tarife pozisyonunda sınıflandırılır?",
+  "secenekler": [
+   "Canlı ıstakoz",
+   "Dondurulmuş karides",
+   "Tuzlanmış yengeç",
+   "Canlı ahtapot",
+   "Kabuğu ile birlikte suda kaynatılmış kerevit"
+  ],
+  "cevap": "D"
+ },
+ {
+  "kaynak": "Fasıl 3 pilot",
+  "soru": "Tarife Cetveline göre aşağıdakilerden hangisi diğerlerinden <b>farklı</b> bir fasılda sınıflandırılır?",
+  "secenekler": [
+   "Dondurulmuş yunus eti",
+   "Canlı yılan balığı",
+   "Kıyılmış ve dondurulmuş balık eti",
+   "Deniz anası",
+   "İnsan tüketimine uygun balık unu"
+  ],
+  "cevap": "A"
+ },
+ {
+  "kaynak": "Fasıl 3 pilot",
+  "soru": "Tarife Cetvelinin 3. Fasıl notlarına göre “pellet” tabiri ile ilgili aşağıdakilerden hangisi <b>doğrudur</b>?",
+  "secenekler": [
+   "Ağırlığının %3’ünü geçmeyecek oranda bağlayıcı içeren topaklardır.",
+   "Doğrudan sıkıştırma veya az miktarda bağlayıcı ilavesiyle elde edilen küçük topaklardır.",
+   "Yalnızca pişirilmemiş balıklardan elde edilen topaklar pellet sayılır.",
+   "İnsan tüketimine uygun olsalar bile pelletler 23.01 pozisyonunda yer alır.",
+   "Pellet tabiri yalnızca 03.05 ila 03.08 pozisyonlarındaki ürünler için tanımlanmıştır."
+  ],
+  "cevap": "B"
+ },
+ {
+  "kaynak": "Fasıl 3 pilot",
+  "soru": "Dondurulmuş balina etinin 3. fasıl yerine 02.08 tarife pozisyonunda sınıflandırılması hangi Genel Yorum Kuralının (GYK) gereğidir?",
+  "secenekler": [
+   "GYK 2(a)",
+   "GYK 3(a)",
+   "GYK 1",
+   "GYK 4",
+   "GYK 6"
+  ],
+  "cevap": "C"
+ },
+ {
+  "kaynak": "Fasıl 3 pilot",
+  "soru": "Tarife Cetveline göre aşağıdaki eşya – tarife pozisyonu eşleştirmelerinden hangisi <b>yanlıştır</b>?",
+  "secenekler": [
+   "Havyar – 16.04",
+   "Balık yağı – 15.04",
+   "İşlenmemiş deniz kabuğu – 05.08",
+   "Balık çorbası – 21.04",
+   "Dondurulmuş mürekkep balığı – 03.06"
+  ],
+  "cevap": "E"
+ },
+ {
+  "kaynak": "Fasıl 3 pilot",
+  "soru": "Omurga kemiğine paralel kesilmiş; kafası, iç organları, yüzgeçleri ve ana kılçıkları çıkarılmış; derisi üzerinde bırakılmış ve birkaç küçük kılçığı kalmış; iki yan parçası birleştirilmemiş levrek, dondurulmuş olarak ithal edilmiştir. Bu eşya hangi tarife pozisyonunda sınıflandırılır?",
+  "secenekler": [
+   "03.02",
+   "03.03",
+   "03.05",
+   "03.04",
+   "16.04"
+  ],
+  "cevap": "D"
+ },
+ {
+  "kaynak": "örnek dosya",
+  "soru": "Tarife Cetveline göre, kabuğu ile birlikte buharda pişirilmiş ve dondurulmuş karides hangi tarife pozisyonunda sınıflandırılır?",
+  "secenekler": [
+   "03.06",
+   "03.03",
+   "03.07",
+   "16.04",
+   "16.05"
+  ],
+  "cevap": "A"
+ },
+ {
+  "kaynak": "örnek dosya",
+  "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 3. faslında <b>sınıflandırılmaz</b>?",
+  "secenekler": [
+   "Akvaryumda süs amacıyla kullanılacak canlı balık",
+   "Konserve kutusuna konulmuş tütsülenmiş somon balığı",
+   "Kabuğu çıkarılarak suda kaynatılmış karides",
+   "Dondurulmuş deniz kestanesi",
+   "Kabuğunu açmak için ısı şokuna tabi tutulmuş midye"
+  ],
+  "cevap": "C"
+ },
+ {
+  "kaynak": "örnek dosya",
+  "soru": "Tarife Cetvelinin 3. Fasıl notlarına göre “pellet” tabiri ile ilgili aşağıdakilerden hangisi <b>doğrudur</b>?",
+  "secenekler": [
+   "Ağırlığının %3’ünü geçmeyecek oranda bağlayıcı içeren topaklardır.",
+   "Doğrudan sıkıştırma veya az miktarda bağlayıcı ilavesiyle elde edilen küçük topaklardır.",
+   "Yalnızca pişirilmemiş balıklardan elde edilen topaklar pellet sayılır.",
+   "İnsan tüketimine uygun olsalar bile pelletler 23.01 pozisyonunda yer alır.",
+   "Pellet tabiri yalnızca 03.05 ila 03.08 pozisyonlarındaki ürünler için tanımlanmıştır."
+  ],
+  "cevap": "B"
+ }
+]

@@ -1,0 +1,37 @@
+{
+ "tur": "hap",
+ "fasil": 29,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı; seçeneklerde çeldirici oldu: B12 vitamini (29.36, Fasıl 30 değil) ve sınai yağ alkolleri sorusunda 29.34 (doğrusu 38.23).",
+ "pozisyonlar": [
+  [
+   "29.05",
+   "Asiklik alkoller; gliserol ≥ %95 (etanol hariç)"
+  ],
+  [
+   "29.36",
+   "Vitaminler, provitaminler (dozlandırılmamış)"
+  ],
+  [
+   "29.41",
+   "Antibiyotikler; kimyaca belirli olmasa da"
+  ]
+ ],
+ "hap": [
+  "<b>Not 1 – kimyaca belirli izole organik bileşik:</b> izomer karışımı, sulu çözelti, stabilizör katkısı faslı değiştirmez; 29.36–29.39 ve 29.41 ürünleri belirli yapıda olmasa da buradadır.",
+  "<b>Fasıl dışı (Not 2, eşikler):</b> etil alkol 22.07 / 22.08, metan-propan 27.11, üre Fasıl 31, sakkaroz 17.01, enzimler 35.07 (saf olsa da); ham gliserol 15.20, eşik altı yağ alkolü 38.23.",
+  "<b>Not 3:</b> iki pozisyona giren bileşik numara sırasına göre sonuncusunda (askorbik asit 29.36). Dozlandırılmış vitamin 30.04, radyoaktif bileşik 28.44’tedir (Bölüm VI Not 1–2)."
+ ],
+ "karistirilan": [
+  [
+   "Sınai yağ alkolleri (%90’dan az saflık)",
+   "38.23",
+   "Saflığı %90 ve üstü yağ alkolü 29.05"
+  ],
+  [
+   "Ham gliserin, gliserinli sular ve lesivler",
+   "15.20",
+   "Not 2(a); %95 ve üstü saf gliserol 29.05"
+  ]
+ ]
+}

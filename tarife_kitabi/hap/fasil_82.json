@@ -1,0 +1,56 @@
+{
+ "tur": "hap",
+ "fasil": 82,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 1 kez ana konu: 82.06 takımı 82.02–82.05 aletlerinden oluşur; çit makası (82.01) içeren takım 82.06 sayılmadı. Kalemtıraş (82.14) sıralama, demonte makineyle gelen dinamometrik anahtar ise GYK sorusunda seçenekti.",
+ "pozisyonlar": [
+  [
+   "82.01",
+   "Tarım-bahçe el aletleri; çit makası, budama makası"
+  ],
+  [
+   "82.04",
+   "Elle sıkıştırma anahtarları (dinamometrik dahil), soketler"
+  ],
+  [
+   "82.05",
+   "Diğer el aletleri; mengene, örs, kaynak lambası"
+  ],
+  [
+   "82.06",
+   "82.02–82.05 aletlerinden perakende takımlar"
+  ],
+  [
+   "82.13",
+   "Parmak halkalı makaslar ve ağızları"
+  ],
+  [
+   "82.15",
+   "Kaşık, çatal, kepçe, şeker maşası, balık bıçağı"
+  ]
+ ],
+ "hap": [
+  "<b>Not 1 – iş gören kısım:</b> adi metal, metal karbür, sermet ya da adi metal mesnetli kıymetli taş veya aşındırıcı olmalı; değilse eşya maddesine göre sınıflandırılır.",
+  "<b>82.06 takımı:</b> 82.02–82.05 aletlerinden iki veya fazlası, perakende satış için; esas karakter korunursa başka pozisyondan az önemli alet olabilir. Çit makası gibi 82.01 aleti bu pozisyonlarda değildir.",
+  "<b>El aleti – makine:</b> doğrudan elde kullanılan alet 82; mesnetli veya tezgaha monte olan 84 (mesnetli matkap 84.59); motorlu, pnömatik, hidrolik el aleti 84.67; elektrikli traş başları 85.10.",
+  "<b>Makas ayrımı:</b> parmak halkası olmayan tek elle budama ve çit makası 82.01; parmak halkalı makas 82.13; teneke makası 82.03; nalbant toynak makası 82.05.",
+  "<b>Takımlar:</b> bıçak + en az eşit sayıda kaşık-çatal 82.15 (Not 3); manikür-pedikür takımı 82.14; seyahat dikiş ve tuvalet takımı 96.05; elle işleyen mekanik mutfak aleti ≤ 10 kg 82.10."
+ ],
+ "karistirilan": [
+  [
+   "Dinamometrik anahtar (demonte makineyle gelen)",
+   "82.04",
+   "Tek başına 82.04; sınavda makineyle (84.57) beyan edildi"
+  ],
+  [
+   "Cerrahi makas, dişçi aleti",
+   "90.18",
+   "Tıbbi alet; Fasıl 82 değil"
+  ],
+  [
+   "Elektrik motorlu el matkabı veya testere",
+   "84.67",
+   "Motorlu el aleti; 82.05 / 82.02 değil"
+  ]
+ ]
+}

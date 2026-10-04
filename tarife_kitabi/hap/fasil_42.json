@@ -1,0 +1,76 @@
+{
+ "tur": "hap",
+ "fasil": 42,
+ "kademe": "A",
+ "sinavda": "Son 5 sınavda 4 soruda konu, 3 soruda seçenek; odak hep 42.02: “hangisi 42.02’de yer almaz” (ahşap mücevher kutusu 44.20, metal sigara kutusu) ve “farklı fasıl” (ahşap bavul 42.02 ≠ Fasıl 44; plastik okul çantası 42.02 ≠ Fasıl 39). Bölüm VIII kapsamında çantalar soruldu.",
+ "pozisyonlar": [
+  [
+   "42.01",
+   "Saraciye, koşum; her hayvan, her madde"
+  ],
+  [
+   "42.02",
+   "İlk kısım (bavul, valiz, okul çantası): her madde"
+  ],
+  [
+   "42.02",
+   "İkinci kısım (el çantası, cüzdan, kutular): sınırlı madde"
+  ],
+  [
+   "42.03",
+   "Deriden giysi, eldiven, kemer, askı, bilek kayışı"
+  ],
+  [
+   "42.05",
+   "Deriden diğer: makine kayışı, kitap kabı, etiket"
+  ],
+  [
+   "42.06",
+   "Bağırsak, kursak, mesane, tendondan eşya; katgüt"
+  ],
+  [
+   "44.20",
+   "Ahşap mücevher kutusu — 42.02 değil"
+  ],
+  [
+   "39.23",
+   "Kısa ömürlü plastik saplı çanta — 42.02 değil"
+  ]
+ ],
+ "hap": [
+  "<b>42.02 ilk kısım her maddeden:</b> sandık, bavul, valiz, makyaj valizi, evrak-okul çantası, gözlük, dürbün, fotoğraf makinesi, müzik aleti, silah mahfazası; ahşap, metal, plastik olabilir.",
+  "<b>42.02 ikinci kısım sınırlı madde:</b> el-sırt-spor çantası, cüzdan, para kesesi, sigara-mücevher kutusu yalnız deri, terkip deri, plastik yaprak, tekstil, vulkanize lif, karton ya da bunlarla veya kağıtla kaplı.",
+  "<b>Not 3(A):</b> uzun süre kullanılmayacak plastik yapraktan saplı çanta 39.23; örülmeye elverişli maddeden (hasır, sepet örgüsü) çanta 46.02.",
+  "<b>42.01 her hayvan, her madde:</b> eyer, koşum, yular, köpek elbisesi, kedi-köpek tasması, at battaniyesi. Ayrı gelen üzengi, gem Bölüm XV; kamçı 66.02.",
+  "<b>42.03 (Not 4):</b> deriden giysi ve aksesuar: eldiven (spor ve koruma dahil), önlük, askı, bel kemeri, palaska, bilek kayışı. Saat kayışı 91.13.",
+  "<b>Not 2 hariçleri:</b> steril katgüt 30.06, kürk astarlı giysi 43.03 / 43.04 (eldiven hariç), ayakkabı 64, başlık 65, taklit mücevher 71.17, müzik aleti teli 92.09, oyuncak 95, düğme 96.06.",
+  "<b>Kıymetli metal süs (Not 3(B)):</b> esas karakter vermiyorsa eşya 42.02 / 42.03’te kalır (altın tokalı deri kemer 42.03); esas karakter verirse Fasıl 71."
+ ],
+ "karistirilan": [
+  [
+   "Ahşap bavul, valiz",
+   "42.02",
+   "İlk kısım her maddeden; Fasıl 44 değil"
+  ],
+  [
+   "Kalıplanmış plastik okul çantası",
+   "42.02",
+   "Fasıl 39 Not 2: 42.02 eşyası Fasıl 39’a girmez"
+  ],
+  [
+   "Hasır veya sepet örgüsü el çantası",
+   "46.02",
+   "Not 3(A): örülmeye elverişli maddeden eşya"
+  ],
+  [
+   "Deri saat kayışı",
+   "91.13",
+   "Not 4; deri bilek kayışı ise 42.03"
+  ],
+  [
+   "İçi hakiki kürk kaplı deri ceket",
+   "43.03",
+   "Not 2(b); deri-kürk eldiven ise 42.03’te kalır"
+  ]
+ ]
+}

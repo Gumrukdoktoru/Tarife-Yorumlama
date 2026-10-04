@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 47,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda 1 kez, sıralama kalıbında: geri kazanılmış kağıt lifi hamuru 47.06 → önceki günden satılmamış gazete 47.07 → gazete kağıdı 48.01 → günün gazetesi 49.02.",
+ "pozisyonlar": [
+  [
+   "47.01",
+   "Mekanik odun hamuru"
+  ],
+  [
+   "47.02",
+   "Çözünür kimyasal odun hamuru (Not 1)"
+  ],
+  [
+   "47.06",
+   "Geri kazanılmış kağıt lifi, linter, bambu hamuru"
+  ],
+  [
+   "47.07",
+   "Kağıt-karton döküntü, hurda; eski gazete"
+  ]
+ ],
+ "hap": [
+  "<b>Hamur yöntemi:</b> mekanik 47.01, çözünür kimyasal 47.02, soda-sülfat 47.03, sülfit 47.04, mekanik + kimyasal 47.05; odun dışı lif ve geri kazanılmış kağıt hamuru 47.06.",
+  "<b>Not 1:</b> 20 °C’de %18 sodyum hidroksitte bir saat sonra çözünmeyen kısım soda-sülfatta ≥ %92, sülfitte ≥ %88; sülfitte kül ≤ %0,15 → 47.02.",
+  "<b>47.07 hurda:</b> kağıt-karton kırpıntısı, eski gazete-dergi, matbaa ıskartası; paketlemede kullanılabilmesi yeri değiştirmez. Kağıt yünü 48.23, gümüşlü fotoğraf kağıdı hurdası 71.12."
+ ],
+ "karistirilan": [
+  [
+   "Pamuk linteri",
+   "14.04",
+   "Hammaddedir; linterden elde edilen hamur 47.06"
+  ],
+  [
+   "PE veya PP liflerinden sentetik kağıt hamuru",
+   "39.20",
+   "Selülozik değil; Fasıl 47 dışında"
+  ]
+ ]
+}

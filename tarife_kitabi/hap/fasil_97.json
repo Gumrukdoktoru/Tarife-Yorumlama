@@ -1,0 +1,56 @@
+{
+ "tur": "hap",
+ "fasil": 97,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 1 kez doğrudan: eskiliği 100 yılı aşan orijinal heykelin Not 5(B) gereği GYK 1 ile 97.03’te kaldığı (97.06 ve GYK 3 çeldirici). Orijinal heykel ve zooloji koleksiyonu “gezici hayvan sergisi ile aynı fasıl”, antika biblo “maddesine göre sınıflanan eşya” sorularında çeldirici oldu.",
+ "pozisyonlar": [
+  [
+   "97.01",
+   "Tamamen elle yapılmış resim, elle kopya, kolaj, mozaik"
+  ],
+  [
+   "97.02",
+   "Elle hazırlanmış levhadan doğrudan orijinal gravür, litografya"
+  ],
+  [
+   "97.03",
+   "Orijinal heykel, madde önemsiz; seri üretim hariç"
+  ],
+  [
+   "97.04",
+   "Kullanılmış pul, pullu ilk gün zarfı; 49.07 hariç"
+  ],
+  [
+   "97.05",
+   "Zoolojik, botanik, arkeolojik, tarihi, nümizmatik koleksiyon eşyası"
+  ],
+  [
+   "97.06",
+   "Eskiliği 100 yılı aşan diğer antikalar (artık)"
+  ]
+ ],
+ "hap": [
+  "<b>Yaş, sanat eserini antikaya çevirmez (Not 5(B)):</b> 97.06, 97.01–97.05 eşyasına uygulanmaz; 100 yaşını aşan orijinal heykel GYK 1 ile 97.03’te, tablo 97.01’de kalır.",
+  "<b>Not 5(A):</b> Not 1–4 saklı kalmak şartıyla bu fasıldaki eşya başka fasılda sınıflandırılmaz; antika biblo, mobilya, halı, saat maddesine veya işlevine göre değil 97.06’da.",
+  "<b>Seri üretim sanat eseri değildir (Not 2, 4):</b> sanatçı tasarlasa da ticari seri üretim mozaik ve heykel fasıl dışı; heykelcik ve elle dekore fabrikasyon vazo maddesine göre (44.20, 68.02, 69.13, 83.06).",
+  "<b>Fasıl dışı (Not 1):</b> itibari değeri tanınan kullanılmamış pul 49.07; tiyatro dekoru ve atölye fonu tuvali 59.07; inci ve kıymetli taş yaşına bakılmaksızın 71.01–71.03.",
+  "<b>Baskı ve çerçeve (Not 3, 6):</b> mekanik veya fotomekanik usulle yapılan baskı 97.02 dışı; çerçeve mahiyet ve kıymetçe esere uygunsa eserle, değilse ayrı sınıflandırılır."
+ ],
+ "karistirilan": [
+  [
+   "Gezici hayvan sergisi; üç tekerlekli bisiklet",
+   "95.08 / 95.03",
+   "Fasıl 95; orijinal heykel, zooloji koleksiyonu Fasıl 97"
+  ],
+  [
+   "Elle çizilmiş mimari plan; mobilya deseni",
+   "49.06",
+   "Resim sayılmaz; 97.01 dışı"
+  ],
+  [
+   "Hediye kutusunda yasal tedavüldeki madeni para",
+   "71.18",
+   "Koleksiyon eşyası değil; 97.05 dışı"
+  ]
+ ]
+}

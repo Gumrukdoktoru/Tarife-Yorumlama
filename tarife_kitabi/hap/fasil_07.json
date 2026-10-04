@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 7,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı; bitki çayı yapımında kullanılacak ada çayı sorusunda 07.12 (kurutulmuş sebze) çeldirici seçenekti, doğrusu 12.11.",
+ "pozisyonlar": [
+  [
+   "07.09",
+   "Diğer sebzeler: mantar, biber, zeytin, kabak, maydanoz"
+  ],
+  [
+   "07.12",
+   "Kurutulmuş sebzeler; kuru baklagil hariç"
+  ],
+  [
+   "07.13",
+   "Kabuksuz kuru baklagiller; tohumluk dahil"
+  ],
+  [
+   "07.14",
+   "Manyok, salep, tatlı patates, yer elması (nişasta-inülinli)"
+  ]
+ ],
+ "hap": [
+  "<b>Not 2 – sebze sayılanlar:</b> mantar, domalan, zeytin, kebere, kabaklar, patlıcan, tatlı mısır, Capsicum ve Pimenta meyveleri, rezene, maydanoz, tarhun, tere, güvey otu.",
+  "<b>Biber ve unlar:</b> taze Capsicum-Pimenta 07.09, dondurulmuşu 07.10; kurutulmuş, ezilmiş veya öğütülmüşü 09.04 (Not 4). Patates unu 11.05, kuru baklagil unu 11.06.",
+  "<b>Ot mu, sebze mi?</b> Maydanoz, tere, tarhun 07.09; nane, fesleğen, biberiye, ada çayı 12.11. Salamurada geçici korunan, hemen yenmeyen sebze 07.11; başka şekilde hazırlanmışı Fasıl 20."
+ ],
+ "karistirilan": [
+  [
+   "Bitki çayı için kuru ada çayı",
+   "12.11",
+   "Kurutulmuş sebze (07.12) değil; Fasıl 12 Not 4"
+  ],
+  [
+   "Kurutulmuş, toz kırmızı biber",
+   "09.04",
+   "Fasıl 7 Not 4; taze biber 07.09"
+  ]
+ ]
+}

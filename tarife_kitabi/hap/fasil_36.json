@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 36,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı, seçeneklerde de yer almadı; önceki sınavlarda LPG dolu plastik çakmak gaz haznesinin 96.13’te olduğu (27.11, 39.26 çeldirici) soruldu.",
+ "pozisyonlar": [
+  [
+   "36.02",
+   "Müstahzar patlayıcılar: dinamit, ANFO"
+  ],
+  [
+   "36.04",
+   "Havai fişek, işaret fişeği, oyuncak kapsülü"
+  ],
+  [
+   "36.05",
+   "Kibritler (Bengal kibriti hariç)"
+  ],
+  [
+   "36.06",
+   "Çakmak taşı; ≤ 300 cm3 çakmak yakıtı"
+  ]
+ ],
+ "hap": [
+  "<b>Not 1:</b> kimyaca belirli izole bileşikler fasıl dışıdır (TNT 29.04, civa fulminat 28.52); Fasıl 36 karışımları kapsar. Nitroselüloz (pamuk barutu) 39.12, fişek kovanı 93.06.",
+  "<b>Not 2 – ateş alıcı maddeler yalnız:</b> tablet veya çubuk halinde metaldehit ve hekzamin yakıtı, katı alkol yakıtları; çakmak için ≤ 300 cm3 kaptaki sıvı yakıt; reçineli meşale, ateş yakıcılar.",
+  "<b>Çakmak ayrımı:</b> çakmak taşı (ferro-seryum) her şekilde 36.06; çakmağın parçası olan doldurulabilir gaz haznesi veya kartuş 96.13; dökme LPG 27.11."
+ ],
+ "karistirilan": [
+  [
+   "LPG dolu plastik çakmak gaz haznesi",
+   "96.13",
+   "Çakmak aksamı; 27.11 veya 39.26 değil"
+  ],
+  [
+   "Bengal kibriti",
+   "36.04",
+   "Sürtünmeyle tutuşsa da pirotekni; kibrit 36.05 değil"
+  ]
+ ]
+}

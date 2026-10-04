@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 68,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı; seçeneklerde 3 kez yer aldı: dişçilik alçısının 68.09 değil 25.20 olduğu, 68.13 (balata) pozisyonunun otomobille, 68.12 (amyant ayakkabı) pozisyonunun ayakkabıyla ilgili olduğu.",
+ "pozisyonlar": [
+  [
+   "68.02",
+   "İşlenmiş yontu ve inşaat taşı; mozaik küp"
+  ],
+  [
+   "68.04",
+   "Çerçevesiz değirmen, bileği taşı, taşlama diski"
+  ],
+  [
+   "68.12",
+   "İşlenmiş amyant ve amyanttan giysi, ayakkabı"
+  ],
+  [
+   "68.13",
+   "Monte edilmemiş sürtünme malzemesi: balata, debriyaj diski"
+  ]
+ ],
+ "hap": [
+  "<b>Fasıl 25–68–69–70 sınırı:</b> ham, kabaca yontulmuş veya yalnız dikdörtgen kesilmiş taş 25; daha ileri işlenmiş taş ve mineral eşya 68; pişirilmiş toprak 69; cam 70.",
+  "<b>Bağlayıcıya göre:</b> asfalt 68.07, talaş + mineral bağlayıcı pano 68.08, alçı 68.09, beton ve suni taş 68.10, lif takviyeli çimento 68.11; taş ve cüruf yünü 68.06.",
+  "<b>Amyant ve balata:</b> amyant eşyası 68.12; takılmamış balata 68.13, metal tabakaya takılı balata taşıt aksamı; el veya pedalla çalışan çatkılı bileği 82.05."
+ ],
+ "karistirilan": [
+  [
+   "Dişçilikte kullanılan alçı",
+   "25.20",
+   "Madde olarak Fasıl 25; alçıdan eşya 68.09"
+  ],
+  [
+   "Cam yünü",
+   "70.19",
+   "Mineral yün (taş, cüruf yünü) ise 68.06"
+  ]
+ ]
+}

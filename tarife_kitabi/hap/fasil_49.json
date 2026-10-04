@@ -1,0 +1,56 @@
+{
+ "tur": "hap",
+ "fasil": 49,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 2 soruda konu: basılı rölyef dünya haritası 90.23 (Not 1; 49.05 değil) ve gazete zinciri sıralaması (47.06 → 47.07 → 48.01 → 49.02).",
+ "pozisyonlar": [
+  [
+   "49.01",
+   "Kitap, broşür; ciltli gazete takımı (Not 3)"
+  ],
+  [
+   "49.02",
+   "Gazete, periyodik yayın; reklam içerse de"
+  ],
+  [
+   "49.03",
+   "Çocuk resimli kitabı, boyama albümü (Not 6)"
+  ],
+  [
+   "49.05",
+   "Basılı harita, atlas, küre; rölyef değil"
+  ],
+  [
+   "49.10",
+   "Matbu takvimler, blok takvim dahil"
+  ],
+  [
+   "49.11",
+   "Diğer: katalog, afiş, bilet, resim, sticker"
+  ]
+ ],
+ "hap": [
+  "<b>Ölçüt:</b> baskı eşyanın esas karakterini ve kullanımını belirliyorsa Fasıl 49; tali ise malzemenin faslı (kağıtta 48). 39.18, 39.19, 48.14, 48.21 baskılı olsa da dışarıda.",
+  "<b>Not 1 hariçleri:</b> rölyef harita, plan, küre 90.23 (baskılı olsun olmasın); saydam negatif-pozitif Fasıl 37; oyun kağıdı 95; orijinal gravür 97.02; 97.04 pulları; antika 97.",
+  "<b>Gazete ve kitap:</b> gazete 49.02; başka surette birleştirilmiş veya tek kapakta birden fazla sayı 49.01 (Not 3); esasen reklam yayını, ticari katalog 49.11 (Not 5).",
+  "<b>Baskılı (Not 2):</b> teksir, bilgisayar çıktısı, kabartma, fotoğraf, fotokopi, termokopi, daktilo dahil. Elle çizilmiş plan, el yazısı metin 49.06; nota 49.04.",
+  "<b>Pul ve değerli kağıt:</b> tedavüldeki kullanılmamış pul, damgalı kağıt, banknot, çek defteri, hisse senedi 49.07; tedavülde olmayan koleksiyon pulu 97.04."
+ ],
+ "karistirilan": [
+  [
+   "Basılı rölyef dünya haritası",
+   "90.23",
+   "Not 1(b): baskılı olsa da 49.05 değil"
+  ],
+  [
+   "Satılmamış eski gazete",
+   "47.07",
+   "Kağıt döküntüsü sayılır; günün gazetesi 49.02"
+  ],
+  [
+   "Ajanda, takvimli hatıra defteri",
+   "48.20",
+   "Baskı tali; takvim ise 49.10"
+  ]
+ ]
+}

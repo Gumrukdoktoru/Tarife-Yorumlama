@@ -1,0 +1,56 @@
+{
+ "tur": "hap",
+ "fasil": 34,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 1 kez doğrudan: el sabununun (34.01) diş macunu, diş ipliği, saç boyası ve lens solüsyonundan (Fasıl 33) farklı fasılda olduğu. Seçeneklerde 34.05 (ayakkabı boyası) ve lens solüsyonu, tıbbi sabun sorularında 34.01 / 34.02 çeldirici.",
+ "pozisyonlar": [
+  [
+   "34.01",
+   "Sabun; perakende cilt yıkama sıvısı; sabunlu kağıt"
+  ],
+  [
+   "34.02",
+   "Yüzey aktif maddeler, deterjanlar, temizleme müstahzarları"
+  ],
+  [
+   "34.03",
+   "Yağlama müstahzarları (petrol yağı %70’ten az)"
+  ],
+  [
+   "34.04",
+   "Suni ve müstahzar mumlar"
+  ],
+  [
+   "34.05",
+   "Ayakkabı boyası, cilalar, ovma tozları"
+  ],
+  [
+   "34.07",
+   "Model patı, dişçi mumu, alçı esaslı dişçilik müstahzarı"
+  ]
+ ],
+ "hap": [
+  "<b>Not 1(c):</b> sabun veya yüzey aktif madde içeren şampuan, diş macunu, tıraş kremi ve köpüğü, banyo müstahzarları Fasıl 33’tedir; blok tıraş sabunu ise 34.01.",
+  "<b>Not 2 – sabun:</b> yalnız suda eriyen sabun; dezenfektan, ilaç veya aşındırıcı içerebilir. Aşındırıcılı sabun kalıp, çubuk, topak halindeyse 34.01; toz veya macunsa 34.05.",
+  "<b>Cilt yıkama:</b> sentetik yüzey aktif esaslı sıvı veya krem cilt yıkama müstahzarı perakende ise 34.01, dökme ise 34.02. Tıbbi madde içeren sabun da 34.01’dedir (Fasıl 30 değil).",
+  "<b>Not 3 – yüzey aktif:</b> 20 °C’de %0,5 oranında suyla karıştırılıp 1 saat bekletilince stabil emülsiyon vermeli ve suyun yüzey gerilimini 45 dyn/cm veya daha aza indirmeli.",
+  "<b>Mumlar (Not 5):</b> karıştırılmamış tabii mum 15.21, mineral mum ve karışımları 27.12, kimyasal yolla elde edilen veya karışık mum 34.04; ışık mumu 34.06."
+ ],
+ "karistirilan": [
+  [
+   "Sabunlu şampuan",
+   "33.05",
+   "Not 1(c); diş macunu 33.06, tıraş köpüğü 33.07"
+  ],
+  [
+   "Ayakkabı boyası (cila, krem)",
+   "34.05",
+   "Pozisyonda ismen; 32.05 veya 38.24 değil"
+  ],
+  [
+   "≥ %70 petrol yağlı yağlama yağı",
+   "27.10",
+   "34.03 yalnız petrol yağı %70’ten az olanlar"
+  ]
+ ]
+}

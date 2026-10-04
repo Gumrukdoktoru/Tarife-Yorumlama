@@ -1,0 +1,36 @@
+{
+ "tur": "hap",
+ "fasil": 57,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı, seçeneklerde de yer almadı; Bölüm XI kapsamı ve 58–59 ile sınırları için bilinmeli.",
+ "pozisyonlar": [
+  [
+   "57.01",
+   "Düğümlü veya sarmalı halılar (Gördes, Senna düğümü)"
+  ],
+  [
+   "57.02",
+   "Dokunmuş halılar; kilim, sumak, karaman dahil"
+  ],
+  [
+   "57.03",
+   "Tufte halılar (çim dahil)"
+  ]
+ ],
+ "hap": [
+  "<b>Fasıl 57 Not 1:</b> kullanımda dışa bakan yüzü tekstil olan yer kaplaması; yer kaplaması özelliği taşıyorsa duvara asılsa da burada. Hazır olsun olmasın Fasıl 57.",
+  "<b>Dışarıda kalanlar:</b> halı altı bağımsız taban örtüsü maddesine göre (Not 2); linoleum ve kaplamalı tekstil mesnetli yer kaplaması 59.04; hasır paspas 46.01; plastik çim Fasıl 39."
+ ],
+ "karistirilan": [
+  [
+   "El dokuması duvar halısı (Goblen)",
+   "58.05",
+   "Pano niteliği; kilim ise 57.02"
+  ],
+  [
+   "Yere serilmeye elverişsiz tufte mensucat",
+   "58.02",
+   "Halı sertlik-kalınlığı yok; 57.03 değil"
+  ]
+ ]
+}

@@ -1,0 +1,98 @@
+{
+ "tur": "hap",
+ "fasil": 39,
+ "kademe": "A",
+ "sinavda": "Son 5 sınavda 4 soruda konu, 6 soruda seçenek: “hangisi 39. fasılda / 39.26’da yer almaz” (plastik okul çantası 42.02; biberon 39.24) ve “farklı fasıl” (silikon 39.10 ≠ kauçuklar Fasıl 40; sertleştirilmiş protein 39.13 ≠ jelatin, enzim Fasıl 35). 39.15, 39.17, 39.21, 39.26 başka fasıl sorularında sık çeldiricidir.",
+ "pozisyonlar": [
+  [
+   "39.10",
+   "Silikonlar; silikon elastomeri de burada"
+  ],
+  [
+   "39.13",
+   "Tabii polimerler; sertleştirilmiş protein, aljinik asit"
+  ],
+  [
+   "39.15",
+   "Plastik döküntü, kalıntı ve hurdalar"
+  ],
+  [
+   "39.16",
+   "Kesiti 1 mm’yi geçen monofil, çubuk, profil"
+  ],
+  [
+   "39.17",
+   "Boru, hortum, bağlantı elemanı; sucuk kılıfı"
+  ],
+  [
+   "39.20",
+   "Gözeneksiz, takviyesiz levha, film, folye"
+  ],
+  [
+   "39.21",
+   "Gözenekli veya takviyeli-lamine levha, film"
+  ],
+  [
+   "39.22",
+   "Küvet, lavabo, klozet, rezervuar: hijyenik eşya"
+  ],
+  [
+   "39.23",
+   "Ambalaj: şişe, kutu, torba, tıpa, kapak"
+  ],
+  [
+   "39.24",
+   "Sofra, mutfak, ev, tuvalet eşyası; biberon"
+  ],
+  [
+   "39.25",
+   "Not 11 inşaat malzemesi; 300 litreyi geçen tank"
+  ],
+  [
+   "39.26",
+   "Diğer: büro malzemesi, süs, emzik, yağmurluk"
+  ]
+ ],
+ "hap": [
+  "<b>Önce Not 2:</b> plastikten olmak yetmez. Çanta-valiz 42.02, ayakkabı-şapka-şemsiye Bölüm XII, mobilya-lamba 94, oyuncak 95, düğme-tarak-kalem 96, makine XVI, taşıt aksamı XVII, saat 91.",
+  "<b>Plastik (Not 1):</b> 39.01–39.14 maddeleri; dış etkiyle şekil alır, şeklini korur. Tanım tarifenin her yerinde geçerli; vulkanize lif dahil, Bölüm XI dokumaya elverişli maddeleri hariç.",
+  "<b>İlk şekiller (Not 6):</b> sıvı, hamur, dispersiyon, çözelti; düzensiz blok, biçimsiz parça, toz, granül, pul. Düzenli geometrik blok ilk şekil değil, levhadır (39.20 / 39.21).",
+  "<b>Kopolimer (Not 4):</b> tek monomer ünitesi ağırlıkça %95’e ulaşmayan polimer. Ağırlıkça üstün komonomerin pozisyonu; eşitlikte numara sırasına göre en sondaki pozisyon.",
+  "<b>Kauçuk değil:</b> silikon elastomeri 39.10 ve poliizobütilen 39.02 sentetik kauçuk tanımına uymaz; tabii, sentetik, rejenere kauçuk ve çıkıl Fasıl 40’tadır.",
+  "<b>Not 2(e) ve yakınları:</b> çözücüsü ağırlıkça %50’yi geçen uçucu organik çözücülü çözelti 32.08 (kollodiyon hariç); polimer mumları 34.04; net 1 kg’ı geçmeyen perakende yapıştırıcı 35.06.",
+  "<b>Ölçü eşikleri:</b> kesiti 1 mm’yi geçmeyen sentetik monofil 54.04; dikdörtgen kesitte boy enin 1,5 katını aşarsa profil (Not 8); kağıt dışı mesnetli duvar kaplaması eni ≥ 45 cm (Not 9).",
+  "<b>Hurda ve askılar:</b> ilk şekle dönmüş tek termoplastik hurdası 39.01–39.14, diğer hurda 39.15. Duvara daimi tespitli havlu askısı-sabunluk 39.25, serbest duranı 39.24."
+ ],
+ "karistirilan": [
+  [
+   "Plastik okul çantası, valiz, el çantası",
+   "42.02",
+   "Fasıl 39 Not 2: 42.02 eşyası Fasıl 39’da yer almaz"
+  ],
+  [
+   "Plastik biberon",
+   "39.24",
+   "Ev-tuvalet eşyası; emzik (bebek kuklası) ve süs eşyası 39.26"
+  ],
+  [
+   "Sertleştirilmiş protein",
+   "39.13",
+   "Tadil edilmiş tabii polimer; jelatin 35.03, enzim 35.07"
+  ],
+  [
+   "Sentetik liften yangın hortumu",
+   "59.09",
+   "Dokumaya elverişli maddeden hortum; 39.17 değil"
+  ],
+  [
+   "Terkip yoluyla elde edilen deri levha",
+   "41.15",
+   "Fasıl 41 Not 3; plastik levha 39.21 değil"
+  ],
+  [
+   "Plastik, kauçuk, çelik conta takımı poşette",
+   "84.84",
+   "Farklı maddeden conta takımı; 39.26 / 40.16 değil"
+  ]
+ ]
+}

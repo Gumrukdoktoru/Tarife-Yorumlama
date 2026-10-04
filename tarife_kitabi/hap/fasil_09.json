@@ -1,0 +1,84 @@
+{
+ "tur": "hap",
+ "fasil": 9,
+ "kademe": "A",
+ "sinavda": "Son 5 sınavda 2 kez doğrudan, 4 kez seçenek olarak: kahvenin Bölüm II’de olduğu (IV. Bölüm sorusunda sirke, kakao, şeker, meşrubatla birlikte) soruldu. “Tümü 12.11” ve ada çayı sorularında vanilya-tarçın-karanfil, kişniş-kimyon-anason ile 09.02 ve 09.10 çeldirici oldu.",
+ "pozisyonlar": [
+  [
+   "09.01",
+   "Kahve (kavrulmuş, kafeinsiz dahil); kahve içeren ikameler"
+  ],
+  [
+   "09.02",
+   "Çay: yalnız Thea; aromalı çay dahil"
+  ],
+  [
+   "09.03",
+   "Paraguay çayı (maté)"
+  ],
+  [
+   "09.04",
+   "Piper biberi; kurutulmuş-öğütülmüş Capsicum ve Pimenta"
+  ],
+  [
+   "09.05",
+   "Vanilya (vanilin ve vanilya şekeri hariç)"
+  ],
+  [
+   "09.06",
+   "Tarçın ve tarçın ağacının çiçekleri"
+  ],
+  [
+   "09.07",
+   "Karanfil: meyve, tane ve saplar"
+  ],
+  [
+   "09.08",
+   "Küçük Hindistan cevizi, kabuğu; kakule"
+  ],
+  [
+   "09.09",
+   "Anason, rezene, kişniş, kimyon tohumları; ardıç meyvesi"
+  ],
+  [
+   "09.10",
+   "Zencefil, safran, zerdeçal, kekik, defne, köri; karışımlar"
+  ]
+ ],
+ "hap": [
+  "<b>Not 1 – karışımlar:</b> aynı pozisyondaki ürünlerin karışımı o pozisyonda; farklı pozisyondakiler 09.10’da. Katılan madde esas özelliği değiştirirse fasıldan çıkar; çeşni karışımı 21.03.",
+  "<b>Kahve:</b> çiğ, kavrulmuş, kafeinsiz, öğütülmüş kahve ve herhangi oranda kahve içeren ikame 09.01. Hülasa, instant kahve ve kahvesiz kavrulmuş ikame (hindiba, arpa) 21.01.",
+  "<b>Her “çay” 09.02 değildir:</b> 09.02 yalnız Thea; aromalı ve kafeinsiz çay dahil. Maté 09.03; ada çayı, ıhlamur, nane 12.11; çay hülasası 21.01; karışık bitki çayı 21.06.",
+  "<b>Not 2:</b> kebabe biberi ve 12.11’deki ürünler Fasıl 9 dışıdır. Baharat tadıyla çeşni verir; esas olarak parfümeri veya eczacılık bitkisi olan ürün 12.11’e gider.",
+  "<b>Biber:</b> Piper ile kurutulmuş veya ezilmiş-öğütülmüş Capsicum ve Pimenta 09.04; taze biber 07.09. Jamaika biberi (Pimenta) 09.04, Malageta biberi 09.08.",
+  "<b>Tohum ≠ ot:</b> kişniş, kimyon, anason, rezene tohumu 09.09; dere otu ve çemen tohumu 09.10; taze maydanoz, kişniş otu, dere otu Fasıl 7.",
+  "<b>Bölüm ayrımı:</b> Fasıl 9 Bölüm II’dedir (bitkisel ürünler); şeker (17), kakao (18), meşrubat ve sirke (22) Bölüm IV’tedir."
+ ],
+ "karistirilan": [
+  [
+   "Bitki çayı için ada çayı",
+   "12.11",
+   "Thea değil; 09.02, 09.10, 07.12 çeldirici"
+  ],
+  [
+   "Tonka fasulyesi, ginseng kökü, nane",
+   "12.11",
+   "Baharat değil; parfümeri-eczacılık bitkisi"
+  ],
+  [
+   "Salep",
+   "07.14",
+   "Nişastalı kök yumru; baharat değil"
+  ],
+  [
+   "Instant kahve, çay hülasası",
+   "21.01",
+   "Hülasalar Fasıl 9’da değil"
+  ],
+  [
+   "Kebabe biberi (Piper cubeba)",
+   "12.11",
+   "Piper cinsi olsa da Fasıl 9 Not 2"
+  ]
+ ]
+}

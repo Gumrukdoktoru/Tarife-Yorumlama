@@ -1,0 +1,40 @@
+{
+ "tur": "hap",
+ "fasil": 45,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda 1 soruda konu: “mantardan eşyadan hangisi 45. fasılda” — şişe tıpası 45.03; ayakkabı topuğu (64), şapka siperliği (65), dart tablası (95) Not 1 gereği dışarıda.",
+ "pozisyonlar": [
+  [
+   "45.01",
+   "Ham tabii mantar, döküntü, granül, toz"
+  ],
+  [
+   "45.02",
+   "Kabuğu alınmış; dikdörtgen blok, levha, şerit"
+  ],
+  [
+   "45.03",
+   "Tabii mantardan eşya: tıpa, conta, ağ yüzdürücüsü"
+  ],
+  [
+   "45.04",
+   "Aglomere mantar ve ondan eşya"
+  ]
+ ],
+ "hap": [
+  "<b>Not 1:</b> mantardan olsa da ayakkabı ve aksamı (topuk, tabanlık) Fasıl 64, başlık ve aksamı (siperlik) Fasıl 65, oyuncak-oyun-spor eşyası (dart tablası, olta mantarı) Fasıl 95.",
+  "<b>Mantar = mantar meşesi kabuğu:</b> keskin kenarlı tıpa taslağı ve dikdörtgen levha 45.02; yuvarlak kenarlı taslak ve tıpa 45.03; aglomere mantardan tıpa, karo 45.04."
+ ],
+ "karistirilan": [
+  [
+   "Tıpa diskli metal şişe kapsülü",
+   "83.09",
+   "45.03 hariç tutması; mantar yalnız disk"
+  ],
+  [
+   "Mantar conta da içeren conta takımı",
+   "84.84",
+   "Farklı maddeden takım contalar; 45.03 değil"
+  ]
+ ]
+}

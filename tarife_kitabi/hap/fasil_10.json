@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 10,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı; yalnız yanlış “eşya–fasıl” önermesini bulma sorusunda “Hububat 10. fasılda yer alır” doğru önerme olarak seçeneklerdeydi.",
+ "pozisyonlar": [
+  [
+   "10.01",
+   "Buğday ve mahlut (durum buğdayı dahil)"
+  ],
+  [
+   "10.05",
+   "Mısır; tatlı mısır hariç (Fasıl 7)"
+  ],
+  [
+   "10.06",
+   "Pirinç: çeltik, kavuzsuz, parlatılmış, kırık"
+  ],
+  [
+   "10.08",
+   "Karabuğday, darı, kuş yemi, kinoa, diğer hububat"
+  ]
+ ],
+ "hap": [
+  "<b>Not 1:</b> yalnız tane halindeki hububat (başakta veya sapta olabilir); kavuzu çıkarılmış veya işlenmiş tane Fasıl 11. İstisna: işlenmiş veya kırık pirinç 10.06, perikarpı alınmış kinoa 10.08.",
+  "<b>Tohumluk ve taze hububat Fasıl 10’da kalır:</b> ekim amaçlı olsa da 12.09’a gitmez; tatlı mısır sebzedir (Not 2). Ön pişirilmiş veya şişirilmiş pirinç 19.04.",
+  "<b>Darılar:</b> tane sorgum 10.07; darı ve kuş yemi 10.08; yem darıları 12.14; akdarı 14.04; hububat sapı ve kapçığı 12.13."
+ ],
+ "karistirilan": [
+  [
+   "Kavuzu çıkarılmış yulaf, yassılaştırılmış arpa",
+   "11.04",
+   "Not 1(B): işlenmiş tane Fasıl 10 dışı"
+  ],
+  [
+   "Taze tatlı mısır",
+   "07.09",
+   "Fasıl 10 Not 2; sebze sayılır"
+  ]
+ ]
+}

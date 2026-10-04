@@ -1,0 +1,56 @@
+{
+ "tur": "hap",
+ "fasil": 93,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 2 kez doğrudan: ok ve yayın 93. Fasılda sınıflandırılmadığı (av tüfeği, mızrak, süngü, kılıç kını içeride) ve av tüfeği ile şekline uygun mahfazasının GYK 5(a) ile tüfeğin pozisyonunda kaldığı. Tabanca “aynı bölüm” sorusunda (Bölüm XIX), 93.05 de seçenekte yer aldı.",
+ "pozisyonlar": [
+  [
+   "93.01",
+   "Harp silahları: top, havan, makinalı tüfek-tabanca"
+  ],
+  [
+   "93.02",
+   "Revolver, tabanca; elde tutulur, patlayıcıyla mermi atar"
+  ],
+  [
+   "93.03",
+   "Av-spor tüfeği, kuru sıkı, işaret tabancası, zıpkın tüfeği"
+  ],
+  [
+   "93.05",
+   "93.01–93.04 parçası: namlu, şarjör, dipçik, susturucu"
+  ],
+  [
+   "93.06",
+   "Mühimmat: fişek, saçma, bomba, mayın, torpil, parçaları"
+  ],
+  [
+   "93.07",
+   "Kılıç, süngü, mızrak, hançer ve kınları"
+  ]
+ ],
+ "hap": [
+  "<b>Fasıl dışı (Not 1):</b> Fasıl 36 eşyası (kapsül, fünye, işaret fişeği), zırhlı savaş aracı 87.10, ayrı gelen dürbün (Fasıl 90), ok, yay, eskrim kılıcı, oyuncak silah (Fasıl 95), koleksiyon ve antika (97.05 / 97.06).",
+  "<b>Silahlı taşıt yine taşıttır:</b> tank 87.10, harp gemisi 89.06, askeri uçak Fasıl 88, zırhlı tren Fasıl 86; bunlar için ayrı gelen top ve makinalı tüfek 93.01.",
+  "<b>Her tabanca 93.02 değildir:</b> makinalı tabanca 93.01; kuru sıkı, yalnız işaret fişeği atan ve sürgülü hayvan öldürme tabancası 93.03; havalı, gazlı, yaylı tabanca ile cop, muşta, sapan 93.04.",
+  "<b>Mahfaza ve dürbün:</b> tüfekle birlikte gelen, şekline uygun mahfaza tüfeğin pozisyonunda (GYK 5(a)); ayrı gelen kılıf 42.02. Dürbün silaha takılı veya silahla gelirse silahla, ayrıysa 90.13.",
+  "<b>Kesici silah 93.07:</b> kılıç, pala, süngü, mızrak, hançer ve kınları seremoni, dekorasyon veya tiyatro için yapılmış olsa da buradadır; kılıçlı baston da 93.07 (Fasıl 66 değil)."
+ ],
+ "karistirilan": [
+  [
+   "Okçuluk oku ve yayı; eskrim kılıcı",
+   "95.06",
+   "Not 1(e); av tüfeği, mızrak, süngü, kın Fasıl 93"
+  ],
+  [
+   "İşaret fişeği; kapsül, fünye",
+   "36.04 / 36.03",
+   "Patlayıcı ürün; fişeği atan tabanca 93.03"
+  ],
+  [
+   "Oyuncak sapan, oyuncak tabanca",
+   "95.03",
+   "Kuşlara atış için yapılan sapan 93.04"
+  ]
+ ]
+}

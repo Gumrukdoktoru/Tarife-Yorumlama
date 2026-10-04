@@ -1,0 +1,33 @@
+{
+ "tur": "hap",
+ "fasil": 14,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı, seçeneklerde de yer almadı; bilgi Bölüm II kapsamı ve örgü-sepet eşyası (Fasıl 46) ile hammadde ayrımında gerekir.",
+ "pozisyonlar": [
+  [
+   "14.01",
+   "Örgü maddeleri: bambu, Hint kamışı, rafya, söğüt"
+  ],
+  [
+   "14.04",
+   "Başka yerde yer almayan bitkisel ürünler: linter, kapok"
+  ]
+ ],
+ "hap": [
+  "<b>Not 1:</b> esas olarak mensucatta kullanılan bitkisel maddeler ve lifler, nasıl hazırlanmış olursa olsun Fasıl 14 dışıdır (Bölüm XI).",
+  "<b>Not 2–3:</b> yarılmış, cilalı, boyanmış, yanmaz bambu 14.01’de; yonga 44.04, odun yünü 44.05, hazır fırça başı 96.03 hariç.",
+  "<b>Hammadde → eşya:</b> örgü 46.01, sepet 46.02. İşlenmemiş hububat sapı 12.13; temizlenmiş, beyazlatılmış veya boyanmış sap 14.01."
+ ],
+ "karistirilan": [
+  [
+   "Bambudan sepet",
+   "46.02",
+   "Hammadde değil, sepetçi eşyası"
+  ],
+  [
+   "Pamuk linteri",
+   "14.04",
+   "Pamuk (Fasıl 52) değil; çok kısa lifler"
+  ]
+ ]
+}

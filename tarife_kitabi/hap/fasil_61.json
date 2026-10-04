@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 61,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda 1 kez: Not 9 metni verilip cinsiyeti belirlenemeyen örme giysi soruldu → kadın-kız pozisyonu (GYK 3–4 ifadeleri çeldirici). Kullanılmış giyim sorusunda Fasıl 61 yanlış seçenekti.",
+ "pozisyonlar": [
+  [
+   "61.09",
+   "Tişört, fanila, atlet (cinsiyetsiz)"
+  ],
+  [
+   "61.11",
+   "Bebek giyimi: boy ≤86 cm; öncelikli"
+  ],
+  [
+   "61.13",
+   "59.03/59.06/59.07 örme mensucattan giysi"
+  ],
+  [
+   "61.17",
+   "Örme şal, kravat, mendil, diğer aksesuar"
+  ]
+ ],
+ "hap": [
+  "<b>Kapanma yönü (Not 9):</b> önü soldan sağa kapanan erkek, sağdan sola kadın giysisidir; kesimden belliyse bakılmaz. Cinsiyeti belirlenemeyen giysi kadın-kız pozisyonuna girer (62’de de aynı).",
+  "<b>Öncelik ve dışarıda kalanlar:</b> bebek 61.11 her pozisyondan, 61.13 diğerlerinden önce gelir; örme sütyen-korse 62.12, kullanılmış balya 63.09, ortopedik korse 90.21.",
+  "<b>Set ≠ takım (Bölüm XI Not 14):</b> farklı pozisyondaki giysiler perakende sette de ayrı ayrı sınıflandırılır; takım elbise, takım, pijama gibi metinde geçenler hariç."
+ ],
+ "karistirilan": [
+  [
+   "Köpek elbisesi (tekstil)",
+   "42.01",
+   "Hayvan eşyası Bölüm VIII; Fasıl 61–62 değil"
+  ],
+  [
+   "Örme eldiven",
+   "61.16",
+   "Dokunmuş 62.16, kauçuk 40.15; 61.15 çorap değil"
+  ]
+ ]
+}

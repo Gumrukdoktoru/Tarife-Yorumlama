@@ -1,0 +1,56 @@
+{
+ "tur": "hap",
+ "fasil": 22,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 1 kez doğrudan, 3 kez seçenek: “hangisi 22. fasılda değildir” kalıbında deniz suyu (25.01) sirke, kar, bal şarabı, alkolsüz bira arasından seçildi; sirke ve meşrubat Bölüm IV, sıralamada içki → sigara.",
+ "pozisyonlar": [
+  [
+   "22.01",
+   "Sade sular, maden suyu, soda; buz ve kar"
+  ],
+  [
+   "22.02",
+   "Tatlandırılmış-aromalı sular; alkolsüz içecekler, alkolsüz bira"
+  ],
+  [
+   "22.06",
+   "Diğer fermente içkiler: elma şarabı, bal şarabı, sake"
+  ],
+  [
+   "22.07",
+   "Tağyirsiz etil alkol ≥ %80; tağyirli alkol"
+  ],
+  [
+   "22.08",
+   "Tağyirsiz etil alkol %80’den az; damıtık içkiler, likörler"
+  ],
+  [
+   "22.09",
+   "Sirke ve asetik asitten sirke ikameleri"
+  ]
+ ],
+ "hap": [
+  "<b>Not 3 – alkolsüz içecek:</b> alkol derecesi hacimce %0,5’i geçmeyen içecek (22.02). Alkol derecesi 20 °C’de ölçülür (Not 2; Fasıl 20 ve 21 için de geçerli).",
+  "<b>Not 1 fasıl dışı:</b> deniz suyu 25.01; damıtılmış-iletken su 28.53; %10’dan fazla asetik asitli çözelti 29.15; içilmez yemeklik ürün genellikle 21.03 (sirke hariç); ilaç Fasıl 30; parfümeri Fasıl 33.",
+  "<b>%80 eşiği:</b> tağyir edilmemiş etil alkol hacimce %80 ve üzeri 22.07, altı 22.08; tağyir edilmiş alkol her derecede 22.07.",
+  "<b>Kar ve buz 22.01’dedir:</b> tabii kar dahil; kuru buz 28.11, yenilen buzlar 21.05. Şekerli veya aromalı maden suyu 22.02.",
+  "<b>Şarap ayrımı:</b> taze üzüm şarabı ve %0,5’i aşan şıra 22.04; vermut 22.05; kuru üzüm, elma, bal şarabı 22.06. Fermente olmamış şıra 20.09."
+ ],
+ "karistirilan": [
+  [
+   "Deniz suyu",
+   "25.01",
+   "Not 1(b); 22.01 değil"
+  ],
+  [
+   "Alkolsüz bira (≤ %0,5)",
+   "22.02",
+   "Malttan olsa da 22.03 değil"
+  ],
+  [
+   "Seyreltilmemiş meyve suyu",
+   "20.09",
+   "Fermente değil; limonata ise 22.02"
+  ]
+ ]
+}

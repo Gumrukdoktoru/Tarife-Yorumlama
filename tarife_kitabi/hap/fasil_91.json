@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 91,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı; seçeneklerde 2 kez: “saat 91. fasılda” doğru ifade olarak ve kol saatinin güneş gözlüğü-gitarla aynı bölümde (XVIII) olduğu bilgisiyle.",
+ "pozisyonlar": [
+  [
+   "91.01",
+   "Zarfı tamamen kıymetli metal/kaplama kol-cep saati"
+  ],
+  [
+   "91.02",
+   "Diğer kol-cep saatleri (kakmalı adi metal dahil)"
+  ],
+  [
+   "91.03",
+   "Not 3 makinalı masa, duvar, çalar saat"
+  ],
+  [
+   "91.04",
+   "Taşıt, uçak, gemi alet tablosu saati"
+  ]
+ ],
+ "hap": [
+  "<b>Not 3 (saat makinası):</b> kalınlık ≤ 12 mm; genişlik, uzunluk veya çap ≤ 50 mm. Uyan makinalı masa-çalar saat 91.03; sarkaçlı, büyük veya senkron motorlu 91.05.",
+  "<b>Not 1:</b> saat camı ve ağırlığı maddesine göre, saat zinciri 71.13 / 71.17, genel kullanım parçası ve rulman fasıl dışı; saat yayı ise 91.14’te.",
+  "<b>Bölüm XVIII = Fasıl 90–92</b> (bölüm notu yok): güneş gözlüğü, kol saati ve gitar aynı bölümde; tabanca Bölüm XIX (Fasıl 93)."
+ ],
+ "karistirilan": [
+  [
+   "Metronom",
+   "92.09",
+   "Zaman ölçse de Fasıl 91 değil"
+  ],
+  [
+   "Pedometre, taksimetre",
+   "90.29",
+   "Sayaç niteliğinde; saat değil"
+  ]
+ ]
+}

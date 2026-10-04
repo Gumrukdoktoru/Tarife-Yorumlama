@@ -1,0 +1,78 @@
+{
+ "tur": "hap",
+ "fasil": 33,
+ "kademe": "A",
+ "sinavda": "Son 5 sınavda 3 kez: perakende kontak lens solüsyonu 33.07 (38.24, 34.01, 34.02 çeldirici); el sabununun (34.01) diş macunu, diş ipliği, saç boyası ve lens solüsyonundan farklı fasılda olduğu; parfüm + not defterinin set olmadığı (GYK 3(b)). Ruj–diş macunu–parfüm–şampuan sıralaması çeldiriciydi.",
+ "pozisyonlar": [
+  [
+   "33.01",
+   "Uçucu yağlar, rezinoitler; damıtık aromatik sular"
+  ],
+  [
+   "33.02",
+   "Koku verici karışımlar; içecek aroma bazları"
+  ],
+  [
+   "33.03",
+   "Parfüm, tuvalet suyu, kolonya"
+  ],
+  [
+   "33.04",
+   "Makyaj, cilt bakımı, güneş; manikür-pedikür"
+  ],
+  [
+   "33.05",
+   "Saç: şampuan, perma, sprey, saç boyası"
+  ],
+  [
+   "33.06",
+   "Ağız-diş: diş macunu, ağız suyu, diş ipliği"
+  ],
+  [
+   "33.07",
+   "Tıraş, deodorant, banyo, oda kokusu, lens solüsyonu"
+  ]
+ ],
+ "hap": [
+  "<b>Sıralama:</b> parfüm 33.03 → ruj ve oje 33.04 → şampuan 33.05 → diş macunu 33.06 → tıraş köpüğü, deodorant, lens solüsyonu 33.07.",
+  "<b>Not 4 – 33.07’de ismen:</b> kontak lens ve suni göz solüsyonları, koku yastıkları, yakılarak kullanılan kokulu müstahzarlar, parfümlü veya kozmetikli kağıt, vatka, keçe; hayvan tuvalet müstahzarları.",
+  "<b>Fasıl 34 Not 1(c):</b> sabun veya yüzey aktif madde içerse de şampuan 33.05, diş macunu 33.06, tıraş kremi ve köpüğü ile banyo müstahzarları 33.07; kalıp sabun ise 34.01.",
+  "<b>Tedavi edici özellik çıkarmaz:</b> 33.03–33.07 ürünleri eczacılık maddesi içerse de Fasıl 33’te kalır (Fasıl 30 Not 1(e)); asıl kullanımı tedavi olan müstahzar ise Fasıl 30.",
+  "<b>Not 3:</b> karışım olmayan ürün de bu kullanıma uygun ve perakende ambalajlıysa 33.03–33.07’ye girer; uçucu yağların damıtık suları (gül suyu) her halde 33.01.",
+  "<b>Ayrımlar:</b> saça uygulanan 33.05, vücut tüyü ve tüy dökücü 33.07; oje 33.04, ayak deodorantı ve tırnak tedavisi 33.07; tuvalet sirkesi 33.04, tıraş losyonu 33.07.",
+  "<b>Set değil (GYK 3(b)):</b> parfüm veya tıraş losyonu, not defteri ya da kemer gibi ilgisiz eşyayla birlikte paketlense de set sayılmaz; her eşya kendi pozisyonunda.",
+  "<b>Not 1 hariçleri:</b> 13.02 bitkisel hülasaları ve tabii yağ reçineleri, 34.01 sabunları, terebentin esansı 38.05. Ham vazelin 27.12; parfümlü mum 34.06."
+ ],
+ "karistirilan": [
+  [
+   "El sabunu (kalıp veya perakende sıvı)",
+   "34.01",
+   "Sabun Fasıl 34; sabunlu şampuan ve diş macunu 33"
+  ],
+  [
+   "Perakende kontak lens solüsyonu",
+   "33.07",
+   "Not 4’te ismen; 34.02 veya 38.24 değil"
+  ],
+  [
+   "Ham vazelin",
+   "27.12",
+   "Perakende cilt bakımı için hazırlanmışı 33.04"
+  ],
+  [
+   "Ekzema kremi gibi tıbbi müstahzar",
+   "30.04",
+   "Asıl kullanımı tedavi; dökme ise 30.03"
+  ],
+  [
+   "Parfümlü mum",
+   "34.06",
+   "Tütsü ve yakılan kokulu müstahzar ise 33.07"
+  ],
+  [
+   "Gül suyu (perakende olsa da)",
+   "33.01",
+   "Not 3: damıtık aromatik sular 33.03–33.07’ye girmez"
+  ]
+ ]
+}

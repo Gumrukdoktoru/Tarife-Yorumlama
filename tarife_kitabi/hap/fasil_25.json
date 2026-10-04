@@ -1,0 +1,56 @@
+{
+ "tur": "hap",
+ "fasil": 25,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 2 kez: dişçilikte kullanılan alçının pozisyonu (25.20; 30.06, 68.09, 90.21 çeldirici) ve “22. fasılda yer almaz” kalıbında deniz suyu (25.01; sirke, kar, bal şarabı Fasıl 22’de).",
+ "pozisyonlar": [
+  [
+   "25.01",
+   "Tuz, saf sodyum klorür, deniz suyu"
+  ],
+  [
+   "25.15",
+   "Mermer, traverten; belirgin yoğunluk ≥ 2,5"
+  ],
+  [
+   "25.17",
+   "Çakıl, makadam, taş granül ve tozu (öncelikli)"
+  ],
+  [
+   "25.20",
+   "Alçı taşı, alçılar; dişçilik alçısı dahil"
+  ],
+  [
+   "25.23",
+   "Su altında sertleşen çimento, klinker"
+  ],
+  [
+   "25.30",
+   "Artık: vermikülit, perlit, toprak boyası, kehribar"
+  ]
+ ],
+ "hap": [
+  "<b>Not 1 – izin verilen işlemler:</b> yıkama, ezme, öğütme, eleme, flotasyon, manyetik ayırma. Kavurma, kalsinasyon, karıştırma ve kristalizasyon fasıl dışına çıkarır; pozisyon izin veriyorsa kalır (kaolin, dolomit, alçı, kireç).",
+  "<b>Not 3:</b> 25.17’ye ve başka bir Fasıl 25 pozisyonuna girebilen ürün 25.17’dedir: mermer tozu, agrega olarak kırılmış dolomit 25.17.",
+  "<b>Taş sınırı:</b> ham, kabaca yontulmuş veya testereyle dikdörtgen kesilmiş taş Fasıl 25; cilalı, şevli, oyulmuş taş ile kaldırım, döşeme ve mozaik taşları Fasıl 68.",
+  "<b>Eşikler:</b> kireçli taş belirgin yoğunluğu ≥ 2,5 ise 25.15, altı 25.16; silisli fosil unu ≤ 1 (25.12); Fe2O3 ≥ %70 toprak boya 28.21; tabii borik asit H3BO3 ≤ %85 (25.28).",
+  "<b>Saf muadiller Fasıl 28’e gider, tuz istisnadır:</b> süblime kükürt 28.02, saf kalsiyum oksit 28.25, rafine boraks 28.40; saf sodyum klorür ve deniz suyu 25.01’de kalır."
+ ],
+ "karistirilan": [
+  [
+   "Dişçilikte kullanılan özel kalsine alçı",
+   "25.20",
+   "Alçı esaslı dişçilik müstahzarı 34.07, dişçi çimentosu 30.06"
+  ],
+  [
+   "Deniz suyu",
+   "25.01",
+   "Fasıl 22 değil; tabii su, buz ve kar 22.01"
+  ],
+  [
+   "Yazı ve terzi tebeşiri",
+   "96.09",
+   "Not 2; tabii tebeşir 25.09, bilardo tebeşiri 95.04"
+  ]
+ ]
+}

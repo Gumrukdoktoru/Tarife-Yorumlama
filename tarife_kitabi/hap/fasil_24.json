@@ -1,0 +1,48 @@
+{
+ "tur": "hap",
+ "fasil": 24,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 2 kez doğrudan, 2 kez seçenek: boşluk doldurmada e-sigara 85.43, kartuşu 24.04, sigara 24.02, sigara kağıdı 48.13; 30. fasıl sorusunda nikotinli bant (24.04) çeldirici; Bölüm IV ve sıralama (içki → sigara → çakmak) soruları.",
+ "pozisyonlar": [
+  [
+   "24.01",
+   "Yaprak tütün ve tütün döküntüleri"
+  ],
+  [
+   "24.02",
+   "Puro, sigarillo, sigara (tütünsüz olanlar dahil)"
+  ],
+  [
+   "24.03",
+   "Diğer mamul tütün: pipo, nargile, çiğneme tütünü, enfiye"
+  ],
+  [
+   "24.04",
+   "Yanmadan solunan ürünler; nikotinli bant, sakız, e-sıvı"
+  ]
+ ],
+ "hap": [
+  "<b>Öncelik kuralı:</b> hem 24.04’e hem bu faslın başka pozisyonuna girebilen ürün 24.04’te; ısıtılan tütün çubuğu 24.03 değil 24.04.",
+  "<b>“Yanma olmadan solunan”:</b> ısı yoluyla veya diğer yollarla (kimyasal, ultrasonik) yanmadan soluma; e-sıvı, kartuş ve tek kullanımlık e-sigara 24.04.",
+  "<b>Cihaz ↔ sarf:</b> yeniden doldurulabilir e-sigara cihazı 85.43, sıvı ve kartuşu 24.04; sigara kağıdı 48.13; pipo ve ağızlık 96.14; çakmak 96.13.",
+  "<b>Fasıl notu:</b> tıbbi sigaralar Fasıl 30; ama sigarayı bırakmaya yardımcı nikotinli tablet, sakız ve bant Fasıl 30 değil 24.04’tür.",
+  "<b>Nikotinin kendisi</b> (tabii veya sentetik) 29.39; tütün hülasası 24.03. Tütün-ikame karışımından sigara, oran ne olursa olsun 24.02."
+ ],
+ "karistirilan": [
+  [
+   "Sigarayı bırakma için nikotinli bant",
+   "24.04",
+   "Fasıl 30 Not 1 ile ilaç dışı"
+  ],
+  [
+   "Doldurulabilir e-sigara cihazı",
+   "85.43",
+   "Cihaz; kartuşu ve sıvısı 24.04"
+  ],
+  [
+   "Sigara kağıdı (defter, boru)",
+   "48.13",
+   "Tütün içermez; kağıt faslı"
+  ]
+ ]
+}

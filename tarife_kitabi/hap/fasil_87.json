@@ -1,0 +1,98 @@
+{
+ "tur": "hap",
+ "fasil": 87,
+ "kademe": "A",
+ "sinavda": "Son 5 sınavda 4 kez konu, 7 kez seçenek: pedalsız, ayakla itilen iki tekerlekli araç 87.16 (GYK 1 ve 6), far-stop camı 87 dışı (70.14), 87.10’da binek otomobile ait ürün yok, 87.02 alt pozisyon açılımı. Çeldirici kalıbı: traktöre takılan kültivatör 84.32, elektrikli cam silici 85.12, üç tekerlekli bisiklet 95.03, buz pisti düzeltme makinesi 84.79.",
+ "pozisyonlar": [
+  [
+   "87.01",
+   "Traktör: esas işi çekmek veya itmek"
+  ],
+  [
+   "87.02",
+   "Sürücü dahil 10 veya daha fazla kişi"
+  ],
+  [
+   "87.03",
+   "İnsan taşıma: otomobil, ambulans, karavan, golf arabası"
+  ],
+  [
+   "87.04",
+   "Eşya taşıma: kamyon, pick-up, damper"
+  ],
+  [
+   "87.05",
+   "Taşıma dışı hizmet: itfaiye, kurtarıcı, beton mikseri"
+  ],
+  [
+   "87.06",
+   "Motorlu şasi, sürücü mahalli yok"
+  ],
+  [
+   "87.08",
+   "87.01–87.05 aksamı: fren, tampon, radyatör, kemer"
+  ],
+  [
+   "87.09",
+   "Kaldırma tertibatsız kısa mesafe yük arabası"
+  ],
+  [
+   "87.10",
+   "Tank, zırhlı savaş taşıtı ve aksamı"
+  ],
+  [
+   "87.11",
+   "Motosiklet, mopet, yan sepet"
+  ],
+  [
+   "87.12",
+   "Motorsuz bisiklet (çocuk bisikleti dahil)"
+  ],
+  [
+   "87.16",
+   "Römork; el, ayak veya hayvanla yürüyen taşıt"
+  ]
+ ],
+ "hap": [
+  "<b>Bölüm XVII Not 2 (aksam sayılmaz):</b> conta 84.84, genel kullanım parçası, Fasıl 82 aleti, 83.06, 84.01–84.79 makinesi (radyatör hariç), 84.81, 84.82, Fasıl 85, 90, 91, 93, lamba 94.05, fırça 96.03.",
+  "<b>Aksam şartı (XVII Not 3):</b> yalnız veya esas itibarıyla bu taşıtlara uygun olmalı, daha belirli yer olmamalı: lastik 40.11, çerçevesiz emniyet camı 70.07, dikiz aynası 70.09, koltuk 94.01 dışarıda.",
+  "<b>Not 2 (traktör):</b> esas işi başka taşıt, cihaz veya yükü çekmek-itmek. Traktöre takılan alet monte gelse de kendi faslında: kültivatör, pulluk 84.32; çayır biçme 84.33.",
+  "<b>87.03 / 87.04:</b> emniyet kemerli koltuk, arka yan cam, bölme panel yokluğu ve konfor donanımı 87.03; bank koltuk, penceresiz yan panel, daimi bölme ve çıplak yük alanı 87.04.",
+  "<b>Şasi (Not 3):</b> motor ve sürücü mahalli varsa 87.02–87.04; motorlu ama sürücü mahallisiz 87.06; motorsuz şasi 87.08; karoser ve sürücü kabini 87.07.",
+  "<b>Not 1 ve Not 4:</b> yalnız raylar üzerinde giden taşıt Fasıl 86. Çocuklar için her türlü bisiklet 87.12; diğer tekerlekli çocuk araçları (üç tekerlekli çocuk bisikleti, pedallı araba) 95.03.",
+  "<b>Ayakla itilen taşıt:</b> sele, pedal ve krank dişlisi olmayan iki tekerlekli araç bisiklet değildir; elle veya ayakla hareket ettirilen taşıt olarak 87.16’dadır (GYK 1 ve 6).",
+  "<b>87.09:</b> fabrika, liman, havalimanında kısa mesafe yük arabası; kaldırma tertibatı yok, yüklü hızı genellikle 30–35 km/saati geçmez. Forklift ve kaldırma tertibatlı yük arabası 84.27."
+ ],
+ "karistirilan": [
+  [
+   "Traktöre takılan kültivatör",
+   "84.32",
+   "87 Not 2: monte gelse de alet kendi faslında"
+  ],
+  [
+   "Elektrik motorlu cam silici; far",
+   "85.12",
+   "Bölüm XVII Not 2(f): Fasıl 85 eşyası aksam sayılmaz"
+  ],
+  [
+   "Taşıt far ve stop camı",
+   "70.14",
+   "İşaret camı; daha belirli yer, Fasıl 87 dışı"
+  ],
+  [
+   "Üç tekerlekli çocuk bisikleti",
+   "95.03",
+   "87 Not 4; iki tekerlekli çocuk bisikleti 87.12"
+  ],
+  [
+   "Buz pisti yüzey düzeltme makinesi",
+   "84.79",
+   "Kendinden hareketli olsa da 87.05 değil"
+  ],
+  [
+   "Taşıt motoru; krank mili",
+   "84.07",
+   "Not 2(e): motor Fasıl 84; krank mili 84.83"
+  ]
+ ]
+}

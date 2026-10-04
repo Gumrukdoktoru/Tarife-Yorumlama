@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 18,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı; “IV. Bölüm kapsamında değildir” sorusunda kakao Bölüm IV eşyası olarak seçenekteydi (cevap kahve, Bölüm II).",
+ "pozisyonlar": [
+  [
+   "18.03",
+   "Kakao hamuru (şekersiz; yağı alınmış olabilir)"
+  ],
+  [
+   "18.04",
+   "Kakao yağı (Fasıl 15’e girmez)"
+  ],
+  [
+   "18.05",
+   "Şekersiz kakao tozu"
+  ],
+  [
+   "18.06",
+   "Çikolata ve kakaolu diğer gıda müstahzarları"
+  ]
+ ],
+ "hap": [
+  "<b>Not 2:</b> kakaolu şeker mamulleri ve diğer kakaolu gıdalar 18.06. Not 1 hariç: %20’den fazla etli-balıklı (Fasıl 16), 04.03, 19.01, 19.02, 19.04, 19.05, 21.05, 22.02, 22.08, 30.03, 30.04.",
+  "<b>Fasıl 19 eşikleri (yağsız baz):</b> un-malt esaslıda %40’tan, süt esaslıda %5’ten az kakaolu müstahzar 19.01; kavrulmuş hububatta %6’dan fazla kakao veya tam çikolata kaplama 18.06.",
+  "<b>Kakao sayılmayan kakao yağı:</b> beyaz çikolata 17.04. Kakaolu dondurma 21.05, çikolata kaplı bisküvi 19.05."
+ ],
+ "karistirilan": [
+  [
+   "Beyaz çikolata",
+   "17.04",
+   "Kakao yağı kakao sayılmaz"
+  ],
+  [
+   "Kakaolu dondurma",
+   "21.05",
+   "Not 1(b); kakao oranı önemsiz"
+  ]
+ ]
+}

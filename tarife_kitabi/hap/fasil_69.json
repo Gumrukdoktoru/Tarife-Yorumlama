@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 69,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı; “maddesine göre sınıflandırılan eşya” sorusunda doğru cevap tabaktı (porselen 69.11, diğer seramik 69.12; şemsiye ve baston maddeden bağımsız).",
+ "pozisyonlar": [
+  [
+   "69.02",
+   "Ateşe dayanıklı tuğla, karo, inşaat eşyası"
+  ],
+  [
+   "69.07",
+   "Döşeme ve kaplama karosu, mozaik küp"
+  ],
+  [
+   "69.10",
+   "Lavabo, küvet, klozet (sabit tesisata bağlı)"
+  ],
+  [
+   "69.11",
+   "Porselen/çini sofra-mutfak eşyası; diğer seramikten 69.12"
+  ]
+ ],
+ "hap": [
+  "<b>Not 1:</b> yalnız şekil verildikten sonra pişirilmiş seramik; 800 °C’nin altında ısıtılan ürün pişirilmiş sayılmaz (Fasıl 68). Tamamen camlaşan eşya ve cam-seramik Fasıl 70.",
+  "<b>Tür esastır, madde değil:</b> porselen ya da gre lavabo aynı 69.10; madde ayrımı yalnız sofra, mutfak, ev, tuvalet eşyasında: porselen/çini 69.11, taklit porselen dahil diğer seramik 69.12.",
+  "<b>Not 2 – fasıl dışı:</b> seramik aşındırıcı 68.04, taklit mücevher 71.17, izolatör 85.46, takma diş 90.21, saat, mobilya-lamba, oyuncak, düğme 96.06, pipo 96.14."
+ ],
+ "karistirilan": [
+  [
+   "Seramik elektrik izolatörü",
+   "85.46",
+   "Not 2(f); teknik seramik eşya 69.09 değil"
+  ],
+  [
+   "Seramik gövdeli masa lambası",
+   "94.05",
+   "Not 2(ij); süs eşyası 69.13 değil"
+  ]
+ ]
+}

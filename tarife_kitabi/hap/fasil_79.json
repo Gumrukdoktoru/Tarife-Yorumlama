@@ -1,0 +1,35 @@
+{
+ "tur": "hap",
+ "fasil": 79,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı, seçeneklerde de yer almadı; çinko alaşımı ve kaplama ayrımı Bölüm XV Not 5 ve 7 ile çözülür.",
+ "pozisyonlar": [
+  [
+   "79.01",
+   "İşlenmemiş çinko; pellet dahil, toz hariç"
+  ],
+  [
+   "79.03",
+   "Toz, ince toz ve pullar"
+  ],
+  [
+   "79.04",
+   "Çubuk, profil ve teller"
+  ],
+  [
+   "79.07",
+   "Diğer: boru, çivi, oluk, kova, anot"
+  ]
+ ],
+ "hap": [
+  "<b>Çinko üstünse 79:</b> ağırlıkça diğer her metalden fazla olması yeter, %50 şart değil; pirinçte bakır üstün olduğundan Fasıl 74, galvanizli çelik eşya Fasıl 72/73.",
+  "<b>Toz:</b> 1 mm elekten ağırlıkça %90 veya fazlası geçen ürün (Bölüm XV Not 8) 79.03’te; “çinko kurumu” ve galvaniz çamuru 26.20, boya halindeki toz Fasıl 32."
+ ],
+ "karistirilan": [
+  [
+   "Galvanizli çelik kova",
+   "73.23",
+   "Çinko kaplama faslı değiştirmez"
+  ]
+ ]
+}

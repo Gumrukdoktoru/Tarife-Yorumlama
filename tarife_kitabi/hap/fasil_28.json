@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 28,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda 1 kez: “27. fasılda sınıflandırılamaz” sorusunun cevabı hidrojen gazıydı (element → 28.04). Bölüm VI notları (öncelik ve perakende kuralı) bütün kimya fasıllarında kullanılır.",
+ "pozisyonlar": [
+  [
+   "28.04",
+   "Hidrojen, asal gazlar, diğer ametaller"
+  ],
+  [
+   "28.43",
+   "Kıymetli metal bileşikleri; Bölüm VI içinde öncelikli"
+  ],
+  [
+   "28.44",
+   "Radyoaktif element ve izotoplar; tüm tarifeye öncelikli"
+  ],
+  [
+   "28.53",
+   "Damıtık su, sıvı hava, amalgamlar, fosfürler"
+  ]
+ ],
+ "hap": [
+  "<b>Bölüm VI Not 1:</b> 28.44 ve 28.45 tanımına uyan ürün tarifenin başka pozisyonuna girmez; 28.43, 28.46, 28.52 yalnız Bölüm VI içinde önceliklidir (gümüş kazeinat 28.43, gadolinit 25.30).",
+  "<b>Bölüm VI Not 2:</b> dozlandırıldığı veya perakende hazırlandığı için 30.04–30.06, 32.12, 33.03–33.07, 35.06, 37.07 veya 38.08’e giren ürün orada kalır (perakende tutkal dekstrin 35.06).",
+  "<b>Fasıl 28 Not 1 ve 3:</b> yalnız izole element ve belirli yapıda inorganik bileşik (sulu çözeltisi dahil); saf olsa da sodyum klorür 25.01, magnezyum oksit 25.19, gübre tuzları Fasıl 31."
+ ],
+ "karistirilan": [
+  [
+   "Kimyaca saf sodyum klorür",
+   "25.01",
+   "Not 3(a): Bölüm V ürünü; saf MgO da 25.19"
+  ],
+  [
+   "Perakende fotoğrafçılık gümüş nitratı",
+   "28.43",
+   "Bölüm VI Not 1(B): 37.07’ye değil 28.43’e"
+  ]
+ ]
+}

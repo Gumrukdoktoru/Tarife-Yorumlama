@@ -1,0 +1,56 @@
+{
+ "tur": "hap",
+ "fasil": 59,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 1 kez: sentetik liften yangın hortumu 59.09 (çeldiriciler 39.17, 58.11, 63.06). Seçeneklerde de geçti: terkip deri sorusunda 59.03, “gezici hayvan sergisi ile aynı fasıl” sorusunda tiyatro dekoru (59.07).",
+ "pozisyonlar": [
+  [
+   "59.03",
+   "Plastikle emdirilmiş, kaplanmış, lamine mensucat"
+  ],
+  [
+   "59.06",
+   "Kauçuklu mensucat (≤1.500 g/m² veya dokuma %50’den fazla)"
+  ],
+  [
+   "59.07",
+   "Diğer kaplanmış mensucat; tiyatro dekoru bezleri"
+  ],
+  [
+   "59.09",
+   "Tulumba ve benzeri hortumlar (teçhizatlı olsa da)"
+  ],
+  [
+   "59.10",
+   "Taşıyıcı ve transmisyon kolanları"
+  ],
+  [
+   "59.11",
+   "Teknik ürünler (Not 8): elek bezi, filtre, conta"
+  ]
+ ],
+ "hap": [
+  "<b>Plastikli mensucat (Not 2):</b> işlem çıplak gözle görülmüyorsa 50–55, 58, 60; 7 mm silindirde kırılmadan bükülemiyorsa veya plastiğe tamamen gömülü / iki yüzü kaplıysa Fasıl 39; diğerleri 59.03.",
+  "<b>Kauçuklu mensucat (Not 5):</b> 1.500 g/m²’yi geçmeyen ya da geçip ağırlıkça %50’den fazla dokuma maddesi içeren 59.06; aksi halde Fasıl 40. Kauçuklu kolan 40.10.",
+  "<b>Hortum ve kolan:</b> tekstil hortum astarlı, spiralli, rakorlu olsa da 59.09 (mensucat yalnız takviyeyse 40.09); kolan 3 mm’den inceyse 59.10 değil, uçları birleştirilmişse kalınlık aranmaz.",
+  "<b>59.07:</b> başka maddelerle (katran, mum, yağ, mika tozu) kaplanmış mensucat ve boyanmış tiyatro dekoru, atölye fonu bezleri; sadece boyayla desenlenmiş kumaş girmez.",
+  "<b>Hazır eşya kuralı:</b> kaplanmış mensucattan giysi 61.13 / 62.10, çadır 63.06’ya gider; hortum, kolan ve 59.11 teknik eşyası hazır halde de Fasıl 59’dadır."
+ ],
+ "karistirilan": [
+  [
+   "Mensucatla takviyeli vulkanize kauçuk hortum",
+   "40.09",
+   "Tekstil yalnız takviye; 59.09 değil"
+  ],
+  [
+   "Kauçuklu mensucattan transmisyon kayışı",
+   "40.10",
+   "Fasıl 59 Not 7(b); 59.10 değil"
+  ],
+  [
+   "Plastik kaplı dokunmuş kumaştan yağmurluk",
+   "62.10",
+   "Hazır eşya; 59.03 kumaş değil (Bölüm XI Not 8)"
+  ]
+ ]
+}

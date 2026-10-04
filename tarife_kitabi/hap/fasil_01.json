@@ -1,0 +1,37 @@
+{
+ "tur": "hap",
+ "fasil": 1,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda 1 kez, “hangisi 3. fasılda sınıflandırılmaz” kalıbıyla: balina memeli olduğundan canlı hali 01.06’dadır. Gezici hayvan sergilerinin (95.08) faslı ayrıca bir Fasıl 95 sorusunda soruldu.",
+ "pozisyonlar": [
+  [
+   "01.01",
+   "At, eşek, katır, bardo; evcil veya yabani"
+  ],
+  [
+   "01.05",
+   "Yalnız evcil kümes: tavuk, ördek, kaz, hindi, beç"
+  ],
+  [
+   "01.06",
+   "Artık: memeli (balina, yunus, fok), sürüngen, kuş, arı"
+  ]
+ ],
+ "hap": [
+  "<b>Fasıl 1 Notu (dışı):</b> balık ve su omurgasızları (03.01, 03.06–03.08), mikroorganizma kültürleri (30.02), sirk ve gezici hayvan gösterisi hayvanları (95.08).",
+  "<b>Yabanilik pozisyonu değiştirmez:</b> yabani at, sığır, domuz, koyun-keçi kendi pozisyonunda; yalnız 01.05 evcil türlerle sınırlı (yabani ördek, sülün, güvercin 01.06). Yavru ana türün pozisyonundadır.",
+  "<b>Cansız hayvan:</b> nakliyede ölen hayvan eti yenilebilirse Fasıl 2 veya 04.10, değilse 05.11."
+ ],
+ "karistirilan": [
+  [
+   "Canlı balina, yunus, fok",
+   "01.06",
+   "Memelidir; Fasıl 3 yalnız balık ve su omurgasızları"
+  ],
+  [
+   "Canlı deniz kaplumbağası",
+   "01.06",
+   "Sürüngen; deniz kulağı 03.07, deniz hıyarı 03.08"
+  ]
+ ]
+}

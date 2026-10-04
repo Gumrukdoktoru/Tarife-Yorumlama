@@ -1,0 +1,52 @@
+{
+ "tur": "hap",
+ "fasil": 5,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 2 kez doğrudan, 2 kez seçeneklerde: yenmeyen cansız böcek 05.11 (yenilebilen 04.10) ve başlığa rağmen bağırsak-mide 05.04 (GYK 1); “4. fasılda yer almaz” sorusunda salyangoz kabuğu unu (05.08) seçenekteydi.",
+ "pozisyonlar": [
+  [
+   "05.04",
+   "Bağırsak, mesane, mide (yenilebilir olsa da; balığınki hariç)"
+  ],
+  [
+   "05.05",
+   "Kuş derisi, tüy; yalnız temizlenmiş veya korunmuş"
+  ],
+  [
+   "05.07",
+   "Fildişi, boynuz, toynak, gaga; şekil verilmemiş"
+  ],
+  [
+   "05.08",
+   "Mercan, yumuşakça kabuğu, mürekkep balığı kemiği; tozu"
+  ],
+  [
+   "05.11",
+   "Artık: kan, sperm, at kılı, sünger, yenmeyen böcek"
+  ]
+ ],
+ "hap": [
+  "<b>Fasıl 5 Not 1 (dışı):</b> yenilebilir ürünler (bağırsak, mesane, mide ve kan hariç); ham deri ve kürk (Fasıl 41/43); dokumaya elverişli madde (Bölüm XI; at kılı hariç); fırça başları (96.03).",
+  "<b>Fildişi (Not 3, tüm tarifede):</b> fil, hipopotam, mors, deniz gergedanı, yaban domuzu dişleri, gergedan boynuzu ve bütün hayvanların dişleri.",
+  "<b>At kılı (Not 4, tüm tarifede):</b> at veya sığır türü hayvanların yele ve kuyruk kılları → 05.11; eğrilmiş veya uçları düğümlenmiş at kılı Fasıl 51.",
+  "<b>Basit hazırlama sınırı:</b> kemik, fildişi, boynuz, mercan, kabuk kesilip temizlenmişse burada; levha, çubuk, boru veya kalıplanmış hali 96.01. İşlenmiş saç 67.03, işlenmiş tüy 67.01.",
+  "<b>Eczacılık guddesi:</b> taze, dondurulmuş veya geçici korunmuş 05.10; kurutulmuş veya öz halinde 30.01. Ak amber ve misk 05.10; sarı amber 25.30."
+ ],
+ "karistirilan": [
+  [
+   "Yenilebilir hayvan bağırsağı, işkembe",
+   "05.04",
+   "Fasıl 2 başlığına rağmen; Not 1(a) istisnası (GYK 1)"
+  ],
+  [
+   "Yenmeyen cansız böcek",
+   "05.11",
+   "Yenilebilir böcek 04.10 (Fasıl 4 Not 6)"
+  ],
+  [
+   "Salyangoz kabuğu unu",
+   "05.08",
+   "Kabuk tozu; yenilebilir ürün değil, Fasıl 4 dışı"
+  ]
+ ]
+}

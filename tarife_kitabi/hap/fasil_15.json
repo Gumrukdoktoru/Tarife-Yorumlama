@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 15,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda 1 kez doğrudan, 1 kez seçenek: ham gliserin ile gliserinli su ve lesivler 15.20 soruldu; sınai yağ alkolleri sorusunda 15.18 ve 15.20 çeldiriciydi (doğrusu 38.23).",
+ "pozisyonlar": [
+  [
+   "15.17",
+   "Margarin; yenilen yağ karışımları ve müstahzarları"
+  ],
+  [
+   "15.18",
+   "Kimyasal değiştirilmiş yağlar; yenilmeyen karışımlar"
+  ],
+  [
+   "15.20",
+   "Ham gliserin; gliserinli sular ve lesivler"
+  ],
+  [
+   "15.21",
+   "Bitkisel mumlar, balmumu, ispermeçet (karıştırılmamış)"
+  ]
+ ],
+ "hap": [
+  "<b>Bölüm III = yalnız Fasıl 15</b> (bölüm notu yok). Not 1 hariç: eritilmemiş domuz-kümes yağı 02.09, kakao yağı 18.04, %15’ten fazla 04.05 ürünü içeren yenilen müstahzar, yağ asitleri ve VI. Bölüm ürünleri.",
+  "<b>Gliserin ve yağ alkolü:</b> ham gliserin (saflık %95’ten az) 15.20, %95 ve üzeri 29.05. Sınai yağ asitleri ve yağ alkolleri 38.23; sabun 34.01.",
+  "<b>Zeytin ve karışımlar:</b> çözücüyle elde edilen zeytin yağı 15.10 (Not 2); yenilen karışım 15.17, yenilmeyen 15.18; yalnız denatüre edilmiş yağ kendi pozisyonunda kalır (Not 3)."
+ ],
+ "karistirilan": [
+  [
+   "Sınai yağ alkolleri",
+   "38.23",
+   "Not 1: VI. Bölüm ürünü; 15.18 veya 15.20 değil"
+  ],
+  [
+   "Kakao yağı",
+   "18.04",
+   "Bitkisel yağ olsa da Fasıl 15 Not 1(b)"
+  ]
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 67,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı, seçeneklerde de yer almadı; ham tüy-saç (Fasıl 5) ile işlenmiş hali (67) ayrımı ve peruğun 67.04’te olduğu bilinmeli.",
+ "pozisyonlar": [
+  [
+   "67.01",
+   "İşlenmiş kuş tüyü ve tüyden eşya, yelpaze"
+  ],
+  [
+   "67.02",
+   "Yapma çiçek, yaprak, meyve (parçalar birleştirilmiş)"
+  ],
+  [
+   "67.03",
+   "Hazırlanmış insan saçı; peruk için yün, kıl"
+  ],
+  [
+   "67.04",
+   "Peruk, takma sakal, kaş, kirpik; saç eşyası"
+  ]
+ ],
+ "hap": [
+  "<b>Fasıl 5 / 67 sınırı:</b> yalnız temizlenmiş tüy 05.05, yalnız yıkanmış saç 05.01; ağartılmış, boyanmış, kıvrılmış tüy 67.01; kök-uç dizilmiş, ağartılmış, boyanmış saç 67.03.",
+  "<b>Yapma çiçek (Not 3):</b> parçalar bağlama, yapıştırma, geçirme ile birleştirilmişse 67.02; camdan olanlar Fasıl 70; tek parça dökülmüş, oyulmuş seramik, taş, metal çiçek maddesine göre.",
+  "<b>Not 1 – fasıl dışı:</b> saç filesi ve başlık Fasıl 65, ayakkabı 64, oyuncak ve karnaval eşyası 95, tüy süpürge ve pudra ponponu 96, insan saçından tasir torbası 59.11."
+ ],
+ "karistirilan": [
+  [
+   "Kaz tüyü dolgulu yastık, yorgan",
+   "94.04",
+   "Not 2(a): tüy yalnız dolgu maddesi"
+  ],
+  [
+   "İnsan saçından saç filesi",
+   "65.05",
+   "Not 1(d); peruk değil, başlık faslı"
+  ]
+ ]
+}

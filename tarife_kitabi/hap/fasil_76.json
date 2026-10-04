@@ -1,0 +1,40 @@
+{
+ "tur": "hap",
+ "fasil": 76,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı; alüminyum su terazisinin 76 değil 90.31 olduğu soruda alüminyum yaprak (76.07) çeldiriciydi.",
+ "pozisyonlar": [
+  [
+   "76.04",
+   "Çubuk ve profiller (içi boş profil dahil)"
+  ],
+  [
+   "76.06",
+   "Levha, şerit (0,2 mm’yi geçen)"
+  ],
+  [
+   "76.07",
+   "Yaprak (0,2 mm’yi geçmeyen; mesnet hariç)"
+  ],
+  [
+   "76.12",
+   "Fıçı, kutu, tüp kaplar (≤ 300 litre)"
+  ]
+ ],
+ "hap": [
+  "<b>0,2 mm sınırı:</b> levha 76.06 / yaprak 76.07, mesnet hariç ölçülür; esas niteliğini kağıt veya kartonun verdiği folyo kaplı ürün 48.11.",
+  "<b>Kaplar:</b> 300 litreyi geçen depo 76.11, geçmeyen fıçı, kutu ve diş macunu tüpü 76.12, gaz kabı 76.13; ev eşyası 76.15; çivi, cıvata, zincir, tel mensucat 76.16."
+ ],
+ "karistirilan": [
+  [
+   "Alüminyumdan su terazisi",
+   "90.31",
+   "Ölçme aleti; Bölüm XV Not 1 gereği 76 dışı"
+  ],
+  [
+   "Alüminyum prefabrik yapı",
+   "94.06",
+   "76.10 inşaat aksamını alır, prefabrik yapıyı değil"
+  ]
+ ]
+}

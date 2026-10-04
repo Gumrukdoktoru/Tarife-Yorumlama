@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 92,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda 1 kez konu: piyano ile birlikte getirilen hafıza kartı 92.09 (Not 2; 85.23 ve 92.01 çeldirici). Seçenekte: gitar, kol saati ve güneş gözlüğüyle aynı bölümde (XVIII).",
+ "pozisyonlar": [
+  [
+   "92.01",
+   "Piyano, klavsen; klavyeli telli (otomatik piyano dahil)"
+  ],
+  [
+   "92.02",
+   "Diğer telli: keman, gitar, mandolin, arp"
+  ],
+  [
+   "92.07",
+   "Elektriksiz normal çalınamayan elektrikli-elektronik alet"
+  ],
+  [
+   "92.09",
+   "Aksam, tel, metronom, diyapozon, kart-disk-rulo"
+  ]
+ ],
+ "hap": [
+  "<b>Not 2:</b> 92.02 ve 92.06 aletleriyle gelen normal sayıdaki yay ve baget aletle sınıflandırılır; 92.09’daki kart, disk ve rulolar aletle gelse de ayrı eşyadır.",
+  "<b>Elektrik ölçütü:</b> elektriksiz normal çalınamayan alet 92.07 (ses kutusuz elektro gitar, elektronik org); pikaplı ses kutulu gitar 92.02; elektrikli otomatik piyano 92.01.",
+  "<b>Fasıl dışı:</b> alete takılmamış mikrofon, amplifikatör, hoparlör Fasıl 85; oyuncak çalgı 95.03; temizleme fırçası 96.03; tripod 96.20; elektronik müzik modülü 85.43."
+ ],
+ "karistirilan": [
+  [
+   "Piyanoyla gelen hafıza kartı",
+   "92.09",
+   "Not 2: aletle gelse de ayrı eşya; 92.01 değil"
+  ],
+  [
+   "Akordeon, borulu org",
+   "92.05",
+   "Klavyeli ama nefesli; 92.01 değil"
+  ]
+ ]
+}

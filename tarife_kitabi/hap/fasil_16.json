@@ -1,0 +1,52 @@
+{
+ "tur": "hap",
+ "fasil": 16,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 1 kez doğrudan, 3 kez seçenek: “IV. Bölüm, 16. Fasıl, 5. pozisyon” numaralandırma sorusu (16.05). Karidesli mantı setinde karides müstahzarı, kurutulmuş tuzlu çekirgede 16.02 çeldirici oldu (doğruları 19.02 ve 04.10).",
+ "pozisyonlar": [
+  [
+   "16.01",
+   "Sosisler ve benzerleri (et, sakatat, kan, böcek)"
+  ],
+  [
+   "16.02",
+   "Diğer hazır et, sakatat, kan, böcek müstahzarları"
+  ],
+  [
+   "16.03",
+   "Et, balık, su omurgasızı hülasa ve suları"
+  ],
+  [
+   "16.04",
+   "Hazır-konserve balık; balık sosisi; havyar"
+  ],
+  [
+   "16.05",
+   "Hazır-konserve kabuklu, yumuşakça, su omurgasızları"
+  ]
+ ],
+ "hap": [
+  "<b>Bölüm IV = Fasıl 16–24</b> (gıda sanayii, içki, tütün). Bölüm notu: pellet = doğrudan sıkıştırılmış veya en çok %3 bağlayıcılı topak. Kahve, çay, baharat (Fasıl 9) Bölüm II’dedir.",
+  "<b>Not 2 – %20 kuralı:</b> ağırlıkça %20’den fazla sosis, et, sakatat, kan, böcek, balık, kabuklu veya yumuşakça içeren gıda müstahzarı Fasıl 16’dadır; pozisyonu ağırlıkça fazla olan bileşen belirler.",
+  "<b>%20’nin istisnaları:</b> 19.02’deki doldurulmuş makarna (mantı, ravioli), 21.03 soslar, 21.04 çorbalar ve homojenize bileşik müstahzarlar; et oranı ne olursa olsun kendi yerinde kalır.",
+  "<b>Not 1:</b> Fasıl 2–3’te, Fasıl 4 Not 6’da veya 05.04’te sayılan işlemleri görmüş ürün Fasıl 16’ya girmez: tuzlu-kurutulmuş böcek 04.10, kabuğunda haşlanmış karides 03.06.",
+  "<b>Sosis ve et suyu:</b> 16.01 et, sakatat, kan veya böcek sosisi; balık sosisi 16.04. Çiğ etten pres suyu ve hülasa 16.03; çorba niteliğindeki et suyu 21.04."
+ ],
+ "karistirilan": [
+  [
+   "Karidesli mantı + çorba tozu seti",
+   "19.02",
+   "Doldurulmuş makarna; %20 kuralı uygulanmaz"
+  ],
+  [
+   "Kurutulmuş, tuzlanmış yenilebilir çekirge",
+   "04.10",
+   "Fasıl 4 Not 6 işlemi; 16.02 değil"
+  ],
+  [
+   "Kabuğunda buharda pişmiş karides",
+   "03.06",
+   "Fasıl 3 işlemi; 16.05 değil"
+  ]
+ ]
+}

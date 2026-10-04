@@ -1,0 +1,56 @@
+{
+ "tur": "hap",
+ "fasil": 83,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 1 kez ana konu: demir-çelikten olsa da şerit halinde zımba telinin 73 değil 83.05 olduğu. Ayrıca adi metal kapı kilidinin (83.01) XV. Bölümde, valf ve jeneratörün XVI. Bölümde olduğu ve 83.07’nin çeldirici olarak kullanıldığı sorular var.",
+ "pozisyonlar": [
+  [
+   "83.01",
+   "Kilit, asma kilit, anahtar (taslak dahil)"
+  ],
+  [
+   "83.02",
+   "Mobilya, kapı, karoseri donanımı; küçük tekerlekler"
+  ],
+  [
+   "83.05",
+   "Klasör mekanizması, ataş, şerit halinde zımba teli"
+  ],
+  [
+   "83.06",
+   "Elektriksiz zil, çan; süs eşyası; çerçeve, metal ayna"
+  ],
+  [
+   "83.09",
+   "Tıpa, kapak, kapsül, mühür"
+  ],
+  [
+   "83.11",
+   "Eritici kaplı veya dolgulu kaynak elektrodu, teli"
+  ]
+ ],
+ "hap": [
+  "<b>Metal önemsiz:</b> Fasıl 83 eşyası hangi adi metalden olursa olsun burada; Bölüm XV Not 2 gereği 72–76 ve 78–81. fasıllara verilmez (çelik zımba teli 83.05, kalay kapsül 83.09).",
+  "<b>Not 1:</b> yay, zincir, kablo, vida, cıvata, somun, çivi Fasıl 83 eşyasına özel olsa da onun parçası sayılmaz; kendi pozisyonlarında kalır (kilit yayı 73.20).",
+  "<b>Not 2 – küçük tekerlek (83.02):</b> çapı bandaj dahil 75 mm’yi geçmeyen ya da daha büyük olup tekerlek veya bandaj genişliği 30 mm’den az olan tekerlek.",
+  "<b>Kilit – kapama:</b> anahtarlı, şifreli, elektrikli kapama 83.01; anahtarsız çanta mandalı 83.02; kopça, toka, boru şeklinde veya yarık saplı perçin 83.08; çıtçıt 96.06, fermuar 96.07.",
+  "<b>Sınırlar:</b> elektrikli zil 85.31, pünez 73.17, ışıklı tabela 94.05, matbaa harfi 84.42; taşıta takılsa da kapı kolu 83.02, bisiklet zili 83.06."
+ ],
+ "karistirilan": [
+  [
+   "Demirden bisiklet zili",
+   "83.06",
+   "Taşıt aksamı 87.14 veya 73.26 değil"
+  ],
+  [
+   "Metal çerçeveli cam ayna",
+   "70.09",
+   "Metal ayna 83.06; cam ayna 70.09"
+  ],
+  [
+   "Delmeye dayanıksız, yangına dayanıklı kutu",
+   "94.03",
+   "Güvenlik şartı yok; 83.03 kasa değil"
+  ]
+ ]
+}

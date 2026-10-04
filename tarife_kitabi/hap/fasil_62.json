@@ -1,0 +1,56 @@
+{
+ "tur": "hap",
+ "fasil": 62,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 1 kez: kenarı 50 cm kare fular → 62.13 mendil (Not 8; seçenekler 62.13–62.17). Kullanılmış giyim (63.09) ve “aynı bölüm” (gömlek) sorularında seçenekteydi.",
+ "pozisyonlar": [
+  [
+   "62.09",
+   "Bebek giyimi (boy ≤86 cm); her pozisyondan önce"
+  ],
+  [
+   "62.10",
+   "Keçe, dokunmamış, 59.03/59.06/59.07 mensucattan giysi"
+  ],
+  [
+   "62.12",
+   "Sütyen, korse, jartiyer (örülmüş olsun olmasın)"
+  ],
+  [
+   "62.13",
+   "Mendil: kare/karemsi, hiçbir kenarı 60 cm’yi aşmaz"
+  ],
+  [
+   "62.14",
+   "Şal, eşarp, kaşkol, duvak; kenarı 60 cm’yi aşan"
+  ],
+  [
+   "62.16",
+   "Eldiven (dokunmuş; örme ise 61.16)"
+  ]
+ ],
+ "hap": [
+  "<b>Fular-mendil (Not 8):</b> kare veya karemsi, hiçbir kenarı 60 cm’yi aşmayan fular 62.13’te mendildir; bir kenarı 60 cm’yi geçen veya kare olmayan şal-eşarp 62.14. Saçak ölçüye dahil.",
+  "<b>Kapsam (Not 1):</b> örülmemiş her mensucattan (dokunmuş, keçe, dokunmamış, dantel; vatka hariç) hazır giysi. Örme olan Fasıl 61’e gider; tek istisna 62.12 sütyen-korse grubu.",
+  "<b>Öncelik:</b> bebek 62.09 → özel mensucattan giysi 62.10 → diğerleri. Keçeden bebek giysisi 62.09; kapitoneli (58.11) mont 62.01/62.02; kâğıt giysi 48.18.",
+  "<b>Örme / örülmemiş farkı:</b> fanila-atlet örme 61.09 (cinsiyetsiz), dokunmuş 62.07/62.08; çorap örme 61.15, örülmemiş 62.17; ayrı yelek 62.11 (örme 61.10); mendil-şal-kravat örme 61.17.",
+  "<b>Kapanma ve set:</b> soldan sağa erkek, sağdan sola kadın; belirlenemezse kadın (Not 9). Farklı pozisyondaki giysiler perakende sette de ayrı sınıflandırılır (Bölüm XI Not 14)."
+ ],
+ "karistirilan": [
+  [
+   "Kenarı 50 cm kare ipek fular",
+   "62.13",
+   "Hiçbir kenarı 60 cm’yi aşmıyor → mendil; 62.14 değil"
+  ],
+  [
+   "Örme sütyen",
+   "62.12",
+   "Örülmüş olsun olmasın 62.12; Fasıl 61 değil"
+  ],
+  [
+   "Ortopedik korse, fıtık bağı",
+   "90.21",
+   "Fasıl 62 Not 2(b); 62.12 değil"
+  ]
+ ]
+}

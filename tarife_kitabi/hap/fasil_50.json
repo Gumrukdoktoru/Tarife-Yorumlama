@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 50,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı; Bölüm XI notları dolaylı çıktı: “aynı bölüm” sorusunda pamuk ipliği, gömlek, toz bezi XI. Bölümde, düğme Fasıl 96’da; tekstil yüzlü valiz Not 1(l) gereği 42.02’de.",
+ "pozisyonlar": [
+  [
+   "50.02",
+   "Ham ipek (bükülmemiş; zamkı alınmış, boyalı olabilir)"
+  ],
+  [
+   "50.03",
+   "Döküntü: çekilemeyen koza, buret, ditme döküntüsü"
+  ],
+  [
+   "50.06",
+   "Perakende ipek ipliği; ipek böceği guddesi (misina)"
+  ],
+  [
+   "50.07",
+   "İpek veya ipek döküntüsünden dokunmuş mensucat"
+  ]
+ ],
+ "hap": [
+  "<b>Bölüm dışı (Not 1):</b> fırça kılı 05.02, at kılı 05.11, diş ipliği 33.06, kesiti 1 mm’yi aşan plastik monofil, 42.01–42.02 eşyası, ayakkabı, başlık, oyuncak, bebek bezi 96.19.",
+  "<b>Karışım (Not 2):</b> ağırlıkça üstün gelen lif belirler; eşitlikte numara sırasında en sondaki pozisyon. Önce fasıl, sonra pozisyon; 54 ve 55 tek fasıl sayılır.",
+  "<b>Hazır eşya (Not 7–8):</b> kare-dikdörtgen dışı kesilmiş, kenarı bastırılmış, düğümlü saçaklı, dikilerek birleştirilmiş veya örülerek şekillenmiş eşya; 50–55 ve 60’a, aksi yazılmadıkça 56–59’a da girmez."
+ ],
+ "karistirilan": [
+  [
+   "İpekten dokunmuş kadın bluzu",
+   "62.06",
+   "Hazır eşya; 50.07 kumaş değil (Bölüm XI Not 7–8)"
+  ],
+  [
+   "İpek kırpıntı, toz, taraz; ipek vatka",
+   "56.01",
+   "Döküntü 50.03’e değil, vatka-kırpıntı pozisyonuna"
+  ]
+ ]
+}

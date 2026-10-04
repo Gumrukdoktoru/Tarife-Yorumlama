@@ -1,0 +1,36 @@
+{
+ "tur": "hap",
+ "fasil": 2,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda 1 kez, GYK sorusu olarak: başlık “Etler ve yenilen sakatat” olmasına rağmen bağırsak, mesane ve midenin 05.04’e gitmesi GYK 1’in (notlar bağlayıcı) gereğidir.",
+ "pozisyonlar": [
+  [
+   "02.06",
+   "Sığır, domuz, koyun, keçi, at ailesi sakatatı"
+  ],
+  [
+   "02.08",
+   "01.06 hayvanlarının eti: tavşan, kurbağa, balina"
+  ],
+  [
+   "02.10",
+   "Tuzlu, salamura, kurutulmuş, tütsülenmiş et; et unu"
+  ]
+ ],
+ "hap": [
+  "<b>Fasıl 2 Notu (dışı):</b> yenmeyen et ve sakatat 05.11; bağırsak, mesane, mide 05.04; hayvan kanı 05.11 veya 30.02; yenilen cansız böcek 04.10; 02.09 dışı hayvansal yağlar Fasıl 15.",
+  "<b>Hazırlık sınırı:</b> kıyma, enzimle yumuşatma, pişirmeden ön haşlama, nakliye tuzu ve MAP ambalaj Fasıl 2’de; pişirme, baharat, ekmek kırıntısı kaplama, sosis ve pate Fasıl 16."
+ ],
+ "karistirilan": [
+  [
+   "Yenilebilir işkembe, bağırsak, mesane",
+   "05.04",
+   "Sakatat sayılmaz; başlık değil not bağlayıcı (GYK 1)"
+  ],
+  [
+   "Dondurulmuş balina eti",
+   "02.08",
+   "01.06 memelisinin eti; Fasıl 3 değil"
+  ]
+ ]
+}

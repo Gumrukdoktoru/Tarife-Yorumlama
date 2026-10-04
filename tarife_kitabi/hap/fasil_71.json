@@ -1,0 +1,56 @@
+{
+ "tur": "hap",
+ "fasil": 71,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 3 kez, hep aynı kalıp: “hangisi platin tabirine girmez?” – cevap berilyum veya kadmiyum (adi metal); osmiyum, iridyum, paladyum, rodyum platin sayılır (Not 4).",
+ "pozisyonlar": [
+  [
+   "71.02",
+   "Elmaslar (monte edilmemiş, mıhlanmamış)"
+  ],
+  [
+   "71.04",
+   "Sentetik veya terkip taşlar; kübik zirkonya dahil"
+  ],
+  [
+   "71.10",
+   "Platin grubu metaller (işlenmemiş, yarı işlenmiş, pudra)"
+  ],
+  [
+   "71.13",
+   "Mücevherci eşyası: yüzük, kolye, broş, tesbih"
+  ],
+  [
+   "71.14",
+   "Kuyumcu eşyası: sofra, tuvalet, büro, dini eşya"
+  ],
+  [
+   "71.17",
+   "Taklit mücevher: inci, taş, kıymetli metal içermeyen"
+  ]
+ ],
+ "hap": [
+  "<b>Not 4:</b> kıymetli metal = gümüş, altın, platin. “Platin” = platin, iridyum, osmiyum, paladyum, rodyum, rutenyum. Berilyum, kadmiyum, kobalt, tantal adi metaldir (Bölüm XV Not 3).",
+  "<b>%2 kuralı (Not 5):</b> ≥ %2 platin → platin alaşımı; değilse ≥ %2 altın → altın; değilse ≥ %2 gümüş → gümüş; üçü de %2’nin altındaysa adi metal alaşımı.",
+  "<b>Kaplama (Not 7):</b> lehim, kaynak, sıcak haddeleme gibi mekanik usulle kıymetli metal kaplama 71’dir; elektroliz, buhar, püskürtme, daldırma ile kaplanan adi metal kendi faslında kalır.",
+  "<b>Not 2–3:</b> kıymetli metal yalnız önemsiz süsse (monogram, kenar) eşya 71’e girmez; Fasıl 64–66 eşyası, gözlük (90), saat (91), diş dolgusu (30), silah (93) fasıl dışıdır.",
+  "<b>Mücevherci / taklit (Not 9, 11):</b> 71.13 kişisel küçük süs ve üstte taşınan eşya (sigara tabakası, pudra kutusu); 71.17 yalnız kişisel küçük süs olabilir, düğme ve tarak hariç."
+ ],
+ "karistirilan": [
+  [
+   "Camdan taklit inci veya taş",
+   "70.18",
+   "Sentetik taş (kübik zirkonya) ise 71.04"
+  ],
+  [
+   "Altın kasalı kol saati",
+   "91.01",
+   "Not 3(l): saatler Fasıl 91"
+  ],
+  [
+   "Kehribar veya lületaşı biblo",
+   "96.02",
+   "Not 4(C): kıymetli taş sayılmaz"
+  ]
+ ]
+}

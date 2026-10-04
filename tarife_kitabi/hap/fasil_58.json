@@ -1,0 +1,40 @@
+{
+ "tur": "hap",
+ "fasil": 58,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı; yangın hortumu sorusunda 58.11 (kapitoneli mensucat) çeldiriciydi, doğrusu 59.09.",
+ "pozisyonlar": [
+  [
+   "58.01",
+   "Dokunmuş kadife, peluş, tırtıl mensucat"
+  ],
+  [
+   "58.04",
+   "Tül, ağ mensucat; dantel (zeminsiz)"
+  ],
+  [
+   "58.06",
+   "Kordela: eni ≤30 cm, iki kenarı kendinden"
+  ],
+  [
+   "58.11",
+   "Kapitoneli parça mensucat (top halinde)"
+  ]
+ ],
+ "hap": [
+  "<b>Lif cinsi önemsiz:</b> 58.09 (metal iplikli giyim-döşeme kumaşı) hariç; kaplanmış mensucat, fitil, hortum, kolan Fasıl 59; örme 60; hazır eşya 61–63 (duvar halısı 58.05 hariç).",
+  "<b>Ayrımlar:</b> dantel zeminsiz, işleme (58.10) mevcut zemin üzerine; havlu kumaşı 58.02, havlu 63.02; gaz mensucat leno dokuma, tıbbi gaz bezi 30.05."
+ ],
+ "karistirilan": [
+  [
+   "Sentetik liften yangın hortumu",
+   "59.09",
+   "Teknik eşya; 58.11 veya 63.06 değil"
+  ],
+  [
+   "Kilim, sumak, karaman",
+   "57.02",
+   "Duvar halısı tekniği olsa da 58.05 değil"
+  ]
+ ]
+}

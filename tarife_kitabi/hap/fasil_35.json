@@ -1,0 +1,56 @@
+{
+ "tur": "hap",
+ "fasil": 35,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 2 kez: “30. fasılda sınıflandırılmaz” kalıbında tedavi amaçlı hazırlanmamış kan albümini (35.02); “aynı fasılda sınıflandırılmaz” kalıbında jelatin ve enzimin (Fasıl 35) yanında sertleştirilmiş protein (39.13).",
+ "pozisyonlar": [
+  [
+   "35.01",
+   "Kazein, kazeinatlar, kazein tutkalları"
+  ],
+  [
+   "35.02",
+   "Albüminler; tedavi amaçlı olmayan kan albümini"
+  ],
+  [
+   "35.03",
+   "Jelatin (dikdörtgen yaprak), hayvansal tutkal"
+  ],
+  [
+   "35.05",
+   "Dekstrin (indirgen şeker ≤ %10), tadil nişasta"
+  ],
+  [
+   "35.06",
+   "Müstahzar tutkal; net ≤ 1 kg perakende tutkal"
+  ],
+  [
+   "35.07",
+   "Enzimler; peynir mayası (rennin) dahil"
+  ]
+ ],
+ "hap": [
+  "<b>Not 1 – fasıl dışı:</b> mayalar 21.02, kan fraksiyonları Fasıl 30 (tedavi için hazırlanmamış kan albümini 35.02’de kalır), ön dabaklama enzimi 32.02, enzimli deterjan Fasıl 34, sertleştirilmiş protein 39.13.",
+  "<b>Not 2 – dekstrin:</b> dekstroz olarak indirgen şeker kuru maddede %10 veya daha az; fazlası 17.02.",
+  "<b>Tutkal:</b> kazein, hayvansal ve nişasta tutkalları dökme ise kendi pozisyonlarında; net ağırlığı 1 kg’ı geçmeyen perakende tutkal ambalajı hepsini 35.06’ya çeker (Bölüm VI Not 2).",
+  "<b>Jelatin şekli:</b> dikdörtgen veya kare yaprak 35.03; başka şekilde kesilmiş veya kalıplanmış sertleştirilmemiş jelatin (kapsül) 96.02; sertleştirilmiş jelatin 39.13.",
+  "<b>Eşikler:</b> peyniraltı suyu proteini kuru maddede %80’den fazla ise 35.02, değilse 04.04; protein izolatı (35.04) en az %90 protein içerir."
+ ],
+ "karistirilan": [
+  [
+   "Sertleştirilmiş protein (kazein, jelatin)",
+   "39.13",
+   "Not 1(e); plastik sayılır, Fasıl 35 dışı"
+  ],
+  [
+   "Bira ve ekmek mayası",
+   "21.02",
+   "Not 1(a); peynir mayası enzimdir, 35.07"
+  ],
+  [
+   "Tedavi amaçlı hazırlanmış kan albümini",
+   "30.02",
+   "Hazırlanmamışı 35.02; kurutulmuş kan 05.11"
+  ]
+ ]
+}

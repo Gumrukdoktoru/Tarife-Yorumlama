@@ -1,0 +1,56 @@
+{
+ "tur": "hap",
+ "fasil": 3,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 2 kez, “hangisi … fasılda yer almaz” kalıbıyla: balina memeli olduğundan Fasıl 3 dışı (01.06), deniz kulağı ve deniz hıyarı içeride; alabalık yumurtası Fasıl 3’tür, Fasıl 4’te yer almaz.",
+ "pozisyonlar": [
+  [
+   "03.02",
+   "Taze/soğutulmuş balık; yenilebilir yumurta, karaciğer dahil"
+  ],
+  [
+   "03.04",
+   "Fileto ve kılçığı alınmış balık eti"
+  ],
+  [
+   "03.05",
+   "Kurutulmuş, tuzlu, salamura, tütsülenmiş balık"
+  ],
+  [
+   "03.06",
+   "Kabuklular; kabuğunda buharda veya suda pişmiş dahil"
+  ],
+  [
+   "03.07",
+   "Yumuşakçalar: midye, ahtapot, kalamar, salyangoz, deniz kulağı"
+  ],
+  [
+   "03.08",
+   "Diğer su omurgasızları: deniz hıyarı, kestanesi, anası"
+  ]
+ ],
+ "hap": [
+  "<b>Fasıl 3 Not 1 (dışı):</b> 01.06 memelileri ve etleri (02.08, 02.10); yenmeyen cansız balık ve su hayvanları (Fasıl 5); yenmeyen un-pellet (23.01); havyar ve havyar benzerleri (16.04).",
+  "<b>Pişirme Fasıl 16’ya gönderir</b> (balık 16.04, diğerleri 16.05). İstisna: tütsülerken pişme, kabuğu içinde buharda/suda pişmiş kabuklu, kabuk açmak için ısı şoku, yenilebilir un-pellet (03.09).",
+  "<b>Balık yumurtası:</b> yenilebilir ve yalnız Fasıl 3 işlemi görmüşse balığın haline göre 03.02, 03.03 veya 03.05; havyar 16.04; kuluçkalık veya yem amaçlı 05.11.",
+  "<b>Fileto (03.04):</b> omurgaya paralel kesilmiş yan et şeridi; deri ve küçük kılçık kalması bozmaz, iki yanın birleşik kalması bozar. Ekmek kırıntısıyla kaplanmış fileto 16.04.",
+  "<b>Fasıl 16 Not 2:</b> müstahzarda balık, kabuklu, yumuşakça ağırlıkça %20’den fazlaysa Fasıl 16; doldurulmuş makarna (karidesli mantı 19.02) ile 21.03 ve 21.04 hariç."
+ ],
+ "karistirilan": [
+  [
+   "Canlı balina, yunus, fok",
+   "01.06",
+   "Memeli; eti 02.08, tuzlu veya tütsülü 02.10"
+  ],
+  [
+   "Alabalık yumurtası (yenilebilir, taze)",
+   "03.02",
+   "Balık sakatatı; dondurulmuş 03.03, tuzlu 03.05. Fasıl 4 değil"
+  ],
+  [
+   "Kabuğu çıkarılıp kaynatılmış karides",
+   "16.05",
+   "Kabuğu içinde pişirilseydi 03.06’da kalırdı"
+  ]
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 11,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda 1 kez doğrudan, 1 kez seçenek: Not 2 ölçütleri soruldu (nişasta, kül, elekten geçme oranı ve hububat cinsi kullanılır, şeker oranı kullanılmaz); eşleştirmede buğday unu 11.01 doğru verildi.",
+ "pozisyonlar": [
+  [
+   "11.01",
+   "Buğday veya mahlut unu"
+  ],
+  [
+   "11.03",
+   "Kaba un, irmik, kabaca öğütülmüş parçalar, pellet"
+  ],
+  [
+   "11.04",
+   "Diğer işlenmiş taneler; hububat embriyoları"
+  ],
+  [
+   "11.08",
+   "Nişastalar; inulin (modifiye nişasta 35.05)"
+  ]
+ ],
+ "hap": [
+  "<b>Not 2(A):</b> kuru maddede nişasta %45’ten fazla ve kül tablo sınırını (buğday-çavdar %2,5; arpa %3; yulaf %5; mısır %2; pirinç %1,6; karabuğday %4) aşmıyorsa Fasıl 11, aksi halde 23.02.",
+  "<b>Not 2(B) – un eleği:</b> 315 mikrometre elekten en az %80 (mısır ve dane darıda 500 mikrometreden %90) geçen 11.01 / 11.02, geçmeyen 11.03 / 11.04. Embriyolar daima 11.04.",
+  "<b>Not 3 – kaba un:</b> mısırda 2 mm, diğer hububatta 1,25 mm elekten en az %95 geçen ürün 11.03. Hazırlanmış unlar ve malt hülasası 19.01."
+ ],
+ "karistirilan": [
+  [
+   "Buğday kepeği",
+   "23.02",
+   "Nişasta-kül şartını sağlamayan değirmencilik kalıntısı"
+  ],
+  [
+   "Dekstrin, modifiye nişasta",
+   "35.05",
+   "11.08 yalnız doğal nişasta ve inulin"
+  ]
+ ]
+}

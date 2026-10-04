@@ -1,0 +1,86 @@
+{
+ "tur": "hap",
+ "fasil": 95,
+ "kademe": "A",
+ "sinavda": "Son 5 sınavda 3 kez doğrudan: üç tekerlekli bisikletin 95.03’te olduğu (87.12 çeldirici), “gezici hayvan sergisi ile aynı fasıl” kalıbında üç tekerlekli bisiklet (heykel, zooloji koleksiyonu, tiyatro dekoru, kamp çadırı çeldirici) ve ok-yayın 95.06’ya gittiği. Elektrikli çelenk (95.04 çeldirici) ve mantar dart tablası seçeneklerde yer aldı.",
+ "pozisyonlar": [
+  [
+   "95.03",
+   "Tekerlekli oyuncak: üç tekerlekli bisiklet, skuter, pedallı araba"
+  ],
+  [
+   "95.03",
+   "Oyuncak bebek ve arabası, eğlencelik model, bulmaca"
+  ],
+  [
+   "95.04",
+   "Video oyun konsolu; ödeme aracıyla çalışan eğlence makinesi"
+  ],
+  [
+   "95.04",
+   "Bilardo, kumarhane masası, oyun kağıdı, satranç, dart, bowling"
+  ],
+  [
+   "95.05",
+   "Bayram, karnaval, Noel eşyası; sihirbazlık, şaka eşyası"
+  ],
+  [
+   "95.06",
+   "Artık spor eşyası: jimnastik, kayak, golf, raket, top"
+  ],
+  [
+   "95.06",
+   "Paten takılı bot, kızak, yüzme havuzu, okçuluk ok-yayı"
+  ],
+  [
+   "95.07",
+   "Olta takımı, kepçe, kelebek ağı, yapma av kuşu"
+  ],
+  [
+   "95.08",
+   "Gezici sirk-hayvan sergisi-tiyatro; lunapark, su parkı, panayır"
+  ]
+ ],
+ "hap": [
+  "<b>Not 1 – fasıl dışı (1):</b> mum 34.06, havai fişek 36.04, spor çantası 42.02, tekstil spor ve karnaval giyimi Fasıl 61, 62, spor ayakkabısı Fasıl 64, spor başlığı Fasıl 65, bayrak-yelken Fasıl 63.",
+  "<b>Not 1 – fasıl dışı (2):</b> çocuk bisikleti 87.12, insansız hava taşıtı 88.06, kano-kayık Fasıl 89, spor gözlüğü 90.04, düdük 92.08, silah Fasıl 93, elektrikli çelenk 94.05, tripod 96.20; çadır ve eldiven maddesine göre.",
+  "<b>Bisiklet ayrımı:</b> üç tekerlekli çocuk bisikleti 95.03 (pozisyon metninde adıyla); diğer çocuk bisikletleri 87.12. Gerçek bebek arabası 87.15, oyuncak bebek arabası 95.03.",
+  "<b>Spor taşıtı ve paten:</b> Bölüm XVII spor taşıtları fasıl dışı, ama kızak ve yarış kızağı 95.06. Buz veya tekerlekli paten takılı bot 95.06; patensiz spor ayakkabısı Fasıl 64.",
+  "<b>Aksam (Not 3):</b> yalnız veya esas itibarıyla fasıl eşyasıyla kullanılan aksam eşyanın pozisyonunda; ama elektrik motoru 85.01, transformatör 85.04, uzaktan kumanda 85.26 / 85.43 ve genel kullanım parçaları fasıl dışı.",
+  "<b>Not 4 ve Not 5:</b> başka eşyayla birleşik oyuncak, perakende satış için hazırlanmış ve oyuncağın mümeyyiz vasfını taşıyorsa 95.03. Yalnız hayvanlar için tasarlanmış oyuncak 95.03’e girmez.",
+  "<b>95.08 tanımı (Not 6):</b> eğlence parkı gezinti eşyası kişiyi sabit veya sınırlı parkurda taşır; konut ve oyun alanlarında yaygın kurulan ekipman hariç (çocuk bahçesi salıncağı 95.06).",
+  "<b>Pozisyon sınırları:</b> oyun kağıdı 95.04, bulmaca 95.03, sihirbazlık kağıdı 95.05. Noel motifli tabak, örtü gibi fayda eşyası maddesine göre (Not 1(z)); hakiki Noel ağacı Fasıl 6."
+ ],
+ "karistirilan": [
+  [
+   "Elektrikli çelenk (Noel ışıkları)",
+   "94.05",
+   "Not 1(u); 95.04 veya 95.05 değil"
+  ],
+  [
+   "Mantardan dart tablası",
+   "95.04",
+   "Fasıl 45 Not 1: Fasıl 95 eşyası mantar faslına girmez"
+  ],
+  [
+   "Orijinal heykel; zooloji koleksiyonu; tiyatro dekoru",
+   "97.03 / 97.05 / 59.07",
+   "Gezici hayvan sergisi ise 95.08"
+  ],
+  [
+   "Kamp çadırı; kamera tripodu",
+   "63.06 / 96.20",
+   "Not 1(y), (v); çocuk oyun çadırı 95.03"
+  ],
+  [
+   "İnsansız hava taşıtı (drone)",
+   "88.06",
+   "Not 1(p); yalnız eğlence için uçan oyuncak 95.03"
+  ],
+  [
+   "Yüzücü ve kayak gözlüğü",
+   "90.04",
+   "Not 1(r); oyuncak gözlük 95.03"
+  ]
+ ]
+}

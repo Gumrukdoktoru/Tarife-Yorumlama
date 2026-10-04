@@ -1,0 +1,31 @@
+{
+ "tur": "hap",
+ "fasil": 80,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda doğrudan sorulmadı, seçeneklerde de yer almadı; kalayın kendi faslı olduğu (Fasıl 81’de değil) bilinmeli.",
+ "pozisyonlar": [
+  [
+   "80.01",
+   "İşlenmemiş kalay; kırıntı ve granül dahil"
+  ],
+  [
+   "80.03",
+   "Çubuk, profil ve teller"
+  ],
+  [
+   "80.07",
+   "Diğer: levha, yaprak, toz, boru, tüp"
+  ]
+ ],
+ "hap": [
+  "<b>Dört pozisyon:</b> işlenmemiş 80.01, hurda 80.02, çubuk-profil-tel 80.03, geri kalan her şey (levha, yaprak, toz, pul, boru) 80.07; 80.04–80.06 boştur.",
+  "<b>Teneke kalay değildir:</b> kalay kaplı çelik yassı ürün 72.10/72.12, teneke hurdası 72.04; kalay-kurşun lehimde ağırlıkça üstün metal faslı belirler (80 ya da 78)."
+ ],
+ "karistirilan": [
+  [
+   "Kalay yaprağından şişe kapsülü",
+   "83.09",
+   "Fasıl 83 eşyası metale bakmaz"
+  ]
+ ]
+}

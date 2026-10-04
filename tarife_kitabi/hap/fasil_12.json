@@ -1,0 +1,56 @@
+{
+ "tur": "hap",
+ "fasil": 12,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 2 kez doğrudan, 1 kez seçenek; odak 12.11: bitki çayı için ada çayı (09.02, 09.10, 07.12 çeldirici) ve “tümü 12.11” sorusunda tonka fasulyesi–ginseng kökü–nane. “Aynı fasıl” sorusunda kopra, pamuk tohumu, şeker kamışı, ginseng kökü Fasıl 12 grubuydu.",
+ "pozisyonlar": [
+  [
+   "12.02",
+   "Yer fıstığı (kavrulmamış); kavrulmuşu 20.08"
+  ],
+  [
+   "12.03",
+   "Kopra (yağ için kurutulmuş Hindistan cevizi içi)"
+  ],
+  [
+   "12.07",
+   "Diğer yağlı tohumlar: susam, haşhaş, pamuk, hardal"
+  ],
+  [
+   "12.09",
+   "Ekime mahsus tohumlar (Not 3 listesi)"
+  ],
+  [
+   "12.11",
+   "Parfümeri-eczacılık bitkileri: nane, adaçayı, ginseng, tonka"
+  ],
+  [
+   "12.12",
+   "Keçiboynuzu, deniz otu, şeker pancarı-kamışı, kayısı çekirdeği"
+  ]
+ ],
+ "hap": [
+  "<b>Not 4 – 12.11 listesi:</b> fesleğen, zembil çiçeği, ginseng, çördük otu, meyan kökü, her türlü nane, biberiye, sedef otu, adaçayı, pelin. İlaç (Fasıl 30), kozmetik (Fasıl 33), 38.08 ürünleri hariç.",
+  "<b>Daha özel pozisyon 12.11’i yener:</b> vanilya, tarçın, karanfil, kişniş, kimyon, anason, zencefil, kekik (Fasıl 9) ve paraguay çayı (09.03) eczacılıkta kullanılsa da Fasıl 9’da kalır.",
+  "<b>Not 1:</b> 12.07 palm meyvesi-çekirdeği, pamuk, Hint yağı, susam, hardal, aspir, haşhaş tohumu ve shea fıstığını kapsar; 08.01–08.02 ürünleri ve zeytin hariç.",
+  "<b>Not 3 – 12.09:</b> pancar, çim, süs çiçeği, sebze, orman ve meyve ağacı, fiğ (Vicia faba hariç), acı bakla tohumu. Ekimlik olsa da hububat, baklagil sebze, baharat, 12.01–12.07 ve 12.11 hariç.",
+  "<b>Bitki çayı ve unlar:</b> tek türden bitki 12.11, değişik türlerin karışımı 21.06. Yağı alınmamış yağlı tohum unu 12.08, yağı alınmış küspe 23.04–23.06."
+ ],
+ "karistirilan": [
+  [
+   "Kişniş, kimyon, anason tohumu",
+   "09.09",
+   "Baharat; “tümü 12.11” sorusunda çeldirici"
+  ],
+  [
+   "Paraguay çayı (maté)",
+   "09.03",
+   "Ihlamur ve adaçayıyla verilse de 12.11 değil"
+  ],
+  [
+   "Kuş yemi, tane darı",
+   "10.08",
+   "Hububat; fiğ ise 12.14 yem bitkisi"
+  ]
+ ]
+}

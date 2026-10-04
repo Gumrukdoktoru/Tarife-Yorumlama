@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 41,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda 1 soruda konu, 1 soruda seçenek: “terkip yoluyla elde edilen deri” levhaları 41.15 (39.21, 56.03, 59.03 çeldirici); Bölüm VIII kapsamı (kürk, kösele, çanta var; ayakkabı yok).",
+ "pozisyonlar": [
+  [
+   "41.01",
+   "Sığır, at ham derisi; tüylü olabilir"
+  ],
+  [
+   "41.07",
+   "Sığır, at: bitirilmiş deri, kösele, parşömine"
+  ],
+  [
+   "41.14",
+   "Güderi, rugan, ruganla kaplanmış, metalize deri"
+  ],
+  [
+   "41.15",
+   "Terkip deri; kullanılamaz deri kırpıntısı, tozu"
+  ]
+ ],
+ "hap": [
+  "<b>Terkip deri (Not 3):</b> tarifenin her yerinde yalnız 41.15 maddeleri: esası deri veya deri lifi olan levha, yaprak, şerit. Plastik, kauçuk, kağıt, sıvanmış mensucat esaslı taklitler 39, 40, 48, 59.",
+  "<b>Tüylü ham deri (Not 1(c)):</b> sığır, at, koyun-kuzu, keçi, domuz, geyik, ceylan, deve, köpek Fasıl 41’de; Astragan-Karakul, Hint-Çin-Moğol-Tibet kuzusu, Yemen-Moğol-Tibet keçisi 43.01.",
+  "<b>Bölüm VIII = Fasıl 41–43:</b> deri-kösele, deri eşya-saraciye-çanta, kürk; bölüm notu yoktur. Ayakkabı Fasıl 64 ile Bölüm XII’dedir."
+ ],
+ "karistirilan": [
+  [
+   "Kılıyla dabaklanmış sığır derisi",
+   "43.02",
+   "Not 1(c) istisnası yalnız ham deri içindir"
+  ],
+  [
+   "Ham deri kırpıntısı",
+   "05.11",
+   "Not 1(a); dabaklı deri döküntüsü ise 41.15"
+  ]
+ ]
+}

@@ -1,0 +1,56 @@
+{
+ "tur": "hap",
+ "fasil": 52,
+ "kademe": "B",
+ "sinavda": "Son 5 sınavda 2 kez, ikisi de kapsam sorusu: pamuk ipliği Fasıl 52’dedir (viskoz ve sentetik filament 54, keten döküntüsü 53; Bölüm X değil XI) ve “pamuk 53. fasılda” ifadesi yanlıştır. “Aynı bölüm” sorusunda pamuk ipliği seçenekte geçti.",
+ "pozisyonlar": [
+  [
+   "52.01",
+   "Pamuk (karde-penye edilmemiş); hidrofil dahil"
+  ],
+  [
+   "52.04",
+   "Pamuk dikiş ipliği (perakende olsun olmasın)"
+  ],
+  [
+   "52.07",
+   "Perakende pamuk ipliği (dikiş ipliği hariç)"
+  ],
+  [
+   "52.08",
+   "Kumaş: ≥%85 pamuk, ≤200 g/m² (ağırı 52.09)"
+  ],
+  [
+   "52.10",
+   "%85’ten az, sentetik-suni karışık, ≤200 g/m²"
+  ],
+  [
+   "52.12",
+   "Diğer pamuklu kumaş (yün, keten vb. karışık)"
+  ]
+ ],
+ "hap": [
+  "<b>Linter ≠ pamuk:</b> 5 mm’den kısa linter 14.04; ham, ağartılmış, boyalı, hidrofil pamuk karde-penye edilmedikçe 52.01; vatka 56.01.",
+  "<b>Perakende (Bölüm XI Not 4):</b> mesnete sarılı: ipek-sentetik 85 g, diğer 125 g; top-çile: 85 / 125 g, kalın iplik 500 g. Tek kat, bobin, çapraz çile perakende değil.",
+  "<b>Dikiş ipliği (Not 5):</b> katlı, mesnetle ≤1.000 g, dikiş için aprelenmiş, “Z” bükümlü → 52.04, perakende olsun olmasın; 52.07 dikiş ipliği dışındaki perakende iplik.",
+  "<b>%85 ve 200 g:</b> %85 iplikte (52.05/52.06) ve kumaşta pozisyon böler; 200 g/m² yalnız kumaşta. %85’ten az pamuklu kumaşta esas karışan lif yün-keten ise 52.12.",
+  "<b>Önce fasıl (Not 2):</b> %40 pamuk + %30 suni + %30 sentetik devamsız → 54–55 toplamı üstün → 55.16. Eşitlikte numara sırasında son: pamuk-yün eşitse Fasıl 52."
+ ],
+ "karistirilan": [
+  [
+   "Viskoz (suni) filament ipliği",
+   "54.03",
+   "Suni lif (Fasıl 54 Not 1); pamuk ipliği 52.05–52.06"
+  ],
+  [
+   "Pamuktan havlu kumaşı (bukleli, top halinde)",
+   "58.02",
+   "Havlu cinsi bukleli mensucat Fasıl 52’de değil"
+  ],
+  [
+   "Emici dokusu pamuk bebek bezi",
+   "96.19",
+   "Bölüm XI Not 1(u): malzemeye bakılmaz"
+  ]
+ ]
+}

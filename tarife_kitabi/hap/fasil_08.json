@@ -1,0 +1,41 @@
+{
+ "tur": "hap",
+ "fasil": 8,
+ "kademe": "C",
+ "sinavda": "Son 5 sınavda 1 kez doğrudan: “hangisi diğerlerinden farklı pozisyonda” kalıbında taze kaju cevizi (08.01), fındık, kestane, pekan ve kola cevizinden (08.02) ayrıldı.",
+ "pozisyonlar": [
+  [
+   "08.01",
+   "Hindistan cevizi, Brezilya cevizi, kaju cevizi"
+  ],
+  [
+   "08.02",
+   "Diğer sert kabuklular: fındık, badem, kestane, pekan, kola"
+  ],
+  [
+   "08.10",
+   "Diğer taze meyveler: çilek, kivi, nar"
+  ],
+  [
+   "08.13",
+   "Diğer kurutulmuş meyveler; kuruyemiş karışımları"
+  ]
+ ],
+ "hap": [
+  "<b>Adı sayılan meyveler:</b> 08.01–08.06’dakiler (kaju, fındık, muz, incir, turunçgil, üzüm) taze ve kuru halde kendi pozisyonunda; 08.07–08.10 yalnız taze; diğer kuru meyveler 08.13.",
+  "<b>Notlar:</b> yenmeyen meyve fasıl dışı (Not 1); soğutulmuş = taze (Not 2); kükürtleme, sorbik asit, bitkisel yağ veya az glikoz şurubu kuru meyveyi fasıldan çıkarmaz (Not 3).",
+  "<b>Fasıl dışı:</b> yer fıstığı 12.02 (kavrulmuşu 20.08); kopra 12.03; zeytin, domates, biber Fasıl 7; ardıç meyvesi 09.09; kakao 18.01."
+ ],
+ "karistirilan": [
+  [
+   "Kavrulmamış yer fıstığı",
+   "12.02",
+   "Sert kabuklu meyve değil, yağlı tohum; kavrulmuşu 20.08"
+  ],
+  [
+   "Kaktüs inciri (Frenk inciri)",
+   "08.10",
+   "08.04’teki incir yalnız Ficus carica"
+  ]
+ ]
+}
