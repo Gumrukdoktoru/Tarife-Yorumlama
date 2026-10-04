@@ -1,0 +1,756 @@
+{
+ "tur": "deneme",
+ "no": 3,
+ "sorular": [
+  {
+   "soru": "Tarife Cetveline göre, önceden küçük parçalara ayrılmamış veya kıyılmamış ve başka maddelerle birleştirilmemiş; tuzlanıp kurutulduktan sonra tabii bir bağırsak kılıf içine alınmış bütün domuz butu hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "16.01",
+    "02.03",
+    "02.10",
+    "16.02",
+    "05.04"
+   ],
+   "cevap": "C",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "02.10 Açıklama Notu, tuzlanmış, kurutulmuş veya tütsülenmiş etlerin (domuzun but, sırt, kol etleri gibi) önceden küçük parçalara ayrılmamış, kıyılmamış ve diğer maddelerle birleştirilmemiş olmak şartıyla bağırsak, mesane veya benzeri kılıflara alınmış olsalar da 02.10’da kalacağını belirtir. 16.01 Açıklama Notu da kıyılmadan kılıfa konulmuş etleri sosis ve benzerlerinin dışında tutar; kılıf görüntüsü ürünü 16.01’e taşımaz. Ürün tuzlanıp kurutulduğundan taze, soğutulmuş veya dondurulmuş domuz etine ait 02.03’te de yer almaz.",
+   "dayanak": "02.10 Açıklama Notu; 16.01 Açıklama Notu.",
+   "fasil": 2
+  },
+  {
+   "soru": "Tarife Cetveline göre, kalaydan yapılmış elektro kaplama anotları hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "80.07",
+    "80.01",
+    "80.03",
+    "85.45",
+    "75.08"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "80.07 Açıklama Notu, bu pozisyonda yer alan kalaydan eşya arasında elektro kaplama anotlarını açıkça sayar. Anotlar şekil verilmiş eşya olduğundan işlenmemiş kalaya ait 80.01’e veya çubuk, profil ve tellere ait 80.03’e girmez. 85.45 karbondan elektrotları kapsar; 75.08 ise nikelden eşyaya ilişkindir ve yalnızca açıklama notunda atıf yapılan pozisyondur.",
+   "dayanak": "80.07 Açıklama Notu; Fasıl 80 Genel Açıklamalar.",
+   "fasil": 80
+  },
+  {
+   "soru": "GYK 1 Açıklama Notunda, Tarifenin yorumuna ilişkin diğer kurallara başvurmaya gerek kalmaksızın yalnızca pozisyon metinleri ve Bölüm veya Fasıl notlarıyla sınıflandırılabilen eşyaya örnek olarak aşağıdakilerden hangisi verilmiştir?",
+   "secenekler": [
+    "Motorlu taşıtlar için tufte edilmiş halılar ile hava taşıtlarına mahsus çerçevesiz emniyet camları",
+    "At kılı (05.03) ile tabii mantardan eşya (45.03)",
+    "Selesi veya tekerlekleri olmayan bisiklet ile sökülmüş halde sunulan bisiklet",
+    "Canlı atlar (01.01) ile Fasıl 30 Not 4 hükmüne göre 30.06’da yer alan eczacılık ürünleri",
+    "Spagetti yemeği hazırlamaya mahsus takım ile deri mahfazalı saç tuvalet takımı"
+   ],
+   "cevap": "D",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 1 Açıklama Notunun (III)(a) bendi, birçok eşyanın diğer kuralların uygulanmasına gerek kalmadan sınıflandırılabileceğini belirtir ve örnek olarak canlı atları (01.01) ve Fasıl 30 Not 4 gereği 30.06’daki eczacılık ürünlerini verir. Tufte halılar ile emniyet camları GYK 3(a), at kılı ve tabii mantardan eşya GYK 2(b), eksik veya sökülmüş bisiklet GYK 2(a), spagetti ve saç tuvalet takımları ise GYK 3(b) açıklamalarındaki örneklerdir.",
+   "dayanak": "GYK 1 Açıklama Notu (III)(a); GYK 2(a), 2(b), 3(a) ve 3(b) Açıklama Notları.",
+   "fasil": "GYK"
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 15. faslında <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Tabii petek içinde bulunan ham balmumu",
+    "Asıl niteliğini değiştirmeyecek kadar az miktarda defne yaprağı içeren lard",
+    "Ham ispermeçet",
+    "Derilerin yağlanmasında kullanılan tabii degra",
+    "Kovanlarda kullanılmak üzere petek haline getirilmiş balmumu"
+   ],
+   "cevap": "E",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "15.21 Açıklama Notu, kovanlar için petek haline getirilmiş mumları bu pozisyonun dışında bırakarak 96.02’ye gönderir. Buna karşılık tabii petek içinde bulunan ham balmumu ile ham ispermeçet 15.21’de, asıl niteliği değişmeyecek kadar az defne yaprağı içeren lard 15.01’de, deri sanayiinde kullanılan tabii degra ise 15.22’de yer alır. Tuzak, “petek” kelimesinin iki seçenekte de geçmesidir: petek içindeki ham balmumu fasılda kalır, petek biçimine sokulmuş mum kalmaz.",
+   "dayanak": "15.21, 15.01 ve 15.22 Açıklama Notları.",
+   "fasil": 15
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden <b>farklı</b> bir pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Kendi ülkesinde tedavüle çıkacak, kullanılmamış posta pulları",
+    "Perakendecilerin müşterilerine dağıttığı pul şeklindeki indirim kuponları",
+    "Bir bankanın tedavüle çıkardığı seyahat çekleri",
+    "Sunulduğu anda henüz hiçbir ülkede tedavül kıymeti olmayan banknotlar",
+    "Bankalarca müşterilerine verilmek üzere hazırlanmış boş çek defterleri"
+   ],
+   "cevap": "B",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "49.07 Açıklama Notu, perakendeci ticarethanelerin müşterilerine verdiği pul şeklindeki indirim kuponlarını bu pozisyonun dışında bırakarak 49.11’e gönderir; bunlar yetkili makamca tedavüle çıkarılmış itibari bir kıymet taşımaz. Kullanılmamış ve tedavüle çıkacak posta pulları, seyahat çekleri ve çek defterleri 49.07’de sayılır; henüz hiçbir ülkede tedavül kıymeti olmayan banknotlar da açıklama notunda bu pozisyona açıkça dahil edilmiştir.",
+   "dayanak": "49.07 Açıklama Notu.",
+   "fasil": 49
+  },
+  {
+   "soru": "Tarife Cetveline göre kurutulmuş ve kabuklarından çıkarılmış guar tohumu hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "07.13",
+    "12.09",
+    "13.02",
+    "07.08",
+    "12.12"
+   ],
+   "cevap": "A",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "07.13 Açıklama Notu, kurutulmuş ve kabukları çıkarılmış baklagiller arasında bezelye, nohut, fasulye, mercimek ve baklanın yanında guar tohumunu da açıkça sayar; tohumluk olarak veya başka amaçlarla kullanılacak olanlar da bu pozisyondadır. Taze baklagiller 07.08’de yer alır. Bitkisel menşeli müsilaj ve kıvam verici maddeler 13.02’de olsa da tohumun kendisi orada sınıflandırılmaz; 12.09 ise baklagil dışındaki ekim amaçlı tohumlara ilişkindir.",
+   "dayanak": "07.13 Açıklama Notu.",
+   "fasil": 7
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 65. faslında <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Tiyatro oyunlarında kullanılmak üzere özel olarak yapılmış başlık",
+    "Kıymetli metalden süsleri bulunan şapka",
+    "Kuş tüylerinden yapılmış şapka",
+    "Şapkaya takılmamış, ayrı sunulan adi metal şapka tokası",
+    "Dokuma mensucattan dikilmiş siperlikli kep"
+   ],
+   "cevap": "D",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Fasıl 65 Genel Açıklamaları, başlıkla birleştirilmemiş halde sunulan tokalar, kopçalar, marka ve nişanlar, süs tüyleri ve yapma çiçekler gibi süs ve teferruatı fasıl dışında bırakır; bunlar kendi uygun pozisyonlarında sınıflandırılır. Başlıklar kullanım amacına (tiyatro, kılık değiştirme vb.) bakılmaksızın bu fasıldadır ve 71. Fasıl maddelerinden süs içerebilir. Kuş tüylerinden şapkalar 65.06’da, mensucattan yapılan başlıklar 65.05’te yer alır.",
+   "dayanak": "Fasıl 65 Genel Açıklamalar; 65.05 ve 65.06 Açıklama Notları.",
+   "fasil": 65
+  },
+  {
+   "soru": "Tarife Cetveline göre, bina duvarına tespit edilmek üzere hazırlanmış, plastikten elektrik düğmesi (anahtar) kapağı hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "39.26",
+    "85.38",
+    "39.25",
+    "85.36",
+    "39.24"
+   ],
+   "cevap": "C",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Fasıl 39 Not 11(ij), kapılara, pencerelere, merdivenlere, duvarlara veya binanın diğer bölümlerine tespit edilmek üzere hazırlanmış bağlantı ve montaj parçaları arasında elektrik düğmesi kapaklarını ve koruyucu diğer kapakları ismen sayarak 39.25 kapsamına alır. Not hükmü nedeniyle eşya genel nitelikli 39.26’ya veya ev eşyasına ait 39.24’e gitmez. Elektrik anahtarının kendisini kapsayan 85.36 ile bunların aksamına ait 85.38 de bu kapak için uygulanmaz.",
+   "dayanak": "Fasıl 39 Not 11(ij).",
+   "fasil": 39
+  },
+  {
+   "soru": "Sağlık ve kişisel bakım hizmetlerinde kullanılan aşağıdaki eşyadan hangisi diğerlerinden <b>farklı</b> bir fasılda sınıflandırılır?",
+   "secenekler": [
+    "Hastayı istenen pozisyona getirmek üzere düzenlenmiş ameliyat masası",
+    "Döndürme, yükseltme ve yatırma tertibatlı berber koltuğu",
+    "Doğum ve loğusa karyolası",
+    "Hastane içinde hasta nakline mahsus şaryolu sedye",
+    "90.18’deki dişçilik cihazlarıyla birleştirilmiş dişçi koltuğu"
+   ],
+   "cevap": "E",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Fasıl 94 Not 1(ij) ve 94.02 Açıklama Notu, 90.18’deki dişçilik cihazlarıyla birleştirilmiş dişçi koltuklarını ve tükürük hokkalarını Fasıl 94 dışında bırakarak 90.18’e gönderir. Ameliyat masaları, doğum karyolaları, hastane içinde kullanılan şaryolu sedyeler ve döndürme, yükseltme, yatırma tertibatlı berber koltukları ise 94.02’de yer alır. Dişçilik cihazı içermeyen dişçi koltukları da 94.02’de kalır; ayrımı cihazla birleşik olup olmama belirler.",
+   "dayanak": "Fasıl 94 Not 1(ij); 94.02 Açıklama Notu.",
+   "fasil": 94
+  },
+  {
+   "soru": "Tarife Cetveline göre, turunçgil meyve suyu imalatı sırasında ortaya çıkan artık suların konsantre edilmesiyle elde edilen, ticarette bazen “turunçgil melası” olarak anılan ve hayvan yemi olarak kullanılan türden yan ürün hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "17.03",
+    "23.08",
+    "23.03",
+    "20.09",
+    "23.09"
+   ],
+   "cevap": "B",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "23.08 Açıklama Notu, hayvan gıdası olarak kullanılan türden bitkisel döküntü, artık ve yan ürünler arasında “turunçgil meyvelerinin melası” olarak bilinen bu ürünü açıkça sayar. Ürün adındaki “melas” kelimesi tuzaktır: 17.03’teki melaslar şekerin ekstraksiyonundan veya rafinasyonundan arta kalanlardır. 23.03 nişasta, şeker, bira ve damıtık içki sanayii artıklarını, 23.09 ise hazırlanmış hayvan yemi müstahzarlarını kapsar.",
+   "dayanak": "23.08 Açıklama Notu; 23.03 Açıklama Notu.",
+   "fasil": 23
+  },
+  {
+   "soru": "Aynı karton hediye kutusunda perakende satışa sunulan bir şişe viski (22.08) ile bir şişe şarabın (22.04) sınıflandırılmasıyla ilgili GYK 3(b) Açıklama Notuna göre aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "GYK 3(b) uyarınca takım sayılır; esas niteliği veren viskinin pozisyonunda (22.08) sınıflandırılır.",
+    "GYK 3(c) uyarınca numara sırasına göre sonuncu olan 22.08’de birlikte sınıflandırılır.",
+    "Perakende takım oluşturmaz; her ürün kendi uygun pozisyonunda ayrı ayrı sınıflandırılır.",
+    "GYK 5(b) uyarınca kutu ambalaj sayıldığından ürünler şarabın pozisyonunda birlikte sınıflandırılır.",
+    "GYK 3(a) uyarınca daha özel tanım veren 22.04’te birlikte sınıflandırılır."
+   ],
+   "cevap": "C",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 3(b) Açıklama Notu (X), 22.08 pozisyonundaki bir şişe alkollü içki ile 22.04 pozisyonundaki bir şişe şarabın bir araya getirilmesini takım oluşturmayan örnekler arasında açıkça sayar; bu durumda her ürün tek başına uygun pozisyonunda sınıflandırılır. Ürünler özel bir gereksinmeyi karşılamak veya belirli bir işlevi yerine getirmek üzere bir araya getirilmediğinden 3(b) uygulanmaz ve 3(c)’ye de geçilmez; ortak hediye kutusu bu sonucu değiştirmez.",
+   "dayanak": "GYK 3(b) Açıklama Notu (X).",
+   "fasil": "GYK"
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 82. faslında <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Koyun kulağını markalamaya mahsus pens",
+    "Budama çakısı",
+    "Şeker maşası",
+    "Kaynak ve lehim işlerinde kullanılan kaynak lambası",
+    "Dağcılara mahsus kazma"
+   ],
+   "cevap": "E",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "82.01 Açıklama Notu, dağcılara mahsus kazmaları fasıl dışında bırakarak 95.06’ya gönderir. Aynı not koyun kulağını ve diğer hayvanları markalamaya mahsus pensleri 82.03’e, budama çakılarını 82.11’e yönlendirir; 82.03 Açıklama Notu da şeker maşalarını 82.15’e verir. Kaynak lambaları ise iş gören kısmı Not 1’de sayılan maddelerden olmasa da Fasıl 82 Not 1’de ismen istisna tutulduğundan 82.05’te sınıflandırılır.",
+   "dayanak": "Fasıl 82 Not 1; 82.01, 82.03 ve 82.05 Açıklama Notları.",
+   "fasil": 82
+  },
+  {
+   "soru": "Aşağıdaki bitkisel ürünlerden hangisi diğerlerinden <b>farklı</b> bir fasılda sınıflandırılır?",
+   "secenekler": [
+    "Piper betle bitkisinin taze ve yeşil tanbul yaprakları",
+    "Quillaia (sabun ağacı) kabuğu",
+    "Hint sabun ağacının üzümsü meyveleri",
+    "Bükülerek iplik haline getirilmemiş rafyadan yapılmış dokuma",
+    "Mensucat bitim işleminde kullanılmak üzere hazırlanmış, monte edilmemiş fırça otu başları"
+   ],
+   "cevap": "D",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "14.01 Açıklama Notu, bükülerek iplik haline getirilmemiş rafyadan yapılan dokumaları pozisyon dışında bırakarak 46.01’e gönderir; ham rafya 14.01’de kalırken ondan örülmüş ürün hasırcı eşyası niteliği kazanır. Tanbul yaprakları, quillaia kabuğu, Hint sabun ağacının meyveleri ve monte edilmemiş fırça otu başları ise 14.04 Açıklama Notunda “diğer bitkisel ürünler” arasında sayılır ve Fasıl 14’te yer alır.",
+   "dayanak": "14.01 ve 14.04 Açıklama Notları.",
+   "fasil": 14
+  },
+  {
+   "soru": "Tarife Cetveline göre, tanınmış bir klinik çalışmada kullanılmak üzere ölçülü dozlar halinde hazırlanmış ve hazır aktif ilaç da içeren çift kör klinik deney kitleri hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "30.04",
+    "30.06",
+    "30.03",
+    "38.22",
+    "30.02"
+   ],
+   "cevap": "B",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Fasıl 30 Not 4(e), tanınmış klinik çalışmalarda kullanılmak üzere ölçülü dozlardaki plaseboları ve kör veya çift kör klinik deney kitlerini, hazır aktif ilaçlar içerseler bile 30.06 kapsamına alır. Aktif ilaç ve ölçülü doz özellikleri 30.04’ü çağrıştırsa da not hükmü önceliklidir. 38.22 teşhis ve laboratuvar reaktiflerine, 30.02 ise aşı, serum gibi bağışıklık ürünlerine ilişkindir.",
+   "dayanak": "Fasıl 30 Not 4(e).",
+   "fasil": 30
+  },
+  {
+   "soru": "Ayakkabılar ve aksamıyla ilgili aşağıdaki eşya – tarife yeri eşleştirmelerinden hangisi <b>doğrudur</b>?",
+   "secenekler": [
+    "Dış tabanı tutturulmamış, dokumaya elverişli maddeden ayakkabı – Bölüm XI",
+    "Buz pateni takılmış, deri yüzlü paten botu – 64.03",
+    "Oyuncak mahiyetindeki, plastikten çocuk ayakkabısı – 64.02",
+    "Ayakkabıya takılmak üzere hazırlanmış, iplikten süs ponponu – 64.06",
+    "Üstü çadır bezinden, tabanı hasırdan örülmüş espadril – 46.02"
+   ],
+   "cevap": "A",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Fasıl 64 Not 1(b), üstüne yapıştırılmış, dikilmiş veya başka suretle tutturulmuş dış tabanı bulunmayan dokumaya elverişli maddelerden ayakkabıları fasıl dışında bırakarak XI. Bölüme gönderir. Paten takılmış botlar ve oyuncak ayakkabılar Not 1(f) gereği 95. Fasıldadır; ponponlar ve benzeri süs eşyası Not 2 uyarınca 64.06’daki “aksam” tabirine girmez. Espadriller ise Genel Açıklamalarda Fasıl 64 ayakkabıları arasında sayılır.",
+   "dayanak": "Fasıl 64 Not 1(b), 1(f) ve Not 2; Fasıl 64 Genel Açıklamalar.",
+   "fasil": 64
+  },
+  {
+   "soru": "Fasıl 4 Not 3(b)’ye göre 04.05 pozisyonu anlamında “sürülerek yenilen süt ürünleri” tabirinden aşağıdakilerden hangisi anlaşılır?",
+   "secenekler": [
+    "Süt yağı oranı ağırlıkça %80 veya daha fazla olup %95’i geçmeyen, su oranı en fazla %16 olan ürünler",
+    "Süt yağının yanında bitkisel yağ da içerebilen, süt yağı oranı ağırlıkça %39–%80 arasındaki sürülebilir emülsiyonlar",
+    "Süt yağı oranı ağırlıkça %39’dan az olan, yağda su tipi sürülebilir emülsiyonlar",
+    "Ağırlık itibarıyla %15’ten fazla süt yağı içeren her türlü sürülebilir yenilen müstahzar",
+    "Yalnız süt yağı içeren, süt yağı oranı ağırlıkça %39 veya daha fazla fakat %80’den az olan yağda su tipi emülsiyonlar"
+   ],
+   "cevap": "E",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 4 Not 3(b), sürülerek yenilen süt ürünlerini içinde katı yağ olarak yalnız süt yağı bulunan, süt yağı oranı ağırlıkça %39 veya daha fazla fakat %80’den az olan, yağlı-sulu (yağda su) tipteki sürülebilir emülsiyonlar olarak tanımlar. %80–%95 süt yağı ve en fazla %16 su ölçütü Not 3(a)’daki tereyağı tanımıdır. Bitkisel yağ içeren ürün “yalnız süt yağı” koşulunu karşılamaz; %15 eşiği ise Fasıl 15 Not 1’de 04.05 ürünlerini içeren müstahzarlar için öngörülmüştür.",
+   "dayanak": "Fasıl 4 Not 3(a) ve (b); Fasıl 15 Not 1.",
+   "fasil": 4
+  },
+  {
+   "soru": "Tarife Cetveline göre, hava taşıtlarında kullanılan ve radar yoluyla yükseklik ölçen radyo altimetre hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "90.14",
+    "85.26",
+    "90.15",
+    "88.07",
+    "85.29"
+   ],
+   "cevap": "B",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "85.26 Açıklama Notu, radar cihazları arasında “radyo altimetreler denilen radar yüksekliği ölçen cihazları” açıkça sayar. Yükseklik ölçme işlevi seyrüsefer aletlerine ait 90.14’ü çağrıştırsa da radar esasına dayanan cihaz 85.26’dadır. Hava taşıtı aksamına ait 88.07, Bölüm XVII Not 2(f) uyarınca 85. Fasıl eşyasını kapsamaz; 85.29 ise 85.26 cihazlarının yalnızca aksam ve parçalarına ilişkindir.",
+   "dayanak": "85.26 Açıklama Notu; Bölüm XVII Not 2(f).",
+   "fasil": 85
+  },
+  {
+   "soru": "Aşağıdaki ürünlerden hangisi Tarife Cetvelinin 3. faslı kapsamı <b>dışında</b> kalır?",
+   "secenekler": [
+    "Konserve kutularına konulmuş tütsülenmiş som balığı",
+    "Tütsüleme işlemi sırasında pişmiş tütsülenmiş uskumru",
+    "Akvaryumlarda süs amacıyla kullanılan, canlı tropikal süs balıkları",
+    "Balık avında yem olarak kullanılan tuzlanmış morina yumurtaları",
+    "Kabuğu içinde buharda pişirilmiş ıstakoz"
+   ],
+   "cevap": "D",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Fasıl 3 Genel Açıklamaları, balık döküntüleri ile yenilmeyen nefisleri (örneğin balık tutmada yem olarak kullanılan tuzlanmış morina yumurta ve nefisleri) fasıl dışında bırakarak 05.11’e gönderir. Hava geçirmez kutulardaki tütsülenmiş som balığı ile tütsüleme sırasında pişmiş tütsülenmiş balıklar 03.05’te, kabuğu içinde buharda pişirilmiş kabuklu hayvanlar 03.06’da kalır. 03.01 ise kullanılma amacı ne olursa olsun bütün canlı balıkları kapsar.",
+   "dayanak": "Fasıl 3 Not 1; Fasıl 3 Genel Açıklamalar; 03.01 Açıklama Notu.",
+   "fasil": 3
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi diğerlerinden <b>farklı</b> bir fasılda sınıflandırılır?",
+   "secenekler": [
+    "Gangından ayrılmış, külçe halindeki tabii gümüş",
+    "Volframit (demir ve manganez tungstatı)",
+    "Rutil (titan oksidi)",
+    "Tantalit (tantal-niyobat cevheri)",
+    "Stibnit (antimon sülfür)"
+   ],
+   "cevap": "A",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Fasıl 26 Genel Açıklamaları, yataklarından veya ganglarından ayrıştırılmış tabii metallerin (külçeler veya daneler gibi) XIV. veya XV. Bölümlerde sınıflandırılacağını belirtir; gangından ayrılmış tabii gümüş 71.06 Açıklama Notunda ham gümüş olarak sayılır. Volframit tungsten (26.11), rutil titanyum (26.14), tantalit tantal (26.15), stibnit ise antimon (26.17) cevheri olarak Fasıl 26’da kalır; bu dördü farklı pozisyonlarda olsa da aynı fasıldadır.",
+   "dayanak": "Fasıl 26 Genel Açıklamalar; 26.11, 26.14, 26.15, 26.17 ve 71.06 Açıklama Notları.",
+   "fasil": 26
+  },
+  {
+   "soru": "Fasıl 95 Not 1 hükümleri dikkate alındığında aşağıdakilerden hangisi bu fasılda sınıflandırılır?",
+   "secenekler": [
+    "Çocuklar için bisiklet",
+    "İnsansız hava taşıtı",
+    "Yarış kızağı (bobsleigh)",
+    "Her tür elektrikli çelenk",
+    "Ayrı olarak sunulan raket telleri"
+   ],
+   "cevap": "C",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 95 Not 1(n), XVII. Bölümdeki spor kara taşıtlarını fasıl dışında bırakırken kızakları, yarış kızaklarını ve benzerlerini bu istisnanın dışında tutar; Bölüm XVII Not 1 de 95.06’ya giren yarış kızaklarını o bölüme almaz. Çocuk bisikletleri Not 1(o) ile 87.12’ye, insansız hava taşıtları Not 1(p) ile 88.06’ya, elektrikli çelenkler Not 1(u) ile 94.05’e gider; raket telleri ise Not 1(y) uyarınca mamul olduğu maddeye göre sınıflandırılır.",
+   "dayanak": "Fasıl 95 Not 1(n), (o), (p), (u), (y); Bölüm XVII Not 1.",
+   "fasil": 95
+  },
+  {
+   "soru": "Tarife Cetveline göre, çiğ istiridyelerin preslenmesiyle elde edilen ve yalnızca muhafazasını sağlayacak miktarda tuz içeren istiridye suyu hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "16.05",
+    "16.03",
+    "21.03",
+    "03.07",
+    "21.04"
+   ],
+   "cevap": "B",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "16.03 Açıklama Notu, et hülasalarının yanında çiğ balık, kabuklu hayvanlar, yumuşakçalar ve diğer su omurgasızlarından preslenerek elde edilen suları da bu pozisyona dahil eder ve bu ürünlerin muhafazayı temin edecek miktarda tuz içerebileceğini belirtir. Ürün hazırlanmış yumuşakça olmadığından 16.05’e, çiğ yumuşakça olmadığından 03.07’ye girmez. Soslar ve çeşniler 21.03’te, çorbalar ve et suyu müstahzarları 21.04’te yer alır.",
+   "dayanak": "16.03 Açıklama Notu.",
+   "fasil": 16
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 41. faslında <b>yer almaz</b>?",
+   "secenekler": [
+    "Kılları alınmamış, tuzlanmış ham deve derisi",
+    "Kromla dabaklanmış, ara kurutmalı (crust), kılları alınmış keçi derisi",
+    "Dabaklanmış deri kırpıntıları",
+    "Kılları alınmamış, kromla dabaklanmış at derisi",
+    "Yağla dabaklanıp aprelenmiş koyun güderisi"
+   ],
+   "cevap": "D",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Fasıl 41 Not 1(c), tüylü hayvanların tüyleri alınmamış ham, dabaklanmış veya aprelenmiş derilerini Fasıl 43’e gönderir; sığır, at, deve gibi hayvanlar için yapılan istisna yalnızca tüyleri alınmamış ham derilere uygulanır. 41.04 Açıklama Notu da sığır ve atların kılı alınmamış dabaklanmış derilerini Fasıl 43’e bırakır. Kılı alınmamış ham deve derisi istisna nedeniyle Fasıl 41’de kalır; ara kurutmalı keçi derisi 41.06’da, deri kırpıntıları 41.15’te, güderi 41.14’te yer alır.",
+   "dayanak": "Fasıl 41 Not 1(c); 41.04 Açıklama Notu; Fasıl 43 Not 1.",
+   "fasil": 41
+  },
+  {
+   "soru": "GYK 3(b) Açıklama Notuna göre aşağıdakilerden hangisi, bu kuralın uygulandığı eşya grupları arasında <b>sayılmamıştır</b>?",
+   "secenekler": [
+    "Karışımlar",
+    "Çeşitli maddelerden oluşan bileşik eşya",
+    "Çeşitli eşyanın birleşmesinden meydana gelen bileşik eşya",
+    "Perakende satılacak hale getirilmiş takım halinde bulunan eşya",
+    "Birleştirilmemiş veya demonte halde sunulan tamamlanmış eşya"
+   ],
+   "cevap": "E",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 3(b) Açıklama Notu (VI), kuralın yalnız karışımlar, çeşitli maddelerden oluşan bileşik eşya, çeşitli eşyanın birleşmesinden meydana gelen bileşik eşya ve perakende satılacak hale getirilmiş takımlarla ilgili olduğunu ve ancak 3(a) yetersiz kaldığında uygulanacağını belirtir. Birleştirilmemiş veya demonte halde sunulan tamamlanmış eşya ise GYK 2(a)’nın ikinci kısmının konusudur ve monte edilmiş eşya ile aynı pozisyonda sınıflandırılır.",
+   "dayanak": "GYK 3(b) Açıklama Notu (VI); GYK 2(a) Açıklama Notu (V).",
+   "fasil": "GYK"
+  },
+  {
+   "soru": "Aşağıdaki dar dokuma ürünlerinden hangisi diğerlerinden <b>farklı</b> bir fasılda sınıflandırılır?",
+   "secenekler": [
+    "Yazı makineleri için mürekkepli şerit",
+    "Katları açıldığında eni 4 cm olan, kenarları katlanmış biye",
+    "Boru şeklinde dokunmuş, yassılaştırılmış haldeki genişliği 20 cm olan mensucat",
+    "Dokunarak elde edilmiş saçaklı kordela",
+    "Şerit halinde dokunmuş, işleme yapılmamış etiketler"
+   ],
+   "cevap": "A",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "58.06 Açıklama Notu, yazı makineleri için mürekkepli şeritleri pozisyon dışında bırakarak 96.12’ye gönderir; bu şeritler kordela görünümünde olsa da 96. Fasıldadır. Katları açıldığında eni 30 cm’yi geçmeyen biyeler ve yassılaştırılmış genişliği 30 cm’yi geçmeyen boru şeklindeki dokumalar Fasıl 58 Not 5 gereği 58.06’da, dokunarak elde edilen saçaklı kordelalar 58.08’de, şerit halinde dokunmuş etiketler ise 58.07’de yer alır.",
+   "dayanak": "Fasıl 58 Not 5; 58.06 Açıklama Notu.",
+   "fasil": 58
+  },
+  {
+   "soru": "Tarife Cetveline göre, bisiklet fren kablolarının kılıfında kullanılmak üzere çelik telin helezon şeklinde sıkıca sarılmasıyla elde edilmiş, rulo halinde sunulan ve başka maddelerle birleştirilmemiş eğilip bükülebilen boru hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "87.14",
+    "73.26",
+    "83.07",
+    "73.12",
+    "73.06"
+   ],
+   "cevap": "C",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "83.07 Açıklama Notu, metal bir telin helezon şeklinde sıkı olarak sarılmasıyla elde edilen eğilip bükülebilen boruları, örnek olarak “Bowden” tipi kabloların ve bisiklet frenlerine mahsus kabloların kılıfını açıkça bu pozisyona dahil eder. Boru olarak kullanılmayan benzer helezonlar (yay gibi perde telleri) genellikle 73.26’ya gider. Ürün başka maddelerle birleştirilerek taşıt aksamı haline getirilmediğinden 87.14’e girmez; çelik halatlar ise 73.12’nin konusudur.",
+   "dayanak": "83.07 Açıklama Notu.",
+   "fasil": 83
+  },
+  {
+   "soru": "Bir gıda ithalatçısı, demir hindi (tamarind) meyvelerinin kurutulmuş meyve etini ithal etmektedir. Meyve eti lifleri ve çekirdekleriyle birlikte olup içine şeker veya başka bir madde katılmamış, başka bir işleme de tabi tutulmamıştır. Tarife Cetveline göre bu ürün hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "08.10",
+    "20.08",
+    "13.02",
+    "20.07",
+    "08.13"
+   ],
+   "cevap": "E",
+   "tip": "Senaryo",
+   "gerekce": "08.13 Açıklama Notu, demir hindi meyvelerinin kabuklarını ve şeker veya diğer maddeler ilave edilmemiş, başka şekilde işlenmemiş demir hindi meyve etini (lifleri ve çekirdekleriyle birlikte veya çıkarılmış) kurutulmuş meyveler arasında açıkça sayar. Ürüne madde katılmadığı için hazırlanmış meyvelere ait 20.08’e veya meyve ezmelerine ait 20.07’ye gitmez. Taze meyveler 08.10’da, bitkisel öz ve hülasalar ise 13.02’de yer alır.",
+   "dayanak": "08.13 Açıklama Notu.",
+   "fasil": 8
+  },
+  {
+   "soru": "Fasıl 70 Not 1 hükümleri dikkate alındığında aşağıdakilerden hangisi bu fasılda sınıflandırılır?",
+   "secenekler": [
+    "Oyuncak bebeklere mahsus, mekanizmasız cam gözler",
+    "86–88. fasıllardaki taşıtlara ait çerçeveli arka camlar",
+    "Isıtma tertibatı bulunan, çerçevesiz otomobil arka camı",
+    "Camdan noel ağacı süsleri",
+    "Camdan elektrik izolatörleri"
+   ],
+   "cevap": "A",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 70 Not 1(h), 95. Fasıldaki eşyayı fasıl dışında bırakırken oyuncak bebeklere ve 95. Fasıldaki diğer eşyaya mahsus mekanik tertibatı olmayan cam gözleri bu istisnanın dışında tutar; Fasıl 95 Not 1(ij) de takılmamış cam gözleri 70.18’e gönderir. Taşıtların çerçeveli camları Not 1(d), ısıtma tertibatlı camları çerçeveli olsun olmasın Not 1(e), noel ağacı süsleri Not 1(h), elektrik izolatörleri ise Not 1(c) gereği fasıl dışındadır.",
+   "dayanak": "Fasıl 70 Not 1(c), (d), (e), (h); Fasıl 95 Not 1(ij).",
+   "fasil": 70
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 06.02 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Köklendirilmemiş gül çelikleri",
+    "Dinlenme halindeki yıldız çiçeği yumrulu kökleri",
+    "Aşılı rododendron fidanları",
+    "Kökleri top halinde, saksıda sunulan süs çalısı",
+    "Meyveleri yenilen, aşılı ağaç fidanları"
+   ],
+   "cevap": "B",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "06.02 Açıklama Notu, yumrulu kökleri (örneğin yıldız çiçeği) bu pozisyonun dışında bırakarak 06.01’e gönderir; 06.01 çiçek soğanlarını, yumruları ve yumrulu kökleri dinlenme halinde, sürgün vermiş veya çiçeklenmiş olarak kapsar. Köksüz çelikler, aşılı veya aşısız ağaç ve çalılar (meyve, süs, rododendron gibi) ile saksıda veya top halindeki kökleriyle sunulan bitkiler ise 06.02’de yer alır.",
+   "dayanak": "06.01 ve 06.02 Açıklama Notları.",
+   "fasil": 6
+  },
+  {
+   "soru": "Mineral yakıtlar ve bitümenli ürünlerle ilgili aşağıdaki eşya – tarife yeri eşleştirmelerinden hangisi <b>doğrudur</b>?",
+   "secenekler": [
+    "Linyitin bir türü olan kara kehribar – 27.02",
+    "Turbdan kalıplanmış çiçek saksısı – 27.03",
+    "Dokuma sanayiinde kullanılmak üzere hazırlanmış turb elyafı (berandin) – 27.03",
+    "Katranla karıştırılmış taş kırıkları (katranlı makadam) – 25.17",
+    "Asfalt esaslı karışımdan mamul kaldırım taşları – 27.15"
+   ],
+   "cevap": "D",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "27.15 Açıklama Notu, katranla karıştırılmış taş kırıklarından oluşan katranlı makadamı bitümenli karışımlar dışında bırakarak 25.17’ye gönderir. Kara kehribar linyit türü olmasına rağmen 27.02’den hariç tutulup 25.30’da, turbdan saksılar Fasıl 68’de, dokuma sanayii için hazırlanmış turb elyafı XI. Bölümde sınıflandırılır. Bitümenli karışımların son şeklini almış kaldırım taşları ve levhaları da 27.15’te değil 68.07’de yer alır.",
+   "dayanak": "27.02, 27.03 ve 27.15 Açıklama Notları.",
+   "fasil": 27
+  },
+  {
+   "soru": "Tarife Cetveline göre, tütün yaprakları, döküntüleri ve tozlarından ayrılmış tütünün aglomere edilmesiyle elde edilen ve yakılarak içilen puroların sargısında kullanılmak üzere dikdörtgen tabakalar halinde sunulan “yeniden tertip edilmiş” tütün hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "24.01",
+    "24.04",
+    "24.03",
+    "24.02",
+    "48.13"
+   ],
+   "cevap": "C",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "24.03 pozisyon metni ve Açıklama Notu, tütünün aglomere edilmesiyle yapılan ve genellikle dikdörtgen tabakalar (sargı olarak) veya kıyılmış şeritler (dolgu olarak) halinde kullanılan “homojenize” veya “yeniden tertip edilmiş” tütünü açıkça bu pozisyonda sayar. Ürün işlenmiş olduğundan yaprak tütün ve döküntülerine ait 24.01’e, henüz puro olmadığından 24.02’ye girmez. Yanma olmadan solunması amaçlanmadığından 24.04 uygulanmaz; 48.13 ise sigara kağıdına ilişkindir.",
+   "dayanak": "24.03 pozisyon metni ve Açıklama Notu; 24.04 Açıklama Notu.",
+   "fasil": 24
+  },
+  {
+   "soru": "Magnezyumla ilgili aşağıdaki ürünlerden hangisi diğerlerinden <b>farklı</b> bir fasılda sınıflandırılır?",
+   "secenekler": [
+    "Magnezyumdan cıvata ve somunlar",
+    "Magnezyum tozu",
+    "Magnezyumdan tel mensucat",
+    "Mekanik veya termik tertibatı olmayan, magnezyumdan fıçı",
+    "Magnezyum imali sırasında oluşan cüruf ve küller"
+   ],
+   "cevap": "E",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "81.04 Açıklama Notu, magnezyumun imali sırasında oluşan cüruf, kül ve artıkları pozisyon dışında bırakarak 26.20’ye gönderir. Aynı not magnezyum tozlarını ve pullarını, mekanik veya termik tertibatı olmayan depo, fıçı ve kutuları, tel mensucatı ve cıvata, somun, vida gibi eşyayı 81.04’te sayar. Tuzak, ürünün magnezyum içerdiği için otomatik olarak 81.04’e verilmesidir.",
+   "dayanak": "81.04 Açıklama Notu.",
+   "fasil": 81
+  },
+  {
+   "soru": "Fasıl 40 Not 6’ya göre 40.04 pozisyonu anlamında “döküntü, kırpıntı ve artıklar” tabirinden aşağıdakilerden hangisi anlaşılır?",
+   "secenekler": [
+    "Kesinlikle kullanılamaz hale gelmiş kauçuk eşya ile kauçuk işleme ve imalatından arta kalan döküntü ve kırpıntılar",
+    "Yalnızca kauçuk eşyanın imalatından arta kalan kırpıntılar; eskimiş kullanılmış eşya bu tabire girmez",
+    "Yeniden sırt geçirilmeye elverişli kullanılmış dış lastikler dahil, eskimiş her türlü kauçuk eşya",
+    "Sertleştirilmiş kauçuk dahil her türlü kauçuğun döküntüleri; ancak bunlardan elde edilen tozlar ve granüller hariç",
+    "Yalnızca vulkanize edilmemiş kauçuğun işlenmesinden arta kalan ve ticari değeri bulunmayan parçalar"
+   ],
+   "cevap": "A",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 40 Not 6, 40.04 anlamında döküntü, kırpıntı ve artıkları; kesilme, eskime veya diğer sebeplerle kesinlikle kullanıma elverişli olmayan kauçuk eşya ile kauçuğun veya kauçuk eşyanın işlenmesinden ya da imalatından arta kalan döküntü, kırpıntı ve artıklar olarak tanımlar. Yeniden kullanıma elverişli kullanılmış dış lastikler 40.12’de kalır. 40.04 sertleştirilmiş kauçuğu kapsamaz (40.17); buna karşılık sertleştirilmemiş kauçuk döküntülerinden elde edilen tozlar ve granüller ile vulkanize kauçuk artıkları bu pozisyondadır.",
+   "dayanak": "Fasıl 40 Not 6; 40.04 pozisyon metni ve Açıklama Notu.",
+   "fasil": 40
+  },
+  {
+   "soru": "Fasıl 42 Not 2 hükümlerine göre aşağıdaki deriden eşyadan hangileri bu fasılda <b>sınıflandırılmaz</b>?<br/>I. Deriden yapılmış, taklit mücevher niteliğindeki bilezik<br/>II. Dış yüzü deriyle kaplanmış giysi düğmesi<br/>III. Deriden köpek tasması<br/>IV. Deriden futbol topu",
+   "secenekler": [
+    "I ve III",
+    "II ve IV",
+    "I, II ve IV",
+    "I, III ve IV",
+    "Yalnız III"
+   ],
+   "cevap": "C",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "Fasıl 42 Not 2, taklit mücevher niteliğindeki bilezik ve benzerlerini 71.17’ye, 96.06 pozisyonundaki düğmeleri 96. Fasla, oyun ve spor levazımatını ise 95. Fasla göndererek bu fasıl dışında bırakır. Köpek tasması ise 42.01 pozisyon metninde ve Açıklama Notunda sayılan, her tür hayvan için saraciye eşyasıdır ve Fasıl 42’de kalır. Bu nedenle I, II ve IV fasıl dışındadır.",
+   "dayanak": "Fasıl 42 Not 2; 42.01 Açıklama Notu.",
+   "fasil": 42
+  },
+  {
+   "soru": "Bölüm VI notlarına göre, tutkal olarak kullanılmak üzere perakende satış için hazırlanmış dekstrin hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "35.05",
+    "35.06",
+    "38.09",
+    "32.14",
+    "17.02"
+   ],
+   "cevap": "B",
+   "tip": "Eşya → 4’lü pozisyon",
+   "gerekce": "Bölüm VI Not 2, ölçülü dozlarda veya perakende satış için hazırlanmış olmaları nedeniyle 35.06 gibi pozisyonlardan birine giren ürünlerin, tarifenin başka pozisyonlarına girebilecek durumda olsalar dahi bu pozisyonlarda sınıflandırılacağını hükme bağlar. Bölüm Notunun Genel Açıklaması da tutkal olarak perakende satış için hazırlanmış dekstrinin 35.05’te değil 35.06’da sınıflandırılacağını örnek olarak verir. Tuzak, maddenin kendisine bakarak dekstrinlerin pozisyonu olan 35.05’i seçmektir.",
+   "dayanak": "Bölüm VI Not 2 ve Genel Açıklaması.",
+   "fasil": 28
+  },
+  {
+   "soru": "Bir sanayi firması, çelikten bir depolama tankının montaj için gereken tüm parçalarını aynı sevkiyatta, birleştirilmemiş halde ithal etmektedir. Parçalar başka bir işçilik gerektirmeden yalnızca kaynak yoluyla birleştirilecektir; montaj işlemi ise oldukça karmaşıktır. GYK 2(a) Açıklama Notuna göre aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Kural yalnız vida, somun, cıvata gibi bağlantı elemanlarıyla birleştirilen eşyaya uygulanır; parçalar ayrı ayrı sınıflandırılır.",
+    "Montaj karmaşık olduğundan eşya tamamlanmış sayılmaz ve GYK 4 uyarınca en çok benzediği eşyanın pozisyonunda sınıflandırılır.",
+    "Parçalar GYK 3(b) uyarınca takım sayılır ve esas niteliği veren parçanın pozisyonunda sınıflandırılır.",
+    "Kaynak gerekmesi ve montajın karmaşıklığı kuralı engellemez; tank monte edilmiş gibi sınıflandırılır.",
+    "Kaynak işlemi ileri bir işçilik sayıldığından parçalar yarı mamul olarak yapıldıkları maddeye göre sınıflandırılır."
+   ],
+   "cevap": "D",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 2(a) Açıklama Notu (VII), “birleştirilmemiş veya demonte eşya” tabirinin parçaları yalnız birleştirme işlemini gerektiren eşyayı ifade ettiğini, birleştirmenin bağlantı elemanlarıyla olduğu kadar perçinleme veya kaynak yoluyla da yapılabileceğini ve montaj yönteminin karmaşıklığının dikkate alınmayacağını belirtir. Aranan koşul, parçaların nihai şekil için daha ileri bir işçilik görmemesidir. Bu nedenle tank, monte edilmiş tank ile aynı pozisyonda sınıflandırılır; takım veya benzerlik kurallarına geçilmez.",
+   "dayanak": "GYK 2(a) Açıklama Notu (V) ve (VII).",
+   "fasil": "GYK"
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 60. faslında <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Örgü işi halı ve yer kaplamaları",
+    "Giyim eşyasında kullanılan türden, ince metal tellerden örülmüş mensucat",
+    "İlmekleri dokumaya elverişli iplikten oluşan dikiş-trikotaj mensucat",
+    "Plastikle kaplanmış tüylü örme mensucat",
+    "Daha ileri bir işlem görmeden yalnızca dikdörtgen şeklinde kesilmiş örme mensucat parçası"
+   ],
+   "cevap": "A",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "Fasıl 60 Genel Açıklamaları, örgü işi halıları ve kaplamaları fasıl dışında bırakarak 57.05’e gönderir. Giyim veya döşemecilikte kullanılan türden metal iplikten örme eşya Not 2, ilmekleri dokumaya elverişli iplikten dikiş-trikotaj eşyası Not 3 gereği bu fasıldadır. Not 1(c) kaplanmış örme mensucatı 59. Fasla gönderse de kaplanmış tüylü örme mensucatı 60.01’de bırakır; basitçe dikdörtgen kesilmiş örme mensucat da fasıl kapsamındadır.",
+   "dayanak": "Fasıl 60 Not 1(c), Not 2 ve Not 3; Fasıl 60 Genel Açıklamalar.",
+   "fasil": 60
+  },
+  {
+   "soru": "Aşağıdaki kürk ürünlerinden hangisi diğerlerinden <b>farklı</b> bir pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "Dabaklanmış, birleştirilmemiş tavşan postu",
+    "Yünü üzerinde dabaklanmış koyun derisi",
+    "Başka madde eklenmeden trapez (torba) şeklinde dikilerek birleştirilmiş dabaklanmış kürk parçaları",
+    "Biri uzun kavisli ikizkenar yamuk, ikisi dikdörtgen biçimli üç birleştirilmiş kürkten oluşan, ceket yapımına elverişli parçalar",
+    "Yalnızca uzunluğuna kesilerek giysi süsü olarak kullanılabilecek dabaklanmış kürk şerit"
+   ],
+   "cevap": "E",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "43.02 Açıklama Notu, kullanılmaya hazır bitirilmiş süsleri ve sadece uzunluklarına göre kesilerek süs olarak kullanılabilecek kürkleri pozisyon dışında bırakarak 43.03’e gönderir. Dabaklanmış birleştirilmemiş postlar, yünü üzerinde dabaklanmış koyun derisi, başka madde eklenmeden trapez gibi şekillerde birleştirilmiş kürkler ve ceket yapmaya elverişli üç parçalı birleştirmeler ise daha ileri işlenecek yarı mamuller olarak 43.02’de yer alır.",
+   "dayanak": "43.02 Açıklama Notu.",
+   "fasil": 43
+  },
+  {
+   "soru": "Fasıl 59 Not 3’e göre 59.03 pozisyonu anlamında “plastikle lamine edilmiş mensucat” tabiri için aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Plastik yaprak veya filmin enine kesitte çıplak gözle görülebilir olması, lamine sayılmanın şartıdır.",
+    "Tabakaları bağlayan herhangi bir prosesle plastik yaprak veya filmin mensucat tabakasıyla kombine edilmesinden oluşur.",
+    "Yalnızca yapıştırıcı kullanılarak birleştirilmiş ve en az iki mensucat tabakası içeren ürünlerdir.",
+    "Plastik tabakanın gözenekli olmaması ve ürünün metrekare ağırlığının 1.500 gramı geçmemesi gerekir.",
+    "Mensucatın plastik madde içine tamamen batırıldığı ürünleri ifade eder."
+   ],
+   "cevap": "B",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 59 Not 3, plastikle lamine edilmiş mensucatı, tabakaları birbirine bağlayan herhangi bir proses ile kombine edilmiş bir veya daha fazla plastik yaprak veya film ile bir veya daha fazla mensucat tabakasından oluşan ürün olarak tanımlar ve plastik filmin enine kesitte çıplak gözle görülebilir olup olmamasını önemsiz sayar. Birleştirme yöntemi yapıştırıcıyla sınırlı değildir; Not 2(a) da plastiğin yapısını ve metrekare ağırlığını dikkate almaz. Mensucatın plastik içine tamamen batırıldığı ürünler ise Not 2(a)(3) gereği Fasıl 39’a gider.",
+   "dayanak": "Fasıl 59 Not 2(a) ve Not 3.",
+   "fasil": 59
+  },
+  {
+   "soru": "Bir konfeksiyon firması, pamuklu örme mensucattan kesilmiş; yalnızca kenarları bastırılmış ve yaka çizgisi şekillendirilmiş, ancak bu haliyle henüz bir giyim eşyası veya giyim eşyasının parçası olarak tanımlanabilecek kadar işlem görmemiş parçalar ithal etmektedir. Tarife Cetveline göre bu eşya hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "61.17",
+    "60.06",
+    "63.07",
+    "61.09",
+    "61.14"
+   ],
+   "cevap": "C",
+   "tip": "Senaryo",
+   "gerekce": "Fasıl 61 Genel Açıklamaları, giyim eşyası imalatına yönelik bazı işlemlerden (kenar bastırma, yaka çizgisi şekillendirme gibi) geçmiş fakat giyim eşyası veya parçası olarak tanımlanabilecek kadar yeterli işlem görmemiş örgü mensucat parçalarını fasıl dışında bırakarak 63.07’ye gönderir. Parçalar kenar işlemi gördüğünden basitçe kesilmiş mensucat sayılamaz ve 60.06’da kalmaz. Bir giysinin esas karakterini taşımadıklarından 61.09 veya 61.14’e, giysi aksesuarı olmadıklarından 61.17’ye de verilemez.",
+   "dayanak": "Fasıl 61 Not 1; Fasıl 61 Genel Açıklamalar; Fasıl 60 Genel Açıklamalar.",
+   "fasil": 61
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi 85.12 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "secenekler": [
+    "Bisiklet tekerleğinin jantı üzerinde sürtünme çarkıyla çalışan dinamo",
+    "Motorlu taşıtlar için elektrik motorlu cam silici",
+    "Taşıta zorla girme girişiminde sesli veya görsel sinyal veren hırsızlık alarmı",
+    "Motorlu taşıtlar için monoblok far ünitesi",
+    "Araç geri giderken ultrasonik sensörlerle sürücüyü uyaran sesli ikaz cihazı"
+   ],
+   "cevap": "D",
+   "tip": "Olumsuz teşhis",
+   "gerekce": "85.12 Açıklama Notu, 85.39 pozisyonundaki elektrik ampullerini, monoblok far üniteleri dahil, bu pozisyon dışında bırakır. Bisikletlerin tekerleği üzerinde sürtünme çarkıyla çalışan dinamolar, elektrik motorlu cam siliciler, hırsızlığı engelleyen alarmlar ve geri manevrada sürücüyü uyaran sesli ikaz cihazları ise açıklama notunda 85.12 kapsamında sayılır. Dinamo tuzağına dikkat: 85.11’deki dinamolar hariç tutulsa da bisiklet dinamoları 85.12’dedir.",
+   "dayanak": "85.12 Açıklama Notu.",
+   "fasil": 85
+  },
+  {
+   "soru": "Demiryolu taşıtları ve hava trenleriyle ilgili aşağıdaki eşya – tarife yeri eşleştirmelerinden hangisi <b>doğrudur</b>?",
+   "secenekler": [
+    "Teşhirde kullanılmak üzere yapılmış, başka amaçla kullanılamayan lokomotif modeli – 86.01",
+    "Hava treni hattına ait mekanik sinyal ve trafik kontrol cihazı – 86.08",
+    "Demiryolu vagonuna mahsus, sertleştirilmemiş vulkanize kauçuktan kapı contası – 86.07",
+    "Lokomotif kabinine takılmak üzere yapılmış saat – 86.07",
+    "Yolcu vagonlarına mahsus tavan aydınlatma lambası – 86.07"
+   ],
+   "cevap": "B",
+   "tip": "Eşleştirme / Boşluk doldurma",
+   "gerekce": "Bölüm XVII Not 5, hava trenlerine ait sinyal, emniyet, trafik kontrol ve kumanda cihazlarının demiryollarına ait benzeri cihazlar gibi sınıflandırılacağını belirtir; mekanik (elektromekanik dahil) sinyal cihazları 86.08’dedir. Not 2 ise sertleştirilmemiş vulkanize kauçuktan contaları (40.16), 91. Fasıl eşyasını ve 94.05’teki lambaları, taşıta mahsus olsalar bile “aksam ve parça” saymaz. Teşhir amaçlı modeller de Bölüm XVII Genel Açıklamaları gereği 90.23’tedir.",
+   "dayanak": "Bölüm XVII Not 2(a), (h), (k) ve Not 5; Bölüm XVII Genel Açıklamalar.",
+   "fasil": 86
+  },
+  {
+   "soru": "31.05 pozisyonunda belirtilen tablet vb. şekillerde veya brüt ağırlığı 10 kg’ı geçmeyen ambalajlarda olmaksızın, dökme olarak ithal edilen aşağıdaki gübrelerden hangisi diğerlerinden <b>farklı</b> bir pozisyonda yer alır?",
+   "secenekler": [
+    "Sıvı yağ ile işlem görmüş kalsiyum siyanamit",
+    "Saf sodyum nitrat",
+    "Amonyum klorürün tebeşir ile karışımından oluşan gübre",
+    "Kalsiyum nitrat ile amonyum nitratın çift tuzu",
+    "Saf potasyum sülfat"
+   ],
+   "cevap": "E",
+   "tip": "Farklı/aynı pozisyon veya fasıl",
+   "gerekce": "Fasıl 31 Not 2, sodyum nitratı (saf olsun olmasın), kalsiyum siyanamidi (saf veya sıvı yağ ile işlem görmüş), kalsiyum nitrat ile amonyum nitratın çift tuzlarını ve amonyum klorürün tebeşir gibi bitki besin maddesi olmayan anorganik maddelerle karışımlarını 31.02 kapsamında sayar. Potasyum sülfat ise saf olsun olmasın Not 4 gereği 31.04’te yer alır. Ürünlerin saf olması Not 1(b)’deki kimyasal olarak belirli bileşik istisnasını işletmez, çünkü notlarda ismen sayılmışlardır.",
+   "dayanak": "Fasıl 31 Not 1(b), Not 2 ve Not 4.",
+   "fasil": 31
+  },
+  {
+   "soru": "Fasıl 29 Not 1 ve Not 8 hükümleri dikkate alındığında 29.37 pozisyonu ile ilgili aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "“Hormonlar” terimi; hormon salgılayıcı veya uyarıcı faktörleri, hormon durdurucularını ve hormon antagonistlerini (anti-hormonlar) de kapsar.",
+    "“Esasen hormon olarak kullanılan” deyimi yalnız hormonal etkileri için kullanılan türevleri kapsar; sentezde ara ürün olarak kullanılan analoglar kapsam dışıdır.",
+    "Hormon antagonistleri hormonların etkisini engellediğinden 29.37 dışında kalır ve 30. Fasılda sınıflandırılır.",
+    "29.37’deki ürünler kimyaca belirli bir yapıda olmadıkça Fasıl 29’da sınıflandırılamaz.",
+    "Hormon salgılayıcı faktörler bağışıklık sağlayan ürün sayıldığından 30.02’de yer alır."
+   ],
+   "cevap": "A",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 29 Not 8, 29.37 anlamında “hormonlar” teriminin hormon salgılayıcı veya hormon uyarıcı faktörleri, hormon durdurucularını ve hormon antagonistlerini içerdiğini; “esasen hormon olarak kullanılan” deyiminin ise bu pozisyondaki ürünlerin sentezinde esasen ara ürün olarak kullanılan yapısal analog ve türevleri de kapsadığını belirtir. Not 1(c) ise 29.36 ila 29.39 pozisyonlarındaki ürünlerin kimyaca belirli bir yapıda olsun olmasın bu fasılda yer alacağını hükme bağlar.",
+   "dayanak": "Fasıl 29 Not 1(c) ve Not 8.",
+   "fasil": 29
+  },
+  {
+   "soru": "Gıda sanayiinde kullanılan, maddeleri ısıtarak işleyen bir cihazın ilk bakışta hem 84.19 pozisyonundaki (sıcaklık değişikliği yoluyla maddelerin işlenmesine mahsus) cihazların hem de 84.38 pozisyonundaki gıda sanayii makinelerinin tanımına uyduğu kabul edilmektedir. Cihaz, Fasıl 84 Not 2’de 84.19’dan hariç tutulanlardan değildir. Bu cihazın pozisyonu ve dayanılan kural hangi seçenekte doğru verilmiştir?",
+   "secenekler": [
+    "84.38 – GYK 3(c) (numara sırası)",
+    "84.38 – GYK 3(a) (özel tanım)",
+    "84.19 – GYK 1 (Fasıl 84 Not 2)",
+    "84.19 – GYK 3(b) (esas nitelik)",
+    "84.79 – GYK 4 (benzerlik)"
+   ],
+   "cevap": "C",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "Fasıl 84 Not 2, 84.01 ila 84.24 (veya 84.86) pozisyonlarından birinin tanımına uyan ve aynı zamanda 84.25 ila 84.80 pozisyonlarından birine de giren makine ve cihazların ilk gruptaki uygun pozisyonda sınıflandırılacağını hükme bağlar. Sonuç bir Fasıl notundan kaynaklandığından GYK 1 uygulanır ve GYK 3’e geçilmez. GYK 3(c) uygulansaydı numara sırasına göre sonuncu olan 84.38 seçilirdi; not hükmü bunu önler.",
+   "dayanak": "Fasıl 84 Not 2; GYK 1.",
+   "fasil": 84
+  },
+  {
+   "soru": "Fasıl 38 Not 3’e göre, Tarifenin başka bir pozisyonunda sınıflandırılmamaları kaydıyla aşağıdakilerden hangileri 38.24 pozisyonunda yer alır?<br/>I. Füzel yağları<br/>II. Perakende satılacak şekilde ambalajlanmış mürekkep lekesi çıkarıcılar<br/>III. Seramik fırınlarının ısısını kontrole yarayan eriyen göstergeler (Seger konileri)<br/>IV. Her biri 3 g ağırlığında, optik eleman niteliğindeki magnezyum oksit kültür kristalleri",
+   "secenekler": [
+    "I ve II",
+    "II ve IV",
+    "I, III ve IV",
+    "I, II ve III",
+    "Yalnız IV"
+   ],
+   "cevap": "D",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "Fasıl 38 Not 3, füzel yağlarını ve Dippel yağını, perakende satılacak şekilde ambalajlanmış mürekkep lekesi çıkarıcıları ve Seger konileri gibi seramik fırınlarının ısısını kontrole yarayan eriyen göstergeleri 38.24 kapsamında sayar. Aynı not, her biri en az 2,5 g ağırlığındaki magnezyum oksit veya alkali ya da toprak alkali metal halojenürü kültür kristallerini de 38.24’e alır; ancak optik elemanlar bunun dışındadır ve Fasıl 28 Not 3(h) gereği 90.01’de sınıflandırılır. Bu nedenle IV yanlıştır.",
+   "dayanak": "Fasıl 38 Not 3; Fasıl 28 Not 3(e) ve (h).",
+   "fasil": 38
+  },
+  {
+   "soru": "Bir plastik üreticisi; pul halinde (ilk şekillerde) sunulan, polimer zincirindeki monomer ünitelerinin ağırlıkça %42’si etilen, %33’ü propilen ve %25’i izobütilen olan, elastomer özelliği göstermeyen bir kopolimer ithal etmektedir. Tarife Cetveline göre bu ürün hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "39.01",
+    "39.02",
+    "40.02",
+    "39.11",
+    "39.26"
+   ],
+   "cevap": "B",
+   "tip": "Senaryo",
+   "gerekce": "Fasıl 39 Not 4, kopolimerlerin ağırlık itibarıyla diğer her bir komonomer ünitesine üstün gelen komonomer ünitesinin polimerlerinin yer aldığı pozisyonda sınıflandırılacağını ve aynı pozisyona giren polimerleri oluşturan komonomer ünitelerinin birlikte mütalaa edileceğini belirtir. Propilen ve izobütilen polimerleri 39.02’de yer aldığından bu iki ünite birlikte %58’e ulaşır ve %42’lik etilenin (39.01) üstüne çıkar. Tek başına en yüksek oranın etilen olması bu nedenle belirleyici değildir.",
+   "dayanak": "Fasıl 39 Not 4; 39.02 Açıklama Notu.",
+   "fasil": 39
+  },
+  {
+   "soru": "Fasıl 84 Not 4’e göre aşağıdakilerden hangisi 84.57 pozisyonunun kapsamına <b>girmez</b>?",
+   "secenekler": [
+    "Haznesindeki aletleri bir işleme programına göre otomatik değiştirerek çeşitli işlemler yapan metal işleme merkezleri",
+    "Sabit bir iş parçası üzerinde farklı işleme kafalarını aynı anda veya sıra ile otomatik kullanan tek istasyonlu tezgahlar",
+    "İş parçasını muhtelif işleme kafalarına otomatik olarak aktaran çok istasyonlu transfer tezgahları",
+    "Program uyarınca otomatik takım değiştirerek frezeleme, delme ve kılavuz çekme işlemlerini birlikte yapan metal işleme makineleri",
+    "Metal işlemeye mahsus tornalar ve tornalama merkezleri"
+   ],
+   "cevap": "E",
+   "tip": "Fasıl notu · Tanım/Eşik",
+   "gerekce": "Fasıl 84 Not 4, 84.57 pozisyonunu otomatik alet değiştirme yoluyla çalışan işleme merkezleri, sabit iş parçası üzerinde farklı işleme kafalarını otomatik kullanan tek istasyonlu tezgahlar ve iş parçasını işleme kafalarına otomatik aktaran çok istasyonlu transfer tezgahlarıyla sınırlar. Aynı not, metal işlemeye mahsus tornaları (tornalama merkezleri dahil) açıkça kapsam dışında tutar; bunlar 84.58’de sınıflandırılır. Birden fazla işlem yapması tornalama merkezini 84.57’ye taşımaz.",
+   "dayanak": "Fasıl 84 Not 4; 84.58 pozisyon metni.",
+   "fasil": 84
+  },
+  {
+   "soru": "GYK 6 Açıklama Notuna göre, Fasıl 71 Not 4(b)’deki “platin” tanımı ile aynı faslın Alt Pozisyon Notu 2’deki “platin” tanımının farklı olması halinde, platine ilişkin alt pozisyonların yorumlanmasında aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Alt Pozisyon Notu 2 uygulanır; Fasıl Not 4(b) dikkate alınmaz.",
+    "Fasıl notları her durumda alt pozisyon notlarına göre öncelik alır; Not 4(b) uygulanır.",
+    "İki not birlikte uygulanır; çelişki GYK 3(c) ile numara sırasına göre çözülür.",
+    "Alt pozisyon düzeyinde GYK 4 uygulanarak platine en çok benzeyen metalin alt pozisyonu seçilir.",
+    "Çelişki nedeniyle alt pozisyon ayrımı yapılmaz; eşya yalnız pozisyon düzeyinde sınıflandırılır."
+   ],
+   "cevap": "A",
+   "tip": "Genel Yorum Kuralı",
+   "gerekce": "GYK 6, alt pozisyon sınıflandırmasında ilgili Bölüm ve Fasıl notlarının da “metinde aksi belirtilmedikçe” uygulanacağını söyler; Açıklama Notu bu ifadeyi, Bölüm veya Fasıl notlarının alt pozisyon metinleri ya da Alt Pozisyon Notlarıyla çeliştiği haller olarak açıklar. Örnek olarak Fasıl 71 Not 4(b)’deki “platin” teriminin Alt Pozisyon Notu 2’deki “platin”den farklı olduğunu belirtir ve ilgili alt pozisyonların yorumunda Alt Pozisyon Notu 2’nin uygulanacağını, Not 4(b)’nin dikkate alınmayacağını hükme bağlar.",
+   "dayanak": "GYK 6 Açıklama Notu (II).",
+   "fasil": "GYK"
+  },
+  {
+   "soru": "Aşağıdakilerden hangileri Tarife Cetvelinin 87. faslı <b>dışında</b> sınıflandırılır?<br/>I. Fabrika ve limanlarda uzun yükleri veya konteynerleri kaldırmada kullanılan “straddle” tipi taşıyıcılar<br/>II. Bisiklet veya motosikletlere takılmak için yapılmış römorklar<br/>III. Kaldırma teçhizatıyla donatılmış forklift kamyonları<br/>IV. Tekerlekli sedyeler",
+   "secenekler": [
+    "I ve II",
+    "II ve IV",
+    "I ve III",
+    "I, III ve IV",
+    "II, III ve IV"
+   ],
+   "cevap": "D",
+   "tip": "Çoktan-çoğa (I–IV)",
+   "gerekce": "87.04 Açıklama Notu, uzun yükleri veya konteynerleri kaldırmada kullanılan “straddle” tipi taşıyıcıları 84.26’ya; 87.09 Açıklama Notu ise kaldırma teçhizatlı forklift kamyonlarını 84.27’ye göndererek fasıl dışında bırakır. 87.13 Açıklama Notu da tekerlekli sedyeleri 94.02’de sınıflandırır. Bisiklet veya motosikletlere takılmak için yapılmış römorklar ise 87.11 Açıklama Notu uyarınca 87.16’da, yani Fasıl 87’de yer alır.",
+   "dayanak": "87.04, 87.09, 87.11 ve 87.13 Açıklama Notları.",
+   "fasil": 87
+  },
+  {
+   "soru": "Bir firma; bünyesinde, onu programlayan ve kontrol eden bir otomatik bilgi işlem makinası bulunan, metal levhaları yalnızca lazer ışını ile keserek şekillendiren bir makine ithal etmektedir. Makinenin bilgi işleme dışındaki kendine has işlevi metal kesmedir. Tarife Cetveline göre bu makine hangi pozisyonda sınıflandırılır?",
+   "secenekler": [
+    "84.71",
+    "84.62",
+    "84.56",
+    "84.79",
+    "84.57"
+   ],
+   "cevap": "C",
+   "tip": "Senaryo",
+   "gerekce": "Fasıl 84 Not 6(E), bilgi işleme dışında kendine has bir fonksiyonu olan ve otomatik bilgi işlem makinası bulunan veya onunla bağlantılı çalışan makinaların fonksiyonlarına uyan pozisyonda sınıflandırılacağını belirtir; bu nedenle bilgisayar içermesi makineyi 84.71’e götürmez. Herhangi bir maddeyi lazerle işleyen makineler 84.56’nın konusudur ve Fasıl 84 Not 3 uyarınca 84.56’ya giren makine 84.57 gibi diğer takım tezgahı pozisyonlarında sınıflandırılmaz. İşlevi belirli bir pozisyonda tanımlandığından 84.79’a da gidilmez.",
+   "dayanak": "Fasıl 84 Not 3 ve Not 6(E); 84.56 pozisyon metni.",
+   "fasil": 84
+  }
+ ]
+}

@@ -18,18 +18,18 @@
    "fasil": 1
   },
   {
-   "soru": "Tarife Cetveline göre, sertleştirilmemiş vulkanize kauçuktan prezervatifler hangi pozisyonda sınıflandırılır?",
+   "soru": "Tarife Cetveline göre, kalıptan çekilerek elde edilmiş, pencere çerçevelerinin kapatılmasında kullanılan yapışkan yüzeyli, sertleştirilmemiş vulkanize kauçuktan profiller hangi pozisyonda sınıflandırılır?",
    "secenekler": [
-    "40.14",
-    "40.15",
+    "40.08",
     "40.16",
-    "30.06",
-    "39.26"
+    "40.06",
+    "40.17",
+    "40.07"
    ],
    "cevap": "A",
    "tip": "Eşya → 4’lü pozisyon",
-   "gerekce": "40.14, hijyenik veya koruyucu amaçlarla kullanılan sertleştirilmemiş vulkanize kauçuktan eşyayı kapsar ve prezervatifleri, kanülleri, şırınga ampullerini, damlalıkları ismen sayar. 40.15 giyim eşyası ve aksesuarına (cerrahi eldivenler dahil), 40.16 diğer vulkanize kauçuk eşyaya aittir. Plastikten prezervatifler 39.26’da yer alır; kauçuktan hijyen ve eczacılık eşyası Fasıl 30’a değil 40.14’e girer.",
-   "dayanak": "40.14 pozisyon metni ve Açıklama Notu; 39.26 Açıklama Notu (11).",
+   "gerekce": "40.08 Açıklama Notu, kalıptan çekme gibi tek bir işlemle elde edilen ve boydan boya sabit veya tekrarlamalı enine kesite sahip profilleri pozisyona alır ve pencere çerçevelerinin kapatılmasında kullanılan yapışkan yüzeyli profilleri ismen sayar. Kullanım amacına bakarak eşyayı 40.16’daki diğer vulkanize kauçuk eşya arasında görmek tuzaktır. Vulkanize edilmemiş kauçuktan profiller 40.06’da, sertleştirilmiş kauçuktan olanlar 40.17’de, enine kesiti 5 mm’yi geçmeyen iplikler ise 40.07’de yer alır.",
+   "dayanak": "Fasıl 40 Not 7 ve Not 9; 40.08 Açıklama Notu.",
    "fasil": 40
   },
   {
@@ -213,18 +213,18 @@
    "fasil": 62
   },
   {
-   "soru": "Aşağıdakilerden hangisi Tarife Cetvelinin 33. faslında <b>yer almaz</b>?",
+   "soru": "Uçucu yağlarla ilgili aşağıdaki ürünlerden hangisi Fasıl 33’te <b>yer almaz</b>?",
    "secenekler": [
-    "Perakende satışa sunulmuş, cilt bakımı için uygun hale getirilmiş vazelin",
-    "Fiziksel muayenelerde beden ile tıbbi alet arasında birleştirme vasıtası olarak kullanılmak üzere tasarlanmış jel",
-    "Bireysel kullanıma mahsus ambalajda perakende satılan diş ipliği",
-    "Ağız suyu",
-    "Kozmetik emdirilmiş dokunmamış mensucat"
+    "Terpeni alınmış lavanta uçucu yağı",
+    "Kağıt imalinden arta kalan sülfatlı terebantin esansı",
+    "Uçucu yağların terpeninin alınmasından arta kalan terpenli yan ürünler",
+    "Karabiberden organik çözücülerle elde edilen çeşni verici yağ reçinesi",
+    "Çiçeklerden katı yağla emdirme (enfleurage) yoluyla elde edilen çiçek pomatı"
    ],
    "cevap": "B",
    "tip": "Olumsuz teşhis",
-   "gerekce": "Fasıl 33 Genel Açıklamaları, tıpta veya veterinerlikte cerrahi operasyonlar ya da fiziksel muayeneler için yağlayıcı veya beden ile tıbbi alet arasında birleştirme vasıtası olarak kullanılan jel müstahzarlarını bu fasıl dışında bırakır (30.06). Vazelin normalde 27.12’dedir; ancak perakende satışa sunulmuş ve cilt bakımı için hazırlanmışsa 33.04’e girer. Diş ipliği ve ağız suyu 33.06’da, kozmetik emdirilmiş dokunmamış mensucat Not 4 uyarınca 33.07’dedir.",
-   "dayanak": "Fasıl 33 Not 4; Fasıl 33 Genel Açıklamalar, hariç tutmalar (a) ve (c); 33.06 Açıklama Notu.",
+   "gerekce": "Fasıl 33 Not 1, 38.05 pozisyonunda yer alan terebantin esansını, çam ağacı esansını ve kağıt imalinden arta kalan sülfatlı esansı bu fasıl dışında bırakır. Terpeni alınmış uçucu yağlar, terpen alınmasından arta kalan terpenli yan ürünler, ekstraksiyonla elde edilen yağ reçineleri ve “çiçek pomatı” olarak bilinen, katı yağlardaki uçucu yağ konsantreleri 33.01’de sayılmıştır. Tuzak, terebantin esansının da uçucu ve kokulu bir ürün olması nedeniyle 33.01’e yöneltmesidir.",
+   "dayanak": "Fasıl 33 Not 1; 33.01 pozisyon metni ve Açıklama Notu.",
    "fasil": 33
   },
   {
@@ -258,18 +258,18 @@
    "fasil": 20
   },
   {
-   "soru": "Fasıl 88 Not 1’e göre “insansız hava taşıtı” tabiri ile ilgili aşağıdakilerden hangisi <b>doğrudur</b>?",
+   "soru": "88.01 Açıklama Notuna göre, meteorolojide bulut yüksekliğini anlamak için kullanılan balonların türü ve normal ağırlığı hangi seçenekte doğru verilmiştir?",
    "secenekler": [
-    "88.01 pozisyonundaki balonlar ve planörler de pilotsuz uçabildiklerinde bu tabire dahildir.",
-    "Yalnızca kalıcı olarak entegre edilmiş dijital kamera taşıyanlar insansız hava taşıtı sayılır.",
-    "Yük taşıyacak şekilde tasarlanan pilotsuz hava araçları bu tabirin kapsamı dışındadır.",
-    "Yalnızca eğlence amacıyla tasarlanmış uçan oyuncaklar da uzaktan kumandalı iseler bu tabire girer.",
-    "88.01 dışındaki, içinde pilot olmadan uçmak üzere tasarlanmış herhangi bir hava aracını ifade eder."
+    "Sinyal balonları – 350 ila 1.500 gram",
+    "Pilot balonları – 50 ila 100 gram",
+    "İrtifa balonları – 50 ila 100 gram",
+    "Sinyal balonları – 4 ila 30 gram",
+    "İrtifa balonları – 4 ila 30 gram"
    ],
    "cevap": "E",
    "tip": "Fasıl notu · Tanım/Eşik",
-   "gerekce": "Not 1, insansız hava taşıtını 88.01 pozisyonundakiler dışında, içinde bir pilot olmadan uçmak üzere tasarlanmış herhangi bir hava aracı olarak tanımlar. Bunlar yük taşıyacak şekilde tasarlanabilir veya kalıcı entegre dijital kameralarla donatılabilir; yani kamera bir şart değildir. Yalnızca eğlence amacıyla tasarlanmış uçan oyuncaklar tabirin dışındadır ve 95.03’te yer alır.",
-   "dayanak": "Fasıl 88 Not 1; 88.06 Açıklama Notu.",
+   "gerekce": "88.01 Açıklama Notu meteorolojide kullanılan balonları üçe ayırır: radyo verici cihazlarını yükseğe taşıyan sinyal balonları (normal ağırlığı 350–1.500 gram), rüzgârın yön ve hızını tayin eden pilot balonları (50–100 gram) ve bulut yüksekliğini anlamaya yarayan, diğerlerinden küçük irtifa balonları (4–30 gram). Diğer seçenekler balon türlerini veya ağırlık aralıklarını yer değiştirmiştir. Bu balonların tümü 88.01’dedir; daha aşağı kalitede kauçuktan, kısa şişirme emzikli ve baskılı oyuncak balonlar ise 95.03’te yer alır.",
+   "dayanak": "88.01 Açıklama Notu (I).",
    "fasil": 88
   },
   {

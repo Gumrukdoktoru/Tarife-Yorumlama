@@ -168,18 +168,18 @@
    "fasil": "GYK"
   },
   {
-   "soru": "Ev işlerinde kullanılan aşağıdaki kendinden elektrik motorlu cihazlardan hangisi 85.09 pozisyonunda <b>sınıflandırılmaz</b>?",
+   "soru": "Elektrikle ısıtma esasına göre çalışan aşağıdaki cihazlardan hangisi 85.16 pozisyonunda <b>sınıflandırılmaz</b>?",
    "secenekler": [
-    "Ağırlığı 35 kg olan yer cilalama makinesi",
-    "Elektrikli diş fırçası",
-    "Mutfak evyesine monte edilen, ağırlığı 8 kg olan mutfak artığı öğütücü",
-    "Ağırlığı 4 kg olan hava nemlendiricisi",
-    "Bulaşık yıkama makinesi"
+    "Yüz derisi bakımı için suyu buharlaştıran, yüz maskeli yüz saunası",
+    "Banyoda kullanılan, ısıtmalı havlu askısı",
+    "Haşarat öldürücü müstahzarları ısıtarak yayan elektrikli buhurdan",
+    "Bitkilerin büyümesini hızlandırmak için toprağa gömülen ısıtıcı",
+    "Taşıt ön camına uygun çerçevede takılı rezistans telli buğu önleyici"
    ],
    "cevap": "E",
    "tip": "Olumsuz teşhis",
-   "gerekce": "Fasıl 85 Not 4, bulaşık yıkama makinelerini 85.09 dışında bırakarak 84.22’ye gönderir. Aynı not yer cilalama makinelerini ağırlıkları ne olursa olsun 85.09’da tutar; 35 kg’lık cila makinesi bu nedenle tuzaktır. Elektrikli diş fırçaları, mutfak artığı öğütücüleri ve hava nemlendiricileri ağırlıkları 20 kg’ı geçmediğinden 85.09’da yer alır.",
-   "dayanak": "Fasıl 85 Not 4; 85.09 Açıklama Notu.",
+   "gerekce": "85.16 Açıklama Notu, ön cama uygun bir çerçevede takılı rezistans telinden oluşan buzlanma ve buğulanma önleyici cihazları bu pozisyon dışında bırakır; bunlar pozisyon metninde ismen sayıldıkları 85.12’de yer alır. Yüz saunaları, ısıtmalı havlu asacakları ve elektrikli buhurdanlar ev işlerinde kullanılan elektrotermik cihazlar olarak, toprağı ısıtan cihazlar ise toprak ve benzeri yerlerin ısıtılmasına mahsus cihazlar olarak 85.16’dadır. Tuzak, ısıtıcı rezistans içeren her cihazı doğrudan 85.16’ya yerleştirmektir.",
+   "dayanak": "85.16 Açıklama Notu (B), (E) ve (F); 85.12 pozisyon metni.",
    "fasil": 85
   },
   {
@@ -243,18 +243,18 @@
    "fasil": 73
   },
   {
-   "soru": "Aşağıdaki baharat ve tohumlardan hangisi diğerlerinden <b>farklı</b> bir fasılda sınıflandırılır?",
+   "soru": "Aşağıdaki kurutulmuş bitkisel ürünlerden hangisi diğerlerinden <b>farklı</b> bir fasılda sınıflandırılır?",
    "secenekler": [
-    "Kurutulmuş kekik",
-    "Hardal tohumu",
-    "Defne yaprağı",
-    "Kimyon tohumu",
-    "Zerdeçal"
+    "Defne yaprakları",
+    "Şerbetçi otu kozalakları",
+    "Çemen otu tohumu",
+    "Ardıç meyveleri",
+    "Kakule"
    ],
    "cevap": "B",
    "tip": "Farklı/aynı pozisyon veya fasıl",
-   "gerekce": "Fasıl 9 Genel Açıklamaları hardal tohumunu fasıl dışında bırakarak 12.07’ye, hazırlanmış olsun olmasın hardal ununu ise 21.03’e gönderir. Kekik ve defne yaprakları ile zerdeçal 09.10’da, kimyon tohumu 09.09’da yer alır. Tuzak, baharat olarak kullanılan her tohumu Fasıl 9’da sanmaktır.",
-   "dayanak": "Fasıl 9 Genel Açıklamalar; 09.09 ve 09.10 Açıklama Notları.",
+   "gerekce": "Fasıl 9 Genel Açıklamaları şerbetçi otunu bu fasıl dışında bırakarak 12.10’a gönderir. Defne yaprakları ve çemen otu tohumu 09.10’da, ardıç meyveleri 09.09’da, kakule 09.08’de yer alır. Ardıç meyvelerinin de şerbetçi otu gibi alkollü içkilere tat vermede kullanılması tuzaktır; ardıç meyveleri 09.09 pozisyon metninde ismen sayılmıştır.",
+   "dayanak": "Fasıl 9 Genel Açıklamalar (hariç tutulanlar); 09.08, 09.09 ve 09.10 Açıklama Notları; 12.10 pozisyon metni.",
    "fasil": 9
   },
   {
@@ -438,18 +438,18 @@
    "fasil": 2
   },
   {
-   "soru": "Kılları alınmış, kromla dabaklanmış, yaş halde (wet-blue) bulunan ve daha ileri işlem görmemiş aşağıdaki derilerden hangisi diğerlerinden <b>farklı</b> bir pozisyonda sınıflandırılır?",
+   "soru": "Sığır ve at türü hayvanlara ait aşağıdaki deri ve köselelerden hangisi diğerlerinden <b>farklı</b> bir fasılda sınıflandırılır?",
    "secenekler": [
-    "Manda (bufalo) derisi",
-    "Dana derisi",
-    "Öküz derisi",
-    "Domuz derisi",
-    "At derisi"
+    "Kılları alınmamış, tuzlanarak muhafaza edilmiş ham at derisi",
+    "Bölmeyi kolaylaştırmak için geri alınabilir ön dabaklama yapılmış, kılları alınmış sığır derisi",
+    "Kılları alınmış, dabaklanıp ara kurutulmuş (crust) manda derisi",
+    "Kılları alınmamış, kromla dabaklanmış dana derisi",
+    "Silindirden geçirilerek sertleştirilmiş, bütün halde sığır taban köselesi"
    ],
    "cevap": "D",
    "tip": "Farklı/aynı pozisyon veya fasıl",
-   "gerekce": "41.04, sığırların (bufalo dahil) ve atların kılları alınmış, dabaklanmış veya ara kurutmalı derilerini kapsar; manda, dana, öküz ve at derileri bu nedenle aynı pozisyondadır. Domuz derileri ise 41.06 Açıklama Notunda “diğer hayvanlar” arasında açıkça sayılır. Tuzak, yalnız dabaklama yöntemine bakıp hayvan türünü gözden kaçırmaktır.",
-   "dayanak": "41.04 ve 41.06 pozisyon metinleri ve Açıklama Notları.",
+   "gerekce": "Fasıl 41 Not 1(c) uyarınca sığır ve atların kılları alınmamış derileri yalnızca ham haldeyken Fasıl 41’de kalır; 41.04 Açıklama Notu kılı alınmadan dabaklanmış veya ara kurutulmuş sığır ve at derilerini Fasıl 43’e gönderir, Fasıl 43 Not 1 de bunları “kürk” sayar. Kılı alınmamış ham at derisi ile geri alınabilir ön dabaklama görmüş sığır derisi 41.01’de, crust manda derisi 41.04’te, taban köselesi 41.07’de, yani hepsi Fasıl 41’dedir. Tuzak, “kılı alınmamış” ibaresini her durumda Fasıl 41 için yeterli saymaktır.",
+   "dayanak": "Fasıl 41 Not 1(c) ve Not 2(A); 41.04 ve 41.07 Açıklama Notları; Fasıl 43 Not 1.",
    "fasil": 41
   },
   {
@@ -513,18 +513,18 @@
    "fasil": 32
   },
   {
-   "soru": "Fasıl 91 Not 3’e göre bu fasıl anlamında “saat makinası” sayılan sistemlerin boyutları için aşağıdakilerden hangisi <b>doğrudur</b>?",
+   "soru": "91.02 Açıklama Notuna göre “zaman ölçen sayaçları” kronograflardan ayıran özellik aşağıdakilerden hangisidir?",
    "secenekler": [
-    "Kalınlığı 50 mm’yi, genişliği, uzunluğu veya çapı 12 mm’yi geçmez.",
-    "Kalınlığı 12 mm’yi, genişliği, uzunluğu veya çapı 100 mm’yi geçmez.",
-    "Kalınlığı 12 mm’yi, genişliği, uzunluğu veya çapı 50 mm’yi geçmez.",
-    "Kalınlığı 20 mm’yi, genişliği, uzunluğu veya çapı 50 mm’yi geçmez.",
-    "Boyut sınırı yoktur; zaman aralıklarını tespite elverişli bir sistem bulunması yeterlidir."
+    "Saniyenin beşte, onda, yüzde veya binde birini gösterebilmeleri",
+    "Düğmeye basılarak işletilip durdurulabilen merkezi saniye ibresine sahip olmaları",
+    "Mutad akrep, yelkovan ve saniye ibreleri olmayıp yalnız merkezi saniye ve dakika kaydeden ibrelere sahip olmaları",
+    "Bir koşucunun veya taşıtın süratini hesaplamasız gösteren düzeneklerle donatılabilmeleri",
+    "Çeşitli vaziyetlerde ve değişik sıcaklıklarda denenmiş yüksek doğruluğa sahip olmaları"
    ],
    "cevap": "C",
    "tip": "Fasıl notu · Tanım/Eşik",
-   "gerekce": "Fasıl 91 Not 3, saat makinasını pandül ve zemberek, kuvartz kristali veya zaman aralıklarını tespite elverişli başka bir sistemle ayarlanan ve mekanik göstergeye sahip ya da mekanik göstergenin birleştirilebileceği bir sistem olarak tanımlar. Not ayrıca bu makinaların kalınlığının 12 mm’yi, genişlik, uzunluk veya çapının 50 mm’yi geçmeyeceğini belirtir. Son seçenek tanımın yalnız işlev kısmını alıp boyut şartını yok sayar; diğerleri rakamları değiştirir veya yer değiştirir.",
-   "dayanak": "Fasıl 91 Not 3.",
+   "gerekce": "91.02 Açıklama Notuna göre kronograflar günün saatini gösteren mutad akrep, yelkovan ve saniye ibrelerine ek olarak kısa zaman aralıklarını ölçen hususi ibrelere sahiptir; zaman ölçen sayaçlar ise mutad ibreleri taşımaz, yalnızca merkezi saniye ibresi ve dakika kaydeden ibrelere sahiptir. Merkezi saniye ibresi, saniyenin küçük kesirlerini gösterebilme ve sürat gibi değerleri hesaplamasız veren düzenekler her ikisinde de bulunabildiğinden ayırt edici değildir. Çeşitli vaziyet ve sıcaklıklarda denenmiş yüksek doğruluk ise kronometrenin tanımıdır.",
+   "dayanak": "91.02 Açıklama Notu.",
    "fasil": 91
   },
   {

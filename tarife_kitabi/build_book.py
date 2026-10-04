@@ -191,7 +191,7 @@ def draw_cover(c, doc):
     c.setFont("LS", 11.5)
     lines = ["Genel Yorum Kuralları ve Fasıl 1–97",
              "Her fasılda on bloklu ders notu ve 25 soru",
-             "10 deneme sınavı · 500 soru",
+             f"{STATS[2][0]} deneme sınavı · {STATS[3][0]} soru",
              "4’lü tarife pozisyonu düzeyi"]
     y = PAGE_H - 120 * mm
     for ln in lines:
@@ -201,6 +201,13 @@ def draw_cover(c, doc):
         c.drawString(LM + 6 * mm, y, ln)
         y -= 8 * mm
     c.restoreState()
+
+
+STATS = [("98", "modül"), ("2.425", "fasıl sorusu"), ("10", "deneme"), ("500", "deneme sorusu")]
+
+
+def fmt_n(n):
+    return f"{n:,}".replace(",", ".")
 
 
 def draw_back(c, doc):
@@ -229,7 +236,7 @@ def draw_back(c, doc):
         c.drawString(LM, y, ln)
         y -= 15.5
     y -= 10 * mm
-    stats = [("98", "modül"), ("2.425", "fasıl sorusu"), ("10", "deneme"), ("500", "deneme sorusu")]
+    stats = STATS
     bw = W / 4
     for i, (n, lab) in enumerate(stats):
         x = LM + i * bw
@@ -494,6 +501,11 @@ def main():
             if os.path.exists(p):
                 denemeler.append(json.load(open(p, encoding="utf-8")))
 
+    global STATS
+    STATS = [(str(len(mods)), "modül"),
+             (fmt_n(sum(len(m.get("sorular", [])) for m in mods.values())), "fasıl sorusu"),
+             (str(len(denemeler)), "deneme"),
+             (fmt_n(sum(len(d["sorular"]) for d in denemeler)), "deneme sorusu")]
     story = [NextPageTemplate("cover"), Spacer(1, 1), NextPageTemplate("plain"), PageBreak()]
     # İçindekiler
     toc = TableOfContents(dotsMinLevel=1)

@@ -393,18 +393,18 @@
    "fasil": "GYK"
   },
   {
-   "soru": "Tarife Cetveline göre, bir infilakı aktarmak için değil infilakı kesmek için kullanılan, kurşun kaplı ateşleme ipi hangi pozisyonda sınıflandırılır?",
+   "soru": "Tarife Cetveline göre, sürtünmeyle ateş alan ve kibrit şeklinde bulunan Bengal kibritleri hangi pozisyonda sınıflandırılır?",
    "secenekler": [
+    "36.05",
     "36.03",
-    "36.02",
+    "36.06",
     "36.01",
-    "93.06",
     "36.04"
    ],
    "cevap": "E",
    "tip": "Eşya → 4’lü pozisyon",
-   "gerekce": "36.04 Açıklama Notu, bundan önceki gruplarda belirtilmeyen diğer pirotekni düzenlerini de pozisyon kapsamına alır ve örnek olarak cankurtaran halat roketleri ile bir infilakı aktarmak için değil infilakı kesmek için kullanılan kurşun kaplı ateşleme ipini sayar. Fitiller ve infilak fitilleri (36.03) alevi veya infilakı iletmeye yaradığından, eşyanın ip görünüşü 36.03’e yönelten tuzaktır.",
-   "dayanak": "36.04 Açıklama Notu.",
+   "gerekce": "36.05 pozisyon metni 36.04’teki pirotekni eşyasını kibritler dışında tutar; Açıklama Notu da Bengal kibritlerini ve benzeri bazı pirotekni ürünlerini, sürtünmeyle ateş almalarına ve kibrit şeklinde olmalarına rağmen 36.04’e gönderir. 36.04 ışık, ses, gaz veya duman oluşturan pirotekni eşyayı kapsar. 36.03 fitil ve ateşleyicilere, 36.06 piroforik alaşımlar ile ateş alıcı maddelerden eşyaya, 36.01 silah barutuna aittir.",
+   "dayanak": "36.05 pozisyon metni ve Açıklama Notu; 36.04 Açıklama Notu.",
    "fasil": 36
   },
   {

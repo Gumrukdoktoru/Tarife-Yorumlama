@@ -48,18 +48,18 @@
    "fasil": 42
   },
   {
-   "soru": "Baharat olarak da kullanılabilen aşağıdaki ürünlerden hangisi Tarife Cetvelinde diğerlerinden farklı bir fasılda sınıflandırılır?",
+   "soru": "Adında “biber” geçen aşağıdaki baharatlardan hangisi Tarife Cetvelinde diğerlerinden <b>farklı</b> bir pozisyonda sınıflandırılır?",
    "secenekler": [
-    "Kurutulmuş yabani kekik",
-    "Toz halinde zerdeçal",
-    "Kurutulmuş safran",
-    "Dere otu tohumu",
-    "Hardal tohumu"
+    "Uzun biber (Piper longum)",
+    "Beyaz biber",
+    "Pimenta cinsinden kurutulmuş yenibahar",
+    "Kurutulmuş, öğütülmemiş paprika (acısı az kırmızı biber)",
+    "Malageta biberi (cennet tanesi, Aframomum melegueta)"
    ],
    "cevap": "E",
    "tip": "Farklı/aynı pozisyon veya fasıl",
-   "gerekce": "Yabani kekik dahil kekik, zerdeçal, safran ve dere otu tohumu 09.10 pozisyonunda sayılan baharatlardır. Hardal tohumu ise baharat olarak kullanılabilse de Fasıl 9 Genel Açıklamalarında bu fasıldan hariç tutulmuş olup 12.07’de yer alır; hardal unu ise 21.03’tedir. Yabani kekiği, 12.11’deki yabani güvey otu (Origanum vulgare) ile karıştırmamak gerekir.",
-   "dayanak": "Fasıl 9 Genel Açıklamaları (hariç tutmalar); 09.10 Açıklama Notu.",
+   "gerekce": "Malageta biberi veya “cennet tanesi” (Aframomum melegueta), adında biber geçmesine ve biber gibi acı, yakıcı bir tada sahip olmasına rağmen 09.08 Açıklama Notunda kakuleler arasında sayılmıştır. Uzun biber ve beyaz biber Piper cinsi biber olarak, yenibahar Pimenta cinsi, paprika ise Capsicum cinsi meyve olarak 09.04’te yer alır. Tuzak, ticari adı esas alıp bitkinin cinsini gözden kaçırmaktır.",
+   "dayanak": "09.04 ve 09.08 Açıklama Notları.",
    "fasil": 9
   },
   {
@@ -528,18 +528,18 @@
    "fasil": 85
   },
   {
-   "soru": "GYK 2(b) ve açıklama notuna göre aşağıdaki ifadelerden hangisi <b>doğrudur</b>?",
+   "soru": "GYK 1 ve açıklama notuna göre aşağıdaki ifadelerden hangisi <b>doğrudur</b>?",
    "secenekler": [
-    "Bir maddeye yapılan atıf, katılan yeni madde eşyanın asli karakterini değiştirse dahi bu maddenin karışımlarını kapsar.",
-    "Bölüm veya Fasıl notunda ya da pozisyon metninde belirtilen hazır karışımlar GYK 3’e göre sınıflandırılır.",
-    "Pozisyon metninde veya notlarda aksine bir hüküm bulunduğunda (örneğin “karıştırılmamış” kaydı) kural uygulanmaz.",
-    "Birden fazla maddeden oluşan eşya, GYK 2(b) uyarınca doğrudan ağırlıkça en fazla bulunan maddenin pozisyonunda sınıflandırılır.",
-    "Kural yalnızca belirli bir maddeden mamul eşyaya yapılan atıflara uygulanır; maddelerin karışım ve bileşimlerini kapsamaz."
+    "Bölüm, fasıl ve tali fasıl başlıkları eşyanın Tarifedeki yerinin saptanmasında yasal dayanak oluşturur.",
+    "Önce 2 ila 5 numaralı kurallar uygulanır; pozisyon metinleri ve notlara ancak bunlar sonuç vermezse başvurulur.",
+    "Birçok eşya diğer kurallara başvurulmadan sınıflandırılabilir; Fasıl 30 Not 4’teki eczacılık eşyasının 30.06’da yer alması buna örnektir.",
+    "Fasıl notları, 2(b) kuralı uyarınca bir pozisyona girebilecek eşyanın o pozisyon dışında tutulmasını sağlayamaz.",
+    "Kural 1’deki 2 numaralı kurala atıf, demonte sunulan bir bisikletin parçalar halinde ayrı ayrı sınıflandırılacağını ifade eder."
    ],
    "cevap": "C",
    "tip": "Genel Yorum Kuralı",
-   "gerekce": "Açıklama notunun (X) bendine göre 2(b) yalnızca pozisyonlarda, Bölüm veya Fasıl notlarında aksine bir hüküm bulunmadığında uygulanır; örnek olarak “karıştırılmamış” domuz yağına atıf yapan 15.03 pozisyonu verilmiştir. Notlarda veya pozisyon metinlerinde belirtilen hazır karışımlar GYK 1’e göre sınıflandırılır ve kural, yeni maddenin eşyanın asli karakterini değiştirdiği hallere genişletilemez. Birden fazla maddeden oluşup ilk bakışta iki veya daha çok pozisyona girebilen eşya ise GYK 3’teki prensiplere göre sınıflandırılır.",
-   "dayanak": "GYK 2(b) Açıklama Notu (X)–(XIII).",
+   "gerekce": "Açıklama notu (III)(a), birçok eşyanın diğer kurallara gerek kalmaksızın doğrudan pozisyon metinleri ve notlarla sınıflandırılabileceğini belirtir ve canlı atlar (01.01) ile Fasıl 30 Not 4 uyarınca 30.06’daki eczacılık müstahzarlarını örnek verir. Başlıklar yalnızca gösterici niteliktedir ve yasal dayanak oluşturmaz; 2–5 numaralı kurallar ise ancak lüzumu halinde ve pozisyon ve notlarda aksine hüküm bulunmadıkça uygulanır. Açıklama notu, Fasıl 31 notlarının 2(b) yoluyla bazı pozisyonlara girebilecek eşyayı engellediğini örnekler; demonte bisiklet ise 2(a) şartları sağlanırsa bitmiş bisiklet olarak sınıflandırılır.",
+   "dayanak": "GYK 1 ve Açıklama Notu (I)–(III).",
    "fasil": "GYK"
   },
   {
@@ -693,33 +693,33 @@
    "fasil": 26
   },
   {
-   "soru": "Fasıl 85 Not 5’e göre 85.17 pozisyonu anlamında “akıllı telefon” ifadesi aşağıdakilerden hangisini ifade eder?",
+   "soru": "Fasıl 85 Not 7’ye göre 85.24 pozisyonu anlamında “düz panel gösterge modülleri” ile ilgili aşağıdakilerden hangisi <b>doğrudur</b>?",
    "secenekler": [
-    "Dokunmatik ekranı bulunan ve internete bağlanabilen her türlü sabit veya mobil telefonu",
-    "Yalnızca kablosuz yerel ağ üzerinden görüntülü arama yapabilen, hücresel ağa bağlanamayan cihazları",
-    "Dijital kamerası ve seyrüsefer sistemi bulunması zorunlu olan cep telefonlarını",
-    "Otomatik bilgi işlem makinesi işlevleri nedeniyle 84.71’de sınıflandırılan, telefon özelliği de olan cihazları",
-    "Mobil işletim sistemiyle donatılmış, üçüncü taraf uygulamalar dahil birden fazla uygulamayı aynı anda indirip çalıştırabilen, hücresel ağlar için telefonları"
+    "Yalnızca düz ekranları kapsar; kavisli, esnek veya katlanabilir ekranlar tanımın dışındadır.",
+    "Ölçekleyici veya kod çözücü entegre devre gibi video sinyali dönüştüren bileşenleri olanlar da 85.24’te kalır.",
+    "Başka ürünlere dahil edilmesi amaçlanmayan, doğrudan kullanıma hazır monitörleri ifade eder.",
+    "Video sinyallerini almak ve piksellere tahsis etmek için gereken unsurları içerenler tanımın dışında kalır.",
+    "Bu notta tanımlanan modüllerin sınıflandırılmasında 85.24 pozisyonu Tarifedeki diğer pozisyonlara göre önceliklidir."
    ],
    "cevap": "E",
    "tip": "Fasıl notu · Tanım/Eşik",
-   "gerekce": "Fasıl 85 Not 5’e göre “akıllı telefon”, mobil işletim sistemiyle donatılmış, üçüncü taraf uygulamalar dahil birden fazla uygulamayı aynı anda indirme ve çalıştırma gibi otomatik bilgi işlem makinesi işlevlerini yerine getiren, hücresel ağlar için telefonlardır. Dijital kamera ve seyrüsefer yardım sistemleri bunlara entegre olabilir ancak zorunlu değildir; tanım bu cihazları 85.17’de tutar, 84.71’e göndermez.",
-   "dayanak": "Fasıl 85 Not 5.",
+   "gerekce": "Not 7, düz panel gösterge modüllerini kullanımdan önce diğer pozisyonlardaki ürünlere dahil edilmek üzere tasarlanmış, asgari olarak bir görüntüleme ekranıyla donatılmış cihazlar olarak tanımlar ve bu modüllerin sınıflandırılmasında 85.24’ün diğer pozisyonlara göre öncelikli olduğunu belirtir. Ekranlar düz, kavisli, esnek, katlanabilir veya gerilebilir olabilir; video sinyallerini almak ve piksellere tahsis etmek için gereken unsurları içermeleri tanıma engel değildir. Buna karşılık ölçekleyici IC, kod çözücü IC veya uygulama işlemcisi gibi video sinyali dönüştürücü bileşenlerle donatılmış modüller 85.24’e girmez.",
+   "dayanak": "Fasıl 85 Not 7.",
    "fasil": 85
   },
   {
-   "soru": "Bir bileşik eşya ilk bakışta iki pozisyona girebilmektedir; ancak bu pozisyonlardan her biri, eşyayı meydana getiren maddelerin yalnızca bir kısmına atıfta bulunmakta, biri ise diğerine göre eşya hakkında daha kapsamlı bir tanım vermektedir. GYK 3(a) açıklama notuna göre bu durumda aşağıdakilerden hangisi doğrudur?",
+   "soru": "GYK 3 açıklama notuna göre, kuraldaki üç yöntemin uygulanma sırası ve koşulu ile ilgili aşağıdakilerden hangisi <b>doğrudur</b>?",
    "secenekler": [
-    "Daha kapsamlı tanım veren pozisyon GYK 3(a) uyarınca öncelik alır.",
-    "Eşya GYK 4 uyarınca kendisine en çok benzeyen eşyanın pozisyonunda sınıflandırılır.",
-    "Pozisyonlar eşya ile ilgili eşit derecede özel sayılır; sınıflandırma GYK 3(b) veya 3(c) kuralına göre yapılır.",
-    "Eşyanın her maddesi GYK 2(b) uyarınca ayrı ayrı kendi pozisyonunda sınıflandırılır.",
-    "Sınıflandırma yalnızca GYK 6’ya göre alt pozisyon düzeyinde yapılır."
+    "Önce eşyaya esas niteliğini veren madde aranır; bu saptanamazsa en özel tanımı veren pozisyon seçilir.",
+    "Üç yöntem arasında öncelik sırası yoktur; eşyaya en uygun sonucu veren yöntem seçilebilir.",
+    "Önce özel tanımlamaya, o yetersiz kalırsa esas niteliğe, o da yetersiz kalırsa geçerli pozisyonlardan numara sırasına göre sonuncusuna bakılır.",
+    "Bölüm veya fasıl notlarında aksine bir hüküm bulunsa dahi 3 numaralı kural notlardan önce uygulanır.",
+    "3(c) uyarınca eşya, geçerli olabilecek pozisyonlardan numara sırasına göre ilkinde sınıflandırılır."
    ],
    "cevap": "C",
    "tip": "Genel Yorum Kuralı",
-   "gerekce": "GYK 3(a) açıklama notunun (V) bendine göre iki veya daha fazla pozisyondan her biri karışım veya bileşik eşyayı oluşturan maddelerin yalnızca bir kısmına ya da perakende takımın yalnızca bir kalemine atıfta bulunuyorsa, biri daha kapsamlı veya kesin tanım verse bile bu pozisyonlar eşit derecede özel sayılır. Bu durumda sınıflandırma 3(b) (esas nitelik), o da yetersiz kalırsa 3(c) kuralına göre yapılır; GYK 4 ancak 1–3 numaralı kurallarla sınıflandırma yapılamadığında devreye girer.",
-   "dayanak": "GYK 3(a) Açıklama Notu (V).",
+   "gerekce": "Açıklama notu (I), kuraldaki yöntemlerin belirtilen sırayla uygulanacağını, 3(b)’nin yalnızca 3(a) yetersiz kaldığında, 3(c)’nin ise 3(a) ve 3(b) yetersiz kaldığında devreye gireceğini belirtir; öncelik sırası özel tanımlama, asli karakter ve numara sırasına göre son pozisyondur. Açıklama notu (II)’ye göre kural ancak bölüm veya fasıl notlarında ya da pozisyon metinlerinde aksine hüküm bulunmadığında uygulanabilir. 3(c) geçerli pozisyonlardan ilkini değil sonuncusunu işaret eder.",
+   "dayanak": "GYK 3; Açıklama Notu (I), (II) ve (XII).",
    "fasil": "GYK"
   },
   {
